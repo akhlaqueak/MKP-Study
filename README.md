@@ -21,7 +21,7 @@ export OMP_NUM_THREADS=N
 
 for example: 
 ```
-./UMKP ../datasets/socfb-Duke14.bin
+./UMKP ../datasets/socfb-Duke14.bin 5
 ```
 ## Dataset Preparation
 Go to datasets folder and convert network-repository or SNAP graphs to binary format
