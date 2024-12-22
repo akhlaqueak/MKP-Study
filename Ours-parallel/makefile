@@ -1,8 +1,8 @@
 all : 
-	g++ -flto -Ofast -DNDEBUG -march=native -o Maple Graph.cpp -w -fopenmp
+	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP Graph.cpp -w -fopenmp
 clean:
-	rm -rf Maple
+	rm -rf UMKP
 debug:
-	g++ -g -DNDEBUG -o Maple Graph.cpp -fopenmp
+	g++ -g -DNDEBUG -o UMKP Graph.cpp -fopenmp
 prof:
-	g++ -pg -DNDEBUG -march=native -o Maple-pg Graph.cpp -w -fopenmp
+	g++ -pg -DNDEBUG -march=native -o UMKP-pg Graph.cpp -w -fopenmp
