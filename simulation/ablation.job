@@ -3,7 +3,7 @@
 #SBATCH --job-name=test             ### Name of the job
 #SBATCH --ntasks=32                    ### Number of Tasks
 #SBATCH --cpus-per-task=1              ### Number of Tasks per CPU
-#SBATCH --mem-per-cpu=48000                        ### Memory required, 4 gigabyte
+#SBATCH --mem-per-cpu=10000                        ### Memory required, 4 gigabyte
 #SBATCH --partition=medium             ### Cheaha Partition
 #SBATCH --time=10:00:00                 ### Estimated Time of Completion, 1 hour
 #SBATCH --output=%x.out              ### Slurm Output file, %x is job name, %j is job id
