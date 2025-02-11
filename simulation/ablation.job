@@ -18,7 +18,7 @@ run_jobs() {
             for k in $krange; do
                 outfile=$sol-$k.out
                 # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
-                if [[ $sol =~ "Ours" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
+                if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
                     srun --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol ~/graphs/BK/$fn.bin $k >> $sol-$k.out &
                 else
                     srun --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol -b -g ~/graphs/BK/$fn.bin -a exact -k $k -c 3 >>$sol-$k.out &
