@@ -3,7 +3,7 @@
 #SBATCH --job-name=test             ### Name of the job
 #SBATCH --ntasks=32                    ### Number of Tasks
 #SBATCH --cpus-per-task=1              ### Number of Tasks per CPU
-#SBATCH --mem-per-cpu=10000                        ### Memory required, 4 gigabyte
+#SBATCH --mem-per-cpu=100000                        ### Memory required, 4 gigabyte
 #SBATCH --partition=short             ### Cheaha Partition
 #SBATCH --time=10:00:00                 ### Estimated Time of Completion, 1 hour
 #SBATCH --output=%x.out              ### Slurm Output file, %x is job name, %j is job id
@@ -17,6 +17,7 @@ run_jobs() {
         for sol in $solutions; do
             for k in $krange; do
                 outfile=$sol-$k.out
+
                 # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
                 if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
                     srun --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol ~/graphs/BK/$fn.bin $k >> $sol-$k.out &
@@ -65,7 +66,7 @@ get_results() {
                     line+=('9999999999')
                 else
                     op=($op)
-                    line+=(${op[-5]})
+                    line+=(${op[-3]})
                 fi
             done
             m=$(printf "%s\n" "${line[@]}" | sort -rn | tail -n1)
@@ -300,7 +301,7 @@ wikipedia_link_sv
 solutions='UMKP Maple kPlexT DiseMKP' 
 del_prev
 krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 01:30:00
+run_jobs 00:30:00
 
 # datasets=$(find ~/graphs/test25/*.bin -type f -exec basename {} \;)
 
