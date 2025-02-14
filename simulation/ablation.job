@@ -297,7 +297,19 @@ edit-svwiki
 livejournal-groupmemberships
 wikipedia_link_sv
 '
-# datasets='socfb-Duke14'
+datasets='
+soc-sinaweibo
+web-ClueWeb09-50m
+web-wikipedia_link_en13-all
+aff-orkut-user2groups
+twitter
+bag-pubmed
+wikipedia_link_en
+dimacs9-CTR
+dimacs9-USA
+dimacs9-W
+'
+
 solutions='UMKP Maple kPlexT DiseMKP' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
 run_jobs 00:30:00
