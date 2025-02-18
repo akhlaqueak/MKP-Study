@@ -212,6 +212,7 @@ void Graph::search() {
 	// delete[] degree;
 
 	if(kplex.size()<2*K-2)	kplex.resize(2*K-2); //screen out trivial cases
+
 	if(kplex.size() < UB) {
 		ui old_size = kplex.size();
 		ui *out_mapping = new ui[n];
@@ -219,11 +220,7 @@ void Graph::search() {
 		ui *edgelist_pointer = new ui[m];
 
 		shrink_graph(n, m, peel_sequence, core, out_mapping, nullptr, rid, pstart, edges, true);
-
-
 		ego_degen(n, m, peel_sequence, pstart, edges, degree, rid, vis, heap, edgelist_pointer, true);
-
-
 
 		if(kplex.size() > old_size) {
 			old_size = kplex.size();
@@ -234,7 +231,6 @@ void Graph::search() {
 		}
 
 		if(kplex.size()+1 > 2*K) CTPrune::core_truss_copruning(n, m, kplex.size()+1-K, kplex.size()+1-2*K, peel_sequence, out_mapping, rid, pstart, edges, degree, true);
-		// else shrink_graph(n, m, peel_sequence, core, out_mapping, nullptr, rid, pstart, edges, true);
 		
 		delete[] core; core = NULL;
 
