@@ -17,7 +17,8 @@ run_jobs() {
         for sol in $solutions; do
             for k in $krange; do
                 outfile=$fn-$sol-$k.out
-                grep -q ">>" $outfile || {
+                # grep -q ">>" $outfile || 
+                {
                     # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
                     if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
                         srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol ~/graphs/BK/$fn.bin $k >> $outfile 2>&1 &
