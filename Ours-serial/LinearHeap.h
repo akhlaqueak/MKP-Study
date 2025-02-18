@@ -59,6 +59,7 @@ public:
 
 		for(ui i = 0;i < _n;i ++) {
 			ui id = _id_s[i];
+			cout<<id<<endl;
 			ui key = _key_s[id];
 			//assert(id < n); assert(key <= _key_cap);
 
