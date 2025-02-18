@@ -247,6 +247,7 @@ void Graph::search() {
 		for(ui i = 0;i < n;i ++) degree[i] = pstart[i+1] - pstart[i];
 
 		ListLinearHeap *linear_heap = new ListLinearHeap(n, n-1);
+		for(ui i=0;i<n; i++) if (peel_sequence[i]>n) cout<<peel_sequence[i]<<" ";
 		linear_heap->init(n, n-1, peel_sequence, degree);
 
 		// assert(pend == nullptr);
