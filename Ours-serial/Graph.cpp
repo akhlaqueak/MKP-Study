@@ -192,7 +192,6 @@ void Graph::verify_kplex() {
 
 void Graph::search() {
 	Timer t;
-	// kplex.resize(2*K-2); //screen out trivial cases
 	ui max_degree=0;
 	for(ui i = 0;i < n;i ++) {
 		if(pstart[i+1]-pstart[i] > max_degree) max_degree = pstart[i+1]-pstart[i];
@@ -212,6 +211,7 @@ void Graph::search() {
 	// delete[] vis;
 	// delete[] degree;
 
+	if(kplex.size()<2*K-2)	kplex.resize(2*K-2); //screen out trivial cases
 	if(kplex.size() < UB) {
 		ui old_size = kplex.size();
 		ui *out_mapping = new ui[n];
