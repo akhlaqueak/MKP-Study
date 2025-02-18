@@ -192,7 +192,7 @@ void Graph::verify_kplex() {
 
 void Graph::search() {
 	Timer t;
-	kplex.resize(2*K-2); //screen out trivial cases
+	// kplex.resize(2*K-2); //screen out trivial cases
 	ui max_degree=0;
 	for(ui i = 0;i < n;i ++) {
 		if(pstart[i+1]-pstart[i] > max_degree) max_degree = pstart[i+1]-pstart[i];
@@ -233,8 +233,8 @@ void Graph::search() {
 			}
 		}
 
-			if(kplex.size()+1 > 2*K) CTPrune::core_truss_copruning(n, m, kplex.size()+1-K, kplex.size()+1-2*K, peel_sequence, out_mapping, rid, pstart, edges, degree, true);
-			// else shrink_graph(n, m, peel_sequence, core, out_mapping, nullptr, rid, pstart, edges, true);
+		if(kplex.size()+1 > 2*K) CTPrune::core_truss_copruning(n, m, kplex.size()+1-K, kplex.size()+1-2*K, peel_sequence, out_mapping, rid, pstart, edges, degree, true);
+		// else shrink_graph(n, m, peel_sequence, core, out_mapping, nullptr, rid, pstart, edges, true);
 		
 		delete[] core; core = NULL;
 
@@ -247,7 +247,6 @@ void Graph::search() {
 		for(ui i = 0;i < n;i ++) degree[i] = pstart[i+1] - pstart[i];
 
 		ListLinearHeap *linear_heap = new ListLinearHeap(n, n-1);
-		for(ui i=0;i<n; i++) if (peel_sequence[i]>n) cout<<peel_sequence[i]<<" ";
 		linear_heap->init(n, n-1, peel_sequence, degree);
 
 		// assert(pend == nullptr);
