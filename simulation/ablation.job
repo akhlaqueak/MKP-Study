@@ -279,34 +279,20 @@ del_prev() {
 }
 
 datasets='
-dimacs10-uk-2007-05
-friendster
 delicious-ui
-delicious-ti
 trackers
-uk-2002
-dimacs10-uk-2002
 dbpedia-link
 wikipedia_link_en
-edit-frwiki
-orkut-groupmemberships
 edit-cebwiki
 wikipedia_link_ceb
-zhishi-all
 edit-svwiki
 livejournal-groupmemberships
-wikipedia_link_sv
-
 soc-sinaweibo
 web-ClueWeb09-50m
 web-wikipedia_link_en13-all
-aff-orkut-user2groups
-twitter
 bag-pubmed
-wikipedia_link_en
 dimacs9-CTR
 dimacs9-USA
-dimacs9-W
 '
 
 solutions='UMKP' 
@@ -314,6 +300,7 @@ krange='2 3 4 5 6 7 8 9 10 15 20'
 run_jobs 00:30:00
 
 # datasets=$(find ~/graphs/test25/*.bin -type f -exec basename {} \;)
+solutions='UMKP Maple kPlexT DiseMKP' 
 
 get_results
 get_kpsize
