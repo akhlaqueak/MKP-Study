@@ -234,7 +234,7 @@ void Graph::search() {
 		}
 
 			if(kplex.size()+1 > 2*K) CTPrune::core_truss_copruning(n, m, kplex.size()+1-K, kplex.size()+1-2*K, peel_sequence, out_mapping, rid, pstart, edges, degree, true);
-			else shrink_graph(n, m, peel_sequence, core, out_mapping, nullptr, rid, pstart, edges, true);
+			// else shrink_graph(n, m, peel_sequence, core, out_mapping, nullptr, rid, pstart, edges, true);
 		
 		delete[] core; core = NULL;
 
