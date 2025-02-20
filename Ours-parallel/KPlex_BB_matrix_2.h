@@ -81,18 +81,10 @@ sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 		degree_in_S=new ui[n];
 		degree=new ui[n];
 		level_id=new ui[n];
-		neighbors = new ui[n];
-		nonneighbors = new ui[n];
-		S2 = new ui[n];
+		// neighbors = new ui[n];
+		// nonneighbors = new ui[n];
+		// S2 = new ui[n];
 		copy(src.SR, src.SR+n, SR);
-
-		// for(ui i=0;i<R_end;i++){
-		// 	ui u=SR[i];
-		// 	SR_rid[u]=i;
-		// 	degree[u]=src.degree[u];
-		// 	degree_in_S[u]=src.degree_in_S[u];
-		// 	level_id[u]=src.level_id[u];
-		// }
 		copy(src.SR_rid, src.SR_rid+n, SR_rid);
 		copy(src.degree, src.degree+n, degree);
 		copy(src.degree_in_S, src.degree_in_S+n, degree_in_S);
@@ -100,6 +92,13 @@ sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 		
 		// bmp.init(n);
 		// LPI=new ui[matrix_size];
+	}
+	void deallocate(){
+		delete[] SR;
+		delete[] SR_rid;
+		delete[] degree_in_S;
+		delete[] degree;
+		delete[] level_id;
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst){
 		neighbors=dst->neighbors;
@@ -625,7 +624,7 @@ if(true or PART_BRANCH){
 					ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					if(td->move_u_to_S_with_prune(u, S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);	
-					delete td;
+					td->deallocate();
 				}			
 			}
 			else{
