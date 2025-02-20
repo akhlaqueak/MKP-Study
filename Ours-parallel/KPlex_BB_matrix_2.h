@@ -83,7 +83,7 @@ sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 		level_id=new ui[n];
 		neighbors = new ui[n];
 		nonneighbors = new ui[n];
-		// S2 = new ui[n];
+		S2 = new ui[n];
 		copy(src.SR, src.SR+n, SR);
 		copy(src.SR_rid, src.SR_rid+n, SR_rid);
 		copy(src.degree, src.degree+n, degree);
