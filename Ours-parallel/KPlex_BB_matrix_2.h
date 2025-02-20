@@ -102,8 +102,8 @@ sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 		// LPI=new ui[matrix_size];
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst){
-		neighbors=dst->neighbors;
-		nonneighbors=dst->nonneighbors;
+		// neighbors=dst->neighbors;
+		// nonneighbors=dst->nonneighbors;
 		S2=dst->S2;
 		LPI=dst->LPI;
 		psz=dst->psz;
@@ -584,7 +584,7 @@ private:
 		}
 		for(ui i = 0;i < R_end;i ++) assert(level_id[SR[i]] > level);
 #endif
-if(PART_BRANCH){
+if(true or PART_BRANCH){
 
 // ******************* Adding our branching stuff here... 
 		ui t_R_end=R_end;
@@ -622,14 +622,14 @@ if(PART_BRANCH){
 				#pragma omp task firstprivate(td, u, S_end, R_end, level)
 				{
 					td->loadThreadData(this);
-					ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+					ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					if(td->move_u_to_S_with_prune(u, S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);	
-					delete td;
+					// delete td;
 				}			
 			}
 			else{
-				ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+				ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 				if(move_u_to_S_with_prune(u, S_end, R_end, level)) BB_search(S_end, R_end, level+1, false, false, st);
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);				
 			}
