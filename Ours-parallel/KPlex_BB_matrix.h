@@ -666,8 +666,8 @@ if(true){
 // 				t_old_removed_edges_n=removed_edges_n;
 // 			}
 // #endif
-			// if(TIME_OVER(st)){
-			if(false){
+			if(TIME_OVER(st)){
+			// if(false){
 				// KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
 				ThreadData *td = new ThreadData(this);
 				#pragma omp task firstprivate(td, u, S_end, R_end, level)
