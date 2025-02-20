@@ -67,23 +67,23 @@ public:
 	bool dense_search, forward_sol=false;
 public:
 	ui best_n_edges;
-	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
-	: B(src.B), n(src.n),
-	peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
-	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
-sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
+// 	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src)
+// 	: B(src.B), n(src.n),
+// 	peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
+// 	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
+// sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 
-	// KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end){
-	// 	*this=src; // all variables are copied here, then pointers are separtely copied afterwards... 
+	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end){
+		*this=src; // all variables are copied here, then pointers are separtely copied afterwards... 
 		
 		SR=new ui[n];
 		SR_rid=new ui[n];
 		degree_in_S=new ui[n];
 		degree=new ui[n];
 		level_id=new ui[n];
-		neighbors = new ui[n];
-		nonneighbors = new ui[n];
-		S2 = new ui[n];
+		// neighbors = new ui[n];
+		// nonneighbors = new ui[n];
+		// S2 = new ui[n];
 		copy(src.SR, src.SR+n, SR);
 		copy(src.SR_rid, src.SR_rid+n, SR_rid);
 		copy(src.degree, src.degree+n, degree);
