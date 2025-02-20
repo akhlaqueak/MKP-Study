@@ -6,7 +6,7 @@ Timer thresh, branchings, bounding;
 std::atomic<ui> best_solution_size(0);
 std::vector<ui> kplex;
 
-#include "KPlex_BB_matrix_2.h"
+#include "KPlex_BB_matrix.h"
 #include "KPlex_BB.h"
 #include "CTPrune.h"
 using namespace std;
