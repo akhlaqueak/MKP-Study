@@ -102,8 +102,8 @@ sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 		// LPI=new ui[matrix_size];
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst){
-		// neighbors=dst->neighbors;
-		// nonneighbors=dst->nonneighbors;
+		neighbors=dst->neighbors;
+		nonneighbors=dst->nonneighbors;
 		S2=dst->S2;
 		LPI=dst->LPI;
 		psz=dst->psz;
