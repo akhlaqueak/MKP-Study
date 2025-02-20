@@ -635,7 +635,7 @@ private:
 		for(ui i = 0;i < R_end;i ++) assert(level_id[SR[i]] > level);
 #endif
 // if(PART_BRANCH){
-if(true)
+if(true){
 // ******************* Adding our branching stuff here... 
 		ui t_R_end=R_end;
 
