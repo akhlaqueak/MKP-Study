@@ -67,14 +67,14 @@ public:
 	bool dense_search, forward_sol=false;
 public:
 	ui best_n_edges;
-// 	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src)
-// 	: B(src.B), n(src.n),
-// 	peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
-// 	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
-// sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
+	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src)
+	: B(src.B), n(src.n),
+	peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
+	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
+	sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 
-	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end){
-		*this=src; // all variables are copied here, then pointers are separtely copied afterwards... 
+	// KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end){
+	// 	*this=src; // all variables are copied here, then pointers are separtely copied afterwards... 
 		
 		SR=new ui[n];
 		SR_rid=new ui[n];
@@ -588,7 +588,7 @@ if(true or PART_BRANCH){
 // ******************* Adding our branching stuff here... 
 		ui t_R_end=R_end;
 
-		R_end = getBranchings2(S_end, R_end, level);
+		R_end = getBranchings(S_end, R_end, level);
 		while(R_end<t_R_end){
 		// branching vertices are now in R_end to t_R_end, and they are already sorted in peelOrder
 			// move branching vertex back to C
@@ -617,7 +617,7 @@ if(true or PART_BRANCH){
 // #endif
 			if(TIME_OVER(st)){
 			// if(false){
-				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
+				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
 				#pragma omp task firstprivate(td, u, S_end, R_end, level)
 				{
 					td->loadThreadData(this);
