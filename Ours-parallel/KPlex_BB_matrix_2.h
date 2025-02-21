@@ -82,8 +82,10 @@ public:
 	// std::vector<std::pair<ui,ui> > vp2;
 
 	bool sparse=true;
-	vector<ui> B, PI, PIMax, ISc, peelOrder, psz;
+	vector<ui> B, PI, PIMax, ISc;
 	ui* LPI;
+	ui* psz;
+	ui* peelOrder;
 	MBitSet bmp;
 	bool found_larger=false;
 	bool ctcp_enabled=false;
@@ -106,10 +108,6 @@ public:
 			ctx->level_id[i] = src.level_id[u];
 		}
 
-		// neighbors = new ui[n];
-		// nonneighbors = new ui[n];
-		psz.resize(n);
-		bmp.init(n);
 	}
 	void deallocate(){
 		delete ctx;
@@ -125,17 +123,6 @@ public:
 		neighbors = dst->neighbors;
 		nonneighbors = dst->nonneighbors;
 
-
-		// copy(ctx->SR_rid, ctx->SR_rid+n, SR_rid);
-		// for(ui i=0;i<R_end; i++) SR_rid[SR[i]] = i;
-		// level_id = dst->level_id; copy(ctx->level_id, ctx->level_id+n, level_id);
-		// degree_in_S = dst->degree_in_S; copy(ctx->degree_in_S, ctx->degree_in_S+n, degree_in_S);
-		// degree = ctx->degree;
-
-
-
-		// copy(ctx->SR, ctx->SR+R_end, SR);
-
 		for(ui i=0;i<R_end;i++){
 			ui u = SR[i];
 			SR_rid[u] = i;
@@ -143,7 +130,7 @@ public:
 			degree[u]=ctx->degree[i];
 			level_id[u]=ctx->level_id[i];
 		}
-		// psz=dst->psz;
+		psz=dst->psz;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
 		n = 0;
@@ -236,9 +223,9 @@ public:
 		level_id = new ui[n];
 		B.reserve(n);
 		LPI = new ui[matrix_size];
+		psz=new ui[n];
+		peelOrder = new ui[n];
 
-		peelOrder.resize(n);
-		psz.resize(n);
 		PI.reserve(n);
 		PIMax.reserve(n);
 		ISc.reserve(n);
