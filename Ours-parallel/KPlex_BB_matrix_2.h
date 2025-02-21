@@ -832,7 +832,7 @@ private:
 			ui u = B->back();
 			B->pop_back();
 
-			if (TIME_OVER(st))
+			if (false and TIME_OVER(st))
 			{
 
 				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
