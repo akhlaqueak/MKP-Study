@@ -85,7 +85,7 @@ public:
 		nonneighbors = new ui[n];
 		psz.resize(n);
 		bmp.init(n);
-		
+
 		copy(src.SR, src.SR+n, SR);
 		copy(src.SR_rid, src.SR_rid+n, SR_rid);
 		copy(src.degree, src.degree+n, degree);
@@ -585,7 +585,7 @@ private:
 		}
 		for(ui i = 0;i < R_end;i ++) assert(level_id[SR[i]] > level);
 #endif
-if(true or PART_BRANCH){
+if(PART_BRANCH){
 
 // ******************* Adding our branching stuff here... 
 		ui t_R_end=R_end;
@@ -611,14 +611,7 @@ if(true or PART_BRANCH){
 			if(root_level) found_larger=false;
 			if(found_larger) continue;
 
-// #ifdef _SECOND_ORDER_PRUNING_
-// 			if(ctcp_enabled) {
-// 				while(!Qe.empty())Qe.pop();
-// 				t_old_removed_edges_n=removed_edges_n;
-// 			}
-// #endif
 			if(TIME_OVER(st)){
-			// if(false){
 				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
 				#pragma omp task firstprivate(td, u, S_end, R_end, level)
 				{
@@ -651,6 +644,7 @@ if(TIME_OVER(st)){
 		B.clear();
 		#pragma omp task firstprivate(td, u, S_end, R_end, level)
 		{
+			td->loadThreadData(this);
 			// First branch moves u to S
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 
@@ -667,7 +661,7 @@ if(TIME_OVER(st)){
 				if(succeed&&best_solution_size.load() > pre_best_solution_size) succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
 				if(td->remove_vertices_and_edges_with_prune(S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
 			}
-			delete td;
+			td->deallocate();
 		}
 }
 else{
