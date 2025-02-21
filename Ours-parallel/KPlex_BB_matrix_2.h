@@ -38,6 +38,14 @@ struct Context{
 		degree=new ui[n];
 		level_id=new ui[n];
 	}
+
+	~Context(){
+		delete[] SR;
+		delete[] SR_rid;
+		delete[] degree_in_S;
+		delete[] degree;
+		delete[] level_id;
+	}
 };
 class KPLEX_BB_MATRIX {
 private:
@@ -107,14 +115,7 @@ public:
 		bmp.init(n);
 	}
 	void deallocate(){
-		// delete[] SR;
-		// delete[] SR_rid;
-		// // delete[] degree_in_S;
-		// // delete[] degree;
-		// delete[] level_id;
-		// delete[] neighbors;
-		// delete[] nonneighbors;
-
+		delete ctx;
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst, ui R_end){
 		S2=dst->S2;
