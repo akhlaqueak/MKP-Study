@@ -105,6 +105,9 @@ public:
 	void loadThreadData(KPLEX_BB_MATRIX* dst){
 		S2=dst->S2;
 		LPI=dst->LPI;
+		ui* temp = degree_in_S;
+		degree_in_S = dst->degree_in_S;
+		for(ui i=0;i<n;i++) degree_in_S[i] = temp[i];
 		// psz=dst->psz;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
