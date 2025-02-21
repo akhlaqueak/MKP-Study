@@ -655,7 +655,7 @@ if(PART_BRANCH){
 				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
 				#pragma omp task firstprivate(td, u, S_end, R_end, level)
 				{
-					auto execuster_solver = solvers[omp_get_thread_num()];
+					KPLEX_BB_MATRIX* execuster_solver = solvers[omp_get_thread_num()];
 					td->loadThreadData(execuster_solver, R_end);
 					ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					if(td->move_u_to_S_with_prune(u, S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
