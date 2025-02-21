@@ -88,7 +88,7 @@ public:
 		copy(src.level_id, src.level_id+n, level_id);
 		bmp.init(n);
 
-		// neighbors = new ui[n];
+		neighbors = new ui[n];
 		nonneighbors = new ui[n];
 		S2 = new ui[n];
 		LPI=new ui[matrix_size];
@@ -103,7 +103,7 @@ public:
 
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst){
-		neighbors=dst->neighbors;
+		// neighbors=dst->neighbors;
 		// nonneighbors=dst->nonneighbors;
 		// S2=dst->S2;
 		// LPI=dst->LPI;
