@@ -95,7 +95,7 @@ public:
 	void deallocate(){
 		delete[] SR;
 		delete[] SR_rid;
-		delete[] degree_in_S;
+		// delete[] degree_in_S;
 		delete[] degree;
 		delete[] level_id;
 		delete[] neighbors;
