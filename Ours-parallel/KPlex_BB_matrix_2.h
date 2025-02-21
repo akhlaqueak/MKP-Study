@@ -76,7 +76,7 @@ public:
 	// KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end){
 	// 	*this=src; // all variables are copied here, then pointers are separtely copied afterwards... 
 		
-		SR=new ui[R_end];
+		SR=new ui[n];
 		SR_rid=new ui[n];
 		degree_in_S=new ui[n];
 		degree=new ui[n];
@@ -93,10 +93,10 @@ public:
 		copy(src.level_id, src.level_id+n, level_id);
 	}
 	void deallocate(){
-		// delete[] SR;
+		delete[] SR;
 		delete[] SR_rid;
 		// delete[] degree_in_S;
-		delete[] degree;
+		// delete[] degree;
 		delete[] level_id;
 		delete[] neighbors;
 		delete[] nonneighbors;
@@ -110,8 +110,10 @@ public:
 		for(ui i=0;i<n;i++) degree_in_S[i] = temp[i]; 
 		delete[] temp;
 
-		temp = SR; SR=dst->SR;
-		for(ui i=0;i<R_end;i++)SR[i]=temp[i];
+		temp = degree; degree=dst->degree;
+		for(ui i=0;i<R_end;i++){
+			degree[i]=temp[i]; 
+		}
 		delete[] temp;
 		// psz=dst->psz;
 	}
