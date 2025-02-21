@@ -848,7 +848,7 @@ private:
 						td->level_id[td->Qv.front()] = td->n;
 					}
 					if (td->move_u_to_S_with_prune(u, S_end, R_end, level));
-						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
+						td->BB_search(S_end, R_end, level + 1, false, false, st);
 
 					// the second branch exclude u from G
 					while (!td->Qv.empty())
@@ -862,7 +862,7 @@ private:
 					if (succeed && best_solution_size.load() > pre_best_solution_size)
 						succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
 					if (succeed&&td->remove_vertices_and_edges_with_prune(S_end, R_end, level))
-						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
+						td->BB_search(S_end, R_end, level + 1, false, false, st);
 
 					td->deallocate();
 				}
