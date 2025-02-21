@@ -122,6 +122,9 @@ public:
 		level_id = dst->level_id;
 
 		copy(ctx->SR, ctx->SR+R_end, SR);
+		fill(SR_rid, SR_rid+n, n);
+		fill(degree_in_S, degree_in_S+n, 0);
+		fill(degree, degree+n, 0);
 		for(ui i=0;i<R_end;i++){
 			ui u = SR[i];
 			SR_rid[u] = i;
