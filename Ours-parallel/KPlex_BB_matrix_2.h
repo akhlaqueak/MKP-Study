@@ -90,7 +90,7 @@ public:
 
 		neighbors = new ui[n];
 		nonneighbors = new ui[n];
-		S2 = new ui[n];
+		// S2 = new ui[n];
 		LPI=new ui[matrix_size];
 		psz.resize(n);
 	}
@@ -105,7 +105,7 @@ public:
 	void loadThreadData(KPLEX_BB_MATRIX* dst){
 		// neighbors=dst->neighbors;
 		// nonneighbors=dst->nonneighbors;
-		// S2=dst->S2;
+		S2=dst->S2;
 		// LPI=dst->LPI;
 		// psz=dst->psz;
 	}
