@@ -644,7 +644,7 @@ else{ // pivot based branching
 
 // if(TIME_OVER(st)){
 if(false){
-		KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
+		KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
 		// KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
 		B.clear();
 		#pragma omp task firstprivate(td, u, S_end, R_end, level)
