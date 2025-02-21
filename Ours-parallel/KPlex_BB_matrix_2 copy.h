@@ -30,13 +30,17 @@ struct Context{
 		ui* degree_in_S;
 		ui* degree;
 		ui* level_id;
+		ui* neighbors;
+		ui* nonneighbors;
 
-	Context(ui n){
+	void save_context(ui n){
 		SR=new ui[n];
 		SR_rid=new ui[n];
 		degree_in_S=new ui[n];
 		degree=new ui[n];
 		level_id=new ui[n];
+		neighbors = new ui[n];
+		nonneighbors = new ui[n];
 	}
 };
 class KPLEX_BB_MATRIX {
@@ -45,7 +49,7 @@ private:
 	vector<ui> ids;
 	char *matrix;
 	long long matrix_size;
-	Context* ctx;
+
 #ifdef _SECOND_ORDER_PRUNING_
 	ui *cn;
 	std::queue<std::pair<ui,ui> > Qe;
@@ -88,47 +92,48 @@ public:
 	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
 	sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 
-		ctx = new Context(R_end);
-		copy(src.SR, src.SR+R_end, ctx->SR);
-		for(ui i=0;i<R_end; i++){
-			ui u = src.SR[i];
-			ctx->degree[i] = src.degree[u];
-			ctx->degree_in_S[i] = src.degree_in_S[u];
-			ctx->level_id[i] = src.level_id[u];
-		}
-
+	// KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end){
+	// 	*this=src; // all variables are copied here, then pointers are separtely copied afterwards... 
+		
+		SR=new ui[n];
+		SR_rid=new ui[n];
+		degree_in_S=new ui[n];
+		degree=new ui[n];
+		level_id=new ui[n];
 		neighbors = new ui[n];
 		nonneighbors = new ui[n];
 		psz.resize(n);
 		bmp.init(n);
+
+		copy(src.SR, src.SR+n, SR);
+		copy(src.SR_rid, src.SR_rid+n, SR_rid);
+		copy(src.degree, src.degree+n, degree);
+		copy(src.degree_in_S, src.degree_in_S+n, degree_in_S);
+		copy(src.level_id, src.level_id+n, level_id);
 	}
 	void deallocate(){
-		// delete[] SR;
-		// delete[] SR_rid;
-		// // delete[] degree_in_S;
-		// // delete[] degree;
-		// delete[] level_id;
-		// delete[] neighbors;
-		// delete[] nonneighbors;
+		delete[] SR;
+		delete[] SR_rid;
+		// delete[] degree_in_S;
+		// delete[] degree;
+		delete[] level_id;
+		delete[] neighbors;
+		delete[] nonneighbors;
 
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst, ui R_end){
 		S2=dst->S2;
 		LPI=dst->LPI;
 		
-		degree_in_S = dst->degree_in_S;
-		SR = dst->SR;
-		SR_rid = dst->SR_rid;
-		level_id = dst->level_id;
+		ui* temp = degree_in_S; degree_in_S = dst->degree_in_S;
+		for(ui i=0;i<n;i++) degree_in_S[i] = temp[i]; 
+		delete[] temp;
 
-		copy(ctx->SR, ctx->SR+R_end, SR);
-		for(ui i=0;i<R_end;i++){
-			ui u = SR[i];
-			SR_rid[u] = i;
-			degree_in_S[u]=ctx->degree_in_S[i];
-			degree[u]=ctx->degree[i];
-			level_id[u]=ctx->level_id[i];
+		temp = degree; degree=dst->degree;
+		for(ui i=0;i<n;i++){
+			degree[i]=temp[i]; 
 		}
+		delete[] temp;
 		// psz=dst->psz;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
