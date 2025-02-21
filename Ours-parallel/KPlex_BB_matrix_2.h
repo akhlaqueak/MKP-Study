@@ -123,7 +123,7 @@ public:
 
 		SR = dst->SR; copy(ctx->SR, ctx->SR+n, SR);
 		SR_rid = dst->SR_rid; copy(ctx->SR_rid, ctx->SR_rid+n, SR_rid);
-		level_id = ctx->level_id;
+		level_id = dst->level_id; copy(ctx->level_id, ctx->level_id+n, level_id);
 		degree_in_S = ctx->degree_in_S;
 		degree = ctx->degree;
 
