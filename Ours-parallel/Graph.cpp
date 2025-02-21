@@ -5,6 +5,7 @@ double threshold=1e9;
 Timer thresh, branchings, bounding;
 std::atomic<ui> best_solution_size(0);
 std::vector<ui> kplex;
+class KPLEX_BB_MATRIX;
 KPLEX_BB_MATRIX *solvers[omp_get_num_threads()];
 
 #include "KPlex_BB_matrix_2.h"
