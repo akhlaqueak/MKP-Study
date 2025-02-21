@@ -45,6 +45,7 @@ struct Context{
 		delete[] degree_in_S;
 		delete[] degree;
 		delete[] level_id;
+		cout<<".";
 	}
 };
 class KPLEX_BB_MATRIX {
