@@ -121,12 +121,12 @@ public:
 		LPI=dst->LPI;
 		R_end = n;
 
-		SR = ctx->SR;
+		SR = dst->SR; copy(ctx->SR, ctx->SR+n, SR);
 		SR_rid = ctx->SR_rid;
 		level_id = ctx->level_id;
 		degree_in_S = ctx->degree_in_S;
 		degree = ctx->degree;
-		
+
 		// degree_in_S = dst->degree_in_S;
 		// SR = dst->SR;
 		// SR_rid = dst->SR_rid;
