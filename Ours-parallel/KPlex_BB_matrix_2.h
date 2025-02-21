@@ -97,11 +97,8 @@ public:
 	sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 		// R_end = n;
 		ctx = new Context(R_end);
+
 		copy(src.SR, src.SR+R_end, ctx->SR);
-		// copy(src.SR_rid, src.SR_rid+n, ctx->SR_rid);
-		// copy(src.degree, src.degree+n, ctx->degree);
-		// copy(src.degree_in_S, src.degree_in_S+n, ctx->degree_in_S);
-		// copy(src.level_id, src.level_id+n, ctx->level_id);
 		for(ui i=0;i<R_end; i++){
 			ui u = src.SR[i];
 			ctx->degree[i] = src.degree[u];
@@ -109,8 +106,8 @@ public:
 			ctx->level_id[i] = src.level_id[u];
 		}
 
-		neighbors = new ui[n];
-		nonneighbors = new ui[n];
+		// neighbors = new ui[n];
+		// nonneighbors = new ui[n];
 		psz.resize(n);
 		bmp.init(n);
 	}
@@ -125,16 +122,16 @@ public:
 		degree_in_S = dst->degree_in_S;
 		degree = dst->degree;
 		level_id = dst->level_id;
+		neighbors = dst->neighbors;
+		nonneighbors = dst->nonneighbors;
 
-		
+
 		// copy(ctx->SR_rid, ctx->SR_rid+n, SR_rid);
 		// for(ui i=0;i<R_end; i++) SR_rid[SR[i]] = i;
 		// level_id = dst->level_id; copy(ctx->level_id, ctx->level_id+n, level_id);
 		// degree_in_S = dst->degree_in_S; copy(ctx->degree_in_S, ctx->degree_in_S+n, degree_in_S);
 		// degree = ctx->degree;
 
-		// neighbors = dst->neighbors;
-		// nonneighbors = dst->nonneighbors;
 
 
 		// copy(ctx->SR, ctx->SR+R_end, SR);
