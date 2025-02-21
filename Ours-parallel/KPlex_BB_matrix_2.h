@@ -50,7 +50,6 @@ struct Context{
 class KPLEX_BB_MATRIX {
 private:
 	ui n;
-	vector<ui> ids;
 	char *matrix;
 	long long matrix_size;
 	Context* ctx;
@@ -83,6 +82,7 @@ public:
 
 	bool sparse=true;
 	vector<ui> *B, *PI, *PIMax, *ISc;
+	vector<ui> *ids;
 	ui* LPI;
 	ui* psz;
 	ui* peelOrder;
@@ -107,6 +107,7 @@ public:
 		}
 		B=new vector<ui>();
 		copy(src.B->begin(), src.B->end(), B->begin());
+		ids=src.ids;
 	}
 	void deallocate(){
 		delete ctx;
@@ -241,8 +242,9 @@ public:
 	}
 
 	void load_graph(std::vector<ui> _ids, const std::vector<std::pair<ui,ui> > &vp) {
-		ids = _ids;
-		n = ids.size();
+		ids=new vector<ui>();
+		*ids = _ids;
+		n = ids->size();
 		if(((long long)n)*n > matrix_size) {
 			do {
 				matrix_size *= 2;
@@ -442,7 +444,7 @@ private:
 		if(dense_search){
 			if(n_edges>best_n_edges){
 			best_n_edges = n_edges;
-			for(ui i = 0;i < size;i ++)kplex.push_back(ids[SR[i]]);
+			for(ui i = 0;i < size;i ++)kplex.push_back(ids->at(SR[i]));
 			}
 		}
 		else{
@@ -450,7 +452,7 @@ private:
 			solution_size = size;
 			found_larger = true;
 			kplex.clear();
-			for(ui i = 0;i < size;i ++) kplex.push_back(ids[SR[i]]);
+			for(ui i = 0;i < size;i ++) kplex.push_back(ids->at(SR[i]));
 			best_n_edges = n_edges;
 		}
 		}
