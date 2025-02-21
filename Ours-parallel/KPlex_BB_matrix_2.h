@@ -120,9 +120,9 @@ public:
 		S2=dst->S2;
 		LPI=dst->LPI;
 
-		SR = dst->SR; copy(ctx->SR, ctx->SR+n, SR);
-		SR_rid = dst->SR_rid; fill(SR_rid, SR_rid+n, n);
-		for(ui i=0;i<R_end;i++) SR_rid[SR[i]] = i;
+
+		SR = dst->SR; copy(ctx->SR, ctx->SR+R_end, SR);
+		SR_rid = dst->SR_rid; copy(ctx->SR_rid, ctx->SR_rid+n, SR_rid);
 		level_id = dst->level_id; copy(ctx->level_id, ctx->level_id+n, level_id);
 		degree_in_S = dst->degree_in_S; copy(ctx->degree_in_S, ctx->degree_in_S+n, degree_in_S);
 		degree = ctx->degree;
