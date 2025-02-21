@@ -125,7 +125,7 @@ public:
 		SR_rid = dst->SR_rid; copy(ctx->SR_rid, ctx->SR_rid+n, SR_rid);
 		level_id = dst->level_id; copy(ctx->level_id, ctx->level_id+n, level_id);
 		degree_in_S = dst->degree_in_S; copy(ctx->degree_in_S, ctx->degree_in_S+n, degree_in_S);
-		degree = dst->degree;copy(ctx->degree, ctx->degree+n, degree);
+		degree = ctx->degree;
 
 		// degree_in_S = dst->degree_in_S;
 		// SR = dst->SR;
