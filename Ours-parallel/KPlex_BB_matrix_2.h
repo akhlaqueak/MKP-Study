@@ -851,18 +851,18 @@ private:
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 
 					// the second branch exclude u from G
-					while (!td->Qv.empty())
-					{
-						td->Qv.pop();
-						td->level_id[td->Qv.front()] = td->n;
-					}
-					td->restore_SR_and_edges(S_end, R_end, S_end, t_old_R_end, level, t_old_removed_edges_n);
-					td->B->clear();
-					bool succeed = td->remove_u_from_S_with_prune(S_end, R_end, level);
-					if (succeed && best_solution_size.load() > pre_best_solution_size)
-						succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
-					if (succeed&&td->remove_vertices_and_edges_with_prune(S_end, R_end, level))
-						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
+					// while (!td->Qv.empty())
+					// {
+					// 	td->Qv.pop();
+					// 	td->level_id[td->Qv.front()] = td->n;
+					// }
+					// td->restore_SR_and_edges(S_end, R_end, S_end, t_old_R_end, level, t_old_removed_edges_n);
+					// td->B->clear();
+					// bool succeed = td->remove_u_from_S_with_prune(S_end, R_end, level);
+					// if (succeed && best_solution_size.load() > pre_best_solution_size)
+					// 	succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
+					// if (succeed&&td->remove_vertices_and_edges_with_prune(S_end, R_end, level))
+					// 	td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 
 					td->deallocate();
 				}
@@ -871,27 +871,24 @@ private:
 			{
 
 				// First branch moves u to S
-				ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+				ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 
 				if (move_u_to_S_with_prune(u, S_end, R_end, level))
 					BB_search(S_end, R_end, level + 1, false, false, st);
 				// the second branch exclude u from G
+				restore_SR_and_edges(S_end, R_end, S_end, t_old_R_end, level, t_old_removed_edges_n);
+				while (!Qv.empty())
 				{
-					restore_SR_and_edges(S_end, R_end, S_end, t_old_R_end, level, t_old_removed_edges_n);
-					while (!Qv.empty())
-					{
-						ui v = Qv.front();
-						Qv.pop();
-						level_id[v] = n;
-					}
-					B->clear();
-
-					bool succeed = remove_u_from_S_with_prune(S_end, R_end, level);
-					if (succeed && best_solution_size.load() > pre_best_solution_size)
-						succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
-					if (remove_vertices_and_edges_with_prune(S_end, R_end, level))
-						BB_search(S_end, R_end, level + 1, false, false, st);
+					ui v = Qv.front();
+					Qv.pop();
+					level_id[v] = n;
 				}
+				B->clear();
+				bool succeed = remove_u_from_S_with_prune(S_end, R_end, level);
+				if (succeed && best_solution_size.load() > pre_best_solution_size)
+					succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
+				if (remove_vertices_and_edges_with_prune(S_end, R_end, level))
+					BB_search(S_end, R_end, level + 1, false, false, st);
 			}
 		}
 		restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
