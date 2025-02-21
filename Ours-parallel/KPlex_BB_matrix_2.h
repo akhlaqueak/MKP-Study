@@ -733,7 +733,7 @@ else{
 				if(j == new_n) j = i+1;
 				if(j >= vp.size()||ub > best_sz||ub + vp.size() - j <= best_sz) break;
 				ui dj = ids[j];
-				assert(dj<R_end - S_end);
+				assert(dj<vp.size());
 				ui u = vp[dj].first;
 				ui nn = vp[ids[j]].second;
 				if(t_support < nn) break;
