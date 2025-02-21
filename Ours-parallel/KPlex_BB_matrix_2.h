@@ -827,8 +827,10 @@ private:
 
 		else
 		{ // pivot based branching
-			if (B->empty() || SR_rid[B->back()] >= R_end || SR_rid[B->back()] < S_end)
+			if (B->empty() || SR_rid[B->back()] >= R_end || SR_rid[B->back()] < S_end){
 				branch(S_end, R_end);
+				st=TIME_NOW;
+			}
 			ui u = B->back();
 			B->pop_back();
 
