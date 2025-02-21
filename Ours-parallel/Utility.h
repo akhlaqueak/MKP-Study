@@ -146,12 +146,12 @@ public:
 				return false;
 		return true;
 	}
-	void setup(vecui &adj, ui m)
+	void setup(vecui* adj, ui m)
 	{
 		m = (m >> 5) + 1;
 		fill(buf, buf + m, 0);
 		
-		for (ui u : adj)
+		for (ui u : *adj)
 			set(u);	
 	}
 };

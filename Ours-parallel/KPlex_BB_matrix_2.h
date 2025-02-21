@@ -82,7 +82,7 @@ public:
 	// std::vector<std::pair<ui,ui> > vp2;
 
 	bool sparse=true;
-	vector<ui> B, PI, PIMax, ISc;
+	vector<ui> *B, *PI, *PIMax, *ISc;
 	ui* LPI;
 	ui* psz;
 	ui* peelOrder;
@@ -93,8 +93,7 @@ public:
 public:
 	ui best_n_edges;
 	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
-	: B(src.B), n(src.n),
-	peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
+	: n(src.n), peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
 	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
 	sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 		// R_end = n;
@@ -111,7 +110,7 @@ public:
 	}
 	void deallocate(){
 		delete ctx;
-		bmp.nullify();
+		bmp.nullify(); // to avoid double free
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst, ui R_end){
 		S2=dst->S2;
@@ -133,6 +132,10 @@ public:
 		}
 		psz=dst->psz;
 		bmp=dst->bmp;
+		B=dst->B;
+		PI=dst->PI;
+		PIMax = dst->PIMax;
+		ISc=dst->ISc;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
 		n = 0;
@@ -215,22 +218,25 @@ public:
 
 		degree = new ui[n];
 		degree_in_S = new ui[n];
-
 		SR = new ui[n];
 		SR_rid = new ui[n];
 		neighbors = new ui[n];
-
 		nonneighbors = new ui[n];
 		S2 = new ui[n];
 		level_id = new ui[n];
-		B.reserve(n);
 		LPI = new ui[matrix_size];
 		psz=new ui[n];
 		peelOrder = new ui[n];
 
-		PI.reserve(n);
-		PIMax.reserve(n);
-		ISc.reserve(n);
+		B=new vector<ui>();
+		PI=new vector<ui>();
+		PIMax=new vector<ui>();
+		ISc=new vector<ui>();
+
+		B->reserve(n);
+		PI->reserve(n);
+		PIMax->reserve(n);
+		ISc->reserve(n);
 		bmp.init(n);
 	}
 
@@ -658,17 +664,16 @@ if(PART_BRANCH){
 }
 
 else{ // pivot based branching
-		if(B.empty() || SR_rid[B.back()] >= R_end || SR_rid[B.back()] < S_end)
+		if(B->empty() || SR_rid[B->back()] >= R_end || SR_rid[B->back()] < S_end)
 			branch(S_end, R_end); 
-		ui u = B.back();
-		B.pop_back();
+		ui u = B->back();
+		B->pop_back();
 		
 
 if(TIME_OVER(st)){
 
 		KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
-		// KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
-		B.clear();
+
 		#pragma omp task firstprivate(td, u, S_end, R_end, level)
 		{
 			td->loadThreadData(this, R_end);
@@ -683,7 +688,7 @@ if(TIME_OVER(st)){
 					td->Qv.pop();
 					td->level_id[td->Qv.front()]=td->n;
 				} 
-				td->B.clear();
+				td->B->clear();
 				bool succeed = td->remove_u_from_S_with_prune(S_end, R_end, level);
 				if(succeed&&best_solution_size.load() > pre_best_solution_size) succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
 				if(td->remove_vertices_and_edges_with_prune(S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
@@ -704,7 +709,7 @@ else{
 			ui v=Qv.front(); Qv.pop();
 			level_id[v]=n;
 			} 
-			B.clear();
+			B->clear();
 
 			bool succeed = remove_u_from_S_with_prune(S_end, R_end, level);
 			if(succeed&&best_solution_size.load() > pre_best_solution_size) succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
@@ -751,7 +756,7 @@ else{
 			ui t_support = total_support - vp[idx].second;
 			char *t_matrix = matrix + v*n;
 			ui j = 0, v_support = K-1-S_end+degree_in_S[v], ub = S_end+1;
-			// ISc.clear();
+			// ISc->clear();
 			while(true) {
 				if(j == new_n) j = i+1;
 				if(j >= vp.size()||ub > best_sz||ub + vp.size() - j <= best_sz) break;
@@ -1440,7 +1445,7 @@ else{
 	}
 
 	void branch(ui S_end, ui R_end){
-		B.clear();
+		B->clear();
 		ui minnei=0x3f3f3f3f; ui pivot; // should it be 0xffffffff? 
 		char *t_matrix = matrix + 0*n;
 		ui best_sz=best_solution_size.load();
@@ -1451,7 +1456,7 @@ else{
 			support(S_end, v) == 1||
 			support(S_end, 0) == 1)
 			){ 
-				B.push_back(v);
+				B->push_back(v);
 				return;
 			}
 			if (degree[v] < minnei)
@@ -1463,10 +1468,10 @@ else{
 
 		t_matrix = matrix + pivot*n;
 		for(ui i = S_end;i < R_end;i ++) if(!t_matrix[SR[i]]) 
-			B.push_back(SR[i]);
+			B->push_back(SR[i]);
 
 		auto comp=[&](int a,int b){return degree[a]>degree[b];};
-		std::sort(B.begin(),B.end(),comp);
+		std::sort(B->begin(),B->end(),comp);
 	}
 	ui getBranchings2(ui S_end, ui R_end, ui level){
 		ui cend=bound(S_end, R_end);
@@ -1548,7 +1553,7 @@ else{
                     {
                         // rather than removing from C, we are changing the positions within C.
                         // When function completes
-                        // [0...cend) holds all vertices C\B, and [cend, sz) holds the B.
+                        // [0...cend) holds all vertices C\B, and [cend, sz) holds the B->
                         swap_pos(cend++, i);
                     }
                 }
@@ -1572,7 +1577,7 @@ else{
                     // PI[u].resize(j);
                     psz[i] = j;
                 }
-                // remove maxpi...
+                // remove maxpi->..
                 // PI[maxpi].clear();
                 psz[maxpi] = 0;
             }
@@ -1637,7 +1642,7 @@ else{
         while (R_end>S_end)
         {
 			double ubc = tryColor(S_end, R_end);
-			for (ui v : ISc)
+			for (ui v : *ISc)
 				swap_pos(v, --R_end);
 			UB += ubc;
         }
@@ -1652,18 +1657,18 @@ else{
             double ubp = tryPartition(S_end, R_end);
 			double ubc = tryColor(S_end, R_end);
             if (ubp == 0 or
-               ( ISc.size() / ubc > PIMax.size() / ubp) or
-                ((ISc.size() / ubc == PIMax.size() / ubp) and (ISc.size() > PIMax.size())))
+               ( ISc->size() / ubc > PIMax->size() / ubp) or
+                ((ISc->size() / ubc == PIMax->size() / ubp) and (ISc->size() > PIMax->size())))
 
             {
-                for (ui v : ISc)
+                for (ui v : *ISc)
                     swap_pos(v, --R_end);
                 UB += ubc;
             }
             else
             {
 
-                for (ui v : PIMax)
+                for (ui v : *PIMax)
                     swap_pos(v, --R_end);
                 UB += ubp;
             }
@@ -1674,33 +1679,33 @@ else{
 
     void createIS(ui S_end, ui R_end)
     {
-        ISc.clear();
+        ISc->clear();
         for (ui i = S_end; i < R_end; i++)
         {
             bool flag = true;
-            for (ui j : ISc)
+            for (ui j : *ISc)
                 if (is_neigh(i, j))
                 {
                     flag = false;
                     break;
                 }
             if (flag)
-                ISc.push_back(i);
+                ISc->push_back(i);
         }
     }
 
     ui TISUB(ui S_end)
     {
         ui maxsup = 0;
-        for (ui i = 0; i < ISc.size(); i++)
+        for (ui i = 0; i < ISc->size(); i++)
         {
-            for (ui j = i + 1; j < ISc.size(); j++)
+            for (ui j = i + 1; j < ISc->size(); j++)
             {
-                if (support(S_end, SR[ISc[j]]) > support(S_end, SR[ISc[i]]))
-                    std::swap(ISc[i], ISc[j]);
+                if (support(S_end, SR[ISc->at(j)]) > support(S_end, SR[ISc->at(i)]))
+                    std::swap(ISc->at(i), ISc->at(j));
             }
             // not using <= condition because i is starting from 0...
-            if (support(S_end, SR[ISc[i]]) > i)
+            if (support(S_end, SR[ISc->at(i)]) > i)
                 maxsup++;
             else
                 break;
@@ -1713,11 +1718,11 @@ else{
         ui ub = TISUB(S_end);
         ui vlc = 0;
         // collect loose vertices i.e. v \in ISc | support(v) > ub
-        for (ui i = 0; i < ISc.size(); i++)
+        for (ui i = 0; i < ISc->size(); i++)
         {
-            if (support(S_end, SR[ISc[i]]) > ub)
+            if (support(S_end, SR[ISc->at(i)]) > ub)
             {
-                std::swap(ISc[i], ISc[vlc]);
+                std::swap(ISc->at(i), ISc->at(vlc));
                 vlc++;
             }
         }
@@ -1730,19 +1735,19 @@ else{
             if (bmp.test(i)) // this loop running for C\ISc
                 continue;
             ui vc = 0;
-            for (ui j = vlc; j < ISc.size(); j++) // this loop runs in ISc\LC
+            for (ui j = vlc; j < ISc->size(); j++) // this loop runs in ISc\LC
             {
-                if (is_neigh(i, ISc[j]))
+                if (is_neigh(i, ISc->at(j)))
                 {
-                    std::swap(ISc[vlc + vc], ISc[j]);
+                    std::swap(ISc->at(vlc + vc), ISc->at(j));
                     vc++;
                 }
             }
             if (vlc + vc + 1 <= ub)
             {
                 vlc += vc;
-                ISc.push_back(i);
-                std::swap(ISc.back(), ISc[vlc++]);
+                ISc->push_back(i);
+                std::swap(ISc->back(), ISc->at(vlc++));
                 bmp.set(i);
             }
         }
@@ -1752,7 +1757,7 @@ else{
             if (bmp.test(i) or support(S_end, SR[i]) >= ub) // this loop running for C\ISc
                 continue;
             ui nv = 0;
-            for (ui j: ISc)
+            for (ui j: *ISc)
             {
                 if (is_neigh(i, j))
                     nv++;
@@ -1760,7 +1765,7 @@ else{
 
             if (nv + support(S_end, SR[i]) <= ub )
             {
-                ISc.push_back(i);
+                ISc->push_back(i);
                 bmp.set(i);
             }
         }
@@ -1774,21 +1779,21 @@ else{
     {
         double maxdise = 0;
         ui ub = 0;
-		PIMax.clear();
+		PIMax->clear();
         for (ui i = 0; i < S_end; i++)
         {
             if (support(S_end, SR[i]) == 0)
                 continue;
-			PI.clear();
+			PI->clear();
             for (ui j = S_end; j < R_end; j++)
             {
                 if (!is_neigh(i, j))
-                    PI.push_back(j);
+                    PI->push_back(j);
             }
-			if(PI.empty()) continue;
-            ui cost = min(support(S_end, SR[i]), (ui)PI.size());
-            double dise = (double) PI.size() / (double) cost;
-            if (dise > maxdise or (dise == maxdise and PI.size() > PIMax.size()))
+			if(PI->empty()) continue;
+            ui cost = min(support(S_end, SR[i]), (ui)PI->size());
+            double dise = (double) PI->size() / (double) cost;
+            if (dise > maxdise or (dise == maxdise and PI->size() > PIMax->size()))
             {
                 maxdise = dise, ub = cost;
                 std::swap(PI, PIMax);
