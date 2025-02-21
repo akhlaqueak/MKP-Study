@@ -96,18 +96,18 @@ public:
 	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
 	sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 		// R_end = n;
-		ctx = new Context(n);
+		ctx = new Context(R_end);
 		copy(src.SR, src.SR+R_end, ctx->SR);
-		copy(src.SR_rid, src.SR_rid+n, ctx->SR_rid);
-		copy(src.degree, src.degree+n, ctx->degree);
-		copy(src.degree_in_S, src.degree_in_S+n, ctx->degree_in_S);
-		copy(src.level_id, src.level_id+n, ctx->level_id);
-		// for(ui i=0;i<R_end; i++){
-		// 	ui u = src.SR[i];
-		// 	ctx->degree[i] = src.degree[u];
-		// 	ctx->degree_in_S[i] = src.degree_in_S[u];
-		// 	ctx->level_id[i] = src.level_id[u];
-		// }
+		// copy(src.SR_rid, src.SR_rid+n, ctx->SR_rid);
+		// copy(src.degree, src.degree+n, ctx->degree);
+		// copy(src.degree_in_S, src.degree_in_S+n, ctx->degree_in_S);
+		// copy(src.level_id, src.level_id+n, ctx->level_id);
+		for(ui i=0;i<R_end; i++){
+			ui u = src.SR[i];
+			ctx->degree[i] = src.degree[u];
+			ctx->degree_in_S[i] = src.degree_in_S[u];
+			ctx->level_id[i] = src.level_id[u];
+		}
 
 		neighbors = new ui[n];
 		nonneighbors = new ui[n];
@@ -124,10 +124,10 @@ public:
 		SR = dst->SR; copy(ctx->SR, ctx->SR+R_end, SR);
 		SR_rid = dst->SR_rid; 
 		// copy(ctx->SR_rid, ctx->SR_rid+n, SR_rid);
-		for(ui i=0;i<R_end; i++) SR_rid[SR[i]] = i;
-		level_id = dst->level_id; copy(ctx->level_id, ctx->level_id+n, level_id);
-		degree_in_S = dst->degree_in_S; copy(ctx->degree_in_S, ctx->degree_in_S+n, degree_in_S);
-		degree = ctx->degree;
+		// for(ui i=0;i<R_end; i++) SR_rid[SR[i]] = i;
+		// level_id = dst->level_id; copy(ctx->level_id, ctx->level_id+n, level_id);
+		// degree_in_S = dst->degree_in_S; copy(ctx->degree_in_S, ctx->degree_in_S+n, degree_in_S);
+		// degree = ctx->degree;
 
 		// neighbors = dst->neighbors;
 		// nonneighbors = dst->nonneighbors;
@@ -139,13 +139,13 @@ public:
 
 		// copy(ctx->SR, ctx->SR+R_end, SR);
 
-		// for(ui i=0;i<R_end;i++){
-		// 	ui u = SR[i];
-		// 	SR_rid[u] = i;
-		// 	degree_in_S[u]=ctx->degree_in_S[i];
-		// 	degree[u]=ctx->degree[i];
-		// 	level_id[u]=ctx->level_id[i];
-		// }
+		for(ui i=0;i<R_end;i++){
+			ui u = SR[i];
+			SR_rid[u] = i;
+			degree_in_S[u]=ctx->degree_in_S[i];
+			degree[u]=ctx->degree[i];
+			level_id[u]=ctx->level_id[i];
+		}
 		// psz=dst->psz;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
