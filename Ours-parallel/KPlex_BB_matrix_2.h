@@ -109,8 +109,8 @@ public:
 		// 	ctx->level_id[i] = src.level_id[u];
 		// }
 
-		neighbors = new ui[n];
-		nonneighbors = new ui[n];
+		// neighbors = new ui[n];
+		// nonneighbors = new ui[n];
 		psz.resize(n);
 		bmp.init(n);
 	}
@@ -129,7 +129,9 @@ public:
 		degree_in_S = dst->degree_in_S; copy(ctx->degree_in_S, ctx->degree_in_S+n, degree_in_S);
 		degree = ctx->degree;
 
-
+		neighbors = dst->neighbors;
+		nonneighbors = dst->nonneighbors;
+		
 		// degree_in_S = dst->degree_in_S;
 		// SR = dst->SR;
 		// SR_rid = dst->SR_rid;
