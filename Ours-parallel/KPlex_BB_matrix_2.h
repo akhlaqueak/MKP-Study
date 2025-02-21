@@ -95,7 +95,7 @@ public:
 	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
 	: n(src.n), peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
 	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
-	sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
+	sparse(src.sparse), dense_search(src.dense_search){
 
 		ctx = new Context(R_end);
 		copy(src.SR, src.SR+R_end, ctx->SR);
@@ -647,8 +647,7 @@ if(PART_BRANCH){
 				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
 				#pragma omp task firstprivate(td, u, S_end, R_end, level)
 				{
-					KPLEX_BB_MATRIX* execuster_solver = solvers[omp_get_thread_num()];
-					td->loadThreadData(execuster_solver, R_end);
+					td->loadThreadData(solvers[omp_get_thread_num()], R_end);
 					ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					if(td->move_u_to_S_with_prune(u, S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);	
@@ -676,7 +675,7 @@ if(TIME_OVER(st)){
 
 		#pragma omp task firstprivate(td, u, S_end, R_end, level)
 		{
-			td->loadThreadData(this, R_end);
+			td->loadThreadData(solvers[omp_get_thread_num()], R_end);
 			// First branch moves u to S
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 
@@ -760,9 +759,8 @@ else{
 			while(true) {
 				if(j == new_n) j = i+1;
 				if(j >= vp.size()||ub > best_sz||ub + vp.size() - j <= best_sz) break;
-				ui dj = ids[j];
-				assert(dj<vp.size());
-				ui u = vp[dj].first;
+				
+				ui u = vp[ids[j]].first;
 				ui nn = vp[ids[j]].second;
 				if(t_support < nn) break;
 				if(t_matrix[u]) {
