@@ -111,7 +111,7 @@ public:
 		delete[] temp;
 
 		temp = degree; degree=dst->degree;
-		for(ui i=0;i<R_end;i++){
+		for(ui i=0;i<n;i++){
 			degree[i]=temp[i]; 
 		}
 		delete[] temp;
