@@ -120,9 +120,13 @@ public:
 	void loadThreadData(KPLEX_BB_MATRIX* dst, ui R_end){
 		S2=dst->S2;
 		LPI=dst->LPI;
-
 		SR = dst->SR; copy(ctx->SR, ctx->SR+R_end, SR);
 		SR_rid = dst->SR_rid; 
+		degree_in_S = dst->degree_in_S;
+		degree = dst->degree;
+		level_id = dst->level_id;
+
+		
 		// copy(ctx->SR_rid, ctx->SR_rid+n, SR_rid);
 		// for(ui i=0;i<R_end; i++) SR_rid[SR[i]] = i;
 		// level_id = dst->level_id; copy(ctx->level_id, ctx->level_id+n, level_id);
@@ -132,10 +136,6 @@ public:
 		// neighbors = dst->neighbors;
 		// nonneighbors = dst->nonneighbors;
 
-		// degree_in_S = dst->degree_in_S;
-		// SR = dst->SR;
-		// SR_rid = dst->SR_rid;
-		// level_id = dst->level_id;
 
 		// copy(ctx->SR, ctx->SR+R_end, SR);
 
