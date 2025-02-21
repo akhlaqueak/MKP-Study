@@ -258,8 +258,8 @@ void Graph::kPlex_degen() {
 
 void Graph::kPlex_exact(int mode) {
 	Timer t;
-	cout<<"No. of threads: "<<omp_get_num_threads();
-	solvers = new KPLEX_BB_MATRIX*[omp_get_num_threads()];
+	cout<<"No. of threads: "<<omp_get_max_threads()<<endl;
+	solvers = new KPLEX_BB_MATRIX*[omp_get_max_threads()];
 
 	auto nn=n;
 	auto mm=m;
