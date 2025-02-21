@@ -89,8 +89,7 @@ public:
 		copy(src.degree, src.degree+n, degree);
 		copy(src.degree_in_S, src.degree_in_S+n, degree_in_S);
 		copy(src.level_id, src.level_id+n, level_id);
-		
-		// bmp.init(n);
+		bmp.init(n);
 		// LPI=new ui[matrix_size];
 	}
 	void deallocate(){
@@ -99,6 +98,7 @@ public:
 		delete[] degree_in_S;
 		delete[] degree;
 		delete[] level_id;
+		
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst){
 		neighbors=dst->neighbors;
@@ -642,8 +642,8 @@ else{ // pivot based branching
 		B.pop_back();
 		
 
-// if(TIME_OVER(st)){
-if(false){
+if(TIME_OVER(st)){
+
 		KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
 		// KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
 		B.clear();
