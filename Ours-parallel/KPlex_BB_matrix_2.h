@@ -681,7 +681,10 @@ if(TIME_OVER(st)){
 			td->loadThreadData(solvers[omp_get_thread_num()], R_end);
 			// First branch moves u to S
 			ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-
+			while(!td->Qv.empty()){
+					td->Qv.pop();
+					td->level_id[td->Qv.front()]=td->n;
+			} 
 			if(td->move_u_to_S_with_prune(u, S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
 		// the second branch exclude u from G	
 			{
