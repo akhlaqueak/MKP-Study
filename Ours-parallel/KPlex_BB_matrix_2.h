@@ -836,7 +836,7 @@ private:
 			{
 
 				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
-
+				B->clear();
 #pragma omp task firstprivate(td, u, S_end, R_end, level)
 				{
 					td->loadThreadData(solvers[omp_get_thread_num()], R_end);
@@ -859,9 +859,9 @@ private:
 					td->restore_SR_and_edges(S_end, R_end, S_end, t_old_R_end, level, t_old_removed_edges_n);
 					td->B->clear();
 					bool succeed = td->remove_u_from_S_with_prune(S_end, R_end, level);
-					// if (succeed && best_solution_size.load() > pre_best_solution_size)
-					// 	succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
-					// if (succeed&&td->remove_vertices_and_edges_with_prune(S_end, R_end, level))
+					if (succeed && best_solution_size.load() > pre_best_solution_size)
+						succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
+					if (succeed&&td->remove_vertices_and_edges_with_prune(S_end, R_end, level))
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 
 					td->deallocate();
