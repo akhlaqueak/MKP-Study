@@ -96,9 +96,8 @@ public:
 	: n(src.n), peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
 	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
 	sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
-		// R_end = n;
-		ctx = new Context(R_end);
 
+		ctx = new Context(R_end);
 		copy(src.SR, src.SR+R_end, ctx->SR);
 		for(ui i=0;i<R_end; i++){
 			ui u = src.SR[i];
@@ -106,7 +105,7 @@ public:
 			ctx->degree_in_S[i] = src.degree_in_S[u];
 			ctx->level_id[i] = src.level_id[u];
 		}
-
+		*B=*(src.B);
 	}
 	void deallocate(){
 		delete ctx;
@@ -122,7 +121,12 @@ public:
 		level_id = dst->level_id;
 		neighbors = dst->neighbors;
 		nonneighbors = dst->nonneighbors;
-
+		psz=dst->psz;
+		bmp=dst->bmp;
+		PI=dst->PI;
+		PIMax = dst->PIMax;
+		ISc=dst->ISc;
+		fill(SR_rid, SR_rid+n, n);
 		for(ui i=0;i<R_end;i++){
 			ui u = SR[i];
 			SR_rid[u] = i;
@@ -130,12 +134,6 @@ public:
 			degree[u]=ctx->degree[i];
 			level_id[u]=ctx->level_id[i];
 		}
-		psz=dst->psz;
-		bmp=dst->bmp;
-		B=dst->B;
-		PI=dst->PI;
-		PIMax = dst->PIMax;
-		ISc=dst->ISc;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
 		n = 0;
