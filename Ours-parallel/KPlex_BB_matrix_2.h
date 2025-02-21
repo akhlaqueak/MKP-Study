@@ -87,10 +87,12 @@ public:
 		copy(src.degree_in_S, src.degree_in_S+n, degree_in_S);
 		copy(src.level_id, src.level_id+n, level_id);
 		bmp.init(n);
-		// neighbors = new ui[n];
-		// nonneighbors = new ui[n];
-		// S2 = new ui[n];
-		// LPI=new ui[matrix_size];
+
+		neighbors = new ui[n];
+		nonneighbors = new ui[n];
+		S2 = new ui[n];
+		LPI=new ui[matrix_size];
+		psz.resize(n);
 	}
 	void deallocate(){
 		delete[] SR;
@@ -101,11 +103,11 @@ public:
 
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst){
-		neighbors=dst->neighbors;
-		nonneighbors=dst->nonneighbors;
-		S2=dst->S2;
-		LPI=dst->LPI;
-		psz=dst->psz;
+		// neighbors=dst->neighbors;
+		// nonneighbors=dst->nonneighbors;
+		// S2=dst->S2;
+		// LPI=dst->LPI;
+		// psz=dst->psz;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
 		n = 0;
