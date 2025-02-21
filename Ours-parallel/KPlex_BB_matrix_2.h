@@ -121,7 +121,7 @@ public:
 		S2=dst->S2;
 		LPI=dst->LPI;
 
-		SR = dst->SR; copy(ctx->SR, ctx->SR+n, SR);
+		SR = dst->SR; copy(ctx->SR, ctx->SR+R_end, SR);
 		SR_rid = dst->SR_rid; 
 		// copy(ctx->SR_rid, ctx->SR_rid+n, SR_rid);
 		for(ui i=0;i<R_end; i++) SR_rid[SR[i]] = i;
