@@ -89,7 +89,7 @@ public:
 	sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 		// R_end = n;
 		ctx = new Context(n);
-		copy(src.SR, src.SR+R_end, ctx->SR);
+		copy(src.SR, src.SR+n, ctx->SR);
 		copy(src.SR_rid, src.SR_rid+n, ctx->SR_rid);
 		copy(src.degree, src.degree+n, ctx->degree);
 		copy(src.degree_in_S, src.degree_in_S+n, ctx->degree_in_S);
