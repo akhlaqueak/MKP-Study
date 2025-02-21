@@ -91,7 +91,7 @@ public:
 		neighbors = new ui[n];
 		nonneighbors = new ui[n];
 		// S2 = new ui[n];
-		LPI=new ui[matrix_size];
+		// LPI=new ui[matrix_size];
 		psz.resize(n);
 	}
 	void deallocate(){
@@ -106,7 +106,7 @@ public:
 		// neighbors=dst->neighbors;
 		// nonneighbors=dst->nonneighbors;
 		S2=dst->S2;
-		// LPI=dst->LPI;
+		LPI=dst->LPI;
 		// psz=dst->psz;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
