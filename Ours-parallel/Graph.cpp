@@ -6,7 +6,7 @@ Timer thresh, branchings, bounding;
 std::atomic<ui> best_solution_size(0);
 std::vector<ui> kplex;
 class KPLEX_BB_MATRIX;
-KPLEX_BB_MATRIX *solvers[omp_get_num_threads()];
+KPLEX_BB_MATRIX **solvers;
 
 #include "KPlex_BB_matrix_2.h"
 #include "KPlex_BB.h"
@@ -258,6 +258,7 @@ void Graph::kPlex_degen() {
 
 void Graph::kPlex_exact(int mode) {
 	Timer t;
+	solvers = new KPLEX_BB_MATRIX[omp_get_num_threads()];
 
 	auto nn=n;
 	auto mm=m;
