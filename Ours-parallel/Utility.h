@@ -90,6 +90,16 @@ public:
 		buf = new ui[n];
 		fill(buf, buf + n, 0);
 	}
+
+	// MBitSet(const MBitSet& src){
+	// 	cap = src.cap;
+	// 	n = src.n;
+	// 	buf = src.buf;
+	// 	fill(buf, buf + n, 0);
+	// }
+	void nullify(){
+		buf=nullptr;
+	}
 	~MBitSet()
 	{
 		// todo doing double free, see what causing it and fix

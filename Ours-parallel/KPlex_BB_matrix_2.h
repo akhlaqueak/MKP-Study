@@ -111,6 +111,7 @@ public:
 	}
 	void deallocate(){
 		delete ctx;
+		bmp.nullify();
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst, ui R_end){
 		S2=dst->S2;
@@ -131,6 +132,7 @@ public:
 			level_id[u]=ctx->level_id[i];
 		}
 		psz=dst->psz;
+		bmp=dst->bmp;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
 		n = 0;
