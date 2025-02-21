@@ -5,6 +5,7 @@ double threshold=1e9;
 Timer thresh, branchings, bounding;
 std::atomic<ui> best_solution_size(0);
 std::vector<ui> kplex;
+KPLEX_BB_MATRIX *solvers[omp_get_num_threads()];
 
 #include "KPlex_BB_matrix_2.h"
 #include "KPlex_BB.h"
@@ -331,8 +332,8 @@ void Graph::kPlex_exact(int mode) {
 			// std::fill(degree, degree+n, 0);
 			// std::fill(rid, rid+n, 0);
 
-
 			KPLEX_BB_MATRIX *kplex_solver_m = new KPLEX_BB_MATRIX();
+			solvers[omp_get_thread_num()] = kplex_solver_m;
 			kplex_solver_m->allocateMemory(n);
 
 			ui search_cnt = 0;
