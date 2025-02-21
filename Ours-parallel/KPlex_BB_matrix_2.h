@@ -129,7 +129,7 @@ public:
 		degree_in_S = dst->degree_in_S; copy(ctx->degree_in_S, ctx->degree_in_S+n, degree_in_S);
 		degree = ctx->degree;
 		neighbors = dst->neighbors;
-		nonneighbors = dst->nonneighbors;
+		nonneighbors = new unsigned int[n];
 
 		// degree_in_S = dst->degree_in_S;
 		// SR = dst->SR;
