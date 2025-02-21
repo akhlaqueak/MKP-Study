@@ -67,7 +67,7 @@ public:
 	bool dense_search, forward_sol=false;
 public:
 	ui best_n_edges;
-	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src)
+	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
 	: B(src.B), n(src.n),
 	peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
 	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
@@ -76,7 +76,7 @@ public:
 	// KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end){
 	// 	*this=src; // all variables are copied here, then pointers are separtely copied afterwards... 
 		
-		SR=new ui[n];
+		SR=new ui[R_end];
 		SR_rid=new ui[n];
 		degree_in_S=new ui[n];
 		degree=new ui[n];
@@ -93,7 +93,7 @@ public:
 		copy(src.level_id, src.level_id+n, level_id);
 	}
 	void deallocate(){
-		delete[] SR;
+		// delete[] SR;
 		delete[] SR_rid;
 		// delete[] degree_in_S;
 		delete[] degree;
@@ -102,12 +102,17 @@ public:
 		delete[] nonneighbors;
 
 	}
-	void loadThreadData(KPLEX_BB_MATRIX* dst){
+	void loadThreadData(KPLEX_BB_MATRIX* dst, ui R_end){
 		S2=dst->S2;
 		LPI=dst->LPI;
-		ui* temp = degree_in_S;
-		degree_in_S = dst->degree_in_S;
-		for(ui i=0;i<n;i++) degree_in_S[i] = temp[i];
+		
+		ui* temp = degree_in_S; degree_in_S = dst->degree_in_S;
+		for(ui i=0;i<n;i++) degree_in_S[i] = temp[i]; 
+		delete[] temp;
+
+		temp = SR; SR=dst->SR;
+		for(ui i=0;i<R_end;i++)SR[i]=temp[i];
+		delete[] temp;
 		// psz=dst->psz;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
@@ -613,10 +618,10 @@ if(PART_BRANCH){
 			if(found_larger) continue;
 
 			if(TIME_OVER(st)){
-				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
+				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
 				#pragma omp task firstprivate(td, u, S_end, R_end, level)
 				{
-					td->loadThreadData(this);
+					td->loadThreadData(this, R_end);
 					ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					if(td->move_u_to_S_with_prune(u, S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);	
@@ -640,12 +645,12 @@ else{ // pivot based branching
 
 if(TIME_OVER(st)){
 
-		KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
+		KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
 		// KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
 		B.clear();
 		#pragma omp task firstprivate(td, u, S_end, R_end, level)
 		{
-			td->loadThreadData(this);
+			td->loadThreadData(this, R_end);
 			// First branch moves u to S
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 
