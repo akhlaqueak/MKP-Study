@@ -105,6 +105,7 @@ public:
 			ctx->degree_in_S[i] = src.degree_in_S[u];
 			ctx->level_id[i] = src.level_id[u];
 		}
+		B=new vector<ui>();
 		*B=*(src.B);
 	}
 	void deallocate(){
