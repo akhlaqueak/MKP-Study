@@ -6,9 +6,9 @@
 #include<chrono>
 using namespace std::chrono;
 // #define _SECOND_ORDER_PRUNING_
-#define THRESH 100
+#define THRESH 1000
 #define TIME_NOW chrono::steady_clock::now()
-#define TIME_OVER(ST) (chrono::duration_cast<chrono::microseconds>(TIME_NOW - ST).count()>THRESH)
+#define TIME_OVER(ST) ((chrono::duration_cast<chrono::microseconds>(TIME_NOW - ST)).count()>THRESH)
 
 // pruning switches
 #define S2RULE
@@ -103,8 +103,6 @@ public:
 
 	}
 	void loadThreadData(KPLEX_BB_MATRIX* dst){
-		// neighbors=dst->neighbors;
-		// nonneighbors=dst->nonneighbors;
 		S2=dst->S2;
 		LPI=dst->LPI;
 		// psz=dst->psz;
