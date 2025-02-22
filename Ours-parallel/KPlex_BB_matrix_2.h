@@ -524,6 +524,7 @@ private:
 
 	void BB_search(ui S_end, ui R_end, ui level, bool choose_zero, bool root_level = true, auto st = TIME_NOW)
 	{
+		empty_Qv();
 		ui best_sz = best_solution_size.load();
 		if (S_end > best_sz)
 			store_solution(S_end);
