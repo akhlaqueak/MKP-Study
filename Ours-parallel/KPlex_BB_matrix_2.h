@@ -855,26 +855,26 @@ private:
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 					td->deallocate();
 				}
-// 				B->clear();
-// 				KPLEX_BB_MATRIX *td1 = new KPLEX_BB_MATRIX(*this, R_end);
-// #pragma omp task firstprivate(td1, u, S_end, R_end, level)
-// 				{
-// 					td1->loadThreadData(solvers[omp_get_thread_num()], R_end);
-// 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-// 					// the second branch exclude u from G
-// 					while (!td1->Qv.empty()){
-// 						td1->Qv.pop();
-// 						td1->level_id[td1->Qv.front()] = td1->n;
-// 					}
-// 					td1->Qv.push(u);
-// 					td1->level_id[u] = level;
-// 					bool succeed = td1->collect_removable_vertices_and_edges(S_end, R_end, level);
-// 					if (succeed&&td1->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
-// 						td1->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
-// 					}
-// 					td1->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-// 					td1->deallocate();
-// 				}
+				B->clear();
+				KPLEX_BB_MATRIX *td1 = new KPLEX_BB_MATRIX(*this, R_end);
+#pragma omp task firstprivate(td1, u, S_end, R_end, level)
+				{
+					td1->loadThreadData(solvers[omp_get_thread_num()], R_end);
+					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+					// the second branch exclude u from G
+					while (!td1->Qv.empty()){
+						td1->Qv.pop();
+						td1->level_id[td1->Qv.front()] = td1->n;
+					}
+					td1->Qv.push(u);
+					td1->level_id[u] = level;
+					bool succeed = td1->collect_removable_vertices_and_edges(S_end, R_end, level);
+					if (succeed&&td1->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
+						td1->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
+					}
+					td1->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+					td1->deallocate();
+				}
 			}
 			else
 			{
