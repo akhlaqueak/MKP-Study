@@ -789,6 +789,7 @@ private:
 				else
 				{
 					ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+					empty_Qv();
 					if (move_u_to_S_with_prune(u, S_end, R_end, level))
 						BB_search(S_end, R_end, level + 1, false, false, st);
 					restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
