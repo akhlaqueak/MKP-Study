@@ -104,7 +104,7 @@ public:
 		copy(ctx->SR, ctx->SR + n, SR);
 		copy(ctx->level_id, ctx->level_id + n, level_id);
 		fill(SR_rid, SR_rid + n, n);
-		fill(level_id, level_id + n, n);
+		// fill(level_id, level_id + n, n);
 		for (ui i = 0; i < n; i++)
 			SR_rid[SR[i]] = i;
 		for (ui i = 0; i < R_end; i++)
