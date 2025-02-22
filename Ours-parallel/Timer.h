@@ -13,7 +13,6 @@ using namespace std::chrono;
 
 class Timer
 {
-#define TIME_NOW std::chrono::steady_clock::now()
 
 public:
 	Timer() : m_start(TIME_NOW) {}
