@@ -111,7 +111,7 @@ public:
 			ctx->level_id[i] = src.level_id[u];
 		}
 		B = new vector<ui>();
-		*B = std::move(*(src.B));
+		*B = (*(src.B));
 		// copy(src.B->begin(), src.B->end(), B->begin());
 		ids = src.ids;
 	}
