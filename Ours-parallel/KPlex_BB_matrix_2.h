@@ -76,7 +76,6 @@ public:
 
 	ui *SR;		// union of S and R, where S is at the front
 	ui *SR_rid; // reverse ID for SR
-	std::queue<ui> Qv;
 	ui *level_id;
 
 	std::vector<std::pair<ui, ui>> vp;
@@ -88,10 +87,13 @@ public:
 	ui *LPI;
 	ui *psz;
 	ui *peelOrder;
-	MBitSet bmp;
 	bool found_larger = false;
 	bool ctcp_enabled = false;
 	bool dense_search, forward_sol = false;
+
+	MBitSet bmp;
+	std::queue<ui> Qv;
+	vector<ui> B;
 
 public:
 	ui best_n_edges;
@@ -263,12 +265,12 @@ public:
 		psz = new ui[n];
 		peelOrder = new ui[n];
 
-		B = new vector<ui>();
+
 		PI = new vector<ui>();
 		PIMax = new vector<ui>();
 		ISc = new vector<ui>();
 
-		B->reserve(n);
+		B.reserve(n);
 		PI->reserve(n);
 		PIMax->reserve(n);
 		ISc->reserve(n);
@@ -841,18 +843,18 @@ private:
 		else
 		// pivot based branching
 		{ 
-			if (B->empty() || SR_rid[B->back()] >= R_end || SR_rid[B->back()] < S_end)
+			if (B.empty() || SR_rid[B.back()] >= R_end || SR_rid[B.back()] < S_end)
 				branch(S_end, R_end);
 
-			ui u = B->back();
-			B->pop_back();
+			ui u = B.back();
+			B.pop_back();
 
 			if (TIME_OVER(st))
 			{
 
 				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
 				
-				B->clear();
+				B.clear();
 #pragma omp task firstprivate(td, u, S_end, R_end, level)
 				{
 					td->loadThreadData(solvers[omp_get_thread_num()], R_end);
@@ -868,7 +870,7 @@ private:
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 					td->deallocate();
 				}
-				B->clear();
+				B.clear();
 				KPLEX_BB_MATRIX *td1 = new KPLEX_BB_MATRIX(*this, R_end);
 #pragma omp task firstprivate(td1, u, S_end, R_end, level)
 				{
@@ -900,7 +902,7 @@ private:
 				// the second branch exclude u from G
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 
-				B->clear();
+				B.clear();
 				while (!Qv.empty()){
 					Qv.pop();
 					level_id[Qv.front()] = n;
@@ -1896,7 +1898,7 @@ private:
 
 	void branch(ui S_end, ui R_end)
 	{
-		B->clear();
+		B.clear();
 		ui minnei = 0x3f3f3f3f;
 		ui pivot; // should it be 0xffffffff?
 		char *t_matrix = matrix + 0 * n;
@@ -1909,7 +1911,7 @@ private:
 				 support(S_end, v) == 1 ||
 				 support(S_end, 0) == 1))
 			{
-				B->push_back(v);
+				B.push_back(v);
 				return;
 			}
 			if (degree[v] < minnei)
@@ -1922,11 +1924,11 @@ private:
 		t_matrix = matrix + pivot * n;
 		for (ui i = S_end; i < R_end; i++)
 			if (!t_matrix[SR[i]])
-				B->push_back(SR[i]);
+				B.push_back(SR[i]);
 
 		auto comp = [&](int a, int b)
 		{ return degree[a] > degree[b]; };
-		std::sort(B->begin(), B->end(), comp);
+		std::sort(B.begin(), B.end(), comp);
 	}
 	ui getBranchings2(ui S_end, ui R_end, ui level)
 	{
@@ -2013,7 +2015,7 @@ private:
 					{
 						// rather than removing from C, we are changing the positions within C.
 						// When function completes
-						// [0...cend) holds all vertices C\B, and [cend, sz) holds the B->
+						// [0...cend) holds all vertices C\B, and [cend, sz) holds the B.
 						swap_pos(cend++, i);
 					}
 				}
