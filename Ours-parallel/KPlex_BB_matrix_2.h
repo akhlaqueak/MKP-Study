@@ -1433,7 +1433,7 @@ private:
 		for (; R_end < old_R_end; R_end++)
 		{ // insert u back into R
 			ui u = SR[R_end];
-			if(SR_rid[u]!=R_end) cout<<SR_rid[u]<<" "<<R_end<<endl;
+			if(SR_rid[u]!=R_end) cout<<SR_rid[u]<<" "<<R_end<<" " << n<<endl;
 			assert(SR_rid[u] == R_end);
 			assert(level_id[u] == level);
 			level_id[u] = n;
