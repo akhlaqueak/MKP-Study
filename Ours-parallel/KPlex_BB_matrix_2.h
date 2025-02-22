@@ -88,29 +88,16 @@ public:
 			level_id[i] = src.level_id[u];
 		}
 	}
-	void deallocate()
-	{
-		delete[] SR;
-		delete[] SR_rid;
-		delete[] degree_in_S;
-		delete[] degree;
-		delete[] level_id;
-	}
 
-	void loadThreadData(KPLEX_BB_MATRIX *dst, KPLEX_BB_MATRIX *ctx, ui R_end)
+	void loadContext(KPLEX_BB_MATRIX *dst, KPLEX_BB_MATRIX *ctx, ui R_end)
 	{
 		*this = *dst;
-		// : n(src.n), peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
-		//   _UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol),
-		//   sparse(src.sparse), dense_search(src.dense_search)
-
-
 		n = ctx->n;
 		peelOrder = ctx->peelOrder;
 		matrix = ctx->matrix;
 		matrix_size = ctx->matrix_size;
 		sparse = ctx->sparse;
-
+		B=ctx->B;
 		// S2 = dst->S2;
 		// LPI = dst->LPI;
 		// SR = dst->SR;
@@ -803,7 +790,7 @@ private:
 #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
 					{
 						KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
-						td->loadThreadData(solvers[omp_get_thread_num()], ctx, R_end);
+						td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
 						ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 						if (td->move_u_to_S_with_prune(u, S_end, R_end, level))
 							td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
@@ -820,7 +807,7 @@ private:
 			}
 		}
 
-		/*
+		
 		else
 		// pivot based branching
 		{ 
@@ -833,12 +820,12 @@ private:
 			if (TIME_OVER(st))
 			{
 
-				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
-				
+				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
 				B.clear();
-#pragma omp task firstprivate(td, u, S_end, R_end, level)
+#pragma omp task firstprivate(ctx, u, S_end, R_end, level)
 				{
-					td->loadThreadData(solvers[omp_get_thread_num()], R_end);
+					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
+					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
 					// First branch moves u to S
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					while (!td->Qv.empty())
@@ -849,27 +836,26 @@ private:
 					if (td->move_u_to_S_with_prune(u, S_end, R_end, level));
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-					td->deallocate();
 				}
 				B.clear();
-				KPLEX_BB_MATRIX *td1 = new KPLEX_BB_MATRIX(*this, R_end);
-#pragma omp task firstprivate(td1, u, S_end, R_end, level)
+				KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
+#pragma omp task firstprivate(ctx1, u, S_end, R_end, level)
 				{
-					td1->loadThreadData(solvers[omp_get_thread_num()], R_end);
+					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
+					td->loadContext(solvers[omp_get_thread_num()], ctx1, R_end);
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					// the second branch exclude u from G
-					while (!td1->Qv.empty()){
-						td1->Qv.pop();
-						td1->level_id[td1->Qv.front()] = td1->n;
+					while (!td->Qv.empty()){
+						td->Qv.pop();
+						td->level_id[td->Qv.front()] = td->n;
 					}
-					td1->Qv.push(u);
-					td1->level_id[u] = level;
-					bool succeed = td1->collect_removable_vertices_and_edges(S_end, R_end, level);
-					if (succeed&&td1->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
-						td1->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
+					td->Qv.push(u);
+					td->level_id[u] = level;
+					bool succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
+					if (succeed&&td->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
+						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					}
-					td1->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-					td1->deallocate();
+					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 				}
 			}
 			else
@@ -896,7 +882,7 @@ private:
 				}
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 			}
-		}*/
+		}
 		restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 	}
 
