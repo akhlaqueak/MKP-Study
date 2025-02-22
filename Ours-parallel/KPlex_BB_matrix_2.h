@@ -73,13 +73,13 @@ public:
 	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
 	{
 		*this = src;
-		SR = new ui[R_end];
+		SR = new ui[n];
 		SR_rid = new ui[R_end];
 		degree_in_S = new ui[R_end];
 		degree = new ui[R_end];
 		level_id = new ui[R_end];
 		
-		copy(src.SR, src.SR + R_end, SR);
+		copy(src.SR, src.SR + n, SR);
 		for (ui i = 0; i < R_end; i++)
 		{
 			ui u = src.SR[i];
@@ -100,10 +100,11 @@ public:
 		B=ctx->B;
 		empty_Qv();
 
-		copy(ctx->SR, ctx->SR + R_end, SR);
+		copy(ctx->SR, ctx->SR + n, SR);
 		fill(SR_rid, SR_rid + n, n);
 		fill(level_id, level_id + n, n);
-		
+		for (ui i = 0; i < n; i++)
+			SR_rid[SR[i]] = i;
 		for (ui i = 0; i < R_end; i++)
 		{
 			ui u = SR[i];
@@ -1433,11 +1434,11 @@ private:
 		for (; R_end < old_R_end; R_end++)
 		{ // insert u back into R
 			ui u = SR[R_end];
-			if(SR_rid[u]!=R_end){
-				for(ui i=0;i<R_end;i++) cout<<SR_rid[SR[i]]<< " ";
-				cout<<": ";
-				cout<<SR_rid[u]<<" "<<R_end<<" " << old_R_end<<endl;
-			} 
+			// if(SR_rid[u]!=R_end){
+			// 	for(ui i=0;i<R_end;i++) cout<<SR_rid[SR[i]]<< " ";
+			// 	cout<<": ";
+			// 	cout<<SR_rid[u]<<" "<<R_end<<" " << old_R_end<<endl;
+			// } 
 			assert(SR_rid[u] == R_end);
 			assert(level_id[u] == level);
 			level_id[u] = n;
