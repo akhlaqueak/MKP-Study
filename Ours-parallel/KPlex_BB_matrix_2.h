@@ -64,7 +64,7 @@ public:
 	bool ctcp_enabled = false;
 	bool dense_search, forward_sol = false;
 
-	MBitSet bmp;
+	MBitSet* bmp;
 	std::queue<ui> Qv;
 	vector<ui> B;
 
@@ -98,20 +98,8 @@ public:
 		matrix_size = ctx->matrix_size;
 		sparse = ctx->sparse;
 		B=ctx->B;
-		// S2 = dst->S2;
-		// LPI = dst->LPI;
-		// SR = dst->SR;
-		// SR_rid = dst->SR_rid;
-		// degree_in_S = dst->degree_in_S;
-		// degree = dst->degree;
-		// level_id = dst->level_id;
-		// neighbors = dst->neighbors;
-		// nonneighbors = dst->nonneighbors;
-		// psz = dst->psz;
-		// bmp = dst->bmp;
-		// PI = dst->PI;
-		// PIMax = dst->PIMax;
-		// ISc = dst->ISc;
+		empty_Qv();
+
 		copy(ctx->SR, ctx->SR + R_end, SR);
 		fill(SR_rid, SR_rid + n, n);
 		fill(level_id, level_id + n, 0);
@@ -156,56 +144,56 @@ public:
 
 	~KPLEX_BB_MATRIX()
 	{
-		// if(matrix != NULL) {
-		// 	delete[] matrix;
-		// 	matrix = NULL;
-		// }
+		if(matrix != nullptr) {
+			delete[] matrix;
+			matrix = nullptr;
+		}
 #ifdef _SECOND_ORDER_PRUNING_
-		if (cn != NULL)
+		if (cn != nullptr)
 		{
 			delete[] cn;
-			cn = NULL;
+			cn = nullptr;
 		}
 #endif
-		if (degree != NULL)
+		if (degree != nullptr)
 		{
 			delete[] degree;
-			degree = NULL;
+			degree = nullptr;
 		}
-		if (degree_in_S != NULL)
+		if (degree_in_S != nullptr)
 		{
 			delete[] degree_in_S;
-			degree_in_S = NULL;
+			degree_in_S = nullptr;
 		}
-		if (S2 != NULL)
+		if (S2 != nullptr)
 		{
 			delete[] S2;
-			S2 = NULL;
+			S2 = nullptr;
 		}
-		if (SR != NULL)
+		if (SR != nullptr)
 		{
 			delete[] SR;
-			SR = NULL;
+			SR = nullptr;
 		}
-		if (SR_rid != NULL)
+		if (SR_rid != nullptr)
 		{
 			delete[] SR_rid;
-			SR_rid = NULL;
+			SR_rid = nullptr;
 		}
-		if (neighbors != NULL)
+		if (neighbors != nullptr)
 		{
 			delete[] neighbors;
-			neighbors = NULL;
+			neighbors = nullptr;
 		}
-		if (nonneighbors != NULL)
+		if (nonneighbors != nullptr)
 		{
 			delete[] nonneighbors;
-			nonneighbors = NULL;
+			nonneighbors = nullptr;
 		}
-		if (level_id != NULL)
+		if (level_id != nullptr)
 		{
 			delete[] level_id;
-			level_id = NULL;
+			level_id = nullptr;
 		}
 	}
 
@@ -242,7 +230,7 @@ public:
 		PI->reserve(n);
 		PIMax->reserve(n);
 		ISc->reserve(n);
-		bmp.init(n);
+		bmp->init(n);
 	}
 
 	void load_graph(std::vector<ui> _ids, const std::vector<std::pair<ui, ui>> &vp)
@@ -817,7 +805,7 @@ private:
 			ui u = B.back();
 			B.pop_back();
 
-			if (TIME_OVER(st))
+			if (false or TIME_OVER(st))
 			{
 
 				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
@@ -831,7 +819,7 @@ private:
 					empty_Qv();
 					if (td->move_u_to_S_with_prune(u, S_end, R_end, level));
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
-					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+					// td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 				}
 				B.clear();
 				KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
@@ -848,7 +836,7 @@ private:
 					if (succeed&&td->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					}
-					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+					// td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 				}
 			}
 			else
@@ -1938,7 +1926,7 @@ private:
 				continue;
 			// skipping it, because this is a boundary vertex, and it can't have any non-neighbor candidate
 			// Lookup neig(&lookup, &g.adjList[u]);
-			// bmp.setup(g.adjList[u], g.V);
+			// bmp->setup(g.adjList[u], g.V);
 			ui *t_LPI = LPI + i * n;
 			for (ui j = S_end; j < R_end; j++)
 			{
@@ -1967,14 +1955,14 @@ private:
 			}
 			if (maxpi != -1)
 			{
-				bmp.reset(n);
+				bmp->reset(n);
 				for (ui i = 0; i < psz[maxpi]; i++)
-					bmp.set(LPI[maxpi * n + i]);
+					bmp->set(LPI[maxpi * n + i]);
 				// remove pi* from C
 				for (ui i = cend; i < R_end; i++)
 				{
 					ui v = SR[i];
-					if (bmp.test(v))
+					if (bmp->test(v))
 					{
 						// rather than removing from C, we are changing the positions within C.
 						// When function completes
@@ -1994,8 +1982,8 @@ private:
 					ui j = 0;
 					ui *t_LPI = LPI + i * n;
 					for (ui k = 0; k < psz[i]; k++)
-						if (!bmp.test(t_LPI[k]))
-							// if (!bmp.test(PI[u][k]))
+						if (!bmp->test(t_LPI[k]))
+							// if (!bmp->test(PI[u][k]))
 							// PI[u][j++] = PI[u][k];
 							t_LPI[j++] = t_LPI[k];
 					// LPI[u * n + j++] = LPI[u * n + k];
@@ -2157,10 +2145,10 @@ private:
 		// ISc[0... vlc) we have loose vertices
 
 		// Lookup inIS(&lookup, &ISc, true);
-		bmp.setup(ISc, n);
+		bmp->setup(ISc, n);
 		for (ui i = S_end; vlc < ub and i < R_end; i++)
 		{
-			if (bmp.test(i)) // this loop running for C\ISc
+			if (bmp->test(i)) // this loop running for C\ISc
 				continue;
 			ui vc = 0;
 			for (ui j = vlc; j < ISc->size(); j++) // this loop runs in ISc\LC
@@ -2176,13 +2164,13 @@ private:
 				vlc += vc;
 				ISc->push_back(i);
 				std::swap(ISc->back(), ISc->at(vlc++));
-				bmp.set(i);
+				bmp->set(i);
 			}
 		}
 
 		for (ui i = S_end; i < R_end; i++)
 		{
-			if (bmp.test(i) or support(S_end, SR[i]) >= ub) // this loop running for C\ISc
+			if (bmp->test(i) or support(S_end, SR[i]) >= ub) // this loop running for C\ISc
 				continue;
 			ui nv = 0;
 			for (ui j : *ISc)
@@ -2194,7 +2182,7 @@ private:
 			if (nv + support(S_end, SR[i]) <= ub)
 			{
 				ISc->push_back(i);
-				bmp.set(i);
+				bmp->set(i);
 			}
 		}
 		return ub;
