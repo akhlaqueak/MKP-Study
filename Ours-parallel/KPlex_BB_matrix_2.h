@@ -809,8 +809,8 @@ private:
 			if (TIME_OVER(st))
 			{
 
-				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
 				B.clear();
+				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
 #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
 				{
 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
