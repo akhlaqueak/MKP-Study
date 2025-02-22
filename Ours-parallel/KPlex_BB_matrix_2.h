@@ -870,7 +870,6 @@ private:
 					}
 					td1->Qv.push(u);
 					td1->level_id[u] = level;
-					bool succeed=true;
 					bool succeed = td1->collect_removable_vertices_and_edges(S_end, R_end, level);
 					if (succeed&&td1->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
 						td1->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
