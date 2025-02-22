@@ -837,7 +837,7 @@ private:
 				KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
 #pragma omp task firstprivate(ctx1, u, S_end, R_end, level)
 				{
-					KPLEX_BB_MATRIX *td1 = new KPLEX_BB_MATRIX();
+					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
 					td->loadContext(solvers[omp_get_thread_num()], ctx1, R_end);
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					// the second branch exclude u from G
