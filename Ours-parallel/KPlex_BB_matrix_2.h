@@ -828,11 +828,7 @@ private:
 					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
 					// First branch moves u to S
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-					while (!td->Qv.empty())
-					{
-						td->Qv.pop();
-						td->level_id[td->Qv.front()] = td->n;
-					}
+					empty_Qv();
 					if (td->move_u_to_S_with_prune(u, S_end, R_end, level));
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
@@ -845,10 +841,7 @@ private:
 					td->loadContext(solvers[omp_get_thread_num()], ctx1, R_end);
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					// the second branch exclude u from G
-					while (!td->Qv.empty()){
-						td->Qv.pop();
-						td->level_id[td->Qv.front()] = td->n;
-					}
+					empty_Qv();
 					td->Qv.push(u);
 					td->level_id[u] = level;
 					bool succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
@@ -863,17 +856,14 @@ private:
 
 				// First branch moves u to S
 				ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-
+				empty_Qv();
 				if (move_u_to_S_with_prune(u, S_end, R_end, level))
 					BB_search(S_end, R_end, level + 1, false, false, st);
 				// the second branch exclude u from G
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 
 				B.clear();
-				while (!Qv.empty()){
-					Qv.pop();
-					level_id[Qv.front()] = n;
-				}
+				empty_Qv();
 				Qv.push(u);
 				level_id[u] = level;
 				// bool succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
@@ -886,6 +876,12 @@ private:
 		restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 	}
 
+	void empty_Qv(){
+		while (!Qv.empty()){
+			level_id[Qv.front()] = n;
+			Qv.pop();
+		}
+	}
 	void collect_removable_vertices_based_on_total_edges(ui S2_n, ui S_end, ui R_end, ui level)
 	{
 		vp.resize(R_end - S_end);
