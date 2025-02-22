@@ -25,32 +25,6 @@ using namespace std::chrono;
 
 class KPLEX_BB_MATRIX
 {
-	struct Context
-	{
-		ui *SR;
-		ui *SR_rid;
-		ui *degree_in_S;
-		ui *degree;
-		ui *level_id;
-
-		Context(ui n)
-		{
-			SR = new ui[n];
-			SR_rid = new ui[n];
-			degree_in_S = new ui[n];
-			degree = new ui[n];
-			level_id = new ui[n];
-		}
-
-		~Context()
-		{
-			delete[] SR;
-			delete[] SR_rid;
-			delete[] degree_in_S;
-			delete[] degree;
-			delete[] level_id;
-		}
-	};
 private:
 	ui n;
 	char *matrix;
@@ -98,9 +72,6 @@ public:
 public:
 	ui best_n_edges;
 	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
-		// : n(src.n), peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
-		//   _UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol),
-		//   sparse(src.sparse), dense_search(src.dense_search)
 	{
 		*this = src;
 		SR = new ui[R_end];
@@ -130,6 +101,17 @@ public:
 	void loadThreadData(KPLEX_BB_MATRIX *dst, KPLEX_BB_MATRIX *ctx, ui R_end)
 	{
 		*this = *dst;
+		// : n(src.n), peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
+		//   _UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol),
+		//   sparse(src.sparse), dense_search(src.dense_search)
+
+
+		n = ctx->n;
+		peelOrder = ctx->peelOrder;
+		matrix = ctx->matrix;
+		matrix_size = ctx->matrix_size;
+		sparse = ctx->sparse;
+		
 		// S2 = dst->S2;
 		// LPI = dst->LPI;
 		// SR = dst->SR;
