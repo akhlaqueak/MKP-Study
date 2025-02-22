@@ -101,8 +101,8 @@ public:
 		  sparse(src.sparse), dense_search(src.dense_search)
 	{
 
-		ctx = new Context(n);
-		copy(src.SR, src.SR + n, ctx->SR);
+		ctx = new Context(R_end);
+		copy(src.SR, src.SR + R_end, ctx->SR);
 		for (ui i = 0; i < R_end; i++)
 		{
 			ui u = src.SR[i];
@@ -112,7 +112,6 @@ public:
 		}
 		B = new vector<ui>();
 		*B = (*(src.B));
-		// copy(src.B->begin(), src.B->end(), B->begin());
 		ids = src.ids;
 	}
 	void deallocate()
@@ -137,11 +136,8 @@ public:
 		PIMax = dst->PIMax;
 		ISc = dst->ISc;
 		fill(SR_rid, SR_rid + n, n);
-		fill(level_id, level_id + n, 0);
-		for (ui i = 0; i < n; i++){
-			ui u = SR[i];
-			SR_rid[u] = i;
-		}
+		fill(level_id, level_id + n, n);
+		
 		for (ui i = 0; i < R_end; i++)
 		{
 			ui u = SR[i];
