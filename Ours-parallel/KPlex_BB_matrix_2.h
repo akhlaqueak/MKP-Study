@@ -29,7 +29,6 @@ private:
 	ui n;
 	char *matrix;
 	long long matrix_size;
-	Context *ctx;
 #ifdef _SECOND_ORDER_PRUNING_
 	ui *cn;
 	std::queue<std::pair<ui, ui>> Qe;
@@ -111,7 +110,7 @@ public:
 		matrix = ctx->matrix;
 		matrix_size = ctx->matrix_size;
 		sparse = ctx->sparse;
-		
+
 		// S2 = dst->S2;
 		// LPI = dst->LPI;
 		// SR = dst->SR;
