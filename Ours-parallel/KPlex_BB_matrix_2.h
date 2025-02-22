@@ -230,7 +230,8 @@ public:
 		PI->reserve(n);
 		PIMax->reserve(n);
 		ISc->reserve(n);
-		bmp->init(n);
+
+		bmp=new MBitSet(n); 
 	}
 
 	void load_graph(std::vector<ui> _ids, const std::vector<std::pair<ui, ui>> &vp)
