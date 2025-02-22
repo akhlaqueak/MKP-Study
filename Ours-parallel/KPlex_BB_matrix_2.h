@@ -77,15 +77,16 @@ public:
 		SR_rid = new ui[R_end];
 		degree_in_S = new ui[R_end];
 		degree = new ui[R_end];
-		level_id = new ui[R_end];
+		level_id = new ui[n];
 		
 		copy(src.SR, src.SR + n, SR);
+		copy(src.level_id, src.level_id + n, level_id);
 		for (ui i = 0; i < R_end; i++)
 		{
 			ui u = src.SR[i];
 			degree[i] = src.degree[u];
 			degree_in_S[i] = src.degree_in_S[u];
-			level_id[i] = src.level_id[u];
+			// level_id[i] = src.level_id[u];
 		}
 	}
 
@@ -101,6 +102,7 @@ public:
 		empty_Qv();
 
 		copy(ctx->SR, ctx->SR + n, SR);
+		copy(ctx->level_id, ctx->level_id + n, level_id);
 		fill(SR_rid, SR_rid + n, n);
 		fill(level_id, level_id + n, n);
 		for (ui i = 0; i < n; i++)
@@ -111,7 +113,7 @@ public:
 			SR_rid[u] = i;
 			degree_in_S[u] = ctx->degree_in_S[i];
 			degree[u] = ctx->degree[i];
-			level_id[u] = ctx->level_id[i];
+			// level_id[u] = ctx->level_id[i];
 		}
 		delete[] ctx->SR;
 		delete[] ctx->SR_rid;
