@@ -855,7 +855,7 @@ private:
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 					td->deallocate();
 				}
-
+				B->clear();
 				KPLEX_BB_MATRIX *td1 = new KPLEX_BB_MATRIX(*this, R_end);
 #pragma omp task firstprivate(td1, u, S_end, R_end, level)
 				{
