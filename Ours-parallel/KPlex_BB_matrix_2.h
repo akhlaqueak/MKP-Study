@@ -886,6 +886,7 @@ private:
 					BB_search(S_end, R_end, level + 1, false, false, st);
 				// the second branch exclude u from G
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+				B->clear();
 				while (!Qv.empty()){
 					Qv.pop();
 					level_id[Qv.front()] = n;
