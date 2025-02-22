@@ -102,7 +102,7 @@ public:
 
 		copy(ctx->SR, ctx->SR + R_end, SR);
 		fill(SR_rid, SR_rid + n, n);
-		fill(level_id, level_id + n, 0);
+		fill(level_id, level_id + n, n);
 		
 		for (ui i = 0; i < R_end; i++)
 		{
@@ -809,8 +809,8 @@ private:
 			if (TIME_OVER(st))
 			{
 
-				B.clear();
 				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
+				B.clear();
 #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
 				{
 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
