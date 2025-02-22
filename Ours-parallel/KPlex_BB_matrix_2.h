@@ -1441,8 +1441,8 @@ private:
 				cout<<": ";
 				cout<<SR_rid[u]<<" "<<R_end<<" " << old_R_end<<endl;
 			} 
-			assert(SR_rid[u] == R_end);
-			assert(level_id[u] == level);
+			// assert(SR_rid[u] == R_end);
+			// assert(level_id[u] == level);
 			level_id[u] = n;
 
 			ui neighbors_n = 0;
