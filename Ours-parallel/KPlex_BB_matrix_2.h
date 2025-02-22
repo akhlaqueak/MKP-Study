@@ -812,6 +812,7 @@ private:
 			{
 
 				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
+				ui old=R_end;
 				B.clear();
 #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
 				{
@@ -826,6 +827,7 @@ private:
 				}
 				B.clear();
 				KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
+				assert(old==R_end);
 #pragma omp task firstprivate(ctx1, u, S_end, R_end, level)
 				{
 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
