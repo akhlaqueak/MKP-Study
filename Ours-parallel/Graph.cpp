@@ -1,6 +1,7 @@
 #include "Graph.h"
 #include <atomic>
 #include <omp.h>
+
 double threshold=1e9;
 Timer thresh, branchings, bounding;
 std::atomic<ui> best_solution_size(0);

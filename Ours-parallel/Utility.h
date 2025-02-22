@@ -14,9 +14,10 @@
 #include <tuple>
 #include <queue>
 #include <set>
-
-#define NDEBUG
 #include <cassert>
+
+#define TIME_NOW std::chrono::steady_clock::now()
+#define NDEBUG
 using namespace std;
 //#define NO_TRUSS_PRUNE // This controls truss pruning in preprocessing, not in BBSearch
 
