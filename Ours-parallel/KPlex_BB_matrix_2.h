@@ -1,10 +1,10 @@
 #ifndef _KPLEX_BB_MATRIX_
 #define _KPLEX_BB_MATRIX_
+#include <chrono>
 #define TIME_NOW std::chrono::steady_clock::now()
 
 #include "Utility.h"
 #include "Timer.h"
-#include <chrono>
 using namespace std::chrono;
 // #define _SECOND_ORDER_PRUNING_
 #define THRESH 100
