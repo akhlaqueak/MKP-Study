@@ -805,7 +805,7 @@ private:
 			ui u = B.back();
 			B.pop_back();
 
-			if (false or TIME_OVER(st))
+			if (false and  TIME_OVER(st))
 			{
 
 				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
