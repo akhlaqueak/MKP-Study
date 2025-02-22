@@ -136,7 +136,7 @@ public:
 		PIMax = dst->PIMax;
 		ISc = dst->ISc;
 		fill(SR_rid, SR_rid + n, n);
-		fill(level_id, level_id + n, n);
+		fill(level_id, level_id + n, 0);
 		
 		for (ui i = 0; i < R_end; i++)
 		{
