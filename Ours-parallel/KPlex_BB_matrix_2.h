@@ -599,6 +599,7 @@ private:
 
 		if (S2_n >= 2)
 		{
+			empty_Qv();
 			collect_removable_vertices_based_on_total_edges(S2_n, S_end, R_end, level);
 			if (!remove_vertices_and_edges_with_prune(S_end, R_end, level))
 			{
@@ -839,8 +840,8 @@ private:
 					empty_Qv();
 					td->Qv.push(u);
 					td->level_id[u] = level;
-					bool succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
-					if (succeed&&td->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
+					// bool succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
+					if (td->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					}
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
