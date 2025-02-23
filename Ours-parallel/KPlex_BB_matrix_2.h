@@ -67,7 +67,7 @@ public:
 	MBitSet* bmp;
 	std::queue<ui> Qv;
 	vector<ui> B;
-
+	ui rend;
 public:
 	ui best_n_edges;
 	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
@@ -86,6 +86,7 @@ public:
 			degree_in_S[i] = src.degree_in_S[u];
 			level_id[i] = src.level_id[u];
 		}
+		rend=R_end;
 	}
 
 	void loadContext(KPLEX_BB_MATRIX *dst, KPLEX_BB_MATRIX *ctx, ui R_end)
@@ -98,9 +99,9 @@ public:
 		sparse = ctx->sparse;
 		B=ctx->B;
 		empty_Qv();
-
+		assert(ctx->rend == R_end);
 		copy(ctx->SR, ctx->SR + R_end, SR);
-		fill(SR_rid, SR_rid + n, -1);
+		fill(SR_rid, SR_rid + n, n);
 		fill(level_id, level_id + n, n);
 
 		for (ui i = 0; i < R_end; i++)
