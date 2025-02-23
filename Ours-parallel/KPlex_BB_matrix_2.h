@@ -100,7 +100,7 @@ public:
 		empty_Qv();
 
 		copy(ctx->SR, ctx->SR + R_end, SR);
-		fill(SR_rid, SR_rid + n, n);
+		fill(SR_rid, SR_rid + n, -1);
 		fill(level_id, level_id + n, n);
 
 		for (ui i = 0; i < R_end; i++)
