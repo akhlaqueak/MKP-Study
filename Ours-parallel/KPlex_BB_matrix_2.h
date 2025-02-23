@@ -102,8 +102,7 @@ public:
 		copy(ctx->SR, ctx->SR + R_end, SR);
 		fill(SR_rid, SR_rid + n, n);
 		fill(level_id, level_id + n, n);
-		for (ui i = 0; i < n; i++)
-			SR_rid[SR[i]] = i;
+
 		for (ui i = 0; i < R_end; i++)
 		{
 			ui u = SR[i];
@@ -113,7 +112,6 @@ public:
 			level_id[u] = ctx->level_id[i];
 		}
 		for(ui i=0;i<R_end; i++) assert(SR_rid[SR[i]]<R_end);
-
 		// delete[] ctx->SR;
 		// delete[] ctx->SR_rid;
 		// delete[] ctx->degree_in_S;
