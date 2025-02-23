@@ -813,8 +813,9 @@ private:
 			{
 
 				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
-				assert(SR_rid[u]<R_end);
+				if(SR_rid[u] >= R_end || SR_rid[u] < S_end) cout<<u<<" "<<SR_rid[u]<<" "<<S_end<<" "<<R_end<<endl;
 				assert(SR_rid[u]>=S_end);
+				assert(SR_rid[u]<R_end);
 				B.clear();
 #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
 				{
