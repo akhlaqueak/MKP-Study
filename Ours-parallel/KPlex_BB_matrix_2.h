@@ -74,7 +74,6 @@ public:
 	{
 		*this = src;
 		SR = new ui[R_end];
-		SR_rid = new ui[R_end];
 		degree_in_S = new ui[R_end];
 		degree = new ui[R_end];
 		level_id = new ui[n];
@@ -814,7 +813,8 @@ private:
 			{
 
 				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
-				assert(SR_rid[u]<R_end&&SR_rid[u]>=S_end);
+				assert(SR_rid[u]<R_end);
+				assert(SR_rid[u]>=S_end);
 				B.clear();
 #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
 				{
