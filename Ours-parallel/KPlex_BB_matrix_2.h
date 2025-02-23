@@ -814,12 +814,13 @@ private:
 			{
 
 				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
-
+				assert(SR_rid[u]<R_end&&SR_rid[u]>=S_end);
 				B.clear();
 #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
 				{
 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
 					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
+					assert(td->SR_rid[u]<R_end&&td->SR_rid[u]>=S_end);
 					// First branch moves u to S
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					empty_Qv();
@@ -834,6 +835,7 @@ private:
 				{
 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
 					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
+					assert(td->SR_rid[u]<R_end&&td->SR_rid[u]>=S_end);
 					td->B.clear();
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					// the second branch exclude u from G
