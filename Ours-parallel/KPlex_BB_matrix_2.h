@@ -869,14 +869,14 @@ private:
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 
 				B.clear();
-				empty_Qv();
-				Qv.push(u);
-				level_id[u] = level;
-				// bool succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
-				if (remove_vertices_and_edges_with_prune(S_end, R_end, level)){
-					BB_search(S_end, R_end, level + 1, false, false, st);
-				}
-				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+				// empty_Qv();
+				// Qv.push(u);
+				// level_id[u] = level;
+				// // bool succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
+				// if (remove_vertices_and_edges_with_prune(S_end, R_end, level)){
+				// 	BB_search(S_end, R_end, level + 1, false, false, st);
+				// }
+				// restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 			}
 		}
 		restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
