@@ -100,6 +100,7 @@ public:
 		B=ctx->B;
 		empty_Qv();
 		assert(ctx->rend == R_end);
+		rend=R_end;
 		copy(ctx->SR, ctx->SR + R_end, SR);
 		fill(SR_rid, SR_rid + n, n);
 		fill(level_id, level_id + n, n);
