@@ -808,7 +808,7 @@ private:
 
 			ui u = B.back();
 			B.pop_back();
-		for(ui i=0;i<R_end; i++) if(not SR_rid[SR[i]]<R_end){
+		for(ui i=0;i<R_end; i++) if(SR_rid[SR[i]]>=R_end){
 			cout<<" ["<<i<<", "<<SR_rid[SR[i]]<<", "<<R_end<<"]"<<endl;
 			for(ui j=0; j<R_end; j++) cout<<SR_rid[SR[j]]<<" ";
 			cout<<" ["<<S_end<<", "<<R_end<<"]"<<endl;
