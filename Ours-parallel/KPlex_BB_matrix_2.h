@@ -686,7 +686,7 @@ private:
 			return;
 		}
 		bounding.tick();
-		ui beta = R_end;
+		ui beta = 0;
 #ifdef PART_BOUND
 		if (bound(S_end, R_end) >= R_end)
 		{
