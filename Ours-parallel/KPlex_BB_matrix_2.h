@@ -1449,7 +1449,7 @@ private:
 		for (; R_end < old_R_end; R_end++)
 		{ // insert u back into R
 			ui u = SR[R_end];
-
+			SR_rid[u] = R_end;
 			// assert(SR_rid[u] == R_end);
 			// assert(level_id[u] == level);
 			level_id[u] = n;
