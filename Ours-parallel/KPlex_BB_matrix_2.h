@@ -884,7 +884,7 @@ private:
 				}
 			}
 		}
-		restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
+		// restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 	}
 
 	void empty_Qv(){
