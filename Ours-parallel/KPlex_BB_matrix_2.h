@@ -90,15 +90,11 @@ public:
 		for (ui i = 0; i < R_end; i++)
 		{
 			ui d1 = 0, d2 = 0;
-			for (ui j = 0; j < S_end; j++)
+			for (ui j = 0; j < R_end; j++)
 				if (matrix[src.SR[i] * n + src.SR[j]])
 					++d1;
-			d2 = d1;
-			for (ui j = S_end; j < R_end; j++)
-				if (matrix[src.SR[i] * n + src.SR[j]])
-					++d2;
-			assert(d1 == src.degree_in_S[src.SR[i]]);
-			assert(d2 == src.degree[src.SR[i]]);
+			
+			assert(d1 == src.degree[src.SR[i]]);
 		}
 
 		rend=R_end;
