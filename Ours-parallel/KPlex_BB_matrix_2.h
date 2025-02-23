@@ -73,6 +73,7 @@ public:
 	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
 	{
 		*this = src;
+		cout<<B.size();
 		SR = new ui[R_end];
 		SR_rid = new ui[R_end];
 		degree_in_S = new ui[R_end];
