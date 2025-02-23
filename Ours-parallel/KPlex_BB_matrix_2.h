@@ -842,6 +842,7 @@ private:
 					td->level_id[u] = level;
 					// bool succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
 					if (td->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
+						assert(old_R_end>R_end);
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					}
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
