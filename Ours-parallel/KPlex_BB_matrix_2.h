@@ -112,6 +112,8 @@ public:
 			degree[u] = ctx->degree[i];
 			level_id[u] = ctx->level_id[i];
 		}
+		for(ui i=0;i<R_end; i++) assert(SR_rid[SR[i]]<R_end);
+
 		// delete[] ctx->SR;
 		// delete[] ctx->SR_rid;
 		// delete[] ctx->degree_in_S;
@@ -809,7 +811,6 @@ private:
 			ui u = B.back();
 			B.pop_back();
 
-			for(ui i=0;i<R_end; i++) assert(SR_rid[SR[i]]<R_end);
 			if (TIME_OVER(st))
 			{
 
