@@ -73,7 +73,6 @@ public:
 	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
 	{
 		*this = src;
-		cout<<B.size()<<' ';
 		SR = new ui[R_end];
 		SR_rid = new ui[R_end];
 		degree_in_S = new ui[R_end];
@@ -114,11 +113,11 @@ public:
 			degree[u] = ctx->degree[i];
 			level_id[u] = ctx->level_id[i];
 		}
-		delete[] ctx->SR;
-		delete[] ctx->SR_rid;
-		delete[] ctx->degree_in_S;
-		delete[] ctx->degree;
-		delete[] ctx->level_id;
+		// delete[] ctx->SR;
+		// delete[] ctx->SR_rid;
+		// delete[] ctx->degree_in_S;
+		// delete[] ctx->degree;
+		// delete[] ctx->level_id;
 	}
 	KPLEX_BB_MATRIX(bool _ds = false)
 	{
@@ -827,24 +826,25 @@ private:
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 				}
-// 				B.clear();
-// 				KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
+				B.clear();
+				// KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
 
-// #pragma omp task firstprivate(ctx1, u, S_end, R_end, level)
-// 				{
-// 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
-// 					td->loadContext(solvers[omp_get_thread_num()], ctx1, R_end);
-// 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-// 					// the second branch exclude u from G
-// 					empty_Qv();
-// 					td->Qv.push(u);
-// 					td->level_id[u] = level;
-// 					bool succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
-// 					if (succeed&&td->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
-// 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
-// 					}
-// 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-// 				}
+#pragma omp task firstprivate(ctx, u, S_end, R_end, level)
+				{
+					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
+					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
+					td->B.clear();
+					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+					// the second branch exclude u from G
+					empty_Qv();
+					td->Qv.push(u);
+					td->level_id[u] = level;
+					bool succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
+					if (succeed&&td->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
+						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
+					}
+					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+				}
 			}
 			else
 			{
