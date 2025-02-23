@@ -76,7 +76,7 @@ public:
 		SR = new ui[R_end];
 		degree_in_S = new ui[R_end];
 		degree = new ui[R_end];
-		level_id = new ui[n];
+		level_id = new ui[R_end];
 		
 		copy(src.SR, src.SR + R_end, SR);
 		for (ui i = 0; i < R_end; i++)
@@ -86,6 +86,21 @@ public:
 			degree_in_S[i] = src.degree_in_S[u];
 			level_id[i] = src.level_id[u];
 		}
+
+		for (ui i = 0; i < R_end; i++)
+		{
+			ui d1 = 0, d2 = 0;
+			for (ui j = 0; j < S_end; j++)
+				if (matrix[src.SR[i] * n + src.SR[j]])
+					++d1;
+			d2 = d1;
+			for (ui j = S_end; j < R_end; j++)
+				if (matrix[src.SR[i] * n + src.SR[j]])
+					++d2;
+			assert(d1 == src.degree_in_S[src.SR[i]]);
+			assert(d2 == src.degree[src.SR[i]]);
+		}
+
 		rend=R_end;
 	}
 
@@ -832,33 +847,33 @@ private:
 					td->empty_Qv();
 					if (td->move_u_to_S_with_prune(u, S_end, R_end, level));
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
-					// td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 				}
 				B.clear();
 				// KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
 
-// #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
-// 				{
-// 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
-// 					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
-// 					assert(td->SR_rid[u]<R_end&&td->SR_rid[u]>=S_end);
-// 					td->B.clear();
-// 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-// 					// the second branch exclude u from G
-// 					td->empty_Qv();
-// 					td->Qv.push(u);
-// 					td->level_id[u] = level;
-// 					// bool succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
-// 					if (td->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
-// 						assert(old_R_end>R_end);
-// 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
-// 					}
-// 					// td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-// 				}
+#pragma omp task firstprivate(ctx, u, S_end, R_end, level)
+				{
+					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
+					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
+					assert(td->SR_rid[u]<R_end&&td->SR_rid[u]>=S_end);
+					td->B.clear();
+					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+					// the second branch exclude u from G
+					td->empty_Qv();
+					td->Qv.push(u);
+					td->level_id[u] = level;
+					// bool succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
+					if (td->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
+						assert(old_R_end>R_end);
+						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
+					}
+					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+				}
 			}
 			else
 			{
-
+				{
 					// First branch moves u to S
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					empty_Qv();
@@ -881,7 +896,7 @@ private:
 					restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 				}
 			}
-		// }
+		}
 		restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 	}
 
