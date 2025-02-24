@@ -877,22 +877,22 @@ private:
 					if (td->move_u_to_S_with_prune(u, S_end, R_end, level))
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-// 					td->nullify();
-// 					delete td;
-// 					td = nullptr;
-// 				}
-// 				B.clear();
-// 				KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
+					td->nullify();
+					delete td;
+					td = nullptr;
+				}
+				B.clear();
+				KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
 
-// #pragma omp task firstprivate(ctx1, u, S_end, R_end, level)
-// 				{
-// 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
-// 					td->loadContext(solvers[omp_get_thread_num()], ctx1, R_end);
-// 					delete ctx1;
-// 					ctx1 = nullptr;
+#pragma omp task firstprivate(ctx1, u, S_end, R_end, level)
+				{
+					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
+					td->loadContext(solvers[omp_get_thread_num()], ctx1, R_end);
+					delete ctx1;
+					ctx1 = nullptr;
 
-// 					td->B.clear();
-// 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+					td->B.clear();
+					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					// the second branch exclude u from G
 					td->empty_Qv();
 					td->Qv.push(u);
