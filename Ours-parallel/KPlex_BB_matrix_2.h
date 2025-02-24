@@ -76,15 +76,15 @@ public:
 	{
 		*this = src;
 		SR = new ui[R_end];
-		// degree_in_S = new ui[R_end];
-		// degree = new ui[R_end];
+		degree_in_S = new ui[R_end];
+		degree = new ui[R_end];
 		// level_id = new ui[R_end];
 		copy(src.SR, src.SR + R_end, SR);
-		// for(ui i=0;i<R_end;i++){
-		// 	degree[i] = src.degree[SR[i]];
-		// 	degree_in_S[i] = src.degree_in_S[SR[i]];
-		// 	level_id[i] = src.level_id[src.SR[i]];
-		// }
+		for(ui i=0;i<R_end;i++){
+			degree[i] = src.degree[SR[i]];
+			degree_in_S[i] = src.degree_in_S[SR[i]];
+			// level_id[i] = src.level_id[src.SR[i]];
+		}
 	}
 
 	void loadContext(KPLEX_BB_MATRIX *dst, KPLEX_BB_MATRIX *ctx, ui S_end, ui R_end)
@@ -102,34 +102,34 @@ public:
 		// fill(SR_rid, SR_rid + n, n);
 		// fill(level_id, level_id + n, n);
 
-		// for (ui i = 0; i < R_end; i++)
-		// {
-		// 	ui u = SR[i];
-		// 	SR_rid[u] = i;
-		// 	degree_in_S[u] = ctx->degree_in_S[i];
-		// 	degree[u] = ctx->degree[i];
-		// 	level_id[u] = ctx->level_id[i];
-		// }
-		
-		delete[] ctx->SR;
-		// delete[] ctx->degree_in_S;
-		// delete[] ctx->degree;
-		// delete[] ctx->level_id;
-
-		for(ui i=0;i<R_end; i++){
+		for (ui i = 0; i < R_end; i++)
+		{
 			ui u = SR[i];
 			SR_rid[u] = i;
 			level_id[u] = n;
-			degree[u]=degree_in_S[u]=0;
-			char* t_matrix = matrix+n*u;
-			for(ui j=0;j<R_end; j++){
-				ui v = SR[j];
-				if(t_matrix[v]){
-					degree[u]++;
-					if(j<S_end) degree_in_S[u]++;
-				}	
-			}
+			degree_in_S[u] = ctx->degree_in_S[i];
+			degree[u] = ctx->degree[i];
 		}
+		
+		delete[] ctx->SR;
+		delete[] ctx->degree_in_S;
+		delete[] ctx->degree;
+		delete[] ctx->level_id;
+
+		// for(ui i=0;i<R_end; i++){
+		// 	ui u = SR[i];
+		// 	SR_rid[u] = i;
+		// 	level_id[u] = n;
+		// 	degree[u]=degree_in_S[u]=0;
+		// 	char* t_matrix = matrix+n*u;
+		// 	for(ui j=0;j<R_end; j++){
+		// 		ui v = SR[j];
+		// 		if(t_matrix[v]){
+		// 			degree[u]++;
+		// 			if(j<S_end) degree_in_S[u]++;
+		// 		}	
+		// 	}
+		// }
 		ctx->nullify();
 		delete ctx;
 	}
