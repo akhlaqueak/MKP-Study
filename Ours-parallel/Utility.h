@@ -17,7 +17,7 @@
 #include <cassert>
 
 #define TIME_NOW std::chrono::steady_clock::now()
-// #define NDEBUG
+#define NDEBUG
 using namespace std;
 //#define NO_TRUSS_PRUNE // This controls truss pruning in preprocessing, not in BBSearch
 
@@ -99,7 +99,7 @@ public:
 	// 	fill(buf, buf + n, 0);
 	// }
 	void nullify(){
-		
+
 		buf=nullptr;
 	}
 	~MBitSet()
