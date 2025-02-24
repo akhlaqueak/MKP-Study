@@ -99,8 +99,8 @@ public:
 		B = ctx->B;
 		empty_Qv();
 		copy(ctx->SR, ctx->SR + R_end, SR);
-		fill(SR_rid, SR_rid + n, n);
-		fill(level_id, level_id + n, n);
+		// fill(SR_rid, SR_rid + n, n);
+		// fill(level_id, level_id + n, n);
 
 		for (ui i = 0; i < R_end; i++)
 		{
@@ -116,20 +116,6 @@ public:
 		delete[] ctx->degree;
 		delete[] ctx->level_id;
 
-		// for(ui i=0;i<R_end; i++){
-		// 	ui u = SR[i];
-		// 	SR_rid[u] = i;
-		// 	level_id[u] = n;
-		// 	degree[u]=degree_in_S[u]=0;
-		// 	char* t_matrix = matrix+n*u;
-		// 	for(ui j=0;j<R_end; j++){
-		// 		ui v = SR[j];
-		// 		if(t_matrix[v]){
-		// 			degree[u]++;
-		// 			if(j<S_end) degree_in_S[u]++;
-		// 		}	
-		// 	}
-		// }
 		ctx->nullify();
 		delete ctx;
 	}
