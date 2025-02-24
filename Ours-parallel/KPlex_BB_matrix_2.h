@@ -114,7 +114,7 @@ public:
 		delete[] ctx->SR;
 		delete[] ctx->degree_in_S;
 		delete[] ctx->degree;
-		delete[] ctx->level_id;
+		// delete[] ctx->level_id;
 
 		// for(ui i=0;i<R_end; i++){
 		// 	ui u = SR[i];
