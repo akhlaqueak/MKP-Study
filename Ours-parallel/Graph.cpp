@@ -1700,7 +1700,7 @@ int main(int argc, char *argv[])
 		graph->read_graph_binary();
 		graph->kPlex_exact(false);
 		graph->output_one_kplex();
-		delete graph;
+		// delete graph;
 		// delete graph; // there are some bugs in releasing memory
 	}
 	else if (argc == 4)
