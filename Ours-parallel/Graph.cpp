@@ -1319,6 +1319,5 @@ char filename[LEN_LIMIT];
 	}
 	else printf("[usage]: exe file k [dense]\n");
 	printf("-----------------------------------------------------------------------------------------\n\n");
-	delete graph;
 	return 0;
 }
