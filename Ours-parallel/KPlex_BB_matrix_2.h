@@ -78,27 +78,7 @@ public:
 		degree_in_S = new ui[R_end];
 		degree = new ui[R_end];
 		level_id = new ui[R_end];
-
 		copy(src.SR, src.SR + R_end, SR);
-		for (ui i = 0; i < R_end; i++)
-		{
-			ui u = src.SR[i];
-			degree[i] = src.degree[u];
-			degree_in_S[i] = src.degree_in_S[u];
-			level_id[i] = src.level_id[u];
-		}
-
-		for (ui i = 0; i < R_end; i++)
-		{
-			ui d1 = 0, d2 = 0;
-			for (ui j = 0; j < R_end; j++)
-				if (matrix[src.SR[i] * n + src.SR[j]])
-					++d1;
-
-			assert(d1 == src.degree[src.SR[i]]);
-		}
-
-		rend = R_end;
 	}
 
 	void loadContext(KPLEX_BB_MATRIX *dst, KPLEX_BB_MATRIX *ctx, ui R_end)
@@ -112,8 +92,6 @@ public:
 		sparse = ctx->sparse;
 		B = ctx->B;
 		empty_Qv();
-		assert(ctx->rend == R_end);
-		rend = R_end;
 		copy(ctx->SR, ctx->SR + R_end, SR);
 		fill(SR_rid, SR_rid + n, n);
 		fill(level_id, level_id + n, n);
@@ -126,8 +104,7 @@ public:
 			degree[u] = ctx->degree[i];
 			level_id[u] = ctx->level_id[i];
 		}
-		for (ui i = 0; i < R_end; i++)
-			assert(SR_rid[SR[i]] < R_end);
+
 		delete[] ctx->SR;
 		delete[] ctx->degree_in_S;
 		delete[] ctx->degree;
@@ -873,15 +850,6 @@ private:
 
 			ui u = B.back();
 			B.pop_back();
-			for (ui i = 0; i < R_end; i++)
-				if (SR_rid[SR[i]] >= R_end)
-				{
-					cout << " [" << i << ", " << SR_rid[SR[i]] << ", " << R_end << ", " << rend << "]" << endl;
-					for (ui j = 0; j < R_end; j++)
-						cout << SR_rid[SR[j]] << " ";
-					cout << " [" << S_end << ", " << R_end << "]" << endl;
-					assert(false);
-				}
 
 			if (TIME_OVER(st))
 			{
