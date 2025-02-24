@@ -390,6 +390,8 @@ void Graph::kPlex_exact(int mode) {
 	delete[] core;
 	delete[] peel_sequence;
 	delete[] vis;
+	delete[] degree;
+	delete[] rid;
 
 	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/")+1).c_str(), kplex.size(), t.elapsed()/1e6, search_time/1e6);
 
@@ -1317,5 +1319,6 @@ char filename[LEN_LIMIT];
 	}
 	else printf("[usage]: exe file k [dense]\n");
 	printf("-----------------------------------------------------------------------------------------\n\n");
+	delete graph;
 	return 0;
 }
