@@ -385,13 +385,13 @@ void Graph::kPlex_exact(int mode) {
 			}
 		if(kplex.size()>presize) for(ui i=0;i<kplex.size();i++)kplex[i]=out_mapping[kplex[i]];
 		delete[] out_mapping;
+		delete[] rid;
 	}
 	delete heap;
 	delete[] core;
 	delete[] peel_sequence;
 	delete[] vis;
 	delete[] degree;
-	delete[] rid;
 
 	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/")+1).c_str(), kplex.size(), t.elapsed()/1e6, search_time/1e6);
 
