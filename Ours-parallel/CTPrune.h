@@ -374,6 +374,7 @@ namespace CTPrune {
 		delete[] edges_pointer;
 		delete[] pend;
 		delete[] tri_cnt;
+		delete[] exists;
 
 		if(output) printf("*** After core_truss_copruning: n = %u, m = %lu (undirected)\n", n, m/2);
 	}
