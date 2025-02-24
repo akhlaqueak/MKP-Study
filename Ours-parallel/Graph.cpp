@@ -418,7 +418,7 @@ void Graph::kPlex_exact(int mode)
 				}
 			}
 #pragma omp barrier // All threads must arrive here before continuing
-			delete kplex_solver_m;
+			// delete kplex_solver_m;
 
 			ts_time = tt.elapsed();
 			if (search_cnt == 0)
