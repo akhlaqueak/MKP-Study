@@ -388,8 +388,8 @@ void Graph::kPlex_exact(int mode) {
 			 search_time=ts_time;
 			}
 		if(kplex.size()>presize) for(ui i=0;i<kplex.size();i++)kplex[i]=out_mapping[kplex[i]];
-		delete[] out_mapping;
-		delete[] rid;
+		// delete[] out_mapping;
+		// delete[] rid;
 	}
 	delete heap;
 	delete[] core;
