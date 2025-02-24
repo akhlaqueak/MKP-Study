@@ -369,7 +369,7 @@ void Graph::kPlex_exact(int mode) {
 					kplex_solver_m->kPlex(K, UB, kplex_local, true);
 				}
 			}
-			// delete kplex_solver_m;
+			delete kplex_solver_m;
 
 			ts_time = tt.elapsed();
 			if(search_cnt == 0) printf("search_cnt: 0, ave_density: 1, min_density: 1\n");
@@ -378,7 +378,11 @@ void Graph::kPlex_exact(int mode) {
 			delete[] degree;
 			delete[] rid;
 			delete[] exists;
-		}
+			
+#pragma omp barrier  // All threads must arrive here before continuing
+
+		} // parallel region ends
+
 	        #pragma omp parallel reduction(max : search_time)
 			{
 			 search_time=ts_time;
@@ -1304,7 +1308,7 @@ char filename[LEN_LIMIT];
 		graph->read_graph_binary();
 		graph->kPlex_exact(false);
 		graph->output_one_kplex();
-		// delete graph;
+		delete graph;
 		// delete graph; // there are some bugs in releasing memory
 	}
 	else if (argc == 4) {
