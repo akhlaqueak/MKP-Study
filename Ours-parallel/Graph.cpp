@@ -391,11 +391,11 @@ void Graph::kPlex_exact(int mode) {
 		// delete[] out_mapping;
 		// delete[] rid;
 	}
-	delete heap;
-	delete[] core;
-	delete[] peel_sequence;
-	delete[] vis;
-	delete[] degree;
+	// delete heap;
+	// delete[] core;
+	// delete[] peel_sequence;
+	// delete[] vis;
+	// delete[] degree;
 
 	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/")+1).c_str(), kplex.size(), t.elapsed()/1e6, search_time/1e6);
 
