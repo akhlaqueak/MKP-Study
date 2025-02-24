@@ -80,9 +80,9 @@ public:
 		level_id = new ui[R_end];
 		copy(src.SR, src.SR + R_end, SR);
 		for(ui i=0;i<R_end;i++){
-			degree[i] = degree[SR[i]];
-			degree_in_S[i] = degree_in_S[SR[i]];
-			level_id[i] = level_id[SR[i]];
+			degree[i] = src.degree[SR[i]];
+			degree_in_S[i] = src.degree_in_S[SR[i]];
+			level_id[i] = src.level_id[src.SR[i]];
 		}
 	}
 
