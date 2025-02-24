@@ -132,6 +132,7 @@ public:
 		delete[] ctx->degree_in_S;
 		delete[] ctx->degree;
 		delete[] ctx->level_id;
+		ctx->nullify();
 	}
 
 	void nullify()
