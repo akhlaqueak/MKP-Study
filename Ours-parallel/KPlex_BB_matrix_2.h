@@ -292,7 +292,8 @@ public:
 		PI = new vector<ui>();
 		PIMax = new vector<ui>();
 		ISc = new vector<ui>();
-
+		ids = new vector<ui>();
+		
 		B.reserve(n);
 		PI->reserve(n);
 		PIMax->reserve(n);
@@ -303,7 +304,7 @@ public:
 
 	void load_graph(std::vector<ui> _ids, const std::vector<std::pair<ui, ui>> &vp)
 	{
-		ids = new vector<ui>();
+		// ids = new vector<ui>();
 		*ids = _ids;
 		n = ids->size();
 		if (((long long)n) * n > matrix_size)
