@@ -5,7 +5,6 @@
 double threshold = 1e9;
 Timer thresh, branchings, bounding;
 std::atomic<ui> best_solution_size(0);
-std::vector<ui> kplex;
 class KPLEX_BB_MATRIX;
 KPLEX_BB_MATRIX **solvers;
 
@@ -298,6 +297,7 @@ void Graph::kPlex_exact(int mode)
 	Timer t;
 	cout << "No. of threads: " << omp_get_max_threads() << endl;
 	solvers = new KPLEX_BB_MATRIX *[omp_get_max_threads()];
+	std::vector<ui> kplex;
 
 	auto nn = n;
 	auto mm = m;
