@@ -105,10 +105,10 @@ public:
 			level_id[u] = ctx->level_id[i];
 		}
 
-		delete[] ctx->SR;
-		delete[] ctx->degree_in_S;
-		delete[] ctx->degree;
-		delete[] ctx->level_id;
+		// delete[] ctx->SR;
+		// delete[] ctx->degree_in_S;
+		// delete[] ctx->degree;
+		// delete[] ctx->level_id;
 		ctx->nullify();
 		// delete[] ctx;
 	}
