@@ -29,7 +29,6 @@ private:
 	ui n;
 	char *matrix;
 	long long matrix_size;
-	vector<ui> kplex;
 #ifdef _SECOND_ORDER_PRUNING_
 	ui *cn;
 	std::queue<std::pair<ui, ui>> Qe;
@@ -37,6 +36,7 @@ private:
 	long long removed_edges_n;
 #endif
 public:
+	vector<ui> kplex;
 	ui *degree;
 	ui *degree_in_S;
 
