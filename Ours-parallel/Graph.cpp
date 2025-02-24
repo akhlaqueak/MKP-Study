@@ -1,7 +1,7 @@
 #include "Graph.h"
 #include <atomic>
 #include <omp.h>
-
+std::vector<ui> kplex;
 double threshold = 1e9;
 Timer thresh, branchings, bounding;
 std::atomic<ui> best_solution_size(0);
@@ -297,7 +297,6 @@ void Graph::kPlex_exact(int mode)
 	Timer t;
 	cout << "No. of threads: " << omp_get_max_threads() << endl;
 	solvers = new KPLEX_BB_MATRIX *[omp_get_max_threads()];
-	std::vector<ui> kplex;
 
 	auto nn = n;
 	auto mm = m;
@@ -1575,7 +1574,7 @@ ept Graph::peeling(ListLinearHeap *linear_heap, ui *Qv, ui &Qv_n, ui d_threshold
 			// printf("here\n");
 
 			if (degree[u] > degree[v] * 2)
-			{	// binary search
+			{ // binary search
 				// if(false) {
 				ept v_n = pstart[v], start = pstart[u];
 				for (ept k = pstart[v]; k < pend[v]; k++)
