@@ -51,7 +51,7 @@ public:
 	ui *SR_rid; // reverse ID for SR
 	ui *level_id;
 	vector<ui> *PI, *PIMax, *ISc;
-	vector<ui> *ids;
+	vector<ui> ids;
 	ui *LPI;
 	ui *psz;
 	ui *peelOrder;
@@ -123,7 +123,7 @@ public:
 		matrix = nullptr;
 		degree = degree_in_S = neighbors = nonneighbors = SR_rid = SR = S2 = nullptr;
 		peelOrder = level_id = LPI = psz = nullptr;
-		PI = PIMax = ISc = ids = nullptr;
+		PI = PIMax = ISc  = nullptr;
 		bmp = nullptr;
 	}
 	KPLEX_BB_MATRIX(bool _ds = false)
@@ -240,11 +240,11 @@ public:
 			delete PIMax;
 			PIMax = nullptr;
 		}
-		if (ids != nullptr)
-		{
-			delete ids;
-			ids = nullptr;
-		}
+		// if (ids != nullptr)
+		// {
+		// 	delete ids;
+		// 	ids = nullptr;
+		// }
 	}
 
 	void allocateMemory(ui n)
@@ -274,7 +274,7 @@ public:
 		PI = new vector<ui>();
 		PIMax = new vector<ui>();
 		ISc = new vector<ui>();
-		ids = new vector<ui>();
+		// ids = new vector<ui>();
 
 		B.reserve(n);
 		PI->reserve(n);
@@ -286,9 +286,8 @@ public:
 
 	void load_graph(std::vector<ui> _ids, const std::vector<std::pair<ui, ui>> &vp)
 	{
-		ids = new vector<ui>();
-		*ids = _ids;
-		n = ids->size();
+		ids = _ids;
+		n = ids.size();
 		if (((long long)n) * n > matrix_size)
 		{
 			do
@@ -546,7 +545,7 @@ private:
 					{
 						best_n_edges = n_edges;
 						for (ui i = 0; i < size; i++)
-							kplex.push_back(ids->at(SR[i]));
+							kplex.push_back(ids.at(SR[i]));
 					}
 				}
 				else
@@ -556,7 +555,7 @@ private:
 					found_larger = true;
 					kplex.clear();
 					for (ui i = 0; i < size; i++)
-						kplex.push_back(ids->at(SR[i]));
+						kplex.push_back(ids.at(SR[i]));
 					best_n_edges = n_edges;
 				}
 			}
