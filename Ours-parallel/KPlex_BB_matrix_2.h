@@ -868,7 +868,7 @@ private:
 				{
 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
 					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
-					delete ctx;
+					// delete ctx;
 					ctx = nullptr;
 					assert(td->SR_rid[u] < R_end && td->SR_rid[u] >= S_end);
 					// First branch moves u to S
@@ -888,7 +888,7 @@ private:
 				{
 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
 					td->loadContext(solvers[omp_get_thread_num()], ctx1, R_end);
-					delete ctx1;
+					// delete ctx1;
 					ctx1 = nullptr;
 
 					td->B.clear();
