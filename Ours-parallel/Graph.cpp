@@ -417,8 +417,7 @@ void Graph::kPlex_exact(int mode)
 					kplex_solver_m->kPlex(K, UB, kplex_local, true);
 				}
 			}
-#pragma omp barrier // All threads must arrive here before continuing
-			// delete kplex_solver_m;
+
 
 			ts_time = tt.elapsed();
 			if (search_cnt == 0)
@@ -435,9 +434,14 @@ void Graph::kPlex_exact(int mode)
 		{
 			search_time = ts_time;
 		}
-		if (kplex.size() > presize)
-			for (ui i = 0; i < kplex.size(); i++)
-				kplex[i] = out_mapping[kplex[i]];
+		for(ui i=0;i<omp_get_max_threads(); i++){
+			if(solvers[i]->kplex.size()>kplex.size())
+				kplex = solvers[i]->kplex;
+			delete solvers[i];
+		}
+		// if (kplex.size() > presize)
+		// 	for (ui i = 0; i < kplex.size(); i++)
+		// 		kplex[i] = out_mapping[kplex[i]];
 		delete[] out_mapping;
 		delete[] rid;
 	}
