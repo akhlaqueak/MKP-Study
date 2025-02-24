@@ -99,6 +99,7 @@ public:
 	// 	fill(buf, buf + n, 0);
 	// }
 	void nullify(){
+		
 		buf=nullptr;
 	}
 	~MBitSet()

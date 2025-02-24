@@ -50,24 +50,25 @@ public:
 	ui *SR;		// union of S and R, where S is at the front
 	ui *SR_rid; // reverse ID for SR
 	ui *level_id;
-
-	std::vector<std::pair<ui, ui>> vp;
-	// std::vector<std::pair<ui,ui> > vp2;
-
-	bool sparse = true;
 	vector<ui> *PI, *PIMax, *ISc;
 	vector<ui> *ids;
 	ui *LPI;
 	ui *psz;
 	ui *peelOrder;
+
+	std::vector<std::pair<ui, ui>> vp;
+	// std::vector<std::pair<ui,ui> > vp2;
+
+	bool sparse = true;
 	bool found_larger = false;
 	bool ctcp_enabled = false;
 	bool dense_search, forward_sol = false;
 
-	MBitSet* bmp;
+	MBitSet *bmp;
 	std::queue<ui> Qv;
 	vector<ui> B;
 	ui rend;
+
 public:
 	ui best_n_edges;
 	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
@@ -77,7 +78,7 @@ public:
 		degree_in_S = new ui[R_end];
 		degree = new ui[R_end];
 		level_id = new ui[R_end];
-		
+
 		copy(src.SR, src.SR + R_end, SR);
 		for (ui i = 0; i < R_end; i++)
 		{
@@ -93,11 +94,11 @@ public:
 			for (ui j = 0; j < R_end; j++)
 				if (matrix[src.SR[i] * n + src.SR[j]])
 					++d1;
-			
+
 			assert(d1 == src.degree[src.SR[i]]);
 		}
 
-		rend=R_end;
+		rend = R_end;
 	}
 
 	void loadContext(KPLEX_BB_MATRIX *dst, KPLEX_BB_MATRIX *ctx, ui R_end)
@@ -109,10 +110,10 @@ public:
 		matrix = ctx->matrix;
 		matrix_size = ctx->matrix_size;
 		sparse = ctx->sparse;
-		B=ctx->B;
+		B = ctx->B;
 		empty_Qv();
 		assert(ctx->rend == R_end);
-		rend=R_end;
+		rend = R_end;
 		copy(ctx->SR, ctx->SR + R_end, SR);
 		fill(SR_rid, SR_rid + n, n);
 		fill(level_id, level_id + n, n);
@@ -125,12 +126,19 @@ public:
 			degree[u] = ctx->degree[i];
 			level_id[u] = ctx->level_id[i];
 		}
-		for(ui i=0;i<R_end; i++) assert(SR_rid[SR[i]]<R_end);
+		for (ui i = 0; i < R_end; i++)
+			assert(SR_rid[SR[i]] < R_end);
 		// delete[] ctx->SR;
 		// delete[] ctx->SR_rid;
 		// delete[] ctx->degree_in_S;
 		// delete[] ctx->degree;
 		// delete[] ctx->level_id;
+	}
+
+	void nullify()
+	{
+		matrix = degree = degree_in_S = neighbors = nonneighbors = SR_rid = SR =
+			level_id = PI = PIMax = psz = peelOrder = ISc = LPI = bmp = S2 = nullptr;
 	}
 	KPLEX_BB_MATRIX(bool _ds = false)
 	{
@@ -158,7 +166,8 @@ public:
 
 	~KPLEX_BB_MATRIX()
 	{
-		if(matrix != nullptr) {
+		if (matrix != nullptr)
+		{
 			delete[] matrix;
 			matrix = nullptr;
 		}
@@ -209,6 +218,47 @@ public:
 			delete[] level_id;
 			level_id = nullptr;
 		}
+		if (LPI != nullptr)
+		{
+			delete[] LPI;
+			LPI = nullptr;
+		}
+		if (psz != nullptr)
+		{
+			delete[] psz;
+			psz = nullptr;
+		}
+		if (peelOrder != nullptr)
+		{
+			delete[] peelOrder;
+			peelOrder = nullptr;
+		}
+		
+		if (bmp != nullptr)
+		{
+			delete bmp;
+			bmp = nullptr;
+		}
+		if (ISc != nullptr)
+		{
+			delete ISc;
+			ISc = nullptr;
+		}
+		if (PI != nullptr)
+		{
+			delete PI;
+			PI = nullptr;
+		}
+		if (PIMax != nullptr)
+		{
+			delete PIMax;
+			PIMax = nullptr;
+		}
+		if (ids != nullptr)
+		{
+			delete ids;
+			ids = nullptr;
+		}
 	}
 
 	void allocateMemory(ui n)
@@ -235,7 +285,6 @@ public:
 		psz = new ui[n];
 		peelOrder = new ui[n];
 
-
 		PI = new vector<ui>();
 		PIMax = new vector<ui>();
 		ISc = new vector<ui>();
@@ -245,7 +294,7 @@ public:
 		PIMax->reserve(n);
 		ISc->reserve(n);
 
-		bmp=new MBitSet(n); 
+		bmp = new MBitSet(n);
 	}
 
 	void load_graph(std::vector<ui> _ids, const std::vector<std::pair<ui, ui>> &vp)
@@ -811,50 +860,53 @@ private:
 			}
 		}
 
-		
 		else
 		// pivot based branching
-		{ 
+		{
 			if (B.empty() || SR_rid[B.back()] >= R_end || SR_rid[B.back()] < S_end)
 				branch(S_end, R_end);
 
 			ui u = B.back();
 			B.pop_back();
-		for(ui i=0;i<R_end; i++) if(SR_rid[SR[i]]>=R_end){
-			cout<<" ["<<i<<", "<<SR_rid[SR[i]]<<", "<<R_end<<", "<<rend<<"]"<<endl;
-			for(ui j=0; j<R_end; j++) cout<<SR_rid[SR[j]]<<" ";
-			cout<<" ["<<S_end<<", "<<R_end<<"]"<<endl;
-			assert(false);
-		}
+			for (ui i = 0; i < R_end; i++)
+				if (SR_rid[SR[i]] >= R_end)
+				{
+					cout << " [" << i << ", " << SR_rid[SR[i]] << ", " << R_end << ", " << rend << "]" << endl;
+					for (ui j = 0; j < R_end; j++)
+						cout << SR_rid[SR[j]] << " ";
+					cout << " [" << S_end << ", " << R_end << "]" << endl;
+					assert(false);
+				}
 
 			if (TIME_OVER(st))
 			{
 				ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 
 				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
-				assert(SR_rid[u]>=S_end);
-				assert(SR_rid[u]<R_end);
+				assert(SR_rid[u] >= S_end);
+				assert(SR_rid[u] < R_end);
 				B.clear();
 #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
 				{
 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
 					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
-					assert(td->SR_rid[u]<R_end&&td->SR_rid[u]>=S_end);
+					assert(td->SR_rid[u] < R_end && td->SR_rid[u] >= S_end);
 					// First branch moves u to S
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					td->empty_Qv();
-					if (td->move_u_to_S_with_prune(u, S_end, R_end, level));
-						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
+					if (td->move_u_to_S_with_prune(u, S_end, R_end, level))
+						;
+					td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-				// }
-				// B.clear();
-				// KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
+					// }
+					// B.clear();
+					// KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
 
-// #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
-// 				{
-// 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
-// 					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
-					assert(td->SR_rid[u]<R_end&&td->SR_rid[u]>=S_end);
+					// #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
+					// 				{
+					// 					KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
+					// 					td->loadContext(solvers[omp_get_thread_num()], ctx, R_end);
+					assert(td->SR_rid[u] < R_end && td->SR_rid[u] >= S_end);
 					td->B.clear();
 					// ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					// the second branch exclude u from G
@@ -862,11 +914,14 @@ private:
 					td->Qv.push(u);
 					td->level_id[u] = level;
 					// bool succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
-					if (td->remove_vertices_and_edges_with_prune(S_end, R_end, level)){
-						assert(old_R_end>R_end);
+					if (td->remove_vertices_and_edges_with_prune(S_end, R_end, level))
+					{
+						assert(old_R_end > R_end);
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					}
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+					td->nullify();
+					delete td;
 				}
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 			}
@@ -882,14 +937,15 @@ private:
 				}
 
 				{
-				// the second branch exclude u from G
+					// the second branch exclude u from G
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					B.clear();
 					empty_Qv();
 					Qv.push(u);
 					level_id[u] = level;
 					bool succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
-					if (succeed&&remove_vertices_and_edges_with_prune(S_end, R_end, level)){
+					if (succeed && remove_vertices_and_edges_with_prune(S_end, R_end, level))
+					{
 						BB_search(S_end, R_end, level + 1, false, false, st);
 					}
 					restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
@@ -899,8 +955,10 @@ private:
 		restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 	}
 
-	void empty_Qv(){
-		while (!Qv.empty()){
+	void empty_Qv()
+	{
+		while (!Qv.empty())
+		{
 			level_id[Qv.front()] = n;
 			Qv.pop();
 		}
