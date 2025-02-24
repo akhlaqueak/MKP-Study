@@ -286,7 +286,7 @@ public:
 
 	void load_graph(std::vector<ui> _ids, const std::vector<std::pair<ui, ui>> &vp)
 	{
-		// ids = new vector<ui>();
+		ids = new vector<ui>();
 		*ids = _ids;
 		n = ids->size();
 		if (((long long)n) * n > matrix_size)
