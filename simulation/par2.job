@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=test             ### Name of the job
+#SBATCH --job-name=par2             ### Name of the job
 #SBATCH --ntasks=1                    ### Number of Tasks
 #SBATCH --cpus-per-task=32              ### Number of Tasks per CPU
 #SBATCH --mem-per-cpu=5000                        ### Memory required, 4 gigabyte
@@ -311,7 +311,7 @@ dimacs9-CTR
 wikipedia_link_en
 '
 export OMP_NUM_THREADS=32
-solutions='UMKP-parallel' 
+solutions='UMKP-par2' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
 run_jobs 00:30:00
 
