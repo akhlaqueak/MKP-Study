@@ -959,7 +959,7 @@ private:
 			}
 			else
 				nn = S_end - degree_in_S[SR[i]];
-			// if(degree_in_S[SR[i]]>S_end) cout<<S_end<<" "<<degree_in_S[SR[i]]<<endl;
+			if(degree_in_S[SR[i]]>S_end) cout<<S_end<<" "<<degree_in_S[SR[i]]<<endl;
 			if (nn > max_nn)
 				max_nn = nn;
 			vp[i - S_end].first = SR[i];
