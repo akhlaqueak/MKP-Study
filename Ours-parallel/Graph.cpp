@@ -369,17 +369,17 @@ void Graph::kPlex_exact(int mode) {
 					kplex_solver_m->kPlex(K, UB, kplex_local, true);
 				}
 			}
-			delete kplex_solver_m;
-
-			ts_time = tt.elapsed();
-			if(search_cnt == 0) printf("search_cnt: 0, ave_density: 1, min_density: 1\n");
-			// else printf("search_cnt: %u, ave_density: %.5lf, min_density: %.5lf\n", search_cnt, total_density/search_cnt, min_density);
-			// printf("*** Search time: %s\n", Utility::integer_to_string(tt.elapsed()).c_str());
-			delete[] degree;
-			delete[] rid;
-			delete[] exists;
-			
 #pragma omp barrier  // All threads must arrive here before continuing
+			// delete kplex_solver_m;
+
+			// ts_time = tt.elapsed();
+			// if(search_cnt == 0) printf("search_cnt: 0, ave_density: 1, min_density: 1\n");
+			// // else printf("search_cnt: %u, ave_density: %.5lf, min_density: %.5lf\n", search_cnt, total_density/search_cnt, min_density);
+			// // printf("*** Search time: %s\n", Utility::integer_to_string(tt.elapsed()).c_str());
+			// delete[] degree;
+			// delete[] rid;
+			// delete[] exists;
+			
 
 		} // parallel region ends
 
