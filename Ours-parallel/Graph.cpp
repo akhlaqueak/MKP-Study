@@ -324,6 +324,7 @@ void Graph::kPlex_exact(int mode)
 	ListLinearHeap *heap = new ListLinearHeap(n, n - 1);
 
 	ui UB = degen(n, peel_sequence, core, pstart, edges, degree, vis, heap, true);
+	kplex.reserve(UB);
 	assert(kplex.size() >= K);
 	ui search_time = 0;
 	if (kplex.size() < UB)
