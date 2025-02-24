@@ -364,12 +364,12 @@ void Graph::kPlex_exact(int mode) {
 				if(density < min_density) min_density = density;
 				ui t_old_size = kplex_local.size();
 					kplex_solver_m->load_graph(ids, vp);
-#pragma omp barrier  // All threads must arrive here before continuing
 				#pragma omp taskgroup
 				{
 					kplex_solver_m->kPlex(K, UB, kplex_local, true);
 				}
 			}
+#pragma omp barrier  // All threads must arrive here before continuing
 			delete kplex_solver_m;
 
 			ts_time = tt.elapsed();
