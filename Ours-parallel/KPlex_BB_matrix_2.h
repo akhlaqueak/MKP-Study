@@ -104,6 +104,7 @@ public:
 	{
 		*this = *dst;
 		n = ctx->n;
+		K = ctx->K;
 		peelOrder = ctx->peelOrder;
 		matrix = ctx->matrix;
 		matrix_size = ctx->matrix_size;
@@ -828,6 +829,7 @@ private:
 
 			if (TIME_OVER(st))
 			{
+				ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 
 				KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
 				assert(SR_rid[u]>=S_end);
@@ -866,6 +868,7 @@ private:
 					}
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 				}
+				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 			}
 			else
 			{
