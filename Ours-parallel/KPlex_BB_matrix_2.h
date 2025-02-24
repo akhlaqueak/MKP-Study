@@ -128,17 +128,20 @@ public:
 		}
 		for (ui i = 0; i < R_end; i++)
 			assert(SR_rid[SR[i]] < R_end);
-		// delete[] ctx->SR;
-		// delete[] ctx->SR_rid;
-		// delete[] ctx->degree_in_S;
-		// delete[] ctx->degree;
-		// delete[] ctx->level_id;
+		delete[] ctx->SR;
+		delete[] ctx->SR_rid;
+		delete[] ctx->degree_in_S;
+		delete[] ctx->degree;
+		delete[] ctx->level_id;
 	}
 
 	void nullify()
 	{
-		matrix = degree = degree_in_S = neighbors = nonneighbors = SR_rid = SR =
-			level_id = PI = PIMax = psz = peelOrder = ISc = LPI = bmp = S2 = nullptr;
+		matrix = nullptr;
+		degree = degree_in_S = neighbors = nonneighbors = SR_rid = SR = S2 = nullptr;
+		peelOrder = level_id = LPI = psz = nullptr;
+		PI = PIMax = ISc = ids = nullptr;
+		bmp = nullptr;
 	}
 	KPLEX_BB_MATRIX(bool _ds = false)
 	{
@@ -233,7 +236,7 @@ public:
 			delete[] peelOrder;
 			peelOrder = nullptr;
 		}
-		
+
 		if (bmp != nullptr)
 		{
 			delete bmp;
