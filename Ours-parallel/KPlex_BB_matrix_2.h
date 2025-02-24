@@ -438,7 +438,7 @@ private:
 				if (!vis[j] && matrix[u * n + j])
 					--degree[j];
 		}
-#pragma omp critical
+#pragma omp critical(A)
 		{
 			if (!dense_search && (n - idx > best_solution_size.load()))
 			{
@@ -520,7 +520,7 @@ private:
 	void store_solution(ui size)
 	{
 
-#pragma omp critical
+#pragma omp critical(A)
 		{
 			if (size <= best_solution_size.load())
 			{
