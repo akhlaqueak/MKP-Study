@@ -364,22 +364,22 @@ void Graph::kPlex_exact(int mode) {
 				if(density < min_density) min_density = density;
 				ui t_old_size = kplex_local.size();
 					kplex_solver_m->load_graph(ids, vp);
-				#pragma omp taskgroup
-				{
-					kplex_solver_m->kPlex(K, UB, kplex_local, true);
-				}
+				// #pragma omp taskgroup
+				// {
+				// 	kplex_solver_m->kPlex(K, UB, kplex_local, true);
+				// }
 			}
-#pragma omp barrier  // All threads must arrive here before continuing
-			// delete kplex_solver_m;
+			delete kplex_solver_m;
 
-			// ts_time = tt.elapsed();
-			// if(search_cnt == 0) printf("search_cnt: 0, ave_density: 1, min_density: 1\n");
-			// // else printf("search_cnt: %u, ave_density: %.5lf, min_density: %.5lf\n", search_cnt, total_density/search_cnt, min_density);
-			// // printf("*** Search time: %s\n", Utility::integer_to_string(tt.elapsed()).c_str());
-			// delete[] degree;
-			// delete[] rid;
-			// delete[] exists;
+			ts_time = tt.elapsed();
+			if(search_cnt == 0) printf("search_cnt: 0, ave_density: 1, min_density: 1\n");
+			// else printf("search_cnt: %u, ave_density: %.5lf, min_density: %.5lf\n", search_cnt, total_density/search_cnt, min_density);
+			// printf("*** Search time: %s\n", Utility::integer_to_string(tt.elapsed()).c_str());
+			delete[] degree;
+			delete[] rid;
+			delete[] exists;
 			
+#pragma omp barrier  // All threads must arrive here before continuing
 
 		} // parallel region ends
 
@@ -388,14 +388,14 @@ void Graph::kPlex_exact(int mode) {
 			 search_time=ts_time;
 			}
 		if(kplex.size()>presize) for(ui i=0;i<kplex.size();i++)kplex[i]=out_mapping[kplex[i]];
-		// delete[] out_mapping;
-		// delete[] rid;
+		delete[] out_mapping;
+		delete[] rid;
 	}
-	// delete heap;
-	// delete[] core;
-	// delete[] peel_sequence;
-	// delete[] vis;
-	// delete[] degree;
+	delete heap;
+	delete[] core;
+	delete[] peel_sequence;
+	delete[] vis;
+	delete[] degree;
 
 	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/")+1).c_str(), kplex.size(), t.elapsed()/1e6, search_time/1e6);
 
