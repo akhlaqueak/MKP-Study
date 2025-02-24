@@ -129,7 +129,6 @@ public:
 		for (ui i = 0; i < R_end; i++)
 			assert(SR_rid[SR[i]] < R_end);
 		delete[] ctx->SR;
-		delete[] ctx->SR_rid;
 		delete[] ctx->degree_in_S;
 		delete[] ctx->degree;
 		delete[] ctx->level_id;
@@ -897,8 +896,7 @@ private:
 					// First branch moves u to S
 					ui pre_best_solution_size = best_solution_size.load(), t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					td->empty_Qv();
-					if (td->move_u_to_S_with_prune(u, S_end, R_end, level))
-						;
+					if (td->move_u_to_S_with_prune(u, S_end, R_end, level));
 					td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 					// }
