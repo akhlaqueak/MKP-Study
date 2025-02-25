@@ -279,14 +279,20 @@ del_prev() {
     done
 }
 
+# datasets='
+# wikipedia-link-en
+# dimacs9-CTR
+# dbpedia-link
+# dimacs9-USA
+# wikipedia-link-en13
+# delicious-ui
+# soc-sinaweibo
+# web-ClueWeb09
+# '
+
 datasets='
 wikipedia-link-en
-dimacs9-CTR
-dbpedia-link
-dimacs9-USA
 wikipedia-link-en13
-delicious-ui
-soc-sinaweibo
 web-ClueWeb09
 '
 
