@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#SBATCH --job-name=test             ### Name of the job
+#SBATCH --job-name=serial             ### Name of the job
 #SBATCH --ntasks=24                    ### Number of Tasks
 #SBATCH --cpus-per-task=1              ### Number of Tasks per CPU
 #SBATCH --mem-per-cpu=10000                        ### Memory required, 4 gigabyte
-#SBATCH --partition=express             ### Cheaha Partition
-#SBATCH --time=1:00:00                 ### Estimated Time of Completion, 1 hour
+#SBATCH --partition=short             ### Cheaha Partition
+#SBATCH --time=10:00:00                 ### Estimated Time of Completion, 1 hour
 #SBATCH --output=%x.out              ### Slurm Output file, %x is job name, %j is job id
 #SBATCH --error=%x.err               ### Slurm Error file, %x is job name, %j is job id
 #SBATCH --mail-type=END
@@ -21,7 +21,7 @@ run_jobs() {
                 {
                     # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
                     if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
-                        srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol ~/graphs/BK/$fn.bin $k >> $outfile 2>&1 &
+                        srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol ~/graphs/BK/$fn.bin $k $2 >> $outfile 2>&1 &
                     else
                         srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol -b -g ~/graphs/BK/$fn.bin -a exact -k $k -c 3 >> $outfile 2>&1 &
                     fi
@@ -280,25 +280,31 @@ del_prev() {
 }
 
 datasets='
-delicious-ui
-trackers
-dbpedia-link
-wikipedia_link_en
-edit-cebwiki
-wikipedia_link_ceb
-edit-svwiki
-livejournal-groupmemberships
-soc-sinaweibo
-web-ClueWeb09-50m
-web-wikipedia_link_en13-all
-bag-pubmed
+wikipedia-link-en
 dimacs9-CTR
+dbpedia-link
 dimacs9-USA
+wikipedia-link-en13
+delicious-ui
+soc-sinaweibo
+web-ClueWeb09
 '
 
-solutions='UMKP' 
+solutions='UMKP-ctcp
+UMKP-dis-UBR2
+UMKP-S_Br
+UMKP-R_Br
+UMKP-SR_Br
+UMKP-Pivot_Br
+UMKP-Default
+UMKP-S_Bound
+UMKP-R_Bound
+UMKP-SR_Bound' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
 run_jobs 00:30:00
+
+solutions='UMKP-Default'
+run_jobs 00:30:00 1
 
 # datasets=$(find ~/graphs/test25/*.bin -type f -exec basename {} \;)
 solutions='UMKP Maple kPlexT DiseMKP' 

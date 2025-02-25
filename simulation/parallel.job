@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#SBATCH --job-name=test             ### Name of the job
+#SBATCH --job-name=parallel             ### Name of the job
 #SBATCH --ntasks=1                    ### Number of Tasks
 #SBATCH --cpus-per-task=32              ### Number of Tasks per CPU
 #SBATCH --mem-per-cpu=5000                        ### Memory required, 4 gigabyte
-#SBATCH --partition=medium             ### Cheaha Partition
+#SBATCH --partition=short             ### Cheaha Partition
 #SBATCH --time=10:00:00                 ### Estimated Time of Completion, 1 hour
 #SBATCH --output=%x.out              ### Slurm Output file, %x is job name, %j is job id
 #SBATCH --error=%x.err               ### Slurm Error file, %x is job name, %j is job id
@@ -16,7 +16,7 @@ run_jobs() {
     for fn in $datasets; do
         for sol in $solutions; do
             for k in $krange; do
-                outfile=$fn-$sol-$k.out
+                outfile=$fn-$sol-$k-$OMP_NUM_THREADS.out
                 # grep -q ">>" $outfile || 
                 {
                     # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
@@ -286,34 +286,64 @@ keller4
 brock200-2
 p-hat500-1
 socfb-Duke14
-ia-wiki-Talk
-soc-buzznet
-soc-LiveMocha
-soc-gowalla
-sc-msdoor
-soc-youtube
-soc-digg
-sc-ldoor
-soc-youtube-snap
-soc-lastfm
-soc-pokec
-socfb-B-anon
-soc-orkut
-socfb-A-anon
-web-ClueWeb09-50m
-soc-sinaweibo
-delicious-ui
-trackers
-web-wikipedia_link_en13-all
-dimacs9-USA
-dbpedia-link
+ia-wiki-Talk 
+soc-buzznet 
+soc-LiveMocha 
+soc-gowalla 
+sc-msdoor 
+soc-youtube 
+soc-digg 
+sc-ldoor 
+soc-youtube-snap 
+soc-lastfm 
+soc-pokec 
+socfb-B-anon 
+soc-orkut 
+socfb-A-anon 
+wikipedia-link-en
 dimacs9-CTR
-wikipedia_link_en
+dbpedia-link
+dimacs9-USA
+wikipedia-link-en13
+delicious-ui
+soc-sinaweibo
+web-ClueWeb09
 '
 export OMP_NUM_THREADS=32
 solutions='UMKP-parallel' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
 run_jobs 00:10:00
+echo "done with $OMP_NUM_THREADS"
+
+export OMP_NUM_THREADS=16
+solutions='UMKP-parallel' 
+krange='2 3 4 5 6 7 8 9 10 15 20'
+run_jobs 00:10:00
+echo "done with $OMP_NUM_THREADS"
+
+export OMP_NUM_THREADS=8
+solutions='UMKP-parallel' 
+krange='2 3 4 5 6 7 8 9 10 15 20'
+run_jobs 00:10:00
+echo "done with $OMP_NUM_THREADS"
+
+export OMP_NUM_THREADS=4
+solutions='UMKP-parallel' 
+krange='2 3 4 5 6 7 8 9 10 15 20'
+run_jobs 00:10:00
+echo "done with $OMP_NUM_THREADS"
+
+export OMP_NUM_THREADS=2
+solutions='UMKP-parallel' 
+krange='2 3 4 5 6 7 8 9 10 15 20'
+run_jobs 00:10:00
+echo "done with $OMP_NUM_THREADS"
+
+export OMP_NUM_THREADS=1
+solutions='UMKP-parallel' 
+krange='2 3 4 5 6 7 8 9 10 15 20'
+run_jobs 00:10:00
+echo "done with $OMP_NUM_THREADS"
 
 # datasets=$(find ~/graphs/test25/*.bin -type f -exec basename {} \;)
 solutions='UMKP Maple kPlexT DiseMKP' 
