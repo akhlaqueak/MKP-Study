@@ -26,10 +26,10 @@ run_jobs() {
                         srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol -b -g ~/graphs/test25/$fn.bin -a exact -k $k -c 3 >> $outfile 2>&1 &
                     fi
                 }
+    wait
             done
         done
     done
-    wait
 }
 get_results() {
     result=results.out
@@ -288,22 +288,22 @@ soc-sinaweibo
 web-ClueWeb09
 '
 
-solutions='
-UMKP-ctcp
-UMKP-dis-UBR2
-UMKP-S_Br
-UMKP-R_Br
-UMKP-SR_Br
-UMKP-Pivot_Br
-UMKP-Default
-UMKP-S_Bound
-UMKP-R_Bound
-UMKP-SR_Bound' 
-solutions='UMKP-noBR1 UMKP-noBR2 UMKP-noBR12'
-krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:30:00
+# solutions='
+# UMKP-ctcp
+# UMKP-dis-UBR2
+# UMKP-S_Br
+# UMKP-R_Br
+# UMKP-SR_Br
+# UMKP-Pivot_Br
+# UMKP-Default
+# UMKP-S_Bound
+# UMKP-R_Bound
+# UMKP-SR_Bound' 
+# solutions='UMKP-noBR1 UMKP-noBR2 UMKP-noBR12'
+# krange='2 3 4 5 6 7 8 9 10 15 20'
+# run_jobs 00:30:00
 
-solutions='UMKP-Default'
+solutions='UMKP-Dense'
 run_jobs 00:30:00 1
 
 # datasets=$(find ~/graphs/test25/*.bin -type f -exec basename {} \;)
