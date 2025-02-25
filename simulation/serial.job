@@ -17,7 +17,7 @@ run_jobs() {
         for sol in $solutions; do
             for k in $krange; do
                 outfile=$fn-$sol-$k.out
-                grep -q ">>" $outfile || 
+                grep -q ">>" $fn-UMKP-Default-$k.out && 
                 {
                     # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
                     if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
@@ -41,7 +41,7 @@ get_results() {
         for (( i=1; i<$WORD_COUNT; i++ )); do
             echo -en "," >>$result
         done
-        echo -en "|," >>$result
+        # echo -en "|," >>$result
     done
     echo >>$result
 
@@ -50,7 +50,7 @@ get_results() {
         for sol in $solutions; do
             echo -en "${sol#*-}," >>$result
         done
-        echo -en "|," >>$result
+        # echo -en "|," >>$result
     done
     echo >>$result
 
@@ -62,7 +62,7 @@ get_results() {
             outfile=''
             for sol in $solutions; do
                 outfile=$fn-$sol-$k.out
-                op=$(grep $fn $outfile)
+                op=$(grep ">>" $outfile)
                 if [ -z "${op}" ]; then
                     line+=('9999999999')
                 else
@@ -75,7 +75,7 @@ get_results() {
             echo ${line[@]}
             for i in "${line[@]}"; do
                 if [ $i == '9999999999' ]; then
-                    echo -en 'x,' >>$result
+                    echo -en '×,' >>$result
                 elif [ $i == $m ]; then
                     echo $i | bc -l | xargs printf "*%.1f," >>$result
                 elif [ $i == $secm ]; then
@@ -84,13 +84,13 @@ get_results() {
                     echo $i | bc -l | xargs printf "%.1f," >>$result
                 fi
             done
-            echo -en "|," >>$result
+            # echo -en "|," >>$result
         done
         echo >>$result
     done
     cat $result
 }
-
+get_results
 
 get_results2() {
     result=results.out
@@ -279,20 +279,12 @@ del_prev() {
     done
 }
 
-# datasets='
-# wikipedia-link-en
-# dimacs9-CTR
-# dbpedia-link
-# dimacs9-USA
-# wikipedia-link-en13
-# delicious-ui
-# soc-sinaweibo
-# web-ClueWeb09
-# '
-
 datasets='
 wikipedia-link-en
+dbpedia-link
 wikipedia-link-en13
+delicious-ui
+soc-sinaweibo
 web-ClueWeb09
 '
 
@@ -307,6 +299,7 @@ UMKP-Default
 UMKP-S_Bound
 UMKP-R_Bound
 UMKP-SR_Bound' 
+solutions='UMKP-noBR1 UMKP-noBR2 UMKP-noBR12'
 krange='2 3 4 5 6 7 8 9 10 15 20'
 run_jobs 00:30:00
 

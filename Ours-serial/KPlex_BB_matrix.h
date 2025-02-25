@@ -16,7 +16,7 @@
 
 
 // Upper bounding switches... 
-#define SEESAW
+// #define SEESAW
 // #define COLORBOUND
 // #define PART_BOUND
 
