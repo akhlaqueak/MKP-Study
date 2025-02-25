@@ -17,7 +17,7 @@ run_jobs() {
         for sol in $solutions; do
             for k in $krange; do
                 outfile=$fn-$sol-$k-$OMP_NUM_THREADS.out
-                grep -q ">>" $fn-$sol-$k-32.out && 
+                grep -q ">>" $fn-$sol-$k-32.out && ! grep -q ">>" $outfile && 
                 {
                     # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
                     if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
@@ -318,31 +318,31 @@ web-ClueWeb09
 export OMP_NUM_THREADS=16
 solutions='UMKP-parallel' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:10:00
+run_jobs 00:30:00
 echo "done with $OMP_NUM_THREADS"
 
 export OMP_NUM_THREADS=8
 solutions='UMKP-parallel' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:10:00
+run_jobs 00:30:00
 echo "done with $OMP_NUM_THREADS"
 
 export OMP_NUM_THREADS=4
 solutions='UMKP-parallel' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:10:00
+run_jobs 00:30:00
 echo "done with $OMP_NUM_THREADS"
 
 export OMP_NUM_THREADS=2
 solutions='UMKP-parallel' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:10:00
+run_jobs 00:30:00
 echo "done with $OMP_NUM_THREADS"
 
 export OMP_NUM_THREADS=1
 solutions='UMKP-parallel' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:10:00
+run_jobs 00:30:00
 echo "done with $OMP_NUM_THREADS"
 
 # datasets=$(find ~/graphs/test25/*.bin -type f -exec basename {} \;)
