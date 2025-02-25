@@ -69,7 +69,8 @@ private:
 	bool ctcp_enabled=false;
 	bool dense_search, forward_sol;
 public:
-	ui best_n_edges;
+	ui best_n_edges=0;
+	ui nmkp = 0;
 	KPLEX_BB_MATRIX(bool _ds=false) {
 		n = 0;
 		matrix = nullptr;
@@ -92,6 +93,7 @@ public:
 		level_id = nullptr;
 		max_level = 0;
 		best_n_edges=0;
+		nmkp = 0;
 		dense_search=_ds;
 	}
 
@@ -389,7 +391,7 @@ private:
 		}
 		forward_sol = false;
 		printf("!!! BB_Search found a kplex of size: %u, n_edges: %u \n", size, n_edges);
-
+		nmkp++;
 		if(dense_search){
 			if(n_edges>best_n_edges){
 			best_n_edges = n_edges;
