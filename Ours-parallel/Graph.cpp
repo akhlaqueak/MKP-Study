@@ -8,7 +8,7 @@ std::atomic<ui> best_solution_size(0);
 class KPLEX_BB_MATRIX;
 KPLEX_BB_MATRIX **solvers;
 
-#include "KPlex_BB_matrix_2.h"
+#include "KPlex_BB_matrix.h"
 #include "KPlex_BB.h"
 #include "CTPrune.h"
 using namespace std;

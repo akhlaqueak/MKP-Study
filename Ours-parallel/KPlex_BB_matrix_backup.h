@@ -8,7 +8,7 @@ using namespace std::chrono;
 // #define _SECOND_ORDER_PRUNING_
 #define THRESH 100
 #define TIME_NOW chrono::steady_clock::now()
-#define TIME_OVER(ST) ((chrono::duration_cast<chrono::microseconds>(TIME_NOW - ST)).count()>THRESH)
+#define TIME_OVER(ST) (chrono::duration_cast<chrono::microseconds>(TIME_NOW - ST).count()>THRESH)
 
 // pruning switches
 #define S2RULE
@@ -24,26 +24,38 @@ using namespace std::chrono;
 
 #define CSIZE (R_end-S_end)
 
-struct Context{
+
+class KPLEX_BB_MATRIX {
+	class ThreadData{
+	public:
 		ui* SR;
 		ui* SR_rid;
-		ui* degree_in_S;
 		ui* degree;
+		ui* degree_in_S;
 		ui* level_id;
-		ui* neighbors;
-		ui* nonneighbors;
-
-	void save_context(ui n){
-		SR=new ui[n];
-		SR_rid=new ui[n];
-		degree_in_S=new ui[n];
-		degree=new ui[n];
-		level_id=new ui[n];
-		neighbors = new ui[n];
-		nonneighbors = new ui[n];
+		ui n;
+		ThreadData(KPLEX_BB_MATRIX* kp){
+			n=kp->n;
+			SR=new ui[n];
+			SR_rid=new ui[n];
+			degree=new ui[n];
+			degree_in_S=new ui[n];
+			level_id=new ui[n];
+			copy(kp->SR, kp->SR+n, SR);
+			copy(kp->SR_rid, kp->SR_rid+n, SR_rid);
+			copy(kp->degree, kp->degree+n, degree);
+			copy(kp->degree_in_S, kp->degree_in_S+n, degree_in_S);
+			copy(kp->level_id, kp->level_id+n, level_id);		
+		}
+	};
+	void loadTD(ThreadData* td){
+			n=td->n;
+			copy(td->SR, td->SR+n, SR);
+			copy(td->SR_rid, td->SR_rid+n, SR_rid);
+			copy(td->degree, td->degree+n, degree);
+			copy(td->degree_in_S, td->degree_in_S+n, degree_in_S);
+			copy(td->level_id, td->level_id+n, level_id);	
 	}
-};
-class KPLEX_BB_MATRIX {
 private:
 	ui n;
 	vector<ui> ids;
@@ -86,11 +98,11 @@ public:
 	bool dense_search, forward_sol=false;
 public:
 	ui best_n_edges;
-	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end)
+	KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src)
 	: B(src.B), n(src.n),
 	peelOrder(src.peelOrder), matrix(src.matrix), matrix_size(src.matrix_size), K(src.K),
 	_UB_(src._UB_), found_larger(src.found_larger), forward_sol(src.forward_sol), 
-	sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
+sparse(src.sparse), dense_search(src.dense_search), ids(src.ids){
 
 	// KPLEX_BB_MATRIX(const KPLEX_BB_MATRIX &src, ui R_end){
 	// 	*this=src; // all variables are copied here, then pointers are separtely copied afterwards... 
@@ -102,39 +114,49 @@ public:
 		level_id=new ui[n];
 		neighbors = new ui[n];
 		nonneighbors = new ui[n];
-		psz.resize(n);
-		bmp.init(n);
+		S2 = new ui[n];
 
 		copy(src.SR, src.SR+n, SR);
 		copy(src.SR_rid, src.SR_rid+n, SR_rid);
 		copy(src.degree, src.degree+n, degree);
 		copy(src.degree_in_S, src.degree_in_S+n, degree_in_S);
 		copy(src.level_id, src.level_id+n, level_id);
-	}
-	void deallocate(){
-		delete[] SR;
-		delete[] SR_rid;
-		// delete[] degree_in_S;
-		// delete[] degree;
-		delete[] level_id;
-		delete[] neighbors;
-		delete[] nonneighbors;
-
-	}
-	void loadThreadData(KPLEX_BB_MATRIX* dst, ui R_end){
-		S2=dst->S2;
-		LPI=dst->LPI;
 		
-		ui* temp = degree_in_S; degree_in_S = dst->degree_in_S;
-		for(ui i=0;i<n;i++) degree_in_S[i] = temp[i]; 
-		delete[] temp;
+		// bmp.init(n);
+		// LPI=new ui[matrix_size];
+	}
+	void loadTD(KPLEX_BB_MATRIX* dst){
+		// cout<<dst->neighbors<<" ";
+		// neighbors=dst->neighbors;
+		// nonneighbors=dst->nonneighbors;
+		// S2=dst->S2;
+		// LPI=dst->LPI;
 
-		temp = degree; degree=dst->degree;
-		for(ui i=0;i<n;i++){
-			degree[i]=temp[i]; 
-		}
-		delete[] temp;
-		// psz=dst->psz;
+		PIMax=move(dst->PIMax);
+		psz=move(dst->psz);
+		ISc=move(dst->ISc);
+		PI=move(dst->PI);
+		vp=move(dst->vp);
+	}
+	void unloadTD(KPLEX_BB_MATRIX* dst){
+		// neighbors=nullptr; 
+		// nonneighbors=nullptr;
+		// S2=nullptr;
+		// LPI=nullptr; 
+		
+		dst->PIMax=move(PIMax);
+		dst->psz=move(psz);
+		dst->ISc=move(ISc);
+		dst->PI=move(PI);
+		dst->vp=move(vp);
+		delete []SR;
+		delete []SR_rid;
+		delete []degree_in_S;
+		delete []degree;
+		delete []level_id;
+		delete []neighbors;
+		delete []nonneighbors;
+		delete []S2;
 	}
 	KPLEX_BB_MATRIX(bool _ds=false) {
 		n = 0;
@@ -612,12 +634,12 @@ private:
 		}
 		for(ui i = 0;i < R_end;i ++) assert(level_id[SR[i]] > level);
 #endif
-if(PART_BRANCH){
-
+// if(PART_BRANCH){
+if(true){
 // ******************* Adding our branching stuff here... 
 		ui t_R_end=R_end;
 
-		R_end = getBranchings(S_end, R_end, level);
+		R_end = getBranchings2(S_end, R_end, level);
 		while(R_end<t_R_end){
 		// branching vertices are now in R_end to t_R_end, and they are already sorted in peelOrder
 			// move branching vertex back to C
@@ -638,19 +660,27 @@ if(PART_BRANCH){
 			if(root_level) found_larger=false;
 			if(found_larger) continue;
 
+// #ifdef _SECOND_ORDER_PRUNING_
+// 			if(ctcp_enabled) {
+// 				while(!Qe.empty())Qe.pop();
+// 				t_old_removed_edges_n=removed_edges_n;
+// 			}
+// #endif
 			if(TIME_OVER(st)){
-				KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
+			// if(false){
+				// KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
+				ThreadData *td = new ThreadData(this);
 				#pragma omp task firstprivate(td, u, S_end, R_end, level)
 				{
-					td->loadThreadData(this, R_end);
-					ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-					if(td->move_u_to_S_with_prune(u, S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
-					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);	
-					td->deallocate();
+					loadTD(td);
+					ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+					if(move_u_to_S_with_prune(u, S_end, R_end, level)) BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
+					restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);	
+
 				}			
 			}
 			else{
-				ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+				ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 				if(move_u_to_S_with_prune(u, S_end, R_end, level)) BB_search(S_end, R_end, level+1, false, false, st);
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);				
 			}
@@ -665,30 +695,27 @@ else{ // pivot based branching
 		
 
 if(TIME_OVER(st)){
-
-		KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this, R_end);
+				ThreadData *td = new ThreadData(this);
 		// KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX(*this);
 		B.clear();
 		#pragma omp task firstprivate(td, u, S_end, R_end, level)
 		{
-			td->loadThreadData(this, R_end);
 			// First branch moves u to S
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-
-			if(td->move_u_to_S_with_prune(u, S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
+			loadTD(td);
+			if(move_u_to_S_with_prune(u, S_end, R_end, level)) BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
 		// the second branch exclude u from G	
 			{
-				td->restore_SR_and_edges(S_end, R_end, S_end, t_old_R_end, level, t_old_removed_edges_n);	
-				while(!td->Qv.empty()){
-					td->Qv.pop();
-					td->level_id[td->Qv.front()]=td->n;
+				restore_SR_and_edges(S_end, R_end, S_end, t_old_R_end, level, t_old_removed_edges_n);	
+				while(!Qv.empty()){
+					Qv.pop();
+					level_id[Qv.front()]=n;
 				} 
-				td->B.clear();
-				bool succeed = td->remove_u_from_S_with_prune(S_end, R_end, level);
-				if(succeed&&best_solution_size.load() > pre_best_solution_size) succeed = td->collect_removable_vertices_and_edges(S_end, R_end, level);
-				if(td->remove_vertices_and_edges_with_prune(S_end, R_end, level)) td->BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
+				B.clear();
+				bool succeed = remove_u_from_S_with_prune(S_end, R_end, level);
+				if(succeed&&best_solution_size.load() > pre_best_solution_size) succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
+				if(remove_vertices_and_edges_with_prune(S_end, R_end, level)) BB_search(S_end, R_end, level+1, false, false, TIME_NOW);
 			}
-			td->deallocate();
 		}
 }
 else{
@@ -755,9 +782,7 @@ else{
 			while(true) {
 				if(j == new_n) j = i+1;
 				if(j >= vp.size()||ub > best_sz||ub + vp.size() - j <= best_sz) break;
-				ui dj = ids[j];
-				assert(dj<vp.size());
-				ui u = vp[dj].first;
+				ui u = vp[ids[j]].first;
 				ui nn = vp[ids[j]].second;
 				if(t_support < nn) break;
 				if(t_matrix[u]) {
