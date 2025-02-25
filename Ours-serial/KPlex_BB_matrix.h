@@ -6,13 +6,13 @@
 // #define _SECOND_ORDER_PRUNING_
 
 // pruning switches
-// #define S2RULE
+#define S2RULE
 
 // SR_BRANCHING can take values S_branching, R_branching, SR_branching
 #define SR_BRANCHING S_branching
 // if PART_BRANCH is false, then pivot branch gets executed... 
-// #define PART_BRANCH (true)
-#define PART_BRANCH (K<=5&&sparse)
+#define PART_BRANCH (true)
+// #define PART_BRANCH (K<=5&&sparse)
 
 
 // Upper bounding switches... 
