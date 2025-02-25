@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #SBATCH --job-name=parallel             ### Name of the job
-#SBATCH --ntasks=1                    ### Number of Tasks
-#SBATCH --cpus-per-task=32              ### Number of Tasks per CPU
+#SBATCH --ntasks=2                    ### Number of Tasks
+#SBATCH --cpus-per-task=16              ### Number of Tasks per CPU
 #SBATCH --mem-per-cpu=5000                        ### Memory required, 4 gigabyte
 #SBATCH --partition=pascalnodes             ### Cheaha Partition
 #SBATCH --time=10:00:00                 ### Estimated Time of Completion, 1 hour
@@ -17,7 +17,7 @@ run_jobs() {
         for sol in $solutions; do
             for k in $krange; do
                 outfile=$fn-$sol-$k-$OMP_NUM_THREADS.out
-                # grep -q ">>" $outfile || 
+                grep -q ">>" $fn-$sol-$k-32.out && 
                 {
                     # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
                     if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
@@ -309,11 +309,11 @@ delicious-ui
 soc-sinaweibo
 web-ClueWeb09
 '
-export OMP_NUM_THREADS=32
-solutions='UMKP-parallel' 
-krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:10:00
-echo "done with $OMP_NUM_THREADS"
+# export OMP_NUM_THREADS=32
+# solutions='UMKP-parallel' 
+# krange='2 3 4 5 6 7 8 9 10 15 20'
+# run_jobs 00:10:00
+# echo "done with $OMP_NUM_THREADS"
 
 export OMP_NUM_THREADS=16
 solutions='UMKP-parallel' 
