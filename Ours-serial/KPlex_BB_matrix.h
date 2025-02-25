@@ -17,8 +17,8 @@
 
 // Upper bounding switches... 
 // #define SEESAW
-// #define COLORBOUND
-#define PART_BOUND
+#define COLORBOUND
+// #define PART_BOUND
 
 #define CSIZE (R_end-S_end)
 class KPLEX_BB_MATRIX {
