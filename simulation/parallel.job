@@ -50,7 +50,7 @@ get_results() {
         for sol in $solutions; do
             echo -en "${sol#*-}," >>$result
         done
-        echo -en "|," >>$result
+        # echo -en "|," >>$result
     done
     echo >>$result
 
@@ -76,7 +76,7 @@ get_results() {
             echo ${line[@]}
             for i in "${line[@]}"; do
                 if [ $i == '9999999999' ]; then
-                    echo -en 'x,' >>$result
+                    echo -en '×,' >>$result
                 elif [ $i == $m ]; then
                     echo $i | bc -l | xargs printf "*%.3f," >>$result
                 elif [ $i == $secm ]; then
@@ -85,7 +85,7 @@ get_results() {
                     echo $i | bc -l | xargs printf "%.3f," >>$result
                 fi
             done
-            echo -en "|," >>$result
+            # echo -en "|," >>$result
         done
         echo >>$result
     done
@@ -283,27 +283,27 @@ del_prev() {
     done
 }
 
+# hamming6-2
+# johnson8-4-4
+# keller4
+# brock200-2
+# p-hat500-1
+# socfb-Duke14
+# ia-wiki-Talk 
+# soc-buzznet 
+# soc-LiveMocha 
+# soc-gowalla 
+# sc-msdoor 
+# soc-youtube 
+# soc-digg 
+# sc-ldoor 
+# soc-youtube-snap 
+# soc-lastfm 
+# soc-pokec 
+# socfb-B-anon 
+# soc-orkut 
+# socfb-A-anon 
 datasets='
-hamming6-2
-johnson8-4-4
-keller4
-brock200-2
-p-hat500-1
-socfb-Duke14
-ia-wiki-Talk 
-soc-buzznet 
-soc-LiveMocha 
-soc-gowalla 
-sc-msdoor 
-soc-youtube 
-soc-digg 
-sc-ldoor 
-soc-youtube-snap 
-soc-lastfm 
-soc-pokec 
-socfb-B-anon 
-soc-orkut 
-socfb-A-anon 
 wikipedia-link-en
 dbpedia-link
 wikipedia-link-en13
