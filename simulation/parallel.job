@@ -61,13 +61,14 @@ get_results() {
             line=()
             outfile=''
             for sol in $solutions; do
-                outfile=$fn-$sol-$k-$OMP_NUM_THREADS.out
+                outfile=$fn-UMKP-parallel-$k-$sol.out
+                # outfile=$fn-$sol-$k-$OMP_NUM_THREADS.out
                 op=$(grep $fn $outfile)
                 if [ -z "${op}" ]; then
                     line+=('9999999999')
                 else
                     op=($op)
-                    line+=(${op[-3]})
+                    line+=(${op[-1]})
                 fi
             done
             m=$(printf "%s\n" "${line[@]}" | sort -rn | tail -n1)
@@ -77,11 +78,11 @@ get_results() {
                 if [ $i == '9999999999' ]; then
                     echo -en 'x,' >>$result
                 elif [ $i == $m ]; then
-                    echo $i | bc -l | xargs printf "*%.1f," >>$result
+                    echo $i | bc -l | xargs printf "*%.3f," >>$result
                 elif [ $i == $secm ]; then
-                    echo $i | bc -l | xargs printf "^%.1f," >>$result
+                    echo $i | bc -l | xargs printf "^%.3f," >>$result
                 else
-                    echo $i | bc -l | xargs printf "%.1f," >>$result
+                    echo $i | bc -l | xargs printf "%.3f," >>$result
                 fi
             done
             echo -en "|," >>$result
@@ -90,6 +91,9 @@ get_results() {
     done
     cat $result
 }
+get_results
+
+
 
 
 get_results2() {
@@ -301,9 +305,7 @@ socfb-B-anon
 soc-orkut 
 socfb-A-anon 
 wikipedia-link-en
-dimacs9-CTR
 dbpedia-link
-dimacs9-USA
 wikipedia-link-en13
 delicious-ui
 soc-sinaweibo
@@ -315,34 +317,34 @@ web-ClueWeb09
 # run_jobs 00:10:00
 # echo "done with $OMP_NUM_THREADS"
 
-export OMP_NUM_THREADS=16
-solutions='UMKP-parallel' 
-krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:30:00
-echo "done with $OMP_NUM_THREADS"
+# export OMP_NUM_THREADS=16
+# solutions='UMKP-parallel' 
+# krange='2 3 4 5 6 7 8 9 10 15 20'
+# run_jobs 00:30:00
+# echo "done with $OMP_NUM_THREADS"
 
-export OMP_NUM_THREADS=8
-solutions='UMKP-parallel' 
-krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:30:00
-echo "done with $OMP_NUM_THREADS"
+# export OMP_NUM_THREADS=8
+# solutions='UMKP-parallel' 
+# krange='2 3 4 5 6 7 8 9 10 15 20'
+# run_jobs 00:30:00
+# echo "done with $OMP_NUM_THREADS"
 
-export OMP_NUM_THREADS=4
-solutions='UMKP-parallel' 
-krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:30:00
-echo "done with $OMP_NUM_THREADS"
+# export OMP_NUM_THREADS=4
+# solutions='UMKP-parallel' 
+# krange='2 3 4 5 6 7 8 9 10 15 20'
+# run_jobs 00:30:00
+# echo "done with $OMP_NUM_THREADS"
 
 export OMP_NUM_THREADS=2
 solutions='UMKP-parallel' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:30:00
+run_jobs 00:10:00
 echo "done with $OMP_NUM_THREADS"
 
 export OMP_NUM_THREADS=1
 solutions='UMKP-parallel' 
 krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:30:00
+run_jobs 00:10:00
 echo "done with $OMP_NUM_THREADS"
 
 # datasets=$(find ~/graphs/test25/*.bin -type f -exec basename {} \;)
