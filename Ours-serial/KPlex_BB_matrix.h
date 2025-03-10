@@ -6,7 +6,7 @@
 // #define _SECOND_ORDER_PRUNING_
 
 // pruning switches
-// #define S2RULE
+#define S2RULE
 
 // SR_BRANCHING can take values S_branching, R_branching, SR_branching
 #define SR_BRANCHING S_branching
