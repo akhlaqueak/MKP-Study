@@ -1,6 +1,6 @@
 all : 
-	echo "\
-	#define S2RULE\
+	echo "\n\
+	#define S2RULE\n\
 	#define PART_BRANCH (K<=5&&sparse)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP main.cpp Graph.cpp -w
 clean:
