@@ -17,19 +17,16 @@ run_jobs() {
         for sol in $solutions; do
             for k in $krange; do
                 outfile=$fn-$sol-$k.out
-                grep -q ">>" $fn-UMKP-Default-$k.out &&
-                    {
                         # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
                         if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
                             srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol ~/graphs/test25/$fn.bin $k $2 >>$outfile 2>&1 &
                         else
                             srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol -b -g ~/graphs/test25/$fn.bin -a exact -k $k -c 3 >>$outfile 2>&1 &
                         fi
-                    }
-                wait
             done
         done
     done
+                wait
 }
 get_results() {
     result=results.out
