@@ -4,7 +4,7 @@
 #include "Utility.h"
 #include "Timer.h"
 #include "switches.h"
-// #define _SECOND_ORDER_PRUNING_
+#define _SECOND_ORDER_PRUNING_
 
 // pruning switches
 #define S2RULE
@@ -17,8 +17,8 @@
 
 
 // Upper bounding switches... 
-// #define SEESAW
-// #define COLORBOUND
+// #define SEESAW_BOUND
+// #define COLOR_BOUND
 // #define PART_BOUND
 
 #define CSIZE (R_end-S_end)
@@ -534,7 +534,7 @@ private:
 		#endif
 
 
-		#ifdef SEESAW
+		#ifdef SEESAW_BOUND
 		if (CSIZE>3*beta && seesawUB(S_end, R_end)<=best_solution_size) {
 		// if (seesawUB(S_end, R_end)<=best_solution_size) {
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
@@ -543,7 +543,7 @@ private:
 
 		#endif
 
-		#ifdef COLORBOUND
+		#ifdef COLOR_BOUND
 		// if (CSIZE>3*beta && seesawUB(S_end, R_end)<=best_solution_size) {
 		if (colorUB(S_end, R_end)<=best_solution_size) {
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
