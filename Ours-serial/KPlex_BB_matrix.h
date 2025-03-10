@@ -3,6 +3,7 @@
 
 #include "Utility.h"
 #include "Timer.h"
+#include "switches.h"
 // #define _SECOND_ORDER_PRUNING_
 
 // pruning switches

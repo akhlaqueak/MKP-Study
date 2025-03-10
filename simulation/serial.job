@@ -17,16 +17,16 @@ run_jobs() {
         for sol in $solutions; do
             for k in $krange; do
                 outfile=$fn-$sol-$k.out
-                grep -q ">>" $fn-UMKP-Default-$k.out && 
-                {
-                    # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
-                    if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
-                        srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol ~/graphs/test25/$fn.bin $k $2 >> $outfile 2>&1 &
-                    else
-                        srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol -b -g ~/graphs/test25/$fn.bin -a exact -k $k -c 3 >> $outfile 2>&1 &
-                    fi
-                }
-    wait
+                grep -q ">>" $fn-UMKP-Default-$k.out &&
+                    {
+                        # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
+                        if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
+                            srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol ~/graphs/test25/$fn.bin $k $2 >>$outfile 2>&1 &
+                        else
+                            srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol -b -g ~/graphs/test25/$fn.bin -a exact -k $k -c 3 >>$outfile 2>&1 &
+                        fi
+                    }
+                wait
             done
         done
     done
@@ -38,7 +38,7 @@ get_results() {
     WORD_COUNT=$(echo "$solutions" | wc -w)
     for k in $krange; do
         echo -en "**k=$k**," >>$result
-        for (( i=1; i<$WORD_COUNT; i++ )); do
+        for ((i = 1; i < $WORD_COUNT; i++)); do
             echo -en "," >>$result
         done
         # echo -en "|," >>$result
@@ -55,14 +55,14 @@ get_results() {
     echo >>$result
 
     for fn in $datasets; do
-        echo -en "$fn," >>$result
+        # echo -en "$fn," >>$result
         for k in $krange; do
 
             line=()
             outfile=''
             for sol in $solutions; do
                 outfile=$fn-$sol-$k.out
-                op=$(grep ">>" $outfile)
+                op=$(grep ">>" $outfile | head -1)
                 if [ -z "${op}" ]; then
                     line+=('9999999999')
                 else
@@ -99,7 +99,7 @@ get_results_dense() {
     WORD_COUNT=$(echo "$solutions" | wc -w)
     for k in $krange; do
         echo -en "**k=$k**," >>$result
-        for (( i=1; i<$WORD_COUNT; i++ )); do
+        for ((i = 1; i < $WORD_COUNT; i++)); do
             echo -en "," >>$result
         done
         # echo -en "|," >>$result
@@ -126,9 +126,9 @@ get_results_dense() {
                 op=$(grep "n_mkp" $outfile)
                 op=($op)
                 if [ -z "${op}" ]; then
-                    echo -en "×,×,×,×," >> $result
+                    echo -en "×,×,×,×," >>$result
                 else
-                    echo -en "${op[-7]},${op[-5]},${op[-3]},${op[-1]}," >> $result
+                    echo -en "${op[-7]},${op[-5]},${op[-3]},${op[-1]}," >>$result
                 fi
             done
             # echo -en "|," >>$result
@@ -176,7 +176,6 @@ get_kpsize() {
     done
     cat $result
 }
-
 
 get_kpsize() {
     # solutions='kplex-full kplex-doubt kPlexS Maple'
@@ -268,7 +267,7 @@ web-ClueWeb09
 # UMKP-Default
 # UMKP-S_Bound
 # UMKP-R_Bound
-# UMKP-SR_Bound' 
+# UMKP-SR_Bound'
 # solutions='UMKP-noBR1 UMKP-noBR2 UMKP-noBR12'
 krange='2 3 4 5 6 7 8 9 10 15 20'
 # run_jobs 00:30:00
@@ -277,51 +276,56 @@ solutions='UMKP-Dense'
 run_jobs 00:30:00 1
 
 # datasets=$(find ~/graphs/test25/*.bin -type f -exec basename {} \;)
-solutions='UMKP Maple kPlexT DiseMKP' 
+solutions='UMKP Maple kPlexT DiseMKP'
 
 get_results
 get_kpsize
 # get_cost
 
 for ds in $datasets; do
-echo -en "$ds,"
+    echo -en "$ds,"
     for k in $krange; do
         op=$(grep $ds-dense Ours-dense-$k.out)
         op=($op)
         if [ -z "${op}" ]; then
             echo -en ",,,,"
         else
-        echo -en "${op[4]},${op[6]},${op[8]},${op[10]},"
+            echo -en "${op[4]},${op[6]},${op[8]},${op[10]},"
         fi
     done
     echo
 done
 
-
 for ds in $datasets; do
-echo -en "$ds,"
+    echo -en "$ds,"
     for k in $krange; do
         op=$(grep $ds Ours-$k.out)
         op=($op)
         if [ -z "${op}" ]; then
             echo -en ","
         else
-        echo -en "${op[2]},"
+            echo -en "${op[2]},"
         fi
     done
     echo
 done
 
 for ds in $datasets; do
-echo -en "$ds,"
+    echo -en "$ds,"
     for k in $krange; do
         op=$(grep $ds Ours-counts-$k.out)
         op=($op)
         if [ -z "${op}" ]; then
             echo -en ",,"
         else
-        echo -en "${op[6]},${op[8]},"
+            echo -en "${op[6]},${op[8]},"
         fi
     done
     echo
+done
+
+for d in dbpedia-link wikipedia-link-en13 delicious-ui soc-sinaweibo web-ClueWeb09; do
+    for k in 6 7 8 9 10 15 20; do
+        cp $d-UMKP-ctcp-$k.out $d-UMKP-report-$k.out
+    done
 done
