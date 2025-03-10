@@ -92,82 +92,52 @@ get_results() {
 }
 get_results
 
-get_results2() {
+get_results_dense() {
     result=results.out
     rm $result
     echo -en "," >>$result
-    sn=($solutions)
+    WORD_COUNT=$(echo "$solutions" | wc -w)
     for k in $krange; do
-        for sol in $solutions; do
-            if [[ $sol == $sn ]]; then
-                echo -en "k=$k," >>$result
-            else
-                echo -en "," >>$result
-            fi
+        echo -en "**k=$k**," >>$result
+        for (( i=1; i<$WORD_COUNT; i++ )); do
+            echo -en "," >>$result
         done
-        echo -en "|," >>$result
+        # echo -en "|," >>$result
     done
+    echo >>$result
 
-    echo -en "\ndatasets," >>$result
-    
-
+    echo -en "datasets," >>$result
     for k in $krange; do
         for sol in $solutions; do
             echo -en "${sol#*-}," >>$result
         done
-        echo -en "|," >>$result
+        # echo -en "|," >>$result
     done
-
     echo >>$result
 
     for fn in $datasets; do
-        echo -en "${fn%.*}," >>$result
+        echo -en "$fn," >>$result
         for k in $krange; do
 
             line=()
+            outfile=''
             for sol in $solutions; do
-                outfile=$sol-$k.out
-                op=$(grep $fn $outfile)
+                outfile=$fn-$sol-$k.out
+                op=$(grep "n_mkp" $outfile)
+                op=($op)
                 if [ -z "${op}" ]; then
-                    line+=('9999999999')
+                    echo -en "×,×,×,×," >> $result
                 else
-                    op=($op)
-                    line+=(${op[-3]})
+                    echo -en "${op[-7]},${op[-5]},${op[-3]},${op[-1]}," >> $result
                 fi
             done
-            m=$(printf "%s\n" "${line[@]}" | sort -rn | tail -n1)
-            secm=$(printf "%s\n" "${line[@]}" | sort -rn | tail -n2 | head -n1)
-            echo ${line[@]}
-            for i in "${line[@]}"; do
-                if [ $i == '9999999999' ]; then
-                    echo -en 'x,' >>$result
-                elif [ $i == $m ]; then
-                    echo $i | bc -l | xargs printf "*%.1f," >>$result
-                elif [ $i == $secm ]; then
-                    echo $i | bc -l | xargs printf "^%.1f," >>$result
-                else
-                    echo $i | bc -l | xargs printf "%.1f," >>$result
-                fi
-            done
-            a=${line[0]}
-            b=${line[1]}
-            if [ $a == '9999999999' -a  $b == '9999999999' ]; then
-                    echo -en 'x,' >>$result
-            elif [ $a == '9999999999' ]; then
-                echo -en '+inf,' >>$result
-            elif [ $b == '9999999999' ]; then
-                echo -en '-inf,' >>$result
-            elif [ $a -gt $a ]; then
-                echo "$a/$b" | bc -l | xargs printf "+%.1f," >>$result
-            else
-                echo "$a/$b" | bc -l | xargs printf "-%.1f," >>$result
-            fi
-            echo -en "|," >>$result
+            # echo -en "|," >>$result
         done
         echo >>$result
     done
     cat $result
 }
+get_results_dense
 
 get_kpsize() {
     # solutions='kplex-full kplex-doubt kPlexS Maple'
