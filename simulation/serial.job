@@ -17,80 +17,79 @@ run_jobs() {
         for sol in $solutions; do
             for k in $krange; do
                 outfile=$fn-$sol-$k.out
-                grep -q ">>" ../$fn-UMKP-Default-$k.out &&
-                    {
+
                         # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
                         if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
                             srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol ~/graphs/test25/$fn.bin $k $2 >>$outfile 2>&1 &
                         else
                             srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol -b -g ~/graphs/test25/$fn.bin -a exact -k $k -c 3 >>$outfile 2>&1 &
                         fi
-                    }
-                wait
+
             done
         done
     done
+    wait
 }
-get_results() {
-    result=results.out
-    rm $result
-    echo -en "," >>$result
-    WORD_COUNT=$(echo "$solutions" | wc -w)
-    for k in $krange; do
-        echo -en "**k=$k**," >>$result
-        for ((i = 1; i < $WORD_COUNT; i++)); do
-            echo -en "," >>$result
-        done
-        # echo -en "|," >>$result
-    done
-    echo >>$result
-
-    echo -en "datasets," >>$result
-    for k in $krange; do
-        for sol in $solutions; do
-            echo -en "${sol#*-}," >>$result
-        done
-        # echo -en "|," >>$result
-    done
-    echo >>$result
-
-    for fn in $datasets; do
-        # echo -en "$fn," >>$result
+    get_results() {
+        result=results.out
+        rm $result
+        echo -en "," >>$result
+        WORD_COUNT=$(echo "$solutions" | wc -w)
         for k in $krange; do
-
-            line=()
-            outfile=''
-            for sol in $solutions; do
-                outfile=$fn-$sol-$k.out
-                op=$(grep ">>" $outfile | head -1)
-                if [ -z "${op}" ]; then
-                    line+=('9999999999')
-                else
-                    op=($op)
-                    line+=(${op[-3]})
-                fi
-            done
-            m=$(printf "%s\n" "${line[@]}" | sort -rn | tail -n1)
-            secm=$(printf "%s\n" "${line[@]}" | sort -rn | tail -n2 | head -n1)
-            echo ${line[@]}
-            for i in "${line[@]}"; do
-                if [ $i == '9999999999' ]; then
-                    echo -en '×,' >>$result
-                elif [ $i == $m ]; then
-                    echo $i | bc -l | xargs printf "*%.1f," >>$result
-                elif [ $i == $secm ]; then
-                    echo $i | bc -l | xargs printf "^%.1f," >>$result
-                else
-                    echo $i | bc -l | xargs printf "%.1f," >>$result
-                fi
+            echo -en "**k=$k**," >>$result
+            for ((i = 1; i < $WORD_COUNT; i++)); do
+                echo -en "," >>$result
             done
             # echo -en "|," >>$result
         done
         echo >>$result
-    done
-    cat $result
-}
-get_results
+
+        echo -en "datasets," >>$result
+        for k in $krange; do
+            for sol in $solutions; do
+                echo -en "${sol#*-}," >>$result
+            done
+            # echo -en "|," >>$result
+        done
+        echo >>$result
+
+        for fn in $datasets; do
+            # echo -en "$fn," >>$result
+            for k in $krange; do
+
+                line=()
+                outfile=''
+                for sol in $solutions; do
+                    outfile=$fn-$sol-$k.out
+                    op=$(grep ">>" $outfile | head -1)
+                    if [ -z "${op}" ]; then
+                        line+=('9999999999')
+                    else
+                        op=($op)
+                        line+=(${op[-3]})
+                    fi
+                done
+                m=$(printf "%s\n" "${line[@]}" | sort -rn | tail -n1)
+                secm=$(printf "%s\n" "${line[@]}" | sort -rn | tail -n2 | head -n1)
+                echo ${line[@]}
+                for i in "${line[@]}"; do
+                    if [ $i == '9999999999' ]; then
+                        echo -en '×,' >>$result
+                    elif [ $i == $m ]; then
+                        echo $i | bc -l | xargs printf "*%.1f," >>$result
+                    elif [ $i == $secm ]; then
+                        echo $i | bc -l | xargs printf "^%.1f," >>$result
+                    else
+                        echo $i | bc -l | xargs printf "%.1f," >>$result
+                    fi
+                done
+                # echo -en "|," >>$result
+            done
+            echo >>$result
+        done
+        cat $result
+    }
+    get_results
 
 get_results_dense() {
     result=results.out
