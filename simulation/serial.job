@@ -258,7 +258,7 @@ soc-sinaweibo
 web-ClueWeb09
 '
 
-solutions='UMKP-S_Bound  UMKP-R_Bound  UMKP-SR_Bound  UMKP-ctcp  UMKP-Pivot_Br  UMKP-SR_Br  UMKP-R_Br  UMKP-Default  UMKP-R_br '
+solutions='UMKP-dis-BR1 UMKP-dis-BR2 UMKP-dis-BR12'
 krange='6 7 8 9 10 15 20'
 run_jobs 00:30:00
 get_results
