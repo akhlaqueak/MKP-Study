@@ -5,7 +5,7 @@
 #include "Timer.h"
 #include <chrono>
 using namespace std::chrono;
-// #define _SECOND_ORDER_PRUNING_
+#define _SECOND_ORDER_PRUNING_
 #define THRESH 100
 #define TIME_NOW chrono::steady_clock::now()
 #define TIME_OVER(ST) ((chrono::duration_cast<chrono::microseconds>(TIME_NOW - ST)).count() > THRESH)
