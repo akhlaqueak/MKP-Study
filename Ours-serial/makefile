@@ -24,7 +24,7 @@ versions:
 	#define PART_BRANCH (true)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-R_Br main.cpp Graph.cpp -w
 
-echo -e "\n\
+	echo -e "\n\
 	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
 	#define PART_BRANCH (true)" > switches.h
