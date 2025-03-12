@@ -1,6 +1,5 @@
 all : 
 	echo -e "\n\
-	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
 	#define PART_BRANCH (K<=5)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP main.cpp Graph.cpp -w
@@ -13,53 +12,76 @@ prof:
 
 versions:
 	echo -e "\n\
-	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
 	#define PART_BRANCH (K<=5)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-Default main.cpp Graph.cpp -w
 
 	echo -e "\n\
-	#define S2RULE\n\
 	#define SR_BRANCHING R_branching\n\
 	#define PART_BRANCH (true)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-R_Br main.cpp Graph.cpp -w
 
 	echo -e "\n\
-	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
 	#define PART_BRANCH (true)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-S_Br main.cpp Graph.cpp -w
 
 	echo -e "\n\
-	#define S2RULE\n\
 	#define SR_BRANCHING SR_branching\n\
 	#define PART_BRANCH (true)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-SR_Br main.cpp Graph.cpp -w
 
 	echo -e "\n\
-	#define S2RULE\n\
 	#define SR_BRANCHING SR_branching\n\
 	// the SR_branching switch does not matter when PART_BRANCH is false
 	#define PART_BRANCH (false)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-Pivot_Br main.cpp Graph.cpp -w
 
 	echo -e "\n\
-	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
 	#define PART_BRANCH (K<=5)\n\
 	#define SR_BOUND" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-SR_Bound main.cpp Graph.cpp -w
 
 	echo -e "\n\
-	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
 	#define PART_BRANCH (K<=5)\n\
 	#define R_BOUND" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-R_Bound main.cpp Graph.cpp -w
 
 	echo -e "\n\
-	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
 	#define PART_BRANCH (K<=5)\n\
 	#define S_BOUND" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-S_Bound main.cpp Graph.cpp -w
+
+
+	echo -e "\n\
+	#define SR_BRANCHING S_branching\n\
+	#define DIS_BR1
+	#define PART_BRANCH (K<=5)" > switches.h
+	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-BR1 main.cpp Graph.cpp -w
+
+
+	echo -e "\n\
+	#define SR_BRANCHING S_branching\n\
+	#define DIS_BR2
+	#define PART_BRANCH (K<=5)" > switches.h
+	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-BR2 main.cpp Graph.cpp -w
+
+
+	echo -e "\n\
+	#define S2RULE\n\
+	#define DIS_BR1
+	#define DIS_BR2
+	#define SR_BRANCHING S_branching\n\
+	#define PART_BRANCH (K<=5)" > switches.h
+	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-BR12 main.cpp Graph.cpp -w
+
+
+	echo -e "\n\
+	#define S2RULE\n\
+	#define DIS_UBR2
+	#define SR_BRANCHING S_branching\n\
+	#define PART_BRANCH (K<=5)" > switches.h
+	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-UBR2 main.cpp Graph.cpp -w
