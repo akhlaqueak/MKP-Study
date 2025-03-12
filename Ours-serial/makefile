@@ -64,22 +64,22 @@ versions:
 
 	echo -e "\n\
 	#define SR_BRANCHING S_branching\n\
-	#define DIS_BR1
+	#define DIS_BR1\n\
 	#define PART_BRANCH (K<=5)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-BR1 main.cpp Graph.cpp -w
 
 
 	echo -e "\n\
 	#define SR_BRANCHING S_branching\n\
-	#define DIS_BR2
+	#define DIS_BR2\n\
 	#define PART_BRANCH (K<=5)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-BR2 main.cpp Graph.cpp -w
 
 
 	echo -e "\n\
 	#define S2RULE\n\
-	#define DIS_BR1
-	#define DIS_BR2
+	#define DIS_BR1\n\
+	#define DIS_BR2\n\
 	#define SR_BRANCHING S_branching\n\
 	#define PART_BRANCH (K<=5)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-BR12 main.cpp Graph.cpp -w
@@ -87,7 +87,7 @@ versions:
 
 	echo -e "\n\
 	#define S2RULE\n\
-	#define DIS_UBR2
+	#define DIS_UBR2\n\
 	#define SR_BRANCHING S_branching\n\
 	#define PART_BRANCH (K<=5)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-UBR2 main.cpp Graph.cpp -w
