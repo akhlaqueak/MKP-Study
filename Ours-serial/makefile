@@ -33,7 +33,7 @@ versions:
 
 	echo -e "\n\
 	#define SR_BRANCHING SR_branching\n\
-	// the SR_branching switch does not matter when PART_BRANCH is false
+	// the SR_branching switch does not matter when PART_BRANCH is false\n\
 	#define PART_BRANCH (false)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-Pivot_Br main.cpp Graph.cpp -w
 

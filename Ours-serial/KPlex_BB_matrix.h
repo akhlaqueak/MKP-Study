@@ -4,7 +4,7 @@
 #include "Utility.h"
 #include "Timer.h"
 #include "switches.h"
-#define _SECOND_ORDER_PRUNING_
+// #define _SECOND_ORDER_PRUNING_
 
 #define CSIZE (R_end - S_end)
 class KPLEX_BB_MATRIX
