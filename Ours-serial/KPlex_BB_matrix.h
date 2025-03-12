@@ -451,7 +451,7 @@ private:
 		ui old_removed_edges_n = 0, old_S_end = S_end, old_R_end = R_end;
 		assert(Qv.empty());
 #ifdef _SECOND_ORDER_PRUNING_
-		while(!Qe.empty()) Qe.pop();
+		// while(!Qe.empty()) Qe.pop();
 		old_removed_edges_n = removed_edges_n;
 #endif
 
@@ -596,8 +596,8 @@ if(PART_BRANCH){
 
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 #ifdef _SECOND_ORDER_PRUNING_
-				while(!Qe.empty())Qe.pop();
-				t_old_removed_edges_n=removed_edges_n;
+			// while(!Qe.empty())Qe.pop();
+			t_old_removed_edges_n=removed_edges_n;
 #endif
 			if(move_u_to_S_with_prune(u, S_end, R_end, level)) BB_search(S_end, R_end, level+1, false, false);
 			restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);			
