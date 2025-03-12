@@ -2,7 +2,7 @@ all :
 	echo -e "\n\
 	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
-	#define PART_BRANCH (K<=5&&sparse)" > switches.h
+	#define PART_BRANCH (K<=5)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP main.cpp Graph.cpp -w
 clean:
 	rm -rf UMKP
@@ -15,7 +15,7 @@ versions:
 	echo -e "\n\
 	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
-	#define PART_BRANCH (K<=5&&sparse)" > switches.h
+	#define PART_BRANCH (K<=5)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-Default main.cpp Graph.cpp -w
 
 	echo -e "\n\
@@ -23,6 +23,12 @@ versions:
 	#define SR_BRANCHING R_branching\n\
 	#define PART_BRANCH (true)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-R_Br main.cpp Graph.cpp -w
+
+echo -e "\n\
+	#define S2RULE\n\
+	#define SR_BRANCHING S_branching\n\
+	#define PART_BRANCH (true)" > switches.h
+	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-S_Br main.cpp Graph.cpp -w
 
 	echo -e "\n\
 	#define S2RULE\n\
@@ -33,33 +39,27 @@ versions:
 	echo -e "\n\
 	#define S2RULE\n\
 	#define SR_BRANCHING SR_branching\n\
+	// the SR_branching switch does not matter when PART_BRANCH is false
 	#define PART_BRANCH (false)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-Pivot_Br main.cpp Graph.cpp -w
 
 	echo -e "\n\
-	#define _SECOND_ORDER_PRUNING_\n\
 	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
-	#define PART_BRANCH (K<=5&&sparse)" > switches.h
-	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-ctcp main.cpp Graph.cpp -w
-
-	echo -e "\n\
-	#define S2RULE\n\
-	#define SR_BRANCHING S_branching\n\
-	#define PART_BRANCH (K<=5&&sparse)\n\
-	#define SEESAW_BOUND" > switches.h
+	#define PART_BRANCH (K<=5)\n\
+	#define SR_BOUND" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-SR_Bound main.cpp Graph.cpp -w
 
 	echo -e "\n\
 	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
-	#define PART_BRANCH (K<=5&&sparse)\n\
-	#define COLOR_BOUND" > switches.h
+	#define PART_BRANCH (K<=5)\n\
+	#define R_BOUND" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-R_Bound main.cpp Graph.cpp -w
 
 	echo -e "\n\
 	#define S2RULE\n\
 	#define SR_BRANCHING S_branching\n\
-	#define PART_BRANCH (K<=5&&sparse)\n\
-	#define PART_BOUND" > switches.h
+	#define PART_BRANCH (K<=5)\n\
+	#define S_BOUND" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-S_Bound main.cpp Graph.cpp -w

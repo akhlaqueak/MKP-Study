@@ -6,21 +6,6 @@
 #include "switches.h"
 #define _SECOND_ORDER_PRUNING_
 
-// pruning switches
-#define S2RULE
-
-// SR_BRANCHING can take values S_branching, R_branching, SR_branching
-// #define SR_BRANCHING S_branching
-// if PART_BRANCH is false, then pivot branch gets executed... 
-// #define PART_BRANCH (false)
-// #define PART_BRANCH (K<=5&&sparse)
-
-
-// Upper bounding switches... 
-// #define SEESAW_BOUND
-// #define COLOR_BOUND
-// #define PART_BOUND
-
 #define CSIZE (R_end-S_end)
 class KPLEX_BB_MATRIX {
 private:
@@ -526,7 +511,7 @@ private:
 		}
 		bounding.tick();
 		ui beta = best_solution_size - S_end;
-		#ifdef PART_BOUND
+		#ifdef S_BOUND
 		if(bound(S_end, R_end)>=R_end){
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 			return ;
@@ -534,7 +519,7 @@ private:
 		#endif
 
 
-		#ifdef SEESAW_BOUND
+		#ifdef SR_BOUND
 		if (CSIZE>3*beta && seesawUB(S_end, R_end)<=best_solution_size) {
 		// if (seesawUB(S_end, R_end)<=best_solution_size) {
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
@@ -543,7 +528,7 @@ private:
 
 		#endif
 
-		#ifdef COLOR_BOUND
+		#ifdef R_BOUND
 		// if (CSIZE>3*beta && seesawUB(S_end, R_end)<=best_solution_size) {
 		if (colorUB(S_end, R_end)<=best_solution_size) {
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
@@ -568,7 +553,7 @@ private:
 		}
 		for(ui i = 0;i < R_end;i ++) assert(level_id[SR[i]] > level);
 #endif
-if(PART_BRANCH){
+if(PART_BRANCH&&sparse){
 
 // ******************* Adding our branching stuff here... 
 		ui t_R_end=R_end;
