@@ -595,12 +595,10 @@ if(PART_BRANCH){
 			if(found_larger) continue;
 
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-// #ifdef _SECOND_ORDER_PRUNING_
-// 			if(ctcp_enabled) {
-// 				while(!Qe.empty())Qe.pop();
-// 				t_old_removed_edges_n=removed_edges_n;
-// 			}
-// #endif
+#ifdef _SECOND_ORDER_PRUNING_
+				while(!Qe.empty())Qe.pop();
+				t_old_removed_edges_n=removed_edges_n;
+#endif
 			if(move_u_to_S_with_prune(u, S_end, R_end, level)) BB_search(S_end, R_end, level+1, false, false);
 			restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);			
 		}
@@ -617,41 +615,12 @@ else{ // pivot based branching
 
 		// First branch moves u to S
 		ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-// #ifdef _SECOND_ORDER_PRUNING_
-// 			if(ctcp_enabled) {
-// 				while(!Qe.empty())Qe.pop();
-// 				t_old_removed_edges_n=removed_edges_n;
-// 			}
-// #endif
+#ifdef _SECOND_ORDER_PRUNING_
+				while(!Qe.empty())Qe.pop();
+				t_old_removed_edges_n=removed_edges_n;
+#endif
 		if(move_u_to_S_with_prune(u, S_end, R_end, level)) BB_search(S_end, R_end, level+1, false);
 		
-
-        // the second branch exclude u from G	
-		// This version of 2nd branch restores u through restore_SR function
-// 		{
-			// restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);	
-// 			B.clear();
-// 			while(!Qv.empty()){
-// 			ui v=Qv.front(); Qv.pop();
-// 			level_id[v]=n;
-// 			} 
-// 			Qv.push(u);
-// 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-// // #ifdef _SECOND_ORDER_PRUNING_
-// // 			if(ctcp_enabled) {
-// // 				while(!Qe.empty())Qe.pop();
-// // 				t_old_removed_edges_n=removed_edges_n;
-// // 			}
-// // #endif
-// 			// if(remove_vertices_and_edges_with_prune(S_end, R_end, level)) BB_search(S_end, R_end, level+1, false, false, endIdx, endIdx);
-// 			if(remove_vertices_and_edges_with_prune(S_end, R_end, level)) BB_search(S_end, R_end, level+1, false);
-// 			restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);	
-// 		}
-
-
-		
-
-
         // the second branch exclude u from G	
 		// This version of 2nd branch restores u through remove_u function
 		{
@@ -662,10 +631,8 @@ else{ // pivot based branching
 			} 
 			B.clear();
 #ifdef _SECOND_ORDER_PRUNING_
-			if(ctcp_enabled) {
-				while(!Qe.empty())Qe.pop();
-				t_old_removed_edges_n=removed_edges_n;
-			}
+			while(!Qe.empty())Qe.pop();
+			t_old_removed_edges_n=removed_edges_n;
 #endif
 			bool succeed = remove_u_from_S_with_prune(S_end, R_end, level);
 			if(succeed&&best_solution_size > pre_best_solution_size) succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
@@ -743,34 +710,7 @@ else{ // pivot based branching
     {
         return K - (S_end - degree_in_S[u]);
     }
-	// ui bound(ui S_end, ui R_end, ui u, std::vector<ui>& R) {
-	// 	char *t_matrix=matrix+u*n;
-    // 	vp2.clear();
-	// 	vp2.reserve(S_end);
-    // 	for(ui i = 0;i < S_end;i ++) vp2.push_back(std::make_pair(support(S_end, SR[i]), SR[i]));
-	// 	for(ui i=0;i<S_end;i++)if(!t_matrix[SR[i]])vp2[i].first--;	
-	// 	// for(ui i = 0;i < S_end;i ++) vp.push_back(std::make_pair(-(degree_in_S[SR[i]]-neiInP[SR[i]]), SR[i]));
-    // 	sort(vp2.begin(), vp2.end());
-    // 	ui UB = S_end+1, cursor = 0;
-    // 	for(ui i = 0;i < (ui)vp2.size(); i++) {
-    // 		ui u = vp2[i].second;
-    // 		if(vp2[i].first == 0) continue;// boundary vertex
-    // 		ui count = 0;
-    // 		char *t_matrix = matrix + u*n;
-    // 		for(ui j = cursor;j < R.size();j ++) if(!t_matrix[R[j]]) {
-    // 			if(j != cursor + count) std::swap(R[j], R[cursor+count]);
-    // 			++ count;
-    // 		}
-    // 		UB += std::min(count, vp2[i].first);
-    		
-    // 		if(UB <= best_solution_size) 
-    // 			cursor += count;
-    // 		else 
-    // 			return UB;
-    // 	}
-	// 	UB+=(R.size()-cursor);
-	// 	return UB;
-    // }
+
 	bool greedily_add_vertices_to_S(ui &S_end, ui &R_end, ui level) {
 		while(true) {
 			ui *candidates = S2;
