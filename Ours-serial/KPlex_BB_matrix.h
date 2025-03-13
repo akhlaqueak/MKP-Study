@@ -1017,22 +1017,28 @@ private:
 		for (ui i = 0; i < nonneighbors_n; i++)
 		{
 			ui v = nonneighbors[i];
+			// non-neighbor in R
 			if (SR_rid[v] >= S_end)
 			{
 				if (level_id[v] == level)
 					continue;
+#ifndef DIS_RR1
 				if (S_end - degree_in_S[v] >= K)
 				{
 					level_id[v] = level;
 					Qv.push(v);
 				}
+#endif
+#ifndef DIS_RR2
 				if (S_end - degree_in_S[u] == K)
 				{
 					level_id[v] = level;
 					Qv.push(v);
 				}
+#endif
 			}
 #ifndef DIS_RR2
+			// non-neghbor in S
 			else if (S_end - degree_in_S[v] == K)
 			{
 				char *tt_matrix = matrix + v * n;
@@ -1144,7 +1150,7 @@ private:
 						--degree[w];
 						if (degree[w] + K <= best_solution_size)
 						{
-#ifndef DIS_RR1
+#ifndef DIS_RR3
 							if (i < S_end)
 								terminate = true; // UB1
 							else if (level_id[w] > level)
