@@ -1,7 +1,7 @@
 #include "Graph.h"
 double threshold = 1e9;
 Timer thresh, branchings, bounding;
-
+#define DIS_CTCP
 // #include "MSearcher.h"
 #include "KPlex_BB_matrix.h"
 #include "CTPrune.h"
