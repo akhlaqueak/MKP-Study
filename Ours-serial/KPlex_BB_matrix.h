@@ -443,7 +443,7 @@ private:
 		{
 			if (degree_in_S[SR[i]] + K < size)
 			{
-				std::cout << "invalid solution" << endl;
+				// std::cout << "invalid solution" << endl;
 				return;
 			}
 		}
