@@ -440,6 +440,13 @@ private:
 	void store_solution(ui size)
 	{
 
+		for(ui i = 0;i < size;i ++) {
+			if(degree_in_S[SR[i]]+K<size)
+			{
+			std::cout<<"invalid solution"<<endl;
+			return;
+			} 
+		}
 		if (size <= best_solution_size)
 		{
 			printf("!!! the solution to store is no larger than the current best solution!");
@@ -473,9 +480,6 @@ private:
 				best_solution[i] = SR[i];
 			best_n_edges = n_edges;
 		}
-		// for(ui i = 0;i < best_solution_size;i ++) {
-		// 	if(degree_in_S[SR[i]]+K<best_solution_size) std::cout<<degree_in_S[SR[i]]+K<<" ";
-		// }
 	}
 
 	bool is_kplex(ui R_end)
