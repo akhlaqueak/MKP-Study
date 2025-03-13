@@ -1136,8 +1136,8 @@ private:
 								terminate = true; // UB1
 							else if (level_id[w] > level)
 							{ // RR3
-								level_id[w] = level;
-								Qv.push(w);
+								// level_id[w] = level;
+								// Qv.push(w);
 							}
 						}
 					}
