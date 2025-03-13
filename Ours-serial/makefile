@@ -107,5 +107,10 @@ versions:
 	#define PART_BRANCH (K<=5)" > switches.h
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-RR3 main.cpp Graph.cpp -w
 
+	echo -e "\n\
+	#define DIS_CTCP\n\
+	#define SR_BRANCHING S_branching\n\
+	#define PART_BRANCH (K<=5)" > switches.h
+	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-CTCP main.cpp Graph.cpp -w
 
-	
+
