@@ -757,6 +757,11 @@ private:
 		{ // pivot based branching
 			if (B.empty() || SR_rid[B.back()] >= R_end || SR_rid[B.back()] < S_end)
 				branch(S_end, R_end);
+			if (B.empty())
+			{
+				restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
+				return;
+			}
 			ui u = B.back();
 			B.pop_back();
 
