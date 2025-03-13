@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #SBATCH --job-name=serial             ### Name of the job
-#SBATCH --ntasks=64                    ### Number of Tasks
+#SBATCH --ntasks=256                    ### Number of Tasks
 #SBATCH --cpus-per-task=1              ### Number of Tasks per CPU
 #SBATCH --mem-per-cpu=10000                        ### Memory required, 4 gigabyte
 #SBATCH --partition=short             ### Cheaha Partition
-#SBATCH --time=4:00:00                 ### Estimated Time of Completion, 1 hour
+#SBATCH --time=10:00:00                 ### Estimated Time of Completion, 1 hour
 #SBATCH --output=%x.out              ### Slurm Output file, %x is job name, %j is job id
 #SBATCH --error=%x.err               ### Slurm Error file, %x is job name, %j is job id
 #SBATCH --mail-type=END
@@ -17,7 +17,7 @@ run_jobs() {
         for sol in $solutions; do
             for k in $krange; do
                 outfile=$fn-$sol-$k.out
-                grep -q ">>" $outfile||grep -q "TIME LIMIT" $outfile||{
+                grep -q ">>" $outfile||grep -q "CANCELLED" $outfile||grep -q "oom-kill" $outfile||{
                         # echo "computing --time=$1 --exclusive $sol $fn $k >>$sol-$k.out.... "
                         if [[ $sol =~ "UMKP" ]] || [[ $sol =~ "Maple" ]] || [ $sol == 'KpLeX' ] || [ $sol == 'DiseMKP' ]; then
                             srun --unbuffered --nodes=1 --ntasks=1 -c 1 --time=$1 --exclusive ./$sol ~/graphs/test25/$fn.bin $k $2 >>$outfile 2>&1 &
@@ -278,27 +278,32 @@ soc-sinaweibo
 web-ClueWeb09
 '
 
-# solutions='
-# UMKP-Default
-# UMKP-R_Bound
-# UMKP-S_Bound
-# UMKP-SR_Bound
-# UMKP-ctcp
-# UMKP-dis-BR1
-# UMKP-dis-BR12
-# UMKP-dis-BR2
-# UMKP-dis-UBR2
-# UMKP-Pivot_Br
-# UMKP-R_br
-# UMKP-R_Br
-# UMKP-S_Br
-# UMKP-SR_Br
-# '
+solutions='
+UMKP-Default
+UMKP-ctcp
+UMKP-R_Br
+UMKP-S_Br
+UMKP-SR_Br
+UMKP-Pivot_Br
+UMKP-SR_Bound
+UMKP-R_Bound
+UMKP-S_Bound
+UMKP-dis-BR1
+UMKP-dis-BR2
+UMKP-dis-BR12
+UMKP-dis-UBR2
+UMKP-dis-RR1
+UMKP-dis-RR2
+UMKP-dis-RR3
+UMKP-dis-CTCP
+UMKP-Binary_Br
+kPlexT-dis-TwoHop
+'
 
 solutions='
 '
 krange='2 3 4 5 6 7 8 9 10 15 20'
-run_jobs 00:30:00
+run_jobs 00:10:00
 get_results
 
 # get_cost
