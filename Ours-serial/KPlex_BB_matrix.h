@@ -1021,12 +1021,18 @@ private:
 			{
 				if (level_id[v] == level)
 					continue;
-				if (S_end - degree_in_S[v] >= K || S_end - degree_in_S[u] == K)
+				if (S_end - degree_in_S[v] >= K)
+				{
+					level_id[v] = level;
+					Qv.push(v);
+				}
+				if (S_end - degree_in_S[u] == K)
 				{
 					level_id[v] = level;
 					Qv.push(v);
 				}
 			}
+#ifndef DIS_RR2
 			else if (S_end - degree_in_S[v] == K)
 			{
 				char *tt_matrix = matrix + v * n;
@@ -1037,6 +1043,7 @@ private:
 						Qv.push(SR[j]);
 					}
 			}
+#endif
 		}
 
 #ifndef NDEBUG
