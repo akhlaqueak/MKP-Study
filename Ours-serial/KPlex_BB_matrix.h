@@ -5,7 +5,7 @@
 #include "Timer.h"
 #include "switches.h"
 // #define _SECOND_ORDER_PRUNING_
-
+#define DIS_RR1
 #define CSIZE (R_end - S_end)
 class KPLEX_BB_MATRIX
 {
@@ -440,12 +440,13 @@ private:
 	void store_solution(ui size)
 	{
 
-		for(ui i = 0;i < size;i ++) {
-			if(degree_in_S[SR[i]]+K<size)
+		for (ui i = 0; i < size; i++)
+		{
+			if (degree_in_S[SR[i]] + K < size)
 			{
-			std::cout<<"invalid solution"<<endl;
-			return;
-			} 
+				std::cout << "invalid solution" << endl;
+				return;
+			}
 		}
 		if (size <= best_solution_size)
 		{
@@ -1136,13 +1137,15 @@ private:
 						--degree[w];
 						if (degree[w] + K <= best_solution_size)
 						{
+#ifndef DIS_RR1
 							if (i < S_end)
 								terminate = true; // UB1
 							else if (level_id[w] > level)
 							{ // RR3
-								// level_id[w] = level;
-								// Qv.push(w);
+								level_id[w] = level;
+								Qv.push(w);
 							}
+#endif
 						}
 					}
 
