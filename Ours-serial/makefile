@@ -114,3 +114,9 @@ versions:
 	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-dis-CTCP main.cpp Graph.cpp -w
 
 
+	echo -e "\n\
+	#define BINARY_BRANCHING\n\
+	#define SR_BRANCHING S_branching\n\
+	#define PART_BRANCH (K<=5)" > switches.h
+	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP-Binary_Br main.cpp Graph.cpp -w
+

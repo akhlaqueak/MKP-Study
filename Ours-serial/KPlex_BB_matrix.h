@@ -707,8 +707,8 @@ private:
 			assert(level_id[SR[i]] > level);
 #endif
 
-#ifndef BINARY_BRANCHING
-{
+#ifdef BINARY_BRANCHING
+		{
 
 			// First branch moves u to S
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
@@ -736,7 +736,7 @@ private:
 			}
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 			return;
-}
+		}
 #endif
 		if (PART_BRANCH && sparse)
 		{
