@@ -508,7 +508,7 @@ void Graph::search_dense()
 	Timer t;
 	dense_search = true;
 	ui init_edges = 0;
-
+	write(kplex);
 	read(); // read the graph again...
 	ui *peel_sequence = new ui[n];
 	ui *core = new ui[n];
@@ -677,6 +677,7 @@ void Graph::search_dense()
 						dense_kplex.clear();
 						for (ui j = 0; j < kplex.size(); j++)
 							dense_kplex.push_back(ids[kplex[j]]);
+						write(dense_kplex, true);
 					}
 					kplex.pop_back();
 				}

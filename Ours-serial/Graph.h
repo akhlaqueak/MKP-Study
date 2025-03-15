@@ -66,6 +66,15 @@ private:
 	void load_graph_from_edgelist(ui _n, const std::vector<std::pair<ui,ui> > &edge_list, ui &n, ept &m, ui *degree, ept *pstart, ui *edges) ;
 	void subgraph_prune(ui *ids, ui &_n, std::vector<std::pair<ui,ui> > &edge_list, ui *rid, ui *Qv, ui *Qe, char *exists) ;
 void ego_degen(ui n, ui m, ui *peel_sequence, ept *pstart, ui *edges, ui *degree, ui *rid, char *vis, ListLinearHeap *heap, ui* edgelist_pointer, bool output);
-
+void write(vector<ui>& kplex, bool append=false)
+{
+	FILE *fout=append?Utility::open_file("dense_kplexes.txt", "a"):Utility::open_file("dense_kplexes.txt", "w");
+	fprintf(fout, "%lu\n", kplex.size());
+	sort(kplex.begin(), kplex.end());
+	for (ui i = 0; i < kplex.size(); i++)
+		fprintf(fout, " %u", kplex[i]);
+	fprintf(fout, "\n");
+	fclose(fout);
+}
 };
 #endif
