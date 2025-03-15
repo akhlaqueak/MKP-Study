@@ -676,7 +676,7 @@ void Graph::search_dense()
 						cout << "A denser kplex found with #edges: " << best_n_edges << endl;
 						dense_kplex.clear();
 						for (ui j = 0; j < kplex.size(); j++)
-							dense_kplex.push_back(ids[kplex[j]]);
+							dense_kplex.push_back(out_mapping[kplex[j]]);
 						write(dense_kplex, true);
 					}
 					kplex.pop_back();
