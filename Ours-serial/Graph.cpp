@@ -508,7 +508,7 @@ void Graph::search_dense()
 	Timer t;
 	dense_search = true;
 	ui init_edges = 0;
-	write(kplex);
+	write(kplex, 0);
 	read(); // read the graph again...
 	ui *peel_sequence = new ui[n];
 	ui *core = new ui[n];
@@ -670,14 +670,14 @@ void Graph::search_dense()
 					init_edges = best_n_edges;
 				if (kplex.size() > presize)
 				{
+					for (ui j = 0; j < kplex.size(); j++)
+						dense_kplex.push_back(out_mapping[ids[kplex[j]]]);
+					write(dense_kplex, kplex_solver->best_n_edges, true);
 					if (kplex_solver->best_n_edges > best_n_edges)
 					{
 						best_n_edges = kplex_solver->best_n_edges;
 						cout << "A denser kplex found with #edges: " << best_n_edges << endl;
 						dense_kplex.clear();
-						for (ui j = 0; j < kplex.size(); j++)
-							dense_kplex.push_back(out_mapping[ids[kplex[j]]]);
-						write(dense_kplex, true);
 					}
 					kplex.pop_back();
 				}
