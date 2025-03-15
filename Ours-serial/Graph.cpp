@@ -670,12 +670,12 @@ void Graph::search_dense()
 					init_edges = best_n_edges;
 				if (kplex.size() > presize)
 				{
-					dense_kplex.clear();
 					for (ui j = 0; j < kplex.size(); j++)
-						dense_kplex.push_back(out_mapping[ids[kplex[j]]]);
-					write(dense_kplex, kplex_solver->best_n_edges, true);
+						kplex[j] = out_mapping[ids[kplex[j]]];
+					write(kplex, kplex_solver->best_n_edges, true);
 					if (kplex_solver->best_n_edges > best_n_edges)
 					{
+						dense_kplex = kplex;
 						best_n_edges = kplex_solver->best_n_edges;
 						cout << "A denser kplex found with #edges: " << best_n_edges << endl;
 					}
