@@ -73,7 +73,7 @@ private:
 
 		FILE *fout = append ? Utility::open_file("dense_kplexes.txt", "a") : Utility::open_file("dense_kplexes.txt", "w");
 		ui ne = 0;
-		for (ui u : kpelx)
+		for (ui u : kplex)
 			fprintf(fout, "%u ", u);
 		fprintf(fout, "\n");
 
