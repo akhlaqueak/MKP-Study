@@ -676,6 +676,8 @@ void Graph::search_dense()
 					init_edges = best_n_edges;
 				for(ui i=0;i<kplex_solver->dense_kplexes.size();i++){
 					auto& kp = kplex_solver->dense_kplexes[i];
+					for(ui i=0;i<kp.size();i++)
+					kp[i]=out_mapping[ids[kp[i]]];
 					// for (ui j = 0; j < kp.size(); j++){
 					// 	kp[j].first = out_mapping[ids[kp[j].first]];
 					// 	kp[j].second = out_mapping[ids[kp[j].second]];
