@@ -668,14 +668,14 @@ void Graph::search_dense()
 				kplex_solver->kPlex(K, UB, kplex, true);
 				if (init_edges == 0 && best_n_edges > 0)
 					init_edges = best_n_edges;
-				if (kplex.size() > presize)
-				{
 					for(ui i=0;i<kplex_solver->dense_kplexes.size();i++){
 						auto& kp = kplex_solver->dense_kplexes[i];
 						for (ui j = 0; j < kp.size(); j++)
 							kp[j] = out_mapping[ids[kp[j]]];
 						write(kp, kplex_solver->dense_kplexes_edges[i], true);
 					}
+				if (kplex.size() > presize)
+				{
 					if (kplex_solver->best_n_edges > best_n_edges)
 					{
 						dense_kplex = kplex;
