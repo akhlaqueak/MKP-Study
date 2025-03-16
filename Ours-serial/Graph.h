@@ -66,12 +66,24 @@ private:
 	void load_graph_from_edgelist(ui _n, const std::vector<std::pair<ui,ui> > &edge_list, ui &n, ept &m, ui *degree, ept *pstart, ui *edges) ;
 	void subgraph_prune(ui *ids, ui &_n, std::vector<std::pair<ui,ui> > &edge_list, ui *rid, ui *Qv, ui *Qe, char *exists) ;
 void ego_degen(ui n, ui m, ui *peel_sequence, ept *pstart, ui *edges, ui *degree, ui *rid, char *vis, ListLinearHeap *heap, ui* edgelist_pointer, bool output);
-void write(vector<pair<ui, ui>>& kplex, bool append=false)
+void write(vector<ui>& kplex, ui* pstart, ui* edges)
 {
+
 	FILE *fout=append?Utility::open_file("dense_kplexes.txt", "a"):Utility::open_file("dense_kplexes.txt", "w");
-	fprintf(fout, "no. of edges: %u\n", kplex.size());
-	for (ui i = 0; i < kplex.size(); i++)
-		fprintf(fout, "%u %u\n", kplex[i].first, kplex[i].second);
+	ui ne = 0;
+	cout<<kplex.size()<<": ";
+	for (ui u: kplex){
+		cout<<u<<" ";
+		ui* st=edges+pstart[u];
+		ui* en=edges+pstart[u+1];
+		for(ui v: kplex){
+			if(binary_search(st, en, v)){
+				fprintf(fout, "%u %u\n", u, v);
+				ne++;
+			}
+		}
+	}
+	fprintf(fout, "no. of edges: %u\n", ne);
 	fprintf(fout, "\n");
 	fclose(fout);
 }

@@ -514,7 +514,7 @@ void Graph::search_dense()
 	// 		if(binary_search())
 	// 	}
 	// }
-	write(kp);
+	write(kplex, pstart, edges);
 	read(); // read the graph again...
 	ui *peel_sequence = new ui[n];
 	ui *core = new ui[n];
@@ -680,7 +680,7 @@ void Graph::search_dense()
 						kp[j].first = out_mapping[ids[kp[j].first]];
 						kp[j].second = out_mapping[ids[kp[j].second]];
 					}
-					write(kp, true);
+					write(kp, pstart, edges);
 				}
 				if (kplex.size() > presize)
 				{
