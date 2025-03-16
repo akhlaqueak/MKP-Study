@@ -467,7 +467,7 @@ private:
 		nmkp++;
 		if (dense_search)
 		{
-			vector<pair<ui,ui>> kp;
+			vector<ui> kp;
 			for (ui i = 0; i < size; i++){
 				kp.push_back(SR[i]);
 			}
