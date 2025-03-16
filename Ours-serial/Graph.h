@@ -86,6 +86,7 @@ void write(vector<ui>& kplex, ui* pstart, ui* edges, bool append=false)
 	fprintf(fout, "no. of edges: %u\n", ne);
 	fprintf(fout, "\n");
 	fclose(fout);
+	cout<<endl;
 }
 };
 #endif
