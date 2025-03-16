@@ -54,6 +54,8 @@ private:
 	bool dense_search, forward_sol;
 
 public:
+	vector<vector<ui>> dense_kplexes;
+	vector<ui> dense_kplexes_edges;
 	ui best_n_edges = 0;
 	ui nmkp = 0;
 	KPLEX_BB_MATRIX(bool _ds = false)
@@ -174,6 +176,8 @@ public:
 
 	void load_graph(ui _n, const std::vector<std::pair<ui, ui>> &vp)
 	{
+		dense_kplexes.clear();
+		dense_kplexes_edges.clear();
 		n = _n;
 		if (((long long)n) * n > matrix_size)
 		{
@@ -465,6 +469,12 @@ private:
 		nmkp++;
 		if (dense_search)
 		{
+			vector<ui> kp;
+			for (ui i = 0; i < size; i++)
+					kp.push_back(SR[i]);
+			dense_kplexes.push_back(kp);
+			dense_kplexes_edges.push_back(n_edges);
+
 			if (n_edges > best_n_edges)
 			{
 				best_n_edges = n_edges;
