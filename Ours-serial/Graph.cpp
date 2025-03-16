@@ -677,7 +677,7 @@ void Graph::search_dense()
 					// 	kp[j].first = out_mapping[ids[kp[j].first]];
 					// 	kp[j].second = out_mapping[ids[kp[j].second]];
 					// }
-					write(kp, pstart, pend, edgelist_pointer, i);
+					write(kp, pstart, pend, edges, i);
 				}
 				if (kplex.size() > presize)
 				{
