@@ -509,12 +509,7 @@ void Graph::search_dense()
 	dense_search = true;
 	ui init_edges = 0;
 	vector<pair<ui, ui>> kp;
-	// for(ui u:kplex){
-	// 	for(ui v: kplex){
-	// 		if(binary_search())
-	// 	}
-	// }
-	write(kplex, pstart, edges);
+
 	read(); // read the graph again...
 	ui *peel_sequence = new ui[n];
 	ui *core = new ui[n];
@@ -682,7 +677,7 @@ void Graph::search_dense()
 					// 	kp[j].first = out_mapping[ids[kp[j].first]];
 					// 	kp[j].second = out_mapping[ids[kp[j].second]];
 					// }
-					write(kp, pstart, edges, true);
+					write(kp, pstart, pend, edgelist_pointer, i);
 				}
 				if (kplex.size() > presize)
 				{
