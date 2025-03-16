@@ -176,7 +176,6 @@ public:
 	void load_graph(ui _n, const std::vector<std::pair<ui, ui>> &vp)
 	{
 		dense_kplexes.clear();
-		dense_kplexes_edges.clear();
 		n = _n;
 		if (((long long)n) * n > matrix_size)
 		{

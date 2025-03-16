@@ -514,7 +514,7 @@ void Graph::search_dense()
 	// 		if(binary_search())
 	// 	}
 	// }
-	write(kplex);
+	write(kp);
 	read(); // read the graph again...
 	ui *peel_sequence = new ui[n];
 	ui *core = new ui[n];
