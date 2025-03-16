@@ -54,8 +54,7 @@ private:
 	bool dense_search, forward_sol;
 
 public:
-	vector<vector<ui>> dense_kplexes;
-	vector<ui> dense_kplexes_edges;
+	vector<vector<pair<ui, ui>>> dense_kplexes;
 	ui best_n_edges = 0;
 	ui nmkp = 0;
 	KPLEX_BB_MATRIX(bool _ds = false)
@@ -469,11 +468,15 @@ private:
 		nmkp++;
 		if (dense_search)
 		{
-			vector<ui> kp;
-			for (ui i = 0; i < size; i++)
-					kp.push_back(SR[i]);
+			vector<pair<ui,ui>> kp;
+			for (ui i = 0; i < size; i++){
+				char* t_matrix=matrix+SR[i]*n;
+				for(ui j=0;j<size;j++)
+					if(t_matrix[SR[j]])
+					kp.push_back({SR[i], SR[j]});
+			}
+
 			dense_kplexes.push_back(kp);
-			dense_kplexes_edges.push_back(n_edges);
 
 			if (n_edges > best_n_edges)
 			{
