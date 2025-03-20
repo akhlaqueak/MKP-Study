@@ -115,7 +115,7 @@ void Graph::read_csv(){
 	vector<pair<ui, ui> > edge_pair;
 	ui maxv = 0;
 
-	std::ifstream file(dir.c_str());  // Open the CSV file
+	std::ifstream file(dir);  // Open the CSV file
     std::string line;
 
     // Check if file is open
@@ -134,7 +134,7 @@ void Graph::read_csv(){
         if (ss >> u >> v) {
             // Process the values
 			edge_pair.push_back({u, v});
-			maxv = max(maxv, u, v);
+			maxv = std::max(maxv, u, v);
         } else {
             std::cerr << "Error reading values from line: " << line << std::endl;
         }
