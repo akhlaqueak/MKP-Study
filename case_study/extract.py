@@ -10,8 +10,8 @@ json_dir = "."  # Change this to your directory containing the JSON files
 
 # Get all JSON file paths in the directory
 
-json_files = ["sigmod2022.json", "sigmod2023.json"]
 json_files = glob(os.path.join(json_dir, "*.json"))
+json_files = ["sigmod2022.json"]
 # Initialize mappings and lists
 author_id_map = {}  # Maps original author IDs to integer numbers
 author_name_map = {}  # Maps integer numbers to author names
@@ -62,7 +62,7 @@ with open("edge_list.csv", "w") as f:
 
 # Save author mapping to a CSV file
 with open("author_mapping.csv", "w") as f:
-    f.write("Integer ID, Author Name\n")  # CSV header
+    f.write("ID, AuthorName\n")  # CSV header
     for int_id in sorted(author_name_map.keys()):
         f.write(f"{int_id}, {author_name_map[int_id]}\n")
 
