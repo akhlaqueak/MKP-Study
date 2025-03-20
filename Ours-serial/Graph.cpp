@@ -6,7 +6,7 @@ Timer thresh, branchings, bounding;
 #include "CTPrune.h"
 #define K_THRESH 10
 using namespace std;
-
+#include<numeric>
 Graph::Graph(const char *_dir, const int _K)
 {
 	dir = string(_dir);
