@@ -51,7 +51,7 @@ private:
 	ui sz1h;
 	bool found_larger = false;
 	bool ctcp_enabled = false;
-	bool dense_search, forward_sol;
+	bool dense_search=false, forward_sol=false;
 
 public:
 	vector<vector<ui>> dense_kplexes;

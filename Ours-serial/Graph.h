@@ -37,7 +37,7 @@ private:
 	bool dense_search = false;
 
 public:
-	ui best_n_edges;
+	ui best_n_edges=0;
 	Graph(const char *_dir, const int _K);
 	~Graph();
 
