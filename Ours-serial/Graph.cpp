@@ -115,7 +115,7 @@ void Graph::read_csv(){
 	vector<pair<ui, ui> > edge_pair;
 	ui maxv = 0;
 
-	std::ifstream file(dir);  // Open the CSV file
+	std::ifstream file(dir.c_str());  // Open the CSV file
     std::string line;
 
     // Check if file is open
