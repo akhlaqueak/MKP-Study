@@ -7,6 +7,7 @@ Timer thresh, branchings, bounding;
 #define K_THRESH 10
 using namespace std;
 #include<numeric>
+#include<fstream>
 Graph::Graph(const char *_dir, const int _K)
 {
 	dir = string(_dir);
