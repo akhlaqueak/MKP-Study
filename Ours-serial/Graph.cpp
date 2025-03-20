@@ -153,6 +153,8 @@ void Graph::read_csv(){
 	vector<ui> degree(n);
 
 	for(auto e: edge_pair){
+		assert(e.first<n);
+		assert(e.second<n);
 		degree[e.first]++;
 		degree[e.second]++;
 	}
