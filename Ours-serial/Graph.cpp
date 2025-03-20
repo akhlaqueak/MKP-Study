@@ -142,7 +142,7 @@ void Graph::read_csv(){
     }
     file.close();  // Close the file
 
-	n = maxv;
+	n = maxv+1;
 	m = 2*edge_pair.size();
 
 	if (pstart == nullptr)
