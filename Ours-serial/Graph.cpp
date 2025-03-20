@@ -158,7 +158,7 @@ void Graph::read_csv(){
 	}
 	pstart[0] = 0;
 	std::partial_sum(degree, degree+n, pstart+1);
-	std::fill(degree, degree+n, 0);
+	std::fill(degree.begin(), degree.end(), 0);
 	for(auto e: edge_pair){
 		ui u=e.first, v=e.second;
 		edges[pstart[u]+degree[u]] = v;
