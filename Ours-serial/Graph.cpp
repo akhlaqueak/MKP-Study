@@ -347,7 +347,7 @@ void Graph::search()
 		s_active_edgelist = new ui[m / 2];
 		s_deleted = new char[m / 2];
 
-		vector<pair<ui, ui>> vp;
+		vector<pair<ui, ui> > vp;
 		vp.reserve(m / 2);
 		ui *t_degree = new ui[n];
 
@@ -508,7 +508,7 @@ void Graph::search_dense()
 	Timer t;
 	dense_search = true;
 	ui init_edges = 0;
-	vector<pair<ui, ui>> kp;
+	vector<pair<ui, ui> > kp;
 
 	read(); // read the graph again...
 	ui *peel_sequence = new ui[n];
@@ -600,7 +600,7 @@ void Graph::search_dense()
 		s_active_edgelist = new ui[m / 2];
 		s_deleted = new char[m / 2];
 
-		vector<pair<ui, ui>> vp;
+		vector<pair<ui, ui> > vp;
 		vp.reserve(m / 2);
 		ui *t_degree = new ui[n];
 
@@ -736,7 +736,7 @@ void Graph::search_dense()
 		printf("!!! Warning: Trivial Case !!!\n");
 }
 
-void Graph::write_subgraph(ui n, const vector<pair<ui, ui>> &edge_list)
+void Graph::write_subgraph(ui n, const vector<pair<ui, ui> > &edge_list)
 {
 	FILE *fout = Utility::open_file("edges.txt", "w");
 
@@ -747,7 +747,7 @@ void Graph::write_subgraph(ui n, const vector<pair<ui, ui>> &edge_list)
 	fclose(fout);
 }
 
-void Graph::subgraph_prune(ui *ids, ui &_n, vector<pair<ui, ui>> &edge_list, ui *rid, ui *Qv, ui *Qe, char *exists)
+void Graph::subgraph_prune(ui *ids, ui &_n, vector<pair<ui, ui> > &edge_list, ui *rid, ui *Qv, ui *Qe, char *exists)
 {
 	ui s_n;
 	ept s_m;
@@ -802,7 +802,7 @@ void Graph::subgraph_prune(ui *ids, ui &_n, vector<pair<ui, ui>> &edge_list, ui 
 	}
 }
 
-void Graph::load_graph_from_edgelist(ui _n, const vector<pair<ui, ui>> &edge_list, ui &n, ept &m, ui *degree, ept *pstart, ui *edges)
+void Graph::load_graph_from_edgelist(ui _n, const vector<pair<ui, ui> > &edge_list, ui &n, ept &m, ui *degree, ept *pstart, ui *edges)
 {
 	n = _n;
 	m = (ui)edge_list.size() * 2;
@@ -828,7 +828,7 @@ void Graph::load_graph_from_edgelist(ui _n, const vector<pair<ui, ui>> &edge_lis
 		pstart[i] -= degree[i];
 }
 
-void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui>> &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer)
+void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui> > &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer)
 {
 	ids_n = 0;
 	vp.clear();
@@ -851,7 +851,7 @@ void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, v
 	}
 }
 
-void Graph::extract_subgraph(ui u, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui>> &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer)
+void Graph::extract_subgraph(ui u, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui> > &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer)
 {
 	ids_n = 0;
 	vp.clear();
@@ -916,7 +916,7 @@ void Graph::extract_subgraph(ui u, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, 
 		exists[ids[i]] = 0;
 }
 
-void Graph::extract_subgraph_and_prune(ui u, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui>> &vp, ui *Q, ui *degree, char *exists, ept *pend, char *deleted, ui *edgelist_pointer)
+void Graph::extract_subgraph_and_prune(ui u, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui> > &vp, ui *Q, ui *degree, char *exists, ept *pend, char *deleted, ui *edgelist_pointer)
 {
 	vp.clear();
 	ids_n = 0;

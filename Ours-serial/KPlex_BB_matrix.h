@@ -16,8 +16,8 @@ private:
 
 #ifdef _SECOND_ORDER_PRUNING_
 	ui *cn;
-	std::queue<std::pair<ui, ui>> Qe;
-	std::vector<std::pair<ui, ui>> removed_edges;
+	std::queue<std::pair<ui, ui> > Qe;
+	std::vector<std::pair<ui, ui> > removed_edges;
 	long long removed_edges_n;
 #endif
 
@@ -39,7 +39,7 @@ private:
 	ui *level_id;
 	ui max_level;
 
-	std::vector<std::pair<ui, ui>> vp;
+	std::vector<std::pair<ui, ui> > vp;
 	std::vector<ui> non_adj;
 
 	// std::vector<std::pair<ui,ui> > vp2;
@@ -54,7 +54,7 @@ private:
 	bool dense_search, forward_sol;
 
 public:
-	vector<vector<ui>> dense_kplexes;
+	vector<vector<ui> > dense_kplexes;
 	ui best_n_edges = 0;
 	ui nmkp = 0;
 	KPLEX_BB_MATRIX(bool _ds = false)
@@ -173,7 +173,7 @@ public:
 		bmp.init(n);
 	}
 
-	void load_graph(ui _n, const std::vector<std::pair<ui, ui>> &vp)
+	void load_graph(ui _n, const std::vector<std::pair<ui, ui> > &vp)
 	{
 		dense_kplexes.clear();
 		n = _n;
@@ -470,7 +470,7 @@ private:
 			vector<ui> kp;
 			for (ui i = 0; i < size; i++){
 				kp.push_back(SR[i]);
-			}
+			
 
 			dense_kplexes.push_back(kp);
 
