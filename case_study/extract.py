@@ -10,8 +10,8 @@ json_dir = "."  # Change this to your directory containing the JSON files
 
 # Get all JSON file paths in the directory
 
-json_files = ["sigmod2022.json"]
 json_files = glob(os.path.join(json_dir, "*.json"))
+json_files = ["sigmod2024.json"]
 # Initialize mappings and lists
 author_id_map = {}  # Maps original author IDs to integer numbers
 author_name_map = {}  # Maps integer numbers to author names
