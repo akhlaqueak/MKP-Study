@@ -691,7 +691,7 @@ void Graph::search_dense()
 			ui *ids = Qv;
 			ui ids_n = 0;
 			bool mflag = false;
-			// cout<<u<<endl;
+			cout<<u<<endl;
 
 			bool check = false;
 
