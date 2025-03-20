@@ -121,7 +121,7 @@ void Graph::read_csv(){
     // Check if file is open
     if (!file.is_open()) {
         std::cerr << "Error opening file!" << std::endl;
-        return 1;
+        return;
     }
 
     ui u, v;
