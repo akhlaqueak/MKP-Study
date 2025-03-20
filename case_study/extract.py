@@ -6,12 +6,12 @@ from glob import glob
 from itertools import combinations
 
 # Directory containing JSON files
-json_dir = "json_files"  # Change this to your directory containing the JSON files
+json_dir = "."  # Change this to your directory containing the JSON files
 
 # Get all JSON file paths in the directory
 
 json_files = ["sigmod2022.json", "sigmod2023.json"]
-
+json_files = glob(os.path.join(json_dir, "*.json"))
 # Initialize mappings and lists
 author_id_map = {}  # Maps original author IDs to integer numbers
 author_name_map = {}  # Maps integer numbers to author names
