@@ -53,7 +53,7 @@ for json_file in json_files:
 edges = []
 for coauthors in coauthor_list:
     for edge in combinations(coauthors, 2):
-        edges.append(",".join(edge))
+        edges.append(" ".join(edge))
 
 # Save edge list to a CSV file
 with open("edge_list.csv", "w") as f:
