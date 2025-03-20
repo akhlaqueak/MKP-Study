@@ -9,6 +9,7 @@
 #include <cstdio>
 #include <sstream>
 #include <map>
+#include<numeric>
 #include <cstring>
 //using namespace std;
 
