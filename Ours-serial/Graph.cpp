@@ -150,8 +150,7 @@ void Graph::read_csv(){
 	if (edges == nullptr)
 		edges = new ui[m];
 
-	ui *degree = new ui[n];
-	std::fill(degree, degree+n, 0);
+	vector<ui> degree(n);
 
 	for(auto e: edge_pair){
 		degree[e.first]++;
