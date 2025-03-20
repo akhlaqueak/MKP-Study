@@ -159,6 +159,7 @@ void Graph::read_csv(){
 	}
 	pstart[0] = 0;
 	for(ui i=0;i<n;i++){
+		pstart[i+1] = pstart[i];
 		auto& adj = degree[i];
 		for(auto u: adj)
 			edges[pstart[i+1]++]=u;
