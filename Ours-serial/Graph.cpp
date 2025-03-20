@@ -150,26 +150,19 @@ void Graph::read_csv(){
 	if (edges == nullptr)
 		edges = new ui[m];
 
-	vector<ui> degree(n);
+	vector<set<ui>> degree(n);
 
 	for(auto e: edge_pair){
-		assert(e.first<n);
-		assert(e.second<n);
-		degree[e.first]++;
-		degree[e.second]++;
+		ui u=e.first, v=e.second;
+		degree[u].insert(v);
+		degree[v].insert(u);
 	}
 	pstart[0] = 0;
-	std::partial_sum(degree.begin(), degree.end(), pstart+1);
-	std::fill(degree.begin(), degree.end(), 0);
-	for(auto e: edge_pair){
-		ui u=e.first, v=e.second;
-		edges[pstart[u]+degree[u]] = v;
-		edges[pstart[v]+degree[v]] = u;
-		degree[u]++;
-		degree[v]++;
+	for(ui i=0;i<n;i++){
+		auto& adj = degree[i];
+		for(auto u: adj)
+			edges[pstart[i+1]++]=u;
 	}
-	for(ui i=0;i<n;i++)
-		sort(edges+pstart[i], edges+pstart[i+1]);
 }
 void Graph::read()
 {
