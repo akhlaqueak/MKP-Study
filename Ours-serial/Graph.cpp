@@ -110,9 +110,69 @@ Graph::~Graph()
 		s_deleted = NULL;
 	}
 }
+void Graph::read_csv(){
 
+	vector<pair<ui, ui> > edge_pair;
+	ui maxv = 0;
+
+	std::ifstream file(dir);  // Open the CSV file
+    std::string line;
+
+    // Check if file is open
+    if (!file.is_open()) {
+        std::cerr << "Error opening file!" << std::endl;
+        return 1;
+    }
+
+    ui u, v;
+
+    // Loop through each line in the file
+    while (std::getline(file, line)) {
+        std::stringstream ss(line);
+
+        // Read two integer values from each row
+        if (ss >> u >> v) {
+            // Process the values
+			edge_pair.push_back({u, v});
+			maxv = max(maxv, u, v);
+        } else {
+            std::cerr << "Error reading values from line: " << line << std::endl;
+        }
+    }
+    file.close();  // Close the file
+
+	n = maxv;
+	m = 2*edge_pair.size();
+
+	if (pstart == nullptr)
+		pstart = new ept[n + 1];
+	if (edges == nullptr)
+		edges = new ui[m];
+
+	ui *degree = new ui[n];
+	std::fill(degree, degree+n, 0);
+
+	for(auto e: edge_pair){
+		degree[e.first]++;
+		degree[e.second]++;
+	}
+	pstart[0] = 0;
+	std::partial_sum(degree, degree+n, pstart+1);
+	std::fill(degree, degree+n, 0);
+	for(auto e: edge_pair){
+		ui u=e.first, v=e.second;
+		edges[pstart[u]+degree[u]] = v;
+		edges[pstart[v]+degree[v]] = u;
+		degree[u]++;
+		degree[v]++;
+	}
+	for(ui i=0;i<n;i++)
+		sort(edges+pstart[i], edges+pstart[i+1]);
+}
 void Graph::read()
 {
+    if(dir.find(".csv")!=std::string::npos) return read_csv();
+
 	FILE *f = Utility::open_file(dir.c_str(), "rb");
 
 	ui tt;

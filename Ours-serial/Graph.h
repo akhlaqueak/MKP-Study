@@ -42,6 +42,7 @@ public:
 	~Graph();
 
 	void read();
+	void read_csv();
 	void read_graph();
 
 	void write();
