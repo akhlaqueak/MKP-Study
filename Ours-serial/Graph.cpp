@@ -134,7 +134,7 @@ void Graph::read_csv(){
         if (ss >> u >> v) {
             // Process the values
 			edge_pair.push_back({u, v});
-			maxv = std::max(maxv, u, v);
+			maxv = max(maxv, max(u, v));
         } else {
             std::cerr << "Error reading values from line: " << line << std::endl;
         }
