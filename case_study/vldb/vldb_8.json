@@ -1,0 +1,146 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb8.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"82.25"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"19",
+"@dc":"19",
+"@oc":"19",
+"@id":"47762634",
+"text":":facetid:toc:db/journals/vldb/vldb8.bht"
+}
+},
+"hits":{
+"@total":"19",
+"@computed":"19",
+"@sent":"19",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"7044587",
+"info":{"authors":{"author":[{"@pid":"08/3274","text":"Reinhard Braumandl"},{"@pid":"58/5754","text":"Jens Claußen"},{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"},{"@pid":"k/DonaldKossmann","text":"Donald Kossmann"}]},"title":"Functional-Join Processing.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"156-177","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/BraumandlCKK00","doi":"10.1007/S007780050002","ee":"https://doi.org/10.1007/s007780050002","url":"https://dblp.org/rec/journals/vldb/BraumandlCKK00"},
+"url":"URL#7044587"
+},
+{
+"@score":"1",
+"@id":"7044594",
+"info":{"authors":{"author":[{"@pid":"83/4061","text":"Binto George"},{"@pid":"h/JayantRHaritsa","text":"Jayant R. Haritsa"}]},"title":"Secure Bufering in Firm Real-Time Database Systems.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"178-198","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/GeorgeH00","doi":"10.1007/S007780050003","ee":"https://doi.org/10.1007/s007780050003","url":"https://dblp.org/rec/journals/vldb/GeorgeH00"},
+"url":"URL#7044594"
+},
+{
+"@score":"1",
+"@id":"7044595",
+"info":{"authors":{"author":[{"@pid":"13/1837","text":"David Gibson"},{"@pid":"k/JonMKleinberg","text":"Jon M. Kleinberg"},{"@pid":"r/PRaghavan","text":"Prabhakar Raghavan"}]},"title":"Clustering Categorical Data: An Approach Based on Dynamical Systems.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"222-236","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/GibsonKR00","doi":"10.1007/S007780050005","ee":"https://doi.org/10.1007/s007780050005","url":"https://dblp.org/rec/journals/vldb/GibsonKR00"},
+"url":"URL#7044595"
+},
+{
+"@score":"1",
+"@id":"7044598",
+"info":{"authors":{"author":[{"@pid":"k/EdwinMKnorr","text":"Edwin M. Knorr"},{"@pid":"n/RTNg","text":"Raymond T. Ng"},{"@pid":"10/913","text":"V. Tucakov"}]},"title":"Distance-Based Outliers: Algorithms and Applications.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"237-253","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/KnorrNT00","doi":"10.1007/S007780050006","ee":"https://doi.org/10.1007/s007780050006","url":"https://dblp.org/rec/journals/vldb/KnorrNT00"},
+"url":"URL#7044598"
+},
+{
+"@score":"1",
+"@id":"7044599",
+"info":{"authors":{"author":[{"@pid":"k/FlipKorn","text":"Flip Korn"},{"@pid":"l/ALabrinidis","text":"Alexandros Labrinidis"},{"@pid":"k/YannisKotidis","text":"Yannis Kotidis"},{"@pid":"f/CFaloutsos","text":"Christos Faloutsos"}]},"title":"Quantifiable Data Mining Using Ratio Rules.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"254-266","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/KornLKF00","doi":"10.1007/S007780050007","ee":"https://doi.org/10.1007/s007780050007","url":"https://dblp.org/rec/journals/vldb/KornLKF00"},
+"url":"URL#7044599"
+},
+{
+"@score":"1",
+"@id":"7044600",
+"info":{"authors":{"author":[{"@pid":"31/1277","text":"Weifa Liang"},{"@pid":"o/MariaEOrlowska","text":"Maria E. Orlowska"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"}]},"title":"Optimizing Multiple Dimensional Queries Simultaneously in Multidimensional Databases.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"319-338","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/LiangOY00","doi":"10.1007/S007780050011","ee":"https://doi.org/10.1007/s007780050011","url":"https://dblp.org/rec/journals/vldb/LiangOY00"},
+"url":"URL#7044600"
+},
+{
+"@score":"1",
+"@id":"7044603",
+"info":{"authors":{"author":[{"@pid":"97/4339","text":"Peter Muth"},{"@pid":"o/PatrickEONeil","text":"Patrick E. O&apos;Neil"},{"@pid":"59/1046","text":"Achim Pick"},{"@pid":"w/GerhardWeikum","text":"Gerhard Weikum"}]},"title":"The LHAM Log-Structured History Data Access Method.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"199-221","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/MuthOPW00","doi":"10.1007/S007780050004","ee":"https://doi.org/10.1007/s007780050004","url":"https://dblp.org/rec/journals/vldb/MuthOPW00"},
+"url":"URL#7044603"
+},
+{
+"@score":"1",
+"@id":"7044604",
+"info":{"authors":{"author":[{"@pid":"54/3765","text":"Esther Pacitti"},{"@pid":"s/EricSimon","text":"Eric Simon"}]},"title":"Update Propagation Strategies to Improve Freshness in Lazy Master Replicated Databases.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"305-318","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/PacittiS00","doi":"10.1007/S007780050010","ee":"https://doi.org/10.1007/s007780050010","url":"https://dblp.org/rec/journals/vldb/PacittiS00"},
+"url":"URL#7044604"
+},
+{
+"@score":"1",
+"@id":"7044606",
+"info":{"authors":{"author":[{"@pid":"65/3311","text":"Gholamhosein Sheikholeslami"},{"@pid":"87/1838","text":"Surojit Chatterjee"},{"@pid":"z/AidongZhang","text":"Aidong Zhang"}]},"title":"WaveCluster: A Wavelet Based Clustering Approach for Spatial Data in Very Large Databases.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"289-304","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/SheikholeslamiCZ00","doi":"10.1007/S007780050009","ee":"https://doi.org/10.1007/s007780050009","url":"https://dblp.org/rec/journals/vldb/SheikholeslamiCZ00"},
+"url":"URL#7044606"
+},
+{
+"@score":"1",
+"@id":"7044608",
+"info":{"authors":{"author":[{"@pid":"t/KristianTorp","text":"Kristian Torp"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"},{"@pid":"s/RichardTSnodgrass","text":"Richard T. Snodgrass"}]},"title":"Effective Timestamping in Databases.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"267-288","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/TorpJS00","doi":"10.1007/S007780050008","ee":"https://doi.org/10.1007/s007780050008","url":"https://dblp.org/rec/journals/vldb/TorpJS00"},
+"url":"URL#7044608"
+},
+{
+"@score":"1",
+"@id":"7044609",
+"info":{"authors":{"author":[{"@pid":"w/JenniferWidom","text":"Jennifer Widom"},{"@pid":"s/OShmueli","text":"Oded Shmueli"}]},"title":"Foreword by the VLDB &apos;98 PC Chairmen: Best Papers of VLDB &apos;98.","venue":"VLDB J.","volume":"8","number":"3-4","pages":"155","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/WidomS00","doi":"10.1007/S007780050001","ee":"https://doi.org/10.1007/s007780050001","url":"https://dblp.org/rec/journals/vldb/WidomS00"},
+"url":"URL#7044609"
+},
+{
+"@score":"1",
+"@id":"7121762",
+"info":{"authors":{"author":[{"@pid":"17/4870","text":"Goksel Aslan"},{"@pid":"m/DennisMcLeod","text":"Dennis McLeod"}]},"title":"Semantic Heterogeneity Resolution in Federated Databases by Metadata Implantation and Stepwise Evolution.","venue":"VLDB J.","volume":"8","number":"2","pages":"120-132","year":"1999","type":"Journal Articles","access":"closed","key":"journals/vldb/AslanM99","doi":"10.1007/S007780050077","ee":"https://doi.org/10.1007/s007780050077","url":"https://dblp.org/rec/journals/vldb/AslanM99"},
+"url":"URL#7121762"
+},
+{
+"@score":"1",
+"@id":"7121763",
+"info":{"authors":{"author":[{"@pid":"b/PeterABoncz","text":"Peter A. Boncz"},{"@pid":"k/MartinLKersten","text":"Martin L. Kersten"}]},"title":"MIL Primitives for Querying a Fragmented World.","venue":"VLDB J.","volume":"8","number":"2","pages":"101-119","year":"1999","type":"Journal Articles","access":"closed","key":"journals/vldb/BonczK99","doi":"10.1007/S007780050076","ee":"https://doi.org/10.1007/s007780050076","url":"https://dblp.org/rec/journals/vldb/BonczK99"},
+"url":"URL#7121763"
+},
+{
+"@score":"1",
+"@id":"7121764",
+"info":{"authors":{"author":[{"@pid":"h/TheoHarder","text":"Theo Härder"},{"@pid":"s/GunterSauter","text":"Günter Sauter"},{"@pid":"12/6098","text":"Joachim Thomas 0001"}]},"title":"The Intrinsic Problems of Structural Heterogeneity and an Approach to Their Solution.","venue":"VLDB J.","volume":"8","number":"1","pages":"25-43","year":"1999","type":"Journal Articles","access":"closed","key":"journals/vldb/HarderST99","doi":"10.1007/S007780050072","ee":"https://doi.org/10.1007/s007780050072","url":"https://dblp.org/rec/journals/vldb/HarderST99"},
+"url":"URL#7121764"
+},
+{
+"@score":"1",
+"@id":"7121765",
+"info":{"authors":{"author":[{"@pid":"28/6850","text":"Yueh-Min Huang"},{"@pid":"46/5318","text":"Jen-Wen Ding"},{"@pid":"39/1006","text":"Shiao-Li Tsao"}]},"title":"Constant Time Permutation: An Efficient Block Allocation Strategy for Variable-Bit-Rate Continuous Media Data.","venue":"VLDB J.","volume":"8","number":"1","pages":"44-54","year":"1999","type":"Journal Articles","access":"closed","key":"journals/vldb/HuangDT99","doi":"10.1007/S007780050073","ee":"https://doi.org/10.1007/s007780050073","url":"https://dblp.org/rec/journals/vldb/HuangDT99"},
+"url":"URL#7121765"
+},
+{
+"@score":"1",
+"@id":"7121766",
+"info":{"authors":{"author":[{"@pid":"k/NavinKabra","text":"Navin Kabra"},{"@pid":"d/DJDeWitt","text":"David J. DeWitt"}]},"title":"OPT++: An Object-Oriented Implementation for Extensible Database Query Optimization.","venue":"VLDB J.","volume":"8","number":"1","pages":"55-78","year":"1999","type":"Journal Articles","access":"closed","key":"journals/vldb/KabraD99","doi":"10.1007/S007780050074","ee":"https://doi.org/10.1007/s007780050074","url":"https://dblp.org/rec/journals/vldb/KabraD99"},
+"url":"URL#7121766"
+},
+{
+"@score":"1",
+"@id":"7121767",
+"info":{"authors":{"author":[{"@pid":"87/6577","text":"Natalija Krivokapic"},{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"},{"@pid":"g/EhudGudes","text":"Ehud Gudes"}]},"title":"Deadlock Detection in Distributed Database Systems: A New Algorithm and a Comparative Performance Analysis.","venue":"VLDB J.","volume":"8","number":"2","pages":"79-100","year":"1999","type":"Journal Articles","access":"closed","key":"journals/vldb/KrivokapicKG99","doi":"10.1007/S007780050075","ee":"https://doi.org/10.1007/s007780050075","url":"https://dblp.org/rec/journals/vldb/KrivokapicKG99"},
+"url":"URL#7121767"
+},
+{
+"@score":"1",
+"@id":"7121768",
+"info":{"authors":{"author":[{"@pid":"94/949","text":"Kelvin Kwok-Wai Law"},{"@pid":"l/JohnCSLui","text":"John C. S. Lui"},{"@pid":"g/LeanaGolubchik","text":"Leana Golubchik"}]},"title":"Efficient Support for Interactive Service in Multi-Resolution VOD Systems.","venue":"VLDB J.","volume":"8","number":"2","pages":"133-153","year":"1999","type":"Journal Articles","access":"closed","key":"journals/vldb/LawLG99","doi":"10.1007/S007780050078","ee":"https://doi.org/10.1007/s007780050078","url":"https://dblp.org/rec/journals/vldb/LawLG99"},
+"url":"URL#7121768"
+},
+{
+"@score":"1",
+"@id":"7121769",
+"info":{"authors":{"author":[{"@pid":"11/751","text":"Zhe Li"},{"@pid":"r/KARoss","text":"Kenneth A. Ross"}]},"title":"Fast Joins Using Join Indices.","venue":"VLDB J.","volume":"8","number":"1","pages":"1-24","year":"1999","type":"Journal Articles","access":"closed","key":"journals/vldb/LiR99","doi":"10.1007/S007780050071","ee":"https://doi.org/10.1007/s007780050071","url":"https://dblp.org/rec/journals/vldb/LiR99"},
+"url":"URL#7121769"
+}
+]
+}
+}
+}

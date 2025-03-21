@@ -1,0 +1,386 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb31.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"69.12"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"59",
+"@dc":"59",
+"@oc":"59",
+"@id":"47762626",
+"text":":facetid:toc:db/journals/vldb/vldb31.bht"
+}
+},
+"hits":{
+"@total":"59",
+"@computed":"59",
+"@sent":"59",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"1352626",
+"info":{"authors":{"author":[{"@pid":"144/6631","text":"Elias Alevizos"},{"@pid":"a/AArtikis","text":"Alexander Artikis"},{"@pid":"55/2039","text":"Georgios Paliouras"}]},"title":"Complex event forecasting with prediction suffix trees.","venue":"VLDB J.","volume":"31","number":"1","pages":"157-180","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/AlevizosAP22","doi":"10.1007/S00778-021-00698-X","ee":"https://doi.org/10.1007/s00778-021-00698-x","url":"https://dblp.org/rec/journals/vldb/AlevizosAP22"},
+"url":"URL#1352626"
+},
+{
+"@score":"1",
+"@id":"1352627",
+"info":{"authors":{"author":[{"@pid":"29/8978","text":"Waqas Ali"},{"@pid":"41/6317-2","text":"Muhammad Saleem 0002"},{"@pid":"86/508-2","text":"Bin Yao 0002"},{"@pid":"h/AidanHogan","text":"Aidan Hogan"},{"@pid":"65/4336","text":"Axel-Cyrille Ngonga Ngomo"}]},"title":"A survey of RDF stores &amp; SPARQL engines for querying knowledge graphs.","venue":"VLDB J.","volume":"31","number":"3","pages":"1-26","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/AliSYHN22","doi":"10.1007/S00778-021-00711-3","ee":"https://doi.org/10.1007/s00778-021-00711-3","url":"https://dblp.org/rec/journals/vldb/AliSYHN22"},
+"url":"URL#1352627"
+},
+{
+"@score":"1",
+"@id":"1352628",
+"info":{"authors":{"author":[{"@pid":"131/1601","text":"Daichi Amagata"},{"@pid":"19/3497","text":"Makoto Onizuka"},{"@pid":"40/2808","text":"Takahiro Hara"}]},"title":"Fast, exact, and parallel-friendly outlier detection algorithms with proximity graph in metric spaces.","venue":"VLDB J.","volume":"31","number":"4","pages":"797-821","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/AmagataOH22","doi":"10.1007/S00778-022-00729-1","ee":"https://doi.org/10.1007/s00778-022-00729-1","url":"https://dblp.org/rec/journals/vldb/AmagataOH22"},
+"url":"URL#1352628"
+},
+{
+"@score":"1",
+"@id":"1352629",
+"info":{"authors":{"author":[{"@pid":"b/MagdalenaBalazinska","text":"Magdalena Balazinska"},{"@pid":"z/XiaofangZhou","text":"Xiaofang Zhou 0001"}]},"title":"Editorial for S.I.: VLDB 2020.","venue":"VLDB J.","volume":"31","number":"6","pages":"1237-1238","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/BalazinskaZ22","doi":"10.1007/S00778-022-00734-4","ee":"https://doi.org/10.1007/s00778-022-00734-4","url":"https://dblp.org/rec/journals/vldb/BalazinskaZ22"},
+"url":"URL#1352629"
+},
+{
+"@score":"1",
+"@id":"1352630",
+"info":{"authors":{"author":[{"@pid":"257/5532","text":"Tiemo Bang"},{"@pid":"89/6071","text":"Norman May"},{"@pid":"p/IliaPetrov","text":"Ilia Petrov 0001"},{"@pid":"45/1559","text":"Carsten Binnig"}]},"title":"The full story of 1000 cores.","venue":"VLDB J.","volume":"31","number":"6","pages":"1185-1213","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/BangMPB22","doi":"10.1007/S00778-022-00742-4","ee":"https://doi.org/10.1007/s00778-022-00742-4","url":"https://dblp.org/rec/journals/vldb/BangMPB22"},
+"url":"URL#1352630"
+},
+{
+"@score":"1",
+"@id":"1352631",
+"info":{"authors":{"author":[{"@pid":"136/5674","text":"Glenn S. Bevilacqua"},{"@pid":"l/LVSLakshmanan","text":"Laks V. S. Lakshmanan"}]},"title":"A fractional memory-efficient approach for online continuous-time influence maximization.","venue":"VLDB J.","volume":"31","number":"2","pages":"403-429","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/BevilacquaL22","doi":"10.1007/S00778-021-00679-0","ee":"https://doi.org/10.1007/s00778-021-00679-0","url":"https://dblp.org/rec/journals/vldb/BevilacquaL22"},
+"url":"URL#1352631"
+},
+{
+"@score":"1",
+"@id":"1352632",
+"info":{"authors":{"author":[{"@pid":"b/ABonifati","text":"Angela Bonifati"},{"@pid":"19/1082","text":"Hannes Voigt"}]},"title":"Special issue on big graph data management and processing.","venue":"VLDB J.","volume":"31","number":"2","pages":"201-202","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/BonifatiV22","doi":"10.1007/S00778-022-00732-6","ee":"https://doi.org/10.1007/s00778-022-00732-6","url":"https://dblp.org/rec/journals/vldb/BonifatiV22"},
+"url":"URL#1352632"
+},
+{
+"@score":"1",
+"@id":"1352633",
+"info":{"authors":{"author":[{"@pid":"96/11411","text":"Anton Dignös"},{"@pid":"b/MichaelHBohlen","text":"Michael H. Böhlen"},{"@pid":"59/6952","text":"Johann Gamper"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"},{"@pid":"265/2949","text":"Peter Moser"}]},"title":"Leveraging range joins for the computation of overlap joins.","venue":"VLDB J.","volume":"31","number":"1","pages":"75-99","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/DignosBGJM22","doi":"10.1007/S00778-021-00692-3","ee":"https://doi.org/10.1007/s00778-021-00692-3","url":"https://dblp.org/rec/journals/vldb/DignosBGJM22"},
+"url":"URL#1352633"
+},
+{
+"@score":"1",
+"@id":"1352634",
+"info":{"authors":{"author":[{"@pid":"62/10825","text":"Muhammad Farhan"},{"@pid":"97/6505-2","text":"Qing Wang 0002"},{"@pid":"74/2577-1","text":"Yu Lin 0001"},{"@pid":"74/5295","text":"Brendan D. McKay"}]},"title":"Fast fully dynamic labelling for distance queries.","venue":"VLDB J.","volume":"31","number":"3","pages":"483-506","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/FarhanWLM22","doi":"10.1007/S00778-021-00707-Z","ee":"https://doi.org/10.1007/s00778-021-00707-z","url":"https://dblp.org/rec/journals/vldb/FarhanWLM22"},
+"url":"URL#1352634"
+},
+{
+"@score":"1",
+"@id":"1352635",
+"info":{"authors":{"author":[{"@pid":"197/6411","text":"Manuel Fritz"},{"@pid":"32/2077","text":"Michael Behringer"},{"@pid":"241/0354","text":"Dennis Tschechlov"},{"@pid":"93/151","text":"Holger Schwarz"}]},"title":"Efficient exploratory clustering analyses in large-scale exploration processes.","venue":"VLDB J.","volume":"31","number":"4","pages":"711-732","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/FritzBTS22","doi":"10.1007/S00778-021-00716-Y","ee":"https://doi.org/10.1007/s00778-021-00716-y","url":"https://dblp.org/rec/journals/vldb/FritzBTS22"},
+"url":"URL#1352635"
+},
+{
+"@score":"1",
+"@id":"1352636",
+"info":{"authors":{"author":[{"@pid":"181/5803","text":"Henning Funke"},{"@pid":"222/6290","text":"Jan Mühlig"},{"@pid":"t/JensTeubner","text":"Jens Teubner"}]},"title":"Low-latency query compilation.","venue":"VLDB J.","volume":"31","number":"6","pages":"1171-1184","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/FunkeMT22","doi":"10.1007/S00778-022-00741-5","ee":"https://doi.org/10.1007/s00778-022-00741-5","url":"https://dblp.org/rec/journals/vldb/FunkeMT22"},
+"url":"URL#1352636"
+},
+{
+"@score":"1",
+"@id":"1352637",
+"info":{"authors":{"author":[{"@pid":"164/9068","text":"Yong-Feng Ge"},{"@pid":"o/MariaEOrlowska","text":"Maria E. Orlowska"},{"@pid":"36/581","text":"Jinli Cao"},{"@pid":"33/3535-2","text":"Hua Wang 0002"},{"@pid":"32/2837","text":"Yanchun Zhang"}]},"title":"MDDE: multitasking distributed differential evolution for privacy-preserving database fragmentation.","venue":"VLDB J.","volume":"31","number":"5","pages":"957-975","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/GeOCWZ22","doi":"10.1007/S00778-021-00718-W","ee":"https://doi.org/10.1007/s00778-021-00718-w","url":"https://dblp.org/rec/journals/vldb/GeOCWZ22"},
+"url":"URL#1352637"
+},
+{
+"@score":"1",
+"@id":"1352638",
+"info":{"authors":{"author":[{"@pid":"242/5141","text":"Stefan Grafberger"},{"@pid":"g/PTGroth","text":"Paul Groth"},{"@pid":"s/JuliaStoyanovich","text":"Julia Stoyanovich"},{"@pid":"118/7229","text":"Sebastian Schelter"}]},"title":"Data distribution debugging in machine learning pipelines.","venue":"VLDB J.","volume":"31","number":"5","pages":"1103-1126","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/GrafbergerGSS22","doi":"10.1007/S00778-021-00726-W","ee":"https://doi.org/10.1007/s00778-021-00726-w","url":"https://dblp.org/rec/journals/vldb/GrafbergerGSS22"},
+"url":"URL#1352638"
+},
+{
+"@score":"1",
+"@id":"1352639",
+"info":{"authors":{"author":[{"@pid":"h/MauriceHerlihy","text":"Maurice Herlihy"},{"@pid":"l/BarbaraLiskov","text":"Barbara Liskov"},{"@pid":"s/LiubaShrira","text":"Liuba Shrira"}]},"title":"Cross-chain deals and adversarial commerce.","venue":"VLDB J.","volume":"31","number":"6","pages":"1291-1309","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/HerlihyLS22","doi":"10.1007/S00778-021-00686-1","ee":"https://doi.org/10.1007/s00778-021-00686-1","url":"https://dblp.org/rec/journals/vldb/HerlihyLS22"},
+"url":"URL#1352639"
+},
+{
+"@score":"1",
+"@id":"1352640",
+"info":{"authors":{"author":[{"@pid":"166/7684","text":"Arif Hidayat"},{"@pid":"55/5690","text":"Muhammad Aamir Cheema"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"},{"@pid":"98/5684-1","text":"Wenjie Zhang 0001"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"}]},"title":"Continuous monitoring of moving skyline and top-k queries.","venue":"VLDB J.","volume":"31","number":"3","pages":"459-482","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/HidayatCLZZ22","doi":"10.1007/S00778-021-00702-4","ee":"https://doi.org/10.1007/s00778-021-00702-4","url":"https://dblp.org/rec/journals/vldb/HidayatCLZZ22"},
+"url":"URL#1352640"
+},
+{
+"@score":"1",
+"@id":"1352641",
+"info":{"authors":{"author":[{"@pid":"86/489-11","text":"Kai Huang 0011"},{"@pid":"90/5236-1","text":"Haibo Hu 0001"},{"@pid":"52/6744","text":"Shuigeng Zhou"},{"@pid":"89/2685","text":"Jihong Guan"},{"@pid":"194/0001-1","text":"Qingqing Ye 0001"},{"@pid":"z/XiaofangZhou","text":"Xiaofang Zhou 0001"}]},"title":"Privacy and efficiency guaranteed social subgraph matching.","venue":"VLDB J.","volume":"31","number":"3","pages":"581-602","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/HuangHZGYZ22","doi":"10.1007/S00778-021-00706-0","ee":"https://doi.org/10.1007/s00778-021-00706-0","url":"https://dblp.org/rec/journals/vldb/HuangHZGYZ22"},
+"url":"URL#1352641"
+},
+{
+"@score":"1",
+"@id":"1352642",
+"info":{"authors":{"author":[{"@pid":"178/4804","text":"Yihe Huang"},{"@pid":"216/3374-1","text":"William Qian 0001"},{"@pid":"78/5231","text":"Eddie Kohler"},{"@pid":"l/BarbaraLiskov","text":"Barbara Liskov"},{"@pid":"s/LiubaShrira","text":"Liuba Shrira"}]},"title":"Opportunities for optimism in contended main-memory multicore transactions.","venue":"VLDB J.","volume":"31","number":"6","pages":"1239-1261","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/HuangQKLS22","doi":"10.1007/S00778-021-00719-9","ee":"https://doi.org/10.1007/s00778-021-00719-9","url":"https://dblp.org/rec/journals/vldb/HuangQKLS22"},
+"url":"URL#1352642"
+},
+{
+"@score":"1",
+"@id":"1352643",
+"info":{"authors":{"author":[{"@pid":"70/6862","text":"Zi Huang"},{"@pid":"74/2905","text":"Yanyan Shen"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"Special issue on responsible data management and data science.","venue":"VLDB J.","volume":"31","number":"5","pages":"823","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/HuangSS22","doi":"10.1007/S00778-022-00761-1","ee":"https://doi.org/10.1007/s00778-022-00761-1","url":"https://dblp.org/rec/journals/vldb/HuangSS22"},
+"url":"URL#1352643"
+},
+{
+"@score":"1",
+"@id":"1352644",
+"info":{"authors":{"author":[{"@pid":"k/SrikanthKandula","text":"Srikanth Kandula"},{"@pid":"151/3263","text":"Laurel J. Orr"},{"@pid":"c/SurajitChaudhuri","text":"Surajit Chaudhuri"}]},"title":"Data-induced predicates for sideways information passing in query optimizers.","venue":"VLDB J.","volume":"31","number":"6","pages":"1263-1290","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/KandulaOC22","doi":"10.1007/S00778-021-00693-2","ee":"https://doi.org/10.1007/s00778-021-00693-2","url":"https://dblp.org/rec/journals/vldb/KandulaOC22"},
+"url":"URL#1352644"
+},
+{
+"@score":"1",
+"@id":"1352645",
+"info":{"authors":{"author":[{"@pid":"162/3246","text":"Kenza Kellou-Menouer"},{"@pid":"299/4854","text":"Nikolaos Kardoulakis"},{"@pid":"90/4446","text":"Georgia Troullinou"},{"@pid":"02/1736","text":"Zoubida Kedad"},{"@pid":"89/6058","text":"Dimitris Plexousakis"},{"@pid":"24/279","text":"Haridimos Kondylakis"}]},"title":"A survey on semantic schema discovery.","venue":"VLDB J.","volume":"31","number":"4","pages":"675-710","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/Kellou-MenouerK22","doi":"10.1007/S00778-021-00717-X","ee":"https://doi.org/10.1007/s00778-021-00717-x","url":"https://dblp.org/rec/journals/vldb/Kellou-MenouerK22"},
+"url":"URL#1352645"
+},
+{
+"@score":"1",
+"@id":"1352646",
+"info":{"authors":{"author":[{"@pid":"259/6180","text":"Jalal Khalil"},{"@pid":"81/9436-1","text":"Da Yan 0001"},{"@pid":"235/2508","text":"Guimu Guo"},{"@pid":"323/2694","text":"Lyuheng Yuan"}]},"title":"Parallel mining of large maximal quasi-cliques.","venue":"VLDB J.","volume":"31","number":"4","pages":"649-674","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/KhalilYGY22","doi":"10.1007/S00778-021-00712-2","ee":"https://doi.org/10.1007/s00778-021-00712-2","url":"https://dblp.org/rec/journals/vldb/KhalilYGY22"},
+"url":"URL#1352646"
+},
+{
+"@score":"1",
+"@id":"1352647",
+"info":{"authors":{"author":[{"@pid":"161/5705","text":"Jan Kossmann"},{"@pid":"28/10440","text":"Thorsten Papenbrock"},{"@pid":"n/FelixNaumann","text":"Felix Naumann"}]},"title":"Data dependencies for query optimization: a survey.","venue":"VLDB J.","volume":"31","number":"1","pages":"1-22","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/KossmannPN22","doi":"10.1007/S00778-021-00676-3","ee":"https://doi.org/10.1007/s00778-021-00676-3","url":"https://dblp.org/rec/journals/vldb/KossmannPN22"},
+"url":"URL#1352647"
+},
+{
+"@score":"1",
+"@id":"1352648",
+"info":{"authors":{"author":[{"@pid":"224/2311","text":"Zhuohang Lai"},{"@pid":"252/8027","text":"Xibo Sun"},{"@pid":"l/QiongLuo","text":"Qiong Luo 0001"},{"@pid":"83/9047","text":"Xiaolong Xie"}]},"title":"Accelerating multi-way joins on the GPU.","venue":"VLDB J.","volume":"31","number":"3","pages":"529-553","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/LaiSLX22","doi":"10.1007/S00778-021-00708-Y","ee":"https://doi.org/10.1007/s00778-021-00708-y","url":"https://dblp.org/rec/journals/vldb/LaiSLX22"},
+"url":"URL#1352648"
+},
+{
+"@score":"1",
+"@id":"1352649",
+"info":{"authors":{"author":[{"@pid":"60/8180-1","text":"Wentao Li 0001"},{"@pid":"93/9883","text":"Miao Qiao"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"47/179","text":"Lijun Chang"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"}]},"title":"Distance labeling: on parallelism, compression, and ordering.","venue":"VLDB J.","volume":"31","number":"1","pages":"129-155","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/LiQQZCL22","doi":"10.1007/S00778-021-00694-1","ee":"https://doi.org/10.1007/s00778-021-00694-1","url":"https://dblp.org/rec/journals/vldb/LiQQZCL22"},
+"url":"URL#1352649"
+},
+{
+"@score":"1",
+"@id":"1352650",
+"info":{"authors":{"author":[{"@pid":"87/3555","text":"Pei Li"},{"@pid":"06/9379","text":"Jaroslaw Szlichta"},{"@pid":"b/MichaelHBohlen","text":"Michael H. Böhlen"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"ABC of order dependencies.","venue":"VLDB J.","volume":"31","number":"5","pages":"825-849","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/LiSBS22","doi":"10.1007/S00778-021-00696-Z","ee":"https://doi.org/10.1007/s00778-021-00696-z","url":"https://dblp.org/rec/journals/vldb/LiSBS22"},
+"url":"URL#1352650"
+},
+{
+"@score":"1",
+"@id":"1352651",
+"info":{"authors":{"author":[{"@pid":"193/1562","text":"Yuanbing Li"},{"@pid":"03/5595","text":"Xian Wu"},{"@pid":"159/2027","text":"Yifei Jin"},{"@pid":"33/5448-15","text":"Jian Li 0015"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"43/6576","text":"Jianhua Feng"}]},"title":"Adapative algorithms for crowd-aided categorization.","venue":"VLDB J.","volume":"31","number":"6","pages":"1311-1337","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/LiWJLLF22","doi":"10.1007/S00778-021-00685-2","ee":"https://doi.org/10.1007/s00778-021-00685-2","url":"https://dblp.org/rec/journals/vldb/LiWJLLF22"},
+"url":"URL#1352651"
+},
+{
+"@score":"1",
+"@id":"1352652",
+"info":{"authors":{"author":[{"@pid":"69/5902-3","text":"Qian Li 0003"},{"@pid":"253/9728-1","text":"Zhichao Wang 0001"},{"@pid":"115/5163","text":"Shaowu Liu"},{"@pid":"62/2655-9","text":"Gang Li 0009"},{"@pid":"59/2340","text":"Guandong Xu 0001"}]},"title":"Deep treatment-adaptive network for causal inference.","venue":"VLDB J.","volume":"31","number":"5","pages":"1127-1142","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/LiWLLX22","doi":"10.1007/S00778-021-00724-Y","ee":"https://doi.org/10.1007/s00778-021-00724-y","url":"https://dblp.org/rec/journals/vldb/LiWLLX22"},
+"url":"URL#1352652"
+},
+{
+"@score":"1",
+"@id":"1352653",
+"info":{"authors":{"author":[{"@pid":"260/0924","text":"Qingyuan Linghu"},{"@pid":"21/3626-36","text":"Fan Zhang 0036"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"},{"@pid":"98/5684-1","text":"Wenjie Zhang 0001"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"}]},"title":"Anchored coreness: efficient reinforcement of social networks.","venue":"VLDB J.","volume":"31","number":"2","pages":"227-252","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/LinghuZLZZ22","doi":"10.1007/S00778-021-00673-6","ee":"https://doi.org/10.1007/s00778-021-00673-6","url":"https://dblp.org/rec/journals/vldb/LinghuZLZZ22"},
+"url":"URL#1352653"
+},
+{
+"@score":"1",
+"@id":"1352654",
+"info":{"authors":{"author":[{"@pid":"203/1322","text":"Fanzhen Liu"},{"@pid":"l/ZhaoLi-7","text":"Zhao Li 0007"},{"@pid":"228/1263","text":"Baokun Wang"},{"@pid":"25/5536-1","text":"Jia Wu 0001"},{"@pid":"y/JianYang1","text":"Jian Yang 0001"},{"@pid":"233/6209","text":"Jiaming Huang"},{"@pid":"21/6919","text":"Yiqing Zhang"},{"@pid":"14/6202","text":"Weiqiang Wang"},{"@pid":"88/10188-1","text":"Shan Xue 0001"},{"@pid":"22/3939","text":"Surya Nepal"},{"@pid":"s/QuanZSheng","text":"Quan Z. Sheng"}]},"title":"eRiskCom: an e-commerce risky community detection platform.","venue":"VLDB J.","volume":"31","number":"5","pages":"1085-1101","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/LiuLWWYHZWXNS22","doi":"10.1007/S00778-021-00723-Z","ee":"https://doi.org/10.1007/s00778-021-00723-z","url":"https://dblp.org/rec/journals/vldb/LiuLWWYHZWXNS22"},
+"url":"URL#1352654"
+},
+{
+"@score":"1",
+"@id":"1352655",
+"info":{"authors":{"author":[{"@pid":"30/2761","text":"Zifan Liu"},{"@pid":"267/1802","text":"Zhechun Zhou"},{"@pid":"51/11411","text":"Theodoros Rekatsinas"}]},"title":"Picket: guarding against corrupted data in tabular data during learning and inference.","venue":"VLDB J.","volume":"31","number":"5","pages":"927-955","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/LiuZR22","doi":"10.1007/S00778-021-00699-W","ee":"https://doi.org/10.1007/s00778-021-00699-w","url":"https://dblp.org/rec/journals/vldb/LiuZR22"},
+"url":"URL#1352655"
+},
+{
+"@score":"1",
+"@id":"1352656",
+"info":{"authors":{"author":[{"@pid":"181/9147","text":"Bingqing Lyu"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"36/5395","text":"Zhengping Qian"},{"@pid":"84/2644-1","text":"Jingren Zhou 0001"}]},"title":"Maximum and top-k diversified biclique search at scale.","venue":"VLDB J.","volume":"31","number":"6","pages":"1365-1389","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/LyuQLZQZ22","doi":"10.1007/S00778-021-00681-6","ee":"https://doi.org/10.1007/s00778-021-00681-6","url":"https://dblp.org/rec/journals/vldb/LyuQLZQZ22"},
+"url":"URL#1352656"
+},
+{
+"@score":"1",
+"@id":"1352657",
+"info":{"authors":{"author":[{"@pid":"246/4420","text":"Aisha Mohamed"},{"@pid":"199/6349","text":"Ghadeer Abuoda"},{"@pid":"178/3717","text":"Abdurrahman Ghanem"},{"@pid":"65/1457","text":"Zoi Kaoudi"},{"@pid":"01/3996","text":"Ashraf Aboulnaga"}]},"title":"RDFFrames: knowledge graph access for machine learning tools.","venue":"VLDB J.","volume":"31","number":"2","pages":"321-346","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/MohamedAGKA22","doi":"10.1007/S00778-021-00690-5","ee":"https://doi.org/10.1007/s00778-021-00690-5","url":"https://dblp.org/rec/journals/vldb/MohamedAGKA22"},
+"url":"URL#1352657"
+},
+{
+"@score":"1",
+"@id":"1352658",
+"info":{"authors":{"author":[{"@pid":"311/1219","text":"Egawati Panjei"},{"@pid":"g/LeGruenwald","text":"Le Gruenwald"},{"@pid":"161/9210","text":"Eleazar Leal"},{"@pid":"155/8928","text":"Christopher Nguyen"},{"@pid":"328/0356","text":"Shejuti Silvia"}]},"title":"A survey on outlier explanations.","venue":"VLDB J.","volume":"31","number":"5","pages":"977-1008","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/PanjeiGLNS22","doi":"10.1007/S00778-021-00721-1","ee":"https://doi.org/10.1007/s00778-021-00721-1","url":"https://dblp.org/rec/journals/vldb/PanjeiGLNS22"},
+"url":"URL#1352658"
+},
+{
+"@score":"1",
+"@id":"1352659",
+"info":{"authors":{"author":[{"@pid":"56/6780","text":"You Peng"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"98/5684-1","text":"Wenjie Zhang 0001"},{"@pid":"51/5585","text":"Lu Qin 0001"}]},"title":"Answering reachability and K-reach queries on large graphs with label constraints.","venue":"VLDB J.","volume":"31","number":"1","pages":"101-127","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/PengLZZQ22","doi":"10.1007/S00778-021-00695-0","ee":"https://doi.org/10.1007/s00778-021-00695-0","url":"https://dblp.org/rec/journals/vldb/PengLZZQ22"},
+"url":"URL#1352659"
+},
+{
+"@score":"1",
+"@id":"1352660",
+"info":{"authors":{"author":[{"@pid":"205/6373","text":"Johannes Pietrzyk"},{"@pid":"40/7792","text":"Alexander Krause"},{"@pid":"97/5806","text":"Dirk Habich"},{"@pid":"l/WLehner","text":"Wolfgang Lehner"}]},"title":"To share or not to share vector registers?","venue":"VLDB J.","volume":"31","number":"6","pages":"1215-1236","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/PietrzykKHL22","doi":"10.1007/S00778-022-00744-2","ee":"https://doi.org/10.1007/s00778-022-00744-2","url":"https://dblp.org/rec/journals/vldb/PietrzykKHL22"},
+"url":"URL#1352660"
+},
+{
+"@score":"1",
+"@id":"1352661",
+"info":{"authors":{"author":[{"@pid":"p/EPitoura","text":"Evaggelia Pitoura"},{"@pid":"76/3486","text":"Kostas Stefanidis"},{"@pid":"k/GeorgiaKoutrika","text":"Georgia Koutrika"}]},"title":"Fairness in rankings and recommendations: an overview.","venue":"VLDB J.","volume":"31","number":"3","pages":"431-458","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/PitouraSK22","doi":"10.1007/S00778-021-00697-Y","ee":"https://doi.org/10.1007/s00778-021-00697-y","url":"https://dblp.org/rec/journals/vldb/PitouraSK22"},
+"url":"URL#1352661"
+},
+{
+"@score":"1",
+"@id":"1352662",
+"info":{"authors":{"author":{"@pid":"69/9726","text":"Danica Porobic"}},"title":"Special issue on the best papers of DaMoN 2020.","venue":"VLDB J.","volume":"31","number":"6","pages":"1169","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/Porobic22","doi":"10.1007/S00778-022-00766-W","ee":"https://doi.org/10.1007/s00778-022-00766-w","url":"https://dblp.org/rec/journals/vldb/Porobic22"},
+"url":"URL#1352662"
+},
+{
+"@score":"1",
+"@id":"1352663",
+"info":{"authors":{"author":[{"@pid":"223/9302","text":"Renzo Arturo Alva Principe"},{"@pid":"41/3166","text":"Andrea Maurino"},{"@pid":"74/4142","text":"Matteo Palmonari"},{"@pid":"26/3708","text":"Michele Ciavotta"},{"@pid":"157/3182","text":"Blerina Spahiu"}]},"title":"ABSTAT-HD: a scalable tool for profiling very large knowledge graphs.","venue":"VLDB J.","volume":"31","number":"5","pages":"851-876","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/PrincipeMPCS22","doi":"10.1007/S00778-021-00704-2","ee":"https://doi.org/10.1007/s00778-021-00704-2","url":"https://dblp.org/rec/journals/vldb/PrincipeMPCS22"},
+"url":"URL#1352663"
+},
+{
+"@score":"1",
+"@id":"1352664",
+"info":{"authors":{"author":[{"@pid":"216/4931","text":"Xuedi Qin"},{"@pid":"181/5689","text":"Chengliang Chai"},{"@pid":"185/9921","text":"Yuyu Luo"},{"@pid":"139/3492","text":"Tianyu Zhao"},{"@pid":"27/104-1","text":"Nan Tang 0001"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"43/6576","text":"Jianhua Feng"},{"@pid":"19/2453","text":"Xiang Yu"},{"@pid":"o/MouradOuzzani","text":"Mourad Ouzzani"}]},"title":"Interactively discovering and ranking desired tuples by data exploration.","venue":"VLDB J.","volume":"31","number":"4","pages":"753-777","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/QinCLZTLFYO22","doi":"10.1007/S00778-021-00714-0","ee":"https://doi.org/10.1007/s00778-021-00714-0","url":"https://dblp.org/rec/journals/vldb/QinCLZTLFYO22"},
+"url":"URL#1352664"
+},
+{
+"@score":"1",
+"@id":"1352665",
+"info":{"authors":{"author":[{"@pid":"238/4349","text":"Christopher Rost"},{"@pid":"164/5560","text":"Kevin Gómez"},{"@pid":"250/9455","text":"Matthias Täschner"},{"@pid":"261/8237","text":"Philip Fritzsche"},{"@pid":"307/5099","text":"Lucas Schons"},{"@pid":"277/0697","text":"Lukas Christ"},{"@pid":"316/4825","text":"Timo Adameit"},{"@pid":"149/5877","text":"Martin Junghanns"},{"@pid":"r/ERahm","text":"Erhard Rahm"}]},"title":"Distributed temporal graph analytics with GRADOOP.","venue":"VLDB J.","volume":"31","number":"2","pages":"375-401","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/RostGTFSCAJR22","doi":"10.1007/S00778-021-00667-4","ee":"https://doi.org/10.1007/s00778-021-00667-4","url":"https://dblp.org/rec/journals/vldb/RostGTFSCAJR22"},
+"url":"URL#1352665"
+},
+{
+"@score":"1",
+"@id":"1352666",
+"info":{"authors":{"author":[{"@pid":"s/SWSadiq","text":"Shazia Sadiq"},{"@pid":"25/7137","text":"Amir Aryani"},{"@pid":"05/3422","text":"Gianluca Demartini"},{"@pid":"68/11145","text":"Wen Hua"},{"@pid":"09/3176","text":"Marta Indulska"},{"@pid":"02/4306","text":"Andrew Burton-Jones"},{"@pid":"09/6627","text":"Hassan Khosravi"},{"@pid":"139/2707","text":"Diana Benavides Prado"},{"@pid":"s/TimosKSellis","text":"Timos Sellis"},{"@pid":"144/1193","text":"Ida Asadi Someh"},{"@pid":"214/4141","text":"Rhema Vaithianathan"},{"@pid":"69/6403-1","text":"Sen Wang 0001"},{"@pid":"z/XiaofangZhou","text":"Xiaofang Zhou 0001"}]},"title":"Information Resilience: the nexus of responsible and agile approaches to information use.","venue":"VLDB J.","volume":"31","number":"5","pages":"1059-1084","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/SadiqADHIBKPSSV22","doi":"10.1007/S00778-021-00720-2","ee":"https://doi.org/10.1007/s00778-021-00720-2","url":"https://dblp.org/rec/journals/vldb/SadiqADHIBKPSSV22"},
+"url":"URL#1352666"
+},
+{
+"@score":"1",
+"@id":"1352667",
+"info":{"authors":{"author":[{"@pid":"51/8415","text":"Tomer Sagi"},{"@pid":"139/1128","text":"Matteo Lissandrini"},{"@pid":"p/TorbenBachPedersen","text":"Torben Bach Pedersen"},{"@pid":"h/KatjaHose","text":"Katja Hose"}]},"title":"A design space for RDF data representations.","venue":"VLDB J.","volume":"31","number":"2","pages":"347-373","year":"2022","type":"Journal Articles","access":"open","key":"journals/vldb/SagiLPH22","doi":"10.1007/S00778-021-00725-X","ee":"https://doi.org/10.1007/s00778-021-00725-x","url":"https://dblp.org/rec/journals/vldb/SagiLPH22"},
+"url":"URL#1352667"
+},
+{
+"@score":"1",
+"@id":"1352668",
+"info":{"authors":{"author":[{"@pid":"238/4379","text":"Sebastian Schmidl"},{"@pid":"28/10440","text":"Thorsten Papenbrock"}]},"title":"Efficient distributed discovery of bidirectional order dependencies.","venue":"VLDB J.","volume":"31","number":"1","pages":"49-74","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/SchmidlP22","doi":"10.1007/S00778-021-00683-4","ee":"https://doi.org/10.1007/s00778-021-00683-4","url":"https://dblp.org/rec/journals/vldb/SchmidlP22"},
+"url":"URL#1352668"
+},
+{
+"@score":"1",
+"@id":"1352669",
+"info":{"authors":{"author":[{"@pid":"s/RichardTSnodgrass","text":"Richard T. Snodgrass"},{"@pid":"22/5067","text":"Sabah Currim"},{"@pid":"58/2945","text":"Young-Kyoon Suh"}]},"title":"Have query optimizers hit the wall?","venue":"VLDB J.","volume":"31","number":"1","pages":"181-200","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/SnodgrassCS22","doi":"10.1007/S00778-021-00689-Y","ee":"https://doi.org/10.1007/s00778-021-00689-y","url":"https://dblp.org/rec/journals/vldb/SnodgrassCS22"},
+"url":"URL#1352669"
+},
+{
+"@score":"1",
+"@id":"1352670",
+"info":{"authors":{"author":[{"@pid":"v/SabrinaDeCapitanidiVimercati","text":"Sabrina De Capitani di Vimercati"},{"@pid":"69/3814","text":"Sara Foresti"},{"@pid":"j/SushilJajodia","text":"Sushil Jajodia"},{"@pid":"53/9143","text":"Giovanni Livraga"},{"@pid":"05/600","text":"Stefano Paraboschi"},{"@pid":"s/PSamarati","text":"Pierangela Samarati"}]},"title":"An authorization model for query execution in the cloud.","venue":"VLDB J.","volume":"31","number":"3","pages":"555-579","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/VimercatiFJLPS22","doi":"10.1007/S00778-021-00709-X","ee":"https://doi.org/10.1007/s00778-021-00709-x","url":"https://dblp.org/rec/journals/vldb/VimercatiFJLPS22"},
+"url":"URL#1352670"
+},
+{
+"@score":"1",
+"@id":"1352671",
+"info":{"authors":{"author":[{"@pid":"78/2022-37","text":"Kai Wang 0037"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"98/5684-1","text":"Wenjie Zhang 0001"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"}]},"title":"Towards efficient solutions of bitruss decomposition for large-scale bipartite graphs.","venue":"VLDB J.","volume":"31","number":"2","pages":"203-226","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/WangLQZZ22","doi":"10.1007/S00778-021-00658-5","ee":"https://doi.org/10.1007/s00778-021-00658-5","url":"https://dblp.org/rec/journals/vldb/WangLQZZ22"},
+"url":"URL#1352671"
+},
+{
+"@score":"1",
+"@id":"1352672",
+"info":{"authors":{"author":[{"@pid":"160/5974","text":"Qinyong Wang"},{"@pid":"04/10606","text":"Hongzhi Yin"},{"@pid":"22/1512-5","text":"Tong Chen 0005"},{"@pid":"204/2362","text":"Junliang Yu"},{"@pid":"219/5776","text":"Alexander Zhou 0001"},{"@pid":"74/1890-1","text":"Xiangliang Zhang 0001"}]},"title":"Fast-adapting and privacy-preserving federated recommender system.","venue":"VLDB J.","volume":"31","number":"5","pages":"877-896","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/WangYCYZZ22","doi":"10.1007/S00778-021-00700-6","ee":"https://doi.org/10.1007/s00778-021-00700-6","url":"https://dblp.org/rec/journals/vldb/WangYCYZZ22"},
+"url":"URL#1352672"
+},
+{
+"@score":"1",
+"@id":"1352673",
+"info":{"authors":{"author":[{"@pid":"92/8453-1","text":"Dong Wen 0001"},{"@pid":"242/5124","text":"Bohua Yang"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"135/6864","text":"Dawei Cheng"},{"@pid":"98/5684-1","text":"Wenjie Zhang 0001"}]},"title":"Span-reachability querying in large temporal graphs.","venue":"VLDB J.","volume":"31","number":"4","pages":"629-647","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/WenYZQCZ22","doi":"10.1007/S00778-021-00715-Z","ee":"https://doi.org/10.1007/s00778-021-00715-z","url":"https://dblp.org/rec/journals/vldb/WenYZQCZ22"},
+"url":"URL#1352673"
+},
+{
+"@score":"1",
+"@id":"1352674",
+"info":{"authors":{"author":[{"@pid":"169/3825","text":"Sheng Xiang"},{"@pid":"92/8453-1","text":"Dong Wen 0001"},{"@pid":"135/6864","text":"Dawei Cheng"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"36/5395","text":"Zhengping Qian"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"}]},"title":"General graph generators: experiments, analyses, and improvements.","venue":"VLDB J.","volume":"31","number":"5","pages":"897-925","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/XiangWCZQQL22","doi":"10.1007/S00778-021-00701-5","ee":"https://doi.org/10.1007/s00778-021-00701-5","url":"https://dblp.org/rec/journals/vldb/XiangWCZQQL22"},
+"url":"URL#1352674"
+},
+{
+"@score":"1",
+"@id":"1352675",
+"info":{"authors":{"author":[{"@pid":"36/3988","text":"Qingyu Xu"},{"@pid":"48/1294-7","text":"Feng Zhang 0007"},{"@pid":"10/4031","text":"Mingde Zhang"},{"@pid":"72/7413","text":"Jidong Zhai"},{"@pid":"h/BingshengHe","text":"Bingsheng He"},{"@pid":"49/1457-2","text":"Cheng Yang 0002"},{"@pid":"135/4657","text":"Shuhao Zhang 0001"},{"@pid":"17/7776","text":"Jiazao Lin"},{"@pid":"33/6902","text":"Haidi Liu"},{"@pid":"47/3542-1","text":"Xiaoyong Du 0001"}]},"title":"Payment behavior prediction on shared parking lots with TR-GCN.","venue":"VLDB J.","volume":"31","number":"5","pages":"1035-1058","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/XuZZZHYZLLD22","doi":"10.1007/S00778-021-00722-0","ee":"https://doi.org/10.1007/s00778-021-00722-0","url":"https://dblp.org/rec/journals/vldb/XuZZZHYZLLD22"},
+"url":"URL#1352675"
+},
+{
+"@score":"1",
+"@id":"1352676",
+"info":{"authors":{"author":[{"@pid":"81/9436-1","text":"Da Yan 0001"},{"@pid":"235/2508","text":"Guimu Guo"},{"@pid":"259/6180","text":"Jalal Khalil"},{"@pid":"o/MTamerOzsu","text":"M. Tamer Özsu"},{"@pid":"21/1694","text":"Wei-Shinn Ku"},{"@pid":"l/JohnCSLui","text":"John C. S. Lui"}]},"title":"G-thinker: a general distributed framework for finding qualified subgraphs in a big graph with load balancing.","venue":"VLDB J.","volume":"31","number":"2","pages":"287-320","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/YanGKOKL22","doi":"10.1007/S00778-021-00688-Z","ee":"https://doi.org/10.1007/s00778-021-00688-z","url":"https://dblp.org/rec/journals/vldb/YanGKOKL22"},
+"url":"URL#1352676"
+},
+{
+"@score":"1",
+"@id":"1352677",
+"info":{"authors":{"author":[{"@pid":"81/9436-1","text":"Da Yan 0001"},{"@pid":"79/8347","text":"Wenwen Qu"},{"@pid":"235/2508","text":"Guimu Guo"},{"@pid":"92/6206","text":"Xiaoling Wang"},{"@pid":"07/4580-1","text":"Yang Zhou 0001"}]},"title":"PrefixFPM: a parallel framework for general-purpose mining of frequent and closed patterns.","venue":"VLDB J.","volume":"31","number":"2","pages":"253-286","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/YanQGWZ22","doi":"10.1007/S00778-021-00687-0","ee":"https://doi.org/10.1007/s00778-021-00687-0","url":"https://dblp.org/rec/journals/vldb/YanQGWZ22"},
+"url":"URL#1352677"
+},
+{
+"@score":"1",
+"@id":"1352678",
+"info":{"authors":{"author":[{"@pid":"217/4735","text":"Weixin Zeng"},{"@pid":"07/668-2","text":"Xiang Zhao 0002"},{"@pid":"139/4257-1","text":"Xinyi Li 0001"},{"@pid":"69/5457","text":"Jiuyang Tang"},{"@pid":"w/WeiWang11","text":"Wei Wang 0011"}]},"title":"On entity alignment at scale.","venue":"VLDB J.","volume":"31","number":"5","pages":"1009-1033","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/ZengZLTW22","doi":"10.1007/S00778-021-00703-3","ee":"https://doi.org/10.1007/s00778-021-00703-3","url":"https://dblp.org/rec/journals/vldb/ZengZLTW22"},
+"url":"URL#1352678"
+},
+{
+"@score":"1",
+"@id":"1352679",
+"info":{"authors":{"author":[{"@pid":"03/505","text":"Rui Zhang 0003"},{"@pid":"115/5506","text":"Bayu Distiawan Trisedya"},{"@pid":"39/9","text":"Miao Li"},{"@pid":"74/1552-1","text":"Yong Jiang 0001"},{"@pid":"41/1074-1","text":"Jianzhong Qi 0001"}]},"title":"A benchmark and comprehensive survey on knowledge graph entity alignment via representation learning.","venue":"VLDB J.","volume":"31","number":"5","pages":"1143-1168","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/ZhangTLJQ22","doi":"10.1007/S00778-022-00747-Z","ee":"https://doi.org/10.1007/s00778-022-00747-z","url":"https://dblp.org/rec/journals/vldb/ZhangTLJQ22"},
+"url":"URL#1352679"
+},
+{
+"@score":"1",
+"@id":"1352680",
+"info":{"authors":{"author":[{"@pid":"139/3492","text":"Tianyu Zhao"},{"@pid":"97/9989","text":"Shuai Huang"},{"@pid":"84/2694","text":"Yong Wang"},{"@pid":"181/5689","text":"Chengliang Chai"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"}]},"title":"RNE: computing shortest paths using road network embedding.","venue":"VLDB J.","volume":"31","number":"3","pages":"507-528","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/ZhaoHWCL22","doi":"10.1007/S00778-021-00705-1","ee":"https://doi.org/10.1007/s00778-021-00705-1","url":"https://dblp.org/rec/journals/vldb/ZhaoHWCL22"},
+"url":"URL#1352680"
+},
+{
+"@score":"1",
+"@id":"1352681",
+"info":{"authors":{"author":[{"@pid":"200/2467","text":"Libin Zheng"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"},{"@pid":"76/185-3","text":"Peng Cheng 0003"}]},"title":"Privacy-preserving worker allocation in crowdsourcing.","venue":"VLDB J.","volume":"31","number":"4","pages":"733-751","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/ZhengCC22","doi":"10.1007/S00778-021-00713-1","ee":"https://doi.org/10.1007/s00778-021-00713-1","url":"https://dblp.org/rec/journals/vldb/ZhengCC22"},
+"url":"URL#1352681"
+},
+{
+"@score":"1",
+"@id":"1352682",
+"info":{"authors":{"author":[{"@pid":"152/4895","text":"Bolong Zheng"},{"@pid":"95/6322-6","text":"Xi Zhao 0006"},{"@pid":"257/8644","text":"Lianggui Weng"},{"@pid":"88/302","text":"Quoc Viet Hung Nguyen"},{"@pid":"43/6690-1","text":"Hang Liu 0001"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"}]},"title":"PM-LSH: a fast and accurate in-memory framework for high-dimensional approximate NN and closest pair search.","venue":"VLDB J.","volume":"31","number":"6","pages":"1339-1363","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/ZhengZWNLJ22","doi":"10.1007/S00778-021-00680-7","ee":"https://doi.org/10.1007/s00778-021-00680-7","url":"https://dblp.org/rec/journals/vldb/ZhengZWNLJ22"},
+"url":"URL#1352682"
+},
+{
+"@score":"1",
+"@id":"1352683",
+"info":{"authors":{"author":[{"@pid":"94/1593-2","text":"Yifan Zhu 0002"},{"@pid":"69/157-1","text":"Lu Chen 0001"},{"@pid":"80/2651","text":"Yunjun Gao"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"}]},"title":"Pivot selection algorithms in metric spaces: a survey and experimental study.","venue":"VLDB J.","volume":"31","number":"1","pages":"23-47","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/ZhuCGJ22","doi":"10.1007/S00778-021-00691-4","ee":"https://doi.org/10.1007/s00778-021-00691-4","url":"https://dblp.org/rec/journals/vldb/ZhuCGJ22"},
+"url":"URL#1352683"
+},
+{
+"@score":"1",
+"@id":"1352684",
+"info":{"authors":{"author":[{"@pid":"269/7081","text":"Yuqing Zhu 0006"},{"@pid":"83/663-4","text":"Jing Tang 0004"},{"@pid":"23/2460","text":"Xueyan Tang"}]},"title":"Optimal price profile for influential nodes in online social networks.","venue":"VLDB J.","volume":"31","number":"4","pages":"779-795","year":"2022","type":"Journal Articles","access":"closed","key":"journals/vldb/ZhuTT22","doi":"10.1007/S00778-021-00727-9","ee":"https://doi.org/10.1007/s00778-021-00727-9","url":"https://dblp.org/rec/journals/vldb/ZhuTT22"},
+"url":"URL#1352684"
+}
+]
+}
+}
+}

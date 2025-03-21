@@ -1,0 +1,170 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb11.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"76.06"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"23",
+"@dc":"23",
+"@oc":"23",
+"@id":"47762604",
+"text":":facetid:toc:db/journals/vldb/vldb11.bht"
+}
+},
+"hits":{
+"@total":"23",
+"@computed":"23",
+"@sent":"23",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"6863778",
+"info":{"authors":{"author":[{"@pid":"06/3668","text":"Vincent Aguilera"},{"@pid":"c/SophieCluet","text":"Sophie Cluet"},{"@pid":"m/TovaMilo","text":"Tova Milo"},{"@pid":"v/PierangeloVeltri","text":"Pierangelo Veltri"},{"@pid":"36/4600","text":"Dan Vodislav"}]},"title":"Views in a large-scale XML repository.","venue":"VLDB J.","volume":"11","number":"3","pages":"238-255","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/AguileraCMVV02","doi":"10.1007/S00778-002-0065-X","ee":"https://doi.org/10.1007/s00778-002-0065-x","url":"https://dblp.org/rec/journals/vldb/AguileraCMVV02"},
+"url":"URL#6863778"
+},
+{
+"@score":"1",
+"@id":"6863779",
+"info":{"authors":{"author":[{"@pid":"a/AnastassiaAilamaki","text":"Anastassia Ailamaki"},{"@pid":"d/DJDeWitt","text":"David J. DeWitt"},{"@pid":"h/MarkDHill","text":"Mark D. Hill"}]},"title":"Data page layouts for relational databases on deep memory hierarchies.","venue":"VLDB J.","volume":"11","number":"3","pages":"198-215","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/AilamakiDH02","doi":"10.1007/S00778-002-0074-9","ee":"https://doi.org/10.1007/s00778-002-0074-9","url":"https://dblp.org/rec/journals/vldb/AilamakiDH02"},
+"url":"URL#6863779"
+},
+{
+"@score":"1",
+"@id":"6863780",
+"info":{"authors":{"author":[{"@pid":"a/SihemAmerYahia","text":"Sihem Amer-Yahia"},{"@pid":"82/1270","text":"SungRan Cho"},{"@pid":"l/LVSLakshmanan","text":"Laks V. S. Lakshmanan"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"Tree pattern query minimization.","venue":"VLDB J.","volume":"11","number":"4","pages":"315-331","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/Amer-YahiaCLS02","doi":"10.1007/S00778-002-0076-7","ee":"https://doi.org/10.1007/s00778-002-0076-7","url":"https://dblp.org/rec/journals/vldb/Amer-YahiaCLS02"},
+"url":"URL#6863780"
+},
+{
+"@score":"1",
+"@id":"6863781",
+"info":{"authors":{"author":[{"@pid":"98/6171-1","text":"Ning An 0001"},{"@pid":"67/1051","text":"Sudhanva Gurumurthi"},{"@pid":"72/3356","text":"Anand Sivasubramaniam"},{"@pid":"v/NarayananVijaykrishnan","text":"Narayanan Vijaykrishnan"},{"@pid":"k/MahmutTKandemir","text":"Mahmut T. Kandemir"},{"@pid":"i/MaryJaneIrwin","text":"Mary Jane Irwin"}]},"title":"Energy-performance trade-offs for spatial access methods on memory-resident data.","venue":"VLDB J.","volume":"11","number":"3","pages":"179-197","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/AnGSVKI02","doi":"10.1007/S00778-002-0073-X","ee":"https://doi.org/10.1007/s00778-002-0073-x","url":"https://dblp.org/rec/journals/vldb/AnGSVKI02"},
+"url":"URL#6863781"
+},
+{
+"@score":"1",
+"@id":"6863782",
+"info":{"authors":{"author":[{"@pid":"a/PeterMGApers","text":"Peter M. G. Apers"},{"@pid":"c/StefanoCeri","text":"Stefano Ceri"},{"@pid":"s/RichardTSnodgrass","text":"Richard T. Snodgrass"}]},"title":"Editorial.","venue":"VLDB J.","volume":"11","number":"3","pages":"177-178","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/ApersCS02","doi":"10.1007/S00778-002-0075-8","ee":"https://doi.org/10.1007/s00778-002-0075-8","url":"https://dblp.org/rec/journals/vldb/ApersCS02"},
+"url":"URL#6863782"
+},
+{
+"@score":"1",
+"@id":"6863783",
+"info":{"authors":{"author":[{"@pid":"c/CheeYongChan","text":"Chee Yong Chan"},{"@pid":"f/PascalFelber","text":"Pascal Felber"},{"@pid":"g/MinosNGarofalakis","text":"Minos N. Garofalakis"},{"@pid":"r/RajeevRastogi","text":"Rajeev Rastogi"}]},"title":"Efficient filtering of XML documents with XPath expressions.","venue":"VLDB J.","volume":"11","number":"4","pages":"354-379","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/ChanFGR02","doi":"10.1007/S00778-002-0077-6","ee":"https://doi.org/10.1007/s00778-002-0077-6","url":"https://dblp.org/rec/journals/vldb/ChanFGR02"},
+"url":"URL#6863783"
+},
+{
+"@score":"1",
+"@id":"6863784",
+"info":{"authors":{"author":[{"@pid":"05/2617","text":"Shu-Yao Chien"},{"@pid":"t/VassilisJTsotras","text":"Vassilis J. Tsotras"},{"@pid":"z/CZaniolo","text":"Carlo Zaniolo"}]},"title":"Efficient schemes for managing multiversionXML documents.","venue":"VLDB J.","volume":"11","number":"4","pages":"332-353","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/ChienTZ02","doi":"10.1007/S00778-002-0079-4","ee":"https://doi.org/10.1007/s00778-002-0079-4","url":"https://dblp.org/rec/journals/vldb/ChienTZ02"},
+"url":"URL#6863784"
+},
+{
+"@score":"1",
+"@id":"6863785",
+"info":{"authors":{"author":[{"@pid":"01/3589","text":"Rada Chirkova"},{"@pid":"h/AlonYHalevy","text":"Alon Y. Halevy"},{"@pid":"s/DanSuciu","text":"Dan Suciu"}]},"title":"A formal perspective on the view selection problem.","venue":"VLDB J.","volume":"11","number":"3","pages":"216-237","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/ChirkovaHS02","doi":"10.1007/S00778-002-0070-0","ee":"https://doi.org/10.1007/s00778-002-0070-0","url":"https://dblp.org/rec/journals/vldb/ChirkovaHS02"},
+"url":"URL#6863785"
+},
+{
+"@score":"1",
+"@id":"6863786",
+"info":{"authors":{"author":[{"@pid":"58/4464","text":"Ling Feng"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"},{"@pid":"l/HongjunLu","text":"Hongjun Lu"},{"@pid":"h/JiaweiHan","text":"Jiawei Han 0001"}]},"title":"A template model for multidimensional inter-transactional association rules.","venue":"VLDB J.","volume":"11","number":"2","pages":"153-175","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/FengYLH02","doi":"10.1007/S00778-002-0069-6","ee":"https://doi.org/10.1007/s00778-002-0069-6","url":"https://dblp.org/rec/journals/vldb/FengYLH02"},
+"url":"URL#6863786"
+},
+{
+"@score":"1",
+"@id":"6863787",
+"info":{"authors":{"author":[{"@pid":"389/7043-1","text":"Elena Ferrari 0001"},{"@pid":"a/NRAdam","text":"Nabil R. Adam"},{"@pid":"a/VAtluri","text":"Vijayalakshmi Atluri"},{"@pid":"b/ElisaBertino","text":"Elisa Bertino"},{"@pid":"90/4451","text":"Ugo Capuozzo"}]},"title":"An authorization system for digital libraries.","venue":"VLDB J.","volume":"11","number":"1","pages":"58-67","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/FerrariAABC02","doi":"10.1007/S007780200063","ee":"https://doi.org/10.1007/s007780200063","url":"https://dblp.org/rec/journals/vldb/FerrariAABC02"},
+"url":"URL#6863787"
+},
+{
+"@score":"1",
+"@id":"6863788",
+"info":{"authors":{"author":[{"@pid":"66/4810","text":"Thorsten Fiebig"},{"@pid":"h/SvenHelmer","text":"Sven Helmer"},{"@pid":"k/CarlChristianKanne","text":"Carl-Christian Kanne"},{"@pid":"m/GuidoMoerkotte","text":"Guido Moerkotte"},{"@pid":"06/2875","text":"Julia Neumann"},{"@pid":"59/5308","text":"Robert Schiele"},{"@pid":"28/6679","text":"Till Westmann"}]},"title":"Anatomy of a native XML base management system.","venue":"VLDB J.","volume":"11","number":"4","pages":"292-314","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/FiebigHKMNSW02","doi":"10.1007/S00778-002-0080-Y","ee":"https://doi.org/10.1007/s00778-002-0080-y","url":"https://dblp.org/rec/journals/vldb/FiebigHKMNSW02"},
+"url":"URL#6863788"
+},
+{
+"@score":"1",
+"@id":"6863789",
+"info":{"authors":{"author":{"@pid":"h/AlonYHalevy","text":"Alon Y. Halevy"}},"title":"Guest Editorial.","venue":"VLDB J.","volume":"11","number":"4","pages":"273","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/Halevy02","doi":"10.1007/S00778-002-0082-9","ee":"https://doi.org/10.1007/s00778-002-0082-9","url":"https://dblp.org/rec/journals/vldb/Halevy02"},
+"url":"URL#6863789"
+},
+{
+"@score":"1",
+"@id":"6863790",
+"info":{"authors":{"author":[{"@pid":"h/GisliRHjaltason","text":"Gísli R. Hjaltason"},{"@pid":"s/HananSamet","text":"Hanan Samet"}]},"title":"Speeding up construction of PMR quadtree-based spatial indexes.","venue":"VLDB J.","volume":"11","number":"2","pages":"109-137","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/HjaltasonS02","doi":"10.1007/S00778-002-0067-8","ee":"https://doi.org/10.1007/s00778-002-0067-8","url":"https://dblp.org/rec/journals/vldb/HjaltasonS02"},
+"url":"URL#6863790"
+},
+{
+"@score":"1",
+"@id":"6863791",
+"info":{"authors":{"author":[{"@pid":"318/5521","text":"Ela Hunt"},{"@pid":"a/MalcolmPAtkinson","text":"Malcolm P. Atkinson 0001"},{"@pid":"78/6375","text":"Robert W. Irving"}]},"title":"Database indexing for large DNA and protein sequence collections.","venue":"VLDB J.","volume":"11","number":"3","pages":"256-271","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/HuntAI02","doi":"10.1007/S007780200064","ee":"https://doi.org/10.1007/s007780200064","url":"https://dblp.org/rec/journals/vldb/HuntAI02"},
+"url":"URL#6863791"
+},
+{
+"@score":"1",
+"@id":"6863792",
+"info":{"authors":{"author":[{"@pid":"i/ZacharyGIves","text":"Zachary G. Ives"},{"@pid":"h/AlonYHalevy","text":"Alon Y. Halevy"},{"@pid":"w/DanielSWeld","text":"Daniel S. Weld"}]},"title":"An XML query engine for network-bound data.","venue":"VLDB J.","volume":"11","number":"4","pages":"380-402","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/IvesHW02","doi":"10.1007/S00778-002-0078-5","ee":"https://doi.org/10.1007/s00778-002-0078-5","url":"https://dblp.org/rec/journals/vldb/IvesHW02"},
+"url":"URL#6863792"
+},
+{
+"@score":"1",
+"@id":"6863793",
+"info":{"authors":{"author":[{"@pid":"j/HVJagadish","text":"H. V. Jagadish"},{"@pid":"71/3548","text":"Shurug Al-Khalifa"},{"@pid":"54/4551","text":"Adriane Chapman"},{"@pid":"l/LVSLakshmanan","text":"Laks V. S. Lakshmanan"},{"@pid":"25/6617","text":"Andrew Nierman"},{"@pid":"05/5881","text":"Stelios Paparizos"},{"@pid":"p/JMPatel","text":"Jignesh M. Patel"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"},{"@pid":"97/2108","text":"Nuwee Wiwatwattana"},{"@pid":"20/473","text":"Yuqing Wu"},{"@pid":"58/3771","text":"Cong Yu 0001"}]},"title":"TIMBER: A native XML database.","venue":"VLDB J.","volume":"11","number":"4","pages":"274-291","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/JagadishACLNPPSWWY02","doi":"10.1007/S00778-002-0081-X","ee":"https://doi.org/10.1007/s00778-002-0081-x","url":"https://dblp.org/rec/journals/vldb/JagadishACLNPPSWWY02"},
+"url":"URL#6863793"
+},
+{
+"@score":"1",
+"@id":"6863794",
+"info":{"authors":{"author":[{"@pid":"m/APMarathe","text":"Arunprasad P. Marathe"},{"@pid":"s/KennethSalem","text":"Kenneth Salem"}]},"title":"Query processing techniques for arrays.","venue":"VLDB J.","volume":"11","number":"1","pages":"68-91","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/MaratheS02","doi":"10.1007/S007780200062","ee":"https://doi.org/10.1007/s007780200062","url":"https://dblp.org/rec/journals/vldb/MaratheS02"},
+"url":"URL#6863794"
+},
+{
+"@score":"1",
+"@id":"6863795",
+"info":{"authors":{"author":[{"@pid":"m/GeorgeAMihaila","text":"George A. Mihaila"},{"@pid":"r/LouiqaRaschid","text":"Louiqa Raschid"},{"@pid":"t/AnthonyTomasic","text":"Anthony Tomasic"}]},"title":"Locating and accessing data repositories with WebSemantics.","venue":"VLDB J.","volume":"11","number":"1","pages":"47-57","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/MihailaRT02","doi":"10.1007/S007780200061","ee":"https://doi.org/10.1007/s007780200061","url":"https://dblp.org/rec/journals/vldb/MihailaRT02"},
+"url":"URL#6863795"
+},
+{
+"@score":"1",
+"@id":"6863796",
+"info":{"authors":{"author":[{"@pid":"n/AlexandrosNanopoulos","text":"Alexandros Nanopoulos"},{"@pid":"m/YManolopoulos","text":"Yannis Manolopoulos"}]},"title":"Efficient similarity search for market basket data.","venue":"VLDB J.","volume":"11","number":"2","pages":"138-152","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/NanopoulosM02","doi":"10.1007/S00778-002-0068-7","ee":"https://doi.org/10.1007/s00778-002-0068-7","url":"https://dblp.org/rec/journals/vldb/NanopoulosM02"},
+"url":"URL#6863796"
+},
+{
+"@score":"1",
+"@id":"6863797",
+"info":{"authors":{"author":{"@pid":"n/GonzaloNavarro","text":"Gonzalo Navarro 0001"}},"title":"Searching in metric spaces by spatial approximation.","venue":"VLDB J.","volume":"11","number":"1","pages":"28-46","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/Navarro02","doi":"10.1007/S007780200060","ee":"https://doi.org/10.1007/s007780200060","url":"https://dblp.org/rec/journals/vldb/Navarro02"},
+"url":"URL#6863797"
+},
+{
+"@score":"1",
+"@id":"6863798",
+"info":{"authors":{"author":[{"@pid":"r/DRafiei","text":"Davood Rafiei"},{"@pid":"m/AOMendelzon","text":"Alberto O. Mendelzon"}]},"title":"Efficient retrieval of similar shapes.","venue":"VLDB J.","volume":"11","number":"1","pages":"17-27","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/RafieiM02","doi":"10.1007/S007780100059","ee":"https://doi.org/10.1007/s007780100059","url":"https://dblp.org/rec/journals/vldb/RafieiM02"},
+"url":"URL#6863798"
+},
+{
+"@score":"1",
+"@id":"6863799",
+"info":{"authors":{"author":[{"@pid":"s/YasushiSakurai","text":"Yasushi Sakurai"},{"@pid":"y/MasatoshiYoshikawa","text":"Masatoshi Yoshikawa"},{"@pid":"97/4305","text":"Shunsuke Uemura"},{"@pid":"22/1995","text":"Haruhiko Kojima"}]},"title":"Spatial indexing of high-dimensional data based on relative approximation.","venue":"VLDB J.","volume":"11","number":"2","pages":"93-108","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/SakuraiYUK02","doi":"10.1007/S00778-002-0066-9","ee":"https://doi.org/10.1007/s00778-002-0066-9","url":"https://dblp.org/rec/journals/vldb/SakuraiYUK02"},
+"url":"URL#6863799"
+},
+{
+"@score":"1",
+"@id":"6863800",
+"info":{"authors":{"author":[{"@pid":"48/2122","text":"Simonas Saltenis"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"}]},"title":"Indexing of now-relative spatio-bitemporal data.","venue":"VLDB J.","volume":"11","number":"1","pages":"1-16","year":"2002","type":"Journal Articles","access":"closed","key":"journals/vldb/SaltenisJ02","doi":"10.1007/S007780100058","ee":"https://doi.org/10.1007/s007780100058","url":"https://dblp.org/rec/journals/vldb/SaltenisJ02"},
+"url":"URL#6863800"
+}
+]
+}
+}
+}

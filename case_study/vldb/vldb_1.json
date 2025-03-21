@@ -1,0 +1,86 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb1.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"73.09"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"9",
+"@dc":"9",
+"@oc":"9",
+"@id":"47762602",
+"text":":facetid:toc:db/journals/vldb/vldb1.bht"
+}
+},
+"hits":{
+"@total":"9",
+"@computed":"9",
+"@sent":"9",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"7489666",
+"info":{"authors":{"author":[{"@pid":"b/YuriBreitbart","text":"Yuri Breitbart"},{"@pid":"g/HGarciaMolina","text":"Hector Garcia-Molina"},{"@pid":"s/AbrahamSilberschatz","text":"Abraham Silberschatz"}]},"title":"Overview of Multidatabase Transaction Management","venue":"VLDB J.","volume":"1","number":"2","pages":"181-239","year":"1992","type":"Journal Articles","access":"open","key":"journals/vldb/BreitbartGS92","ee":"http://www.vldb.org/journal/VLDBJ1/P181.pdf","url":"https://dblp.org/rec/journals/vldb/BreitbartGS92"},
+"url":"URL#7489666"
+},
+{
+"@score":"1",
+"@id":"7489667",
+"info":{"authors":{"author":[{"@pid":"b/YuriBreitbart","text":"Yuri Breitbart"},{"@pid":"s/AbrahamSilberschatz","text":"Abraham Silberschatz"},{"@pid":"52/3685","text":"Glenn R. Thompson"}]},"title":"Transaction Management Issues in a Failure-Prone Multidatabase System Environment","venue":"VLDB J.","volume":"1","number":"1","pages":"1-39","year":"1992","type":"Journal Articles","access":"open","key":"journals/vldb/BreitbartST92","ee":"http://www.vldb.org/journal/VLDBJ1/P001.pdf","url":"https://dblp.org/rec/journals/vldb/BreitbartST92"},
+"url":"URL#7489667"
+},
+{
+"@score":"1",
+"@id":"7489668",
+"info":{"title":"Title, Foreword","venue":"VLDB J.","volume":"1","number":"1","year":"1992","type":"Journal Articles","access":"open","key":"journals/vldb/C92","ee":"http://www.vldb.org/journal/VLDBJ1/C1.pdf","url":"https://dblp.org/rec/journals/vldb/C92"},
+"url":"URL#7489668"
+},
+{
+"@score":"1",
+"@id":"7489669",
+"info":{"title":"Title, Foreword","venue":"VLDB J.","volume":"1","number":"2","year":"1992","type":"Journal Articles","access":"open","key":"journals/vldb/C92a","ee":"http://www.vldb.org/journal/VLDBJ1/C2.pdf","url":"https://dblp.org/rec/journals/vldb/C92a"},
+"url":"URL#7489669"
+},
+{
+"@score":"1",
+"@id":"7489670",
+"info":{"authors":{"author":[{"@pid":"48/1786","text":"Pamela Drew"},{"@pid":"64/2075","text":"Roger King"},{"@pid":"53/2749","text":"Dennis Heimbigner"}]},"title":"A Toolkit for the Incremental Implementation of Heterogeneous Database Management Systems","venue":"VLDB J.","volume":"1","number":"2","pages":"241-284","year":"1992","type":"Journal Articles","access":"open","key":"journals/vldb/DrewKH92","ee":"http://www.vldb.org/journal/VLDBJ1/P241.pdf","url":"https://dblp.org/rec/journals/vldb/DrewKH92"},
+"url":"URL#7489670"
+},
+{
+"@score":"1",
+"@id":"7489671",
+"info":{"authors":{"author":{"@pid":"88/3763","text":"David K. Hsiao"}},"title":"Federated Databases and Systems: Part I - A Tutorial on Their Data Sharing","venue":"VLDB J.","volume":"1","number":"1","pages":"127-179","year":"1992","type":"Journal Articles","access":"open","key":"journals/vldb/Hsiao92","ee":"http://www.vldb.org/journal/VLDBJ1/P127.pdf","url":"https://dblp.org/rec/journals/vldb/Hsiao92"},
+"url":"URL#7489671"
+},
+{
+"@score":"1",
+"@id":"7489672",
+"info":{"authors":{"author":{"@pid":"88/3763","text":"David K. Hsiao"}},"title":"Federated Databases and Systems: Part II - A Tutorial on Their Resource Consolidation","venue":"VLDB J.","volume":"1","number":"2","pages":"285-310","year":"1992","type":"Journal Articles","access":"open","key":"journals/vldb/Hsiao92a","ee":"http://www.vldb.org/journal/VLDBJ1/P285.pdf","url":"https://dblp.org/rec/journals/vldb/Hsiao92a"},
+"url":"URL#7489672"
+},
+{
+"@score":"1",
+"@id":"7489673",
+"info":{"authors":{"author":[{"@pid":"95/2148","text":"Marian H. Nodine"},{"@pid":"z/SBZdonik","text":"Stanley B. Zdonik"}]},"title":"Cooperative Transaction Hierarchies: Transaction Support for Design Applications","venue":"VLDB J.","volume":"1","number":"1","pages":"41-80","year":"1992","type":"Journal Articles","access":"open","key":"journals/vldb/NodineZ92","ee":"http://www.vldb.org/journal/VLDBJ1/P041.pdf","url":"https://dblp.org/rec/journals/vldb/NodineZ92"},
+"url":"URL#7489673"
+},
+{
+"@score":"1",
+"@id":"7489674",
+"info":{"authors":{"author":[{"@pid":"s/StefanoSpaccapietra","text":"Stefano Spaccapietra"},{"@pid":"94/6041","text":"Christine Parent"},{"@pid":"49/3334","text":"Yann Dupont"}]},"title":"Model Independent Assertions for Integration of Heterogeneous Schemas","venue":"VLDB J.","volume":"1","number":"1","pages":"81-126","year":"1992","type":"Journal Articles","access":"open","key":"journals/vldb/SpaccapietraPD92","ee":"http://www.vldb.org/journal/VLDBJ1/P081.pdf","url":"https://dblp.org/rec/journals/vldb/SpaccapietraPD92"},
+"url":"URL#7489674"
+}
+]
+}
+}
+}

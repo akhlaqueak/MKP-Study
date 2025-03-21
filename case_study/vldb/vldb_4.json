@@ -1,0 +1,170 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb4.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"69.41"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"23",
+"@dc":"23",
+"@oc":"23",
+"@id":"47762630",
+"text":":facetid:toc:db/journals/vldb/vldb4.bht"
+}
+},
+"hits":{
+"@total":"23",
+"@computed":"23",
+"@sent":"23",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"7360261",
+"info":{"authors":{"author":[{"@pid":"a/SergeAbiteboul","text":"Serge Abiteboul"},{"@pid":"b/CBeeri","text":"Catriel Beeri"}]},"title":"The Power of Languages for the Manipulation of Complex Values","venue":"VLDB J.","volume":"4","number":"4","pages":"727-794","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/AbiteboulB95","ee":"http://www.vldb.org/journal/VLDBJ4/P727.pdf","url":"https://dblp.org/rec/journals/vldb/AbiteboulB95"},
+"url":"URL#7360261"
+},
+{
+"@score":"1",
+"@id":"7360262",
+"info":{"authors":{"author":[{"@pid":"a/DivyakantAgrawal","text":"Divyakant Agrawal"},{"@pid":"a/AmrElAbbadi","text":"Amr El Abbadi"},{"@pid":"62/4754","text":"Richard Jeffers"},{"@pid":"59/74","text":"Lijing Lin"}]},"title":"Ordered Shared Locks for Real-Time Databases","venue":"VLDB J.","volume":"4","number":"1","pages":"87-126","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/AgrawalAJL95","ee":"http://www.vldb.org/journal/VLDBJ4/P087.pdf","url":"https://dblp.org/rec/journals/vldb/AgrawalAJL95"},
+"url":"URL#7360262"
+},
+{
+"@score":"1",
+"@id":"7360263",
+"info":{"authors":{"author":[{"@pid":"a/AAlbano","text":"Antonio Albano"},{"@pid":"g/GiorgioGhelli","text":"Giorgio Ghelli"},{"@pid":"o/RenzoOrsini","text":"Renzo Orsini"}]},"title":"Fibonacci: A Programming Language for Object Databases","venue":"VLDB J.","volume":"4","number":"3","pages":"403-444","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/AlbanoGO95","ee":"http://www.vldb.org/journal/VLDBJ4/P403.pdf","url":"https://dblp.org/rec/journals/vldb/AlbanoGO95"},
+"url":"URL#7360263"
+},
+{
+"@score":"1",
+"@id":"7360264",
+"info":{"authors":{"author":[{"@pid":"a/MalcolmPAtkinson","text":"Malcolm P. Atkinson 0001"},{"@pid":"82/2183","text":"Ronald Morrison"}]},"title":"Orthogonally Persistent Object Systems","venue":"VLDB J.","volume":"4","number":"3","pages":"319-401","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/AtkinsonM95","ee":"http://www.vldb.org/journal/VLDBJ4/P319.pdf","url":"https://dblp.org/rec/journals/vldb/AtkinsonM95"},
+"url":"URL#7360264"
+},
+{
+"@score":"1",
+"@id":"7360265",
+"info":{"authors":{"author":[{"@pid":"b/DBarbara","text":"Daniel Barbará"},{"@pid":"i/TomaszImielinski","text":"Tomasz Imielinski"}]},"title":"Sleepers and Workaholics: Caching Strategies in Mobile Environments","venue":"VLDB J.","volume":"4","number":"4","pages":"567-602","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/BarbaraI95","ee":"http://www.vldb.org/journal/VLDBJ4/P567.pdf","url":"https://dblp.org/rec/journals/vldb/BarbaraI95"},
+"url":"URL#7360265"
+},
+{
+"@score":"1",
+"@id":"7360266",
+"info":{"authors":{"author":[{"@pid":"b/VBenzaken","text":"Véronique Benzaken"},{"@pid":"d/AnneDoucet","text":"Anne Doucet"}]},"title":"Thémis: A Database Programming Language Handling Integrity Constraints","venue":"VLDB J.","volume":"4","number":"3","pages":"493-517","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/BenzakenD95","ee":"http://www.vldb.org/journal/VLDBJ4/P493.pdf","url":"https://dblp.org/rec/journals/vldb/BenzakenD95"},
+"url":"URL#7360266"
+},
+{
+"@score":"1",
+"@id":"7360267",
+"info":{"title":"Title, Announcement","venue":"VLDB J.","volume":"4","number":"1","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/C95","ee":"http://www.vldb.org/journal/VLDBJ4/C1.pdf","url":"https://dblp.org/rec/journals/vldb/C95"},
+"url":"URL#7360267"
+},
+{
+"@score":"1",
+"@id":"7360268",
+"info":{"title":"Title","venue":"VLDB J.","volume":"4","number":"2","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/C95a","ee":"http://www.vldb.org/journal/VLDBJ4/C2.pdf","url":"https://dblp.org/rec/journals/vldb/C95a"},
+"url":"URL#7360268"
+},
+{
+"@score":"1",
+"@id":"7360269",
+"info":{"title":"Title, Preface to the Special Issue on Persistent Object Systems","venue":"VLDB J.","volume":"4","number":"3","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/C95b","ee":"http://www.vldb.org/journal/VLDBJ4/C3.pdf","url":"https://dblp.org/rec/journals/vldb/C95b"},
+"url":"URL#7360269"
+},
+{
+"@score":"1",
+"@id":"7360270",
+"info":{"title":"Title, Foreword, VLDB Journal to be published electronically, Index Vol. 4","venue":"VLDB J.","volume":"4","number":"4","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/C95c","ee":"http://www.vldb.org/journal/VLDBJ4/C4.pdf","url":"https://dblp.org/rec/journals/vldb/C95c"},
+"url":"URL#7360270"
+},
+{
+"@score":"1",
+"@id":"7360271",
+"info":{"authors":{"author":[{"@pid":"c/CClifton","text":"Chris Clifton"},{"@pid":"g/HGarciaMolina","text":"Hector Garcia-Molina"},{"@pid":"87/1515","text":"David Bloom"}]},"title":"HyperFile: A Data and Query Model for Documents","venue":"VLDB J.","volume":"4","number":"1","pages":"45-86","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/CliftonGB95","ee":"http://www.vldb.org/journal/VLDBJ4/P045.pdf","url":"https://dblp.org/rec/journals/vldb/CliftonGB95"},
+"url":"URL#7360271"
+},
+{
+"@score":"1",
+"@id":"7360272",
+"info":{"authors":{"author":[{"@pid":"c/PConstantopoulos","text":"Panos Constantopoulos"},{"@pid":"j/MatthiasJarke","text":"Matthias Jarke"},{"@pid":"m/JohnMylopoulos","text":"John Mylopoulos"},{"@pid":"v/YannisVassiliou","text":"Yannis Vassiliou"}]},"title":"The Software Information Base: A Server for Reuse","venue":"VLDB J.","volume":"4","number":"1","pages":"1-43","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/ConstantopoulosJMV95","ee":"http://www.vldb.org/journal/VLDBJ4/P001.pdf","url":"https://dblp.org/rec/journals/vldb/ConstantopoulosJMV95"},
+"url":"URL#7360272"
+},
+{
+"@score":"1",
+"@id":"7360273",
+"info":{"authors":{"author":[{"@pid":"58/1210","text":"Asit Dan"},{"@pid":"y/PhilipSYu","text":"Philip S. Yu"},{"@pid":"13/648","text":"Jen-Yao Chung"}]},"title":"Characterization of Database Access Pattern for Analytic Prediction of Buffer Hit Probability","venue":"VLDB J.","volume":"4","number":"1","pages":"127-154","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/DanYC95","ee":"http://www.vldb.org/journal/VLDBJ4/P127.pdf","url":"https://dblp.org/rec/journals/vldb/DanYC95"},
+"url":"URL#7360273"
+},
+{
+"@score":"1",
+"@id":"7360274",
+"info":{"authors":{"author":[{"@pid":"g/RHGuting","text":"Ralf Hartmut Güting"},{"@pid":"s/MarkusSchneider1","text":"Markus Schneider 0001"}]},"title":"Realm-Based Spatial Data Types: The ROSE Algebra","venue":"VLDB J.","volume":"4","number":"2","pages":"243-286","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/GutingS95","ee":"http://www.vldb.org/journal/VLDBJ4/P243.pdf","url":"https://dblp.org/rec/journals/vldb/GutingS95"},
+"url":"URL#7360274"
+},
+{
+"@score":"1",
+"@id":"7360275",
+"info":{"authors":{"author":[{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"},{"@pid":"k/DonaldKossmann","text":"Donald Kossmann"}]},"title":"Adaptable Pointer Swizzling Strategies in Object Bases: Design, Realization, and Quantitative Analysis","venue":"VLDB J.","volume":"4","number":"3","pages":"519-566","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/KemperK95","ee":"http://www.vldb.org/journal/VLDBJ4/P519.pdf","url":"https://dblp.org/rec/journals/vldb/KemperK95"},
+"url":"URL#7360275"
+},
+{
+"@score":"1",
+"@id":"7360276",
+"info":{"authors":{"author":[{"@pid":"l/GadMLandau","text":"Gad M. Landau"},{"@pid":"43/6695","text":"Jeanette P. Schmidt"},{"@pid":"t/VassilisJTsotras","text":"Vassilis J. Tsotras"}]},"title":"Historical Queries Along Multiple Lines of Time Evolution","venue":"VLDB J.","volume":"4","number":"4","pages":"703-726","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/LandauST95","ee":"http://www.vldb.org/journal/VLDBJ4/P703.pdf","url":"https://dblp.org/rec/journals/vldb/LandauST95"},
+"url":"URL#7360276"
+},
+{
+"@score":"1",
+"@id":"7360277",
+"info":{"authors":{"author":[{"@pid":"56/100","text":"Chris Nyberg"},{"@pid":"b/TomBarclay","text":"Tom Barclay"},{"@pid":"42/2159","text":"Zarka Cvetanovic"},{"@pid":"g/JimGray","text":"Jim Gray 0001"},{"@pid":"l/DavidBLomet","text":"David B. Lomet"}]},"title":"AlphaSort: A Cache-Sensitive Parallel External Sort","venue":"VLDB J.","volume":"4","number":"4","pages":"603-627","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/NybergBCGL95","ee":"http://www.vldb.org/journal/VLDBJ4/P603.pdf","url":"https://dblp.org/rec/journals/vldb/NybergBCGL95"},
+"url":"URL#7360277"
+},
+{
+"@score":"1",
+"@id":"7360278",
+"info":{"authors":{"author":[{"@pid":"o/MTamerOzsu","text":"M. Tamer Özsu"},{"@pid":"p/RJPeters","text":"Randal J. Peters"},{"@pid":"s/DuaneSzafron","text":"Duane Szafron"},{"@pid":"57/5959","text":"Boman Irani"},{"@pid":"16/3995","text":"Anna Lipka"},{"@pid":"82/3521","text":"Adriana Muñoz"}]},"title":"TIGUKAT: A Uniform Behavioral Objectbase Management System","venue":"VLDB J.","volume":"4","number":"3","pages":"445-492","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/OzsuPSILM95","ee":"http://www.vldb.org/journal/VLDBJ4/P445.pdf","url":"https://dblp.org/rec/journals/vldb/OzsuPSILM95"},
+"url":"URL#7360278"
+},
+{
+"@score":"1",
+"@id":"7360279",
+"info":{"authors":{"author":[{"@pid":"p/JoanPeckham","text":"Joan Peckham"},{"@pid":"68/1512","text":"Bonnie K. MacKellar"},{"@pid":"34/3458","text":"Michael Doherty"}]},"title":"Data Model for Extensible Support of Explicit Relationships in Design Databases","venue":"VLDB J.","volume":"4","number":"2","pages":"157-191","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/PeckhamMD95","ee":"http://www.vldb.org/journal/VLDBJ4/P157.pdf","url":"https://dblp.org/rec/journals/vldb/PeckhamMD95"},
+"url":"URL#7360279"
+},
+{
+"@score":"1",
+"@id":"7360280",
+"info":{"authors":{"author":[{"@pid":"98/589","text":"Arun N. Swami"},{"@pid":"95/5216","text":"K. Bernhard Schiefer"}]},"title":"Estimating Page Fetches for Index Scans with Finite LRU Buffers","venue":"VLDB J.","volume":"4","number":"4","pages":"675-701","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/SwamiS95","ee":"http://www.vldb.org/journal/VLDBJ4/P675.pdf","url":"https://dblp.org/rec/journals/vldb/SwamiS95"},
+"url":"URL#7360280"
+},
+{
+"@score":"1",
+"@id":"7360281",
+"info":{"authors":{"author":[{"@pid":"81/6380","text":"Marjorie Templeton"},{"@pid":"74/1068","text":"Herbert Henley"},{"@pid":"45/3750","text":"Edward Maros"},{"@pid":"42/5421","text":"Darrel J. Van Buer"}]},"title":"InterViso: Dealing With the Complexity of Federated Database Access","venue":"VLDB J.","volume":"4","number":"2","pages":"287-317","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/TempletonHMB95","ee":"http://www.vldb.org/journal/VLDBJ4/P287.pdf","url":"https://dblp.org/rec/journals/vldb/TempletonHMB95"},
+"url":"URL#7360281"
+},
+{
+"@score":"1",
+"@id":"7360282",
+"info":{"authors":{"author":[{"@pid":"t/ErnestTeniente","text":"Ernest Teniente"},{"@pid":"89/4942","text":"Antoni Olivé"}]},"title":"Updating Knowledge Bases While Maintaining Their Consistency","venue":"VLDB J.","volume":"4","number":"2","pages":"193-241","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/TenienteO95","ee":"http://www.vldb.org/journal/VLDBJ4/P193.pdf","url":"https://dblp.org/rec/journals/vldb/TenienteO95"},
+"url":"URL#7360282"
+},
+{
+"@score":"1",
+"@id":"7360283",
+"info":{"authors":{"author":[{"@pid":"99/6416","text":"Seth J. White"},{"@pid":"d/DJDeWitt","text":"David J. DeWitt"}]},"title":"QuickStore: A High Performance Mapped Object Store","venue":"VLDB J.","volume":"4","number":"4","pages":"629-673","year":"1995","type":"Journal Articles","access":"open","key":"journals/vldb/WhiteD95","ee":"http://www.vldb.org/journal/VLDBJ4/P629.pdf","url":"https://dblp.org/rec/journals/vldb/WhiteD95"},
+"url":"URL#7360283"
+}
+]
+}
+}
+}

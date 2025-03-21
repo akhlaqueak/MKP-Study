@@ -1,0 +1,152 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb7.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"71.45"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"20",
+"@dc":"20",
+"@oc":"20",
+"@id":"47762633",
+"text":":facetid:toc:db/journals/vldb/vldb7.bht"
+}
+},
+"hits":{
+"@total":"20",
+"@computed":"20",
+"@sent":"20",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"7190666",
+"info":{"authors":{"author":[{"@pid":"a/SergeAbiteboul","text":"Serge Abiteboul"},{"@pid":"c/SophieCluet","text":"Sophie Cluet"},{"@pid":"m/TovaMilo","text":"Tova Milo"}]},"title":"A Logical View of Structured Files.","venue":"VLDB J.","volume":"7","number":"2","pages":"96-114","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/AbiteboulCM98","doi":"10.1007/S007780050056","ee":"https://doi.org/10.1007/s007780050056","url":"https://dblp.org/rec/journals/vldb/AbiteboulCM98"},
+"url":"URL#7190666"
+},
+{
+"@score":"1",
+"@id":"7190667",
+"info":{"authors":{"author":[{"@pid":"01/2558","text":"Nevzat Hurkan Balkir"},{"@pid":"o/GultekinOzsoyoglu","text":"Gultekin Özsoyoglu"}]},"title":"Delivering Presentations from Multimedia Servers.","venue":"VLDB J.","volume":"7","number":"4","pages":"294-307","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/BalkirO98","doi":"10.1007/S007780050070","ee":"https://doi.org/10.1007/s007780050070","url":"https://dblp.org/rec/journals/vldb/BalkirO98"},
+"url":"URL#7190667"
+},
+{
+"@score":"1",
+"@id":"7190668",
+"info":{"authors":{"author":[{"@pid":"c/SChakrabarti","text":"Soumen Chakrabarti"},{"@pid":"35/1373","text":"Byron Dom"},{"@pid":"a/RAgrawal","text":"Rakesh Agrawal 0001"},{"@pid":"r/PRaghavan","text":"Prabhakar Raghavan"}]},"title":"Scalable Feature Selection, Classification and Signature Generation for Organizing Large Text Databases into Hierarchical Topic Taxonomies.","venue":"VLDB J.","volume":"7","number":"3","pages":"163-178","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/ChakrabartiDAR98","doi":"10.1007/S007780050061","ee":"https://doi.org/10.1007/s007780050061","url":"https://dblp.org/rec/journals/vldb/ChakrabartiDAR98"},
+"url":"URL#7190668"
+},
+{
+"@score":"1",
+"@id":"7190669",
+"info":{"authors":{"author":[{"@pid":"d/SDessloch","text":"Stefan Deßloch"},{"@pid":"h/TheoHarder","text":"Theo Härder"},{"@pid":"29/1358","text":"Nelson Mendonça Mattos"},{"@pid":"m/BMitschang","text":"Bernhard Mitschang"},{"@pid":"12/6098","text":"Joachim Thomas 0001"}]},"title":"Advanced Data Processing in KRISYS: Modeling Concepts, Implementation Techniques, and Client/Server Issues.","venue":"VLDB J.","volume":"7","number":"2","pages":"79-95","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/DesslochHMMT98","doi":"10.1007/S007780050055","ee":"https://doi.org/10.1007/s007780050055","url":"https://dblp.org/rec/journals/vldb/DesslochHMMT98"},
+"url":"URL#7190669"
+},
+{
+"@score":"1",
+"@id":"7190670",
+"info":{"authors":{"author":[{"@pid":"g/MinosNGarofalakis","text":"Minos N. Garofalakis"},{"@pid":"o/BanuOzden","text":"Banu Özden"},{"@pid":"s/AbrahamSilberschatz","text":"Abraham Silberschatz"}]},"title":"On Periodic Resource scheduling for Continuous-Media Databases.","venue":"VLDB J.","volume":"7","number":"4","pages":"206-225","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/GarofalakisOS98","doi":"10.1007/S007780050065","ee":"https://doi.org/10.1007/s007780050065","url":"https://dblp.org/rec/journals/vldb/GarofalakisOS98"},
+"url":"URL#7190670"
+},
+{
+"@score":"1",
+"@id":"7190671",
+"info":{"authors":{"author":{"@pid":"73/5965","text":"Jia Liang Han"}},"title":"Optimizing Relational Queries in Connection Hypergraphs: Nested Queries, Views, and Binding Propagations.","venue":"VLDB J.","volume":"7","number":"1","pages":"1-11","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/Han98","doi":"10.1007/S007780050050","ee":"https://doi.org/10.1007/s007780050050","url":"https://dblp.org/rec/journals/vldb/Han98"},
+"url":"URL#7190671"
+},
+{
+"@score":"1",
+"@id":"7190672",
+"info":{"authors":{"author":[{"@pid":"69/6449","text":"Eric N. Hanson"},{"@pid":"06/3116","text":"I-Cheng Chen"},{"@pid":"52/6726","text":"Roxana Dastur"},{"@pid":"85/3514","text":"Kurt Engel"},{"@pid":"02/6727","text":"Vijay Ramaswamy"},{"@pid":"08/6754","text":"Wendy Tan"},{"@pid":"13/743","text":"Chun Xu"}]},"title":"A Flexible and Recoverable Client/Server Database Event Notification System.","venue":"VLDB J.","volume":"7","number":"1","pages":"12-24","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/HansonCDERTX98","doi":"10.1007/S007780050051","ee":"https://doi.org/10.1007/s007780050051","url":"https://dblp.org/rec/journals/vldb/HansonCDERTX98"},
+"url":"URL#7190672"
+},
+{
+"@score":"1",
+"@id":"7190673",
+"info":{"authors":{"author":[{"@pid":"30/4000","text":"Naci Ishakbeyoglu"},{"@pid":"o/ZMeralOzsoyoglu","text":"Z. Meral Özsoyoglu"}]},"title":"Maintenance of Implication Integrity Constraints Under Updates to Constraints.","venue":"VLDB J.","volume":"7","number":"2","pages":"67-78","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/IshakbeyogluO98","doi":"10.1007/S007780050054","ee":"https://doi.org/10.1007/s007780050054","url":"https://dblp.org/rec/journals/vldb/IshakbeyogluO98"},
+"url":"URL#7190673"
+},
+{
+"@score":"1",
+"@id":"7190674",
+"info":{"authors":{"author":[{"@pid":"13/762","text":"Haitao Jiang"},{"@pid":"e/AKElmagarmid","text":"Ahmed K. Elmagarmid"}]},"title":"Spatial and Temporal Content-Based Access to Hypervideo Databases.","venue":"VLDB J.","volume":"7","number":"4","pages":"226-238","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/JiangE98","doi":"10.1007/S007780050066","ee":"https://doi.org/10.1007/s007780050066","url":"https://dblp.org/rec/journals/vldb/JiangE98"},
+"url":"URL#7190674"
+},
+{
+"@score":"1",
+"@id":"7190675",
+"info":{"authors":{"author":[{"@pid":"87/1164","text":"Achim Kraiss"},{"@pid":"w/GerhardWeikum","text":"Gerhard Weikum"}]},"title":"Integrated Document Caching and Prefetching in Storage Hierarchies Based on Markov-Chain Predictions.","venue":"VLDB J.","volume":"7","number":"3","pages":"141-162","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/KraissW98","doi":"10.1007/S007780050060","ee":"https://doi.org/10.1007/s007780050060","url":"https://dblp.org/rec/journals/vldb/KraissW98"},
+"url":"URL#7190675"
+},
+{
+"@score":"1",
+"@id":"7190676",
+"info":{"authors":{"author":[{"@pid":"41/154","text":"Ashish Mehta"},{"@pid":"g/JamesGeller","text":"James Geller"},{"@pid":"p/YehoshuaPerl","text":"Yehoshua Perl"},{"@pid":"n/ErichJNeuhold","text":"Erich J. Neuhold"}]},"title":"The OODB Path-Method Generator (PMG) Using Access Weights and Precomputed Access Relevance.","venue":"VLDB J.","volume":"7","number":"1","pages":"25-47","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/MehtaGPN98","doi":"10.1007/S007780050052","ee":"https://doi.org/10.1007/s007780050052","url":"https://dblp.org/rec/journals/vldb/MehtaGPN98"},
+"url":"URL#7190676"
+},
+{
+"@score":"1",
+"@id":"7190677",
+"info":{"authors":{"author":[{"@pid":"n/WeeTeckNg","text":"Wee Teck Ng"},{"@pid":"c/PeterMChen","text":"Peter M. Chen"}]},"title":"Integrating Reliable Memory in Databases.","venue":"VLDB J.","volume":"7","number":"3","pages":"194-204","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/NgC98","doi":"10.1007/S007780050063","ee":"https://doi.org/10.1007/s007780050063","url":"https://dblp.org/rec/journals/vldb/NgC98"},
+"url":"URL#7190677"
+},
+{
+"@score":"1",
+"@id":"7190678",
+"info":{"authors":{"author":[{"@pid":"n/RTNg","text":"Raymond T. Ng"},{"@pid":"09/2882","text":"Paul Shum"}]},"title":"Optimal Clip Ordering for Multi-Clip Queries.","venue":"VLDB J.","volume":"7","number":"4","pages":"239-252","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/NgS98","doi":"10.1007/S007780050067","ee":"https://doi.org/10.1007/s007780050067","url":"https://dblp.org/rec/journals/vldb/NgS98"},
+"url":"URL#7190678"
+},
+{
+"@score":"1",
+"@id":"7190679",
+"info":{"authors":{"author":[{"@pid":"o/BengChinOoi","text":"Beng Chin Ooi"},{"@pid":"t/KianLeeTan","text":"Kian-Lee Tan"},{"@pid":"24/6606","text":"Tat-Seng Chua"},{"@pid":"h/WynneHsu","text":"Wynne Hsu"}]},"title":"Fast Image Retrieval Using Color-Spatial Information.","venue":"VLDB J.","volume":"7","number":"2","pages":"115-128","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/OoiTCH98","doi":"10.1007/S007780050057","ee":"https://doi.org/10.1007/s007780050057","url":"https://dblp.org/rec/journals/vldb/OoiTCH98"},
+"url":"URL#7190679"
+},
+{
+"@score":"1",
+"@id":"7190680",
+"info":{"authors":{"author":[{"@pid":"o/MTamerOzsu","text":"M. Tamer Özsu"},{"@pid":"66/2056","text":"Stavros Christodoulakis"}]},"title":"Introduction (Special Issue on Multimedia Databases).","venue":"VLDB J.","volume":"7","number":"4","pages":"205","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/OzsuC98","doi":"10.1007/S007780050064","ee":"https://doi.org/10.1007/s007780050064","url":"https://dblp.org/rec/journals/vldb/OzsuC98"},
+"url":"URL#7190680"
+},
+{
+"@score":"1",
+"@id":"7190681",
+"info":{"authors":{"author":[{"@pid":"89/5441","text":"Prasan Roy"},{"@pid":"71/2538","text":"S. Seshadri"},{"@pid":"s/AbrahamSilberschatz","text":"Abraham Silberschatz"},{"@pid":"s/SSudarshan1","text":"S. Sudarshan 0001"},{"@pid":"53/363","text":"Srinivas Ashwin"}]},"title":"Garbage Collection in Object-Oriented Databases Using Transactional Cyclic Reference Counting.","venue":"VLDB J.","volume":"7","number":"3","pages":"179-193","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/RoySSSA98","doi":"10.1007/S007780050062","ee":"https://doi.org/10.1007/s007780050062","url":"https://dblp.org/rec/journals/vldb/RoySSSA98"},
+"url":"URL#7190681"
+},
+{
+"@score":"1",
+"@id":"7190682",
+"info":{"authors":{"author":[{"@pid":"s/PeterScheuermann","text":"Peter Scheuermann"},{"@pid":"w/GerhardWeikum","text":"Gerhard Weikum"},{"@pid":"30/6748","text":"Peter Zabback"}]},"title":"Data Partitioning and Load Balancing in Parallel Disk Systems.","venue":"VLDB J.","volume":"7","number":"1","pages":"48-66","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/ScheuermannWZ98","doi":"10.1007/S007780050053","ee":"https://doi.org/10.1007/s007780050053","url":"https://dblp.org/rec/journals/vldb/ScheuermannWZ98"},
+"url":"URL#7190682"
+},
+{
+"@score":"1",
+"@id":"7190683",
+"info":{"authors":{"author":{"@pid":"s/PraveenSeshadri","text":"Praveen Seshadri"}},"title":"Enhanced Abstract Data Types in Object-Relational Databases.","venue":"VLDB J.","volume":"7","number":"3","pages":"130-140","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/Seshadri98","doi":"10.1007/S007780050059","ee":"https://doi.org/10.1007/s007780050059","url":"https://dblp.org/rec/journals/vldb/Seshadri98"},
+"url":"URL#7190683"
+},
+{
+"@score":"1",
+"@id":"7190684",
+"info":{"authors":{"author":[{"@pid":"66/3549","text":"Aya Soffer"},{"@pid":"s/HananSamet","text":"Hanan Samet"}]},"title":"Integrating Symbolic Images into a Multimedia Database System Using Classification and Abstraction Approaches.","venue":"VLDB J.","volume":"7","number":"4","pages":"253-274","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/SofferS98","doi":"10.1007/S007780050068","ee":"https://doi.org/10.1007/s007780050068","url":"https://dblp.org/rec/journals/vldb/SofferS98"},
+"url":"URL#7190684"
+},
+{
+"@score":"1",
+"@id":"7190685",
+"info":{"authors":{"author":[{"@pid":"z/PZezula","text":"Pavel Zezula"},{"@pid":"s/PasqualeSavino","text":"Pasquale Savino"},{"@pid":"54/685","text":"Giuseppe Amato 0001"},{"@pid":"60/423","text":"Fausto Rabitti"}]},"title":"Approximate Similarity Retrieval with M-Trees.","venue":"VLDB J.","volume":"7","number":"4","pages":"275-293","year":"1998","type":"Journal Articles","access":"closed","key":"journals/vldb/ZezulaSAR98","doi":"10.1007/S007780050069","ee":"https://doi.org/10.1007/s007780050069","url":"https://dblp.org/rec/journals/vldb/ZezulaSAR98"},
+"url":"URL#7190685"
+}
+]
+}
+}
+}

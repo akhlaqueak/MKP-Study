@@ -1,0 +1,152 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb6.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"76.00"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"20",
+"@dc":"20",
+"@oc":"20",
+"@id":"47762632",
+"text":":facetid:toc:db/journals/vldb/vldb6.bht"
+}
+},
+"hits":{
+"@total":"20",
+"@computed":"20",
+"@sent":"20",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"7253297",
+"info":{"authors":{"author":{"@pid":"49/3422","text":"Gennady Antoshenkov"}},"title":"Dictionary-Based Order-Preserving String Compression.","venue":"VLDB J.","volume":"6","number":"1","pages":"26-39","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/Antoshenkov97","doi":"10.1007/S007780050031","ee":"https://doi.org/10.1007/s007780050031","url":"https://dblp.org/rec/journals/vldb/Antoshenkov97"},
+"url":"URL#7253297"
+},
+{
+"@score":"1",
+"@id":"7253298",
+"info":{"authors":{"author":[{"@pid":"b/SBerchtold","text":"Stefan Berchtold"},{"@pid":"k/DanielAKeim","text":"Daniel A. Keim"},{"@pid":"k/HansPeterKriegel","text":"Hans-Peter Kriegel"}]},"title":"Using Extended Feature Objects for Partial Similarity Retrieval.","venue":"VLDB J.","volume":"6","number":"4","pages":"333-348","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/BerchtoldKK97","doi":"10.1007/S007780050049","ee":"https://doi.org/10.1007/s007780050049","url":"https://dblp.org/rec/journals/vldb/BerchtoldKK97"},
+"url":"URL#7253298"
+},
+{
+"@score":"1",
+"@id":"7253299",
+"info":{"authors":{"author":[{"@pid":"b/KBohm","text":"Klemens Böhm"},{"@pid":"a/KarlAberer","text":"Karl Aberer"},{"@pid":"n/ErichJNeuhold","text":"Erich J. Neuhold"},{"@pid":"27/1040","text":"Xiaoya Yang"}]},"title":"Structured Document Storage and Refined Declarative and Navigational Access Mechanisms in HyperStorM.","venue":"VLDB J.","volume":"6","number":"4","pages":"296-311","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/BohmAnY97","doi":"10.1007/S007780050047","ee":"https://doi.org/10.1007/s007780050047","url":"https://dblp.org/rec/journals/vldb/BohmAnY97"},
+"url":"URL#7253299"
+},
+{
+"@score":"1",
+"@id":"7253300",
+"info":{"authors":{"author":[{"@pid":"c/TCatarci","text":"Tiziana Catarci"},{"@pid":"s/GiuseppeSantucci","text":"Giuseppe Santucci"},{"@pid":"35/220","text":"John Cardiff"}]},"title":"Graphical Interaction with Heterogeneous Databases.","venue":"VLDB J.","volume":"6","number":"2","pages":"97-120","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/CatarciSC97","doi":"10.1007/S007780050035","ee":"https://doi.org/10.1007/s007780050035","url":"https://dblp.org/rec/journals/vldb/CatarciSC97"},
+"url":"URL#7253300"
+},
+{
+"@score":"1",
+"@id":"7253301",
+"info":{"authors":{"author":[{"@pid":"c/MingSyanChen","text":"Ming-Syan Chen"},{"@pid":"39/3931","text":"Hui-I Hsiao"},{"@pid":"y/PhilipSYu","text":"Philip S. Yu"}]},"title":"On Applying Hash Filters to Improving the Execution of Multi-Join Queries.","venue":"VLDB J.","volume":"6","number":"2","pages":"121-131","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/ChenHY97","doi":"10.1007/S007780050036","ee":"https://doi.org/10.1007/s007780050036","url":"https://dblp.org/rec/journals/vldb/ChenHY97"},
+"url":"URL#7253301"
+},
+{
+"@score":"1",
+"@id":"7253302",
+"info":{"authors":{"author":{"@pid":"43/740","text":"Edward E. Cobb"}},"title":"The Impact of Technology on Commercial Transaction Processing.","venue":"VLDB J.","volume":"6","number":"3","pages":"173-190","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/Cobb97","doi":"10.1007/S007780050039","ee":"https://doi.org/10.1007/s007780050039","url":"https://dblp.org/rec/journals/vldb/Cobb97"},
+"url":"URL#7253302"
+},
+{
+"@score":"1",
+"@id":"7253303",
+"info":{"authors":{"author":[{"@pid":"16/55-1","text":"Oscar Díaz 0001"},{"@pid":"75/7771","text":"Arturo Jaime 0001"}]},"title":"EXACT: An Extensible Approach to Active Object-Oriented Databases.","venue":"VLDB J.","volume":"6","number":"4","pages":"282-295","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/DiazJ97","doi":"10.1007/S007780050046","ee":"https://doi.org/10.1007/s007780050046","url":"https://dblp.org/rec/journals/vldb/DiazJ97"},
+"url":"URL#7253303"
+},
+{
+"@score":"1",
+"@id":"7253304",
+"info":{"authors":{"author":[{"@pid":"05/3392","text":"Georgios Evangelidis 0001"},{"@pid":"l/DavidBLomet","text":"David B. Lomet"},{"@pid":"s/BettySalzberg","text":"Betty Salzberg"}]},"title":"The hB-Pi-Tree: A Multi-Attribute Index Supporting Concurrency, Recovery and Node Consolidation.","venue":"VLDB J.","volume":"6","number":"1","pages":"1-25","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/EvangelidisS97","doi":"10.1007/S007780050030","ee":"https://doi.org/10.1007/s007780050030","url":"https://dblp.org/rec/journals/vldb/EvangelidisS97"},
+"url":"URL#7253304"
+},
+{
+"@score":"1",
+"@id":"7253305",
+"info":{"authors":{"author":[{"@pid":"31/6948","text":"Gustav Fahl"},{"@pid":"r/TRisch","text":"Tore Risch"}]},"title":"Query Processing Over Object Views of Relational Data.","venue":"VLDB J.","volume":"6","number":"4","pages":"261-281","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/FahlR97","doi":"10.1007/S007780050045","ee":"https://doi.org/10.1007/s007780050045","url":"https://dblp.org/rec/journals/vldb/FahlR97"},
+"url":"URL#7253305"
+},
+{
+"@score":"1",
+"@id":"7253306",
+"info":{"authors":{"author":[{"@pid":"h/LauraMHaas","text":"Laura M. Haas"},{"@pid":"31/3455","text":"Michael J. Carey 0001"},{"@pid":"l/MironLivny","text":"Miron Livny"},{"@pid":"s/AmitShukla","text":"Amit Shukla 0001"}]},"title":"Seeking the Truth About ad hoc Join Costs.","venue":"VLDB J.","volume":"6","number":"3","pages":"241-256","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/HaasCLS97","doi":"10.1007/S007780050043","ee":"https://doi.org/10.1007/s007780050043","url":"https://dblp.org/rec/journals/vldb/HaasCLS97"},
+"url":"URL#7253306"
+},
+{
+"@score":"1",
+"@id":"7253307",
+"info":{"authors":{"author":[{"@pid":"i/YEIoannidis","text":"Yannis E. Ioannidis"},{"@pid":"n/RTNg","text":"Raymond T. Ng"},{"@pid":"s/KyuseokShim","text":"Kyuseok Shim"},{"@pid":"s/TimosKSellis","text":"Timos K. Sellis"}]},"title":"Parametric Query Optimization.","venue":"VLDB J.","volume":"6","number":"2","pages":"132-151","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/IoannidisNSS97","doi":"10.1007/S007780050037","ee":"https://doi.org/10.1007/s007780050037","url":"https://dblp.org/rec/journals/vldb/IoannidisNSS97"},
+"url":"URL#7253307"
+},
+{
+"@score":"1",
+"@id":"7253308",
+"info":{"authors":{"author":[{"@pid":"l/DavidBLomet","text":"David B. Lomet"},{"@pid":"s/BettySalzberg","text":"Betty Salzberg"}]},"title":"Concurrency and Recovery for Index Trees.","venue":"VLDB J.","volume":"6","number":"3","pages":"224-240","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/LometS97","doi":"10.1007/S007780050042","ee":"https://doi.org/10.1007/s007780050042","url":"https://dblp.org/rec/journals/vldb/LometS97"},
+"url":"URL#7253308"
+},
+{
+"@score":"1",
+"@id":"7253309",
+"info":{"authors":{"author":[{"@pid":"m/SharadMehrotra","text":"Sharad Mehrotra"},{"@pid":"k/HenryFKorth","text":"Henry F. Korth"},{"@pid":"s/AbrahamSilberschatz","text":"Abraham Silberschatz"}]},"title":"Concurrency Control in Hierarchical Multidatabase Systems.","venue":"VLDB J.","volume":"6","number":"2","pages":"152-172","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/MehrotraKS97","doi":"10.1007/S007780050038","ee":"https://doi.org/10.1007/s007780050038","url":"https://dblp.org/rec/journals/vldb/MehrotraKS97"},
+"url":"URL#7253309"
+},
+{
+"@score":"1",
+"@id":"7253310",
+"info":{"authors":{"author":[{"@pid":"90/243","text":"Manish Mehta 0002"},{"@pid":"d/DJDeWitt","text":"David J. DeWitt"}]},"title":"Data Placement in Shared-Nothing Parallel Database Systems.","venue":"VLDB J.","volume":"6","number":"1","pages":"53-72","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/MehtaD97","doi":"10.1007/S007780050033","ee":"https://doi.org/10.1007/s007780050033","url":"https://dblp.org/rec/journals/vldb/MehtaD97"},
+"url":"URL#7253310"
+},
+{
+"@score":"1",
+"@id":"7253311",
+"info":{"authors":{"author":[{"@pid":"57/4535","text":"Thomas A. Mück"},{"@pid":"15/3216","text":"Martin L. Polaschek"}]},"title":"A Configrable Type Hierarchy Index for OODB.","venue":"VLDB J.","volume":"6","number":"4","pages":"312-332","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/MuckP97","doi":"10.1007/S007780050048","ee":"https://doi.org/10.1007/s007780050048","url":"https://dblp.org/rec/journals/vldb/MuckP97"},
+"url":"URL#7253311"
+},
+{
+"@score":"1",
+"@id":"7253312",
+"info":{"authors":{"author":[{"@pid":"p/EPanagos","text":"Euthimios Panagos"},{"@pid":"b/ABiliris","text":"Alexandros Biliris"}]},"title":"Synchronization and Recovery in a Client-Server Storage System.","venue":"VLDB J.","volume":"6","number":"3","pages":"209-223","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/PanagosB97","doi":"10.1007/S007780050041","ee":"https://doi.org/10.1007/s007780050041","url":"https://dblp.org/rec/journals/vldb/PanagosB97"},
+"url":"URL#7253312"
+},
+{
+"@score":"1",
+"@id":"7253313",
+"info":{"authors":{"author":[{"@pid":"p/MPPapazoglou","text":"Mike P. Papazoglou"},{"@pid":"k/BJKramer","text":"Bernd J. Krämer"}]},"title":"A Database Model for Object Dynamics.","venue":"VLDB J.","volume":"6","number":"2","pages":"73-96","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/PapazogluK97","doi":"10.1007/S007780050034","ee":"https://doi.org/10.1007/s007780050034","url":"https://dblp.org/rec/journals/vldb/PapazogluK97"},
+"url":"URL#7253313"
+},
+{
+"@score":"1",
+"@id":"7253314",
+"info":{"authors":{"author":[{"@pid":"p/MPPapazoglou","text":"Mike P. Papazoglou"},{"@pid":"k/BJKramer","text":"Bernd J. Krämer"}]},"title":"Erratum: A Database Model for Object Dynamics.","venue":"VLDB J.","volume":"6","number":"3","pages":"257-260","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/PapazogluK97a","doi":"10.1007/S007780050044","ee":"https://doi.org/10.1007/s007780050044","url":"https://dblp.org/rec/journals/vldb/PapazogluK97a"},
+"url":"URL#7253314"
+},
+{
+"@score":"1",
+"@id":"7253315",
+"info":{"authors":{"author":[{"@pid":"91/6939","text":"Vigyan Singhal"},{"@pid":"s/AlanJaySmith","text":"Alan Jay Smith"}]},"title":"Analysis of Locking Behavior in Three Real Database Systems.","venue":"VLDB J.","volume":"6","number":"1","pages":"40-52","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/SinghalS97","doi":"10.1007/S007780050032","ee":"https://doi.org/10.1007/s007780050032","url":"https://dblp.org/rec/journals/vldb/SinghalS97"},
+"url":"URL#7253315"
+},
+{
+"@score":"1",
+"@id":"7253316",
+"info":{"authors":{"author":[{"@pid":"03/3372","text":"Michael Steinbrunn"},{"@pid":"m/GuidoMoerkotte","text":"Guido Moerkotte"},{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"}]},"title":"Heuristic and Randomized Optimization for the Join Ordering Problem.","venue":"VLDB J.","volume":"6","number":"3","pages":"191-208","year":"1997","type":"Journal Articles","access":"closed","key":"journals/vldb/SteinbrunnMK97","doi":"10.1007/S007780050040","ee":"https://doi.org/10.1007/s007780050040","url":"https://dblp.org/rec/journals/vldb/SteinbrunnMK97"},
+"url":"URL#7253316"
+}
+]
+}
+}
+}

@@ -1,0 +1,140 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb5.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"80.42"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"18",
+"@dc":"18",
+"@oc":"18",
+"@id":"47762631",
+"text":":facetid:toc:db/journals/vldb/vldb5.bht"
+}
+},
+"hits":{
+"@total":"18",
+"@computed":"18",
+"@sent":"18",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"7309480",
+"info":{"authors":{"author":[{"@pid":"49/6245","text":"Eric Amiel"},{"@pid":"b/MarieJoBellosta","text":"Marie-Jo Bellosta"},{"@pid":"14/4088","text":"Eric Dujardin"},{"@pid":"s/EricSimon","text":"Eric Simon"}]},"title":"Type-safe Relaxing of Schema Consistency Rules for Flexible Modeling in OODBMS","venue":"VLDB J.","volume":"5","number":"2","pages":"133-155","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/AmielBDS96","doi":"10.1007/S007780050020","ee":"https://doi.org/10.1007/s007780050020","url":"https://dblp.org/rec/journals/vldb/AmielBDS96"},
+"url":"URL#7309480"
+},
+{
+"@score":"1",
+"@id":"7309481",
+"info":{"authors":{"author":[{"@pid":"49/3422","text":"Gennady Antoshenkov"},{"@pid":"60/3441","text":"Mohamed Ziauddin"}]},"title":"Query Processing and Optimization in Oracle Rdb","venue":"VLDB J.","volume":"5","number":"4","pages":"229-237","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/AntoshenkovZ96","doi":"10.1007/S007780050026","ee":"https://doi.org/10.1007/s007780050026","url":"https://dblp.org/rec/journals/vldb/AntoshenkovZ96"},
+"url":"URL#7309481"
+},
+{
+"@score":"1",
+"@id":"7309482",
+"info":{"authors":{"author":[{"@pid":"25/3815","text":"Bruno Becker"},{"@pid":"73/1702","text":"Stephan Gschwind"},{"@pid":"30/4593","text":"Thomas Ohler"},{"@pid":"s/BernhardSeeger","text":"Bernhard Seeger"},{"@pid":"w/PeterWidmayer","text":"Peter Widmayer"}]},"title":"An Asymptotically Optimal Multiversion B-Tree.","venue":"VLDB J.","volume":"5","number":"4","pages":"264-275","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/BeckerGOSW96","doi":"10.1007/S007780050028","ee":"https://doi.org/10.1007/s007780050028","url":"https://dblp.org/rec/journals/vldb/BeckerGOSW96"},
+"url":"URL#7309482"
+},
+{
+"@score":"1",
+"@id":"7309483",
+"info":{"authors":{"author":[{"@pid":"d/DJDeWitt","text":"David J. DeWitt"},{"@pid":"n/JeffreyFNaughton","text":"Jeffrey F. Naughton"},{"@pid":"99/3392","text":"John C. Shafer"},{"@pid":"85/3595","text":"Shivakumar Venkataraman"}]},"title":"Parallelising OODBMS Traversals: A Performance Evaluation","venue":"VLDB J.","volume":"5","number":"1","pages":"3-18","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/DeWittNSV96","doi":"10.1007/S007780050012","ee":"https://doi.org/10.1007/s007780050012","url":"https://dblp.org/rec/journals/vldb/DeWittNSV96"},
+"url":"URL#7309483"
+},
+{
+"@score":"1",
+"@id":"7309484",
+"info":{"authors":{"author":[{"@pid":"25/6332","text":"Debabrata Dey"},{"@pid":"39/1331","text":"Terence M. Barron"},{"@pid":"41/1781","text":"Veda C. Storey"}]},"title":"A Complete Temporal Relational Algebra.","venue":"VLDB J.","volume":"5","number":"3","pages":"167-180","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/DeyBS96","doi":"10.1007/S007780050022","ee":"https://doi.org/10.1007/s007780050022","url":"https://dblp.org/rec/journals/vldb/DeyBS96"},
+"url":"URL#7309484"
+},
+{
+"@score":"1",
+"@id":"7309485",
+"info":{"authors":{"author":[{"@pid":"24/6305","text":"Doug Fang"},{"@pid":"g/SGhandeharizadeh","text":"Shahram Ghandeharizadeh"}]},"title":"An Experimental System for Object-Based Sharing in Federated Databases","venue":"VLDB J.","volume":"5","number":"2","pages":"151-165","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/FangGM96","doi":"10.1007/S007780050021","ee":"https://doi.org/10.1007/s007780050021","url":"https://dblp.org/rec/journals/vldb/FangGM96"},
+"url":"URL#7309485"
+},
+{
+"@score":"1",
+"@id":"7309486",
+"info":{"authors":{"author":[{"@pid":"h/TheoHarder","text":"Theo Härder"},{"@pid":"56/3382","text":"Joachim Reinert"}]},"title":"Access Path Support for Referential Integrity in SQL2","venue":"VLDB J.","volume":"5","number":"3","pages":"196-214","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/HarderR96","doi":"10.1007/S007780050024","ee":"https://doi.org/10.1007/s007780050024","url":"https://dblp.org/rec/journals/vldb/HarderR96"},
+"url":"URL#7309486"
+},
+{
+"@score":"1",
+"@id":"7309487",
+"info":{"authors":{"author":[{"@pid":"h/EvanPHarris","text":"Evan P. Harris"},{"@pid":"r/KRamamohanarao","text":"Kotagiri Ramamohanarao"}]},"title":"Join Algorithm Costs Revisited.","venue":"VLDB J.","volume":"5","number":"1","pages":"64-84","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/HarrisR96","doi":"10.1007/S007780050016","ee":"https://doi.org/10.1007/s007780050016","url":"https://dblp.org/rec/journals/vldb/HarrisR96"},
+"url":"URL#7309487"
+},
+{
+"@score":"1",
+"@id":"7309488",
+"info":{"authors":{"author":[{"@pid":"12/2871","text":"Vipul Kashyap"},{"@pid":"s/AmitPSheth","text":"Amit P. Sheth"}]},"title":"Semantic and Schematic Similarities Between Database Objects: A Context-Based Approach.","venue":"VLDB J.","volume":"5","number":"4","pages":"276-304","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/KashyapS96","doi":"10.1007/S007780050029","ee":"https://doi.org/10.1007/s007780050029","url":"https://dblp.org/rec/journals/vldb/KashyapS96"},
+"url":"URL#7309488"
+},
+{
+"@score":"1",
+"@id":"7309489",
+"info":{"authors":{"author":[{"@pid":"29/3467","text":"Arthur M. Keller"},{"@pid":"44/4427","text":"Julie Basu"}]},"title":"A Predicate-based Caching Scheme for Client-Server Database Architectures","venue":"VLDB J.","volume":"5","number":"1","pages":"35-47","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/KellerB96","doi":"10.1007/S007780050014","ee":"https://doi.org/10.1007/s007780050014","url":"https://dblp.org/rec/journals/vldb/KellerB96"},
+"url":"URL#7309489"
+},
+{
+"@score":"1",
+"@id":"7309490",
+"info":{"authors":{"author":[{"@pid":"m/JohnMylopoulos","text":"John Mylopoulos"},{"@pid":"86/4084","text":"Vinay K. Chaudhri"},{"@pid":"89/6058","text":"Dimitris Plexousakis"},{"@pid":"65/1623","text":"Adel Shrufi"},{"@pid":"47/3962","text":"Thodoros Topaloglou"}]},"title":"Building Knowledge Base Management Systems.","venue":"VLDB J.","volume":"5","number":"4","pages":"238-263","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/MylopoulosCPST96","doi":"10.1007/S007780050027","ee":"https://doi.org/10.1007/s007780050027","url":"https://dblp.org/rec/journals/vldb/MylopoulosCPST96"},
+"url":"URL#7309490"
+},
+{
+"@score":"1",
+"@id":"7309491",
+"info":{"authors":{"author":[{"@pid":"o/BengChinOoi","text":"Beng Chin Ooi"},{"@pid":"h/JiaweiHan","text":"Jiawei Han 0001"},{"@pid":"l/HongjunLu","text":"Hongjun Lu"},{"@pid":"t/KianLeeTan","text":"Kian-Lee Tan"}]},"title":"Index Nesting - An Efficient Approach to Indexing in Object-Oriented Databases","venue":"VLDB J.","volume":"5","number":"3","pages":"215-228","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/OoiHLT96","doi":"10.1007/S007780050025","ee":"https://doi.org/10.1007/s007780050025","url":"https://dblp.org/rec/journals/vldb/OoiHLT96"},
+"url":"URL#7309491"
+},
+{
+"@score":"1",
+"@id":"7309492",
+"info":{"authors":{"author":[{"@pid":"p/APoulovassilis","text":"Alexandra Poulovassilis"},{"@pid":"11/5195","text":"Carol Small"}]},"title":"Algebraic Query Optimisation for Database Programming Languages","venue":"VLDB J.","volume":"5","number":"2","pages":"119-132","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/PoulovassilisS96","doi":"10.1007/S007780050019","ee":"https://doi.org/10.1007/s007780050019","url":"https://dblp.org/rec/journals/vldb/PoulovassilisS96"},
+"url":"URL#7309492"
+},
+{
+"@score":"1",
+"@id":"7309493",
+"info":{"authors":{"author":[{"@pid":"r/KrithiRamamritham","text":"Krithi Ramamritham"},{"@pid":"c/PKChrysanthis","text":"Panos K. Chrysanthis"}]},"title":"A Taxonomy of Correctness Criteria in Database Applications","venue":"VLDB J.","volume":"5","number":"1","pages":"85-97","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/RamamrithamC96","doi":"10.1007/S007780050017","ee":"https://doi.org/10.1007/s007780050017","url":"https://dblp.org/rec/journals/vldb/RamamrithamC96"},
+"url":"URL#7309493"
+},
+{
+"@score":"1",
+"@id":"7309494",
+"info":{"authors":{"author":[{"@pid":"44/6293","text":"Yuh-Ming Shyy"},{"@pid":"51/6855","text":"Javier Arroyo"},{"@pid":"s/StanleyYWSu","text":"Stanley Y. W. Su"},{"@pid":"l/HermanLam","text":"Herman Lam"}]},"title":"The Design and Implementation of K: A High-Level Knowledge-Base Programming Language of OSAM*.KBMS.","venue":"VLDB J.","volume":"5","number":"3","pages":"181-195","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/ShyyASL96","doi":"10.1007/S007780050023","ee":"https://doi.org/10.1007/s007780050023","url":"https://dblp.org/rec/journals/vldb/ShyyASL96"},
+"url":"URL#7309494"
+},
+{
+"@score":"1",
+"@id":"7309495",
+"info":{"authors":{"author":[{"@pid":"28/2142","text":"Rajendran M. Sivasankaran"},{"@pid":"s/JohnAStankovic","text":"John A. Stankovic"},{"@pid":"t/DonaldFTowsley","text":"Donald F. Towsley"},{"@pid":"34/6018","text":"Bhaskar Purimetla"},{"@pid":"r/KrithiRamamritham","text":"Krithi Ramamritham"}]},"title":"Priority Assignment in Real-Time Active Databases","venue":"VLDB J.","volume":"5","number":"1","pages":"19-34","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/SivasankaranSTPR96","doi":"10.1007/S007780050013","ee":"https://doi.org/10.1007/s007780050013","url":"https://dblp.org/rec/journals/vldb/SivasankaranSTPR96"},
+"url":"URL#7309495"
+},
+{
+"@score":"1",
+"@id":"7309496",
+"info":{"authors":{"author":[{"@pid":"s/MichaelStonebraker","text":"Michael Stonebraker"},{"@pid":"a/PMAoki","text":"Paul M. Aoki"},{"@pid":"12/2734","text":"Witold Litwin"},{"@pid":"p/AviPfeffer","text":"Avi Pfeffer"},{"@pid":"s/AdamSah","text":"Adam Sah"},{"@pid":"34/2083","text":"Jeff Sidell"},{"@pid":"86/1617","text":"Carl Staelin"},{"@pid":"79/1685","text":"Andrew Yu"}]},"title":"Mariposa: A Wide-Area Distributed Database System","venue":"VLDB J.","volume":"5","number":"1","pages":"48-63","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/StonebrakerALPSSSY96","doi":"10.1007/S007780050015","ee":"https://doi.org/10.1007/s007780050015","url":"https://dblp.org/rec/journals/vldb/StonebrakerALPSSSY96"},
+"url":"URL#7309496"
+},
+{
+"@score":"1",
+"@id":"7309497",
+"info":{"authors":{"author":[{"@pid":"91/4478","text":"Odysseas G. Tsatalos"},{"@pid":"s/MarvinHSolomon","text":"Marvin H. Solomon"},{"@pid":"i/YEIoannidis","text":"Yannis E. Ioannidis"}]},"title":"The GMAP: A Versatile Tool for Physical Data Independence","venue":"VLDB J.","volume":"5","number":"2","pages":"101-118","year":"1996","type":"Journal Articles","access":"closed","key":"journals/vldb/TsatalosSI96","doi":"10.1007/S007780050018","ee":"https://doi.org/10.1007/s007780050018","url":"https://dblp.org/rec/journals/vldb/TsatalosSI96"},
+"url":"URL#7309497"
+}
+]
+}
+}
+}

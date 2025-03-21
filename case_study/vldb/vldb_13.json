@@ -1,0 +1,170 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb13.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"79.53"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"23",
+"@dc":"23",
+"@oc":"23",
+"@id":"47762606",
+"text":":facetid:toc:db/journals/vldb/vldb13.bht"
+}
+},
+"hits":{
+"@total":"23",
+"@computed":"23",
+"@sent":"23",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"6618990",
+"info":{"authors":{"author":[{"@pid":"65/1481","text":"Asaf Adi"},{"@pid":"e/OEtzion","text":"Opher Etzion"}]},"title":"Amit - the situation manager.","venue":"VLDB J.","volume":"13","number":"2","pages":"177-203","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/AdiE04","doi":"10.1007/S00778-003-0108-Y","ee":"https://doi.org/10.1007/s00778-003-0108-y","url":"https://dblp.org/rec/journals/vldb/AdiE04"},
+"url":"URL#6618990"
+},
+{
+"@score":"1",
+"@id":"6618991",
+"info":{"authors":{"author":[{"@pid":"30/4388","text":"Brian Babcock"},{"@pid":"b/ShivnathBabu","text":"Shivnath Babu"},{"@pid":"06/3699","text":"Mayur Datar"},{"@pid":"m/RajeevMotwani","text":"Rajeev Motwani 0001"},{"@pid":"t/DilysThomas","text":"Dilys Thomas"}]},"title":"Operator scheduling in data stream systems.","venue":"VLDB J.","volume":"13","number":"4","pages":"333-353","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/BabcockBDMT04","doi":"10.1007/S00778-004-0132-6","ee":"https://doi.org/10.1007/s00778-004-0132-6","url":"https://dblp.org/rec/journals/vldb/BabcockBDMT04"},
+"url":"URL#6618991"
+},
+{
+"@score":"1",
+"@id":"6618992",
+"info":{"authors":{"author":[{"@pid":"b/HariBalakrishnan","text":"Hari Balakrishnan"},{"@pid":"b/MagdalenaBalazinska","text":"Magdalena Balazinska"},{"@pid":"06/3450","text":"Donald Carney"},{"@pid":"c/UgurCetintemel","text":"Ugur Çetintemel"},{"@pid":"c/MitchCherniack","text":"Mitch Cherniack"},{"@pid":"10/3476","text":"Christian Convey"},{"@pid":"58/6473","text":"Eduardo F. Galvez"},{"@pid":"62/6390","text":"Jon Salz"},{"@pid":"s/MichaelStonebraker","text":"Michael Stonebraker"},{"@pid":"t/NesimeTatbul","text":"Nesime Tatbul"},{"@pid":"62/3468","text":"Richard Tibbetts"},{"@pid":"z/SBZdonik","text":"Stanley B. Zdonik"}]},"title":"Retrospective on Aurora.","venue":"VLDB J.","volume":"13","number":"4","pages":"370-383","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/BalakrishnanBCCCCGSSTTZ04","doi":"10.1007/S00778-004-0133-5","ee":"https://doi.org/10.1007/s00778-004-0133-5","url":"https://dblp.org/rec/journals/vldb/BalakrishnanBCCCCGSSTTZ04"},
+"url":"URL#6618992"
+},
+{
+"@score":"1",
+"@id":"6618993",
+"info":{"authors":{"author":[{"@pid":"55/1267","text":"Mehmet Emin Dönderler"},{"@pid":"u/OzgurUlusoy","text":"Özgür Ulusoy"},{"@pid":"26/4312","text":"Ugur Güdükbay"}]},"title":"Rule-based spatiotemporal query processing for video databases.","venue":"VLDB J.","volume":"13","number":"1","pages":"86-103","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/DonderlerUG04","doi":"10.1007/S00778-003-0114-0","ee":"https://doi.org/10.1007/s00778-003-0114-0","url":"https://dblp.org/rec/journals/vldb/DonderlerUG04"},
+"url":"URL#6618993"
+},
+{
+"@score":"1",
+"@id":"6618994",
+"info":{"authors":{"author":{"@pid":"d/DovDori","text":"Dov Dori"}},"title":"ViSWeb - the Visual Semantic Web: unifying human and machine knowledge representations with Object-Process Methodology.","venue":"VLDB J.","volume":"13","number":"2","pages":"120-147","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/Dori04","doi":"10.1007/S00778-004-0120-X","ee":"https://doi.org/10.1007/s00778-004-0120-x","url":"https://dblp.org/rec/journals/vldb/Dori04"},
+"url":"URL#6618994"
+},
+{
+"@score":"1",
+"@id":"6618995",
+"info":{"authors":{"author":[{"@pid":"70/3007","text":"Daniela Florescu"},{"@pid":"57/1313","text":"Chris Hillery"},{"@pid":"k/DonaldKossmann","text":"Donald Kossmann"},{"@pid":"80/5635","text":"Paul Lucas"},{"@pid":"41/53","text":"Fabio Riccardi"},{"@pid":"28/6679","text":"Till Westmann"},{"@pid":"31/3455","text":"Michael J. Carey 0001"},{"@pid":"40/1908","text":"Arvind Sundararajan"}]},"title":"The BEA streaming XQuery processor.","venue":"VLDB J.","volume":"13","number":"3","pages":"294-315","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/FlorescuHKLRWCS04","doi":"10.1007/S00778-004-0137-1","ee":"https://doi.org/10.1007/s00778-004-0137-1","url":"https://dblp.org/rec/journals/vldb/FlorescuHKLRWCS04"},
+"url":"URL#6618995"
+},
+{
+"@score":"1",
+"@id":"6618996",
+"info":{"authors":{"author":[{"@pid":"f/JCFreytag","text":"Johann Christoph Freytag"},{"@pid":"a/SergeAbiteboul","text":"Serge Abiteboul"},{"@pid":"31/3455","text":"Michael J. Carey 0001"}]},"title":"Best papers of VLDB 2003.","venue":"VLDB J.","volume":"13","number":"3","pages":"205-206","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/FreytagAC04","doi":"10.1007/S00778-004-0129-1","ee":"https://doi.org/10.1007/s00778-004-0129-1","url":"https://dblp.org/rec/journals/vldb/FreytagAC04"},
+"url":"URL#6618996"
+},
+{
+"@score":"1",
+"@id":"6618997",
+"info":{"authors":{"author":[{"@pid":"16/1438-1","text":"Lixin Fu 0001"},{"@pid":"r/SanguthevarRajasekaran","text":"Sanguthevar Rajasekaran"}]},"title":"Evaluating holistic aggregators efficiently for very large datasets.","venue":"VLDB J.","volume":"13","number":"2","pages":"148-161","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/FuR04","doi":"10.1007/S00778-003-0112-2","ee":"https://doi.org/10.1007/s00778-003-0112-2","url":"https://dblp.org/rec/journals/vldb/FuR04"},
+"url":"URL#6618997"
+},
+{
+"@score":"1",
+"@id":"6618998",
+"info":{"authors":{"author":[{"@pid":"g/SumitGanguly","text":"Sumit Ganguly"},{"@pid":"g/MinosNGarofalakis","text":"Minos N. Garofalakis"},{"@pid":"r/RajeevRastogi","text":"Rajeev Rastogi"}]},"title":"Tracking set-expression cardinalities over continuous update streams.","venue":"VLDB J.","volume":"13","number":"4","pages":"354-369","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/GangulyGR04","doi":"10.1007/S00778-004-0135-3","ee":"https://doi.org/10.1007/s00778-004-0135-3","url":"https://dblp.org/rec/journals/vldb/GangulyGR04"},
+"url":"URL#6618998"
+},
+{
+"@score":"1",
+"@id":"6618999",
+"info":{"authors":{"author":[{"@pid":"g/JohannesGehrke","text":"Johannes Gehrke"},{"@pid":"h/JosephMHellerstein","text":"Joseph M. Hellerstein"}]},"title":"Guest Editorial to the special issue on data stream processing.","venue":"VLDB J.","volume":"13","number":"4","pages":"317","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/GehrkeH04","doi":"10.1007/S00778-004-0141-5","ee":"https://doi.org/10.1007/s00778-004-0141-5","url":"https://dblp.org/rec/journals/vldb/GehrkeH04"},
+"url":"URL#6618999"
+},
+{
+"@score":"1",
+"@id":"6619000",
+"info":{"authors":{"author":[{"@pid":"78/4833","text":"Hai He"},{"@pid":"m/WeiyiMeng","text":"Weiyi Meng"},{"@pid":"y/ClementTYu","text":"Clement T. Yu"},{"@pid":"35/3932","text":"Zonghuan Wu"}]},"title":"Automatic integration of Web search interfaces with WISE-Integrator.","venue":"VLDB J.","volume":"13","number":"3","pages":"256-273","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/HeMYW04","doi":"10.1007/S00778-004-0126-4","ee":"https://doi.org/10.1007/s00778-004-0126-4","url":"https://dblp.org/rec/journals/vldb/HeMYW04"},
+"url":"URL#6619000"
+},
+{
+"@score":"1",
+"@id":"6619001",
+"info":{"authors":{"author":[{"@pid":"42/5855","text":"Vagelis Hristidis"},{"@pid":"p/YPapakonstantinou","text":"Yannis Papakonstantinou"}]},"title":"Algorithms and applications for answering ranked queries using ranked views.","venue":"VLDB J.","volume":"13","number":"1","pages":"49-70","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/HristidisP04","doi":"10.1007/S00778-003-0099-8","ee":"https://doi.org/10.1007/s00778-003-0099-8","url":"https://dblp.org/rec/journals/vldb/HristidisP04"},
+"url":"URL#6619001"
+},
+{
+"@score":"1",
+"@id":"6619002",
+"info":{"authors":{"author":[{"@pid":"i/IhabFIlyas","text":"Ihab F. Ilyas"},{"@pid":"a/WGAref","text":"Walid G. Aref"},{"@pid":"e/AKElmagarmid","text":"Ahmed K. Elmagarmid"}]},"title":"Supporting top-k join queries in relational databases.","venue":"VLDB J.","volume":"13","number":"3","pages":"207-221","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/IlyasAE04","doi":"10.1007/S00778-004-0128-2","ee":"https://doi.org/10.1007/s00778-004-0128-2","url":"https://dblp.org/rec/journals/vldb/IlyasAE04"},
+"url":"URL#6619002"
+},
+{
+"@score":"1",
+"@id":"6619003",
+"info":{"authors":{"author":[{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"},{"@pid":"16/3455","text":"Augustas Kligys"},{"@pid":"p/TorbenBachPedersen","text":"Torben Bach Pedersen"},{"@pid":"78/5835","text":"Igor Timko"}]},"title":"Multidimensional data modeling for location-based services.","venue":"VLDB J.","volume":"13","number":"1","pages":"1-21","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/JensenKPT04","doi":"10.1007/S00778-003-0091-3","ee":"https://doi.org/10.1007/s00778-003-0091-3","url":"https://dblp.org/rec/journals/vldb/JensenKPT04"},
+"url":"URL#6619003"
+},
+{
+"@score":"1",
+"@id":"6619004",
+"info":{"authors":{"author":[{"@pid":"k/LatifurKhan","text":"Latifur Khan"},{"@pid":"m/DennisMcLeod","text":"Dennis McLeod"},{"@pid":"47/2454","text":"Eduard H. Hovy"}]},"title":"Retrieval effectiveness of an ontology-based model for information selection.","venue":"VLDB J.","volume":"13","number":"1","pages":"71-85","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/KhanMH04","doi":"10.1007/S00778-003-0105-1","ee":"https://doi.org/10.1007/s00778-003-0105-1","url":"https://dblp.org/rec/journals/vldb/KhanMH04"},
+"url":"URL#6619004"
+},
+{
+"@score":"1",
+"@id":"6619005",
+"info":{"authors":{"author":[{"@pid":"l/ALabrinidis","text":"Alexandros Labrinidis"},{"@pid":"r/NickRoussopoulos","text":"Nick Roussopoulos"}]},"title":"Exploring the tradeoff between performance and data freshness in database-driven Web servers.","venue":"VLDB J.","volume":"13","number":"3","pages":"240-255","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/LabrinidisR04","doi":"10.1007/S00778-004-0131-7","ee":"https://doi.org/10.1007/s00778-004-0131-7","url":"https://dblp.org/rec/journals/vldb/LabrinidisR04"},
+"url":"URL#6619005"
+},
+{
+"@score":"1",
+"@id":"6619006",
+"info":{"authors":{"author":[{"@pid":"73/6671","text":"Spiros Papadimitriou"},{"@pid":"25/2896","text":"Anthony Brockwell"},{"@pid":"f/CFaloutsos","text":"Christos Faloutsos"}]},"title":"Adaptive, unsupervised stream mining.","venue":"VLDB J.","volume":"13","number":"3","pages":"222-239","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/PapadimitriouBF04","doi":"10.1007/S00778-004-0130-8","ee":"https://doi.org/10.1007/s00778-004-0130-8","url":"https://dblp.org/rec/journals/vldb/PapadimitriouBF04"},
+"url":"URL#6619006"
+},
+{
+"@score":"1",
+"@id":"6619007",
+"info":{"authors":{"author":[{"@pid":"20/4685","text":"Amira Rahal"},{"@pid":"34/6522-1","text":"Qiang Zhu 0001"},{"@pid":"l/PALarson","text":"Per-Åke Larson"}]},"title":"Evolutionary techniques for updating query cost models in a dynamic multidatabase environment.","venue":"VLDB J.","volume":"13","number":"2","pages":"162-176","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/RahalZL04","doi":"10.1007/S00778-003-0110-4","ee":"https://doi.org/10.1007/s00778-003-0110-4","url":"https://dblp.org/rec/journals/vldb/RahalZL04"},
+"url":"URL#6619007"
+},
+{
+"@score":"1",
+"@id":"6619008",
+"info":{"authors":{"author":[{"@pid":"s/MohamedASharaf","text":"Mohamed A. Sharaf"},{"@pid":"18/5642","text":"Jonathan Beaver"},{"@pid":"l/ALabrinidis","text":"Alexandros Labrinidis"},{"@pid":"c/PKChrysanthis","text":"Panos K. Chrysanthis"}]},"title":"Balancing energy efficiency and quality of aggregate data in sensor networks.","venue":"VLDB J.","volume":"13","number":"4","pages":"384-403","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/SharafBLC04","doi":"10.1007/S00778-004-0138-0","ee":"https://doi.org/10.1007/s00778-004-0138-0","url":"https://dblp.org/rec/journals/vldb/SharafBLC04"},
+"url":"URL#6619008"
+},
+{
+"@score":"1",
+"@id":"6619009",
+"info":{"authors":{"author":[{"@pid":"v/YannisVelegrakis","text":"Yannis Velegrakis"},{"@pid":"m/RJMiller","text":"Renée J. Miller"},{"@pid":"p/LucianPopa","text":"Lucian Popa 0001"}]},"title":"Preserving mapping consistency under schema changes.","venue":"VLDB J.","volume":"13","number":"3","pages":"274-293","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/VelegrakisMP04","doi":"10.1007/S00778-004-0136-2","ee":"https://doi.org/10.1007/s00778-004-0136-2","url":"https://dblp.org/rec/journals/vldb/VelegrakisMP04"},
+"url":"URL#6619009"
+},
+{
+"@score":"1",
+"@id":"6619010",
+"info":{"authors":{"author":[{"@pid":"91/2840","text":"Liang Huai Yang"},{"@pid":"l/MongLiLee","text":"Mong-Li Lee"},{"@pid":"h/WynneHsu","text":"Wynne Hsu"}]},"title":"Finding hot query patterns over an XQuery stream.","venue":"VLDB J.","volume":"13","number":"4","pages":"318-332","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/YangLH04","doi":"10.1007/S00778-004-0134-4","ee":"https://doi.org/10.1007/s00778-004-0134-4","url":"https://dblp.org/rec/journals/vldb/YangLH04"},
+"url":"URL#6619010"
+},
+{
+"@score":"1",
+"@id":"6619011",
+"info":{"authors":{"author":[{"@pid":"71/6612","text":"Cui Yu"},{"@pid":"b/SBressan","text":"Stéphane Bressan"},{"@pid":"o/BengChinOoi","text":"Beng Chin Ooi"},{"@pid":"t/KianLeeTan","text":"Kian-Lee Tan"}]},"title":"Querying high-dimensional data in single-dimensional space.","venue":"VLDB J.","volume":"13","number":"2","pages":"105-119","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/YuBOT04","doi":"10.1007/S00778-004-0121-9","ee":"https://doi.org/10.1007/s00778-004-0121-9","url":"https://dblp.org/rec/journals/vldb/YuBOT04"},
+"url":"URL#6619011"
+},
+{
+"@score":"1",
+"@id":"6619012",
+"info":{"authors":{"author":[{"@pid":"76/1584-2","text":"Xin Zhang 0002"},{"@pid":"68/962","text":"Lingli Ding"},{"@pid":"r/EARundensteiner","text":"Elke A. Rundensteiner"}]},"title":"Parallel multisource view maintenance.","venue":"VLDB J.","volume":"13","number":"1","pages":"22-48","year":"2004","type":"Journal Articles","access":"closed","key":"journals/vldb/ZhangDR04","doi":"10.1007/S00778-003-0086-0","ee":"https://doi.org/10.1007/s00778-003-0086-0","url":"https://dblp.org/rec/journals/vldb/ZhangDR04"},
+"url":"URL#6619012"
+}
+]
+}
+}
+}

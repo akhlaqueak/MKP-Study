@@ -1,0 +1,188 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb16.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"70.60"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"26",
+"@dc":"26",
+"@oc":"26",
+"@id":"47762609",
+"text":":facetid:toc:db/journals/vldb/vldb16.bht"
+}
+},
+"hits":{
+"@total":"26",
+"@computed":"26",
+"@sent":"26",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"6112628",
+"info":{"authors":{"author":[{"@pid":"b/KBohm","text":"Klemens Böhm"},{"@pid":"11/226","text":"Erik Buchmann"}]},"title":"Free riding-aware forwarding in Content-Addressable Networks.","venue":"VLDB J.","volume":"16","number":"4","pages":"463-482","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/BohmB07","doi":"10.1007/S00778-005-0175-3","ee":"https://doi.org/10.1007/s00778-005-0175-3","url":"https://dblp.org/rec/journals/vldb/BohmB07"},
+"url":"URL#6112628"
+},
+{
+"@score":"1",
+"@id":"6112629",
+"info":{"authors":{"author":[{"@pid":"42/2076","text":"Douglas Burdick"},{"@pid":"d/PrasadDeshpande","text":"Prasad M. Deshpande"},{"@pid":"j/TSJayram","text":"T. S. Jayram"},{"@pid":"r/RaghuRamakrishnan","text":"Raghu Ramakrishnan 0001"},{"@pid":"81/6125","text":"Shivakumar Vaithyanathan"}]},"title":"OLAP over uncertain and imprecise data.","venue":"VLDB J.","volume":"16","number":"1","pages":"123-144","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/BurdickDJRV07","doi":"10.1007/S00778-006-0033-Y","ee":"https://doi.org/10.1007/s00778-006-0033-y","url":"https://dblp.org/rec/journals/vldb/BurdickDJRV07"},
+"url":"URL#6112629"
+},
+{
+"@score":"1",
+"@id":"6112630",
+"info":{"authors":{"author":[{"@pid":"c/EPFChan","text":"Edward P. F. Chan"},{"@pid":"89/2118","text":"Heechul Lim"}]},"title":"Optimization and evaluation of shortest path queries.","venue":"VLDB J.","volume":"16","number":"3","pages":"343-369","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/ChanL07","doi":"10.1007/S00778-005-0177-1","ee":"https://doi.org/10.1007/s00778-005-0177-1","url":"https://dblp.org/rec/journals/vldb/ChanL07"},
+"url":"URL#6112630"
+},
+{
+"@score":"1",
+"@id":"6112631",
+"info":{"authors":{"author":[{"@pid":"16/1480","text":"Bi-Ru Dai"},{"@pid":"96/1680","text":"Cheng-Ru Lin"},{"@pid":"c/MingSyanChen","text":"Ming-Syan Chen"}]},"title":"Constrained data clustering by depth control and progressive constraint relaxation.","venue":"VLDB J.","volume":"16","number":"2","pages":"201-217","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/DaiLC07","doi":"10.1007/S00778-005-0164-6","ee":"https://doi.org/10.1007/s00778-005-0164-6","url":"https://dblp.org/rec/journals/vldb/DaiLC07"},
+"url":"URL#6112631"
+},
+{
+"@score":"1",
+"@id":"6112632",
+"info":{"authors":{"author":[{"@pid":"03/6610","text":"Nilesh N. Dalvi"},{"@pid":"s/DanSuciu","text":"Dan Suciu"}]},"title":"Efficient query evaluation on probabilistic databases.","venue":"VLDB J.","volume":"16","number":"4","pages":"523-544","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/DalviS07","doi":"10.1007/S00778-006-0004-3","ee":"https://doi.org/10.1007/s00778-006-0004-3","url":"https://dblp.org/rec/journals/vldb/DalviS07"},
+"url":"URL#6112632"
+},
+{
+"@score":"1",
+"@id":"6112633",
+"info":{"authors":{"author":[{"@pid":"d/ADeligiannakis","text":"Antonios Deligiannakis"},{"@pid":"k/YannisKotidis","text":"Yannis Kotidis"},{"@pid":"r/NickRoussopoulos","text":"Nick Roussopoulos"}]},"title":"Dissemination of compressed historical information in sensor networks.","venue":"VLDB J.","volume":"16","number":"4","pages":"439-461","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/DeligiannakisKR07","doi":"10.1007/S00778-005-0173-5","ee":"https://doi.org/10.1007/s00778-005-0173-5","url":"https://dblp.org/rec/journals/vldb/DeligiannakisKR07"},
+"url":"URL#6112633"
+},
+{
+"@score":"1",
+"@id":"6112634",
+"info":{"authors":{"author":[{"@pid":"g/AmolGhoting","text":"Amol Ghoting"},{"@pid":"b/GBuehrer","text":"Gregory Buehrer"},{"@pid":"p/SParathasarathy","text":"Srinivasan Parthasarathy 0001"},{"@pid":"85/5149-1","text":"Daehyun Kim 0001"},{"@pid":"98/4734","text":"Anthony D. Nguyen"},{"@pid":"44/4065","text":"Yen-Kuang Chen"},{"@pid":"47/4438","text":"Pradeep Dubey"}]},"title":"Cache-conscious frequent pattern mining on modern and emerging processors.","venue":"VLDB J.","volume":"16","number":"1","pages":"77-96","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/GhotingBPKNCD07","doi":"10.1007/S00778-006-0025-Y","ee":"https://doi.org/10.1007/s00778-006-0025-y","url":"https://dblp.org/rec/journals/vldb/GhotingBPKNCD07"},
+"url":"URL#6112634"
+},
+{
+"@score":"1",
+"@id":"6112635",
+"info":{"authors":{"author":[{"@pid":"g/ParkeGodfrey","text":"Parke Godfrey"},{"@pid":"94/5134","text":"Ryan Shipley"},{"@pid":"g/JarekGryz","text":"Jarek Gryz"}]},"title":"Algorithms and analyses for maximal vector computation.","venue":"VLDB J.","volume":"16","number":"1","pages":"5-28","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/GodfreySG07","doi":"10.1007/S00778-006-0029-7","ee":"https://doi.org/10.1007/s00778-006-0029-7","url":"https://dblp.org/rec/journals/vldb/GodfreySG07"},
+"url":"URL#6112635"
+},
+{
+"@score":"1",
+"@id":"6112636",
+"info":{"authors":{"author":[{"@pid":"h/LauraMHaas","text":"Laura M. Haas"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"},{"@pid":"k/MartinLKersten","text":"Martin L. Kersten"}]},"title":"Special issue: best papers of VLDB 2005.","venue":"VLDB J.","volume":"16","number":"1","pages":"1-3","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/HaasJK07","doi":"10.1007/S00778-006-0031-0","ee":"https://doi.org/10.1007/s00778-006-0031-0","url":"https://dblp.org/rec/journals/vldb/HaasJK07"},
+"url":"URL#6112636"
+},
+{
+"@score":"1",
+"@id":"6112637",
+"info":{"authors":{"author":[{"@pid":"46/6613","text":"Florian Haftmann"},{"@pid":"k/DonaldKossmann","text":"Donald Kossmann"},{"@pid":"80/2320","text":"Eric Lo 0001"}]},"title":"A framework for efficient regression tests on database applications.","venue":"VLDB J.","volume":"16","number":"1","pages":"145-164","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/HaftmannKL07","doi":"10.1007/S00778-006-0028-8","ee":"https://doi.org/10.1007/s00778-006-0028-8","url":"https://dblp.org/rec/journals/vldb/HaftmannKL07"},
+"url":"URL#6112637"
+},
+{
+"@score":"1",
+"@id":"6112638",
+"info":{"authors":{"author":[{"@pid":"44/4618-2","text":"Zhen He 0002"},{"@pid":"75/4088","text":"Alonso Marquez"}]},"title":"Path and cache conscious prefetching (PCCP).","venue":"VLDB J.","volume":"16","number":"2","pages":"235-249","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/HeM07","doi":"10.1007/S00778-005-0174-4","ee":"https://doi.org/10.1007/s00778-005-0174-4","url":"https://dblp.org/rec/journals/vldb/HeM07"},
+"url":"URL#6112638"
+},
+{
+"@score":"1",
+"@id":"6112639",
+"info":{"authors":{"author":[{"@pid":"j/ChrisJermaine","text":"Christopher M. Jermaine"},{"@pid":"o/EdwardOmiecinski","text":"Edward Omiecinski"},{"@pid":"69/1524","text":"Wai Gen Yee"}]},"title":"The partitioned exponential file for database storage management.","venue":"VLDB J.","volume":"16","number":"4","pages":"417-437","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/JermaineOY07","doi":"10.1007/S00778-005-0171-7","ee":"https://doi.org/10.1007/s00778-005-0171-7","url":"https://dblp.org/rec/journals/vldb/JermaineOY07"},
+"url":"URL#6112639"
+},
+{
+"@score":"1",
+"@id":"6112640",
+"info":{"authors":{"author":[{"@pid":"k/LatifurKhan","text":"Latifur Khan"},{"@pid":"118/6134","text":"Mamoun Awad"},{"@pid":"t/BMThuraisingham","text":"Bhavani Thuraisingham"}]},"title":"A new intrusion detection system using support vector machines and hierarchical clustering.","venue":"VLDB J.","volume":"16","number":"4","pages":"507-521","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/KhanAT07","doi":"10.1007/S00778-006-0002-5","ee":"https://doi.org/10.1007/s00778-006-0002-5","url":"https://dblp.org/rec/journals/vldb/KhanAT07"},
+"url":"URL#6112640"
+},
+{
+"@score":"1",
+"@id":"6112641",
+"info":{"authors":{"author":[{"@pid":"k/ChristophKoch","text":"Christoph Koch 0001"},{"@pid":"s/StefanieScherzinger","text":"Stefanie Scherzinger"}]},"title":"Attribute grammars for scalable query processing on XML streams.","venue":"VLDB J.","volume":"16","number":"3","pages":"317-342","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/KochS07","doi":"10.1007/S00778-005-0169-1","ee":"https://doi.org/10.1007/s00778-005-0169-1","url":"https://dblp.org/rec/journals/vldb/KochS07"},
+"url":"URL#6112641"
+},
+{
+"@score":"1",
+"@id":"6112642",
+"info":{"authors":{"author":[{"@pid":"l/PALarson","text":"Per-Åke Larson"},{"@pid":"84/2644-1","text":"Jingren Zhou 0001"}]},"title":"View matching for outer-join views.","venue":"VLDB J.","volume":"16","number":"1","pages":"29-53","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/LarsonZ07","doi":"10.1007/S00778-006-0027-9","ee":"https://doi.org/10.1007/s00778-006-0027-9","url":"https://dblp.org/rec/journals/vldb/LarsonZ07"},
+"url":"URL#6112642"
+},
+{
+"@score":"1",
+"@id":"6112643",
+"info":{"authors":{"author":[{"@pid":"35/1594","text":"Yoonkyong Lee"},{"@pid":"58/5810","text":"Mayssam Sayyadian"},{"@pid":"d/AnHaiDoan","text":"AnHai Doan"},{"@pid":"r/ArnonRosenthal","text":"Arnon Rosenthal"}]},"title":"eTuner: tuning schema matching software using synthetic scenarios.","venue":"VLDB J.","volume":"16","number":"1","pages":"97-122","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/LeeSDR07","doi":"10.1007/S00778-006-0024-Z","ee":"https://doi.org/10.1007/s00778-006-0024-z","url":"https://dblp.org/rec/journals/vldb/LeeSDR07"},
+"url":"URL#6112643"
+},
+{
+"@score":"1",
+"@id":"6112644",
+"info":{"authors":{"author":[{"@pid":"28/3904","text":"Jae-Gil Lee 0001"},{"@pid":"w/KyuYoungWhang","text":"Kyu-Young Whang"},{"@pid":"62/2450","text":"Wook-Shin Han"},{"@pid":"s/IlYeolSong","text":"Il-Yeol Song"}]},"title":"The dynamic predicate: integrating access control with query processing in XML databases.","venue":"VLDB J.","volume":"16","number":"3","pages":"371-387","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/LeeWHS07","doi":"10.1007/S00778-006-0037-7","ee":"https://doi.org/10.1007/s00778-006-0037-7","url":"https://dblp.org/rec/journals/vldb/LeeWHS07"},
+"url":"URL#6112644"
+},
+{
+"@score":"1",
+"@id":"6112645",
+"info":{"authors":{"author":[{"@pid":"m/VMarkl","text":"Volker Markl"},{"@pid":"h/PeterJHaas","text":"Peter J. Haas"},{"@pid":"23/5248","text":"Marcel Kutsch"},{"@pid":"m/NimrodMegiddo","text":"Nimrod Megiddo"},{"@pid":"46/2539","text":"Utkarsh Srivastava"},{"@pid":"86/4362","text":"Tam Minh Tran"}]},"title":"Consistent selectivity estimation via maximum entropy.","venue":"VLDB J.","volume":"16","number":"1","pages":"55-76","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/MarklHKMST07","doi":"10.1007/S00778-006-0030-1","ee":"https://doi.org/10.1007/s00778-006-0030-1","url":"https://dblp.org/rec/journals/vldb/MarklHKMST07"},
+"url":"URL#6112645"
+},
+{
+"@score":"1",
+"@id":"6112646",
+"info":{"authors":{"author":[{"@pid":"p/MPPapazoglou","text":"Mike P. Papazoglou"},{"@pid":"85/22","text":"Willem-Jan van den Heuvel"}]},"title":"Service oriented architectures: approaches, technologies and research issues.","venue":"VLDB J.","volume":"16","number":"3","pages":"389-415","year":"2007","type":"Journal Articles","access":"open","key":"journals/vldb/PapazoglouH07","doi":"10.1007/S00778-007-0044-3","ee":"https://doi.org/10.1007/s00778-007-0044-3","url":"https://dblp.org/rec/journals/vldb/PapazoglouH07"},
+"url":"URL#6112646"
+},
+{
+"@score":"1",
+"@id":"6112647",
+"info":{"authors":{"author":[{"@pid":"s/HTShen","text":"Heng Tao Shen"},{"@pid":"z/XiaofangZhou","text":"Xiaofang Zhou 0001"},{"@pid":"z/AoyingZhou","text":"Aoying Zhou"}]},"title":"An adaptive and dynamic dimensionality reduction method for high-dimensional indexing.","venue":"VLDB J.","volume":"16","number":"2","pages":"219-234","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/ShenZZ07","doi":"10.1007/S00778-005-0167-3","ee":"https://doi.org/10.1007/s00778-005-0167-3","url":"https://dblp.org/rec/journals/vldb/ShenZZ07"},
+"url":"URL#6112647"
+},
+{
+"@score":"1",
+"@id":"6112648",
+"info":{"authors":{"author":[{"@pid":"22/544","text":"Egemen Tanin"},{"@pid":"27/5788","text":"Aaron Harwood"},{"@pid":"s/HananSamet","text":"Hanan Samet"}]},"title":"Using a distributed quadtree index in peer-to-peer networks.","venue":"VLDB J.","volume":"16","number":"2","pages":"165-178","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/TaninHS07","doi":"10.1007/S00778-005-0001-Y","ee":"https://doi.org/10.1007/s00778-005-0001-y","url":"https://dblp.org/rec/journals/vldb/TaninHS07"},
+"url":"URL#6112648"
+},
+{
+"@score":"1",
+"@id":"6112649",
+"info":{"authors":{"author":[{"@pid":"t/YufeiTao","text":"Yufei Tao 0001"},{"@pid":"p/DimitrisPapadias","text":"Dimitris Papadias"},{"@pid":"l/XianLian","text":"Xiang Lian"},{"@pid":"33/1903","text":"Xiaokui Xiao"}]},"title":"Multidimensional reverse k NN search.","venue":"VLDB J.","volume":"16","number":"3","pages":"293-316","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/TaoPLX07","doi":"10.1007/S00778-005-0168-2","ee":"https://doi.org/10.1007/s00778-005-0168-2","url":"https://dblp.org/rec/journals/vldb/TaoPLX07"},
+"url":"URL#6112649"
+},
+{
+"@score":"1",
+"@id":"6112650",
+"info":{"authors":{"author":[{"@pid":"t/CaetanoTrainaJr","text":"Caetano Traina Jr."},{"@pid":"69/356","text":"Roberto F. Santos Filho"},{"@pid":"t/AgmaJMTraina","text":"Agma J. M. Traina"},{"@pid":"98/5702","text":"Marcos R. Vieira"},{"@pid":"f/CFaloutsos","text":"Christos Faloutsos"}]},"title":"The Omni-family of all-purpose access methods: a simple and effective way to make similarity search more efficient.","venue":"VLDB J.","volume":"16","number":"4","pages":"483-505","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/TrainaFTVF07","doi":"10.1007/S00778-005-0178-0","ee":"https://doi.org/10.1007/s00778-005-0178-0","url":"https://dblp.org/rec/journals/vldb/TrainaFTVF07"},
+"url":"URL#6112650"
+},
+{
+"@score":"1",
+"@id":"6112651",
+"info":{"authors":{"author":[{"@pid":"76/6288","text":"José Ramon Rios Viqueira"},{"@pid":"26/1286","text":"Nikos A. Lorentzos"}]},"title":"SQL extension for spatio-temporal data.","venue":"VLDB J.","volume":"16","number":"2","pages":"179-200","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/ViqueiraL07","doi":"10.1007/S00778-005-0161-9","ee":"https://doi.org/10.1007/s00778-005-0161-9","url":"https://dblp.org/rec/journals/vldb/ViqueiraL07"},
+"url":"URL#6112651"
+},
+{
+"@score":"1",
+"@id":"6112652",
+"info":{"authors":{"author":[{"@pid":"91/6437","text":"John Yiannis"},{"@pid":"z/JZobel","text":"Justin Zobel"}]},"title":"Compression techniques for fast external sorting.","venue":"VLDB J.","volume":"16","number":"2","pages":"269-291","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/YiannisZ07","doi":"10.1007/S00778-006-0005-2","ee":"https://doi.org/10.1007/s00778-006-0005-2","url":"https://dblp.org/rec/journals/vldb/YiannisZ07"},
+"url":"URL#6112652"
+},
+{
+"@score":"1",
+"@id":"6112653",
+"info":{"authors":{"author":[{"@pid":"48/300","text":"Hailing Yu"},{"@pid":"a/DivyakantAgrawal","text":"Divyakant Agrawal"},{"@pid":"a/AmrElAbbadi","text":"Amr El Abbadi"}]},"title":"MEMS based storage architecture for relational databases.","venue":"VLDB J.","volume":"16","number":"2","pages":"251-268","year":"2007","type":"Journal Articles","access":"closed","key":"journals/vldb/YuAA07","doi":"10.1007/S00778-005-0176-2","ee":"https://doi.org/10.1007/s00778-005-0176-2","url":"https://dblp.org/rec/journals/vldb/YuAA07"},
+"url":"URL#6112653"
+}
+]
+}
+}
+}

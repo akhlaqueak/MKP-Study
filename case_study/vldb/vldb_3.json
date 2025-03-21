@@ -1,0 +1,158 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb3.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"68.20"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"21",
+"@dc":"21",
+"@oc":"21",
+"@id":"47762624",
+"text":":facetid:toc:db/journals/vldb/vldb3.bht"
+}
+},
+"hits":{
+"@total":"21",
+"@computed":"21",
+"@sent":"21",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"7406613",
+"info":{"authors":{"author":[{"@pid":"b/DBarbara","text":"Daniel Barbará"},{"@pid":"g/HGarciaMolina","text":"Hector Garcia-Molina"}]},"title":"The Demarcation Protocol: A Technique for Maintaining Constraints in Distributed Database Systems","venue":"VLDB J.","volume":"3","number":"3","pages":"325-353","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/Barbara-MillaG94","ee":"http://www.vldb.org/journal/VLDBJ3/P325.pdf","url":"https://dblp.org/rec/journals/vldb/Barbara-MillaG94"},
+"url":"URL#7406613"
+},
+{
+"@score":"1",
+"@id":"7406614",
+"info":{"authors":{"author":{"@pid":"182/7045","text":"Peter Baumann"}},"title":"Management of Multidimensional Discrete Data","venue":"VLDB J.","volume":"3","number":"4","pages":"401-444","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/Baumann94","ee":"http://www.vldb.org/journal/VLDBJ3/P401.pdf","url":"https://dblp.org/rec/journals/vldb/Baumann94"},
+"url":"URL#7406614"
+},
+{
+"@score":"1",
+"@id":"7406615",
+"info":{"authors":{"author":{"@pid":"b/ElisaBertino","text":"Elisa Bertino"}},"title":"Index Configuration in Object-Oriented Databases","venue":"VLDB J.","volume":"3","number":"3","pages":"355-399","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/Bertino94","ee":"http://www.vldb.org/journal/VLDBJ3/P355.pdf","url":"https://dblp.org/rec/journals/vldb/Bertino94"},
+"url":"URL#7406615"
+},
+{
+"@score":"1",
+"@id":"7406616",
+"info":{"title":"Title, Foreword","venue":"VLDB J.","volume":"3","number":"1","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/C94","ee":"http://www.vldb.org/journal/VLDBJ3/C1.pdf","url":"https://dblp.org/rec/journals/vldb/C94"},
+"url":"URL#7406616"
+},
+{
+"@score":"1",
+"@id":"7406617",
+"info":{"title":"Title, Foreword, Special Issue Editorial","venue":"VLDB J.","volume":"3","number":"2","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/C94a","ee":"http://www.vldb.org/journal/VLDBJ3/C2.pdf","url":"https://dblp.org/rec/journals/vldb/C94a"},
+"url":"URL#7406617"
+},
+{
+"@score":"1",
+"@id":"7406618",
+"info":{"title":"Title, Foreword","venue":"VLDB J.","volume":"3","number":"3","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/C94b","ee":"http://www.vldb.org/journal/VLDBJ3/C3.pdf","url":"https://dblp.org/rec/journals/vldb/C94b"},
+"url":"URL#7406618"
+},
+{
+"@score":"1",
+"@id":"7406619",
+"info":{"title":"Title, Foreword, Preface to the Special Issue on Spatial Database Systems, Index Vol. 3","venue":"VLDB J.","volume":"3","number":"4","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/C94c","ee":"http://www.vldb.org/journal/VLDBJ3/C4.pdf","url":"https://dblp.org/rec/journals/vldb/C94c"},
+"url":"URL#7406619"
+},
+{
+"@score":"1",
+"@id":"7406620",
+"info":{"authors":{"author":[{"@pid":"c/WesleyWChu","text":"Wesley W. Chu"},{"@pid":"96/4735","text":"Ion Tim Ieong"},{"@pid":"t/RickyKTaira","text":"Ricky K. Taira"}]},"title":"A Semantic Modeling Approach for Image Retrieval by Content","venue":"VLDB J.","volume":"3","number":"4","pages":"445-477","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/ChuIT94","ee":"http://www.vldb.org/journal/VLDBJ3/P445.pdf","url":"https://dblp.org/rec/journals/vldb/ChuIT94"},
+"url":"URL#7406620"
+},
+{
+"@score":"1",
+"@id":"7406621",
+"info":{"authors":{"author":[{"@pid":"71/1021","text":"Marcia A. Derr"},{"@pid":"m/ShinichiMorishita","text":"Shinichi Morishita"},{"@pid":"00/1536","text":"Geoffrey Phipps"}]},"title":"The Glue-Nail Deductive Database System: Design, Implementation, and Evaluation","venue":"VLDB J.","volume":"3","number":"2","pages":"123-160","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/DerrMP94","ee":"http://www.vldb.org/journal/VLDBJ3/P123.pdf","url":"https://dblp.org/rec/journals/vldb/DerrMP94"},
+"url":"URL#7406621"
+},
+{
+"@score":"1",
+"@id":"7406622",
+"info":{"authors":{"author":[{"@pid":"82/2760","text":"Dimitrios Georgakopoulos 0001"},{"@pid":"r/MRusinkiewicz","text":"Marek Rusinkiewicz"},{"@pid":"12/2734","text":"Witold Litwin"}]},"title":"Chronological Scheduling of Transactions with Temporal Dependencies","venue":"VLDB J.","volume":"3","number":"1","pages":"1-28","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/GeorgakopoulosRL94","ee":"http://www.vldb.org/journal/VLDBJ3/P001.pdf","url":"https://dblp.org/rec/journals/vldb/GeorgakopoulosRL94"},
+"url":"URL#7406622"
+},
+{
+"@score":"1",
+"@id":"7406623",
+"info":{"authors":{"author":{"@pid":"g/RHGuting","text":"Ralf Hartmut Güting"}},"title":"An Introduction to Spatial Database Systems","venue":"VLDB J.","volume":"3","number":"4","pages":"357-399","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/Guting94","ee":"http://www.vldb.org/journal/VLDBJ3/P357.pdf","url":"https://dblp.org/rec/journals/vldb/Guting94"},
+"url":"URL#7406623"
+},
+{
+"@score":"1",
+"@id":"7406624",
+"info":{"authors":{"author":[{"@pid":"93/6123","text":"Nabil Kamel"},{"@pid":"32/2683","text":"Ping Wu"},{"@pid":"s/StanleyYWSu","text":"Stanley Y. W. Su"}]},"title":"A Pattern-Based Object Calculus","venue":"VLDB J.","volume":"3","number":"1","pages":"53-76","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/KamelWS94","ee":"http://www.vldb.org/journal/VLDBJ3/P053.pdf","url":"https://dblp.org/rec/journals/vldb/KamelWS94"},
+"url":"URL#7406624"
+},
+{
+"@score":"1",
+"@id":"7406625",
+"info":{"authors":{"author":[{"@pid":"k/WKiessling","text":"Werner Kießling"},{"@pid":"38/3897","text":"Helmut Schmidt"},{"@pid":"28/6715","text":"Werner Strauß"},{"@pid":"56/610","text":"Gerhard Dünzinger"}]},"title":"DECLARE and SDS: Early Efforts to Commercialize Deductive Database Technology","venue":"VLDB J.","volume":"3","number":"2","pages":"211-243","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/KieslingSSD94","ee":"http://www.vldb.org/journal/VLDBJ3/P211.pdf","url":"https://dblp.org/rec/journals/vldb/KieslingSSD94"},
+"url":"URL#7406625"
+},
+{
+"@score":"1",
+"@id":"7406626",
+"info":{"authors":{"author":[{"@pid":"l/ByungSukLee","text":"Byung Suk Lee 0001"},{"@pid":"w/GioWiederhold","text":"Gio Wiederhold"}]},"title":"Efficiently Instantiating View-Objects From Remote Relational Databases","venue":"VLDB J.","volume":"3","number":"3","pages":"289-323","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/LeeW94","ee":"http://www.vldb.org/journal/VLDBJ3/P289.pdf","url":"https://dblp.org/rec/journals/vldb/LeeW94"},
+"url":"URL#7406626"
+},
+{
+"@score":"1",
+"@id":"7406627",
+"info":{"authors":{"author":[{"@pid":"49/924","text":"King-Ip Lin"},{"@pid":"j/HVJagadish","text":"H. V. Jagadish"},{"@pid":"f/CFaloutsos","text":"Christos Faloutsos"}]},"title":"The TV-Tree: An Index Structure for High-Dimensional Data","venue":"VLDB J.","volume":"3","number":"4","pages":"517-542","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/LinJF94","ee":"http://www.vldb.org/journal/VLDBJ3/P517.pdf","url":"https://dblp.org/rec/journals/vldb/LinJF94"},
+"url":"URL#7406627"
+},
+{
+"@score":"1",
+"@id":"7406628",
+"info":{"authors":{"author":[{"@pid":"p/DimitrisPapadias","text":"Dimitris Papadias"},{"@pid":"s/TimosKSellis","text":"Timos K. Sellis"}]},"title":"Qualitative Representation of Spatial Knowledge in Two-Dimensional Space","venue":"VLDB J.","volume":"3","number":"4","pages":"479-516","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/PapadiasS94","ee":"http://www.vldb.org/journal/VLDBJ3/P479.pdf","url":"https://dblp.org/rec/journals/vldb/PapadiasS94"},
+"url":"URL#7406628"
+},
+{
+"@score":"1",
+"@id":"7406629",
+"info":{"authors":{"author":[{"@pid":"r/RaghuRamakrishnan","text":"Raghu Ramakrishnan 0001"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"},{"@pid":"s/SSudarshan1","text":"S. Sudarshan 0001"},{"@pid":"s/PraveenSeshadri","text":"Praveen Seshadri"}]},"title":"The CORAL Deductive System","venue":"VLDB J.","volume":"3","number":"2","pages":"161-210","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/RamakrishnanSSS94","ee":"http://www.vldb.org/journal/VLDBJ3/P161.pdf","url":"https://dblp.org/rec/journals/vldb/RamakrishnanSSS94"},
+"url":"URL#7406629"
+},
+{
+"@score":"1",
+"@id":"7406630",
+"info":{"authors":{"author":[{"@pid":"r/KRamamohanarao","text":"Kotagiri Ramamohanarao"},{"@pid":"h/JamesHarland","text":"James Harland"}]},"title":"An Introduction to Deductive Database Languages and Systems","venue":"VLDB J.","volume":"3","number":"2","pages":"107-122","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/RamamohanaraoH94","ee":"http://www.vldb.org/journal/VLDBJ3/P107.pdf","url":"https://dblp.org/rec/journals/vldb/RamamohanaraoH94"},
+"url":"URL#7406630"
+},
+{
+"@score":"1",
+"@id":"7406631",
+"info":{"authors":{"author":{"@pid":"44/2304","text":"Edward Sciore"}},"title":"Versioning and Configuration Management in an Object-Oriented Data Model","venue":"VLDB J.","volume":"3","number":"1","pages":"77-106","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/Sciore94","ee":"http://www.vldb.org/journal/VLDBJ3/P077.pdf","url":"https://dblp.org/rec/journals/vldb/Sciore94"},
+"url":"URL#7406631"
+},
+{
+"@score":"1",
+"@id":"7406632",
+"info":{"authors":{"author":[{"@pid":"17/5819","text":"Jayen Vaghani"},{"@pid":"r/KRamamohanarao","text":"Kotagiri Ramamohanarao"},{"@pid":"83/2625","text":"David B. Kemp"},{"@pid":"s/ZoltanSomogyi","text":"Zoltan Somogyi"},{"@pid":"s/PeterJStuckey","text":"Peter J. Stuckey"},{"@pid":"83/6537","text":"Tim S. Leask"},{"@pid":"h/JamesHarland","text":"James Harland"}]},"title":"The Aditi Deductive Database System","venue":"VLDB J.","volume":"3","number":"2","pages":"245-288","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/VaghaniRKSSLH94","ee":"http://www.vldb.org/journal/VLDBJ3/P245.pdf","url":"https://dblp.org/rec/journals/vldb/VaghaniRKSSLH94"},
+"url":"URL#7406632"
+},
+{
+"@score":"1",
+"@id":"7406633",
+"info":{"authors":{"author":[{"@pid":"w/KyuYoungWhang","text":"Kyu-Young Whang"},{"@pid":"64/5810","text":"Sang-Wook Kim"},{"@pid":"w/GioWiederhold","text":"Gio Wiederhold"}]},"title":"Dynamic Maintenance of Data Distribution for Selectivity Estimation","venue":"VLDB J.","volume":"3","number":"1","pages":"29-51","year":"1994","type":"Journal Articles","access":"open","key":"journals/vldb/WhangKW94","ee":"http://www.vldb.org/journal/VLDBJ3/P029.pdf","url":"https://dblp.org/rec/journals/vldb/WhangKW94"},
+"url":"URL#7406633"
+}
+]
+}
+}
+}

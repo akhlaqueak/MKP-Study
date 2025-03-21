@@ -1,0 +1,146 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb2.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"81.68"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"19",
+"@dc":"19",
+"@oc":"19",
+"@id":"47762613",
+"text":":facetid:toc:db/journals/vldb/vldb2.bht"
+}
+},
+"hits":{
+"@total":"19",
+"@computed":"19",
+"@sent":"19",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"7450378",
+"info":{"title":"Title, Foreword, Calls for Articles","venue":"VLDB J.","volume":"2","number":"1","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/C93","ee":"http://www.vldb.org/journal/VLDBJ2/C1.pdf","url":"https://dblp.org/rec/journals/vldb/C93"},
+"url":"URL#7450378"
+},
+{
+"@score":"1",
+"@id":"7450379",
+"info":{"title":"Title","venue":"VLDB J.","volume":"2","number":"2","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/C93a","ee":"http://www.vldb.org/journal/VLDBJ2/C2.pdf","url":"https://dblp.org/rec/journals/vldb/C93a"},
+"url":"URL#7450379"
+},
+{
+"@score":"1",
+"@id":"7450380",
+"info":{"title":"Title, Preface by the Editors-in-Chief, Preface to Special Issue on PDIS","venue":"VLDB J.","volume":"2","number":"3","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/C93b","ee":"http://www.vldb.org/journal/VLDBJ2/C3.pdf","url":"https://dblp.org/rec/journals/vldb/C93b"},
+"url":"URL#7450380"
+},
+{
+"@score":"1",
+"@id":"7450381",
+"info":{"title":"Title, Subject Index 1(1)-2(4), Author Index 1(1)-2(4), Reviewers","venue":"VLDB J.","volume":"2","number":"4","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/C93c","ee":"http://www.vldb.org/journal/VLDBJ2/C4.pdf","url":"https://dblp.org/rec/journals/vldb/C93c"},
+"url":"URL#7450381"
+},
+{
+"@score":"1",
+"@id":"7450382",
+"info":{"authors":{"author":[{"@pid":"16/4446","text":"Weimin Du"},{"@pid":"e/AKElmagarmid","text":"Ahmed K. Elmagarmid"},{"@pid":"86/2627-1","text":"Won Kim 0001"},{"@pid":"b/OABukhres","text":"Omran A. Bukhres"}]},"title":"Support Consistent Updates in Replicated Multidatabase Systems","venue":"VLDB J.","volume":"2","number":"2","pages":"215-241","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/DuEKB93","ee":"http://www.vldb.org/journal/VLDBJ2/P215.pdf","url":"https://dblp.org/rec/journals/vldb/DuEKB93"},
+"url":"URL#7450382"
+},
+{
+"@score":"1",
+"@id":"7450383",
+"info":{"authors":{"author":[{"@pid":"85/4920","text":"John Grant"},{"@pid":"12/2734","text":"Witold Litwin"},{"@pid":"r/NickRoussopoulos","text":"Nick Roussopoulos"},{"@pid":"s/TimosKSellis","text":"Timos K. Sellis"}]},"title":"Query Languages for Relational Multidatabases","venue":"VLDB J.","volume":"2","number":"2","pages":"153-171","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/GrantLRS93","ee":"http://www.vldb.org/journal/VLDBJ2/P153.pdf","url":"https://dblp.org/rec/journals/vldb/GrantLRS93"},
+"url":"URL#7450383"
+},
+{
+"@score":"1",
+"@id":"7450384",
+"info":{"authors":{"author":[{"@pid":"h/TheoHarder","text":"Theo Härder"},{"@pid":"r/KurtRothermel","text":"Kurt Rothermel"}]},"title":"Concurrency Control Issues in Nested Transactions","venue":"VLDB J.","volume":"2","number":"1","pages":"39-74","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/HarderR93","ee":"http://www.vldb.org/journal/VLDBJ2/P039.pdf","url":"https://dblp.org/rec/journals/vldb/HarderR93"},
+"url":"URL#7450384"
+},
+{
+"@score":"1",
+"@id":"7450385",
+"info":{"authors":{"author":[{"@pid":"h/JayantRHaritsa","text":"Jayant R. Haritsa"},{"@pid":"31/3455","text":"Michael J. Carey 0001"},{"@pid":"l/MironLivny","text":"Miron Livny"}]},"title":"Value-Based Scheduling in Real-Time Database Systems","venue":"VLDB J.","volume":"2","number":"2","pages":"117-152","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/HaritsaCL93","ee":"http://www.vldb.org/journal/VLDBJ2/P117.pdf","url":"https://dblp.org/rec/journals/vldb/HaritsaCL93"},
+"url":"URL#7450385"
+},
+{
+"@score":"1",
+"@id":"7450386",
+"info":{"authors":{"author":[{"@pid":"233/0688","text":"Kien A. Hua"},{"@pid":"30/427","text":"Yu-lung Lo"},{"@pid":"40/2804","text":"Honesty C. Young"}]},"title":"Considering Data Skew Factor in Multi-Way Join Query Optimization for Parallel Execution","venue":"VLDB J.","volume":"2","number":"3","pages":"303-330","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/HuaLY93","ee":"http://www.vldb.org/journal/VLDBJ2/P303.pdf","url":"https://dblp.org/rec/journals/vldb/HuaLY93"},
+"url":"URL#7450386"
+},
+{
+"@score":"1",
+"@id":"7450387",
+"info":{"authors":{"author":[{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"},{"@pid":"03/5097","text":"Leo Mark"},{"@pid":"r/NickRoussopoulos","text":"Nick Roussopoulos"},{"@pid":"s/TimosKSellis","text":"Timos K. Sellis"}]},"title":"Using Differential Techniques to Efficiently Support Transaction Time","venue":"VLDB J.","volume":"2","number":"1","pages":"75-111","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/JensenMRS93","ee":"http://www.vldb.org/journal/VLDBJ2/P075.pdf","url":"https://dblp.org/rec/journals/vldb/JensenMRS93"},
+"url":"URL#7450387"
+},
+{
+"@score":"1",
+"@id":"7450388",
+"info":{"authors":{"author":[{"@pid":"34/6120","text":"Andrea Neufeld"},{"@pid":"m/GuidoMoerkotte","text":"Guido Moerkotte"},{"@pid":"l/PCLockemann","text":"Peter C. Lockemann"}]},"title":"Generating Consistent Test Data for a Variable Set of General Consistency Constraints","venue":"VLDB J.","volume":"2","number":"2","pages":"173-213","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/NeufeldML93","ee":"http://www.vldb.org/journal/VLDBJ2/P172.pdf","url":"https://dblp.org/rec/journals/vldb/NeufeldML93"},
+"url":"URL#7450388"
+},
+{
+"@score":"1",
+"@id":"7450389",
+"info":{"authors":{"author":[{"@pid":"15/2307-1","text":"V. Srinivasan 0001"},{"@pid":"31/3455","text":"Michael J. Carey 0001"}]},"title":"Performance of B+ Tree Concurrency Algorithms","venue":"VLDB J.","volume":"2","number":"4","pages":"361-406","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/SrinivasanC93","ee":"http://www.vldb.org/journal/VLDBJ2/P361.pdf","url":"https://dblp.org/rec/journals/vldb/SrinivasanC93"},
+"url":"URL#7450389"
+},
+{
+"@score":"1",
+"@id":"7450390",
+"info":{"authors":{"author":{"@pid":"41/1781","text":"Veda C. Storey"}},"title":"Understanding Semantic Relationships","venue":"VLDB J.","volume":"2","number":"4","pages":"455-488","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/Storey93","ee":"http://www.vldb.org/journal/VLDBJ2/P455.pdf","url":"https://dblp.org/rec/journals/vldb/Storey93"},
+"url":"URL#7450390"
+},
+{
+"@score":"1",
+"@id":"7450391",
+"info":{"authors":{"author":[{"@pid":"t/AnthonyTomasic","text":"Anthony Tomasic"},{"@pid":"g/HGarciaMolina","text":"Hector Garcia-Molina"}]},"title":"Query Processing and Inverted Indices in Shared-Nothing Document Information Retrieval Systems","venue":"VLDB J.","volume":"2","number":"3","pages":"243-275","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/TomasicG93","ee":"http://www.vldb.org/journal/VLDBJ2/P243.pdf","url":"https://dblp.org/rec/journals/vldb/TomasicG93"},
+"url":"URL#7450391"
+},
+{
+"@score":"1",
+"@id":"7450392",
+"info":{"authors":{"author":[{"@pid":"81/5348","text":"Frank Shou-Cheng Tseng"},{"@pid":"c/ALPChen","text":"Arbee L. P. Chen"},{"@pid":"20/5454","text":"Wei-Pang Yang"}]},"title":"Searching a Minimal Semantically-Equivalent Subset of a Set of Partial Values","venue":"VLDB J.","volume":"2","number":"4","pages":"489-512","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/TsengCY93","ee":"http://www.vldb.org/journal/VLDBJ2/P489.pdf","url":"https://dblp.org/rec/journals/vldb/TsengCY93"},
+"url":"URL#7450392"
+},
+{
+"@score":"1",
+"@id":"7450393",
+"info":{"authors":{"author":[{"@pid":"w/GerhardWeikum","text":"Gerhard Weikum"},{"@pid":"38/4340","text":"Christof Hasse"}]},"title":"Multi-Level Transaction Management for Complex Objects: Implementation, Performance, Parallelism","venue":"VLDB J.","volume":"2","number":"4","pages":"407-453","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/WeikumH93","ee":"http://www.vldb.org/journal/VLDBJ2/P407.pdf","url":"https://dblp.org/rec/journals/vldb/WeikumH93"},
+"url":"URL#7450393"
+},
+{
+"@score":"1",
+"@id":"7450394",
+"info":{"authors":{"author":[{"@pid":"y/PhilipSYu","text":"Philip S. Yu"},{"@pid":"88/6897","text":"Douglas W. Cornell"}]},"title":"Buffer Management Based on Return on Consumption in a Multi-Query Environment","venue":"VLDB J.","volume":"2","number":"1","pages":"1-37","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/YuC93","ee":"http://www.vldb.org/journal/VLDBJ2/P001.pdf","url":"https://dblp.org/rec/journals/vldb/YuC93"},
+"url":"URL#7450394"
+},
+{
+"@score":"1",
+"@id":"7450395",
+"info":{"authors":{"author":[{"@pid":"z/AidongZhang","text":"Aidong Zhang"},{"@pid":"e/AKElmagarmid","text":"Ahmed K. Elmagarmid"}]},"title":"A Theory of Global Concurrency Control in Multidatabase Systems","venue":"VLDB J.","volume":"2","number":"3","pages":"331-360","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/ZhangE93","ee":"http://www.vldb.org/journal/VLDBJ2/P331.pdf","url":"https://dblp.org/rec/journals/vldb/ZhangE93"},
+"url":"URL#7450395"
+},
+{
+"@score":"1",
+"@id":"7450396",
+"info":{"authors":{"author":[{"@pid":"30/976","text":"Mikal Ziane"},{"@pid":"04/4426","text":"Mohamed Zaït"},{"@pid":"88/2558","text":"Pascale Borla-Salamet"}]},"title":"Parallel Query Processing with Zigzag Trees","venue":"VLDB J.","volume":"2","number":"3","pages":"277-301","year":"1993","type":"Journal Articles","access":"open","key":"journals/vldb/ZianeZB93","ee":"http://www.vldb.org/journal/VLDBJ2/P277.pdf","url":"https://dblp.org/rec/journals/vldb/ZianeZB93"},
+"url":"URL#7450396"
+}
+]
+}
+}
+}

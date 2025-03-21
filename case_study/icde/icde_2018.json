@@ -1,0 +1,1616 @@
+{
+"result":{
+"query":":facetid:toc:\"db/conf/icde/icde2018.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"78.87"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"264",
+"@dc":"264",
+"@oc":"264",
+"@id":"47668667",
+"text":":facetid:toc:db/conf/icde/icde2018.bht"
+}
+},
+"hits":{
+"@total":"264",
+"@computed":"264",
+"@sent":"264",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"3178648",
+"info":{"authors":{"author":[{"@pid":"28/7604","text":"Chih-Yu Wang 0001"},{"@pid":"88/2827-7","text":"Yan Chen 0007"},{"@pid":"68/3163","text":"K. J. Ray Liu"}]},"title":"Game-Theoretic Cross Social Media Analytic: How Do Yelp Ratings Affect Deal Selection on Groupon? (Extended Abstract).","venue":"ICDE","pages":"1809-1810","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/00010L18","doi":"10.1109/ICDE.2018.00262","ee":"https://doi.org/10.1109/ICDE.2018.00262","url":"https://dblp.org/rec/conf/icde/00010L18"},
+"url":"URL#3178648"
+},
+{
+"@score":"1",
+"@id":"3178649",
+"info":{"authors":{"author":{"@pid":"m/CMohan","text":"C. Mohan 0001"}},"title":"Blockchains and Databases: A New Era in Distributed Computing.","venue":"ICDE","pages":"1739-1740","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/000118","doi":"10.1109/ICDE.2018.00227","ee":"https://doi.org/10.1109/ICDE.2018.00227","url":"https://dblp.org/rec/conf/icde/000118"},
+"url":"URL#3178649"
+},
+{
+"@score":"1",
+"@id":"3178650",
+"info":{"authors":{"author":[{"@pid":"151/0819","text":"Martin Boissier 0001"},{"@pid":"129/4931","text":"Rainer Schlosser"},{"@pid":"83/6118","text":"Matthias Uflacker"}]},"title":"Hybrid Data Layouts for Tiered HTAP Databases with Pareto-Optimal Data Placements.","venue":"ICDE","pages":"209-220","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/0001SU18","doi":"10.1109/ICDE.2018.00028","ee":"https://doi.org/10.1109/ICDE.2018.00028","url":"https://dblp.org/rec/conf/icde/0001SU18"},
+"url":"URL#3178650"
+},
+{
+"@score":"1",
+"@id":"3178652",
+"info":{"authors":{"author":[{"@pid":"76/3160-2","text":"Ingo Müller 0002"},{"@pid":"150/6986","text":"Andrea Arteaga"},{"@pid":"16/3869","text":"Torsten Hoefler"},{"@pid":"a/GustavoAlonso","text":"Gustavo Alonso"}]},"title":"Reproducible Floating-Point Aggregation in RDBMSs.","venue":"ICDE","pages":"1049-1060","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/0002AHA18","doi":"10.1109/ICDE.2018.00098","ee":"https://doi.org/10.1109/ICDE.2018.00098","url":"https://dblp.org/rec/conf/icde/0002AHA18"},
+"url":"URL#3178652"
+},
+{
+"@score":"1",
+"@id":"3178653",
+"info":{"authors":{"author":[{"@pid":"77/2062-2","text":"Kun Qian 0002"},{"@pid":"188/9073","text":"Nikita Bhutani"},{"@pid":"60/2319","text":"Yunyao Li 0001"},{"@pid":"j/HVJagadish","text":"H. V. Jagadish"},{"@pid":"56/451","text":"Mauricio A. Hernández"}]},"title":"LUSTRE: An Interactive System for Entity Structured Representation and Variant Generation.","venue":"ICDE","pages":"1613-1616","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/0002B0JH18","doi":"10.1109/ICDE.2018.00189","ee":"https://doi.org/10.1109/ICDE.2018.00189","url":"https://dblp.org/rec/conf/icde/0002B0JH18"},
+"url":"URL#3178653"
+},
+{
+"@score":"1",
+"@id":"3178654",
+"info":{"authors":{"author":[{"@pid":"86/508-2","text":"Bin Yao 0002"},{"@pid":"192/2215","text":"Zhongpu Chen"},{"@pid":"95/6947-1","text":"Xiaofeng Gao 0001"},{"@pid":"29/8750","text":"Shuo Shang"},{"@pid":"35/6569","text":"Shuai Ma 0001"},{"@pid":"99/6797","text":"Minyi Guo"}]},"title":"Flexible Aggregate Nearest Neighbor Queries in Road Networks.","venue":"ICDE","pages":"761-772","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/0002CGSMG18","doi":"10.1109/ICDE.2018.00074","ee":"https://doi.org/10.1109/ICDE.2018.00074","url":"https://dblp.org/rec/conf/icde/0002CGSMG18"},
+"url":"URL#3178654"
+},
+{
+"@score":"1",
+"@id":"3178655",
+"info":{"authors":{"author":[{"@pid":"199/4704-3","text":"Xiao Qin 0003"},{"@pid":"200/5855","text":"Tabassum Kakar"},{"@pid":"200/5718","text":"Susmitha Wunnava"},{"@pid":"148/9046","text":"Brian McCarthy"},{"@pid":"228/2552","text":"Andrew Schade"},{"@pid":"228/2526","text":"Huy Quoc Tran"},{"@pid":"209/2880","text":"Brian Zylich"},{"@pid":"r/EARundensteiner","text":"Elke A. Rundensteiner"},{"@pid":"62/4858","text":"Lane Harrison"},{"@pid":"216/7926","text":"Sanjay K. Sahoo"},{"@pid":"24/4874","text":"Suranjan De"}]},"title":"MeDIAR: Multi-Drug Adverse Reactions Analytics.","venue":"ICDE","pages":"1565-1568","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/0003KWMSTZRHSD18","doi":"10.1109/ICDE.2018.00177","ee":"https://doi.org/10.1109/ICDE.2018.00177","url":"https://dblp.org/rec/conf/icde/0003KWMSTZRHSD18"},
+"url":"URL#3178655"
+},
+{
+"@score":"1",
+"@id":"3178656",
+"info":{"authors":{"author":[{"@pid":"72/1974-3","text":"Rui Zhu 0003"},{"@pid":"13/1898-15","text":"Bin Wang 0015"},{"@pid":"86/2859-1","text":"Xiaochun Yang 0001"},{"@pid":"93/4303","text":"Baihua Zheng"},{"@pid":"64/146","text":"Guoren Wang"}]},"title":"SAP: Improving Continuous Top-K Queries over Streaming Data.","venue":"ICDE","pages":"1819-1820","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/0003W0ZW18","doi":"10.1109/ICDE.2018.00267","ee":"https://doi.org/10.1109/ICDE.2018.00267","url":"https://dblp.org/rec/conf/icde/0003W0ZW18"},
+"url":"URL#3178656"
+},
+{
+"@score":"1",
+"@id":"3178657",
+"info":{"authors":{"author":[{"@pid":"29/1059-3","text":"Xiang Cheng 0003"},{"@pid":"55/9089","text":"Shuguang Zhu"},{"@pid":"63/2499","text":"Sen Su"},{"@pid":"67/6383","text":"Gang Chen"}]},"title":"A Multi-Objective Optimization Approach for Question Routing in Community Question Answering Services (Extended Abstract).","venue":"ICDE","pages":"1765-1766","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/0003ZSC18","doi":"10.1109/ICDE.2018.00240","ee":"https://doi.org/10.1109/ICDE.2018.00240","url":"https://dblp.org/rec/conf/icde/0003ZSC18"},
+"url":"URL#3178657"
+},
+{
+"@score":"1",
+"@id":"3178658",
+"info":{"authors":{"author":[{"@pid":"74/5952-4","text":"Cheng Xu 0004"},{"@pid":"11/1394-20","text":"Qian Chen 0020"},{"@pid":"90/5236-1","text":"Haibo Hu 0001"},{"@pid":"x/JianliangXu","text":"Jianliang Xu"},{"@pid":"50/6852","text":"Xiaojun Hei"}]},"title":"Authenticating Aggregate Queries over Set-Valued Data with Confidentiality (Extended Abstract).","venue":"ICDE","pages":"1797-1798","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/0004CHXH18","doi":"10.1109/ICDE.2018.00256","ee":"https://doi.org/10.1109/ICDE.2018.00256","url":"https://dblp.org/rec/conf/icde/0004CHXH18"},
+"url":"URL#3178658"
+},
+{
+"@score":"1",
+"@id":"3178659",
+"info":{"authors":{"author":[{"@pid":"71/3692-4","text":"Wei Shen 0004"},{"@pid":"03/5608","text":"Yinan Liu"},{"@pid":"24/2006","text":"Jianyong Wang 0001"}]},"title":"Predicting Named Entity Location Using Twitter.","venue":"ICDE","pages":"161-172","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/0004LW18","doi":"10.1109/ICDE.2018.00024","ee":"https://doi.org/10.1109/ICDE.2018.00024","url":"https://dblp.org/rec/conf/icde/0004LW18"},
+"url":"URL#3178659"
+},
+{
+"@score":"1",
+"@id":"3178660",
+"info":{"authors":{"author":[{"@pid":"85/1868-7","text":"Sheng Wang 0007"},{"@pid":"20/3716","text":"Zhifeng Bao"},{"@pid":"03/489","text":"J. Shane Culpepper"},{"@pid":"s/TimosKSellis","text":"Timos Sellis"},{"@pid":"33/3180","text":"Gao Cong"}]},"title":"Reverse k Nearest Neighbor Search over Trajectories (Extended Abstract).","venue":"ICDE","pages":"1785-1786","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/0007BCSC18","doi":"10.1109/ICDE.2018.00250","ee":"https://doi.org/10.1109/ICDE.2018.00250","url":"https://dblp.org/rec/conf/icde/0007BCSC18"},
+"url":"URL#3178660"
+},
+{
+"@score":"1",
+"@id":"3178661",
+"info":{"authors":{"author":[{"@pid":"58/7989","text":"Ehab Abdelhamid"},{"@pid":"71/6902","text":"Mustafa Canim"},{"@pid":"56/7016","text":"Mohammad Sadoghi"},{"@pid":"19/2910","text":"Bishwaranjan Bhattacharjee"},{"@pid":"14/2029","text":"Yuan-Chi Chang"},{"@pid":"97/3036","text":"Panos Kalnis"}]},"title":"Incremental Frequent Subgraph Mining on Large Evolving Graphs.","venue":"ICDE","pages":"1767-1768","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/AbdelhamidCSBCK18","doi":"10.1109/ICDE.2018.00241","ee":"https://doi.org/10.1109/ICDE.2018.00241","url":"https://dblp.org/rec/conf/icde/AbdelhamidCSBCK18"},
+"url":"URL#3178661"
+},
+{
+"@score":"1",
+"@id":"3178662",
+"info":{"authors":{"author":[{"@pid":"160/8839","text":"Christopher R. Aberger"},{"@pid":"117/6048","text":"Andrew Lamb"},{"@pid":"o/KunleOlukotun","text":"Kunle Olukotun"},{"@pid":"r/ChristopherRe","text":"Christopher Ré"}]},"title":"LevelHeaded: A Unified Engine for Business Intelligence and Linear Algebra Querying.","venue":"ICDE","pages":"449-460","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/AbergerLOR18","doi":"10.1109/ICDE.2018.00048","ee":"https://doi.org/10.1109/ICDE.2018.00048","url":"https://dblp.org/rec/conf/icde/AbergerLOR18"},
+"url":"URL#3178662"
+},
+{
+"@score":"1",
+"@id":"3178663",
+"info":{"authors":{"author":[{"@pid":"224/6683","text":"Efrat Abramovitz"},{"@pid":"98/6876","text":"Daniel Deutch"},{"@pid":"163/3941","text":"Amir Gilad"}]},"title":"Interactive Inference of SPARQL Queries Using Provenance.","venue":"ICDE","pages":"581-592","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/AbramovitzDG18","doi":"10.1109/ICDE.2018.00059","ee":"https://doi.org/10.1109/ICDE.2018.00059","url":"https://dblp.org/rec/conf/icde/AbramovitzDG18"},
+"url":"URL#3178663"
+},
+{
+"@score":"1",
+"@id":"3178666",
+"info":{"authors":{"author":[{"@pid":"61/7233","text":"Pooja Agrawal"},{"@pid":"131/6284","text":"Bikash Chandra"},{"@pid":"181/5872","text":"K. Venkatesh Emani"},{"@pid":"228/6058","text":"Neha Garg"},{"@pid":"s/SSudarshan1","text":"S. Sudarshan 0001"}]},"title":"Test Data Generation for Database Applications.","venue":"ICDE","pages":"1621-1624","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/AgrawalCEG018","doi":"10.1109/ICDE.2018.00191","ee":"https://doi.org/10.1109/ICDE.2018.00191","url":"https://dblp.org/rec/conf/icde/AgrawalCEG018"},
+"url":"URL#3178666"
+},
+{
+"@score":"1",
+"@id":"3178667",
+"info":{"authors":{"author":[{"@pid":"169/1761","text":"Melissa Ailem"},{"@pid":"47/3852","text":"François Role"},{"@pid":"63/1468","text":"Mohamed Nadif"}]},"title":"Sparse Poisson Latent Block Model for Document Clustering (Extended Abstract).","venue":"ICDE","pages":"1743-1744","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/AilemRN18","doi":"10.1109/ICDE.2018.00229","ee":"https://doi.org/10.1109/ICDE.2018.00229","url":"https://dblp.org/rec/conf/icde/AilemRN18"},
+"url":"URL#3178667"
+},
+{
+"@score":"1",
+"@id":"3178668",
+"info":{"authors":{"author":[{"@pid":"181/9156","text":"Yazeed Alabdulkarim"},{"@pid":"181/9152","text":"Marwan Almaymoni"},{"@pid":"g/SGhandeharizadeh","text":"Shahram Ghandeharizadeh"}]},"title":"Polygraph: A Plug-n-Play Framework to Quantify Anomalies.","venue":"ICDE","pages":"1308-1311","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/AlabdulkarimAG18","doi":"10.1109/ICDE.2018.00137","ee":"https://doi.org/10.1109/ICDE.2018.00137","url":"https://dblp.org/rec/conf/icde/AlabdulkarimAG18"},
+"url":"URL#3178668"
+},
+{
+"@score":"1",
+"@id":"3178669",
+"info":{"authors":{"author":[{"@pid":"131/1601","text":"Daichi Amagata"},{"@pid":"40/2808","text":"Takahiro Hara"}]},"title":"Mining Top-k Co-Occurrence Patterns across Multiple Streams (Extended Abstract).","venue":"ICDE","pages":"1747-1748","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/AmagataH18","doi":"10.1109/ICDE.2018.00231","ee":"https://doi.org/10.1109/ICDE.2018.00231","url":"https://dblp.org/rec/conf/icde/AmagataH18"},
+"url":"URL#3178669"
+},
+{
+"@score":"1",
+"@id":"3178670",
+"info":{"authors":{"author":{"@pid":"a/SihemAmerYahia","text":"Sihem Amer-Yahia"}},"title":"Human Factors in Data Science.","venue":"ICDE","pages":"1-12","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Amer-Yahia18","doi":"10.1109/ICDE.2018.00009","ee":"https://doi.org/10.1109/ICDE.2018.00009","url":"https://dblp.org/rec/conf/icde/Amer-Yahia18"},
+"url":"URL#3178670"
+},
+{
+"@score":"1",
+"@id":"3178671",
+"info":{"authors":{"author":[{"@pid":"a/SihemAmerYahia","text":"Sihem Amer-Yahia"},{"@pid":"200/8321","text":"Behrooz Omidvar-Tehrani"},{"@pid":"c/JoaoLuizDihlComba","text":"João Comba"},{"@pid":"o/VivianeMoreiraOrengo","text":"Viviane P. Moreira"},{"@pid":"211/6780","text":"Fabian Colque Zegarra"}]},"title":"Exploration of User Groups in VEXUS.","venue":"ICDE","pages":"1557-1560","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Amer-YahiaOCMZ18","doi":"10.1109/ICDE.2018.00175","ee":"https://doi.org/10.1109/ICDE.2018.00175","url":"https://dblp.org/rec/conf/icde/Amer-YahiaOCMZ18"},
+"url":"URL#3178671"
+},
+{
+"@score":"1",
+"@id":"3178674",
+"info":{"authors":{"author":[{"@pid":"85/6704","text":"Spiros Antonatos"},{"@pid":"07/4982","text":"Stefano Braghin"},{"@pid":"142/2773","text":"Naoise Holohan"},{"@pid":"46/10071","text":"Yiannis Gkoufas"},{"@pid":"61/11344","text":"Pol Mac Aonghusa"}]},"title":"PRIMA: An End-to-End Framework for Privacy at Scale.","venue":"ICDE","pages":"1531-1542","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/AntonatosBHGA18","doi":"10.1109/ICDE.2018.00171","ee":"https://doi.org/10.1109/ICDE.2018.00171","url":"https://dblp.org/rec/conf/icde/AntonatosBHGA18"},
+"url":"URL#3178674"
+},
+{
+"@score":"1",
+"@id":"3178675",
+"info":{"authors":{"author":[{"@pid":"71/303","text":"Muhammad Umer Arshad"},{"@pid":"65/4168","text":"Ashish Kundu"},{"@pid":"b/ElisaBertino","text":"Elisa Bertino"},{"@pid":"81/1710","text":"Arif Ghafoor"},{"@pid":"199/1824","text":"Chinmay Kundu"}]},"title":"Efficient and Scalable Integrity Verification of Data and Query Results for Graph Databases.","venue":"ICDE","pages":"1821-1822","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ArshadKBGK18","doi":"10.1109/ICDE.2018.00268","ee":"https://doi.org/10.1109/ICDE.2018.00268","url":"https://dblp.org/rec/conf/icde/ArshadKBGK18"},
+"url":"URL#3178675"
+},
+{
+"@score":"1",
+"@id":"3178676",
+"info":{"authors":{"author":[{"@pid":"214/1343","text":"Natalia Arzamasova"},{"@pid":"95/9320","text":"Martin Schäler"},{"@pid":"b/KBohm","text":"Klemens Böhm"}]},"title":"Cleaning Antipatterns in an SQL Query Log.","venue":"ICDE","pages":"1751-1752","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ArzamasovaSB18","doi":"10.1109/ICDE.2018.00233","ee":"https://doi.org/10.1109/ICDE.2018.00233","url":"https://dblp.org/rec/conf/icde/ArzamasovaSB18"},
+"url":"URL#3178676"
+},
+{
+"@score":"1",
+"@id":"3178678",
+"info":{"authors":{"author":[{"@pid":"189/8493","text":"Christopher Bartley"},{"@pid":"49/3283-6","text":"Wei Liu 0006"},{"@pid":"26/2746","text":"Mark Reynolds 0001"}]},"title":"A Novel Framework for Constructing Partially Monotone Rule Ensembles.","venue":"ICDE","pages":"1320-1323","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Bartley0R18","doi":"10.1109/ICDE.2018.00140","ee":"https://doi.org/10.1109/ICDE.2018.00140","url":"https://dblp.org/rec/conf/icde/Bartley0R18"},
+"url":"URL#3178678"
+},
+{
+"@score":"1",
+"@id":"3178679",
+"info":{"authors":{"author":[{"@pid":"166/8365","text":"Mangesh Bendre"},{"@pid":"188/6180","text":"Vipul Venkataraman"},{"@pid":"166/8402","text":"Xinyan Zhou"},{"@pid":"c/KCCChang","text":"Kevin Chen-Chuan Chang"},{"@pid":"40/7459","text":"Aditya G. Parameswaran"}]},"title":"Towards a Holistic Integration of Spreadsheets with Databases: A Scalable Storage Engine for Presentational Data Management.","venue":"ICDE","pages":"113-124","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/BendreVZCP18","doi":"10.1109/ICDE.2018.00020","ee":"https://doi.org/10.1109/ICDE.2018.00020","url":"https://dblp.org/rec/conf/icde/BendreVZCP18"},
+"url":"URL#3178679"
+},
+{
+"@score":"1",
+"@id":"3178680",
+"info":{"authors":{"author":{"@pid":"b/PhilipABernstein","text":"Philip A. Bernstein"}},"title":"Actor-Oriented Database Systems.","venue":"ICDE","pages":"13-14","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Bernstein18","doi":"10.1109/ICDE.2018.00010","ee":"https://doi.org/10.1109/ICDE.2018.00010","url":"https://dblp.org/rec/conf/icde/Bernstein18"},
+"url":"URL#3178680"
+},
+{
+"@score":"1",
+"@id":"3178681",
+"info":{"authors":{"author":[{"@pid":"b/LaureBertiEquille","text":"Laure Berti-Équille"},{"@pid":"b/ABonifati","text":"Angela Bonifati"},{"@pid":"m/TovaMilo","text":"Tova Milo"}]},"title":"Machine Learning to Data Management: A Round Trip.","venue":"ICDE","pages":"1735-1738","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Berti-EquilleBM18","doi":"10.1109/ICDE.2018.00226","ee":"https://doi.org/10.1109/ICDE.2018.00226","url":"https://dblp.org/rec/conf/icde/Berti-EquilleBM18"},
+"url":"URL#3178681"
+},
+{
+"@score":"1",
+"@id":"3178682",
+"info":{"authors":{"author":[{"@pid":"27/7987","text":"Souvik Bhattacherjee"},{"@pid":"d/AmolDeshpande","text":"Amol Deshpande"}]},"title":"RStore: A Distributed Multi-Version Document Store.","venue":"ICDE","pages":"389-400","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/BhattacherjeeD18","doi":"10.1109/ICDE.2018.00043","ee":"https://doi.org/10.1109/ICDE.2018.00043","url":"https://dblp.org/rec/conf/icde/BhattacherjeeD18"},
+"url":"URL#3178682"
+},
+{
+"@score":"1",
+"@id":"3178683",
+"info":{"authors":{"author":[{"@pid":"136/7990","text":"Haoqiong Bian"},{"@pid":"228/6006","text":"Youxian Tao"},{"@pid":"201/1812","text":"Guodong Jin"},{"@pid":"40/3980","text":"Yueguo Chen"},{"@pid":"50/53","text":"Xiongpai Qin"},{"@pid":"47/3542-1","text":"Xiaoyong Du 0001"}]},"title":"Rainbow: Adaptive Layout Optimization for Wide Tables.","venue":"ICDE","pages":"1657-1660","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/BianTJCQD18","doi":"10.1109/ICDE.2018.00200","ee":"https://doi.org/10.1109/ICDE.2018.00200","url":"https://dblp.org/rec/conf/icde/BianTJCQD18"},
+"url":"URL#3178683"
+},
+{
+"@score":"1",
+"@id":"3178684",
+"info":{"authors":{"author":[{"@pid":"57/7247","text":"Nikos Bikakis"},{"@pid":"k/VanaKalogeraki","text":"Vana Kalogeraki"},{"@pid":"g/DimitriosGunopulos","text":"Dimitrios Gunopulos"}]},"title":"Social Event Scheduling.","venue":"ICDE","pages":"1272-1275","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/BikakisKG18","doi":"10.1109/ICDE.2018.00128","ee":"https://doi.org/10.1109/ICDE.2018.00128","url":"https://dblp.org/rec/conf/icde/BikakisKG18"},
+"url":"URL#3178684"
+},
+{
+"@score":"1",
+"@id":"3178690",
+"info":{"authors":{"author":[{"@pid":"181/5689","text":"Chengliang Chai"},{"@pid":"78/4413","text":"Ju Fan"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"}]},"title":"Incentive-Based Entity Collection Using Crowdsourcing.","venue":"ICDE","pages":"341-352","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChaiFL18","doi":"10.1109/ICDE.2018.00039","ee":"https://doi.org/10.1109/ICDE.2018.00039","url":"https://dblp.org/rec/conf/icde/ChaiFL18"},
+"url":"URL#3178690"
+},
+{
+"@score":"1",
+"@id":"3178691",
+"info":{"authors":{"author":[{"@pid":"64/10817","text":"Swarup Chandra"},{"@pid":"04/8277","text":"Ahsanul Haque"},{"@pid":"218/7057","text":"Hemeng Tao"},{"@pid":"03/2134","text":"Jie Liu"},{"@pid":"k/LatifurKhan","text":"Latifur Khan"},{"@pid":"a/CharuCAggarwal","text":"Charu C. Aggarwal"}]},"title":"Ensemble Direct Density Ratio Estimation for Multistream Classification.","venue":"ICDE","pages":"1364-1367","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChandraHTLKA18","doi":"10.1109/ICDE.2018.00151","ee":"https://doi.org/10.1109/ICDE.2018.00151","url":"https://dblp.org/rec/conf/icde/ChandraHTLKA18"},
+"url":"URL#3178691"
+},
+{
+"@score":"1",
+"@id":"3178692",
+"info":{"authors":{"author":[{"@pid":"01/2861","text":"Badrish Chandramouli"},{"@pid":"g/JonathanGoldstein","text":"Jonathan Goldstein"},{"@pid":"49/612","text":"Yinan Li"}]},"title":"Impatience Is a Virtue: Revisiting Disorder in High-Performance Log Analytics.","venue":"ICDE","pages":"677-688","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChandramouliGL18","doi":"10.1109/ICDE.2018.00067","ee":"https://doi.org/10.1109/ICDE.2018.00067","url":"https://dblp.org/rec/conf/icde/ChandramouliGL18"},
+"url":"URL#3178692"
+},
+{
+"@score":"1",
+"@id":"3178693",
+"info":{"authors":{"author":[{"@pid":"163/3876","text":"Shasank Chavan"},{"@pid":"228/6085","text":"Albert Hopeman"},{"@pid":"17/5702","text":"Sangho Lee"},{"@pid":"185/4245","text":"Dennis Lui"},{"@pid":"228/6080","text":"Ajit Mylavarapu"},{"@pid":"163/3965","text":"Ekrem Soylemez"}]},"title":"Accelerating Joins and Aggregations on the Oracle In-Memory Database.","venue":"ICDE","pages":"1441-1452","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChavanHLLMS18","doi":"10.1109/ICDE.2018.00163","ee":"https://doi.org/10.1109/ICDE.2018.00163","url":"https://dblp.org/rec/conf/icde/ChavanHLLMS18"},
+"url":"URL#3178693"
+},
+{
+"@score":"1",
+"@id":"3178694",
+"info":{"authors":{"author":[{"@pid":"183/1256","text":"Zhaoqiang Chen"},{"@pid":"16/1091-1","text":"Qun Chen 0001"},{"@pid":"173/1756","text":"Fengfeng Fan"},{"@pid":"62/6975","text":"Yanyan Wang"},{"@pid":"01/7039-2","text":"Zhuo Wang 0002"},{"@pid":"217/1887","text":"Youcef Nafa"},{"@pid":"05/299","text":"Zhanhuai Li"},{"@pid":"49/634","text":"Hailong Liu"},{"@pid":"69/4450-7","text":"Wei Pan 0007"}]},"title":"Enabling Quality Control for Entity Resolution: A Human and Machine Cooperation Framework.","venue":"ICDE","pages":"1156-1167","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChenCFW0NLLP18","doi":"10.1109/ICDE.2018.00107","ee":"https://doi.org/10.1109/ICDE.2018.00107","url":"https://dblp.org/rec/conf/icde/ChenCFW0NLLP18"},
+"url":"URL#3178694"
+},
+{
+"@score":"1",
+"@id":"3178695",
+"info":{"authors":{"author":[{"@pid":"69/157-1","text":"Lu Chen 0001"},{"@pid":"80/2651","text":"Yunjun Gao"},{"@pid":"37/3328","text":"Yuanliang Zhang"},{"@pid":"131/6529-1","text":"Sibo Wang 0001"},{"@pid":"93/4303","text":"Baihua Zheng"}]},"title":"Scalable Hypergraph-Based Image Retrieval and Tagging System.","venue":"ICDE","pages":"257-268","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChenGZWZ18","doi":"10.1109/ICDE.2018.00032","ee":"https://doi.org/10.1109/ICDE.2018.00032","url":"https://dblp.org/rec/conf/icde/ChenGZWZ18"},
+"url":"URL#3178695"
+},
+{
+"@score":"1",
+"@id":"3178696",
+"info":{"authors":{"author":[{"@pid":"37/10606","text":"Lisi Chen 0001"},{"@pid":"29/8750","text":"Shuo Shang"},{"@pid":"68/1980","text":"Zhiwei Zhang"},{"@pid":"77/2970-1","text":"Xin Cao 0001"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"},{"@pid":"97/3036","text":"Panos Kalnis"}]},"title":"Location-Aware Top-k Term Publish/Subscribe.","venue":"ICDE","pages":"749-760","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChenSZCJK18","doi":"10.1109/ICDE.2018.00073","ee":"https://doi.org/10.1109/ICDE.2018.00073","url":"https://dblp.org/rec/conf/icde/ChenSZCJK18"},
+"url":"URL#3178696"
+},
+{
+"@score":"1",
+"@id":"3178697",
+"info":{"authors":{"author":[{"@pid":"67/6383-1","text":"Gang Chen 0001"},{"@pid":"194/6731","text":"Keyu Yang"},{"@pid":"69/157-1","text":"Lu Chen 0001"},{"@pid":"80/2651","text":"Yunjun Gao"},{"@pid":"93/4303","text":"Baihua Zheng"},{"@pid":"07/4182-0001","text":"Chun Chen 0001"}]},"title":"Metric Similarity Joins Using MapReduce (Extended Abstract).","venue":"ICDE","pages":"1787-1788","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChenYCGZC18","doi":"10.1109/ICDE.2018.00251","ee":"https://doi.org/10.1109/ICDE.2018.00251","url":"https://dblp.org/rec/conf/icde/ChenYCGZC18"},
+"url":"URL#3178697"
+},
+{
+"@score":"1",
+"@id":"3178698",
+"info":{"authors":{"author":[{"@pid":"181/2832-70","text":"Wei Chen 0070"},{"@pid":"04/10606","text":"Hongzhi Yin"},{"@pid":"57/3195-1","text":"Weiqing Wang 0001"},{"@pid":"87/734-1","text":"Lei Zhao 0001"},{"@pid":"z/XiaofangZhou","text":"Xiaofang Zhou 0001"}]},"title":"Effective and Efficient User Account Linkage across Location Based Social Networks.","venue":"ICDE","pages":"1085-1096","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChenYW0Z18","doi":"10.1109/ICDE.2018.00101","ee":"https://doi.org/10.1109/ICDE.2018.00101","url":"https://dblp.org/rec/conf/icde/ChenYW0Z18"},
+"url":"URL#3178698"
+},
+{
+"@score":"1",
+"@id":"3178699",
+"info":{"authors":{"author":[{"@pid":"67/6383-1","text":"Gang Chen 0001"},{"@pid":"162/9831","text":"Jingwen Zhao"},{"@pid":"80/2651","text":"Yunjun Gao"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"},{"@pid":"02/1003","text":"Rui Chen"}]},"title":"Time-Aware Boolean Spatial Keyword Queries (Extended Abstract).","venue":"ICDE","pages":"1781-1782","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChenZGCC18","doi":"10.1109/ICDE.2018.00248","ee":"https://doi.org/10.1109/ICDE.2018.00248","url":"https://dblp.org/rec/conf/icde/ChenZGCC18"},
+"url":"URL#3178699"
+},
+{
+"@score":"1",
+"@id":"3178700",
+"info":{"authors":{"author":[{"@pid":"69/157-1","text":"Lu Chen 0001"},{"@pid":"228/6014","text":"Qilu Zhong"},{"@pid":"33/1903","text":"Xiaokui Xiao"},{"@pid":"80/2651","text":"Yunjun Gao"},{"@pid":"228/6048","text":"Pengfei Jin"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"}]},"title":"Price-and-Time-Aware Dynamic Ridesharing.","venue":"ICDE","pages":"1061-1072","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChenZXGJJ18","doi":"10.1109/ICDE.2018.00099","ee":"https://doi.org/10.1109/ICDE.2018.00099","url":"https://dblp.org/rec/conf/icde/ChenZXGJJ18"},
+"url":"URL#3178700"
+},
+{
+"@score":"1",
+"@id":"3178701",
+"info":{"authors":{"author":[{"@pid":"09/10704","text":"Yurong Cheng"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"},{"@pid":"33/6315-1","text":"Ye Yuan 0001"},{"@pid":"64/146","text":"Guoren Wang"}]},"title":"Rule-Based Graph Repairing: Semantic and Efficient Repairing Methods.","venue":"ICDE","pages":"773-784","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChengC0W18","doi":"10.1109/ICDE.2018.00075","ee":"https://doi.org/10.1109/ICDE.2018.00075","url":"https://dblp.org/rec/conf/icde/ChengC0W18"},
+"url":"URL#3178701"
+},
+{
+"@score":"1",
+"@id":"3178702",
+"info":{"authors":{"author":[{"@pid":"69/1215-1","text":"Gong Cheng 0001"},{"@pid":"84/11310","text":"Fei Shao"},{"@pid":"05/1694","text":"Yuzhong Qu"}]},"title":"An Empirical Evaluation of Techniques for Ranking Semantic Associations (Extended Abstract).","venue":"ICDE","pages":"1793-1794","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChengSQ18","doi":"10.1109/ICDE.2018.00254","ee":"https://doi.org/10.1109/ICDE.2018.00254","url":"https://dblp.org/rec/conf/icde/ChengSQ18"},
+"url":"URL#3178702"
+},
+{
+"@score":"1",
+"@id":"3178703",
+"info":{"authors":{"author":[{"@pid":"00/91","text":"Bruce R. Childers"},{"@pid":"c/PKChrysanthis","text":"Panos K. Chrysanthis"}]},"title":"Artifact Evaluation: FAD or Real News?","venue":"ICDE","pages":"1664-1665","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChildersC18","doi":"10.1109/ICDE.2018.00204","ee":"https://doi.org/10.1109/ICDE.2018.00204","url":"https://dblp.org/rec/conf/icde/ChildersC18"},
+"url":"URL#3178703"
+},
+{
+"@score":"1",
+"@id":"3178704",
+"info":{"authors":{"author":[{"@pid":"181/9094","text":"SungJu Cho"},{"@pid":"228/6041","text":"Roman Averbukh"},{"@pid":"49/2989","text":"Yanwei Zhang"},{"@pid":"45/7456","text":"Andrew Carter"},{"@pid":"181/9123","text":"Jane Alam Jan"}]},"title":"Partial Update: Efficient Materialized View Maintenance in a Distributed Graph Database.","venue":"ICDE","pages":"1477-1488","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChoAZCJ18","doi":"10.1109/ICDE.2018.00166","ee":"https://doi.org/10.1109/ICDE.2018.00166","url":"https://dblp.org/rec/conf/icde/ChoAZCJ18"},
+"url":"URL#3178704"
+},
+{
+"@score":"1",
+"@id":"3178706",
+"info":{"authors":{"author":[{"@pid":"150/6192","text":"Tobias Christiani"},{"@pid":"p/RasmusPagh","text":"Rasmus Pagh"},{"@pid":"169/1167","text":"Johan Sivertsen"}]},"title":"Scalable and Robust Set Similarity Join.","venue":"ICDE","pages":"1240-1243","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ChristianiPS18","doi":"10.1109/ICDE.2018.00120","ee":"https://doi.org/10.1109/ICDE.2018.00120","url":"https://dblp.org/rec/conf/icde/ChristianiPS18"},
+"url":"URL#3178706"
+},
+{
+"@score":"1",
+"@id":"3178707",
+"info":{"authors":{"author":[{"@pid":"c/GrahamCormode","text":"Graham Cormode"},{"@pid":"217/4333","text":"Chris Hickey"}]},"title":"You Can Check Others&apos; Work More Quickly Than Doing It Yourself.","venue":"ICDE","pages":"1681","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/CormodeH18","doi":"10.1109/ICDE.2018.00213","ee":"https://doi.org/10.1109/ICDE.2018.00213","url":"https://dblp.org/rec/conf/icde/CormodeH18"},
+"url":"URL#3178707"
+},
+{
+"@score":"1",
+"@id":"3178708",
+"info":{"authors":{"author":[{"@pid":"c/GrahamCormode","text":"Graham Cormode"},{"@pid":"46/10579","text":"Tejas Kulkarni"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"Constrained Private Mechanisms for Count Data.","venue":"ICDE","pages":"845-856","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/CormodeKS18","doi":"10.1109/ICDE.2018.00081","ee":"https://doi.org/10.1109/ICDE.2018.00081","url":"https://dblp.org/rec/conf/icde/CormodeKS18"},
+"url":"URL#3178708"
+},
+{
+"@score":"1",
+"@id":"3178709",
+"info":{"authors":{"author":[{"@pid":"31/8173","text":"Alberto Costa"},{"@pid":"96/3514","text":"Emanuele Di Buccio"},{"@pid":"34/194","text":"Massimo Melucci"},{"@pid":"04/6270","text":"Giacomo Nannicini"}]},"title":"Efficient Parameter Estimation for Information Retrieval Using Black-Box Optimization (Extended Abstract).","venue":"ICDE","pages":"1817-1818","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/CostaBMN18","doi":"10.1109/ICDE.2018.00266","ee":"https://doi.org/10.1109/ICDE.2018.00266","url":"https://dblp.org/rec/conf/icde/CostaBMN18"},
+"url":"URL#3178709"
+},
+{
+"@score":"1",
+"@id":"3178710",
+"info":{"authors":{"author":{"@pid":"178/3190","text":"Kathryn Dahlgren"}},"title":"Towards Not Re-Inventing the Wheel: Managing Data Management Tools.","venue":"ICDE","pages":"1709-1713","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Dahlgren18","doi":"10.1109/ICDE.2018.00220","ee":"https://doi.org/10.1109/ICDE.2018.00220","url":"https://dblp.org/rec/conf/icde/Dahlgren18"},
+"url":"URL#3178710"
+},
+{
+"@score":"1",
+"@id":"3178711",
+"info":{"authors":{"author":[{"@pid":"167/0317","text":"Monidipa Das"},{"@pid":"34/9049-1","text":"Soumya K. Ghosh 0001"},{"@pid":"196/4322","text":"Pramesh Gupta"},{"@pid":"77/88","text":"Vemuri M. Chowdary"},{"@pid":"196/4318","text":"Ravoori Nagaraja"},{"@pid":"54/10417","text":"Vinay Kumar Dadhwal"}]},"title":"FORWARD: A Model for FOrecasting Reservoir WAteR Dynamics Using Spatial Bayesian Network (SpaBN) (Extended Abstract).","venue":"ICDE","pages":"1799-1800","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/DasGGCND18","doi":"10.1109/ICDE.2018.00257","ee":"https://doi.org/10.1109/ICDE.2018.00257","url":"https://dblp.org/rec/conf/icde/DasGGCND18"},
+"url":"URL#3178711"
+},
+{
+"@score":"1",
+"@id":"3178712",
+"info":{"authors":{"author":[{"@pid":"10/5981","text":"Daniel Delling"},{"@pid":"77/2645","text":"Dennis Schieferdecker"},{"@pid":"09/3580-1","text":"Christian Sommer 0001"}]},"title":"Traffic-Aware Routing in Road Networks.","venue":"ICDE","pages":"1543-1548","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/DellingSS18","doi":"10.1109/ICDE.2018.00172","ee":"https://doi.org/10.1109/ICDE.2018.00172","url":"https://dblp.org/rec/conf/icde/DellingSS18"},
+"url":"URL#3178712"
+},
+{
+"@score":"1",
+"@id":"3178713",
+"info":{"authors":{"author":[{"@pid":"188/5901","text":"Cheng-Hao Deng"},{"@pid":"27/5322","text":"Wan-Lei Zhao"}]},"title":"Fast k-Means Based on k-NN Graph.","venue":"ICDE","pages":"1220-1223","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/DengZ18","doi":"10.1109/ICDE.2018.00115","ee":"https://doi.org/10.1109/ICDE.2018.00115","url":"https://dblp.org/rec/conf/icde/DengZ18"},
+"url":"URL#3178713"
+},
+{
+"@score":"1",
+"@id":"3178714",
+"info":{"authors":{"author":[{"@pid":"199/2468","text":"Simone Dominico"},{"@pid":"53/2190","text":"Eduardo C. de Almeida"},{"@pid":"135/1302","text":"Jorge Augusto Meira"},{"@pid":"47/7939","text":"Marco Antonio Zanata Alves"}]},"title":"An Elastic Multi-Core Allocation Mechanism for Database Systems.","venue":"ICDE","pages":"473-484","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/DominicoAMA18","doi":"10.1109/ICDE.2018.00050","ee":"https://doi.org/10.1109/ICDE.2018.00050","url":"https://dblp.org/rec/conf/icde/DominicoAMA18"},
+"url":"URL#3178714"
+},
+{
+"@score":"1",
+"@id":"3178716",
+"info":{"authors":{"author":[{"@pid":"87/11444","text":"Vasilis Efthymiou"},{"@pid":"32/1624","text":"George Papadakis 0001"},{"@pid":"76/3486","text":"Kostas Stefanidis"},{"@pid":"c/VassilisChristophides","text":"Vassilis Christophides"}]},"title":"Simplifying Entity Resolution on Web Data with Schema-Agnostic, Non-Iterative Matching.","venue":"ICDE","pages":"1296-1299","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Efthymiou0SC18","doi":"10.1109/ICDE.2018.00134","ee":"https://doi.org/10.1109/ICDE.2018.00134","url":"https://dblp.org/rec/conf/icde/Efthymiou0SC18"},
+"url":"URL#3178716"
+},
+{
+"@score":"1",
+"@id":"3178717",
+"info":{"authors":{"author":[{"@pid":"181/5872","text":"K. Venkatesh Emani"},{"@pid":"s/SSudarshan1","text":"S. Sudarshan 0001"}]},"title":"Cobra: A Framework for Cost-Based Rewriting of Database Applications.","venue":"ICDE","pages":"689-700","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Emani018","doi":"10.1109/ICDE.2018.00068","ee":"https://doi.org/10.1109/ICDE.2018.00068","url":"https://dblp.org/rec/conf/icde/Emani018"},
+"url":"URL#3178717"
+},
+{
+"@score":"1",
+"@id":"3178718",
+"info":{"authors":{"author":[{"@pid":"94/2372","text":"Wenfei Fan"},{"@pid":"33/3472","text":"Xueli Liu"},{"@pid":"94/10767","text":"Yingjie Cao"}]},"title":"Parallel Reasoning of Graph Functional Dependencies.","venue":"ICDE","pages":"593-604","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FanLC18","doi":"10.1109/ICDE.2018.00060","ee":"https://doi.org/10.1109/ICDE.2018.00060","url":"https://dblp.org/rec/conf/icde/FanLC18"},
+"url":"URL#3178718"
+},
+{
+"@score":"1",
+"@id":"3178719",
+"info":{"authors":{"author":[{"@pid":"78/4413","text":"Ju Fan"},{"@pid":"222/3007","text":"Jiarong Qiu"},{"@pid":"143/0258-1","text":"Yuchen Li 0001"},{"@pid":"203/2132","text":"Qingfei Meng"},{"@pid":"89/6013","text":"Dongxiang Zhang"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"t/KianLeeTan","text":"Kian-Lee Tan"},{"@pid":"47/3542-1","text":"Xiaoyong Du 0001"}]},"title":"OCTOPUS: An Online Topic-Aware Influence Analysis System for Social Networks.","venue":"ICDE","pages":"1569-1572","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FanQLMZLTD18","doi":"10.1109/ICDE.2018.00178","ee":"https://doi.org/10.1109/ICDE.2018.00178","url":"https://dblp.org/rec/conf/icde/FanQLMZLTD18"},
+"url":"URL#3178719"
+},
+{
+"@score":"1",
+"@id":"3178720",
+"info":{"authors":{"author":[{"@pid":"81/5978","text":"Maryam Fanaeepour"},{"@pid":"90/1092","text":"Benjamin I. P. Rubinstein"}]},"title":"Histogramming Privately Ever After: Differentially-Private Data-Dependent Error Bound Optimisation.","venue":"ICDE","pages":"1204-1207","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FanaeepourR18","doi":"10.1109/ICDE.2018.00111","ee":"https://doi.org/10.1109/ICDE.2018.00111","url":"https://dblp.org/rec/conf/icde/FanaeepourR18"},
+"url":"URL#3178720"
+},
+{
+"@score":"1",
+"@id":"3178721",
+"info":{"authors":{"author":[{"@pid":"76/1735","text":"Yixiang Fang"},{"@pid":"89/2619","text":"Reynold Cheng"},{"@pid":"33/3180","text":"Gao Cong"},{"@pid":"34/6253","text":"Nikos Mamoulis"},{"@pid":"87/6284","text":"Yun Li"}]},"title":"On Spatial Pattern Matching.","venue":"ICDE","pages":"293-304","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FangCCML18","doi":"10.1109/ICDE.2018.00035","ee":"https://doi.org/10.1109/ICDE.2018.00035","url":"https://dblp.org/rec/conf/icde/FangCCML18"},
+"url":"URL#3178721"
+},
+{
+"@score":"1",
+"@id":"3178722",
+"info":{"authors":{"author":[{"@pid":"76/1735","text":"Yixiang Fang"},{"@pid":"89/2619","text":"Reynold Cheng"},{"@pid":"205/0858","text":"Jikun Wang"},{"@pid":"228/6028","text":"Lukito Budiman"},{"@pid":"33/3180","text":"Gao Cong"},{"@pid":"34/6253","text":"Nikos Mamoulis"}]},"title":"SpaceKey: Exploring Patterns in Spatial Databases.","venue":"ICDE","pages":"1577-1580","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FangCWBCM18","doi":"10.1109/ICDE.2018.00180","ee":"https://doi.org/10.1109/ICDE.2018.00180","url":"https://dblp.org/rec/conf/icde/FangCWBCM18"},
+"url":"URL#3178722"
+},
+{
+"@score":"1",
+"@id":"3178723",
+"info":{"authors":{"author":[{"@pid":"184/0682","text":"Zicheng Fang"},{"@pid":"95/4442-27","text":"Peng Wang 0027"},{"@pid":"w/WeiWang9","text":"Wei Wang 0009"}]},"title":"Efficient Learning Interpretable Shapelets for Accurate Time Series Classification.","venue":"ICDE","pages":"497-508","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FangWW18","doi":"10.1109/ICDE.2018.00052","ee":"https://doi.org/10.1109/ICDE.2018.00052","url":"https://dblp.org/rec/conf/icde/FangWW18"},
+"url":"URL#3178723"
+},
+{
+"@score":"1",
+"@id":"3178724",
+"info":{"authors":{"author":[{"@pid":"228/6022","text":"Zhuhe Fang"},{"@pid":"81/6809","text":"Chuliang Weng"},{"@pid":"58/6810","text":"Li Wang"},{"@pid":"z/AoyingZhou","text":"Aoying Zhou"}]},"title":"Parallelizing Multiple Pipelines of One Query in a Main Memory Database Cluster.","venue":"ICDE","pages":"1252-1255","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FangWWZ18","doi":"10.1109/ICDE.2018.00123","ee":"https://doi.org/10.1109/ICDE.2018.00123","url":"https://dblp.org/rec/conf/icde/FangWWZ18"},
+"url":"URL#3178724"
+},
+{
+"@score":"1",
+"@id":"3178725",
+"info":{"authors":{"author":[{"@pid":"149/1281-1","text":"Shanshan Feng 0001"},{"@pid":"33/3180","text":"Gao Cong"},{"@pid":"67/2933","text":"Arijit Khan 0001"},{"@pid":"152/8201","text":"Xiucheng Li"},{"@pid":"29/4867","text":"Yong Liu"},{"@pid":"c/YeowMengChee","text":"Yeow Meng Chee"}]},"title":"Inf2vec: Latent Representation Model for Social Influence Embedding.","venue":"ICDE","pages":"941-952","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FengCKLLC18","doi":"10.1109/ICDE.2018.00089","ee":"https://doi.org/10.1109/ICDE.2018.00089","url":"https://dblp.org/rec/conf/icde/FengCKLLC18"},
+"url":"URL#3178725"
+},
+{
+"@score":"1",
+"@id":"3178726",
+"info":{"authors":{"author":[{"@pid":"140/7434","text":"Kaiyu Feng"},{"@pid":"43/56-2","text":"Tao Guo 0002"},{"@pid":"33/3180","text":"Gao Cong"},{"@pid":"b/SSBhowmick","text":"Sourav S. Bhowmick"},{"@pid":"35/6569","text":"Shuai Ma 0001"}]},"title":"SURGE: Continuous Detection of Bursty Regions over a Stream of Spatial Objects.","venue":"ICDE","pages":"1292-1295","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FengGCBM18","doi":"10.1109/ICDE.2018.00133","ee":"https://doi.org/10.1109/ICDE.2018.00133","url":"https://dblp.org/rec/conf/icde/FengGCBM18"},
+"url":"URL#3178726"
+},
+{
+"@score":"1",
+"@id":"3178727",
+"info":{"authors":{"author":[{"@pid":"131/4202","text":"Raul Castro Fernandez"},{"@pid":"38/8707","text":"Ziawasch Abedjan"},{"@pid":"228/6019","text":"Famien Koko"},{"@pid":"228/6090","text":"Gina Yuan"},{"@pid":"m/SamuelMadden","text":"Samuel Madden 0001"},{"@pid":"s/MichaelStonebraker","text":"Michael Stonebraker"}]},"title":"Aurum: A Data Discovery System.","venue":"ICDE","pages":"1001-1012","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FernandezAKYMS18","doi":"10.1109/ICDE.2018.00094","ee":"https://doi.org/10.1109/ICDE.2018.00094","url":"https://dblp.org/rec/conf/icde/FernandezAKYMS18"},
+"url":"URL#3178727"
+},
+{
+"@score":"1",
+"@id":"3178728",
+"info":{"authors":{"author":[{"@pid":"131/4202","text":"Raul Castro Fernandez"},{"@pid":"m/EssamMansour","text":"Essam Mansour 0001"},{"@pid":"121/4198","text":"Abdulhakim Ali Qahtan"},{"@pid":"e/AKElmagarmid","text":"Ahmed K. Elmagarmid"},{"@pid":"i/IhabFIlyas","text":"Ihab F. Ilyas"},{"@pid":"m/SamuelMadden","text":"Samuel Madden 0001"},{"@pid":"o/MouradOuzzani","text":"Mourad Ouzzani"},{"@pid":"s/MichaelStonebraker","text":"Michael Stonebraker"},{"@pid":"27/104-1","text":"Nan Tang 0001"}]},"title":"Seeping Semantics: Linking Datasets Using Word Embeddings for Data Discovery.","venue":"ICDE","pages":"989-1000","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FernandezMQEIMO18","doi":"10.1109/ICDE.2018.00093","ee":"https://doi.org/10.1109/ICDE.2018.00093","url":"https://dblp.org/rec/conf/icde/FernandezMQEIMO18"},
+"url":"URL#3178728"
+},
+{
+"@score":"1",
+"@id":"3178729",
+"info":{"authors":{"author":[{"@pid":"43/3753","text":"Valeria Fionda"},{"@pid":"50/96","text":"Giuseppe Pirrò"}]},"title":"Community Deception - Or: How to Stop Fearing Community Detection Algorithms (Extended Abstract).","venue":"ICDE","pages":"1789-1790","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FiondaP18","doi":"10.1109/ICDE.2018.00252","ee":"https://doi.org/10.1109/ICDE.2018.00252","url":"https://dblp.org/rec/conf/icde/FiondaP18"},
+"url":"URL#3178729"
+},
+{
+"@score":"1",
+"@id":"3178730",
+"info":{"authors":{"author":[{"@pid":"304/7977","text":"Christian M. M. Frey"},{"@pid":"18/2478","text":"Andreas Züfle"},{"@pid":"79/7126","text":"Tobias Emrich"},{"@pid":"r/MatthiasRenz","text":"Matthias Renz"}]},"title":"Efficient Information Flow Maximization in Probabilistic Graphs (Extended Abstract).","venue":"ICDE","pages":"1801-1802","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/FreyZER18","doi":"10.1109/ICDE.2018.00258","ee":"https://doi.org/10.1109/ICDE.2018.00258","url":"https://dblp.org/rec/conf/icde/FreyZER18"},
+"url":"URL#3178730"
+},
+{
+"@score":"1",
+"@id":"3178731",
+"info":{"authors":{"author":[{"@pid":"g/AvigdorGal","text":"Avigdor Gal"},{"@pid":"146/4547","text":"Arik Senderovich"},{"@pid":"61/267","text":"Matthias Weidlich 0001"}]},"title":"Online Temporal Analysis of Complex Systems Using IoT Data Sensing.","venue":"ICDE","pages":"1727-1730","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/GalSW18","doi":"10.1109/ICDE.2018.00224","ee":"https://doi.org/10.1109/ICDE.2018.00224","url":"https://dblp.org/rec/conf/icde/GalSW18"},
+"url":"URL#3178731"
+},
+{
+"@score":"1",
+"@id":"3178732",
+"info":{"authors":{"author":[{"@pid":"31/10627","text":"Aniruddh Gandhi"},{"@pid":"h/SvenHartmann","text":"Sven Hartmann"},{"@pid":"13/2962","text":"Henning Koehler"},{"@pid":"l/SebastianLink","text":"Sebastian Link"}]},"title":"An SQL Data Summarization Tool for the Acquisition of Meaningful Cardinality Constraints and Functional Dependencies.","venue":"ICDE","pages":"1549-1552","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/GandhiHKL18","doi":"10.1109/ICDE.2018.00173","ee":"https://doi.org/10.1109/ICDE.2018.00173","url":"https://dblp.org/rec/conf/icde/GandhiHKL18"},
+"url":"URL#3178732"
+},
+{
+"@score":"1",
+"@id":"3178733",
+"info":{"authors":{"author":[{"@pid":"133/0109","text":"Hancheng Ge"},{"@pid":"55/957-1","text":"Kai Zhang 0001"},{"@pid":"200/0220","text":"Majid Alfifi"},{"@pid":"256/9406","text":"Xia Hu 0001"},{"@pid":"55/3697","text":"James Caverlee"}]},"title":"DisTenC: A Distributed Algorithm for Scalable Tensor Completion on Spark.","venue":"ICDE","pages":"137-148","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Ge0AHC18","doi":"10.1109/ICDE.2018.00022","ee":"https://doi.org/10.1109/ICDE.2018.00022","url":"https://dblp.org/rec/conf/icde/Ge0AHC18"},
+"url":"URL#3178733"
+},
+{
+"@score":"1",
+"@id":"3178734",
+"info":{"authors":{"author":[{"@pid":"119/2506","text":"Vahid Ghadakchi"},{"@pid":"t/ArashTermehchy","text":"Arash Termehchy"}]},"title":"There Is No Dichotomy between Effectiveness and Efficiency in Keyword Search over Databases.","venue":"ICDE","pages":"1675-1676","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/GhadakchiT18","doi":"10.1109/ICDE.2018.00210","ee":"https://doi.org/10.1109/ICDE.2018.00210","url":"https://dblp.org/rec/conf/icde/GhadakchiT18"},
+"url":"URL#3178734"
+},
+{
+"@score":"1",
+"@id":"3178735",
+"info":{"authors":{"author":[{"@pid":"g/SGhandeharizadeh","text":"Shahram Ghandeharizadeh"},{"@pid":"i/SandyIrani","text":"Sandy Irani"},{"@pid":"154/4385","text":"Jenny Lam"}]},"title":"On Configuring a Hierarchy of Storage Media in the Age of NVM.","venue":"ICDE","pages":"1380-1383","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Ghandeharizadeh18","doi":"10.1109/ICDE.2018.00155","ee":"https://doi.org/10.1109/ICDE.2018.00155","url":"https://dblp.org/rec/conf/icde/Ghandeharizadeh18"},
+"url":"URL#3178735"
+},
+{
+"@score":"1",
+"@id":"3178738",
+"info":{"authors":{"author":[{"@pid":"77/6645-1","text":"Hui Guan 0001"},{"@pid":"127/9591","text":"Yufei Ding"},{"@pid":"36/4172","text":"Xipeng Shen"},{"@pid":"95/1359","text":"Hamid Krim"}]},"title":"Reuse-Centric K-Means Configuration.","venue":"ICDE","pages":"1224-1227","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/GuanDSK18","doi":"10.1109/ICDE.2018.00116","ee":"https://doi.org/10.1109/ICDE.2018.00116","url":"https://dblp.org/rec/conf/icde/GuanDSK18"},
+"url":"URL#3178738"
+},
+{
+"@score":"1",
+"@id":"3178739",
+"info":{"authors":{"author":{"@pid":"220/2576","text":"Tim Gubner"}},"title":"Designing an Adaptive VM That Combines Vectorized and JIT Execution on Heterogeneous Hardware.","venue":"ICDE","pages":"1684-1688","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Gubner18","doi":"10.1109/ICDE.2018.00215","ee":"https://doi.org/10.1109/ICDE.2018.00215","url":"https://dblp.org/rec/conf/icde/Gubner18"},
+"url":"URL#3178739"
+},
+{
+"@score":"1",
+"@id":"3178740",
+"info":{"authors":{"author":[{"@pid":"219/9708","text":"Yeshwanth Durairaj Gunasekaran"},{"@pid":"04/7892","text":"Abolfazl Asudeh"},{"@pid":"181/5817","text":"Sona Hasani"},{"@pid":"z/NanZhang4","text":"Nan Zhang 0004"},{"@pid":"37/4949","text":"Ali Jaoua"},{"@pid":"07/1181","text":"Gautam Das 0001"}]},"title":"QR2: A Third-Party Query Reranking Service over Web Databases.","venue":"ICDE","pages":"1653-1656","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/GunasekaranAH0J18","doi":"10.1109/ICDE.2018.00199","ee":"https://doi.org/10.1109/ICDE.2018.00199","url":"https://dblp.org/rec/conf/icde/GunasekaranAH0J18"},
+"url":"URL#3178740"
+},
+{
+"@score":"1",
+"@id":"3178741",
+"info":{"authors":{"author":[{"@pid":"49/7979","text":"Chenjuan Guo"},{"@pid":"77/377-2","text":"Bin Yang 0002"},{"@pid":"189/6195","text":"Jilin Hu"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"}]},"title":"Learning to Route with Sparse Trajectory Sets.","venue":"ICDE","pages":"1073-1084","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Guo0HJ18","doi":"10.1109/ICDE.2018.00100","ee":"https://doi.org/10.1109/ICDE.2018.00100","url":"https://dblp.org/rec/conf/icde/Guo0HJ18"},
+"url":"URL#3178741"
+},
+{
+"@score":"1",
+"@id":"3178742",
+"info":{"authors":{"author":[{"@pid":"67/398","text":"Qi Guo"},{"@pid":"j/HVJagadish","text":"H. V. Jagadish"},{"@pid":"t/AnthonyKHTung","text":"Anthony Kum Hoe Tung"},{"@pid":"149/5897","text":"Yuxin Zheng"}]},"title":"Finding Diverse Neighbors in High Dimensional Space.","venue":"ICDE","pages":"905-916","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/GuoJTZ18","doi":"10.1109/ICDE.2018.00086","ee":"https://doi.org/10.1109/ICDE.2018.00086","url":"https://dblp.org/rec/conf/icde/GuoJTZ18"},
+"url":"URL#3178742"
+},
+{
+"@score":"1",
+"@id":"3178743",
+"info":{"authors":{"author":[{"@pid":"330/0760","text":"Himanshu Gupta"},{"@pid":"11/7555","text":"Sandeep Hans"},{"@pid":"228/6023","text":"Kushagra Aggarwal"},{"@pid":"91/877","text":"Sameep Mehta"},{"@pid":"117/6988","text":"Bapi Chatterjee"},{"@pid":"76/3806","text":"Praveen Jayachandran"}]},"title":"Efficiently Processing Temporal Queries on Hyperledger Fabric.","venue":"ICDE","pages":"1489-1494","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/GuptaHAMCJ18","doi":"10.1109/ICDE.2018.00167","ee":"https://doi.org/10.1109/ICDE.2018.00167","url":"https://dblp.org/rec/conf/icde/GuptaHAMCJ18"},
+"url":"URL#3178743"
+},
+{
+"@score":"1",
+"@id":"3178746",
+"info":{"authors":{"author":[{"@pid":"51/4757-3","text":"Kai Han 0003"},{"@pid":"59/1352","text":"Yuntian He"},{"@pid":"33/1903","text":"Xiaokui Xiao"},{"@pid":"68/3428-1","text":"Shaojie Tang 0001"},{"@pid":"221/4684","text":"Fei Gui"},{"@pid":"210/2637","text":"Chaoting Xu"},{"@pid":"42/2501-1","text":"Jun Luo 0001"}]},"title":"Budget-Constrained Organization of Influential Social Events.","venue":"ICDE","pages":"917-928","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/HanHXTGXL18","doi":"10.1109/ICDE.2018.00087","ee":"https://doi.org/10.1109/ICDE.2018.00087","url":"https://dblp.org/rec/conf/icde/HanHXTGXL18"},
+"url":"URL#3178746"
+},
+{
+"@score":"1",
+"@id":"3178747",
+"info":{"authors":{"author":[{"@pid":"99/9461","text":"Xixian Han"},{"@pid":"18/6870-1","text":"Jianzhong Li 0001"},{"@pid":"32/1438-1","text":"Hong Gao 0001"}]},"title":"Efficient Top-k Dominating Computation on Massive Data (Extended Abstract).","venue":"ICDE","pages":"1771-1772","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/HanLG18","doi":"10.1109/ICDE.2018.00243","ee":"https://doi.org/10.1109/ICDE.2018.00243","url":"https://dblp.org/rec/conf/icde/HanLG18"},
+"url":"URL#3178747"
+},
+{
+"@score":"1",
+"@id":"3178748",
+"info":{"authors":{"author":[{"@pid":"92/7536","text":"Jialong Han"},{"@pid":"78/5155","text":"Aixin Sun"},{"@pid":"33/3180","text":"Gao Cong"},{"@pid":"52/8700","text":"Wayne Xin Zhao"},{"@pid":"117/4334","text":"Zongcheng Ji"},{"@pid":"204/0140","text":"Minh C. Phan"}]},"title":"Linking Fine-Grained Locations in User Comments (Extended Abstract).","venue":"ICDE","pages":"1763-1764","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/HanSCZJP18","doi":"10.1109/ICDE.2018.00239","ee":"https://doi.org/10.1109/ICDE.2018.00239","url":"https://dblp.org/rec/conf/icde/HanSCZJP18"},
+"url":"URL#3178748"
+},
+{
+"@score":"1",
+"@id":"3178749",
+"info":{"authors":{"author":[{"@pid":"228/6070","text":"Siyuan Han"},{"@pid":"228/6057","text":"Zihuan Xu"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"}]},"title":"Jupiter: A Blockchain Platform for Mobile Devices.","venue":"ICDE","pages":"1649-1652","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/HanXC18","doi":"10.1109/ICDE.2018.00198","ee":"https://doi.org/10.1109/ICDE.2018.00198","url":"https://dblp.org/rec/conf/icde/HanXC18"},
+"url":"URL#3178749"
+},
+{
+"@score":"1",
+"@id":"3178750",
+"info":{"authors":{"author":[{"@pid":"07/6713-2","text":"Shuang Hao 0002"},{"@pid":"27/104-1","text":"Nan Tang 0001"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"43/6576","text":"Jianhua Feng"}]},"title":"Discovering Mis-Categorized Entities.","venue":"ICDE","pages":"413-424","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Hao00F18","doi":"10.1109/ICDE.2018.00045","ee":"https://doi.org/10.1109/ICDE.2018.00045","url":"https://dblp.org/rec/conf/icde/Hao00F18"},
+"url":"URL#3178750"
+},
+{
+"@score":"1",
+"@id":"3178751",
+"info":{"authors":{"author":[{"@pid":"07/6713-2","text":"Shuang Hao 0002"},{"@pid":"14/5580","text":"Yi Xu"},{"@pid":"27/104-1","text":"Nan Tang 0001"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"43/6576","text":"Jianhua Feng"}]},"title":"Cleaning Your Wrong Google Scholar Entries.","venue":"ICDE","pages":"1597-1600","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/HaoX0LF18","doi":"10.1109/ICDE.2018.00185","ee":"https://doi.org/10.1109/ICDE.2018.00185","url":"https://dblp.org/rec/conf/icde/HaoX0LF18"},
+"url":"URL#3178751"
+},
+{
+"@score":"1",
+"@id":"3178752",
+"info":{"authors":{"author":[{"@pid":"181/5817","text":"Sona Hasani"},{"@pid":"35/3947","text":"Ning Yan"},{"@pid":"14/3692","text":"Chengkai Li 0001"}]},"title":"TableView: A Visual Interface for Generating Preview Tables of Entity Graphs.","venue":"ICDE","pages":"1617-1620","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/HasaniYL18","doi":"10.1109/ICDE.2018.00190","ee":"https://doi.org/10.1109/ICDE.2018.00190","url":"https://dblp.org/rec/conf/icde/HasaniYL18"},
+"url":"URL#3178752"
+},
+{
+"@score":"1",
+"@id":"3178753",
+"info":{"authors":{"author":[{"@pid":"53/7997","text":"Sen Hu"},{"@pid":"81/3390-1","text":"Lei Zou 0001"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"},{"@pid":"w/HaixunWang","text":"Haixun Wang"},{"@pid":"63/1870","text":"Dongyan Zhao 0001"}]},"title":"Answering Natural Language Questions by Subgraph Matching over Knowledge Graphs (Extended Abstract).","venue":"ICDE","pages":"1815-1816","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Hu0YWZ18","doi":"10.1109/ICDE.2018.00265","ee":"https://doi.org/10.1109/ICDE.2018.00265","url":"https://dblp.org/rec/conf/icde/Hu0YWZ18"},
+"url":"URL#3178753"
+},
+{
+"@score":"1",
+"@id":"3178755",
+"info":{"authors":{"author":[{"@pid":"156/5465","text":"Andrew Ilyas"},{"@pid":"48/6542","text":"Joana M. F. da Trindade"},{"@pid":"131/4202","text":"Raul Castro Fernandez"},{"@pid":"m/SamuelMadden","text":"Samuel Madden 0001"}]},"title":"Extracting Syntactical Patterns from Databases.","venue":"ICDE","pages":"41-52","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/IlyasTFM18","doi":"10.1109/ICDE.2018.00014","ee":"https://doi.org/10.1109/ICDE.2018.00014","url":"https://dblp.org/rec/conf/icde/IlyasTFM18"},
+"url":"URL#3178755"
+},
+{
+"@score":"1",
+"@id":"3178756",
+"info":{"authors":{"author":[{"@pid":"224/6814","text":"Ariel Jarovsky"},{"@pid":"m/TovaMilo","text":"Tova Milo"},{"@pid":"43/9582","text":"Slava Novgorodov"},{"@pid":"t/WangChiewTan","text":"Wang-Chiew Tan"}]},"title":"Rule Sharing for Fraud Detection via Adaptation.","venue":"ICDE","pages":"125-136","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/JarovskyMNT18","doi":"10.1109/ICDE.2018.00021","ee":"https://doi.org/10.1109/ICDE.2018.00021","url":"https://dblp.org/rec/conf/icde/JarovskyMNT18"},
+"url":"URL#3178756"
+},
+{
+"@score":"1",
+"@id":"3178757",
+"info":{"authors":{"author":[{"@pid":"130/7707-1","text":"Xun Jian 0001"},{"@pid":"l/XianLian","text":"Xiang Lian"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"}]},"title":"On Efficiently Detecting Overlapping Communities over Distributed Dynamic Graphs.","venue":"ICDE","pages":"1328-1331","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/JianLC18","doi":"10.1109/ICDE.2018.00142","ee":"https://doi.org/10.1109/ICDE.2018.00142","url":"https://dblp.org/rec/conf/icde/JianLC18"},
+"url":"URL#3178757"
+},
+{
+"@score":"1",
+"@id":"3178758",
+"info":{"authors":{"author":[{"@pid":"228/6049","text":"Linnan Jiang"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"},{"@pid":"93/3669-3","text":"Zhao Chen 0003"}]},"title":"Knowledge Base Enhancement via Data Facts and Crowdsourcing.","venue":"ICDE","pages":"1109-1119","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/JiangCC18","doi":"10.1109/ICDE.2018.00103","ee":"https://doi.org/10.1109/ICDE.2018.00103","url":"https://dblp.org/rec/conf/icde/JiangCC18"},
+"url":"URL#3178758"
+},
+{
+"@score":"1",
+"@id":"3178759",
+"info":{"authors":{"author":[{"@pid":"195/8998","text":"Yuli Jiang"},{"@pid":"98/5766-1","text":"Xin Huang 0001"},{"@pid":"85/5637-1","text":"Hong Cheng 0001"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"}]},"title":"VizCS: Online Searching and Visualizing Communities in Dynamic Graphs.","venue":"ICDE","pages":"1585-1588","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/JiangHCY18","doi":"10.1109/ICDE.2018.00182","ee":"https://doi.org/10.1109/ICDE.2018.00182","url":"https://dblp.org/rec/conf/icde/JiangHCY18"},
+"url":"URL#3178759"
+},
+{
+"@score":"1",
+"@id":"3178760",
+"info":{"authors":{"author":[{"@pid":"80/1631","text":"Bhargav Kanagal"},{"@pid":"20/1055","text":"Sandeep Tata"}]},"title":"Recommendations for All: Solving Thousands of Recommendation Problems Daily.","venue":"ICDE","pages":"1404-1413","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/KanagalT18","doi":"10.1109/ICDE.2018.00159","ee":"https://doi.org/10.1109/ICDE.2018.00159","url":"https://dblp.org/rec/conf/icde/KanagalT18"},
+"url":"URL#3178760"
+},
+{
+"@score":"1",
+"@id":"3178762",
+"info":{"authors":{"author":[{"@pid":"65/1457","text":"Zoi Kaoudi"},{"@pid":"09/6353","text":"Jorge-Arnulfo Quiané-Ruiz"}]},"title":"Cross-Platform Data Processing: Use Cases and Challenges.","venue":"ICDE","pages":"1723-1726","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/KaoudiQ18","doi":"10.1109/ICDE.2018.00223","ee":"https://doi.org/10.1109/ICDE.2018.00223","url":"https://dblp.org/rec/conf/icde/KaoudiQ18"},
+"url":"URL#3178762"
+},
+{
+"@score":"1",
+"@id":"3178763",
+"info":{"authors":{"author":[{"@pid":"167/2751","text":"Jeyhun Karimov"},{"@pid":"10/760","text":"Tilmann Rabl"},{"@pid":"64/7497","text":"Asterios Katsifodimos"},{"@pid":"188/5981","text":"Roman Samarev"},{"@pid":"54/7025","text":"Henri Heiskanen"},{"@pid":"m/VMarkl","text":"Volker Markl"}]},"title":"Benchmarking Distributed Stream Data Processing Systems.","venue":"ICDE","pages":"1507-1518","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/KarimovRKSHM18","doi":"10.1109/ICDE.2018.00169","ee":"https://doi.org/10.1109/ICDE.2018.00169","url":"https://dblp.org/rec/conf/icde/KarimovRKSHM18"},
+"url":"URL#3178763"
+},
+{
+"@score":"1",
+"@id":"3178764",
+"info":{"authors":{"author":[{"@pid":"32/10459","text":"Fisnik Kastrati"},{"@pid":"m/GuidoMoerkotte","text":"Guido Moerkotte"}]},"title":"Generating Optimal Plans for Boolean Expressions.","venue":"ICDE","pages":"1013-1024","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/KastratiM18","doi":"10.1109/ICDE.2018.00095","ee":"https://doi.org/10.1109/ICDE.2018.00095","url":"https://dblp.org/rec/conf/icde/KastratiM18"},
+"url":"URL#3178764"
+},
+{
+"@score":"1",
+"@id":"3178766",
+"info":{"authors":{"author":{"@pid":"228/6045","text":"Tunaggina Subrina Khan"}},"title":"ZIP-Code Classification Using Spatial and Crowdsourced Data.","venue":"ICDE","pages":"1694-1698","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Khan18","doi":"10.1109/ICDE.2018.00217","ee":"https://doi.org/10.1109/ICDE.2018.00217","url":"https://dblp.org/rec/conf/icde/Khan18"},
+"url":"URL#3178766"
+},
+{
+"@score":"1",
+"@id":"3178767",
+"info":{"authors":{"author":[{"@pid":"167/6469","text":"Andreas Kipf"},{"@pid":"150/9460","text":"Harald Lang"},{"@pid":"51/1618","text":"Varun Pandey"},{"@pid":"215/5124","text":"Raul Alexandru Persa"},{"@pid":"b/PeterABoncz","text":"Peter A. Boncz"},{"@pid":"n/ThomasNeumann","text":"Thomas Neumann 0001"},{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"}]},"title":"Approximate Geospatial Joins with Precision Guarantees.","venue":"ICDE","pages":"1360-1363","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/KipfLPPB0K18","doi":"10.1109/ICDE.2018.00150","ee":"https://doi.org/10.1109/ICDE.2018.00150","url":"https://dblp.org/rec/conf/icde/KipfLPPB0K18"},
+"url":"URL#3178767"
+},
+{
+"@score":"1",
+"@id":"3178768",
+"info":{"authors":{"author":[{"@pid":"166/9216-1","text":"André Kohn 0001"},{"@pid":"10/11150","text":"Viktor Leis"},{"@pid":"n/ThomasNeumann","text":"Thomas Neumann 0001"}]},"title":"Adaptive Execution of Compiled Queries.","venue":"ICDE","pages":"197-208","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/KohnL018","doi":"10.1109/ICDE.2018.00027","ee":"https://doi.org/10.1109/ICDE.2018.00027","url":"https://dblp.org/rec/conf/icde/KohnL018"},
+"url":"URL#3178768"
+},
+{
+"@score":"1",
+"@id":"3178769",
+"info":{"authors":{"author":[{"@pid":"186/0965","text":"Satoshi Koide"},{"@pid":"80/6616","text":"Yukihiro Tadokoro"},{"@pid":"57/4384-1","text":"Chuan Xiao 0001"},{"@pid":"i/YoshiharuIshikawa","text":"Yoshiharu Ishikawa"}]},"title":"CiNCT: Compression and Retrieval for Massive Vehicular Trajectories via Relative Movement Labeling.","venue":"ICDE","pages":"1097-1108","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/KoideTXI18","doi":"10.1109/ICDE.2018.00102","ee":"https://doi.org/10.1109/ICDE.2018.00102","url":"https://dblp.org/rec/conf/icde/KoideTXI18"},
+"url":"URL#3178769"
+},
+{
+"@score":"1",
+"@id":"3178771",
+"info":{"authors":{"author":[{"@pid":"71/9641","text":"Panagiotis Korvesis"},{"@pid":"228/6025","text":"Stephane Besseau"},{"@pid":"v/MVazirgiannis","text":"Michalis Vazirgiannis"}]},"title":"Predictive Maintenance in Aviation: Failure Prediction from Post-Flight Reports.","venue":"ICDE","pages":"1414-1422","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/KorvesisBV18","doi":"10.1109/ICDE.2018.00160","ee":"https://doi.org/10.1109/ICDE.2018.00160","url":"https://dblp.org/rec/conf/icde/KorvesisBV18"},
+"url":"URL#3178771"
+},
+{
+"@score":"1",
+"@id":"3178773",
+"info":{"authors":{"author":[{"@pid":"l/WLehner","text":"Wolfgang Lehner"},{"@pid":"97/5806","text":"Dirk Habich"},{"@pid":"151/3137","text":"Till Kolditz"}]},"title":"Teaching In-Memory Database Systems the Detection of Hardware Errors.","venue":"ICDE","pages":"1663","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LehnerHK18","doi":"10.1109/ICDE.2018.00203","ee":"https://doi.org/10.1109/ICDE.2018.00203","url":"https://dblp.org/rec/conf/icde/LehnerHK18"},
+"url":"URL#3178773"
+},
+{
+"@score":"1",
+"@id":"3178774",
+"info":{"authors":{"author":[{"@pid":"10/11150","text":"Viktor Leis"},{"@pid":"185/1272","text":"Michael Haubenschild"},{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"},{"@pid":"n/ThomasNeumann","text":"Thomas Neumann 0001"}]},"title":"LeanStore: In-Memory Data Management beyond Main Memory.","venue":"ICDE","pages":"185-196","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LeisHK018","doi":"10.1109/ICDE.2018.00026","ee":"https://doi.org/10.1109/ICDE.2018.00026","url":"https://dblp.org/rec/conf/icde/LeisHK018"},
+"url":"URL#3178774"
+},
+{
+"@score":"1",
+"@id":"3178775",
+"info":{"authors":{"author":[{"@pid":"26/6153","text":"Chuanwen Li"},{"@pid":"15/4208-2","text":"Yu Gu 0002"},{"@pid":"41/1074-1","text":"Jianzhong Qi 0001"},{"@pid":"119/5963-2","text":"Jiayuan He 0002"},{"@pid":"95/63","text":"Qingxu Deng"},{"@pid":"49/6363","text":"Ge Yu 0001"}]},"title":"A GPU Accelerated Update Efficient Index for kNN Queries in Road Networks.","venue":"ICDE","pages":"881-892","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Li0QHDY18","doi":"10.1109/ICDE.2018.00084","ee":"https://doi.org/10.1109/ICDE.2018.00084","url":"https://dblp.org/rec/conf/icde/Li0QHDY18"},
+"url":"URL#3178775"
+},
+{
+"@score":"1",
+"@id":"3178776",
+"info":{"authors":{"author":[{"@pid":"09/11146","text":"Wengen Li"},{"@pid":"c/JiannongCao","text":"Jiannong Cao 0001"},{"@pid":"89/2685","text":"Jihong Guan"},{"@pid":"23/282","text":"Man Lung Yiu"},{"@pid":"52/6744","text":"Shuigeng Zhou"}]},"title":"Efficient Retrieval of Bounded-Cost Informative Routes.","venue":"ICDE","pages":"1811-1812","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiCGYZ18","doi":"10.1109/ICDE.2018.00263","ee":"https://doi.org/10.1109/ICDE.2018.00263","url":"https://dblp.org/rec/conf/icde/LiCGYZ18"},
+"url":"URL#3178776"
+},
+{
+"@score":"1",
+"@id":"3178777",
+"info":{"authors":{"author":[{"@pid":"l/JianxinLi","text":"Jianxin Li 0001"},{"@pid":"168/4683","text":"Taotao Cai"},{"@pid":"63/807","text":"Ajmal Mian"},{"@pid":"37/548","text":"Rong-Hua Li"},{"@pid":"s/TimosKSellis","text":"Timos Sellis"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"}]},"title":"Holistic Influence Maximization for Targeted Advertisements in Spatial Social Networks.","venue":"ICDE","pages":"1340-1343","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiCMLSY18","doi":"10.1109/ICDE.2018.00145","ee":"https://doi.org/10.1109/ICDE.2018.00145","url":"https://dblp.org/rec/conf/icde/LiCMLSY18"},
+"url":"URL#3178777"
+},
+{
+"@score":"1",
+"@id":"3178778",
+"info":{"authors":{"author":[{"@pid":"62/10295","text":"Xinsheng Li"},{"@pid":"c/KSelcukCandan","text":"Kasim Selçuk Candan"},{"@pid":"s/MariaLuisaSapino","text":"Maria Luisa Sapino"}]},"title":"M2TD: Multi-Task Tensor Decomposition for Sparse Ensemble Simulations.","venue":"ICDE","pages":"1144-1155","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiCS18","doi":"10.1109/ICDE.2018.00106","ee":"https://doi.org/10.1109/ICDE.2018.00106","url":"https://dblp.org/rec/conf/icde/LiCS18"},
+"url":"URL#3178778"
+},
+{
+"@score":"1",
+"@id":"3178779",
+"info":{"authors":{"author":[{"@pid":"37/548","text":"Rong-Hua Li"},{"@pid":"206/6265","text":"Qiangqiang Dai"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"64/146","text":"Guoren Wang"},{"@pid":"33/1903","text":"Xiaokui Xiao"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"},{"@pid":"77/6919","text":"Shaojie Qiao"}]},"title":"Efficient Signed Clique Search in Signed Networks.","venue":"ICDE","pages":"245-256","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiDQWXYQ18","doi":"10.1109/ICDE.2018.00031","ee":"https://doi.org/10.1109/ICDE.2018.00031","url":"https://dblp.org/rec/conf/icde/LiDQWXYQ18"},
+"url":"URL#3178779"
+},
+{
+"@score":"1",
+"@id":"3178780",
+"info":{"authors":{"author":[{"@pid":"27/10487-2","text":"Zijian Li 0002"},{"@pid":"130/7707-1","text":"Xun Jian 0001"},{"@pid":"l/XianLian","text":"Xiang Lian"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"}]},"title":"An Efficient Probabilistic Approach for Graph Similarity Search.","venue":"ICDE","pages":"533-544","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiJLC18","doi":"10.1109/ICDE.2018.00055","ee":"https://doi.org/10.1109/ICDE.2018.00055","url":"https://dblp.org/rec/conf/icde/LiJLC18"},
+"url":"URL#3178780"
+},
+{
+"@score":"1",
+"@id":"3178781",
+"info":{"authors":{"author":[{"@pid":"60/8180-1","text":"Wentao Li 0001"},{"@pid":"93/9883","text":"Miao Qiao"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"47/179","text":"Lijun Chang"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"}]},"title":"Exacting Eccentricity for Small-World Networks.","venue":"ICDE","pages":"785-796","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiQQZCL18","doi":"10.1109/ICDE.2018.00076","ee":"https://doi.org/10.1109/ICDE.2018.00076","url":"https://dblp.org/rec/conf/icde/LiQQZCL18"},
+"url":"URL#3178781"
+},
+{
+"@score":"1",
+"@id":"3178782",
+"info":{"authors":{"author":[{"@pid":"l/JianxinLi","text":"Jianxin Li 0001"},{"@pid":"s/TimosKSellis","text":"Timos Sellis"},{"@pid":"03/489","text":"J. Shane Culpepper"},{"@pid":"23/6341","text":"Zhenying He"},{"@pid":"l/ChengfeiLiu","text":"Chengfei Liu"},{"@pid":"70/2659","text":"Junhu Wang"}]},"title":"Geo-Social Influence Spanning Maximization.","venue":"ICDE","pages":"1775-1776","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiSCHLW18","doi":"10.1109/ICDE.2018.00245","ee":"https://doi.org/10.1109/ICDE.2018.00245","url":"https://dblp.org/rec/conf/icde/LiSCHLW18"},
+"url":"URL#3178782"
+},
+{
+"@score":"1",
+"@id":"3178783",
+"info":{"authors":{"author":[{"@pid":"37/548","text":"Rong-Hua Li"},{"@pid":"194/6725","text":"Jiao Su"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"},{"@pid":"206/6265","text":"Qiangqiang Dai"}]},"title":"Persistent Community Search in Temporal Networks.","venue":"ICDE","pages":"797-808","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiSQYD18","doi":"10.1109/ICDE.2018.00077","ee":"https://doi.org/10.1109/ICDE.2018.00077","url":"https://dblp.org/rec/conf/icde/LiSQYD18"},
+"url":"URL#3178783"
+},
+{
+"@score":"1",
+"@id":"3178784",
+"info":{"authors":{"author":[{"@pid":"14/1395-16","text":"Liang Li 0016"},{"@pid":"64/146","text":"Guoren Wang"},{"@pid":"99/6515-7","text":"Gang Wu 0007"},{"@pid":"33/6315-1","text":"Ye Yuan 0001"}]},"title":"Consistent Snapshot Algorithms for In-Memory Database Systems: Experiments and Analysis.","venue":"ICDE","pages":"1284-1287","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiWWY18","doi":"10.1109/ICDE.2018.00131","ee":"https://doi.org/10.1109/ICDE.2018.00131","url":"https://dblp.org/rec/conf/icde/LiWWY18"},
+"url":"URL#3178784"
+},
+{
+"@score":"1",
+"@id":"3178785",
+"info":{"authors":{"author":[{"@pid":"152/8201","text":"Xiucheng Li"},{"@pid":"127/6172-1","text":"Kaiqi Zhao 0001"},{"@pid":"33/3180","text":"Gao Cong"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"},{"@pid":"24/4105-2","text":"Wei Wei 0002"}]},"title":"Deep Representation Learning for Trajectory Similarity Computation.","venue":"ICDE","pages":"617-628","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiZCJW18","doi":"10.1109/ICDE.2018.00062","ee":"https://doi.org/10.1109/ICDE.2018.00062","url":"https://dblp.org/rec/conf/icde/LiZCJW18"},
+"url":"URL#3178785"
+},
+{
+"@score":"1",
+"@id":"3178786",
+"info":{"authors":{"author":[{"@pid":"74/4581","text":"Yuefeng Li"},{"@pid":"36/1835","text":"Libiao Zhang"},{"@pid":"29/3925-1","text":"Yue Xu 0001"},{"@pid":"y/YiyuYao","text":"Yiyu Yao"},{"@pid":"l/RaymondYKLau","text":"Raymond Y. K. Lau"},{"@pid":"175/5491-1","text":"Yutong Wu 0001"}]},"title":"Enhancing Binary Classification by Modeling Uncertain Boundary in Three-Way Decisions (Extended Abstract).","venue":"ICDE","pages":"1827-1828","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiZXYLW18","doi":"10.1109/ICDE.2018.00271","ee":"https://doi.org/10.1109/ICDE.2018.00271","url":"https://dblp.org/rec/conf/icde/LiZXYLW18"},
+"url":"URL#3178786"
+},
+{
+"@score":"1",
+"@id":"3178787",
+"info":{"authors":{"author":[{"@pid":"62/8320","text":"Jefrey Lijffijt"},{"@pid":"26/4533","text":"Bo Kang"},{"@pid":"23/1341","text":"Wouter Duivesteijn"},{"@pid":"71/3034","text":"Kai Puolamäki"},{"@pid":"44/4695","text":"Emilia Oikarinen"},{"@pid":"49/2018","text":"Tijl De Bie"}]},"title":"Subjectively Interesting Subgroup Discovery on Real-Valued Targets.","venue":"ICDE","pages":"1352-1355","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LijffijtKDPOB18","doi":"10.1109/ICDE.2018.00148","ee":"https://doi.org/10.1109/ICDE.2018.00148","url":"https://dblp.org/rec/conf/icde/LijffijtKDPOB18"},
+"url":"URL#3178787"
+},
+{
+"@score":"1",
+"@id":"3178788",
+"info":{"authors":{"author":[{"@pid":"79/3108-2","text":"Qian Lin 0002"},{"@pid":"67/6383-1","text":"Gang Chen 0001"},{"@pid":"08/7259","text":"Meihui Zhang 0001"}]},"title":"On the Design of Adaptive and Speculative Concurrency Control in Distributed Databases.","venue":"ICDE","pages":"1376-1379","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LinCZ18","doi":"10.1109/ICDE.2018.00154","ee":"https://doi.org/10.1109/ICDE.2018.00154","url":"https://dblp.org/rec/conf/icde/LinCZ18"},
+"url":"URL#3178788"
+},
+{
+"@score":"1",
+"@id":"3178789",
+"info":{"authors":{"author":[{"@pid":"81/2960","text":"Zhiting Lin"},{"@pid":"63/2589-1","text":"Liang Dong 0001"}]},"title":"Clarifying Trust in Social Internet of Things (Extended Abstract).","venue":"ICDE","pages":"1825-1826","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LinD18","doi":"10.1109/ICDE.2018.00270","ee":"https://doi.org/10.1109/ICDE.2018.00270","url":"https://dblp.org/rec/conf/icde/LinD18"},
+"url":"URL#3178789"
+},
+{
+"@score":"1",
+"@id":"3178790",
+"info":{"authors":{"author":[{"@pid":"50/3323-1","text":"Xin Lin 0001"},{"@pid":"86/1825-2","text":"Yun Peng 0002"},{"@pid":"x/JianliangXu","text":"Jianliang Xu"},{"@pid":"07/1560","text":"Byron Choi"}]},"title":"Human-Powered Data Cleaning for Probabilistic Reachability Queries on Uncertain Graphs.","venue":"ICDE","pages":"1755-1756","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LinPXC18","doi":"10.1109/ICDE.2018.00235","ee":"https://doi.org/10.1109/ICDE.2018.00235","url":"https://dblp.org/rec/conf/icde/LinPXC18"},
+"url":"URL#3178790"
+},
+{
+"@score":"1",
+"@id":"3178791",
+"info":{"authors":{"author":[{"@pid":"50/3323-1","text":"Xin Lin 0001"},{"@pid":"x/JianliangXu","text":"Jianliang Xu"},{"@pid":"90/5236-1","text":"Haibo Hu 0001"},{"@pid":"29/2305","text":"Zhe Fan"}]},"title":"Reducing Uncertainty of Probabilistic Top-k Ranking via Pairwise Crowdsourcing.","venue":"ICDE","pages":"1757-1758","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LinXHF18","doi":"10.1109/ICDE.2018.00236","ee":"https://doi.org/10.1109/ICDE.2018.00236","url":"https://dblp.org/rec/conf/icde/LinXHF18"},
+"url":"URL#3178791"
+},
+{
+"@score":"1",
+"@id":"3178792",
+"info":{"authors":{"author":[{"@pid":"176/5473","text":"Michele Linardi"},{"@pid":"p/ThemisPalpanas","text":"Themis Palpanas"}]},"title":"ULISSE: ULtra Compact Index for Variable-Length Similarity Search in Data Series.","venue":"ICDE","pages":"1356-1359","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LinardiP18","doi":"10.1109/ICDE.2018.00149","ee":"https://doi.org/10.1109/ICDE.2018.00149","url":"https://dblp.org/rec/conf/icde/LinardiP18"},
+"url":"URL#3178792"
+},
+{
+"@score":"1",
+"@id":"3178794",
+"info":{"authors":{"author":[{"@pid":"139/1128","text":"Matteo Lissandrini"},{"@pid":"135/7623","text":"Davide Mottin"},{"@pid":"p/ThemisPalpanas","text":"Themis Palpanas"},{"@pid":"v/YannisVelegrakis","text":"Yannis Velegrakis"}]},"title":"Multi-Example Search in Rich Information Graphs.","venue":"ICDE","pages":"809-820","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LissandriniMPV18","doi":"10.1109/ICDE.2018.00078","ee":"https://doi.org/10.1109/ICDE.2018.00078","url":"https://dblp.org/rec/conf/icde/LissandriniMPV18"},
+"url":"URL#3178794"
+},
+{
+"@score":"1",
+"@id":"3178795",
+"info":{"authors":{"author":[{"@pid":"06/3580-11","text":"Zheng Liu 0011"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"},{"@pid":"83/2548","text":"Yongxin Tong"}]},"title":"Realtime Traffic Speed Estimation with Sparse Crowdsourced Data.","venue":"ICDE","pages":"329-340","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiuCT18","doi":"10.1109/ICDE.2018.00038","ee":"https://doi.org/10.1109/ICDE.2018.00038","url":"https://dblp.org/rec/conf/icde/LiuCT18"},
+"url":"URL#3178795"
+},
+{
+"@score":"1",
+"@id":"3178796",
+"info":{"authors":{"author":[{"@pid":"53/4481-8","text":"Qing Liu 0008"},{"@pid":"228/6063","text":"Zijin Feng"},{"@pid":"64/1308","text":"Xike Xie"},{"@pid":"x/JianliangXu","text":"Jianliang Xu"},{"@pid":"50/3323-1","text":"Xin Lin 0001"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"}]},"title":"iZone: Efficient Influence Zone Evaluation over Geo-Textual Data.","venue":"ICDE","pages":"1645-1648","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiuFXXLJ18","doi":"10.1109/ICDE.2018.00197","ee":"https://doi.org/10.1109/ICDE.2018.00197","url":"https://dblp.org/rec/conf/icde/LiuFXXLJ18"},
+"url":"URL#3178796"
+},
+{
+"@score":"1",
+"@id":"3178797",
+"info":{"authors":{"author":[{"@pid":"32/4712","text":"Huiping Liu"},{"@pid":"41/2511","text":"Cheqing Jin"},{"@pid":"77/377-2","text":"Bin Yang 0002"},{"@pid":"z/AoyingZhou","text":"Aoying Zhou"}]},"title":"Finding Top-k Optimal Sequenced Routes.","venue":"ICDE","pages":"569-580","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiuJYZ18","doi":"10.1109/ICDE.2018.00058","ee":"https://doi.org/10.1109/ICDE.2018.00058","url":"https://dblp.org/rec/conf/icde/LiuJYZ18"},
+"url":"URL#3178797"
+},
+{
+"@score":"1",
+"@id":"3178798",
+"info":{"authors":{"author":[{"@pid":"32/4712","text":"Huiping Liu"},{"@pid":"41/2511","text":"Cheqing Jin"},{"@pid":"77/377-2","text":"Bin Yang 0002"},{"@pid":"z/AoyingZhou","text":"Aoying Zhou"}]},"title":"Finding Top-k Shortest Paths with Diversity.","venue":"ICDE","pages":"1761-1762","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiuJYZ18a","doi":"10.1109/ICDE.2018.00238","ee":"https://doi.org/10.1109/ICDE.2018.00238","url":"https://dblp.org/rec/conf/icde/LiuJYZ18a"},
+"url":"URL#3178798"
+},
+{
+"@score":"1",
+"@id":"3178799",
+"info":{"authors":{"author":[{"@pid":"85/5485-1","text":"Ziyang Liu 0001"},{"@pid":"72/1334","text":"Chong Wang"},{"@pid":"88/6466-1","text":"Yi Chen 0001"}]},"title":"Keyword Search on Temporal Graphs.","venue":"ICDE","pages":"1807-1808","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiuWC18","doi":"10.1109/ICDE.2018.00261","ee":"https://doi.org/10.1109/ICDE.2018.00261","url":"https://dblp.org/rec/conf/icde/LiuWC18"},
+"url":"URL#3178799"
+},
+{
+"@score":"1",
+"@id":"3178800",
+"info":{"authors":{"author":[{"@pid":"89/9935","text":"Jinfei Liu"},{"@pid":"183/0795","text":"Juncheng Yang"},{"@pid":"39/3530-1","text":"Li Xiong 0001"},{"@pid":"p/JianPei","text":"Jian Pei 0001"},{"@pid":"42/2501-7","text":"Jun Luo 0007"}]},"title":"Skyline Diagram: Finding the Voronoi Counterpart for Skyline Queries.","venue":"ICDE","pages":"653-664","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LiuY0PL18","doi":"10.1109/ICDE.2018.00065","ee":"https://doi.org/10.1109/ICDE.2018.00065","url":"https://dblp.org/rec/conf/icde/LiuY0PL18"},
+"url":"URL#3178800"
+},
+{
+"@score":"1",
+"@id":"3178801",
+"info":{"authors":{"author":{"@pid":"228/6073","text":"Alvis Logins"}},"title":"Node Selection in Large Networks.","venue":"ICDE","pages":"1689-1693","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Logins18","doi":"10.1109/ICDE.2018.00216","ee":"https://doi.org/10.1109/ICDE.2018.00216","url":"https://dblp.org/rec/conf/icde/Logins18"},
+"url":"URL#3178801"
+},
+{
+"@score":"1",
+"@id":"3178802",
+"info":{"authors":{"author":{"@pid":"l/DavidBLomet","text":"David B. Lomet"}},"title":"Caching Data Stores: High Performance at Low Cost.","venue":"ICDE","pages":"1661","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Lomet18","doi":"10.1109/ICDE.2018.00201","ee":"https://doi.org/10.1109/ICDE.2018.00201","url":"https://dblp.org/rec/conf/icde/Lomet18"},
+"url":"URL#3178802"
+},
+{
+"@score":"1",
+"@id":"3178803",
+"info":{"authors":{"author":[{"@pid":"144/2807","text":"Ji Lucas"},{"@pid":"181/5745","text":"Yasser Idris"},{"@pid":"220/3419","text":"Bertty Contreras-Rojas"},{"@pid":"09/6353","text":"Jorge-Arnulfo Quiané-Ruiz"},{"@pid":"22/5463","text":"Sanjay Chawla"}]},"title":"RheemStudio: Cross-Platform Data Analytics Made Easy.","venue":"ICDE","pages":"1573-1576","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LucasICQC18","doi":"10.1109/ICDE.2018.00179","ee":"https://doi.org/10.1109/ICDE.2018.00179","url":"https://dblp.org/rec/conf/icde/LucasICQC18"},
+"url":"URL#3178803"
+},
+{
+"@score":"1",
+"@id":"3178804",
+"info":{"authors":{"author":[{"@pid":"169/3426","text":"Zhaojing Luo"},{"@pid":"228/6099","text":"Shaofeng Cai"},{"@pid":"131/4047","text":"Jinyang Gao"},{"@pid":"08/7259","text":"Meihui Zhang 0001"},{"@pid":"192/7337","text":"Kee Yuan Ngiam"},{"@pid":"67/6383-1","text":"Gang Chen 0001"},{"@pid":"14/716","text":"Wang-Chien Lee"}]},"title":"Adaptive Lightweight Regularization Tool for Complex Analytics.","venue":"ICDE","pages":"485-496","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LuoCGZN0L18","doi":"10.1109/ICDE.2018.00051","ee":"https://doi.org/10.1109/ICDE.2018.00051","url":"https://dblp.org/rec/conf/icde/LuoCGZN0L18"},
+"url":"URL#3178804"
+},
+{
+"@score":"1",
+"@id":"3178805",
+"info":{"authors":{"author":[{"@pid":"136/7364","text":"Zhiling Luo"},{"@pid":"l/LingLiu","text":"Ling Liu 0001"},{"@pid":"74/3786","text":"Jianwei Yin"},{"@pid":"22/1805-1","text":"Ying Li 0001"},{"@pid":"54/6252-1","text":"Zhaohui Wu 0001"}]},"title":"Deep Learning of Graphs with Ngram Convolutional Neural Networks (Extended Abstract).","venue":"ICDE","pages":"1791-1792","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LuoLYLW18","doi":"10.1109/ICDE.2018.00253","ee":"https://doi.org/10.1109/ICDE.2018.00253","url":"https://dblp.org/rec/conf/icde/LuoLYLW18"},
+"url":"URL#3178805"
+},
+{
+"@score":"1",
+"@id":"3178806",
+"info":{"authors":{"author":[{"@pid":"185/9921","text":"Yuyu Luo"},{"@pid":"216/4931","text":"Xuedi Qin"},{"@pid":"27/104-1","text":"Nan Tang 0001"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"}]},"title":"DeepEye: Towards Automatic Data Visualization.","venue":"ICDE","pages":"101-112","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LuoQ0018","doi":"10.1109/ICDE.2018.00019","ee":"https://doi.org/10.1109/ICDE.2018.00019","url":"https://dblp.org/rec/conf/icde/LuoQ0018"},
+"url":"URL#3178806"
+},
+{
+"@score":"1",
+"@id":"3178807",
+"info":{"authors":{"author":[{"@pid":"228/4094","text":"Khanh Luong"},{"@pid":"99/1071","text":"Richi Nayak"}]},"title":"Learning Association Relationship and Accurate Geometric Structures for Multi-Type Relational Data.","venue":"ICDE","pages":"509-520","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/LuongN18","doi":"10.1109/ICDE.2018.00053","ee":"https://doi.org/10.1109/ICDE.2018.00053","url":"https://dblp.org/rec/conf/icde/LuongN18"},
+"url":"URL#3178807"
+},
+{
+"@score":"1",
+"@id":"3178808",
+"info":{"authors":{"author":[{"@pid":"35/6569","text":"Shuai Ma 0001"},{"@pid":"21/8587","text":"Chen Gong"},{"@pid":"175/4820","text":"Renjun Hu"},{"@pid":"179/2444","text":"Dongsheng Luo"},{"@pid":"03/405","text":"Chunming Hu"},{"@pid":"58/1722","text":"Jinpeng Huai"}]},"title":"Query Independent Scholarly Article Ranking.","venue":"ICDE","pages":"953-964","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/MaGHLHH18","doi":"10.1109/ICDE.2018.00090","ee":"https://doi.org/10.1109/ICDE.2018.00090","url":"https://dblp.org/rec/conf/icde/MaGHLHH18"},
+"url":"URL#3178808"
+},
+{
+"@score":"1",
+"@id":"3178809",
+"info":{"authors":{"author":[{"@pid":"82/8707","text":"Antonio Maccioni"},{"@pid":"t/RiccardoTorlone","text":"Riccardo Torlone"}]},"title":"Augmented Access for Querying and Exploring a Polystore.","venue":"ICDE","pages":"77-88","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/MaccioniT18","doi":"10.1109/ICDE.2018.00017","ee":"https://doi.org/10.1109/ICDE.2018.00017","url":"https://dblp.org/rec/conf/icde/MaccioniT18"},
+"url":"URL#3178809"
+},
+{
+"@score":"1",
+"@id":"3178810",
+"info":{"authors":{"author":[{"@pid":"73/10806","text":"Ahmed R. Mahmood"},{"@pid":"39/8165","text":"Ahmed M. Aly"},{"@pid":"a/WGAref","text":"Walid G. Aref"}]},"title":"FAST: Frequency-Aware Indexing for Spatio-Textual Data Streams.","venue":"ICDE","pages":"305-316","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/MahmoodAA18","doi":"10.1109/ICDE.2018.00036","ee":"https://doi.org/10.1109/ICDE.2018.00036","url":"https://dblp.org/rec/conf/icde/MahmoodAA18"},
+"url":"URL#3178810"
+},
+{
+"@score":"1",
+"@id":"3178811",
+"info":{"authors":{"author":[{"@pid":"m/EssamMansour","text":"Essam Mansour 0001"},{"@pid":"71/8700-1","text":"Dong Deng 0001"},{"@pid":"131/4202","text":"Raul Castro Fernandez"},{"@pid":"121/4198","text":"Abdulhakim Ali Qahtan"},{"@pid":"147/1253","text":"Wenbo Tao"},{"@pid":"38/8707","text":"Ziawasch Abedjan"},{"@pid":"e/AKElmagarmid","text":"Ahmed K. Elmagarmid"},{"@pid":"i/IhabFIlyas","text":"Ihab F. Ilyas"},{"@pid":"m/SamuelMadden","text":"Samuel Madden 0001"},{"@pid":"o/MouradOuzzani","text":"Mourad Ouzzani"},{"@pid":"s/MichaelStonebraker","text":"Michael Stonebraker"},{"@pid":"27/104-1","text":"Nan Tang 0001"}]},"title":"Building Data Civilizer Pipelines with an Advanced Workflow Engine.","venue":"ICDE","pages":"1593-1596","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/MansourDFQTAEIM18","doi":"10.1109/ICDE.2018.00184","ee":"https://doi.org/10.1109/ICDE.2018.00184","url":"https://dblp.org/rec/conf/icde/MansourDFQTAEIM18"},
+"url":"URL#3178811"
+},
+{
+"@score":"1",
+"@id":"3178812",
+"info":{"authors":{"author":[{"@pid":"04/7600","text":"Jiali Mao"},{"@pid":"12/5838","text":"Tao Wang"},{"@pid":"41/2511","text":"Cheqing Jin"},{"@pid":"z/AoyingZhou","text":"Aoying Zhou"}]},"title":"Feature Grouping-Based Outlier Detection upon Streaming Trajectories (Extended Abstract).","venue":"ICDE","pages":"1745-1746","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/MaoWJZ18","doi":"10.1109/ICDE.2018.00230","ee":"https://doi.org/10.1109/ICDE.2018.00230","url":"https://dblp.org/rec/conf/icde/MaoWJZ18"},
+"url":"URL#3178812"
+},
+{
+"@score":"1",
+"@id":"3178814",
+"info":{"authors":{"author":[{"@pid":"149/9256","text":"Ben McCamish"},{"@pid":"t/ArashTermehchy","text":"Arash Termehchy"},{"@pid":"75/9184","text":"Behrouz Touri"}]},"title":"The Data Exploration Game.","venue":"ICDE","pages":"1668-1669","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/McCamishTT18","doi":"10.1109/ICDE.2018.00206","ee":"https://doi.org/10.1109/ICDE.2018.00206","url":"https://dblp.org/rec/conf/icde/McCamishTT18"},
+"url":"URL#3178814"
+},
+{
+"@score":"1",
+"@id":"3178815",
+"info":{"authors":{"author":[{"@pid":"75/4888","text":"Xianrui Meng"},{"@pid":"74/8172","text":"Haohan Zhu"},{"@pid":"k/GeorgeKollios","text":"George Kollios"}]},"title":"Top-k Query Processing on Encrypted Databases with Strong Security Guarantees.","venue":"ICDE","pages":"353-364","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/MengZK18","doi":"10.1109/ICDE.2018.00040","ee":"https://doi.org/10.1109/ICDE.2018.00040","url":"https://dblp.org/rec/conf/icde/MengZK18"},
+"url":"URL#3178815"
+},
+{
+"@score":"1",
+"@id":"3178816",
+"info":{"authors":{"author":[{"@pid":"228/6077","text":"Alexandar Mihaylov"},{"@pid":"g/ParkeGodfrey","text":"Parke Godfrey"},{"@pid":"42/3296","text":"Lukasz Golab"},{"@pid":"27/3128","text":"Mehdi Kargar"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"},{"@pid":"06/9379","text":"Jaroslaw Szlichta"}]},"title":"FASTOD: Bringing Order to Data.","venue":"ICDE","pages":"1561-1564","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/MihaylovGGKSS18","doi":"10.1109/ICDE.2018.00176","ee":"https://doi.org/10.1109/ICDE.2018.00176","url":"https://dblp.org/rec/conf/icde/MihaylovGGKSS18"},
+"url":"URL#3178816"
+},
+{
+"@score":"1",
+"@id":"3178817",
+"info":{"authors":{"author":[{"@pid":"123/8067","text":"Mohammadreza Najafi"},{"@pid":"56/7016","text":"Mohammad Sadoghi"},{"@pid":"j/HansArnoJacobsen","text":"Hans-Arno Jacobsen"}]},"title":"A Scalable Circular Pipeline Design for Multi-Way Stream Joins in Hardware.","venue":"ICDE","pages":"1280-1283","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/NajafiSJ18","doi":"10.1109/ICDE.2018.00130","ee":"https://doi.org/10.1109/ICDE.2018.00130","url":"https://dblp.org/rec/conf/icde/NajafiSJ18"},
+"url":"URL#3178817"
+},
+{
+"@score":"1",
+"@id":"3178818",
+"info":{"authors":{"author":[{"@pid":"197/4306","text":"Yoon-Min Nam"},{"@pid":"k/MinSooKim2","text":"Min-Soo Kim 0002"},{"@pid":"197/4309","text":"Donghyoung Han"}]},"title":"A Graph-Based Database Partitioning Method for Parallel OLAP Query Processing.","venue":"ICDE","pages":"1025-1036","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/NamKH18","doi":"10.1109/ICDE.2018.00096","ee":"https://doi.org/10.1109/ICDE.2018.00096","url":"https://dblp.org/rec/conf/icde/NamKH18"},
+"url":"URL#3178818"
+},
+{
+"@score":"1",
+"@id":"3178819",
+"info":{"authors":{"author":{"@pid":"n/RaghuOthayothNambiar","text":"Raghunath Nambiar"}},"title":"Towards an Industry Standard for Benchmarking Artificial Intelligence Systems.","venue":"ICDE","pages":"1679-1680","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Nambiar18","doi":"10.1109/ICDE.2018.00212","ee":"https://doi.org/10.1109/ICDE.2018.00212","url":"https://dblp.org/rec/conf/icde/Nambiar18"},
+"url":"URL#3178819"
+},
+{
+"@score":"1",
+"@id":"3178820",
+"info":{"authors":{"author":[{"@pid":"119/7627","text":"Athanasios Naskos"},{"@pid":"g/AGounaris","text":"Anastasios Gounaris"},{"@pid":"83/741","text":"Ioannis Konstantinou"}]},"title":"Elton: A Cloud Resource Scaling-Out Manager for NoSQL Databases.","venue":"ICDE","pages":"1641-1644","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/NaskosGK18","doi":"10.1109/ICDE.2018.00196","ee":"https://doi.org/10.1109/ICDE.2018.00196","url":"https://dblp.org/rec/conf/icde/NaskosGK18"},
+"url":"URL#3178820"
+},
+{
+"@score":"1",
+"@id":"3178821",
+"info":{"authors":{"author":[{"@pid":"159/9866","text":"Rodica Neamtu"},{"@pid":"12/10718","text":"Ramoza Ahsan"},{"@pid":"r/EARundensteiner","text":"Elke A. Rundensteiner"},{"@pid":"25/2601","text":"Gábor N. Sárközy"},{"@pid":"k/EamonnJKeogh","text":"Eamonn J. Keogh"},{"@pid":"188/3704","text":"Hoang Anh Dau"},{"@pid":"00/6661","text":"Cuong Nguyen"},{"@pid":"199/6363","text":"Charles Lovering"}]},"title":"Generalized Dynamic Time Warping: Unleashing the Warping Power Hidden in Point-Wise Distances.","venue":"ICDE","pages":"521-532","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/NeamtuARSKDNL18","doi":"10.1109/ICDE.2018.00054","ee":"https://doi.org/10.1109/ICDE.2018.00054","url":"https://dblp.org/rec/conf/icde/NeamtuARSKDNL18"},
+"url":"URL#3178821"
+},
+{
+"@score":"1",
+"@id":"3178822",
+"info":{"authors":{"author":{"@pid":"n/ThomasNeumann","text":"Thomas Neumann 0001"}},"title":"Reasoning in the Presence of NULLs.","venue":"ICDE","pages":"1682-1683","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Neumann18","doi":"10.1109/ICDE.2018.00214","ee":"https://doi.org/10.1109/ICDE.2018.00214","url":"https://dblp.org/rec/conf/icde/Neumann18"},
+"url":"URL#3178822"
+},
+{
+"@score":"1",
+"@id":"3178823",
+"info":{"authors":{"author":[{"@pid":"88/302","text":"Quoc Viet Hung Nguyen"},{"@pid":"73/3928-1","text":"Kai Zheng 0001"},{"@pid":"61/267","text":"Matthias Weidlich 0001"},{"@pid":"152/4895","text":"Bolong Zheng"},{"@pid":"04/10606","text":"Hongzhi Yin"},{"@pid":"176/9222","text":"Thanh Tam Nguyen"},{"@pid":"74/1636","text":"Bela Stantic"}]},"title":"What-If Analysis with Conflicting Goals: Recommending Data Ranges for Exploration.","venue":"ICDE","pages":"89-100","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Nguyen0WZYTS18","doi":"10.1109/ICDE.2018.00018","ee":"https://doi.org/10.1109/ICDE.2018.00018","url":"https://dblp.org/rec/conf/icde/Nguyen0WZYTS18"},
+"url":"URL#3178823"
+},
+{
+"@score":"1",
+"@id":"3178824",
+"info":{"authors":{"author":[{"@pid":"88/302","text":"Quoc Viet Hung Nguyen"},{"@pid":"210/8741","text":"Huynh Huu Viet"},{"@pid":"176/9222","text":"Thanh Tam Nguyen"},{"@pid":"61/267","text":"Matthias Weidlich 0001"},{"@pid":"04/10606","text":"Hongzhi Yin"},{"@pid":"z/XiaofangZhou","text":"Xiaofang Zhou 0001"}]},"title":"Computing Crowd Consensus with Partial Agreement.","venue":"ICDE","pages":"1749-1750","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/NguyenVNWYZ18","doi":"10.1109/ICDE.2018.00232","ee":"https://doi.org/10.1109/ICDE.2018.00232","url":"https://dblp.org/rec/conf/icde/NguyenVNWYZ18"},
+"url":"URL#3178824"
+},
+{
+"@score":"1",
+"@id":"3178825",
+"info":{"authors":{"author":[{"@pid":"67/1152","text":"Stefan Noll"},{"@pid":"t/JensTeubner","text":"Jens Teubner"},{"@pid":"89/6071","text":"Norman May"},{"@pid":"92/6505","text":"Alexander Böhm 0002"}]},"title":"Accelerating Concurrent Workloads with CPU Cache Partitioning.","venue":"ICDE","pages":"437-448","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/NollTMB18","doi":"10.1109/ICDE.2018.00047","ee":"https://doi.org/10.1109/ICDE.2018.00047","url":"https://dblp.org/rec/conf/icde/NollTMB18"},
+"url":"URL#3178825"
+},
+{
+"@score":"1",
+"@id":"3178826",
+"info":{"authors":{"author":[{"@pid":"200/2315","text":"Sejoon Oh"},{"@pid":"116/9404","text":"Namyong Park"},{"@pid":"32/7593","text":"Lee Sael"},{"@pid":"13/7122","text":"U Kang"}]},"title":"Scalable Tucker Factorization for Sparse Tensors - Algorithms and Discoveries.","venue":"ICDE","pages":"1120-1131","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/OhPSK18","doi":"10.1109/ICDE.2018.00104","ee":"https://doi.org/10.1109/ICDE.2018.00104","url":"https://dblp.org/rec/conf/icde/OhPSK18"},
+"url":"URL#3178826"
+},
+{
+"@score":"1",
+"@id":"3178827",
+"info":{"authors":{"author":[{"@pid":"163/3889","text":"Pericles de Oliveira"},{"@pid":"s/ASdaSilva","text":"Altigran S. da Silva"},{"@pid":"m/EdlenoSilvadeMoura","text":"Edleno Silva de Moura"},{"@pid":"47/7842","text":"Rosiane Rodrigues"}]},"title":"Match-Based Candidate Network Generation for Keyword Queries over Relational Databases.","venue":"ICDE","pages":"1344-1347","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/OliveiraSMR18","doi":"10.1109/ICDE.2018.00146","ee":"https://doi.org/10.1109/ICDE.2018.00146","url":"https://dblp.org/rec/conf/icde/OliveiraSMR18"},
+"url":"URL#3178827"
+},
+{
+"@score":"1",
+"@id":"3178828",
+"info":{"authors":{"author":[{"@pid":"135/4648","text":"Stefano Ortona"},{"@pid":"117/2614","text":"Venkata Vamsikrishna Meduri"},{"@pid":"p/PaoloPapotti","text":"Paolo Papotti"}]},"title":"Robust Discovery of Positive and Negative Rules in Knowledge Bases.","venue":"ICDE","pages":"1168-1179","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/OrtonaMP18","doi":"10.1109/ICDE.2018.00108","ee":"https://doi.org/10.1109/ICDE.2018.00108","url":"https://dblp.org/rec/conf/icde/OrtonaMP18"},
+"url":"URL#3178828"
+},
+{
+"@score":"1",
+"@id":"3178829",
+"info":{"authors":{"author":[{"@pid":"158/7997","text":"Dimitra Papadimitriou"},{"@pid":"k/GeorgiaKoutrika","text":"Georgia Koutrika"},{"@pid":"v/YannisVelegrakis","text":"Yannis Velegrakis"},{"@pid":"m/JohnMylopoulos","text":"John Mylopoulos"}]},"title":"Finding Related Forum Posts through Content Similarity over Intention-Based Segmentation (Extended Abstract).","venue":"ICDE","pages":"1805-1806","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/PapadimitriouKV18","doi":"10.1109/ICDE.2018.00260","ee":"https://doi.org/10.1109/ICDE.2018.00260","url":"https://dblp.org/rec/conf/icde/PapadimitriouKV18"},
+"url":"URL#3178829"
+},
+{
+"@score":"1",
+"@id":"3178830",
+"info":{"authors":{"author":[{"@pid":"152/9341","text":"Katerina Papaioannou"},{"@pid":"t/MartinTheobald","text":"Martin Theobald"},{"@pid":"b/MichaelHBohlen","text":"Michael H. Böhlen"}]},"title":"Supporting Set Operations in Temporal-Probabilistic Databases.","venue":"ICDE","pages":"1180-1191","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/PapaioannouTB18","doi":"10.1109/ICDE.2018.00109","ee":"https://doi.org/10.1109/ICDE.2018.00109","url":"https://dblp.org/rec/conf/icde/PapaioannouTB18"},
+"url":"URL#3178830"
+},
+{
+"@score":"1",
+"@id":"3178832",
+"info":{"authors":{"author":[{"@pid":"116/9684","text":"Pedro Pedreira"},{"@pid":"68/7450","text":"Yinghai Lu"},{"@pid":"228/6093","text":"Sergey Pershin"},{"@pid":"01/4730","text":"Amit Dutta"},{"@pid":"185/4332","text":"Chris Croswhite"}]},"title":"Rethinking Concurrency Control for In-Memory OLAP DBMSs.","venue":"ICDE","pages":"1453-1464","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/PedreiraLPDC18","doi":"10.1109/ICDE.2018.00164","ee":"https://doi.org/10.1109/ICDE.2018.00164","url":"https://dblp.org/rec/conf/icde/PedreiraLPDC18"},
+"url":"URL#3178832"
+},
+{
+"@score":"1",
+"@id":"3178833",
+"info":{"authors":{"author":[{"@pid":"56/6780","text":"You Peng"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"98/5684-1","text":"Wenjie Zhang 0001"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"},{"@pid":"51/5585","text":"Lu Qin 0001"}]},"title":"Efficient Probabilistic K-Core Computation on Uncertain Graphs.","venue":"ICDE","pages":"1192-1203","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/PengZZLQ18","doi":"10.1109/ICDE.2018.00110","ee":"https://doi.org/10.1109/ICDE.2018.00110","url":"https://dblp.org/rec/conf/icde/PengZZLQ18"},
+"url":"URL#3178833"
+},
+{
+"@score":"1",
+"@id":"3178835",
+"info":{"authors":{"author":[{"@pid":"138/5582","text":"Jose Picado"},{"@pid":"207/7598","text":"Sudhanshu Pathak"},{"@pid":"t/ArashTermehchy","text":"Arash Termehchy"},{"@pid":"49/6764","text":"Alan Fern"}]},"title":"AutoMode: Relational Learning with Less Black Magic.","venue":"ICDE","pages":"1553-1556","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/PicadoPTF18","doi":"10.1109/ICDE.2018.00174","ee":"https://doi.org/10.1109/ICDE.2018.00174","url":"https://dblp.org/rec/conf/icde/PicadoPTF18"},
+"url":"URL#3178835"
+},
+{
+"@score":"1",
+"@id":"3178836",
+"info":{"authors":{"author":[{"@pid":"181/5796","text":"Julien Pilourdault"},{"@pid":"a/SihemAmerYahia","text":"Sihem Amer-Yahia"},{"@pid":"97/3301","text":"Senjuti Basu Roy"},{"@pid":"l/DongwonLee","text":"Dongwon Lee 0001"}]},"title":"Task Relevance and Diversity as Worker Motivation in Crowdsourcing.","venue":"ICDE","pages":"365-376","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/PilourdaultAR018","doi":"10.1109/ICDE.2018.00041","ee":"https://doi.org/10.1109/ICDE.2018.00041","url":"https://dblp.org/rec/conf/icde/PilourdaultAR018"},
+"url":"URL#3178836"
+},
+{
+"@score":"1",
+"@id":"3178837",
+"info":{"authors":{"author":[{"@pid":"p/MeikelPoss","text":"Meikel Poess"},{"@pid":"n/RaghuOthayothNambiar","text":"Raghunath Nambiar"},{"@pid":"177/5634","text":"Karthik Kulkarni"},{"@pid":"195/1933","text":"Chinmayi Narasimhadevara"},{"@pid":"10/760","text":"Tilmann Rabl"},{"@pid":"j/HansArnoJacobsen","text":"Hans-Arno Jacobsen"}]},"title":"Analysis of TPCx-IoT: The First Industry Standard Benchmark for IoT Gateway Systems.","venue":"ICDE","pages":"1519-1530","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/PoessNKNRJ18","doi":"10.1109/ICDE.2018.00170","ee":"https://doi.org/10.1109/ICDE.2018.00170","url":"https://dblp.org/rec/conf/icde/PoessNKNRJ18"},
+"url":"URL#3178837"
+},
+{
+"@score":"1",
+"@id":"3178838",
+"info":{"authors":{"author":[{"@pid":"71/7422","text":"Olga Poppe"},{"@pid":"228/6081","text":"Allison Rozet"},{"@pid":"87/10957","text":"Chuan Lei"},{"@pid":"r/EARundensteiner","text":"Elke A. Rundensteiner"},{"@pid":"m/DavidMaier","text":"David Maier 0001"}]},"title":"Sharon: Shared Online Event Sequence Aggregation.","venue":"ICDE","pages":"737-748","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/PoppeRLR018","doi":"10.1109/ICDE.2018.00072","ee":"https://doi.org/10.1109/ICDE.2018.00072","url":"https://dblp.org/rec/conf/icde/PoppeRLR018"},
+"url":"URL#3178838"
+},
+{
+"@score":"1",
+"@id":"3178839",
+"info":{"authors":{"author":[{"@pid":"199/6324","text":"Romila Pradhan"},{"@pid":"62/7525","text":"Siarhei Bykau"},{"@pid":"p/SunilPrabhakar","text":"Sunil Prabhakar"}]},"title":"A Framework to Integrate User Feedback for Rapid Conflict Resolution.","venue":"ICDE","pages":"1589-1592","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/PradhanBP18","doi":"10.1109/ICDE.2018.00183","ee":"https://doi.org/10.1109/ICDE.2018.00183","url":"https://dblp.org/rec/conf/icde/PradhanBP18"},
+"url":"URL#3178839"
+},
+{
+"@score":"1",
+"@id":"3178840",
+"info":{"authors":{"author":[{"@pid":"71/3034","text":"Kai Puolamäki"},{"@pid":"44/4695","text":"Emilia Oikarinen"},{"@pid":"26/4533","text":"Bo Kang"},{"@pid":"62/8320","text":"Jefrey Lijffijt"},{"@pid":"49/2018","text":"Tijl De Bie"}]},"title":"Interactive Visual Data Exploration with Subjective Feedback: An Information-Theoretic Approach.","venue":"ICDE","pages":"1208-1211","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/PuolamakiOKLB18","doi":"10.1109/ICDE.2018.00112","ee":"https://doi.org/10.1109/ICDE.2018.00112","url":"https://dblp.org/rec/conf/icde/PuolamakiOKLB18"},
+"url":"URL#3178840"
+},
+{
+"@score":"1",
+"@id":"3178841",
+"info":{"authors":{"author":[{"@pid":"121/4198","text":"Abdulhakim Ali Qahtan"},{"@pid":"e/AKElmagarmid","text":"Ahmed K. Elmagarmid"},{"@pid":"o/MouradOuzzani","text":"Mourad Ouzzani"},{"@pid":"27/104-1","text":"Nan Tang 0001"}]},"title":"FAHES: Detecting Disguised Missing Values.","venue":"ICDE","pages":"1609-1612","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/QahtanEO018","doi":"10.1109/ICDE.2018.00188","ee":"https://doi.org/10.1109/ICDE.2018.00188","url":"https://dblp.org/rec/conf/icde/QahtanEO018"},
+"url":"URL#3178841"
+},
+{
+"@score":"1",
+"@id":"3178842",
+"info":{"authors":{"author":[{"@pid":"121/4198","text":"Abdulhakim Ali Qahtan"},{"@pid":"27/1836","text":"Suojin Wang"},{"@pid":"74/1890-1","text":"Xiangliang Zhang 0001"}]},"title":"KDE-Track: An Efficient Dynamic Density Estimator for Data Streams (Extended Abstract).","venue":"ICDE","pages":"1759-1760","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/QahtanWZ18","doi":"10.1109/ICDE.2018.00237","ee":"https://doi.org/10.1109/ICDE.2018.00237","url":"https://dblp.org/rec/conf/icde/QahtanWZ18"},
+"url":"URL#3178842"
+},
+{
+"@score":"1",
+"@id":"3178843",
+"info":{"authors":{"author":[{"@pid":"41/1074-1","text":"Jianzhong Qi 0001"},{"@pid":"82/2381","text":"Vivek Kumar"},{"@pid":"03/505","text":"Rui Zhang 0003"},{"@pid":"22/544","text":"Egemen Tanin"},{"@pid":"66/974","text":"Goce Trajcevski"},{"@pid":"s/PeterScheuermann","text":"Peter Scheuermann"}]},"title":"Continuous Maintenance of Range Sum Heat Maps.","venue":"ICDE","pages":"1625-1628","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/QiKZTTS18","doi":"10.1109/ICDE.2018.00192","ee":"https://doi.org/10.1109/ICDE.2018.00192","url":"https://dblp.org/rec/conf/icde/QiKZTTS18"},
+"url":"URL#3178843"
+},
+{
+"@score":"1",
+"@id":"3178844",
+"info":{"authors":{"author":[{"@pid":"01/9727","text":"Jianbin Qin"},{"@pid":"131/4193","text":"Yaoshu Wang"},{"@pid":"57/4384-1","text":"Chuan Xiao 0001"},{"@pid":"w/WeiWang11","text":"Wei Wang 0011"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"},{"@pid":"i/YoshiharuIshikawa","text":"Yoshiharu Ishikawa"}]},"title":"GPH: Similarity Search in Hamming Space.","venue":"ICDE","pages":"29-40","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/QinWXWLI18","doi":"10.1109/ICDE.2018.00013","ee":"https://doi.org/10.1109/ICDE.2018.00013","url":"https://dblp.org/rec/conf/icde/QinWXWLI18"},
+"url":"URL#3178844"
+},
+{
+"@score":"1",
+"@id":"3178846",
+"info":{"authors":{"author":{"@pid":"13/4685","text":"Eyal Rozenberg"}},"title":"Decomposing and Re-Composing Lightweight Compression Schemes - And Why It Matters.","venue":"ICDE","pages":"1670-1671","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Rozenberg18","doi":"10.1109/ICDE.2018.00207","ee":"https://doi.org/10.1109/ICDE.2018.00207","url":"https://dblp.org/rec/conf/icde/Rozenberg18"},
+"url":"URL#3178846"
+},
+{
+"@score":"1",
+"@id":"3178847",
+"info":{"authors":{"author":[{"@pid":"204/3375","text":"Sijie Ruan"},{"@pid":"157/4235","text":"Ruiyuan Li"},{"@pid":"b/JieBao3","text":"Jie Bao 0003"},{"@pid":"204/3378","text":"Tianfu He"},{"@pid":"87/1585-4","text":"Yu Zheng 0004"}]},"title":"CloudTP: A Cloud-Based Flexible Trajectory Preprocessing Framework.","venue":"ICDE","pages":"1601-1604","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/RuanL0HZ18","doi":"10.1109/ICDE.2018.00186","ee":"https://doi.org/10.1109/ICDE.2018.00186","url":"https://dblp.org/rec/conf/icde/RuanL0HZ18"},
+"url":"URL#3178847"
+},
+{
+"@score":"1",
+"@id":"3178848",
+"info":{"authors":{"author":[{"@pid":"62/8342","text":"Md. Shiblee Sadik"},{"@pid":"g/LeGruenwald","text":"Le Gruenwald"},{"@pid":"161/9210","text":"Eleazar Leal"}]},"title":"Wadjet: Finding Outliers in Multiple Multi-Dimensional Heterogeneous Data Streams.","venue":"ICDE","pages":"1232-1235","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SadikGL18","doi":"10.1109/ICDE.2018.00118","ee":"https://doi.org/10.1109/ICDE.2018.00118","url":"https://dblp.org/rec/conf/icde/SadikGL18"},
+"url":"URL#3178848"
+},
+{
+"@score":"1",
+"@id":"3178849",
+"info":{"authors":{"author":[{"@pid":"137/8983","text":"Cetin Sahin"},{"@pid":"a/AmrElAbbadi","text":"Amr El Abbadi"}]},"title":"Data Security and Privacy for Outsourced Data in the Cloud.","venue":"ICDE","pages":"1731-1734","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SahinA18","doi":"10.1109/ICDE.2018.00225","ee":"https://doi.org/10.1109/ICDE.2018.00225","url":"https://dblp.org/rec/conf/icde/SahinA18"},
+"url":"URL#3178849"
+},
+{
+"@score":"1",
+"@id":"3178850",
+"info":{"authors":{"author":[{"@pid":"137/8983","text":"Cetin Sahin"},{"@pid":"05/1478","text":"Tristan Allard"},{"@pid":"25/3618","text":"Reza Akbarinia"},{"@pid":"a/AmrElAbbadi","text":"Amr El Abbadi"},{"@pid":"54/3765","text":"Esther Pacitti"}]},"title":"A Differentially Private Index for Range Query Processing in Clouds.","venue":"ICDE","pages":"857-868","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SahinAAAP18","doi":"10.1109/ICDE.2018.00082","ee":"https://doi.org/10.1109/ICDE.2018.00082","url":"https://dblp.org/rec/conf/icde/SahinAAAP18"},
+"url":"URL#3178850"
+},
+{
+"@score":"1",
+"@id":"3178851",
+"info":{"authors":{"author":{"@pid":"s/HananSamet","text":"Hanan Samet"}},"title":"Sorting in Space and Words.","venue":"ICDE","pages":"1719-1722","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Samet18","doi":"10.1109/ICDE.2018.00222","ee":"https://doi.org/10.1109/ICDE.2018.00222","url":"https://dblp.org/rec/conf/icde/Samet18"},
+"url":"URL#3178851"
+},
+{
+"@score":"1",
+"@id":"3178852",
+"info":{"authors":{"author":[{"@pid":"150/6957","text":"Antonia Saravanou"},{"@pid":"25/6745","text":"Ioannis Katakis 0001"},{"@pid":"49/4395","text":"George Valkanas"},{"@pid":"g/DimitriosGunopulos","text":"Dimitrios Gunopulos"}]},"title":"Detection and Delineation of Events and Sub-Events in Social Networks.","venue":"ICDE","pages":"1348-1351","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SaravanouKVG18","doi":"10.1109/ICDE.2018.00147","ee":"https://doi.org/10.1109/ICDE.2018.00147","url":"https://dblp.org/rec/conf/icde/SaravanouKVG18"},
+"url":"URL#3178852"
+},
+{
+"@score":"1",
+"@id":"3178853",
+"info":{"authors":{"author":[{"@pid":"95/9990","text":"Mohamed Sarwat"},{"@pid":"117/2614","text":"Venkata Vamsikrishna Meduri"}]},"title":"Human-Database Interaction: A Holistic Approach.","venue":"ICDE","pages":"1673-1674","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SarwatM18","doi":"10.1109/ICDE.2018.00209","ee":"https://doi.org/10.1109/ICDE.2018.00209","url":"https://dblp.org/rec/conf/icde/SarwatM18"},
+"url":"URL#3178853"
+},
+{
+"@score":"1",
+"@id":"3178854",
+"info":{"authors":{"author":[{"@pid":"129/6818","text":"Felix Martin Schuhknecht"},{"@pid":"d/JensPeterDittrich","text":"Jens Dittrich"},{"@pid":"228/6056","text":"Laurent Linden"}]},"title":"Adaptive Adaptive Indexing.","venue":"ICDE","pages":"665-676","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SchuhknechtDL18","doi":"10.1109/ICDE.2018.00066","ee":"https://doi.org/10.1109/ICDE.2018.00066","url":"https://dblp.org/rec/conf/icde/SchuhknechtDL18"},
+"url":"URL#3178854"
+},
+{
+"@score":"1",
+"@id":"3178855",
+"info":{"authors":{"author":[{"@pid":"s/MargoISeltzer","text":"Margo I. Seltzer"},{"@pid":"36/5512","text":"Virendra J. Marathe"},{"@pid":"116/9618","text":"Steve Byan"}]},"title":"An NVM Carol: Visions of NVM Past, Present, and Future.","venue":"ICDE","pages":"15-23","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SeltzerMB18","doi":"10.1109/ICDE.2018.00011","ee":"https://doi.org/10.1109/ICDE.2018.00011","url":"https://dblp.org/rec/conf/icde/SeltzerMB18"},
+"url":"URL#3178855"
+},
+{
+"@score":"1",
+"@id":"3178856",
+"info":{"authors":{"author":[{"@pid":"193/1652","text":"Caihua Shan"},{"@pid":"34/6253","text":"Nikos Mamoulis"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"89/2619","text":"Reynold Cheng"},{"@pid":"34/10063","text":"Zhipeng Huang 0001"},{"@pid":"160/1053","text":"Yudian Zheng"}]},"title":"T-Crowd: Effective Crowdsourcing for Tabular Data.","venue":"ICDE","pages":"1316-1319","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ShanM0C0Z18","doi":"10.1109/ICDE.2018.00139","ee":"https://doi.org/10.1109/ICDE.2018.00139","url":"https://dblp.org/rec/conf/icde/ShanM0C0Z18"},
+"url":"URL#3178856"
+},
+{
+"@score":"1",
+"@id":"3178857",
+"info":{"authors":{"author":[{"@pid":"29/8750","text":"Shuo Shang"},{"@pid":"37/10606","text":"Lisi Chen 0001"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"},{"@pid":"w/JRWen","text":"Ji-Rong Wen"},{"@pid":"97/3036","text":"Panos Kalnis"}]},"title":"Searching Trajectories by Regions of Interest.","venue":"ICDE","pages":"1741-1742","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ShangCJWK18","doi":"10.1109/ICDE.2018.00228","ee":"https://doi.org/10.1109/ICDE.2018.00228","url":"https://dblp.org/rec/conf/icde/ShangCJWK18"},
+"url":"URL#3178857"
+},
+{
+"@score":"1",
+"@id":"3178858",
+"info":{"authors":{"author":[{"@pid":"131/2926","text":"Yingxia Shao"},{"@pid":"64/9060","text":"Kai Lei"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"},{"@pid":"70/6862","text":"Zi Huang"},{"@pid":"55/5031","text":"Bin Cui 0001"},{"@pid":"46/394","text":"Zhongyi Liu"},{"@pid":"14/1705","text":"Yunhai Tong"},{"@pid":"97/3265-2","text":"Jin Xu 0002"}]},"title":"Fast Parallel Path Concatenation for Graph Extraction.","venue":"ICDE","pages":"1753-1754","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ShaoLCH0LTX18","doi":"10.1109/ICDE.2018.00234","ee":"https://doi.org/10.1109/ICDE.2018.00234","url":"https://dblp.org/rec/conf/icde/ShaoLCH0LTX18"},
+"url":"URL#3178858"
+},
+{
+"@score":"1",
+"@id":"3178859",
+"info":{"authors":{"author":[{"@pid":"44/7094","text":"Darius Sidlauskas"},{"@pid":"25/7564","text":"Sean Chester"},{"@pid":"164/7451","text":"Eleni Tzirita Zacharatou"},{"@pid":"a/AnastassiaAilamaki","text":"Anastasia Ailamaki"}]},"title":"Improving Spatial Data Processing by Clipping Minimum Bounding Boxes.","venue":"ICDE","pages":"425-436","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SidlauskasCZA18","doi":"10.1109/ICDE.2018.00046","ee":"https://doi.org/10.1109/ICDE.2018.00046","url":"https://dblp.org/rec/conf/icde/SidlauskasCZA18"},
+"url":"URL#3178859"
+},
+{
+"@score":"1",
+"@id":"3178860",
+"info":{"authors":{"author":[{"@pid":"151/8293","text":"Giovanni Simonini"},{"@pid":"32/1624","text":"George Papadakis 0001"},{"@pid":"p/ThemisPalpanas","text":"Themis Palpanas"},{"@pid":"b/SBergamaschi","text":"Sonia Bergamaschi"}]},"title":"Schema-Agnostic Progressive Entity Resolution.","venue":"ICDE","pages":"53-64","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Simonini0PB18","doi":"10.1109/ICDE.2018.00015","ee":"https://doi.org/10.1109/ICDE.2018.00015","url":"https://dblp.org/rec/conf/icde/Simonini0PB18"},
+"url":"URL#3178860"
+},
+{
+"@score":"1",
+"@id":"3178861",
+"info":{"authors":{"author":[{"@pid":"194/4708","text":"Mahesh P. Singh"},{"@pid":"97/5792","text":"Puneet Agarwal"},{"@pid":"31/7455","text":"Ashish Chaudhary"},{"@pid":"54/3265","text":"Gautam Shroff"},{"@pid":"168/2866","text":"Prerna Khurana"},{"@pid":"194/4672","text":"Mayur Patidar"},{"@pid":"228/6100","text":"Vivek Bisht"},{"@pid":"228/6038","text":"Rachit Bansal"},{"@pid":"228/6047","text":"Prateek Sachan"},{"@pid":"19/139","text":"Rohit Kumar"}]},"title":"KNADIA: Enterprise KNowledge Assisted DIAlogue Systems Using Deep Learning.","venue":"ICDE","pages":"1423-1434","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SinghACSKPBBSK18","doi":"10.1109/ICDE.2018.00161","ee":"https://doi.org/10.1109/ICDE.2018.00161","url":"https://dblp.org/rec/conf/icde/SinghACSKPBBSK18"},
+"url":"URL#3178861"
+},
+{
+"@score":"1",
+"@id":"3178862",
+"info":{"authors":{"author":[{"@pid":"131/4844","text":"Chunyao Song"},{"@pid":"25/2228","text":"Tingjian Ge"}]},"title":"Labeled Graph Sketches.","venue":"ICDE","pages":"1312-1315","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SongG18","doi":"10.1109/ICDE.2018.00138","ee":"https://doi.org/10.1109/ICDE.2018.00138","url":"https://dblp.org/rec/conf/icde/SongG18"},
+"url":"URL#3178862"
+},
+{
+"@score":"1",
+"@id":"3178863",
+"info":{"authors":{"author":{"@pid":"s/MichaelStonebraker","text":"Michael Stonebraker"}},"title":"My Top Ten Fears about the DBMS Field.","venue":"ICDE","pages":"24-28","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Stonebraker18","doi":"10.1109/ICDE.2018.00012","ee":"https://doi.org/10.1109/ICDE.2018.00012","url":"https://dblp.org/rec/conf/icde/Stonebraker18"},
+"url":"URL#3178863"
+},
+{
+"@score":"1",
+"@id":"3178864",
+"info":{"authors":{"author":[{"@pid":"82/1426","text":"Uta Störl"},{"@pid":"13/204-4","text":"Daniel Müller 0004"},{"@pid":"228/6030","text":"Alexander Tekleab"},{"@pid":"228/6086","text":"Stephane Tolale"},{"@pid":"228/6091","text":"Julian Stenzel"},{"@pid":"k/MeikeKlettke","text":"Meike Klettke"},{"@pid":"s/StefanieScherzinger","text":"Stefanie Scherzinger"}]},"title":"Curating Variational Data in Application Development.","venue":"ICDE","pages":"1605-1608","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Storl0TTSKS18","doi":"10.1109/ICDE.2018.00187","ee":"https://doi.org/10.1109/ICDE.2018.00187","url":"https://dblp.org/rec/conf/icde/Storl0TTSKS18"},
+"url":"URL#3178864"
+},
+{
+"@score":"1",
+"@id":"3178865",
+"info":{"authors":{"author":[{"@pid":"82/1426","text":"Uta Störl"},{"@pid":"228/6030","text":"Alexander Tekleab"},{"@pid":"k/MeikeKlettke","text":"Meike Klettke"},{"@pid":"s/StefanieScherzinger","text":"Stefanie Scherzinger"}]},"title":"In for a Surprise When Migrating NoSQL Data.","venue":"ICDE","pages":"1662","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/StorlTKS18","doi":"10.1109/ICDE.2018.00202","ee":"https://doi.org/10.1109/ICDE.2018.00202","url":"https://dblp.org/rec/conf/icde/StorlTKS18"},
+"url":"URL#3178865"
+},
+{
+"@score":"1",
+"@id":"3178866",
+"info":{"authors":{"author":[{"@pid":"05/365-5","text":"Li Su 0005"},{"@pid":"z/YongluanZhou","text":"Yongluan Zhou"}]},"title":"Query-Centric Failure Recovery for Distributed Stream Processing Engines.","venue":"ICDE","pages":"1276-1279","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SuZ18","doi":"10.1109/ICDE.2018.00129","ee":"https://doi.org/10.1109/ICDE.2018.00129","url":"https://dblp.org/rec/conf/icde/SuZ18"},
+"url":"URL#3178866"
+},
+{
+"@score":"1",
+"@id":"3178867",
+"info":{"authors":{"author":[{"@pid":"174/9808","text":"Haipei Sun"},{"@pid":"11/9085","text":"Boxiang Dong"},{"@pid":"36/2259-51","text":"Bo Zhang 0051"},{"@pid":"52/4725","text":"Wendy Hui Wang"},{"@pid":"36/195","text":"Murat Kantarcioglu"}]},"title":"Sensitive Task Assignments in Crowdsourcing Markets with Colluding Workers.","venue":"ICDE","pages":"377-388","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SunDZWK18","doi":"10.1109/ICDE.2018.00042","ee":"https://doi.org/10.1109/ICDE.2018.00042","url":"https://dblp.org/rec/conf/icde/SunDZWK18"},
+"url":"URL#3178867"
+},
+{
+"@score":"1",
+"@id":"3178868",
+"info":{"authors":{"author":[{"@pid":"150/3864","text":"Guohao Sun"},{"@pid":"01/1235-1","text":"Guanfeng Liu 0001"},{"@pid":"59/2227-2","text":"Yan Wang 0002"},{"@pid":"o/MehmetAOrgun","text":"Mehmet A. Orgun"},{"@pid":"z/XiaofangZhou","text":"Xiaofang Zhou 0001"}]},"title":"Incremental Graph Pattern Based Node Matching.","venue":"ICDE","pages":"281-292","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SunLWOZ18","doi":"10.1109/ICDE.2018.00034","ee":"https://doi.org/10.1109/ICDE.2018.00034","url":"https://dblp.org/rec/conf/icde/SunLWOZ18"},
+"url":"URL#3178868"
+},
+{
+"@score":"1",
+"@id":"3178869",
+"info":{"authors":{"author":[{"@pid":"46/7650","text":"Jiabao Sun"},{"@pid":"20/1590","text":"Jiajie Xu 0001"},{"@pid":"97/4357","text":"Rui Zhou 0001"},{"@pid":"73/3928-1","text":"Kai Zheng 0001"},{"@pid":"l/ChengfeiLiu","text":"Chengfei Liu"}]},"title":"Discovering Expert Drivers from Trajectories.","venue":"ICDE","pages":"1332-1335","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SunX00L18","doi":"10.1109/ICDE.2018.00143","ee":"https://doi.org/10.1109/ICDE.2018.00143","url":"https://dblp.org/rec/conf/icde/SunX00L18"},
+"url":"URL#3178869"
+},
+{
+"@score":"1",
+"@id":"3178870",
+"info":{"authors":{"author":[{"@pid":"220/3569","text":"Rikuya Suzuki"},{"@pid":"68/1522","text":"Tetsuo Sakaguchi"},{"@pid":"30/8788","text":"Masaki Matsubara"},{"@pid":"k/HiroyukiKitagawa","text":"Hiroyuki Kitagawa"},{"@pid":"m/AtsuyukiMorishima","text":"Atsuyuki Morishima"}]},"title":"CrowdSheet: Instant Implementation and Out-of-Hand Execution of Complex Crowdsourcing.","venue":"ICDE","pages":"1633-1636","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/SuzukiSMKM18","doi":"10.1109/ICDE.2018.00194","ee":"https://doi.org/10.1109/ICDE.2018.00194","url":"https://dblp.org/rec/conf/icde/SuzukiSMKM18"},
+"url":"URL#3178870"
+},
+{
+"@score":"1",
+"@id":"3178871",
+"info":{"authors":{"author":[{"@pid":"30/6340-1","text":"Na Ta 0001"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"139/3492","text":"Tianyu Zhao"},{"@pid":"43/6576","text":"Jianhua Feng"},{"@pid":"212/6996","text":"Hanchao Ma"},{"@pid":"95/6295","text":"Zhiguo Gong"}]},"title":"An Efficient Ride-Sharing Framework for Maximizing Shared Routes.","venue":"ICDE","pages":"1795-1796","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/TaLZFMG18","doi":"10.1109/ICDE.2018.00255","ee":"https://doi.org/10.1109/ICDE.2018.00255","url":"https://dblp.org/rec/conf/icde/TaLZFMG18"},
+"url":"URL#3178871"
+},
+{
+"@score":"1",
+"@id":"3178872",
+"info":{"authors":{"author":[{"@pid":"133/7743","text":"Panagiotis Tampakis"},{"@pid":"89/5510","text":"Nikos Pelekis"},{"@pid":"a/NataliaVAndrienko","text":"Natalia V. Andrienko"},{"@pid":"a/GennadyLAndrienko","text":"Gennady L. Andrienko"},{"@pid":"58/2210","text":"Georg Fuchs"},{"@pid":"t/YannisTheodoridis","text":"Yannis Theodoridis"}]},"title":"Time-Aware Sub-Trajectory Clustering in Hermes@PostgreSQL.","venue":"ICDE","pages":"1581-1584","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/TampakisPAAFT18","doi":"10.1109/ICDE.2018.00181","ee":"https://doi.org/10.1109/ICDE.2018.00181","url":"https://dblp.org/rec/conf/icde/TampakisPAAFT18"},
+"url":"URL#3178872"
+},
+{
+"@score":"1",
+"@id":"3178873",
+"info":{"authors":{"author":[{"@pid":"219/9989","text":"Christine Tex"},{"@pid":"95/9320","text":"Martin Schäler"},{"@pid":"b/KBohm","text":"Klemens Böhm"}]},"title":"Distance-Based Data Mining over Encrypted Data.","venue":"ICDE","pages":"1264-1267","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/TexSB18","doi":"10.1109/ICDE.2018.00126","ee":"https://doi.org/10.1109/ICDE.2018.00126","url":"https://dblp.org/rec/conf/icde/TexSB18"},
+"url":"URL#3178873"
+},
+{
+"@score":"1",
+"@id":"3178874",
+"info":{"authors":{"author":[{"@pid":"136/7929","text":"Hien To"},{"@pid":"s/CyrusShahabi","text":"Cyrus Shahabi"},{"@pid":"39/3530-1","text":"Li Xiong 0001"}]},"title":"Privacy-Preserving Online Task Assignment in Spatial Crowdsourcing with Untrusted Server.","venue":"ICDE","pages":"833-844","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ToS018","doi":"10.1109/ICDE.2018.00080","ee":"https://doi.org/10.1109/ICDE.2018.00080","url":"https://dblp.org/rec/conf/icde/ToS018"},
+"url":"URL#3178874"
+},
+{
+"@score":"1",
+"@id":"3178875",
+"info":{"authors":{"author":[{"@pid":"168/4993","text":"Jonas Traub"},{"@pid":"196/1382","text":"Philipp Marian Grulich"},{"@pid":"228/6071","text":"Alejandro Rodriguez Cuellar"},{"@pid":"25/11440","text":"Sebastian Breß"},{"@pid":"64/7497","text":"Asterios Katsifodimos"},{"@pid":"10/760","text":"Tilmann Rabl"},{"@pid":"m/VMarkl","text":"Volker Markl"}]},"title":"Scotty: Efficient Window Aggregation for Out-of-Order Stream Processing.","venue":"ICDE","pages":"1300-1303","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/TraubGCBKRM18","doi":"10.1109/ICDE.2018.00135","ee":"https://doi.org/10.1109/ICDE.2018.00135","url":"https://dblp.org/rec/conf/icde/TraubGCBKRM18"},
+"url":"URL#3178875"
+},
+{
+"@score":"1",
+"@id":"3178876",
+"info":{"authors":{"author":{"@pid":"t/PeterTriantafillou","text":"Peter Triantafillou"}},"title":"Data-Less Big Data Analytics (Towards Intelligent Data Analytics Systems).","venue":"ICDE","pages":"1666-1667","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Triantafillou18","doi":"10.1109/ICDE.2018.00205","ee":"https://doi.org/10.1109/ICDE.2018.00205","url":"https://dblp.org/rec/conf/icde/Triantafillou18"},
+"url":"URL#3178876"
+},
+{
+"@score":"1",
+"@id":"3178877",
+"info":{"authors":{"author":[{"@pid":"38/4996","text":"Leong Hou U"},{"@pid":"99/6243","text":"Junjie Zhang"},{"@pid":"m/KyriakosMouratidis","text":"Kyriakos Mouratidis"},{"@pid":"55/6910-2","text":"Ye Li 0002"}]},"title":"Continuous Top-k Monitoring on Document Streams (Extended Abstract).","venue":"ICDE","pages":"1803-1804","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/UZML18","doi":"10.1109/ICDE.2018.00259","ee":"https://doi.org/10.1109/ICDE.2018.00259","url":"https://dblp.org/rec/conf/icde/UZML18"},
+"url":"URL#3178877"
+},
+{
+"@score":"1",
+"@id":"3178879",
+"info":{"authors":{"author":[{"@pid":"32/8676","text":"Damir Vandic"},{"@pid":"20/11425","text":"Steven S. Aanen"},{"@pid":"30/2592","text":"Flavius Frasincar"},{"@pid":"k/UzayKaymak","text":"Uzay Kaymak"}]},"title":"Dynamic Facet Ordering for Faceted Product Search Engines (Extended Abstract).","venue":"ICDE","pages":"1813-1814","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/VandicAFK18","doi":"10.1109/ICDE.2018.00264","ee":"https://doi.org/10.1109/ICDE.2018.00264","url":"https://dblp.org/rec/conf/icde/VandicAFK18"},
+"url":"URL#3178879"
+},
+{
+"@score":"1",
+"@id":"3178881",
+"info":{"authors":{"author":[{"@pid":"200/2326","text":"Lalitha Viswanathan"},{"@pid":"24/8510","text":"Alekh Jindal"},{"@pid":"59/7992","text":"Konstantinos Karanasos"}]},"title":"Query and Resource Optimization: Bridging the Gap.","venue":"ICDE","pages":"1384-1387","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ViswanathanJK18","doi":"10.1109/ICDE.2018.00156","ee":"https://doi.org/10.1109/ICDE.2018.00156","url":"https://dblp.org/rec/conf/icde/ViswanathanJK18"},
+"url":"URL#3178881"
+},
+{
+"@score":"1",
+"@id":"3178882",
+"info":{"authors":{"author":{"@pid":"72/6589","text":"James Wagner"}},"title":"Auditing DBMSes through Forensic Analysis.","venue":"ICDE","pages":"1704-1708","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Wagner18","doi":"10.1109/ICDE.2018.00219","ee":"https://doi.org/10.1109/ICDE.2018.00219","url":"https://dblp.org/rec/conf/icde/Wagner18"},
+"url":"URL#3178882"
+},
+{
+"@score":"1",
+"@id":"3178883",
+"info":{"authors":{"author":[{"@pid":"13/8542","text":"Jiaying Wang"},{"@pid":"86/2859-1","text":"Xiaochun Yang 0001"},{"@pid":"13/1898-15","text":"Bin Wang 0015"},{"@pid":"l/ChengfeiLiu","text":"Chengfei Liu"}]},"title":"LS-Join: Local Similarity Join on String Collections (Extended Abstract).","venue":"ICDE","pages":"1779-1780","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Wang0WL18","doi":"10.1109/ICDE.2018.00247","ee":"https://doi.org/10.1109/ICDE.2018.00247","url":"https://dblp.org/rec/conf/icde/Wang0WL18"},
+"url":"URL#3178883"
+},
+{
+"@score":"1",
+"@id":"3178884",
+"info":{"authors":{"author":[{"@pid":"38/2512-1","text":"Lizhen Wang 0001"},{"@pid":"163/4090","text":"Xuguang Bao"},{"@pid":"14/2589","text":"Longbing Cao"}]},"title":"Interactive Probabilistic Post-Mining of User-Preferred Spatial Co-Location Patterns.","venue":"ICDE","pages":"1256-1259","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangBC18","doi":"10.1109/ICDE.2018.00124","ee":"https://doi.org/10.1109/ICDE.2018.00124","url":"https://dblp.org/rec/conf/icde/WangBC18"},
+"url":"URL#3178884"
+},
+{
+"@score":"1",
+"@id":"3178885",
+"info":{"authors":{"author":[{"@pid":"38/2512-1","text":"Lizhen Wang 0001"},{"@pid":"163/4090","text":"Xuguang Bao"},{"@pid":"47/2926","text":"Lihua Zhou"}]},"title":"Redundancy Reduction for Prevalent Co-Location Patterns.","venue":"ICDE","pages":"1777-1778","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangBZ18","doi":"10.1109/ICDE.2018.00246","ee":"https://doi.org/10.1109/ICDE.2018.00246","url":"https://dblp.org/rec/conf/icde/WangBZ18"},
+"url":"URL#3178885"
+},
+{
+"@score":"1",
+"@id":"3178886",
+"info":{"authors":{"author":[{"@pid":"58/6810","text":"Li Wang"},{"@pid":"09/6889","text":"Ruichu Cai"},{"@pid":"89/6622","text":"Tom Z. J. Fu"},{"@pid":"132/8994","text":"Jiong He"},{"@pid":"204/3778","text":"Zijie Lu"},{"@pid":"w/MarianneWinslett","text":"Marianne Winslett"},{"@pid":"93/4085","text":"Zhenjie Zhang"}]},"title":"Waterwheel: Realtime Indexing and Temporal Range Query Processing over Massive Data Streams.","venue":"ICDE","pages":"269-280","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangCFHLWZ18","doi":"10.1109/ICDE.2018.00033","ee":"https://doi.org/10.1109/ICDE.2018.00033","url":"https://dblp.org/rec/conf/icde/WangCFHLWZ18"},
+"url":"URL#3178886"
+},
+{
+"@score":"1",
+"@id":"3178887",
+"info":{"authors":{"author":[{"@pid":"34/5354","text":"Jiahao Wang"},{"@pid":"19/3952","text":"Peng Cai"},{"@pid":"162/8701","text":"Jinwei Guo"},{"@pid":"55/3364","text":"Weining Qian"},{"@pid":"z/AoyingZhou","text":"Aoying Zhou"}]},"title":"Range Optimistic Concurrency Control for a Composite OLTP and Bulk Processing Workload.","venue":"ICDE","pages":"605-616","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangCGQZ18","doi":"10.1109/ICDE.2018.00061","ee":"https://doi.org/10.1109/ICDE.2018.00061","url":"https://dblp.org/rec/conf/icde/WangCGQZ18"},
+"url":"URL#3178887"
+},
+{
+"@score":"1",
+"@id":"3178888",
+"info":{"authors":{"author":[{"@pid":"78/2022-37","text":"Kai Wang 0037"},{"@pid":"77/2970-1","text":"Xin Cao 0001"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"},{"@pid":"98/5684-1","text":"Wenjie Zhang 0001"},{"@pid":"51/5585","text":"Lu Qin 0001"}]},"title":"Efficient Computing of Radius-Bounded k-Cores.","venue":"ICDE","pages":"233-244","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangCLZQ18","doi":"10.1109/ICDE.2018.00030","ee":"https://doi.org/10.1109/ICDE.2018.00030","url":"https://dblp.org/rec/conf/icde/WangCLZQ18"},
+"url":"URL#3178888"
+},
+{
+"@score":"1",
+"@id":"3178889",
+"info":{"authors":{"author":[{"@pid":"33/4822-12","text":"Yue Wang 0012"},{"@pid":"l/XianLian","text":"Xiang Lian"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"}]},"title":"Efficient SimRank Tracking in Dynamic Graphs.","venue":"ICDE","pages":"545-556","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangLC18","doi":"10.1109/ICDE.2018.00056","ee":"https://doi.org/10.1109/ICDE.2018.00056","url":"https://dblp.org/rec/conf/icde/WangLC18"},
+"url":"URL#3178889"
+},
+{
+"@score":"1",
+"@id":"3178890",
+"info":{"authors":{"author":[{"@pid":"57/10948-1","text":"Tianzheng Wang 0001"},{"@pid":"02/3658","text":"Justin J. Levandoski"},{"@pid":"l/PALarson","text":"Per-Åke Larson"}]},"title":"Easy Lock-Free Indexing in Non-Volatile Memory.","venue":"ICDE","pages":"461-472","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangLL18","doi":"10.1109/ICDE.2018.00049","ee":"https://doi.org/10.1109/ICDE.2018.00049","url":"https://dblp.org/rec/conf/icde/WangLL18"},
+"url":"URL#3178890"
+},
+{
+"@score":"1",
+"@id":"3178891",
+"info":{"authors":{"author":[{"@pid":"123/2365-1","text":"Yanhao Wang 0001"},{"@pid":"143/0258-1","text":"Yuchen Li 0001"},{"@pid":"t/KianLeeTan","text":"Kian-Lee Tan"}]},"title":"A Sliding-Window Framework for Representative Subset Selection.","venue":"ICDE","pages":"1268-1271","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangLT18","doi":"10.1109/ICDE.2018.00127","ee":"https://doi.org/10.1109/ICDE.2018.00127","url":"https://dblp.org/rec/conf/icde/WangLT18"},
+"url":"URL#3178891"
+},
+{
+"@score":"1",
+"@id":"3178892",
+"info":{"authors":{"author":[{"@pid":"75/4229","text":"Changping Wang"},{"@pid":"13/1672","text":"Chaokun Wang"},{"@pid":"197/0781","text":"Gaoyang Guo"},{"@pid":"79/5188","text":"Xiaojun Ye"},{"@pid":"y/PhilipSYu","text":"Philip S. Yu"}]},"title":"Efficient Computation of G-Skyline Groups (Extended Abstract).","venue":"ICDE","pages":"1769-1770","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangWGYY18","doi":"10.1109/ICDE.2018.00242","ee":"https://doi.org/10.1109/ICDE.2018.00242","url":"https://dblp.org/rec/conf/icde/WangWGYY18"},
+"url":"URL#3178892"
+},
+{
+"@score":"1",
+"@id":"3178893",
+"info":{"authors":{"author":[{"@pid":"46/2005-3","text":"Ning Wang 0003"},{"@pid":"33/1903","text":"Xiaokui Xiao"},{"@pid":"56/2998-1","text":"Yin Yang 0001"},{"@pid":"171/2639","text":"Ta Duy Hoang"},{"@pid":"78/10034","text":"Hyejin Shin"},{"@pid":"70/5871","text":"Junbum Shin"},{"@pid":"49/6363","text":"Ge Yu 0001"}]},"title":"PrivTrie: Effective Frequent Term Discovery under Local Differential Privacy.","venue":"ICDE","pages":"821-832","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangXYHSS018","doi":"10.1109/ICDE.2018.00079","ee":"https://doi.org/10.1109/ICDE.2018.00079","url":"https://dblp.org/rec/conf/icde/WangXYHSS018"},
+"url":"URL#3178893"
+},
+{
+"@score":"1",
+"@id":"3178894",
+"info":{"authors":{"author":[{"@pid":"84/7882","text":"Pinghui Wang"},{"@pid":"130/3810","text":"Junzhou Zhao"},{"@pid":"74/1890-1","text":"Xiangliang Zhang 0001"},{"@pid":"23/6479","text":"Zhenguo Li"},{"@pid":"60/3935","text":"Jiefeng Cheng"},{"@pid":"l/JohnCSLui","text":"John C. S. Lui"},{"@pid":"t/DonaldFTowsley","text":"Don Towsley"},{"@pid":"45/503","text":"Xiaohong Guan"}]},"title":"MOSS-5: A Fast Method of Approximating Counts of 5-Node Graphlets in Large Graphs (Extended Abstract).","venue":"ICDE","pages":"1773-1774","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangZZLCLTG18","doi":"10.1109/ICDE.2018.00244","ee":"https://doi.org/10.1109/ICDE.2018.00244","url":"https://dblp.org/rec/conf/icde/WangZZLCLTG18"},
+"url":"URL#3178894"
+},
+{
+"@score":"1",
+"@id":"3178895",
+"info":{"authors":{"author":[{"@pid":"233/6269","text":"Ze-ke Wang"},{"@pid":"55/957-6","text":"Kai Zhang 0006"},{"@pid":"145/0637","text":"Haihang Zhou"},{"@pid":"207/7109-3","text":"Xue Liu 0003"},{"@pid":"h/BingshengHe","text":"Bingsheng He"}]},"title":"Hebe: An Order-Oblivious and High-Performance Execution Scheme for Conjunctive Predicates.","venue":"ICDE","pages":"1260-1263","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WangZZLH18","doi":"10.1109/ICDE.2018.00125","ee":"https://doi.org/10.1109/ICDE.2018.00125","url":"https://dblp.org/rec/conf/icde/WangZZLH18"},
+"url":"URL#3178895"
+},
+{
+"@score":"1",
+"@id":"3178896",
+"info":{"authors":{"author":[{"@pid":"14/10440","text":"Zeyi Wen"},{"@pid":"181/3755","text":"Xingyang Liu"},{"@pid":"135/7028","text":"Hongjian Cao"},{"@pid":"h/BingshengHe","text":"Bingsheng He"}]},"title":"RTSI: An Index Structure for Multi-Modal Real-Time Search on Live Audio Streaming Services.","venue":"ICDE","pages":"1495-1506","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WenLCH18","doi":"10.1109/ICDE.2018.00168","ee":"https://doi.org/10.1109/ICDE.2018.00168","url":"https://dblp.org/rec/conf/icde/WenLCH18"},
+"url":"URL#3178896"
+},
+{
+"@score":"1",
+"@id":"3178897",
+"info":{"authors":{"author":[{"@pid":"169/7167","text":"Haiqin Weng"},{"@pid":"l/ZhaoLi-7","text":"Zhao Li 0007"},{"@pid":"07/8388","text":"Shouling Ji"},{"@pid":"165/4058","text":"Chen Chu"},{"@pid":"98/8965","text":"Haifeng Lu"},{"@pid":"128/2982","text":"Tianyu Du"},{"@pid":"44/2784","text":"Qinming He"}]},"title":"Online E-Commerce Fraud: A Large-Scale Detection and Analysis.","venue":"ICDE","pages":"1435-1440","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WengLJCLDH18","doi":"10.1109/ICDE.2018.00162","ee":"https://doi.org/10.1109/ICDE.2018.00162","url":"https://dblp.org/rec/conf/icde/WengLJCLDH18"},
+"url":"URL#3178897"
+},
+{
+"@score":"1",
+"@id":"3178898",
+"info":{"authors":{"author":[{"@pid":"51/3529-1","text":"Chenggang Wu 0001"},{"@pid":"147/1195","text":"Jose M. Faleiro"},{"@pid":"155/2490","text":"Yihan Lin"},{"@pid":"h/JosephMHellerstein","text":"Joseph M. Hellerstein"}]},"title":"Anna: A KVS for Any Scale.","venue":"ICDE","pages":"401-412","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/WuFLH18","doi":"10.1109/ICDE.2018.00044","ee":"https://doi.org/10.1109/ICDE.2018.00044","url":"https://dblp.org/rec/conf/icde/WuFLH18"},
+"url":"URL#3178898"
+},
+{
+"@score":"1",
+"@id":"3178899",
+"info":{"authors":{"author":[{"@pid":"127/0305","text":"Dongqing Xiao"},{"@pid":"49/6395","text":"Mohamed Y. Eltabakh"},{"@pid":"06/8315","text":"Xiangnan Kong"}]},"title":"Sharing Uncertain Graphs Using Syntactic Private Graph Models.","venue":"ICDE","pages":"1336-1339","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/XiaoEK18","doi":"10.1109/ICDE.2018.00144","ee":"https://doi.org/10.1109/ICDE.2018.00144","url":"https://dblp.org/rec/conf/icde/XiaoEK18"},
+"url":"URL#3178899"
+},
+{
+"@score":"1",
+"@id":"3178900",
+"info":{"authors":{"author":[{"@pid":"169/3419","text":"Zhongle Xie"},{"@pid":"25/5210","text":"Qingchao Cai"},{"@pid":"67/6383-1","text":"Gang Chen 0001"},{"@pid":"51/5793","text":"Rui Mao 0001"},{"@pid":"08/7259","text":"Meihui Zhang 0001"}]},"title":"A Comprehensive Performance Evaluation of Modern In-Memory Indices.","venue":"ICDE","pages":"641-652","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/XieCCMZ18","doi":"10.1109/ICDE.2018.00064","ee":"https://doi.org/10.1109/ICDE.2018.00064","url":"https://dblp.org/rec/conf/icde/XieCCMZ18"},
+"url":"URL#3178900"
+},
+{
+"@score":"1",
+"@id":"3178901",
+"info":{"authors":{"author":[{"@pid":"98/476-1","text":"Kun Xie 0001"},{"@pid":"49/7930","text":"Yuxiang Chen"},{"@pid":"10/5630-1","text":"Xin Wang 0001"},{"@pid":"01/2888","text":"Gaogang Xie"},{"@pid":"92/1480","text":"Jigang Wen"},{"@pid":"16/2420-1","text":"Dafang Zhang 0001"}]},"title":"Local Tensor Completion Based on Locality Sensitive Hashing.","venue":"ICDE","pages":"1212-1215","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/XieCWXWZ18","doi":"10.1109/ICDE.2018.00113","ee":"https://doi.org/10.1109/ICDE.2018.00113","url":"https://dblp.org/rec/conf/icde/XieCWXWZ18"},
+"url":"URL#3178901"
+},
+{
+"@score":"1",
+"@id":"3178902",
+"info":{"authors":{"author":[{"@pid":"195/5792","text":"Haoyuan Xing"},{"@pid":"195/5629","text":"Sofoklis Floratos"},{"@pid":"65/5338","text":"Spyros Blanas"},{"@pid":"85/1784","text":"Suren Byna"},{"@pid":"98/5294","text":"Prabhat"},{"@pid":"30/4395","text":"Kesheng Wu"},{"@pid":"04/5664","text":"Paul Brown"}]},"title":"ArrayBridge: Interweaving Declarative Array Processing in SciDB with Imperative HDF5-Based Programs.","venue":"ICDE","pages":"977-988","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/XingFBBPWB18","doi":"10.1109/ICDE.2018.00092","ee":"https://doi.org/10.1109/ICDE.2018.00092","url":"https://dblp.org/rec/conf/icde/XingFBBPWB18"},
+"url":"URL#3178902"
+},
+{
+"@score":"1",
+"@id":"3178903",
+"info":{"authors":{"author":[{"@pid":"228/6057","text":"Zihuan Xu"},{"@pid":"228/6070","text":"Siyuan Han"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"}]},"title":"CUB, a Consensus Unit-Based Storage Scheme for Blockchain System.","venue":"ICDE","pages":"173-184","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/XuHC18","doi":"10.1109/ICDE.2018.00025","ee":"https://doi.org/10.1109/ICDE.2018.00025","url":"https://dblp.org/rec/conf/icde/XuHC18"},
+"url":"URL#3178903"
+},
+{
+"@score":"1",
+"@id":"3178904",
+"info":{"authors":{"author":[{"@pid":"21/7971","text":"Wenjian Xu"},{"@pid":"80/2320","text":"Eric Lo 0001"},{"@pid":"58/4525","text":"Pengfei Zhang"}]},"title":"DIFusion: Fast Skip-Scan with Zero Space Overhead.","venue":"ICDE","pages":"1244-1247","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/XuLZ18","doi":"10.1109/ICDE.2018.00121","ee":"https://doi.org/10.1109/ICDE.2018.00121","url":"https://dblp.org/rec/conf/icde/XuLZ18"},
+"url":"URL#3178904"
+},
+{
+"@score":"1",
+"@id":"3178905",
+"info":{"authors":{"author":[{"@pid":"11/9718-1","text":"Pan Xu 0001"},{"@pid":"00/6661","text":"Cuong Nguyen"},{"@pid":"40/3710","text":"Srikanta Tirthapura"}]},"title":"Onion Curve: A Space Filling Curve with Near-Optimal Clustering.","venue":"ICDE","pages":"1236-1239","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/XuNT18","doi":"10.1109/ICDE.2018.00119","ee":"https://doi.org/10.1109/ICDE.2018.00119","url":"https://dblp.org/rec/conf/icde/XuNT18"},
+"url":"URL#3178905"
+},
+{
+"@score":"1",
+"@id":"3178906",
+"info":{"authors":{"author":[{"@pid":"181/2619","text":"Ying Xu"},{"@pid":"89/6013","text":"Dongxiang Zhang"},{"@pid":"08/7259","text":"Meihui Zhang 0001"},{"@pid":"254/0830-1","text":"Dongsheng Li 0001"},{"@pid":"92/6206","text":"Xiaoling Wang"},{"@pid":"s/HTShen","text":"Heng Tao Shen"}]},"title":"Continuous Proximity Detection via Predictive Safe Region Construction.","venue":"ICDE","pages":"629-640","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/XuZZLWS18","doi":"10.1109/ICDE.2018.00063","ee":"https://doi.org/10.1109/ICDE.2018.00063","url":"https://dblp.org/rec/conf/icde/XuZZLWS18"},
+"url":"URL#3178906"
+},
+{
+"@score":"1",
+"@id":"3178907",
+"info":{"authors":{"author":[{"@pid":"81/9436-1","text":"Da Yan 0001"},{"@pid":"42/7395","text":"Hongzhi Chen"},{"@pid":"06/4171","text":"James Cheng"},{"@pid":"213/7670","text":"Zhenkun Cai"},{"@pid":"53/2446","text":"Bin Shao"}]},"title":"Scalable De Novo Genome Assembly Using Pregel.","venue":"ICDE","pages":"1216-1219","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/YanCCCS18","doi":"10.1109/ICDE.2018.00114","ee":"https://doi.org/10.1109/ICDE.2018.00114","url":"https://dblp.org/rec/conf/icde/YanCCCS18"},
+"url":"URL#3178907"
+},
+{
+"@score":"1",
+"@id":"3178908",
+"info":{"authors":{"author":[{"@pid":"80/6697-4","text":"Chao Yan 0004"},{"@pid":"50/3402-26","text":"Bo Li 0026"},{"@pid":"70/2217","text":"Yevgeniy Vorobeychik"},{"@pid":"54/10042","text":"Aron Laszka"},{"@pid":"17/7449","text":"Daniel Fabbri"},{"@pid":"m/BradleyMalin","text":"Bradley A. Malin"}]},"title":"Get Your Workload in Order: Game Theoretic Prioritization of Database Auditing.","venue":"ICDE","pages":"1304-1307","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/YanLVLFM18","doi":"10.1109/ICDE.2018.00136","ee":"https://doi.org/10.1109/ICDE.2018.00136","url":"https://dblp.org/rec/conf/icde/YanLVLFM18"},
+"url":"URL#3178908"
+},
+{
+"@score":"1",
+"@id":"3178909",
+"info":{"authors":{"author":[{"@pid":"16/4505-1","text":"Yu Yang 0001"},{"@pid":"21/10575","text":"Lingyang Chu"},{"@pid":"27/352","text":"Yanyan Zhang"},{"@pid":"147/9113","text":"Zhefeng Wang 0001"},{"@pid":"p/JianPei","text":"Jian Pei 0001"},{"@pid":"07/258","text":"Enhong Chen"}]},"title":"Mining Density Contrast Subgraphs.","venue":"ICDE","pages":"221-232","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/YangCZWPC18","doi":"10.1109/ICDE.2018.00029","ee":"https://doi.org/10.1109/ICDE.2018.00029","url":"https://dblp.org/rec/conf/icde/YangCZWPC18"},
+"url":"URL#3178909"
+},
+{
+"@score":"1",
+"@id":"3178910",
+"info":{"authors":{"author":[{"@pid":"29/3081","text":"Fan Yang"},{"@pid":"38/10461","text":"Hyun Ah Song"},{"@pid":"204/4239","text":"Zongge Liu"},{"@pid":"f/CFaloutsos","text":"Christos Faloutsos"},{"@pid":"64/4494","text":"Vladimir Zadorozhny"},{"@pid":"s/NDSidiropoulos","text":"Nicholas D. Sidiropoulos"}]},"title":"Ares: Automatic Disaggregation of Historical Data.","venue":"ICDE","pages":"65-76","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/YangSLFZS18","doi":"10.1109/ICDE.2018.00016","ee":"https://doi.org/10.1109/ICDE.2018.00016","url":"https://dblp.org/rec/conf/icde/YangSLFZS18"},
+"url":"URL#3178910"
+},
+{
+"@score":"1",
+"@id":"3178911",
+"info":{"authors":{"author":[{"@pid":"23/8814","text":"Weiqing Yang"},{"@pid":"01/7213","text":"MingJie Tang"},{"@pid":"22/11514","text":"Yongyang Yu"},{"@pid":"228/2610","text":"Yanbo Liang"},{"@pid":"49/10014","text":"Bikas Saha"}]},"title":"SHC: Distributed Query Processing for Non-Relational Data Store.","venue":"ICDE","pages":"1465-1476","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/YangTYLS18","doi":"10.1109/ICDE.2018.00165","ee":"https://doi.org/10.1109/ICDE.2018.00165","url":"https://dblp.org/rec/conf/icde/YangTYLS18"},
+"url":"URL#3178911"
+},
+{
+"@score":"1",
+"@id":"3178912",
+"info":{"authors":{"author":[{"@pid":"305/0254","text":"Carl Yang 0001"},{"@pid":"94/3019-14","text":"Chao Zhang 0014"},{"@pid":"43/8230","text":"Xuewen Chen"},{"@pid":"03/5454","text":"Jieping Ye"},{"@pid":"h/JiaweiHan","text":"Jiawei Han 0001"}]},"title":"Did You Enjoy the Ride? Understanding Passenger Experience via Heterogeneous Network Embedding.","venue":"ICDE","pages":"1392-1403","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/YangZCY018","doi":"10.1109/ICDE.2018.00158","ee":"https://doi.org/10.1109/ICDE.2018.00158","url":"https://dblp.org/rec/conf/icde/YangZCY018"},
+"url":"URL#3178912"
+},
+{
+"@score":"1",
+"@id":"3178913",
+"info":{"authors":{"author":[{"@pid":"04/10606","text":"Hongzhi Yin"},{"@pid":"81/3390-1","text":"Lei Zou 0001"},{"@pid":"88/302","text":"Quoc Viet Hung Nguyen"},{"@pid":"70/6862","text":"Zi Huang"},{"@pid":"z/XiaofangZhou","text":"Xiaofang Zhou 0001"}]},"title":"Joint Event-Partner Recommendation in Event-Based Social Networks.","venue":"ICDE","pages":"929-940","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/YinZNHZ18","doi":"10.1109/ICDE.2018.00088","ee":"https://doi.org/10.1109/ICDE.2018.00088","url":"https://dblp.org/rec/conf/icde/YinZNHZ18"},
+"url":"URL#3178913"
+},
+{
+"@score":"1",
+"@id":"3178914",
+"info":{"authors":{"author":[{"@pid":"205/2651","text":"Minji Yoon"},{"@pid":"163/0678","text":"Jinhong Jung"},{"@pid":"13/7122","text":"U Kang"}]},"title":"TPA: Fast, Scalable, and Accurate Method for Approximate Random Walk with Restart on Billion Scale Graphs.","venue":"ICDE","pages":"1132-1143","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/YoonJK18","doi":"10.1109/ICDE.2018.00105","ee":"https://doi.org/10.1109/ICDE.2018.00105","url":"https://dblp.org/rec/conf/icde/YoonJK18"},
+"url":"URL#3178914"
+},
+{
+"@score":"1",
+"@id":"3178915",
+"info":{"authors":{"author":[{"@pid":"19/2453","text":"Xiang Yu"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"160/1053","text":"Yudian Zheng"},{"@pid":"75/6434","text":"Yan Huang"},{"@pid":"228/6031","text":"Songfan Zhang"},{"@pid":"81/4345","text":"Fei Chen"}]},"title":"CrowdOTA: An Online Task Assignment System in Crowdsourcing.","venue":"ICDE","pages":"1629-1632","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/YuLZHZC18","doi":"10.1109/ICDE.2018.00193","ee":"https://doi.org/10.1109/ICDE.2018.00193","url":"https://dblp.org/rec/conf/icde/YuLZHZC18"},
+"url":"URL#3178915"
+},
+{
+"@score":"1",
+"@id":"3178916",
+"info":{"authors":{"author":[{"@pid":"160/1019","text":"Nikos Zacheilas"},{"@pid":"194/7743","text":"Stathis Maroulis"},{"@pid":"228/6021","text":"Thanasis Priovolos"},{"@pid":"k/VanaKalogeraki","text":"Vana Kalogeraki"},{"@pid":"g/DimitriosGunopulos","text":"Dimitrios Gunopulos"}]},"title":"Dione: A Framework for Automatic Profiling and Tuning Big Data Applications.","venue":"ICDE","pages":"1637-1640","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZacheilasMPKG18","doi":"10.1109/ICDE.2018.00195","ee":"https://doi.org/10.1109/ICDE.2018.00195","url":"https://dblp.org/rec/conf/icde/ZacheilasMPKG18"},
+"url":"URL#3178916"
+},
+{
+"@score":"1",
+"@id":"3178917",
+"info":{"authors":{"author":[{"@pid":"219/2224","text":"Yuxiang Zeng"},{"@pid":"83/2548","text":"Yongxin Tong"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"},{"@pid":"133/3824","text":"Zimu Zhou"}]},"title":"Latency-Oriented Task Completion via Spatial Crowdsourcing.","venue":"ICDE","pages":"317-328","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZengTCZ18","doi":"10.1109/ICDE.2018.00037","ee":"https://doi.org/10.1109/ICDE.2018.00037","url":"https://dblp.org/rec/conf/icde/ZengTCZ18"},
+"url":"URL#3178917"
+},
+{
+"@score":"1",
+"@id":"3178918",
+"info":{"authors":{"author":[{"@pid":"66/2146-1","text":"Mingyi Zhang 0001"},{"@pid":"m/PatrickMartin","text":"Patrick Martin 0001"},{"@pid":"64/5363","text":"Wendy Powley"},{"@pid":"20/1036-1","text":"Jianjun Chen 0001"}]},"title":"Workload Management in Database Management System: A Taxonomy (Extended Abstract).","venue":"ICDE","pages":"1823-1824","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Zhang0P018","doi":"10.1109/ICDE.2018.00269","ee":"https://doi.org/10.1109/ICDE.2018.00269","url":"https://dblp.org/rec/conf/icde/Zhang0P018"},
+"url":"URL#3178918"
+},
+{
+"@score":"1",
+"@id":"3178919",
+"info":{"authors":{"author":[{"@pid":"36/2259-51","text":"Bo Zhang 0051"},{"@pid":"11/9085","text":"Boxiang Dong"},{"@pid":"52/4725","text":"Wendy Hui Wang"}]},"title":"AssureMR: Verifiable SQL Execution on MapReduce.","venue":"ICDE","pages":"1228-1231","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhangDW18","doi":"10.1109/ICDE.2018.00117","ee":"https://doi.org/10.1109/ICDE.2018.00117","url":"https://dblp.org/rec/conf/icde/ZhangDW18"},
+"url":"URL#3178919"
+},
+{
+"@score":"1",
+"@id":"3178920",
+"info":{"authors":{"author":[{"@pid":"89/6013","text":"Dongxiang Zhang"},{"@pid":"45/642","text":"Long Guo"},{"@pid":"59/1007","text":"Xiangnan He 0001"},{"@pid":"02/5139-1","text":"Jie Shao 0001"},{"@pid":"30/1186","text":"Sai Wu"},{"@pid":"s/HTShen","text":"Heng Tao Shen"}]},"title":"A Graph-Theoretic Fusion Framework for Unsupervised Entity Resolution.","venue":"ICDE","pages":"713-724","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhangGHSWS18","doi":"10.1109/ICDE.2018.00070","ee":"https://doi.org/10.1109/ICDE.2018.00070","url":"https://dblp.org/rec/conf/icde/ZhangGHSWS18"},
+"url":"URL#3178920"
+},
+{
+"@score":"1",
+"@id":"3178921",
+"info":{"authors":{"author":[{"@pid":"13/6769-27","text":"Ying Zhang 0027"},{"@pid":"130/0923","text":"Richard Koopmanschap"},{"@pid":"k/MartinLKersten","text":"Martin L. Kersten"}]},"title":"Love at First Sight: MonetDB/TensorFlow.","venue":"ICDE","pages":"1672","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhangKK18","doi":"10.1109/ICDE.2018.00208","ee":"https://doi.org/10.1109/ICDE.2018.00208","url":"https://dblp.org/rec/conf/icde/ZhangKK18"},
+"url":"URL#3178921"
+},
+{
+"@score":"1",
+"@id":"3178922",
+"info":{"authors":{"author":[{"@pid":"85/7433-6","text":"Bowen Zhang 0006"},{"@pid":"74/2905","text":"Yanyan Shen"},{"@pid":"02/6595","text":"Yanmin Zhu"},{"@pid":"85/3615","text":"Jiadi Yu"}]},"title":"A GPU-Accelerated Framework for Processing Trajectory Queries.","venue":"ICDE","pages":"1037-1048","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhangSZY18","doi":"10.1109/ICDE.2018.00097","ee":"https://doi.org/10.1109/ICDE.2018.00097","url":"https://dblp.org/rec/conf/icde/ZhangSZY18"},
+"url":"URL#3178922"
+},
+{
+"@score":"1",
+"@id":"3178923",
+"info":{"authors":{"author":[{"@pid":"50/671-148","text":"Yu Zhang 0148"},{"@pid":"40/3710","text":"Srikanta Tirthapura"},{"@pid":"c/GrahamCormode","text":"Graham Cormode"}]},"title":"Learning Graphical Models from a Distributed Stream.","venue":"ICDE","pages":"725-736","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhangTC18","doi":"10.1109/ICDE.2018.00071","ee":"https://doi.org/10.1109/ICDE.2018.00071","url":"https://dblp.org/rec/conf/icde/ZhangTC18"},
+"url":"URL#3178923"
+},
+{
+"@score":"1",
+"@id":"3178924",
+"info":{"authors":{"author":[{"@pid":"88/2750","text":"Tieying Zhang"},{"@pid":"t/AnthonyTomasic","text":"Anthony Tomasic"},{"@pid":"228/6092","text":"Yangjun Sheng"},{"@pid":"58/4127","text":"Andrew Pavlo"}]},"title":"Performance of OLTP via Intelligent Scheduling.","venue":"ICDE","pages":"1288-1291","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhangTSP18","doi":"10.1109/ICDE.2018.00132","ee":"https://doi.org/10.1109/ICDE.2018.00132","url":"https://dblp.org/rec/conf/icde/ZhangTSP18"},
+"url":"URL#3178924"
+},
+{
+"@score":"1",
+"@id":"3178925",
+"info":{"authors":{"author":[{"@pid":"94/4084-13","text":"Chen Zhang 0013"},{"@pid":"57/6221","text":"Sen Zhang"},{"@pid":"54/5266","text":"Chen Lei"},{"@pid":"31/4822","text":"Peiguang Lin"}]},"title":"Burstiness in Query Log: Web Search Analysis by Combining Global and Local Evidences.","venue":"ICDE","pages":"1388-1391","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhangZLL18","doi":"10.1109/ICDE.2018.00157","ee":"https://doi.org/10.1109/ICDE.2018.00157","url":"https://dblp.org/rec/conf/icde/ZhangZLL18"},
+"url":"URL#3178925"
+},
+{
+"@score":"1",
+"@id":"3178926",
+"info":{"authors":{"author":[{"@pid":"21/3626-36","text":"Fan Zhang 0036"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"98/5684-1","text":"Wenjie Zhang 0001"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"}]},"title":"Efficiently Reinforcing Social Networks over User Engagement and Tie Strength.","venue":"ICDE","pages":"557-568","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhangZQZL18","doi":"10.1109/ICDE.2018.00057","ee":"https://doi.org/10.1109/ICDE.2018.00057","url":"https://dblp.org/rec/conf/icde/ZhangZQZL18"},
+"url":"URL#3178926"
+},
+{
+"@score":"1",
+"@id":"3178927",
+"info":{"authors":{"author":{"@pid":"94/4810-19","text":"Bo Zhao 0019"}},"title":"Complex Event Processing under Constrained Resources by State-Based Load Shedding.","venue":"ICDE","pages":"1699-1703","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Zhao18","doi":"10.1109/ICDE.2018.00218","ee":"https://doi.org/10.1109/ICDE.2018.00218","url":"https://dblp.org/rec/conf/icde/Zhao18"},
+"url":"URL#3178927"
+},
+{
+"@score":"1",
+"@id":"3178928",
+"info":{"authors":{"author":[{"@pid":"162/9831","text":"Jingwen Zhao"},{"@pid":"80/2651","text":"Yunjun Gao"},{"@pid":"67/6383-1","text":"Gang Chen 0001"},{"@pid":"02/1003","text":"Rui Chen"}]},"title":"Why-Not Questions on Top-k Geo-Social Keyword Queries in Road Networks.","venue":"ICDE","pages":"965-976","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhaoGCC18","doi":"10.1109/ICDE.2018.00091","ee":"https://doi.org/10.1109/ICDE.2018.00091","url":"https://dblp.org/rec/conf/icde/ZhaoGCC18"},
+"url":"URL#3178928"
+},
+{
+"@score":"1",
+"@id":"3178929",
+"info":{"authors":{"author":[{"@pid":"200/2467","text":"Libin Zheng"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"}]},"title":"Multi-Campaign Oriented Spatial Crowdsourcing.","venue":"ICDE","pages":"1248-1251","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Zheng018","doi":"10.1109/ICDE.2018.00122","ee":"https://doi.org/10.1109/ICDE.2018.00122","url":"https://dblp.org/rec/conf/icde/Zheng018"},
+"url":"URL#3178929"
+},
+{
+"@score":"1",
+"@id":"3178930",
+"info":{"authors":{"author":[{"@pid":"152/4895","text":"Bolong Zheng"},{"@pid":"23/3419-1","text":"Han Su 0001"},{"@pid":"68/11145","text":"Wen Hua"},{"@pid":"73/3928-1","text":"Kai Zheng 0001"},{"@pid":"z/XiaofangZhou","text":"Xiaofang Zhou 0001"},{"@pid":"05/10612-1","text":"GuoHui Li 0001"}]},"title":"Efficient Clue-Based Route Search on Road Networks (Extended Abstract).","venue":"ICDE","pages":"1783-1784","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhengSHZZL18","doi":"10.1109/ICDE.2018.00249","ee":"https://doi.org/10.1109/ICDE.2018.00249","url":"https://dblp.org/rec/conf/icde/ZhengSHZZL18"},
+"url":"URL#3178930"
+},
+{
+"@score":"1",
+"@id":"3178931",
+"info":{"authors":{"author":[{"@pid":"10/5927","text":"Weiguo Zheng"},{"@pid":"130/8513-1","text":"Qichen Wang 0001"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"},{"@pid":"85/5637-1","text":"Hong Cheng 0001"},{"@pid":"81/3390-1","text":"Lei Zou 0001"}]},"title":"Efficient Computation of a Near-Maximum Independent Set over Evolving Graphs.","venue":"ICDE","pages":"869-880","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhengWYC018","doi":"10.1109/ICDE.2018.00083","ee":"https://doi.org/10.1109/ICDE.2018.00083","url":"https://dblp.org/rec/conf/icde/ZhengWYC018"},
+"url":"URL#3178931"
+},
+{
+"@score":"1",
+"@id":"3178932",
+"info":{"authors":{"author":[{"@pid":"82/8538","text":"Jingbo Zhou"},{"@pid":"67/398","text":"Qi Guo"},{"@pid":"j/HVJagadish","text":"H. V. Jagadish"},{"@pid":"183/1645","text":"Lubos Krcál"},{"@pid":"00/4516","text":"Siyuan Liu"},{"@pid":"177/9090","text":"Wenhao Luan"},{"@pid":"t/AnthonyKHTung","text":"Anthony K. H. Tung"},{"@pid":"177/8972","text":"Yueji Yang"},{"@pid":"149/5897","text":"Yuxin Zheng"}]},"title":"A Generic Inverted Index Framework for Similarity Search on the GPU.","venue":"ICDE","pages":"893-904","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhouGJKLLTYZ18","doi":"10.1109/ICDE.2018.00085","ee":"https://doi.org/10.1109/ICDE.2018.00085","url":"https://dblp.org/rec/conf/icde/ZhouGJKLLTYZ18"},
+"url":"URL#3178932"
+},
+{
+"@score":"1",
+"@id":"3178933",
+"info":{"authors":{"author":[{"@pid":"228/6035","text":"Zhixuan Zhou"},{"@pid":"h/HenryHoffmann","text":"Henry Hoffmann"}]},"title":"GraphZ: Improving the Performance of Large-Scale Graph Analytics on Small-Scale Machines.","venue":"ICDE","pages":"1368-1371","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhouH18","doi":"10.1109/ICDE.2018.00152","ee":"https://doi.org/10.1109/ICDE.2018.00152","url":"https://dblp.org/rec/conf/icde/ZhouH18"},
+"url":"URL#3178933"
+},
+{
+"@score":"1",
+"@id":"3178934",
+"info":{"authors":{"author":[{"@pid":"73/6085-7","text":"Shuang Zhou 0007"},{"@pid":"91/352","text":"Pingpeng Yuan"},{"@pid":"l/LingLiu","text":"Ling Liu 0001"},{"@pid":"98/4156","text":"Hai Jin 0001"}]},"title":"MGTag: a Multi-Dimensional Graph Labeling Scheme for Fast Reachability Queries.","venue":"ICDE","pages":"1372-1375","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhouY0018","doi":"10.1109/ICDE.2018.00153","ee":"https://doi.org/10.1109/ICDE.2018.00153","url":"https://dblp.org/rec/conf/icde/ZhouY0018"},
+"url":"URL#3178934"
+},
+{
+"@score":"1",
+"@id":"3178935",
+"info":{"authors":{"author":[{"@pid":"01/784","text":"Rong Zhu"},{"@pid":"50/6683","text":"Zhaonian Zou"},{"@pid":"18/6870-1","text":"Jianzhong Li 0001"}]},"title":"Diversified Coherent Core Search on Multi-Layer Graphs.","venue":"ICDE","pages":"701-712","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhuZL18","doi":"10.1109/ICDE.2018.00069","ee":"https://doi.org/10.1109/ICDE.2018.00069","url":"https://dblp.org/rec/conf/icde/ZhuZL18"},
+"url":"URL#3178935"
+},
+{
+"@score":"1",
+"@id":"3178936",
+"info":{"authors":{"author":[{"@pid":"14/10147-1","text":"Yuanyuan Zhu 0001"},{"@pid":"04/2024","text":"Qian Zhang"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"47/179","text":"Lijun Chang"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"}]},"title":"Querying Cohesive Subgraphs by Keywords.","venue":"ICDE","pages":"1324-1327","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZhuZQCY18","doi":"10.1109/ICDE.2018.00141","ee":"https://doi.org/10.1109/ICDE.2018.00141","url":"https://dblp.org/rec/conf/icde/ZhuZQCY18"},
+"url":"URL#3178936"
+},
+{
+"@score":"1",
+"@id":"3178937",
+"info":{"authors":{"author":[{"@pid":"20/11207","text":"Zainab Zolaktaf"},{"@pid":"37/8904","text":"Reza Babanezhad 0001"},{"@pid":"68/1297","text":"Rachel Pottinger"}]},"title":"A Generic Top-N Recommendation Framework for Trading-Off Accuracy, Novelty, and Coverage.","venue":"ICDE","pages":"149-160","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZolaktafBP18","doi":"10.1109/ICDE.2018.00023","ee":"https://doi.org/10.1109/ICDE.2018.00023","url":"https://dblp.org/rec/conf/icde/ZolaktafBP18"},
+"url":"URL#3178937"
+},
+{
+"@score":"1",
+"@id":"3178938",
+"info":{"authors":{"author":[{"@pid":"17/9799","text":"Kostas Zoumpatianos"},{"@pid":"p/ThemisPalpanas","text":"Themis Palpanas"}]},"title":"Data Series Management: Fulfilling the Need for Big Sequence Analytics.","venue":"ICDE","pages":"1677-1678","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/ZoumpatianosP18","doi":"10.1109/ICDE.2018.00211","ee":"https://doi.org/10.1109/ICDE.2018.00211","url":"https://dblp.org/rec/conf/icde/ZoumpatianosP18"},
+"url":"URL#3178938"
+},
+{
+"@score":"1",
+"@id":"3178939",
+"info":{"authors":{"author":{"@pid":"207/1398","text":"Roman Zoun"}},"title":"Internet of Metaproteomics.","venue":"ICDE","pages":"1714-1718","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icde/Zoun18","doi":"10.1109/ICDE.2018.00221","ee":"https://doi.org/10.1109/ICDE.2018.00221","url":"https://dblp.org/rec/conf/icde/Zoun18"},
+"url":"URL#3178939"
+},
+{
+"@score":"1",
+"@id":"3279209",
+"info":{"title":"34th IEEE International Conference on Data Engineering, ICDE 2018, Paris, France, April 16-19, 2018","venue":"ICDE","publisher":"IEEE Computer Society","year":"2018","type":"Editorship","key":"conf/icde/2018","ee":"https://ieeexplore.ieee.org/xpl/conhome/8476188/proceeding","url":"https://dblp.org/rec/conf/icde/2018"},
+"url":"URL#3279209"
+}
+]
+}
+}
+}

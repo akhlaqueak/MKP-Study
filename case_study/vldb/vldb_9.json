@@ -1,0 +1,158 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb9.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"71.83"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"21",
+"@dc":"21",
+"@oc":"21",
+"@id":"47762635",
+"text":":facetid:toc:db/journals/vldb/vldb9.bht"
+}
+},
+"hits":{
+"@total":"21",
+"@computed":"21",
+"@sent":"21",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"6958968",
+"info":{"authors":{"author":[{"@pid":"c/CarloCombi","text":"Carlo Combi"},{"@pid":"87/3851","text":"Giuseppe Pozzi"}]},"title":"HMAP - A temporal data model managing intervals with different granularities and indeterminacy from natural language sentences.","venue":"VLDB J.","volume":"9","number":"4","pages":"294-311","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/CombiP01","doi":"10.1007/S007780100033","ee":"https://doi.org/10.1007/s007780100033","url":"https://dblp.org/rec/journals/vldb/CombiP01"},
+"url":"URL#6958968"
+},
+{
+"@score":"1",
+"@id":"6958974",
+"info":{"authors":{"author":[{"@pid":"96/5639","text":"Chiang Lee"},{"@pid":"63/1414","text":"Chi-Sheng Shih 0001"},{"@pid":"98/4058","text":"Yaw-Huei Chen"}]},"title":"A graph-theoretic model for optimizing queries involving methods.","venue":"VLDB J.","volume":"9","number":"4","pages":"327-343","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/LeeSC01","doi":"10.1007/S007780100035","ee":"https://doi.org/10.1007/s007780100035","url":"https://dblp.org/rec/journals/vldb/LeeSC01"},
+"url":"URL#6958974"
+},
+{
+"@score":"1",
+"@id":"6958975",
+"info":{"authors":{"author":[{"@pid":"60/5978","text":"Wen-Syan Li"},{"@pid":"c/KSelcukCandan","text":"K. Selçuk Candan"},{"@pid":"51/6682","text":"Kyoji Hirata"},{"@pid":"29/2567","text":"Yoshinori Hara"}]},"title":"Supporting efficient multimedia database exploration.","venue":"VLDB J.","volume":"9","number":"4","pages":"312-326","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/LiCHH01","doi":"10.1007/S007780100040","ee":"https://doi.org/10.1007/s007780100040","url":"https://dblp.org/rec/journals/vldb/LiCHH01"},
+"url":"URL#6958975"
+},
+{
+"@score":"1",
+"@id":"6958977",
+"info":{"authors":{"author":[{"@pid":"n/AnneHHNgu","text":"Anne H. H. Ngu"},{"@pid":"s/QuanZSheng","text":"Quan Z. Sheng"},{"@pid":"35/2599","text":"Du Q. Huynh"},{"@pid":"25/5495","text":"Ron Lei"}]},"title":"Combining multi-visual features for efficient indexing in a large image database.","venue":"VLDB J.","volume":"9","number":"4","pages":"279-293","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/NguSHL01","doi":"10.1007/S007780100028","ee":"https://doi.org/10.1007/s007780100028","url":"https://dblp.org/rec/journals/vldb/NguSHL01"},
+"url":"URL#6958977"
+},
+{
+"@score":"1",
+"@id":"6958986",
+"info":{"authors":{"author":[{"@pid":"21/4141","text":"Changzhou Wang"},{"@pid":"w/XiaoyangSeanWang","text":"Xiaoyang Sean Wang"}]},"title":"Indexing very high-dimensional sparse and quasi-sparse vectors for similarity searches.","venue":"VLDB J.","volume":"9","number":"4","pages":"344-361","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/WangW01","doi":"10.1007/S007780100036","ee":"https://doi.org/10.1007/s007780100036","url":"https://dblp.org/rec/journals/vldb/WangW01"},
+"url":"URL#6958986"
+},
+{
+"@score":"1",
+"@id":"7044583",
+"info":{"authors":{"author":{"@pid":"a/MalcolmPAtkinson","text":"Malcolm P. Atkinson 0001"}},"title":"Guest editorial.","venue":"VLDB J.","volume":"9","number":"3","pages":"175-176","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/Atkinson00","doi":"10.1007/S007780000034","ee":"https://doi.org/10.1007/s007780000034","url":"https://dblp.org/rec/journals/vldb/Atkinson00"},
+"url":"URL#7044583"
+},
+{
+"@score":"1",
+"@id":"7044584",
+"info":{"authors":{"author":[{"@pid":"a/PAtzeni","text":"Paolo Atzeni"},{"@pid":"m/AOMendelzon","text":"Alberto O. Mendelzon"}]},"title":"Guest Editorial: Databases and the Web.","venue":"VLDB J.","volume":"9","number":"1","pages":"1","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/AtzeniM00","doi":"10.1007/S007780050079","ee":"https://doi.org/10.1007/s007780050079","url":"https://dblp.org/rec/journals/vldb/AtzeniM00"},
+"url":"URL#7044584"
+},
+{
+"@score":"1",
+"@id":"7044585",
+"info":{"authors":{"author":[{"@pid":"b/BettinaBerendt","text":"Bettina Berendt"},{"@pid":"s/MyraSpiliopoulou","text":"Myra Spiliopoulou"}]},"title":"Analysis of Navigation Behaviour in Web Sites Integrating Multiple Information Systems.","venue":"VLDB J.","volume":"9","number":"1","pages":"56-75","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/BerendtS00","doi":"10.1007/S007780050083","ee":"https://doi.org/10.1007/s007780050083","url":"https://dblp.org/rec/journals/vldb/BerendtS00"},
+"url":"URL#7044585"
+},
+{
+"@score":"1",
+"@id":"7044586",
+"info":{"authors":{"author":[{"@pid":"b/PhilipABernstein","text":"Philip A. Bernstein"},{"@pid":"89/2847","text":"Shankar Pal"},{"@pid":"79/6572","text":"David Shutt"}]},"title":"Context-based prefetch - an optimization for implementing objects on relations.","venue":"VLDB J.","volume":"9","number":"3","pages":"177-189","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/BernsteinPS00","doi":"10.1007/S007780000027","ee":"https://doi.org/10.1007/s007780000027","url":"https://dblp.org/rec/journals/vldb/BernsteinPS00"},
+"url":"URL#7044586"
+},
+{
+"@score":"1",
+"@id":"7044588",
+"info":{"authors":{"author":[{"@pid":"b/PeterBuneman","text":"Peter Buneman"},{"@pid":"f/MaryFFernandez","text":"Mary F. Fernandez"},{"@pid":"s/DanSuciu","text":"Dan Suciu"}]},"title":"UnQL: A Query Language and Algebra for Semistructured Data Based on Structural Recursion.","venue":"VLDB J.","volume":"9","number":"1","pages":"76-110","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/BunemanFS00","doi":"10.1007/S007780050084","ee":"https://doi.org/10.1007/s007780050084","url":"https://dblp.org/rec/journals/vldb/BunemanFS00"},
+"url":"URL#7044588"
+},
+{
+"@score":"1",
+"@id":"7044589",
+"info":{"authors":{"author":[{"@pid":"c/KSelcukCandan","text":"K. Selçuk Candan"},{"@pid":"47/500","text":"Eric Lemar"},{"@pid":"s/VSSubrahmanian","text":"V. S. Subrahmanian"}]},"title":"View Management in Multimedia Databases.","venue":"VLDB J.","volume":"9","number":"2","pages":"131-153","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/CandanLS00","doi":"10.1007/PL00010673","ee":"https://doi.org/10.1007/PL00010673","url":"https://dblp.org/rec/journals/vldb/CandanLS00"},
+"url":"URL#7044589"
+},
+{
+"@score":"1",
+"@id":"7044590",
+"info":{"authors":{"author":[{"@pid":"c/BChidlovskii","text":"Boris Chidlovskii"},{"@pid":"b/UMBorghoff","text":"Uwe M. Borghoff"}]},"title":"Semantic Caching of Web Queries.","venue":"VLDB J.","volume":"9","number":"1","pages":"2-17","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/ChidlovskiiB00","doi":"10.1007/S007780050080","ee":"https://doi.org/10.1007/s007780050080","url":"https://dblp.org/rec/journals/vldb/ChidlovskiiB00"},
+"url":"URL#7044590"
+},
+{
+"@score":"1",
+"@id":"7044591",
+"info":{"authors":{"author":[{"@pid":"58/5754","text":"Jens Claußen"},{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"},{"@pid":"k/DonaldKossmann","text":"Donald Kossmann"},{"@pid":"94/358","text":"Christian Wiesner"}]},"title":"Exploiting early sorting and early partitioning for decisionsupport query processing.","venue":"VLDB J.","volume":"9","number":"3","pages":"190-213","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/ClaussenKKW00","doi":"10.1007/S007780000030","ee":"https://doi.org/10.1007/s007780000030","url":"https://dblp.org/rec/journals/vldb/ClaussenKKW00"},
+"url":"URL#7044591"
+},
+{
+"@score":"1",
+"@id":"7044592",
+"info":{"authors":{"author":[{"@pid":"f/MaryFFernandez","text":"Mary F. Fernández"},{"@pid":"70/3007","text":"Daniela Florescu"},{"@pid":"h/AlonYHalevy","text":"Alon Y. Levy"},{"@pid":"s/DanSuciu","text":"Dan Suciu"}]},"title":"Declarative Specification of Web Sites with Strudel.","venue":"VLDB J.","volume":"9","number":"1","pages":"38-55","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/FernandezFLS00","doi":"10.1007/S007780050082","ee":"https://doi.org/10.1007/s007780050082","url":"https://dblp.org/rec/journals/vldb/FernandezFLS00"},
+"url":"URL#7044592"
+},
+{
+"@score":"1",
+"@id":"7044593",
+"info":{"authors":{"author":[{"@pid":"f/AdaWaiCheeFu","text":"Ada Wai-Chee Fu"},{"@pid":"80/6932","text":"Polly Mei-shuen Chan"},{"@pid":"48/5884","text":"Yin-Ling Cheung"},{"@pid":"67/841","text":"Yiu Sang Moon"}]},"title":"Dynamic vp-Tree Indexing for n-Nearest Neighbor Search Given Pair-Wise Distances.","venue":"VLDB J.","volume":"9","number":"2","pages":"154-173","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/FuCCM00","doi":"10.1007/PL00010672","ee":"https://doi.org/10.1007/PL00010672","url":"https://dblp.org/rec/journals/vldb/FuCCM00"},
+"url":"URL#7044593"
+},
+{
+"@score":"1",
+"@id":"7044596",
+"info":{"authors":{"author":[{"@pid":"g/JeanRobertGruser","text":"Jean-Robert Gruser"},{"@pid":"r/LouiqaRaschid","text":"Louiqa Raschid"},{"@pid":"64/4494","text":"Vladimir Zadorozhny"},{"@pid":"43/6393","text":"Tao Zhan"}]},"title":"Learning Response Time for WebSources Using Query Feedback and Application in Query Optimization.","venue":"VLDB J.","volume":"9","number":"1","pages":"18-37","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/GruserRZZ00","doi":"10.1007/S007780050081","ee":"https://doi.org/10.1007/s007780050081","url":"https://dblp.org/rec/journals/vldb/GruserRZZ00"},
+"url":"URL#7044596"
+},
+{
+"@score":"1",
+"@id":"7044597",
+"info":{"authors":{"author":[{"@pid":"j/HVJagadish","text":"H. V. Jagadish"},{"@pid":"05/1562","text":"Olga Kapitskaia"},{"@pid":"n/RTNg","text":"Raymond T. Ng"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"One-dimensional and multi-dimensional substring selectivity estimation.","venue":"VLDB J.","volume":"9","number":"3","pages":"214-230","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/JagadishKNS00","doi":"10.1007/S007780000029","ee":"https://doi.org/10.1007/s007780000029","url":"https://dblp.org/rec/journals/vldb/JagadishKNS00"},
+"url":"URL#7044597"
+},
+{
+"@score":"1",
+"@id":"7044601",
+"info":{"authors":{"author":[{"@pid":"m/StefanManegold","text":"Stefan Manegold"},{"@pid":"b/PeterABoncz","text":"Peter A. Boncz"},{"@pid":"k/MartinLKersten","text":"Martin L. Kersten"}]},"title":"Optimizing database architecture for the new bottleneck: memory access.","venue":"VLDB J.","volume":"9","number":"3","pages":"231-246","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/ManegoldBK00","doi":"10.1007/S007780000031","ee":"https://doi.org/10.1007/s007780000031","url":"https://dblp.org/rec/journals/vldb/ManegoldBK00"},
+"url":"URL#7044601"
+},
+{
+"@score":"1",
+"@id":"7044602",
+"info":{"authors":{"author":[{"@pid":"50/3538","text":"Isabelle Mirbel"},{"@pid":"p/BarbaraPernici","text":"Barbara Pernici"},{"@pid":"s/TimosKSellis","text":"Timos K. Sellis"},{"@pid":"27/6719","text":"S. Tserkezoglou"},{"@pid":"v/MVazirgiannis","text":"Michalis Vazirgiannis"}]},"title":"Checking the Temporal Integrity of Interactive Multimedia Documents.","venue":"VLDB J.","volume":"9","number":"2","pages":"111-130","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/MirbelPSTV00","doi":"10.1007/PL00010674","ee":"https://doi.org/10.1007/PL00010674","url":"https://dblp.org/rec/journals/vldb/MirbelPSTV00"},
+"url":"URL#7044602"
+},
+{
+"@score":"1",
+"@id":"7044605",
+"info":{"authors":{"author":[{"@pid":"r/VijayshankarRaman","text":"Vijayshankar Raman"},{"@pid":"61/601","text":"Bhaskaran Raman"},{"@pid":"h/JosephMHellerstein","text":"Joseph M. Hellerstein"}]},"title":"Online dynamic reordering.","venue":"VLDB J.","volume":"9","number":"3","pages":"247-260","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/RamanRH00","doi":"10.1007/S007780000032","ee":"https://doi.org/10.1007/s007780000032","url":"https://dblp.org/rec/journals/vldb/RamanRH00"},
+"url":"URL#7044605"
+},
+{
+"@score":"1",
+"@id":"7044607",
+"info":{"authors":{"author":[{"@pid":"t/KianLeeTan","text":"Kian-Lee Tan"},{"@pid":"30/6480","text":"Cheng Hian Goh"},{"@pid":"o/BengChinOoi","text":"Beng Chin Ooi"}]},"title":"Progressive evaluation of nested aggregate queries.","venue":"VLDB J.","volume":"9","number":"3","pages":"261-278","year":"2000","type":"Journal Articles","access":"closed","key":"journals/vldb/TanGO00","doi":"10.1007/S007780000026","ee":"https://doi.org/10.1007/s007780000026","url":"https://dblp.org/rec/journals/vldb/TanGO00"},
+"url":"URL#7044607"
+}
+]
+}
+}
+}

@@ -1,0 +1,152 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb10.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"82.79"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"20",
+"@dc":"20",
+"@oc":"20",
+"@id":"47762603",
+"text":":facetid:toc:db/journals/vldb/vldb10.bht"
+}
+},
+"hits":{
+"@total":"20",
+"@computed":"20",
+"@sent":"20",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"6958962",
+"info":{"authors":{"author":[{"@pid":"a/AmrElAbbadi","text":"Amr El Abbadi"},{"@pid":"19/4663","text":"Gunter Schlageter"},{"@pid":"w/KyuYoungWhang","text":"Kyu-Young Whang"}]},"title":"Guest editorial.","venue":"VLDB J.","volume":"10","number":"2-3","pages":"119","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/AbbadiSW01","doi":"10.1007/S007780100053","ee":"https://doi.org/10.1007/s007780100053","url":"https://dblp.org/rec/journals/vldb/AbbadiSW01"},
+"url":"URL#6958962"
+},
+{
+"@score":"1",
+"@id":"6958963",
+"info":{"authors":{"author":[{"@pid":"b/ABonifati","text":"Angela Bonifati"},{"@pid":"c/StefanoCeri","text":"Stefano Ceri"},{"@pid":"05/600","text":"Stefano Paraboschi"}]},"title":"Active rules for XML: A new paradigm for E-services.","venue":"VLDB J.","volume":"10","number":"1","pages":"39-47","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/BonifatiCP01","doi":"10.1007/S007780100039","ee":"https://doi.org/10.1007/s007780100039","url":"https://dblp.org/rec/journals/vldb/BonifatiCP01"},
+"url":"URL#6958963"
+},
+{
+"@score":"1",
+"@id":"6958964",
+"info":{"authors":{"author":[{"@pid":"08/3274","text":"Reinhard Braumandl"},{"@pid":"87/1093","text":"Markus Keidl"},{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"},{"@pid":"k/DonaldKossmann","text":"Donald Kossmann"},{"@pid":"54/1533","text":"Alexander Kreutz"},{"@pid":"s/StefanSeltzsam","text":"Stefan Seltzsam"},{"@pid":"17/804","text":"Konrad Stocker"}]},"title":"ObjectGlobe: Ubiquitous query processing on the Internet.","venue":"VLDB J.","volume":"10","number":"1","pages":"48-71","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/BraumandlKKKKSS01","doi":"10.1007/S007780100043","ee":"https://doi.org/10.1007/s007780100043","url":"https://dblp.org/rec/journals/vldb/BraumandlKKKKSS01"},
+"url":"URL#6958964"
+},
+{
+"@score":"1",
+"@id":"6958965",
+"info":{"authors":{"author":[{"@pid":"c/FabioCasati","text":"Fabio Casati"},{"@pid":"64/561","text":"Ming-Chien Shan"},{"@pid":"82/2760","text":"Dimitrios Georgakopoulos 0001"}]},"title":"E-Services - Guest editorial.","venue":"VLDB J.","volume":"10","number":"1","pages":"1","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/CasatiSG01","doi":"10.1007/S007780100041","ee":"https://doi.org/10.1007/s007780100041","url":"https://dblp.org/rec/journals/vldb/CasatiSG01"},
+"url":"URL#6958965"
+},
+{
+"@score":"1",
+"@id":"6958966",
+"info":{"authors":{"author":[{"@pid":"c/KaushikChakrabarti","text":"Kaushik Chakrabarti"},{"@pid":"g/MinosNGarofalakis","text":"Minos N. Garofalakis"},{"@pid":"r/RajeevRastogi","text":"Rajeev Rastogi"},{"@pid":"s/KyuseokShim","text":"Kyuseok Shim"}]},"title":"Approximate query processing using wavelets.","venue":"VLDB J.","volume":"10","number":"2-3","pages":"199-223","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/ChakrabartiGRS01","doi":"10.1007/S007780100049","ee":"https://doi.org/10.1007/s007780100049","url":"https://dblp.org/rec/journals/vldb/ChakrabartiGRS01"},
+"url":"URL#6958966"
+},
+{
+"@score":"1",
+"@id":"6958967",
+"info":{"authors":{"author":[{"@pid":"c/KCCChang","text":"Kevin Chen-Chuan Chang"},{"@pid":"g/HGarciaMolina","text":"Hector Garcia-Molina"}]},"title":"Approximate query mapping: Accounting for translation closeness.","venue":"VLDB J.","volume":"10","number":"2-3","pages":"155-181","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/ChangG01","doi":"10.1007/S007780100042","ee":"https://doi.org/10.1007/s007780100042","url":"https://dblp.org/rec/journals/vldb/ChangG01"},
+"url":"URL#6958967"
+},
+{
+"@score":"1",
+"@id":"6958969",
+"info":{"authors":{"author":[{"@pid":"d/AnindyaDatta","text":"Anindya Datta"},{"@pid":"58/1227","text":"Kaushik Dutta"},{"@pid":"84/5479","text":"Debra E. VanderMeer"},{"@pid":"r/KrithiRamamritham","text":"Krithi Ramamritham"},{"@pid":"n/ShamkantBNavathe","text":"Shamkant B. Navathe"}]},"title":"An architecture to support scalable online personalization on the Web.","venue":"VLDB J.","volume":"10","number":"1","pages":"104-117","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/DattaDVRN01","doi":"10.1007/S007780100037","ee":"https://doi.org/10.1007/s007780100037","url":"https://dblp.org/rec/journals/vldb/DattaDVRN01"},
+"url":"URL#6958969"
+},
+{
+"@score":"1",
+"@id":"6958970",
+"info":{"authors":{"author":[{"@pid":"70/266","text":"Anat Eyal"},{"@pid":"m/TovaMilo","text":"Tova Milo"}]},"title":"Integrating and customizing heterogeneous e-commerce applications.","venue":"VLDB J.","volume":"10","number":"1","pages":"16-38","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/EyalM01","doi":"10.1007/S007780100045","ee":"https://doi.org/10.1007/s007780100045","url":"https://dblp.org/rec/journals/vldb/EyalM01"},
+"url":"URL#6958970"
+},
+{
+"@score":"1",
+"@id":"6958971",
+"info":{"authors":{"author":[{"@pid":"g/PaulWPJGrefen","text":"Paul W. P. J. Grefen"},{"@pid":"64/3225","text":"Jochem Vonk"},{"@pid":"a/PeterMGApers","text":"Peter M. G. Apers"}]},"title":"Global transaction support for workflow management systems: from formal specification to practical implementation.","venue":"VLDB J.","volume":"10","number":"4","pages":"316-333","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/GrefenVA01","doi":"10.1007/S007780100056","ee":"https://doi.org/10.1007/s007780100056","url":"https://dblp.org/rec/journals/vldb/GrefenVA01"},
+"url":"URL#6958971"
+},
+{
+"@score":"1",
+"@id":"6958972",
+"info":{"authors":{"author":{"@pid":"h/AlonYHalevy","text":"Alon Y. Halevy"}},"title":"Answering queries using views: A survey.","venue":"VLDB J.","volume":"10","number":"4","pages":"270-294","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/Halevy01","doi":"10.1007/S007780100054","ee":"https://doi.org/10.1007/s007780100054","url":"https://dblp.org/rec/journals/vldb/Halevy01"},
+"url":"URL#6958972"
+},
+{
+"@score":"1",
+"@id":"6958973",
+"info":{"authors":{"author":[{"@pid":"l/DominiqueLaurent","text":"Dominique Laurent 0001"},{"@pid":"13/4189","text":"Jens Lechtenbörger"},{"@pid":"s/NicolasSpyratos","text":"Nicolas Spyratos"},{"@pid":"v/GottfriedVossen","text":"Gottfried Vossen"}]},"title":"Monotonic complements for independent data warehouses.","venue":"VLDB J.","volume":"10","number":"4","pages":"295-315","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/LaurentLSV01","doi":"10.1007/S007780100055","ee":"https://doi.org/10.1007/s007780100055","url":"https://dblp.org/rec/journals/vldb/LaurentLSV01"},
+"url":"URL#6958973"
+},
+{
+"@score":"1",
+"@id":"6958976",
+"info":{"authors":{"author":[{"@pid":"42/2448","text":"Massimo Mecella"},{"@pid":"p/BarbaraPernici","text":"Barbara Pernici"}]},"title":"Designing wrapper components for e-services in integrating heterogeneous systems.","venue":"VLDB J.","volume":"10","number":"1","pages":"2-15","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/MecellaP01","doi":"10.1007/S007780100044","ee":"https://doi.org/10.1007/s007780100044","url":"https://dblp.org/rec/journals/vldb/MecellaP01"},
+"url":"URL#6958976"
+},
+{
+"@score":"1",
+"@id":"6958978",
+"info":{"authors":{"author":[{"@pid":"68/1297","text":"Rachel Pottinger"},{"@pid":"h/AlonYHalevy","text":"Alon Y. Halevy"}]},"title":"MiniCon: A scalable algorithm for answering queries using views.","venue":"VLDB J.","volume":"10","number":"2-3","pages":"182-198","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/PottingerH01","doi":"10.1007/S007780100048","ee":"https://doi.org/10.1007/s007780100048","url":"https://dblp.org/rec/journals/vldb/PottingerH01"},
+"url":"URL#6958978"
+},
+{
+"@score":"1",
+"@id":"6958979",
+"info":{"authors":{"author":[{"@pid":"p/PPucheral","text":"Philippe Pucheral"},{"@pid":"b/LucBouganim","text":"Luc Bouganim"},{"@pid":"v/PatrickValduriez","text":"Patrick Valduriez"},{"@pid":"41/6161","text":"Christophe Bobineau"}]},"title":"PicoDBMS: Scaling down database techniques for the smartcard.","venue":"VLDB J.","volume":"10","number":"2-3","pages":"120-132","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/PucheralBVB01","doi":"10.1007/S007780100047","ee":"https://doi.org/10.1007/s007780100047","url":"https://dblp.org/rec/journals/vldb/PucheralBVB01"},
+"url":"URL#6958979"
+},
+{
+"@score":"1",
+"@id":"6958980",
+"info":{"authors":{"author":[{"@pid":"r/ERahm","text":"Erhard Rahm"},{"@pid":"b/PhilipABernstein","text":"Philip A. Bernstein"}]},"title":"A survey of approaches to automatic schema matching.","venue":"VLDB J.","volume":"10","number":"4","pages":"334-350","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/RahmB01","doi":"10.1007/S007780100057","ee":"https://doi.org/10.1007/s007780100057","url":"https://dblp.org/rec/journals/vldb/RahmB01"},
+"url":"URL#6958980"
+},
+{
+"@score":"1",
+"@id":"6958981",
+"info":{"authors":{"author":{"@pid":"s/SunitaSarawagi","text":"Sunita Sarawagi"}},"title":"User-cognizant multidimensional analysis.","venue":"VLDB J.","volume":"10","number":"2-3","pages":"224-239","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/Sarawagi01","doi":"10.1007/S007780100046","ee":"https://doi.org/10.1007/s007780100046","url":"https://dblp.org/rec/journals/vldb/Sarawagi01"},
+"url":"URL#6958981"
+},
+{
+"@score":"1",
+"@id":"6958982",
+"info":{"authors":{"author":[{"@pid":"s/JShanmugasundaram","text":"Jayavel Shanmugasundaram"},{"@pid":"03/6706","text":"Eugene J. Shekita"},{"@pid":"09/6129","text":"Rimon Barr"},{"@pid":"31/3455","text":"Michael J. Carey 0001"},{"@pid":"l/BruceGLindsay1","text":"Bruce G. Lindsay 0001"},{"@pid":"p/HamidPirahesh","text":"Hamid Pirahesh"},{"@pid":"76/3381","text":"Berthold Reinwald"}]},"title":"Efficiently publishing relational data as XML documents.","venue":"VLDB J.","volume":"10","number":"2-3","pages":"133-154","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/ShanmugasundaramSBCLPR01","doi":"10.1007/S007780100052","ee":"https://doi.org/10.1007/s007780100052","url":"https://dblp.org/rec/journals/vldb/ShanmugasundaramSBCLPR01"},
+"url":"URL#6958982"
+},
+{
+"@score":"1",
+"@id":"6958983",
+"info":{"authors":{"author":[{"@pid":"s/GermanShegalov","text":"German Shegalov"},{"@pid":"83/13","text":"Michael Gillmann"},{"@pid":"w/GerhardWeikum","text":"Gerhard Weikum"}]},"title":"XML-enabled workflow management for e-services across heterogeneous platforms.","venue":"VLDB J.","volume":"10","number":"1","pages":"91-103","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/ShegalovGW01","doi":"10.1007/S007780100038","ee":"https://doi.org/10.1007/s007780100038","url":"https://dblp.org/rec/journals/vldb/ShegalovGW01"},
+"url":"URL#6958983"
+},
+{
+"@score":"1",
+"@id":"6958984",
+"info":{"authors":{"author":[{"@pid":"s/StanleyYWSu","text":"Stanley Y. W. Su"},{"@pid":"75/6060","text":"Chunbo Huang"},{"@pid":"h/JoachimHammer","text":"Joachim Hammer"},{"@pid":"50/4147","text":"Yihua Huang"},{"@pid":"37/1494-2","text":"Haifei Li 0002"},{"@pid":"10/3099-3","text":"Liu Wang 0003"},{"@pid":"03/1825","text":"Youzhong Liu"},{"@pid":"76/5344","text":"Charnyote Pluempitiwiriyawej"},{"@pid":"51/2061","text":"Minsoo Lee"},{"@pid":"l/HermanLam","text":"Herman Lam"}]},"title":"An Internet-based negotiation server for e-commerce.","venue":"VLDB J.","volume":"10","number":"1","pages":"72-90","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/SuHHHLWLPLL01","doi":"10.1007/S007780100051","ee":"https://doi.org/10.1007/s007780100051","url":"https://dblp.org/rec/journals/vldb/SuHHHLWLPLL01"},
+"url":"URL#6958984"
+},
+{
+"@score":"1",
+"@id":"6958985",
+"info":{"authors":{"author":[{"@pid":"t/CanTurker","text":"Can Türker"},{"@pid":"g/MichaelGertz","text":"Michael Gertz 0001"}]},"title":"Semantic integrity support in SQL: 1999 and commercial (object-)relational database management systems.","venue":"VLDB J.","volume":"10","number":"4","pages":"241-269","year":"2001","type":"Journal Articles","access":"closed","key":"journals/vldb/TurkerG01","doi":"10.1007/S007780100050","ee":"https://doi.org/10.1007/s007780100050","url":"https://dblp.org/rec/journals/vldb/TurkerG01"},
+"url":"URL#6958985"
+}
+]
+}
+}
+}

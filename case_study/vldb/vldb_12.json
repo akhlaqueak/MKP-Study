@@ -1,0 +1,170 @@
+{
+"result":{
+"query":":facetid:toc:\"db/journals/vldb/vldb12.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"77.90"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"23",
+"@dc":"23",
+"@oc":"23",
+"@id":"47762605",
+"text":":facetid:toc:db/journals/vldb/vldb12.bht"
+}
+},
+"hits":{
+"@total":"23",
+"@computed":"23",
+"@sent":"23",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"6752051",
+"info":{"authors":{"author":[{"@pid":"a/DJAbadi","text":"Daniel J. Abadi"},{"@pid":"06/3450","text":"Donald Carney"},{"@pid":"c/UgurCetintemel","text":"Ugur Çetintemel"},{"@pid":"c/MitchCherniack","text":"Mitch Cherniack"},{"@pid":"10/3476","text":"Christian Convey"},{"@pid":"59/2779","text":"Sangdon Lee"},{"@pid":"s/MichaelStonebraker","text":"Michael Stonebraker"},{"@pid":"t/NesimeTatbul","text":"Nesime Tatbul"},{"@pid":"z/SBZdonik","text":"Stanley B. Zdonik"}]},"title":"Aurora: a new model and architecture for data stream management.","venue":"VLDB J.","volume":"12","number":"2","pages":"120-139","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/AbadiCCCCLSTZ03","doi":"10.1007/S00778-003-0095-Z","ee":"https://doi.org/10.1007/s00778-003-0095-z","url":"https://dblp.org/rec/journals/vldb/AbadiCCCCLSTZ03"},
+"url":"URL#6752051"
+},
+{
+"@score":"1",
+"@id":"6752052",
+"info":{"authors":{"author":[{"@pid":"a/RAgrawal","text":"Rakesh Agrawal 0001"},{"@pid":"h/PeterJHaas","text":"Peter J. Haas"},{"@pid":"k/JerryKiernan","text":"Jerry Kiernan"}]},"title":"Watermarking relational data: framework, algorithms and analysis.","venue":"VLDB J.","volume":"12","number":"2","pages":"157-169","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/AgrawalHK03","doi":"10.1007/S00778-003-0097-X","ee":"https://doi.org/10.1007/s00778-003-0097-x","url":"https://dblp.org/rec/journals/vldb/AgrawalHK03"},
+"url":"URL#6752052"
+},
+{
+"@score":"1",
+"@id":"6752053",
+"info":{"authors":{"author":[{"@pid":"a/VAtluri","text":"Vijay Atluri"},{"@pid":"j/AnupamJoshi","text":"Anupam Joshi"},{"@pid":"y/YelenaYesha","text":"Yelena Yesha"}]},"title":"Guest editorial.","venue":"VLDB J.","volume":"12","number":"4","pages":"285","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/AtluriJY03","doi":"10.1007/S00778-003-0109-X","ee":"https://doi.org/10.1007/s00778-003-0109-x","url":"https://dblp.org/rec/journals/vldb/AtluriJY03"},
+"url":"URL#6752053"
+},
+{
+"@score":"1",
+"@id":"6752054",
+"info":{"authors":{"author":[{"@pid":"b/PhilipABernstein","text":"Philip A. Bernstein"},{"@pid":"i/YEIoannidis","text":"Yannis E. Ioannidis"},{"@pid":"r/RaghuRamakrishnan","text":"Raghu Ramakrishnan 0001"}]},"title":"Guest editorial.","venue":"VLDB J.","volume":"12","number":"2","pages":"87-88","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/BernsteinIR03","doi":"10.1007/S00778-003-0092-2","ee":"https://doi.org/10.1007/s00778-003-0092-2","url":"https://dblp.org/rec/journals/vldb/BernsteinIR03"},
+"url":"URL#6752054"
+},
+{
+"@score":"1",
+"@id":"6752055",
+"info":{"authors":{"author":[{"@pid":"c/SChakrabarti","text":"Soumen Chakrabarti"},{"@pid":"96/3834","text":"Shourya Roy"},{"@pid":"23/221","text":"Mahesh V. Soundalgekar"}]},"title":"Fast and accurate text classification via multiple linear discriminant projections pp.","venue":"VLDB J.","volume":"12","number":"2","pages":"170-185","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/ChakrabartiRS03","doi":"10.1007/S00778-003-0098-9","ee":"https://doi.org/10.1007/s00778-003-0098-9","url":"https://dblp.org/rec/journals/vldb/ChakrabartiRS03"},
+"url":"URL#6752055"
+},
+{
+"@score":"1",
+"@id":"6752056",
+"info":{"authors":{"author":[{"@pid":"c/CheeYongChan","text":"Chee Yong Chan"},{"@pid":"g/MinosNGarofalakis","text":"Minos N. Garofalakis"},{"@pid":"r/RajeevRastogi","text":"Rajeev Rastogi"}]},"title":"RE-tree: an efficient index structure for regular expressions.","venue":"VLDB J.","volume":"12","number":"2","pages":"102-119","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/ChanGR03","doi":"10.1007/S00778-003-0094-0","ee":"https://doi.org/10.1007/s00778-003-0094-0","url":"https://dblp.org/rec/journals/vldb/ChanGR03"},
+"url":"URL#6752056"
+},
+{
+"@score":"1",
+"@id":"6752057",
+"info":{"authors":{"author":[{"@pid":"62/2845","text":"Sirish Chandrasekaran"},{"@pid":"f/MJFranklin","text":"Michael J. Franklin"}]},"title":"PSoup: a system for streaming queries over streaming data.","venue":"VLDB J.","volume":"12","number":"2","pages":"140-156","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/ChandrasekaranF03","doi":"10.1007/S00778-003-0096-Y","ee":"https://doi.org/10.1007/s00778-003-0096-y","url":"https://dblp.org/rec/journals/vldb/ChandrasekaranF03"},
+"url":"URL#6752057"
+},
+{
+"@score":"1",
+"@id":"6752058",
+"info":{"authors":{"author":[{"@pid":"c/CecilChuaEngHuang","text":"Cecil Chua Eng Huang"},{"@pid":"78/4406","text":"Roger H. L. Chiang"},{"@pid":"l/EePengLim","text":"Ee-Peng Lim"}]},"title":"Instance-based attribute identification in database integration.","venue":"VLDB J.","volume":"12","number":"3","pages":"228-243","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/ChuaCL03","doi":"10.1007/S00778-003-0088-Y","ee":"https://doi.org/10.1007/s00778-003-0088-y","url":"https://dblp.org/rec/journals/vldb/ChuaCL03"},
+"url":"URL#6752058"
+},
+{
+"@score":"1",
+"@id":"6752059",
+"info":{"authors":{"author":[{"@pid":"06/3051","text":"Yingwei Cui"},{"@pid":"w/JenniferWidom","text":"Jennifer Widom"}]},"title":"Lineage tracing for general data warehouse transformations.","venue":"VLDB J.","volume":"12","number":"1","pages":"41-58","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/CuiW03","doi":"10.1007/S00778-002-0083-8","ee":"https://doi.org/10.1007/s00778-002-0083-8","url":"https://dblp.org/rec/journals/vldb/CuiW03"},
+"url":"URL#6752059"
+},
+{
+"@score":"1",
+"@id":"6752060",
+"info":{"authors":{"author":[{"@pid":"d/AnHaiDoan","text":"AnHai Doan"},{"@pid":"76/5642","text":"Jayant Madhavan"},{"@pid":"37/813","text":"Robin Dhamankar"},{"@pid":"d/PedroDomingos","text":"Pedro M. Domingos"},{"@pid":"h/AlonYHalevy","text":"Alon Y. Halevy"}]},"title":"Learning to match ontologies on the Semantic Web.","venue":"VLDB J.","volume":"12","number":"4","pages":"303-319","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/DoanMDDH03","doi":"10.1007/S00778-003-0104-2","ee":"https://doi.org/10.1007/s00778-003-0104-2","url":"https://dblp.org/rec/journals/vldb/DoanMDDH03"},
+"url":"URL#6752060"
+},
+{
+"@score":"1",
+"@id":"6752061",
+"info":{"authors":{"author":[{"@pid":"35/2350","text":"Renato Fileto"},{"@pid":"l/LingLiu","text":"Ling Liu 0001"},{"@pid":"p/CaltonPu","text":"Calton Pu"},{"@pid":"35/3095","text":"Eduardo Delgado Assad"},{"@pid":"m/CBMedeiros","text":"Claudia Bauzer Medeiros"}]},"title":"POESIA: An ontological workflow approach for composing Web services in agriculture.","venue":"VLDB J.","volume":"12","number":"4","pages":"352-367","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/FiletoLPAM03","doi":"10.1007/S00778-003-0103-3","ee":"https://doi.org/10.1007/s00778-003-0103-3","url":"https://dblp.org/rec/journals/vldb/FiletoLPAM03"},
+"url":"URL#6752061"
+},
+{
+"@score":"1",
+"@id":"6752062",
+"info":{"authors":{"author":[{"@pid":"89/2972","text":"Chi-Wai Fung"},{"@pid":"k/KKarlapalem","text":"Kamalakar Karlapalem"},{"@pid":"181/2689-1","text":"Qing Li 0001"}]},"title":"Cost-driven vertical class partitioning for methods in object oriented databases.","venue":"VLDB J.","volume":"12","number":"3","pages":"187-210","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/FungKL03","doi":"10.1007/S00778-002-0084-7","ee":"https://doi.org/10.1007/s00778-002-0084-7","url":"https://dblp.org/rec/journals/vldb/FungKL03"},
+"url":"URL#6752062"
+},
+{
+"@score":"1",
+"@id":"6752063",
+"info":{"authors":{"author":[{"@pid":"99/5919","text":"Maria Halkidi"},{"@pid":"69/6924","text":"Benjamin Nguyen"},{"@pid":"v/IraklisVarlamis","text":"Iraklis Varlamis"},{"@pid":"v/MVazirgiannis","text":"Michalis Vazirgiannis"}]},"title":"THESUS: Organizing Web document collections based on link semantics.","venue":"VLDB J.","volume":"12","number":"4","pages":"320-332","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/HalkidiNVV03","doi":"10.1007/S00778-003-0100-6","ee":"https://doi.org/10.1007/s00778-003-0100-6","url":"https://dblp.org/rec/journals/vldb/HalkidiNVV03"},
+"url":"URL#6752063"
+},
+{
+"@score":"1",
+"@id":"6752064",
+"info":{"authors":{"author":[{"@pid":"h/SvenHelmer","text":"Sven Helmer"},{"@pid":"m/GuidoMoerkotte","text":"Guido Moerkotte"}]},"title":"A performance study of four index structures for set-valued attributes of low cardinality.","venue":"VLDB J.","volume":"12","number":"3","pages":"244-261","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/HelmerM03","doi":"10.1007/S00778-003-0106-0","ee":"https://doi.org/10.1007/s00778-003-0106-0","url":"https://dblp.org/rec/journals/vldb/HelmerM03"},
+"url":"URL#6752064"
+},
+{
+"@score":"1",
+"@id":"6752065",
+"info":{"authors":{"author":{"@pid":"l/ChenLi1","text":"Chen Li 0001"}},"title":"Computing complete answers to queries in the presence of limited access patterns.","venue":"VLDB J.","volume":"12","number":"3","pages":"211-227","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/Li03","doi":"10.1007/S00778-002-0085-6","ee":"https://doi.org/10.1007/s00778-002-0085-6","url":"https://dblp.org/rec/journals/vldb/Li03"},
+"url":"URL#6752065"
+},
+{
+"@score":"1",
+"@id":"6752066",
+"info":{"authors":{"author":[{"@pid":"34/590","text":"Alexander Maedche"},{"@pid":"56/1508","text":"Boris Motik"},{"@pid":"62/4365","text":"Ljiljana Stojanovic"}]},"title":"Managing multiple and distributed ontologies on the Semantic Web.","venue":"VLDB J.","volume":"12","number":"4","pages":"286-302","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/MaedcheMS03","doi":"10.1007/S00778-003-0102-4","ee":"https://doi.org/10.1007/s00778-003-0102-4","url":"https://dblp.org/rec/journals/vldb/MaedcheMS03"},
+"url":"URL#6752066"
+},
+{
+"@score":"1",
+"@id":"6752067",
+"info":{"authors":{"author":[{"@pid":"m/BMedjahed","text":"Brahim Medjahed"},{"@pid":"b/BoualemBenatallah","text":"Boualem Benatallah"},{"@pid":"01/458","text":"Athman Bouguettaya"},{"@pid":"n/AnneHHNgu","text":"Anne H. H. Ngu"},{"@pid":"e/AKElmagarmid","text":"Ahmed K. Elmagarmid"}]},"title":"Business-to-business interactions: issues and enabling technologies.","venue":"VLDB J.","volume":"12","number":"1","pages":"59-85","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/MedjahedBBNE03","doi":"10.1007/S00778-003-0087-Z","ee":"https://doi.org/10.1007/s00778-003-0087-z","url":"https://dblp.org/rec/journals/vldb/MedjahedBBNE03"},
+"url":"URL#6752067"
+},
+{
+"@score":"1",
+"@id":"6752068",
+"info":{"authors":{"author":[{"@pid":"m/BMedjahed","text":"Brahim Medjahed"},{"@pid":"01/458","text":"Athman Bouguettaya"},{"@pid":"e/AKElmagarmid","text":"Ahmed K. Elmagarmid"}]},"title":"Composing Web services on the Semantic Web.","venue":"VLDB J.","volume":"12","number":"4","pages":"333-351","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/MedjahedBE03","doi":"10.1007/S00778-003-0101-5","ee":"https://doi.org/10.1007/s00778-003-0101-5","url":"https://dblp.org/rec/journals/vldb/MedjahedBE03"},
+"url":"URL#6752068"
+},
+{
+"@score":"1",
+"@id":"6752069",
+"info":{"authors":{"author":{"@pid":"o/MTamerOzsu","text":"M. Tamer Özsu"}},"title":"New partnership with ACM and update on the journal.","venue":"VLDB J.","volume":"12","number":"1","pages":"1","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/Ozsu03","doi":"10.1007/S00778-003-0089-X","ee":"https://doi.org/10.1007/s00778-003-0089-x","url":"https://dblp.org/rec/journals/vldb/Ozsu03"},
+"url":"URL#6752069"
+},
+{
+"@score":"1",
+"@id":"6752070",
+"info":{"authors":{"author":[{"@pid":"02/4973","text":"Ravishankar Ramamurthy"},{"@pid":"d/DJDeWitt","text":"David J. DeWitt"},{"@pid":"25/221","text":"Qi Su"}]},"title":"A case for fractured mirrors.","venue":"VLDB J.","volume":"12","number":"2","pages":"89-101","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/RamamurthyDS03","doi":"10.1007/S00778-003-0093-1","ee":"https://doi.org/10.1007/s00778-003-0093-1","url":"https://dblp.org/rec/journals/vldb/RamamurthyDS03"},
+"url":"URL#6752070"
+},
+{
+"@score":"1",
+"@id":"6752071",
+"info":{"authors":{"author":[{"@pid":"s/AmitPSheth","text":"Amit P. Sheth"},{"@pid":"65/5985","text":"Sanjeev Thacker"},{"@pid":"61/2044","text":"Shuchi Patel"}]},"title":"Complex relationships and knowledge discovery support in the InfoQuilt system.","venue":"VLDB J.","volume":"12","number":"1","pages":"2-27","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/ShethTP03","doi":"10.1007/S00778-002-0071-Z","ee":"https://doi.org/10.1007/s00778-002-0071-z","url":"https://dblp.org/rec/journals/vldb/ShethTP03"},
+"url":"URL#6752071"
+},
+{
+"@score":"1",
+"@id":"6752072",
+"info":{"authors":{"author":[{"@pid":"94/1028","text":"Vassilios S. Verykios"},{"@pid":"64/2333","text":"George V. Moustakides"},{"@pid":"97/3423","text":"Mohamed G. Elfeky"}]},"title":"A Bayesian decision model for cost optimal record matching.","venue":"VLDB J.","volume":"12","number":"1","pages":"28-40","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/VerykiosME03","doi":"10.1007/S00778-002-0072-Y","ee":"https://doi.org/10.1007/s00778-002-0072-y","url":"https://dblp.org/rec/journals/vldb/VerykiosME03"},
+"url":"URL#6752072"
+},
+{
+"@score":"1",
+"@id":"6752073",
+"info":{"authors":{"author":[{"@pid":"y/JunYang1","text":"Jun Yang 0001"},{"@pid":"w/JenniferWidom","text":"Jennifer Widom"}]},"title":"Incremental computation and maintenance of temporal aggregates.","venue":"VLDB J.","volume":"12","number":"3","pages":"262-283","year":"2003","type":"Journal Articles","access":"closed","key":"journals/vldb/YangW03","doi":"10.1007/S00778-003-0107-Z","ee":"https://doi.org/10.1007/s00778-003-0107-z","url":"https://dblp.org/rec/journals/vldb/YangW03"},
+"url":"URL#6752073"
+}
+]
+}
+}
+}

@@ -1,0 +1,662 @@
+{
+"result":{
+"query":":facetid:toc:\"db/conf/kdd/kdd2005.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"106.36"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"105",
+"@dc":"105",
+"@oc":"105",
+"@id":"47680133",
+"text":":facetid:toc:db/conf/kdd/kdd2005.bht"
+}
+},
+"hits":{
+"@total":"105",
+"@computed":"105",
+"@sent":"105",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"6535259",
+"info":{"authors":{"author":{"@pid":"a/CharuCAggarwal","text":"Charu C. Aggarwal"}},"title":"Towards exploratory test instance specific algorithms for high dimensional classification.","venue":"KDD","pages":"526-531","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Aggarwal05","doi":"10.1145/1081870.1081931","ee":"https://doi.org/10.1145/1081870.1081931","url":"https://dblp.org/rec/conf/kdd/Aggarwal05"},
+"url":"URL#6535259"
+},
+{
+"@score":"1",
+"@id":"6535264",
+"info":{"authors":{"author":[{"@pid":"82/4807","text":"Arindam Banerjee 0001"},{"@pid":"40/3391","text":"Chase Krumpelman"},{"@pid":"51/2272","text":"Joydeep Ghosh"},{"@pid":"76/5024","text":"Sugato Basu"},{"@pid":"m/RaymondJMooney","text":"Raymond J. Mooney"}]},"title":"Model-based overlapping clustering.","venue":"KDD","pages":"532-537","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/BanerjeeKGBM05","doi":"10.1145/1081870.1081932","ee":"https://doi.org/10.1145/1081870.1081932","url":"https://dblp.org/rec/conf/kdd/BanerjeeKGBM05"},
+"url":"URL#6535264"
+},
+{
+"@score":"1",
+"@id":"6535265",
+"info":{"authors":{"author":{"@pid":"b/AlbertLaszloBarabasi","text":"Albert-László Barabási"}},"title":"The architecture of complexity: the structure and the dynamics of networks, from the web to the cell.","venue":"KDD","pages":"3","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Barabasi05","doi":"10.1145/1081870.1081873","ee":"https://doi.org/10.1145/1081870.1081873","url":"https://dblp.org/rec/conf/kdd/Barabasi05"},
+"url":"URL#6535265"
+},
+{
+"@score":"1",
+"@id":"6535267",
+"info":{"authors":{"author":[{"@pid":"44/4623","text":"Christopher Besemann"},{"@pid":"28/278","text":"Anne Denton"}]},"title":"Integration of profile hidden Markov model output into association rule mining.","venue":"KDD","pages":"538-543","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/BesemannD05","doi":"10.1145/1081870.1081933","ee":"https://doi.org/10.1145/1081870.1081933","url":"https://dblp.org/rec/conf/kdd/BesemannD05"},
+"url":"URL#6535267"
+},
+{
+"@score":"1",
+"@id":"6535270",
+"info":{"authors":{"author":[{"@pid":"30/3994","text":"Giuseppe Carenini"},{"@pid":"n/RTNg","text":"Raymond T. Ng"},{"@pid":"44/1756","text":"Xiaodong Zhou"}]},"title":"Scalable discovery of hidden emails from large folders.","venue":"KDD","pages":"544-549","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/CareniniNZ05","doi":"10.1145/1081870.1081934","ee":"https://doi.org/10.1145/1081870.1081934","url":"https://dblp.org/rec/conf/kdd/CareniniNZ05"},
+"url":"URL#6535270"
+},
+{
+"@score":"1",
+"@id":"6535271",
+"info":{"authors":{"author":[{"@pid":"18/6540","text":"Chien Chin Chen"},{"@pid":"30/2066","text":"Meng Chang Chen"},{"@pid":"c/MingSyanChen","text":"Ming-Syan Chen"}]},"title":"LIPED: HMM-based life profiles for adaptive event detection.","venue":"KDD","pages":"556-561","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ChenCC05","doi":"10.1145/1081870.1081936","ee":"https://doi.org/10.1145/1081870.1081936","url":"https://dblp.org/rec/conf/kdd/ChenCC05"},
+"url":"URL#6535271"
+},
+{
+"@score":"1",
+"@id":"6535272",
+"info":{"authors":{"author":[{"@pid":"22/6904-5","text":"Rong Chen 0005"},{"@pid":"12/6622","text":"Edward Herskovits"}]},"title":"A Bayesian network classifier with inverse tree structure for voxelwise magnetic resonance image analysis.","venue":"KDD","pages":"4-12","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ChenH05","doi":"10.1145/1081870.1081875","ee":"https://doi.org/10.1145/1081870.1081875","url":"https://dblp.org/rec/conf/kdd/ChenH05"},
+"url":"URL#6535272"
+},
+{
+"@score":"1",
+"@id":"6535273",
+"info":{"authors":{"author":[{"@pid":"08/57","text":"Haifeng Chen"},{"@pid":"47/4422","text":"Guofei Jiang"},{"@pid":"51/6366","text":"Cristian Ungureanu"},{"@pid":"38/467","text":"Kenji Yoshihira"}]},"title":"Failure detection and localization in component based systems by online tracking.","venue":"KDD","pages":"750-755","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ChenJUY05","doi":"10.1145/1081870.1081968","ee":"https://doi.org/10.1145/1081870.1081968","url":"https://dblp.org/rec/conf/kdd/ChenJUY05"},
+"url":"URL#6535273"
+},
+{
+"@score":"1",
+"@id":"6535274",
+"info":{"authors":{"author":[{"@pid":"24/1518-7","text":"Xin Chen 0007"},{"@pid":"75/1418","text":"Yi-fang Brook Wu"}]},"title":"Web mining from competitors&apos; websites.","venue":"KDD","pages":"550-555","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ChenW05","doi":"10.1145/1081870.1081935","ee":"https://doi.org/10.1145/1081870.1081935","url":"https://dblp.org/rec/conf/kdd/ChenW05"},
+"url":"URL#6535274"
+},
+{
+"@score":"1",
+"@id":"6535276",
+"info":{"authors":{"author":[{"@pid":"96/5516","text":"Richard Cole 0001"},{"@pid":"s/DennisShasha","text":"Dennis E. Shasha"},{"@pid":"82/5250","text":"Xiaojian Zhao"}]},"title":"Fast window correlations over uncooperative time series.","venue":"KDD","pages":"743-749","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ColeSZ05","doi":"10.1145/1081870.1081966","ee":"https://doi.org/10.1145/1081870.1081966","url":"https://dblp.org/rec/conf/kdd/ColeSZ05"},
+"url":"URL#6535276"
+},
+{
+"@score":"1",
+"@id":"6535277",
+"info":{"authors":{"author":[{"@pid":"74/3510","text":"Shengnan Cong"},{"@pid":"h/JiaweiHan","text":"Jiawei Han 0001"},{"@pid":"p/DavidAPadua","text":"David A. Padua"}]},"title":"Parallel mining of closed sequential patterns.","venue":"KDD","pages":"562-567","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/CongHP05","doi":"10.1145/1081870.1081937","ee":"https://doi.org/10.1145/1081870.1081937","url":"https://dblp.org/rec/conf/kdd/CongHP05"},
+"url":"URL#6535277"
+},
+{
+"@score":"1",
+"@id":"6535278",
+"info":{"authors":{"author":[{"@pid":"54/385-1","text":"Anirban Dasgupta 0001"},{"@pid":"k/RaviKumar","text":"Ravi Kumar 0001"},{"@pid":"r/PRaghavan","text":"Prabhakar Raghavan"},{"@pid":"t/ATomkins","text":"Andrew Tomkins"}]},"title":"Variable latent semantic indexing.","venue":"KDD","pages":"13-21","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/DasguptaKRT05","doi":"10.1145/1081870.1081876","ee":"https://doi.org/10.1145/1081870.1081876","url":"https://dblp.org/rec/conf/kdd/DasguptaKRT05"},
+"url":"URL#6535278"
+},
+{
+"@score":"1",
+"@id":"6535280",
+"info":{"authors":{"author":[{"@pid":"d/InderjitSDhillon","text":"Inderjit S. Dhillon"},{"@pid":"84/5797","text":"Yuqiang Guan"},{"@pid":"43/3732","text":"Brian Kulis"}]},"title":"A fast kernel-based multilevel algorithm for graph clustering.","venue":"KDD","pages":"629-634","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/DhillonGK05","doi":"10.1145/1081870.1081948","ee":"https://doi.org/10.1145/1081870.1081948","url":"https://dblp.org/rec/conf/kdd/DhillonGK05"},
+"url":"URL#6535280"
+},
+{
+"@score":"1",
+"@id":"6535282",
+"info":{"authors":{"author":[{"@pid":"69/2360","text":"Jianping Fan 0001"},{"@pid":"58/3640","text":"Hangzai Luo"},{"@pid":"h/MohandSaidHacid","text":"Mohand-Said Hacid"}]},"title":"Mining images on semantics via statistical learning.","venue":"KDD","pages":"22-31","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/FanLH05","doi":"10.1145/1081870.1081877","ee":"https://doi.org/10.1145/1081870.1081877","url":"https://dblp.org/rec/conf/kdd/FanLH05"},
+"url":"URL#6535282"
+},
+{
+"@score":"1",
+"@id":"6535283",
+"info":{"authors":{"author":[{"@pid":"01/5004","text":"Andrew S. Fast"},{"@pid":"38/828","text":"David D. Jensen"},{"@pid":"l/BrianNeilLevine","text":"Brian Neil Levine"}]},"title":"Creating social networks to improve peer-to-peer networking.","venue":"KDD","pages":"568-573","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/FastJL05","doi":"10.1145/1081870.1081938","ee":"https://doi.org/10.1145/1081870.1081938","url":"https://dblp.org/rec/conf/kdd/FastJL05"},
+"url":"URL#6535283"
+},
+{
+"@score":"1",
+"@id":"6535284",
+"info":{"authors":{"author":[{"@pid":"79/1821","text":"George Forman"},{"@pid":"59/4094","text":"Kave Eshghi"},{"@pid":"44/2307","text":"Stephane Chiocchetti"}]},"title":"Finding similar files in large document repositories.","venue":"KDD","pages":"394-400","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/FormanEC05","doi":"10.1145/1081870.1081916","ee":"https://doi.org/10.1145/1081870.1081916","url":"https://dblp.org/rec/conf/kdd/FormanEC05"},
+"url":"URL#6535284"
+},
+{
+"@score":"1",
+"@id":"6535285",
+"info":{"authors":{"author":[{"@pid":"07/494","text":"Ryohei Fujimaki"},{"@pid":"47/1590","text":"Takehisa Yairi"},{"@pid":"17/6152","text":"Kazuo Machida"}]},"title":"An approach to spacecraft anomaly detection problem using kernel feature space.","venue":"KDD","pages":"401-410","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/FujimakiYM05","doi":"10.1145/1081870.1081917","ee":"https://doi.org/10.1145/1081870.1081917","url":"https://dblp.org/rec/conf/kdd/FujimakiYM05"},
+"url":"URL#6535285"
+},
+{
+"@score":"1",
+"@id":"6535286",
+"info":{"authors":{"author":{"@pid":"92/1555","text":"Gian Fulgoni"}},"title":"Mining the internet: the eighth wonder of the world.","venue":"KDD","pages":"2","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Fulgoni05","doi":"10.1145/1081870.1081872","ee":"https://doi.org/10.1145/1081870.1081872","url":"https://dblp.org/rec/conf/kdd/Fulgoni05"},
+"url":"URL#6535286"
+},
+{
+"@score":"1",
+"@id":"6535287",
+"info":{"authors":{"author":[{"@pid":"02/271","text":"Glenn Fung"},{"@pid":"07/4301","text":"Sathyakama Sandilya"},{"@pid":"37/5337","text":"R. Bharat Rao"}]},"title":"Rule extraction from linear support vector machines.","venue":"KDD","pages":"32-40","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/FungSR05","doi":"10.1145/1081870.1081878","ee":"https://doi.org/10.1145/1081870.1081878","url":"https://dblp.org/rec/conf/kdd/FungSR05"},
+"url":"URL#6535287"
+},
+{
+"@score":"1",
+"@id":"6535289",
+"info":{"authors":{"author":[{"@pid":"g/BinGao","text":"Bin Gao 0001"},{"@pid":"l/TieYanLiu","text":"Tie-Yan Liu"},{"@pid":"13/6922","text":"Xin Zheng"},{"@pid":"71/348","text":"QianSheng Cheng"},{"@pid":"m/WYMa","text":"Wei-Ying Ma"}]},"title":"Consistent bipartite graph co-partitioning for star-structured high-order heterogeneous data co-clustering.","venue":"KDD","pages":"41-50","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/GaoLZCM05","doi":"10.1145/1081870.1081879","ee":"https://doi.org/10.1145/1081870.1081879","url":"https://dblp.org/rec/conf/kdd/GaoLZCM05"},
+"url":"URL#6535289"
+},
+{
+"@score":"1",
+"@id":"6535290",
+"info":{"authors":{"author":{"@pid":"19/6687","text":"Rayid Ghani"}},"title":"Price prediction and insurance for online auctions.","venue":"KDD","pages":"411-418","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Ghani05","doi":"10.1145/1081870.1081918","ee":"https://doi.org/10.1145/1081870.1081918","url":"https://dblp.org/rec/conf/kdd/Ghani05"},
+"url":"URL#6535290"
+},
+{
+"@score":"1",
+"@id":"6535291",
+"info":{"authors":{"author":[{"@pid":"g/AristidesGionis","text":"Aristides Gionis"},{"@pid":"37/2076","text":"Alexander Hinneburg"},{"@pid":"73/6671","text":"Spiros Papadimitriou"},{"@pid":"65/6838","text":"Panayiotis Tsaparas"}]},"title":"Dimension induced clustering.","venue":"KDD","pages":"51-60","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/GionisHPT05","doi":"10.1145/1081870.1081880","ee":"https://doi.org/10.1145/1081870.1081880","url":"https://dblp.org/rec/conf/kdd/GionisHPT05"},
+"url":"URL#6535291"
+},
+{
+"@score":"1",
+"@id":"6535292",
+"info":{"authors":{"author":[{"@pid":"00/745","text":"Natalie S. Glance"},{"@pid":"28/1500","text":"Matthew Hurst"},{"@pid":"78/3109","text":"Kamal Nigam"},{"@pid":"20/647","text":"Matthew Siegler"},{"@pid":"93/2636","text":"Robert Stockton"},{"@pid":"28/3617","text":"Takashi Tomokiyo"}]},"title":"Deriving marketing intelligence from online discussion.","venue":"KDD","pages":"419-428","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/GlanceHNSST05","doi":"10.1145/1081870.1081919","ee":"https://doi.org/10.1145/1081870.1081919","url":"https://dblp.org/rec/conf/kdd/GlanceHNSST05"},
+"url":"URL#6535292"
+},
+{
+"@score":"1",
+"@id":"6535293",
+"info":{"authors":{"author":[{"@pid":"g/BartGoethals","text":"Bart Goethals"},{"@pid":"04/3577","text":"Eveline Hoekx"},{"@pid":"b/JVdBussche","text":"Jan Van den Bussche"}]},"title":"Mining tree queries in a graph.","venue":"KDD","pages":"61-69","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/GoethalsHB05","doi":"10.1145/1081870.1081881","ee":"https://doi.org/10.1145/1081870.1081881","url":"https://dblp.org/rec/conf/kdd/GoethalsHB05"},
+"url":"URL#6535293"
+},
+{
+"@score":"1",
+"@id":"6535295",
+"info":{"authors":{"author":[{"@pid":"34/1979","text":"David Gondek"},{"@pid":"h/ThHofmann","text":"Thomas Hofmann"}]},"title":"Non-redundant clustering with conditional ensembles.","venue":"KDD","pages":"70-77","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/GondekH05","doi":"10.1145/1081870.1081882","ee":"https://doi.org/10.1145/1081870.1081882","url":"https://dblp.org/rec/conf/kdd/GondekH05"},
+"url":"URL#6535295"
+},
+{
+"@score":"1",
+"@id":"6535297",
+"info":{"authors":{"author":[{"@pid":"35/2529","text":"Daniel Gruhl"},{"@pid":"g/RamanathanVGuha","text":"Ramanathan V. Guha"},{"@pid":"k/RaviKumar","text":"Ravi Kumar 0001"},{"@pid":"61/3409","text":"Jasmine Novak"},{"@pid":"t/ATomkins","text":"Andrew Tomkins"}]},"title":"The predictive power of online chatter.","venue":"KDD","pages":"78-87","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/GruhlGKNT05","doi":"10.1145/1081870.1081883","ee":"https://doi.org/10.1145/1081870.1081883","url":"https://dblp.org/rec/conf/kdd/GruhlGKNT05"},
+"url":"URL#6535297"
+},
+{
+"@score":"1",
+"@id":"6535298",
+"info":{"authors":{"author":[{"@pid":"g/SudiptoGuha","text":"Sudipto Guha"},{"@pid":"18/2436","text":"Boulos Harb"}]},"title":"Wavelet synopsis for data streams: minimizing non-euclidean error.","venue":"KDD","pages":"88-97","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/GuhaH05","doi":"10.1145/1081870.1081884","ee":"https://doi.org/10.1145/1081870.1081884","url":"https://dblp.org/rec/conf/kdd/GuhaH05"},
+"url":"URL#6535298"
+},
+{
+"@score":"1",
+"@id":"6535299",
+"info":{"authors":{"author":[{"@pid":"g/RamanathanVGuha","text":"Ramanathan V. Guha"},{"@pid":"k/RaviKumar","text":"Ravi Kumar 0001"},{"@pid":"77/5746-1","text":"D. Sivakumar 0001"},{"@pid":"s/RaviSundaram","text":"Ravi Sundaram"}]},"title":"Unweaving a web of documents.","venue":"KDD","pages":"574-579","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/GuhaKSS05","doi":"10.1145/1081870.1081939","ee":"https://doi.org/10.1145/1081870.1081939","url":"https://dblp.org/rec/conf/kdd/GuhaKSS05"},
+"url":"URL#6535299"
+},
+{
+"@score":"1",
+"@id":"6535300",
+"info":{"authors":{"author":[{"@pid":"78/4523-1","text":"Bin He 0001"},{"@pid":"c/KCCChang","text":"Kevin Chen-Chuan Chang"}]},"title":"Making holistic schema matching robust: an ensemble approach.","venue":"KDD","pages":"429-438","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/HeC05","doi":"10.1145/1081870.1081920","ee":"https://doi.org/10.1145/1081870.1081920","url":"https://dblp.org/rec/conf/kdd/HeC05"},
+"url":"URL#6535300"
+},
+{
+"@score":"1",
+"@id":"6535301",
+"info":{"authors":{"author":[{"@pid":"20/859","text":"Cinda Heeren"},{"@pid":"76/4781","text":"Leonard Pitt"}]},"title":"Maximal boasting.","venue":"KDD","pages":"580-585","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/HeerenP05","doi":"10.1145/1081870.1081940","ee":"https://doi.org/10.1145/1081870.1081940","url":"https://dblp.org/rec/conf/kdd/HeerenP05"},
+"url":"URL#6535301"
+},
+{
+"@score":"1",
+"@id":"6535302",
+"info":{"authors":{"author":[{"@pid":"68/985","text":"Shlomo Hershkop"},{"@pid":"s/SalvatoreJStolfo","text":"Salvatore J. Stolfo"}]},"title":"Combining email models for false positive reduction.","venue":"KDD","pages":"98-107","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/HershkopS05","doi":"10.1145/1081870.1081885","ee":"https://doi.org/10.1145/1081870.1081885","url":"https://dblp.org/rec/conf/kdd/HershkopS05"},
+"url":"URL#6535302"
+},
+{
+"@score":"1",
+"@id":"6535305",
+"info":{"authors":{"author":[{"@pid":"04/3500","text":"Takahiko Ito"},{"@pid":"92/5032","text":"Masashi Shimbo"},{"@pid":"70/5682","text":"Taku Kudo"},{"@pid":"11/4619","text":"Yuji Matsumoto 0001"}]},"title":"Application of kernels to link analysis.","venue":"KDD","pages":"586-592","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ItoSKM05","doi":"10.1145/1081870.1081941","ee":"https://doi.org/10.1145/1081870.1081941","url":"https://dblp.org/rec/conf/kdd/ItoSKM05"},
+"url":"URL#6535305"
+},
+{
+"@score":"1",
+"@id":"6535306",
+"info":{"authors":{"author":[{"@pid":"28/1806","text":"Geetha Jagannathan"},{"@pid":"w/RebeccaNWright","text":"Rebecca N. Wright"}]},"title":"Privacy-preserving distributed k-means clustering over arbitrarily partitioned data.","venue":"KDD","pages":"593-599","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/JagannathanW05","doi":"10.1145/1081870.1081942","ee":"https://doi.org/10.1145/1081870.1081942","url":"https://dblp.org/rec/conf/kdd/JagannathanW05"},
+"url":"URL#6535306"
+},
+{
+"@score":"1",
+"@id":"6535307",
+"info":{"authors":{"author":[{"@pid":"50/7027","text":"Aleks Jakulin"},{"@pid":"82/554","text":"Martin Mozina"},{"@pid":"94/3659","text":"Janez Demsar"},{"@pid":"b/IvanBratko","text":"Ivan Bratko"},{"@pid":"z/BlazZupan","text":"Blaz Zupan"}]},"title":"Nomograms for visualizing support vector machines.","venue":"KDD","pages":"108-117","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/JakulinMDBZ05","doi":"10.1145/1081870.1081886","ee":"https://doi.org/10.1145/1081870.1081886","url":"https://dblp.org/rec/conf/kdd/JakulinMDBZ05"},
+"url":"URL#6535307"
+},
+{
+"@score":"1",
+"@id":"6535308",
+"info":{"authors":{"author":[{"@pid":"41/5897","text":"Szymon Jaroszewicz"},{"@pid":"s/TobiasScheffer","text":"Tobias Scheffer"}]},"title":"Fast discovery of unexpected patterns in data, relative to a Bayesian network.","venue":"KDD","pages":"118-127","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/JaroszewiczS05","doi":"10.1145/1081870.1081887","ee":"https://doi.org/10.1145/1081870.1081887","url":"https://dblp.org/rec/conf/kdd/JaroszewiczS05"},
+"url":"URL#6535308"
+},
+{
+"@score":"1",
+"@id":"6535309",
+"info":{"authors":{"author":[{"@pid":"36/6399","text":"Daniel R. Jeske"},{"@pid":"99/6698","text":"Behrokh Samadi"},{"@pid":"15/5010","text":"Pengyue J. Lin"},{"@pid":"50/3850","text":"Lan Ye"},{"@pid":"74/5238-2","text":"Sean Cox 0002"},{"@pid":"94/1463","text":"Rui Xiao"},{"@pid":"54/2086","text":"Ted Younglove"},{"@pid":"07/1494","text":"Minh Ly"},{"@pid":"54/6716","text":"Douglas Holt"},{"@pid":"27/6668","text":"Ryan Rich"}]},"title":"Generation of synthetic data sets for evaluating the accuracy of knowledge discovery systems.","venue":"KDD","pages":"756-762","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/JeskeSLYCXYLHR05","doi":"10.1145/1081870.1081969","ee":"https://doi.org/10.1145/1081870.1081969","url":"https://dblp.org/rec/conf/kdd/JeskeSLYCXYLHR05"},
+"url":"URL#6535309"
+},
+{
+"@score":"1",
+"@id":"6535310",
+"info":{"authors":{"author":[{"@pid":"72/4662","text":"Ruoming Jin"},{"@pid":"64/2141","text":"Kaushik Sinha"},{"@pid":"a/GAgrawal","text":"Gagan Agrawal"}]},"title":"Simultaneous optimization of complex mining tasks with a knowledgeable cache.","venue":"KDD","pages":"600-605","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/JinSA05","doi":"10.1145/1081870.1081943","ee":"https://doi.org/10.1145/1081870.1081943","url":"https://dblp.org/rec/conf/kdd/JinSA05"},
+"url":"URL#6535310"
+},
+{
+"@score":"1",
+"@id":"6535312",
+"info":{"authors":{"author":[{"@pid":"72/4662","text":"Ruoming Jin"},{"@pid":"188/7759-50","text":"Chao Wang 0050"},{"@pid":"85/4210","text":"Dmitrii Polshakov"},{"@pid":"p/SParathasarathy","text":"Srinivasan Parthasarathy 0001"},{"@pid":"a/GAgrawal","text":"Gagan Agrawal"}]},"title":"Discovering frequent topological structures from graph datasets.","venue":"KDD","pages":"606-611","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/JinWPPA05","doi":"10.1145/1081870.1081944","ee":"https://doi.org/10.1145/1081870.1081944","url":"https://dblp.org/rec/conf/kdd/JinWPPA05"},
+"url":"URL#6535312"
+},
+{
+"@score":"1",
+"@id":"6535313",
+"info":{"authors":{"author":[{"@pid":"68/3340","text":"Xin Jin"},{"@pid":"33/5885","text":"Yanzan Zhou"},{"@pid":"01/4475","text":"Bamshad Mobasher"}]},"title":"A maximum entropy web recommendation system: combining collaborative and content features.","venue":"KDD","pages":"612-617","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/JinZM05","doi":"10.1145/1081870.1081945","ee":"https://doi.org/10.1145/1081870.1081945","url":"https://dblp.org/rec/conf/kdd/JinZM05"},
+"url":"URL#6535313"
+},
+{
+"@score":"1",
+"@id":"6535314",
+"info":{"authors":{"author":[{"@pid":"16/2822","text":"Alex N. Kalos"},{"@pid":"86/2534","text":"Tim Rey"}]},"title":"Data mining in the chemical industry.","venue":"KDD","pages":"763-769","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/KalosR05","doi":"10.1145/1081870.1081970","ee":"https://doi.org/10.1145/1081870.1081970","url":"https://dblp.org/rec/conf/kdd/KalosR05"},
+"url":"URL#6535314"
+},
+{
+"@score":"1",
+"@id":"6535315",
+"info":{"authors":{"author":[{"@pid":"70/1704","text":"Noriaki Kawamae"},{"@pid":"78/6039","text":"Katsumi Takahashi"}]},"title":"Information retrieval based on collaborative filtering with latent interest semantic map.","venue":"KDD","pages":"618-623","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/KawamaeT05","doi":"10.1145/1081870.1081946","ee":"https://doi.org/10.1145/1081870.1081946","url":"https://dblp.org/rec/conf/kdd/KawamaeT05"},
+"url":"URL#6535315"
+},
+{
+"@score":"1",
+"@id":"6535317",
+"info":{"authors":{"author":{"@pid":"12/3993","text":"Aleksander Kolcz"}},"title":"Local sparsity control for naive Bayes with extreme misclassification costs.","venue":"KDD","pages":"128-137","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Kolcz05","doi":"10.1145/1081870.1081888","ee":"https://doi.org/10.1145/1081870.1081888","url":"https://dblp.org/rec/conf/kdd/Kolcz05"},
+"url":"URL#6535317"
+},
+{
+"@score":"1",
+"@id":"6535318",
+"info":{"authors":{"author":[{"@pid":"k/MosheKoppel","text":"Moshe Koppel"},{"@pid":"s/JonathanSchler","text":"Jonathan Schler"},{"@pid":"74/6566","text":"Kfir Zigdon"}]},"title":"Determining an author&apos;s native language by mining a text for errors.","venue":"KDD","pages":"624-628","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/KoppelSZ05","doi":"10.1145/1081870.1081947","ee":"https://doi.org/10.1145/1081870.1081947","url":"https://dblp.org/rec/conf/kdd/KoppelSZ05"},
+"url":"URL#6535318"
+},
+{
+"@score":"1",
+"@id":"6535319",
+"info":{"authors":{"author":[{"@pid":"k/HansPeterKriegel","text":"Hans-Peter Kriegel"},{"@pid":"p/MartinPfeifle","text":"Martin Pfeifle"}]},"title":"Density-based clustering of uncertain data.","venue":"KDD","pages":"672-677","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/KriegelP05","doi":"10.1145/1081870.1081955","ee":"https://doi.org/10.1145/1081870.1081955","url":"https://dblp.org/rec/conf/kdd/KriegelP05"},
+"url":"URL#6535319"
+},
+{
+"@score":"1",
+"@id":"6535320",
+"info":{"authors":{"author":[{"@pid":"73/4737","text":"Jeremy Kubica"},{"@pid":"95/2279-1","text":"Andrew W. Moore 0001"},{"@pid":"117/4231","text":"Andrew J. Connolly"},{"@pid":"17/3336","text":"Robert Jedicke"}]},"title":"A multiple tree algorithm for the efficient association of asteroid observations.","venue":"KDD","pages":"138-146","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/KubicaMCJ05","doi":"10.1145/1081870.1081889","ee":"https://doi.org/10.1145/1081870.1081889","url":"https://dblp.org/rec/conf/kdd/KubicaMCJ05"},
+"url":"URL#6535320"
+},
+{
+"@score":"1",
+"@id":"6535321",
+"info":{"authors":{"author":[{"@pid":"35/5464","text":"Tilman Lange"},{"@pid":"b/JMBuhmann","text":"Joachim M. Buhmann"}]},"title":"Combining partitions by probabilistic label aggregation.","venue":"KDD","pages":"147-156","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/LangeB05","doi":"10.1145/1081870.1081890","ee":"https://doi.org/10.1145/1081870.1081890","url":"https://dblp.org/rec/conf/kdd/LangeB05"},
+"url":"URL#6535321"
+},
+{
+"@score":"1",
+"@id":"6535324",
+"info":{"authors":{"author":[{"@pid":"l/AleksandarLazarevic","text":"Aleksandar Lazarevic"},{"@pid":"k/VipinKumar-1","text":"Vipin Kumar 0001"}]},"title":"Feature bagging for outlier detection.","venue":"KDD","pages":"157-166","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/LazarevicK05","doi":"10.1145/1081870.1081891","ee":"https://doi.org/10.1145/1081870.1081891","url":"https://dblp.org/rec/conf/kdd/LazarevicK05"},
+"url":"URL#6535324"
+},
+{
+"@score":"1",
+"@id":"6535325",
+"info":{"authors":{"author":[{"@pid":"29/1247","text":"Gregor Leban"},{"@pid":"17/1409","text":"Minca Mramor"},{"@pid":"b/IvanBratko","text":"Ivan Bratko"},{"@pid":"z/BlazZupan","text":"Blaz Zupan"}]},"title":"Simple and effective visual models for gene expression cancer diagnostics.","venue":"KDD","pages":"167-176","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/LebanMBZ05","doi":"10.1145/1081870.1081892","ee":"https://doi.org/10.1145/1081870.1081892","url":"https://dblp.org/rec/conf/kdd/LebanMBZ05"},
+"url":"URL#6535325"
+},
+{
+"@score":"1",
+"@id":"6535326",
+"info":{"authors":{"author":[{"@pid":"l/JureLeskovec","text":"Jure Leskovec"},{"@pid":"k/JonMKleinberg","text":"Jon M. Kleinberg"},{"@pid":"f/CFaloutsos","text":"Christos Faloutsos"}]},"title":"Graphs over time: densification laws, shrinking diameters and possible explanations.","venue":"KDD","pages":"177-187","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/LeskovecKF05","doi":"10.1145/1081870.1081893","ee":"https://doi.org/10.1145/1081870.1081893","url":"https://dblp.org/rec/conf/kdd/LeskovecKF05"},
+"url":"URL#6535326"
+},
+{
+"@score":"1",
+"@id":"6535327",
+"info":{"authors":{"author":{"@pid":"75/4601","text":"Tao Li"}},"title":"A general model for clustering binary data.","venue":"KDD","pages":"188-197","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Li05","doi":"10.1145/1081870.1081894","ee":"https://doi.org/10.1145/1081870.1081894","url":"https://dblp.org/rec/conf/kdd/Li05"},
+"url":"URL#6535327"
+},
+{
+"@score":"1",
+"@id":"6535328",
+"info":{"authors":{"author":[{"@pid":"20/1583","text":"Jiuyong Li"},{"@pid":"f/AdaWaiCheeFu","text":"Ada Wai-Chee Fu"},{"@pid":"94/1718","text":"Hongxing He"},{"@pid":"92/6289-4","text":"Jie Chen 0004"},{"@pid":"44/283","text":"Huidong Jin 0001"},{"@pid":"58/2401","text":"Damien McAullay"},{"@pid":"w/GrahamJWilliams","text":"Graham J. Williams"},{"@pid":"75/301","text":"Ross Sparks"},{"@pid":"72/754","text":"Chris Kelman"}]},"title":"Mining risk patterns in medical data.","venue":"KDD","pages":"770-775","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/LiFHCJMWSK05","doi":"10.1145/1081870.1081971","ee":"https://doi.org/10.1145/1081870.1081971","url":"https://dblp.org/rec/conf/kdd/LiFHCJMWSK05"},
+"url":"URL#6535328"
+},
+{
+"@score":"1",
+"@id":"6535329",
+"info":{"authors":{"author":[{"@pid":"75/4601-1","text":"Tao Li 0001"},{"@pid":"54/6821","text":"Feng Liang"},{"@pid":"70/972","text":"Sheng Ma"},{"@pid":"16/5560-1","text":"Wei Peng 0001"}]},"title":"An integrated framework on mining logs files for computing system management.","venue":"KDD","pages":"776-781","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/LiLMP05","doi":"10.1145/1081870.1081972","ee":"https://doi.org/10.1145/1081870.1081972","url":"https://dblp.org/rec/conf/kdd/LiLMP05"},
+"url":"URL#6535329"
+},
+{
+"@score":"1",
+"@id":"6535331",
+"info":{"authors":{"author":[{"@pid":"40/1491-43","text":"Xiang Li 0043"},{"@pid":"91/5457","text":"Rahul Ramachandran"},{"@pid":"07/3380","text":"Sara J. Graves"},{"@pid":"77/5288","text":"Sunil Movva"},{"@pid":"23/4446","text":"Bilahari Akkiraju"},{"@pid":"211/2367","text":"David Emmitt"},{"@pid":"44/2681","text":"Steven Greco"},{"@pid":"95/5728","text":"Robert Atlas"},{"@pid":"49/4751","text":"Joseph Terry"},{"@pid":"62/4791","text":"Juan-Carlos Jusem"}]},"title":"Automated detection of frontal systems from numerical model-generated data.","venue":"KDD","pages":"782-787","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/LiRGMAEGATJ05","doi":"10.1145/1081870.1081973","ee":"https://doi.org/10.1145/1081870.1081973","url":"https://dblp.org/rec/conf/kdd/LiRGMAEGATJ05"},
+"url":"URL#6535331"
+},
+{
+"@score":"1",
+"@id":"6535333",
+"info":{"authors":{"author":[{"@pid":"96/6993","text":"Bo Long"},{"@pid":"z/ZhongfeiMarkZhang","text":"Zhongfei (Mark) Zhang"},{"@pid":"y/PhilipSYu","text":"Philip S. Yu"}]},"title":"Co-clustering by block value decomposition.","venue":"KDD","pages":"635-640","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/LongZY05","doi":"10.1145/1081870.1081949","ee":"https://doi.org/10.1145/1081870.1081949","url":"https://dblp.org/rec/conf/kdd/LongZY05"},
+"url":"URL#6535333"
+},
+{
+"@score":"1",
+"@id":"6535334",
+"info":{"authors":{"author":[{"@pid":"80/3901","text":"Daniel Lowd"},{"@pid":"m/ChristopherMeek","text":"Christopher Meek"}]},"title":"Adversarial learning.","venue":"KDD","pages":"641-647","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/LowdM05","doi":"10.1145/1081870.1081950","ee":"https://doi.org/10.1145/1081870.1081950","url":"https://dblp.org/rec/conf/kdd/LowdM05"},
+"url":"URL#6535334"
+},
+{
+"@score":"1",
+"@id":"6535336",
+"info":{"authors":{"author":[{"@pid":"46/2343","text":"Sandeep Mane"},{"@pid":"s/JaideepSrivastava","text":"Jaideep Srivastava"},{"@pid":"22/852","text":"San-Yih Hwang"}]},"title":"Estimating missed actual positives using independent classifiers.","venue":"KDD","pages":"648-653","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ManeSH05","doi":"10.1145/1081870.1081951","ee":"https://doi.org/10.1145/1081870.1081951","url":"https://dblp.org/rec/conf/kdd/ManeSH05"},
+"url":"URL#6535336"
+},
+{
+"@score":"1",
+"@id":"6535339",
+"info":{"authors":{"author":[{"@pid":"30/5059","text":"Qiaozhu Mei"},{"@pid":"z/ChengXiangZhai","text":"ChengXiang Zhai"}]},"title":"Discovering evolutionary theme patterns from text: an exploration of temporal text mining.","venue":"KDD","pages":"198-207","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/MeiZ05","doi":"10.1145/1081870.1081895","ee":"https://doi.org/10.1145/1081870.1081895","url":"https://dblp.org/rec/conf/kdd/MeiZ05"},
+"url":"URL#6535339"
+},
+{
+"@score":"1",
+"@id":"6535340",
+"info":{"authors":{"author":[{"@pid":"26/2624","text":"Srujana Merugu"},{"@pid":"51/2272","text":"Joydeep Ghosh"}]},"title":"A distributed learning framework for heterogeneous data sources.","venue":"KDD","pages":"208-217","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/MeruguG05","doi":"10.1145/1081870.1081896","ee":"https://doi.org/10.1145/1081870.1081896","url":"https://dblp.org/rec/conf/kdd/MeruguG05"},
+"url":"URL#6535340"
+},
+{
+"@score":"1",
+"@id":"6535343",
+"info":{"authors":{"author":{"@pid":"34/6761","text":"Michinari Momma"}},"title":"Efficient computations via scalable sparse kernel partial least squares and boosted latent features.","venue":"KDD","pages":"654-659","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Momma05","doi":"10.1145/1081870.1081952","ee":"https://doi.org/10.1145/1081870.1081952","url":"https://dblp.org/rec/conf/kdd/Momma05"},
+"url":"URL#6535343"
+},
+{
+"@score":"1",
+"@id":"6535345",
+"info":{"authors":{"author":[{"@pid":"05/3244","text":"Fabian Mörchen"},{"@pid":"38/2096","text":"Alfred Ultsch"}]},"title":"Optimizing time series discretization for knowledge discovery.","venue":"KDD","pages":"660-665","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/MorchenU05","doi":"10.1145/1081870.1081953","ee":"https://doi.org/10.1145/1081870.1081953","url":"https://dblp.org/rec/conf/kdd/MorchenU05"},
+"url":"URL#6535345"
+},
+{
+"@score":"1",
+"@id":"6535346",
+"info":{"authors":{"author":[{"@pid":"34/4591","text":"Satoshi Morinaga"},{"@pid":"07/5414","text":"Hiroki Arimura"},{"@pid":"51/814","text":"Takahiro Ikeda"},{"@pid":"47/4389","text":"Yosuke Sakao"},{"@pid":"77/5457","text":"Susumu Akamine"}]},"title":"Key semantics extraction by dependency tree mining.","venue":"KDD","pages":"666-671","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/MorinagaAISA05","doi":"10.1145/1081870.1081954","ee":"https://doi.org/10.1145/1081870.1081954","url":"https://dblp.org/rec/conf/kdd/MorinagaAISA05"},
+"url":"URL#6535346"
+},
+{
+"@score":"1",
+"@id":"6535347",
+"info":{"authors":{"author":[{"@pid":"32/2705","text":"Olfa Nasraoui"},{"@pid":"87/1405","text":"Cesar Cardona"},{"@pid":"49/6791","text":"Carlos Rojas"}]},"title":"Using retrieval measures to assess similarity in mining dynamic web clickstreams.","venue":"KDD","pages":"439-448","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/NasraouiCR05","doi":"10.1145/1081870.1081921","ee":"https://doi.org/10.1145/1081870.1081921","url":"https://dblp.org/rec/conf/kdd/NasraouiCR05"},
+"url":"URL#6535347"
+},
+{
+"@score":"1",
+"@id":"6535348",
+"info":{"authors":{"author":[{"@pid":"91/3186","text":"Daniel B. Neill"},{"@pid":"95/2279-1","text":"Andrew W. Moore 0001"},{"@pid":"47/5815","text":"Maheshkumar Sabhnani"},{"@pid":"52/6510","text":"Kenny Daniel"}]},"title":"Detection of emerging space-time clusters.","venue":"KDD","pages":"218-227","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/NeillMSD05","doi":"10.1145/1081870.1081897","ee":"https://doi.org/10.1145/1081870.1081897","url":"https://dblp.org/rec/conf/kdd/NeillMSD05"},
+"url":"URL#6535348"
+},
+{
+"@score":"1",
+"@id":"6535349",
+"info":{"authors":{"author":[{"@pid":"n/JenniferNeville","text":"Jennifer Neville"},{"@pid":"64/5184","text":"Özgür Simsek"},{"@pid":"38/828","text":"David D. Jensen"},{"@pid":"30/1520","text":"John Komoroske"},{"@pid":"02/2624","text":"Kelly Palmer"},{"@pid":"81/2941","text":"Henry G. Goldberg"}]},"title":"Using relational knowledge discovery to prevent securities fraud.","venue":"KDD","pages":"449-458","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/NevilleSJKPG05","doi":"10.1145/1081870.1081922","ee":"https://doi.org/10.1145/1081870.1081922","url":"https://dblp.org/rec/conf/kdd/NevilleSJKPG05"},
+"url":"URL#6535349"
+},
+{
+"@score":"1",
+"@id":"6535351",
+"info":{"authors":{"author":[{"@pid":"23/5668","text":"G. Niklas Norén"},{"@pid":"37/5554","text":"Roland Orre"},{"@pid":"79/2468","text":"Andrew Bate"}]},"title":"A hit-miss model for duplicate detection in the WHO drug safety database.","venue":"KDD","pages":"459-468","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/NorenOB05","doi":"10.1145/1081870.1081923","ee":"https://doi.org/10.1145/1081870.1081923","url":"https://dblp.org/rec/conf/kdd/NorenOB05"},
+"url":"URL#6535351"
+},
+{
+"@score":"1",
+"@id":"6535353",
+"info":{"authors":{"author":[{"@pid":"88/3253","text":"Ronald K. Pearson"},{"@pid":"79/3716","text":"Robert J. Kingan"},{"@pid":"46/4308","text":"Alan Hochberg"}]},"title":"Disease progression modeling from historical clinical databases.","venue":"KDD","pages":"788-793","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/PearsonKH05","doi":"10.1145/1081870.1081974","ee":"https://doi.org/10.1145/1081870.1081974","url":"https://dblp.org/rec/conf/kdd/PearsonKH05"},
+"url":"URL#6535353"
+},
+{
+"@score":"1",
+"@id":"6535354",
+"info":{"authors":{"author":[{"@pid":"p/JianPei","text":"Jian Pei 0001"},{"@pid":"77/5094","text":"Daxin Jiang"},{"@pid":"z/AidongZhang","text":"Aidong Zhang"}]},"title":"On mining cross-graph quasi-cliques.","venue":"KDD","pages":"228-238","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/PeiJZ05","doi":"10.1145/1081870.1081898","ee":"https://doi.org/10.1145/1081870.1081898","url":"https://dblp.org/rec/conf/kdd/PeiJZ05"},
+"url":"URL#6535354"
+},
+{
+"@score":"1",
+"@id":"6535355",
+"info":{"authors":{"author":{"@pid":"87/6147","text":"Valery A. Petrushin"}},"title":"Mining rare and frequent events in multi-camera surveillance video using self-organizing maps.","venue":"KDD","pages":"794-800","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Petrushin05","doi":"10.1145/1081870.1081975","ee":"https://doi.org/10.1145/1081870.1081975","url":"https://dblp.org/rec/conf/kdd/Petrushin05"},
+"url":"URL#6535355"
+},
+{
+"@score":"1",
+"@id":"6535357",
+"info":{"authors":{"author":[{"@pid":"119/2170","text":"Xuan Hieu Phan"},{"@pid":"n/MinhLeNguyen","text":"Minh Le Nguyen 0001"},{"@pid":"87/2048","text":"Tu Bao Ho"},{"@pid":"71/996","text":"Susumu Horiguchi"}]},"title":"Improving discriminative sequential learning with rare--but--important associations.","venue":"KDD","pages":"304-313","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/PhanNHH05","doi":"10.1145/1081870.1081906","ee":"https://doi.org/10.1145/1081870.1081906","url":"https://dblp.org/rec/conf/kdd/PhanNHH05"},
+"url":"URL#6535357"
+},
+{
+"@score":"1",
+"@id":"6535358",
+"info":{"authors":{"author":[{"@pid":"23/1046","text":"Rob Powers"},{"@pid":"37/1288","text":"Moisés Goldszmidt"},{"@pid":"91/5001","text":"Ira Cohen"}]},"title":"Short term performance forecasting in enterprise systems.","venue":"KDD","pages":"801-807","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/PowersGC05","doi":"10.1145/1081870.1081976","ee":"https://doi.org/10.1145/1081870.1081976","url":"https://dblp.org/rec/conf/kdd/PowersGC05"},
+"url":"URL#6535358"
+},
+{
+"@score":"1",
+"@id":"6535359",
+"info":{"authors":{"author":[{"@pid":"28/1966","text":"Filip Radlinski"},{"@pid":"j/ThorstenJoachims","text":"Thorsten Joachims"}]},"title":"Query chains: learning to rank from implicit feedback.","venue":"KDD","pages":"239-248","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/RadlinskiJ05","doi":"10.1145/1081870.1081899","ee":"https://doi.org/10.1145/1081870.1081899","url":"https://dblp.org/rec/conf/kdd/RadlinskiJ05"},
+"url":"URL#6535359"
+},
+{
+"@score":"1",
+"@id":"6535360",
+"info":{"authors":{"author":{"@pid":"r/PRaghavan","text":"Prabhakar Raghavan"}},"title":"Incentive networks.","venue":"KDD","pages":"1","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Raghavan05","doi":"10.1145/1081870.1081871","ee":"https://doi.org/10.1145/1081870.1081871","url":"https://dblp.org/rec/conf/kdd/Raghavan05"},
+"url":"URL#6535360"
+},
+{
+"@score":"1",
+"@id":"6535361",
+"info":{"authors":{"author":[{"@pid":"89/5867","text":"Bhavani Raskutti"},{"@pid":"87/1555","text":"Alan Herschtal"}]},"title":"Predicting the product purchase patterns of corporate customers.","venue":"KDD","pages":"469-478","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/RaskuttiH05","doi":"10.1145/1081870.1081924","ee":"https://doi.org/10.1145/1081870.1081924","url":"https://dblp.org/rec/conf/kdd/RaskuttiH05"},
+"url":"URL#6535361"
+},
+{
+"@score":"1",
+"@id":"6535362",
+"info":{"authors":{"author":{"@pid":"09/6597","text":"Saharon Rosset"}},"title":"Robust boosting and its relation to bagging.","venue":"KDD","pages":"249-255","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Rosset05","doi":"10.1145/1081870.1081900","ee":"https://doi.org/10.1145/1081870.1081900","url":"https://dblp.org/rec/conf/kdd/Rosset05"},
+"url":"URL#6535362"
+},
+{
+"@score":"1",
+"@id":"6535364",
+"info":{"authors":{"author":{"@pid":"s/MarkSandler","text":"Mark Sandler 0002"}},"title":"On the use of linear programming for unsupervised text classification.","venue":"KDD","pages":"256-264","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Sandler05","doi":"10.1145/1081870.1081901","ee":"https://doi.org/10.1145/1081870.1081901","url":"https://dblp.org/rec/conf/kdd/Sandler05"},
+"url":"URL#6535364"
+},
+{
+"@score":"1",
+"@id":"6535365",
+"info":{"authors":{"author":[{"@pid":"82/1806","text":"Kaushal Sanghai"},{"@pid":"42/6896-2","text":"Ting Su 0002"},{"@pid":"24/6000","text":"Jennifer G. Dy"},{"@pid":"k/DavidRKaeli","text":"David R. Kaeli"}]},"title":"A multinomial clustering model for fast simulation of computer architecture designs.","venue":"KDD","pages":"808-813","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/SanghaiSDK05","doi":"10.1145/1081870.1081977","ee":"https://doi.org/10.1145/1081870.1081977","url":"https://dblp.org/rec/conf/kdd/SanghaiSDK05"},
+"url":"URL#6535365"
+},
+{
+"@score":"1",
+"@id":"6535367",
+"info":{"authors":{"author":{"@pid":"16/4416","text":"Martin Scholz"}},"title":"Sampling-based sequential subgroup mining.","venue":"KDD","pages":"265-274","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Scholz05","doi":"10.1145/1081870.1081902","ee":"https://doi.org/10.1145/1081870.1081902","url":"https://dblp.org/rec/conf/kdd/Scholz05"},
+"url":"URL#6535367"
+},
+{
+"@score":"1",
+"@id":"6535371",
+"info":{"authors":{"author":[{"@pid":"09/3143","text":"Ricardo Bezerra de Andrade e Silva"},{"@pid":"99/3659","text":"Jiji Zhang"},{"@pid":"88/5622","text":"James G. Shanahan"}]},"title":"Probabilistic workflow mining.","venue":"KDD","pages":"275-284","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/SilvaZS05","doi":"10.1145/1081870.1081903","ee":"https://doi.org/10.1145/1081870.1081903","url":"https://dblp.org/rec/conf/kdd/SilvaZS05"},
+"url":"URL#6535371"
+},
+{
+"@score":"1",
+"@id":"6535372",
+"info":{"authors":{"author":[{"@pid":"93/3688","text":"Xiaodan Song"},{"@pid":"62/1273","text":"Ching-Yung Lin"},{"@pid":"96/2990","text":"Belle L. Tseng"},{"@pid":"82/1447","text":"Ming-Ting Sun"}]},"title":"Modeling and predicting personal information dissemination behavior.","venue":"KDD","pages":"479-488","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/SongLTS05","doi":"10.1145/1081870.1081925","ee":"https://doi.org/10.1145/1081870.1081925","url":"https://dblp.org/rec/conf/kdd/SongLTS05"},
+"url":"URL#6535372"
+},
+{
+"@score":"1",
+"@id":"6535373",
+"info":{"authors":{"author":[{"@pid":"s/EllenSpertus","text":"Ellen Spertus"},{"@pid":"96/481","text":"Mehran Sahami"},{"@pid":"10/2081","text":"Orkut Buyukkokten"}]},"title":"Evaluating similarity measures: a large-scale study in the orkut social network.","venue":"KDD","pages":"678-684","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/SpertusSB05","doi":"10.1145/1081870.1081956","ee":"https://doi.org/10.1145/1081870.1081956","url":"https://dblp.org/rec/conf/kdd/SpertusSB05"},
+"url":"URL#6535373"
+},
+{
+"@score":"1",
+"@id":"6535375",
+"info":{"authors":{"author":[{"@pid":"18/3479","text":"Mihai Surdeanu"},{"@pid":"76/365","text":"Jordi Turmo"},{"@pid":"77/2451","text":"Alicia Ageno"}]},"title":"A hybrid unsupervised approach for document clustering.","venue":"KDD","pages":"685-690","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/SurdeanuTA05","doi":"10.1145/1081870.1081957","ee":"https://doi.org/10.1145/1081870.1081957","url":"https://dblp.org/rec/conf/kdd/SurdeanuTA05"},
+"url":"URL#6535375"
+},
+{
+"@score":"1",
+"@id":"6535377",
+"info":{"authors":{"author":[{"@pid":"t/JieTang","text":"Jie Tang 0001"},{"@pid":"83/5560-1","text":"Hang Li 0001"},{"@pid":"33/4066","text":"Yunbo Cao"},{"@pid":"t/ZhaoHuiTang","text":"ZhaoHui Tang"}]},"title":"Email data cleaning.","venue":"KDD","pages":"489-498","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/TangLCT05","doi":"10.1145/1081870.1081926","ee":"https://doi.org/10.1145/1081870.1081926","url":"https://dblp.org/rec/conf/kdd/TangLCT05"},
+"url":"URL#6535377"
+},
+{
+"@score":"1",
+"@id":"6535378",
+"info":{"authors":{"author":[{"@pid":"73/3197","text":"Tao Tao"},{"@pid":"z/ChengXiangZhai","text":"ChengXiang Zhai"}]},"title":"Mining comparable bilingual text corpora for cross-language information integration.","venue":"KDD","pages":"691-696","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/TaoZ05","doi":"10.1145/1081870.1081958","ee":"https://doi.org/10.1145/1081870.1081958","url":"https://dblp.org/rec/conf/kdd/TaoZ05"},
+"url":"URL#6535378"
+},
+{
+"@score":"1",
+"@id":"6535380",
+"info":{"authors":{"author":{"@pid":"60/1153","text":"Luís Torgo"}},"title":"Regression error characteristic surfaces.","venue":"KDD","pages":"697-702","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Torgo05","doi":"10.1145/1081870.1081959","ee":"https://doi.org/10.1145/1081870.1081959","url":"https://dblp.org/rec/conf/kdd/Torgo05"},
+"url":"URL#6535380"
+},
+{
+"@score":"1",
+"@id":"6535382",
+"info":{"authors":{"author":[{"@pid":"29/1554","text":"Antti Ukkonen"},{"@pid":"26/3808","text":"Mikael Fortelius"},{"@pid":"m/HMannila","text":"Heikki Mannila"}]},"title":"Finding partial orders from unordered 0-1 data.","venue":"KDD","pages":"285-293","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/UkkonenFM05","doi":"10.1145/1081870.1081904","ee":"https://doi.org/10.1145/1081870.1081904","url":"https://dblp.org/rec/conf/kdd/UkkonenFM05"},
+"url":"URL#6535382"
+},
+{
+"@score":"1",
+"@id":"6535385",
+"info":{"authors":{"author":[{"@pid":"08/4753","text":"Muyuan Wang"},{"@pid":"47/3951-6","text":"Zhiwei Li 0006"},{"@pid":"23/2390","text":"Lie Lu"},{"@pid":"m/WYMa","text":"Wei-Ying Ma"},{"@pid":"98/6733","text":"Naiyao Zhang"}]},"title":"Web object indexing using domain knowledge.","venue":"KDD","pages":"294-303","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/WangLLMZ05","doi":"10.1145/1081870.1081905","ee":"https://doi.org/10.1145/1081870.1081905","url":"https://dblp.org/rec/conf/kdd/WangLLMZ05"},
+"url":"URL#6535385"
+},
+{
+"@score":"1",
+"@id":"6535387",
+"info":{"authors":{"author":[{"@pid":"w/HaixunWang","text":"Haixun Wang"},{"@pid":"p/JianPei","text":"Jian Pei 0001"},{"@pid":"y/PhilipSYu","text":"Philip S. Yu"}]},"title":"Pattern-based similarity search for microarray data.","venue":"KDD","pages":"814-819","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/WangPY05","doi":"10.1145/1081870.1081978","ee":"https://doi.org/10.1145/1081870.1081978","url":"https://dblp.org/rec/conf/kdd/WangPY05"},
+"url":"URL#6535387"
+},
+{
+"@score":"1",
+"@id":"6535388",
+"info":{"authors":{"author":[{"@pid":"99/6515-5","text":"Gang Wu 0005"},{"@pid":"c/EdwardYChang","text":"Edward Y. Chang"},{"@pid":"42/3315","text":"Navneet Panda"}]},"title":"Formulating distance functions via the kernel trick.","venue":"KDD","pages":"703-709","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/WuCP05","doi":"10.1145/1081870.1081960","ee":"https://doi.org/10.1145/1081870.1081960","url":"https://dblp.org/rec/conf/kdd/WuCP05"},
+"url":"URL#6535388"
+},
+{
+"@score":"1",
+"@id":"6535389",
+"info":{"authors":{"author":[{"@pid":"88/5479","text":"Kenji Yamanishi"},{"@pid":"77/6473","text":"Yuko Maruyama"}]},"title":"Dynamic syslog mining for network failure monitoring.","venue":"KDD","pages":"499-508","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/YamanishiM05","doi":"10.1145/1081870.1081927","ee":"https://doi.org/10.1145/1081870.1081927","url":"https://dblp.org/rec/conf/kdd/YamanishiM05"},
+"url":"URL#6535389"
+},
+{
+"@score":"1",
+"@id":"6535390",
+"info":{"authors":{"author":[{"@pid":"y/XifengYan","text":"Xifeng Yan"},{"@pid":"85/5637-1","text":"Hong Cheng 0001"},{"@pid":"h/JiaweiHan","text":"Jiawei Han 0001"},{"@pid":"76/3976","text":"Dong Xin"}]},"title":"Summarizing itemset patterns: a profile-based approach.","venue":"KDD","pages":"314-323","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/YanCHX05","doi":"10.1145/1081870.1081907","ee":"https://doi.org/10.1145/1081870.1081907","url":"https://dblp.org/rec/conf/kdd/YanCHX05"},
+"url":"URL#6535390"
+},
+{
+"@score":"1",
+"@id":"6535391",
+"info":{"authors":{"author":[{"@pid":"09/2223","text":"Lian Yan"},{"@pid":"80/2056","text":"Michael Fassino"},{"@pid":"19/269","text":"Patrick Baldasare"}]},"title":"Enhancing the lift under budget constraints: an application in the mutual fund industry.","venue":"KDD","pages":"509-515","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/YanFB05","doi":"10.1145/1081870.1081928","ee":"https://doi.org/10.1145/1081870.1081928","url":"https://dblp.org/rec/conf/kdd/YanFB05"},
+"url":"URL#6535391"
+},
+{
+"@score":"1",
+"@id":"6535392",
+"info":{"authors":{"author":[{"@pid":"y/XifengYan","text":"Xifeng Yan"},{"@pid":"02/5147","text":"Xianghong Jasmine Zhou"},{"@pid":"h/JiaweiHan","text":"Jiawei Han 0001"}]},"title":"Mining closed relational graphs with connectivity constraints.","venue":"KDD","pages":"324-333","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/YanZH05","doi":"10.1145/1081870.1081908","ee":"https://doi.org/10.1145/1081870.1081908","url":"https://dblp.org/rec/conf/kdd/YanZH05"},
+"url":"URL#6535392"
+},
+{
+"@score":"1",
+"@id":"6535393",
+"info":{"authors":{"author":{"@pid":"09/3925-8","text":"Li Yang 0008"}},"title":"Building connected neighborhood graphs for isometric data embedding.","venue":"KDD","pages":"722-728","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Yang05","doi":"10.1145/1081870.1081963","ee":"https://doi.org/10.1145/1081870.1081963","url":"https://dblp.org/rec/conf/kdd/Yang05"},
+"url":"URL#6535393"
+},
+{
+"@score":"1",
+"@id":"6535394",
+"info":{"authors":{"author":[{"@pid":"34/4652","text":"Chunsheng Yang"},{"@pid":"23/167","text":"Sylvain Létourneau"}]},"title":"Learning to predict train wheel failures.","venue":"KDD","pages":"516-525","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/YangL05","doi":"10.1145/1081870.1081929","ee":"https://doi.org/10.1145/1081870.1081929","url":"https://dblp.org/rec/conf/kdd/YangL05"},
+"url":"URL#6535394"
+},
+{
+"@score":"1",
+"@id":"6535395",
+"info":{"authors":{"author":[{"@pid":"04/999-2","text":"Hui Yang 0002"},{"@pid":"p/SParathasarathy","text":"Srinivasan Parthasarathy 0001"},{"@pid":"91/877","text":"Sameep Mehta"}]},"title":"A generalized framework for mining spatio-temporal patterns in scientific data.","venue":"KDD","pages":"716-721","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/YangPM05","doi":"10.1145/1081870.1081962","ee":"https://doi.org/10.1145/1081870.1081962","url":"https://dblp.org/rec/conf/kdd/YangPM05"},
+"url":"URL#6535395"
+},
+{
+"@score":"1",
+"@id":"6535396",
+"info":{"authors":{"author":[{"@pid":"y/YingYang-1","text":"Ying Yang 0001"},{"@pid":"59/4107","text":"Xindong Wu 0001"},{"@pid":"26/4253","text":"Xingquan Zhu 0001"}]},"title":"Combining proactive and reactive predictions for data streams.","venue":"KDD","pages":"710-715","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/YangWZ05","doi":"10.1145/1081870.1081961","ee":"https://doi.org/10.1145/1081870.1081961","url":"https://dblp.org/rec/conf/kdd/YangWZ05"},
+"url":"URL#6535396"
+},
+{
+"@score":"1",
+"@id":"6535397",
+"info":{"authors":{"author":[{"@pid":"22/4055","text":"Zhiqiang Yang"},{"@pid":"53/4506-2","text":"Sheng Zhong 0002"},{"@pid":"w/RebeccaNWright","text":"Rebecca N. Wright"}]},"title":"Anonymity-preserving data collection.","venue":"KDD","pages":"334-343","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/YangZW05","doi":"10.1145/1081870.1081909","ee":"https://doi.org/10.1145/1081870.1081909","url":"https://dblp.org/rec/conf/kdd/YangZW05"},
+"url":"URL#6535397"
+},
+{
+"@score":"1",
+"@id":"6535398",
+"info":{"authors":{"author":[{"@pid":"y/XiaoxinYin","text":"Xiaoxin Yin"},{"@pid":"h/JiaweiHan","text":"Jiawei Han 0001"},{"@pid":"y/PhilipSYu","text":"Philip S. Yu"}]},"title":"Cross-relational clustering with user&apos;s guidance.","venue":"KDD","pages":"344-353","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/YinHY05","doi":"10.1145/1081870.1081910","ee":"https://doi.org/10.1145/1081870.1081910","url":"https://dblp.org/rec/conf/kdd/YinHY05"},
+"url":"URL#6535398"
+},
+{
+"@score":"1",
+"@id":"6535399",
+"info":{"authors":{"author":{"@pid":"80/6889","text":"Hwanjo Yu"}},"title":"SVM selective sampling for ranking with application to data retrieval.","venue":"KDD","pages":"354-363","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/Yu05","doi":"10.1145/1081870.1081911","ee":"https://doi.org/10.1145/1081870.1081911","url":"https://dblp.org/rec/conf/kdd/Yu05"},
+"url":"URL#6535399"
+},
+{
+"@score":"1",
+"@id":"6535400",
+"info":{"authors":{"author":[{"@pid":"z/OsmarRZaiane","text":"Osmar R. Zaïane"},{"@pid":"68/3563","text":"Mohammad El-Hajj"}]},"title":"Pattern lattice traversal by selective jumps.","venue":"KDD","pages":"729-735","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ZaianeE05","doi":"10.1145/1081870.1081964","ee":"https://doi.org/10.1145/1081870.1081964","url":"https://dblp.org/rec/conf/kdd/ZaianeE05"},
+"url":"URL#6535400"
+},
+{
+"@score":"1",
+"@id":"6535401",
+"info":{"authors":{"author":[{"@pid":"z/MohammedJaveedZaki","text":"Mohammed Javeed Zaki"},{"@pid":"37/188","text":"Markus Peters"},{"@pid":"a/IraAssent","text":"Ira Assent"},{"@pid":"s/ThomasSeidl1","text":"Thomas Seidl 0001"}]},"title":"CLICKS: an effective algorithm for mining subspace clusters in categorical datasets.","venue":"KDD","pages":"736-742","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ZakiPAS05","doi":"10.1145/1081870.1081965","ee":"https://doi.org/10.1145/1081870.1081965","url":"https://dblp.org/rec/conf/kdd/ZakiPAS05"},
+"url":"URL#6535401"
+},
+{
+"@score":"1",
+"@id":"6535402",
+"info":{"authors":{"author":[{"@pid":"z/MohammedJaveedZaki","text":"Mohammed Javeed Zaki"},{"@pid":"r/NarenRamakrishnan","text":"Naren Ramakrishnan"}]},"title":"Reasoning about sets using redescription mining.","venue":"KDD","pages":"364-373","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ZakiR05","doi":"10.1145/1081870.1081912","ee":"https://doi.org/10.1145/1081870.1081912","url":"https://dblp.org/rec/conf/kdd/ZakiR05"},
+"url":"URL#6535402"
+},
+{
+"@score":"1",
+"@id":"6535404",
+"info":{"authors":{"author":[{"@pid":"z/NanZhang4","text":"Nan Zhang 0004"},{"@pid":"65/7037","text":"Shengquan Wang"},{"@pid":"z/WeiZhao-1","text":"Wei Zhao 0001"}]},"title":"A new scheme on privacy-preserving data classification.","venue":"KDD","pages":"374-383","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ZhangWZ05","doi":"10.1145/1081870.1081913","ee":"https://doi.org/10.1145/1081870.1081913","url":"https://dblp.org/rec/conf/kdd/ZhangWZ05"},
+"url":"URL#6535404"
+},
+{
+"@score":"1",
+"@id":"6535406",
+"info":{"authors":{"author":[{"@pid":"01/2356","text":"Jing Zhou"},{"@pid":"84/5860","text":"Dean P. Foster"},{"@pid":"23/2099","text":"Robert A. Stine"},{"@pid":"u/LyleHUngar","text":"Lyle H. Ungar"}]},"title":"Streaming feature selection using alpha-investing.","venue":"KDD","pages":"384-393","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/kdd/ZhouFSU05","doi":"10.1145/1081870.1081914","ee":"https://doi.org/10.1145/1081870.1081914","url":"https://dblp.org/rec/conf/kdd/ZhouFSU05"},
+"url":"URL#6535406"
+},
+{
+"@score":"1",
+"@id":"6564493",
+"info":{"authors":{"author":[{"@pid":"99/2304","text":"Robert Grossman"},{"@pid":"b/RobertoJBayardo","text":"Roberto J. Bayardo"},{"@pid":"24/4209","text":"Kristin P. Bennett"}]},"title":"Proceedings of the Eleventh ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Chicago, Illinois, USA, August 21-24, 2005","venue":"KDD","publisher":"ACM","year":"2005","type":"Editorship","access":"unavailable","key":"conf/kdd/2005","url":"https://dblp.org/rec/conf/kdd/2005"},
+"url":"URL#6564493"
+}
+]
+}
+}
+}
