@@ -1,17 +1,23 @@
 
 # Get all JSON file paths in the directory
 import json
+import sys
 import os
 from glob import glob
 from itertools import combinations
 
+arguments = sys.argv
+
+path= arguments[1]
+file= arguments[1]
 # Directory containing JSON files
-json_dir = "."  # Change this to your directory containing the JSON files
+json_dir = path  # Change this to your directory containing the JSON files
 
 # Get all JSON file paths in the directory
 
 json_files = glob(os.path.join(json_dir, "*.json"))
-json_files = ["icde2024.json"]
+json_files = [file]
+print(json_files)
 # Initialize mappings and lists
 author_id_map = {}  # Maps original author IDs to integer numbers
 author_name_map = {}  # Maps integer numbers to author names

@@ -150,7 +150,7 @@ void Graph::read_csv(){
 	if (edges == nullptr)
 		edges = new ui[m];
 
-	vector<set<ui>> degree(n);
+	vector<set<ui> > degree(n);
 
 	for(auto e: edge_pair){
 		ui u=e.first, v=e.second;
@@ -164,10 +164,12 @@ void Graph::read_csv(){
 		for(auto u: adj)
 			edges[pstart[i+1]++]=u;
 	}
+	printf("n=%llu, m=%llu\n", n, m);
 }
 void Graph::read()
 {
     if(dir.find(".csv")!=std::string::npos) return read_csv();
+    if(dir.find(".txt")!=std::string::npos) return read_csv();
 
 	FILE *f = Utility::open_file(dir.c_str(), "rb");
 
@@ -572,16 +574,16 @@ void Graph::search_dense()
 	ui *degree = new ui[n];
 	char *vis = new char[n];
 	vector<ui> dense_kplex = kplex;
-	kplex.pop_back(); // removing one item from kplex, so that degen can get |P|-k core
+
 	ui max_n_edges = dense_kplex.size() * (dense_kplex.size() - 1);
 
 	ListLinearHeap *heap = new ListLinearHeap(n, n - 1);
-	ui UB = degen(n, peel_sequence, core, pstart, edges, degree, vis, heap, false);
+	ui UB = degen(n, peel_sequence, core, pstart, edges, degree, vis, heap, true);
 
 	// delete heap;
 	// delete[] vis;
 	// delete[] degree;
-
+	kplex.pop_back(); // removing one item from kplex, so that degen can get |P|-k core
 	if (n > dense_kplex.size() && best_n_edges < max_n_edges)
 	{
 
@@ -589,6 +591,7 @@ void Graph::search_dense()
 		ui *rid = new ui[n];
 		ui *edgelist_pointer = new ui[m];
 
+	cout<<"kples size: "<<kplex.size()<<endl;
 		shrink_graph(n, m, peel_sequence, core, out_mapping, nullptr, rid, pstart, edges, true);
 
 		delete[] core;
@@ -675,10 +678,10 @@ void Graph::search_dense()
 				{ // degree[u] == 0 means u is deleted. it could be the case that degree[u] == 0, but key[u] > 0, as key[u] is not fully updated in linear_heap
 					Qv[0] = u;
 					Qv_n = 1;
-					if (kplex.size() + 1 > 2 * K)
-						m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
-					else
-						m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, 0, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
+					// if (kplex.size() + 1 > 2 * K)
+					// 	m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
+					// else
+					// 	m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, 0, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
 				}
 				continue;
 			}
@@ -691,7 +694,6 @@ void Graph::search_dense()
 			ui *ids = Qv;
 			ui ids_n = 0;
 			bool mflag = false;
-			cout<<u<<endl;
 
 			bool check = false;
 
@@ -746,9 +748,9 @@ void Graph::search_dense()
 					kplex.pop_back();
 				}
 			}
-			Qv[0] = u;
-			Qv_n = 1;
-			m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
+			// Qv[0] = u;
+			// Qv_n = 1;
+			// m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
 		}
 
 		if (prune_cnt == 0)
@@ -1358,7 +1360,7 @@ ui Graph::degen(ui n, ui *peel_sequence, ui *core, ept *pstart, ui *edges, ui *d
 		if (output)
 			printf("*** Degeneracy k-plex size: %u, max_core: %u, UB: %u, Time: %s (microseconds)\n", new_size - idx, max_core, UB, Utility::integer_to_string(t.elapsed()).c_str());
 
-		if (!dense_search && new_size - idx > kplex.size())
+		if (new_size - idx > kplex.size())
 		{
 			kplex.clear();
 			for (ui i = idx; i < new_size; i++)

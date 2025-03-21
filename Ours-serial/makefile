@@ -9,6 +9,11 @@ debug:
 	g++ -g -DNDEBUG -o UMKP main.cpp Graph.cpp
 prof:
 	g++ -pg -DNDEBUG -march=native -o UMKP-pg main.cpp Graph.cpp -w
+local : 
+	echo "\n\
+	#define SR_BRANCHING S_branching\n\
+	#define PART_BRANCH (K<=5)" > switches.h
+	g++ -flto -Ofast -DNDEBUG -march=native -std=c++20 -o UMKP main.cpp Graph.cpp -w
 
 versions:
 	echo -e "\n\

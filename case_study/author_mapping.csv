@@ -1,850 +1,140 @@
 ID, AuthorName
-0, Qichen Wang 0001
-1, Ke Yi 0001
-2, Wentao Wu 0001
-3, Chi Wang 0001
-4, Tarique Siddiqui
-5, Junxiong Wang
-6, Vivek R. Narasayya
-7, Surajit Chaudhuri
-8, Philip A. Bernstein
-9, Ahmed Metwally 0001
-10, Tobias Ziegler 0001
-11, Carsten Binnig
-12, Viktor Leis
-13, Qizhen Zhang 0001
-14, Xinyi Chen 0004
-15, Sidharth Sankhe
-16, Zhilei Zheng
-17, Ke Zhong
-18, Sebastian Angel
-19, Ang Chen 0001
-20, Vincent Liu 0001
-21, Boon Thau Loo
-22, Dong Wei 0001
-23, Md Mouinul Islam
-24, Baruch Schieber
-25, Senjuti Basu Roy
-26, Michael Abebe 0001
-27, Horatiu Lazu
-28, Khuzaima Daudjee
-29, Wentao Li 0001
-30, Miao Qiao
-31, Lu Qin 0001
-32, Lijun Chang
-33, Ying Zhang 0001
-34, Xuemin Lin 0001
-35, Matthias Boehm 0001
-36, Paroma Varma
-37, Doris Xin
-38, Yikai Zhang 0001
-39, Jeffrey Xu Yu
-40, Guoliang Li 0001
-41, Chao Zhang 0034
-42, Andrea Rossi 0002
-43, Donatella Firmani
-44, Paolo Merialdo
-45, Tommaso Teofili
-46, Dezhong Yao 0002
-47, Yuhong Gu
-48, Gao Cong
-49, Hai Jin 0001
-50, Xinqiao Lv
-51, George Christodoulou 0005
-52, Panagiotis Bouros
-53, Nikos Mamoulis
-54, Yu Xia 0005
-55, Xiangyao Yu
-56, Matthew Butrovich
-57, Andrew Pavlo
-58, Srinivas Devadas
-59, Feng Zhang 0007
-60, Weitao Wan
-61, Chenyang Zhang 0005
-62, Jidong Zhai
-63, Yunpeng Chai
-64, Haixiang Li
-65, Xiaoyong Du 0001
-66, Supun Abeysinghe
-67, Qiyang He
-68, Tiark Rompf
-69, Azza Abouzied
-70, Dominik Moritz
-71, Michael J. Cafarella
-72, Anastasia Ailamaki
-73, Leilani Battle
-74, Johannes Gehrke
-75, Masaru Kitsuregawa
-76, David Maier 0001
-77, Christopher Ré
-78, Meihui Zhang 0001
-79, Magdalena Balazinska
-80, Efthimia Aivaloglou
-81, George Fletcher 0001
-82, Daphne Miedema
-83, Hani Al-Sayeh
-84, Bunjamin Memishi
-85, Muhammad Attahir Jibril
-86, Marcus Paradies
-87, Kai-Uwe Sattler
-88, Amirhossein Aleyasen
-89, Mark Morcos
-90, Lyublena Antova
-91, Marc Sugiyama
-92, Dmitri Korablev
-93, Jozsef Patvarczki
-94, Rima Mutreja
-95, Michael Duller
-96, Florian M. Waas
-97, Marianne Winslett
-98, Noura S. Alghamdi
-99, Liang Zhang
-100, Elke A. Rundensteiner
-101, Mohamed Y. Eltabakh
-102, Sarah Alnegheimish
-103, Dongyu Liu
-104, Carles Sala
-105, Laure Berti-Équille
-106, Kalyan Veeramachaneni
-107, Sihem Amer-Yahia
-108, Sourav S. Bhowmick
-109, Xin Luna Dong
-110, Stratos Idreos
-111, Wolfgang Lehner
-112, Divesh Srivastava
-113, Adar Amir
-114, Ilya Kolchinsky
-115, Assaf Schuster
-116, Mijin An
-117, In-Yeong Song
-118, Yong Ho Song
-119, Sang-Won Lee 0001
-120, Christoph Anneser
-121, Andreas Kipf
-122, Huanchen Zhang
-123, Thomas Neumann 0001
-124, Alfons Kemper
-125, Nikos Armenatzoglou
-126, Sanuj Basu
-127, Naga Bhanoori
-128, Mengchu Cai
-129, Naresh Chainani
-130, Kiran Chinta
-131, Venkatraman Govindaraju
-132, Todd J. Green
-133, Monish Gupta
-134, Sebastian Hillig
-135, Eric Hotinger
-136, Yan Leshinksy
-137, Jintian Liang
-138, Michael McCreedy
-139, Fabian Nagel
-140, Ippokratis Pandis
-141, Panos Parchas
-142, Rahul Pathak
-143, Orestis Polychroniou
-144, Foyzur Rahman
-145, Gaurav Saxena
-146, Gokul Soundararajan
-147, Sriram Subramanian
-148, Doug Terry
-149, Uri Avron
-150, Shay Gershtein
-151, Ido Guy
-152, Tova Milo
-153, Slava Novgorodov
-154, Dmitrii Babaev
-155, Nikita Ovsov
-156, Ivan Kireev
-157, Mariya Ivanova
-158, Gleb Gusev
-159, Ivan Nazarov
-160, Alexander Tuzhilin
-161, Favyen Bastani
-162, Samuel Madden 0001
-163, Rachel Behar
-164, Sara Cohen
-165, Alexander Behm
-166, Shoumik Palkar
-167, Utkarsh Agarwal
-168, Timothy Armstrong
-169, David Cashman
-170, Ankur Dave
-171, Todd Greenstein
-172, Shant Hovsepian
-173, Ryan Johnson
-174, Arvind Sai Krishnan
-175, Paul Leventis
-176, Ala Luszczak
-177, Prashanth Menon
-178, Mostafa Mokhtar
-179, Gene Pang
-180, Sameer Paranjpye
-181, Greg Rahn
-182, Bart Samwel
-183, Tom van Bussel
-184, Herman Van Hovell
-185, Maryann Xue
-186, Reynold Xin
-187, Matei Zaharia
-188, Akash Bharadwaj
-189, Graham Cormode
-190, Byron Choi
-191, Spyros Blanas
-192, Norman May
-193, Nils Boeschen
-194, Paul Boniol
-195, Mohammed Meftah
-196, Emmanuel Remy
-197, Themis Palpanas
-198, Rajesh Bordawekar
-199, Yael Amsterdamer
-200, Ryan Marcus
-201, Oded Shmueli
-202, Wan Shen Lim
-203, Lin Ma 0006
-204, John Rollinson
-205, William Zhang 0001
-206, Baoqing Cai
-207, Yu Liu 0040
-208, Ce Zhang 0001
-209, Guangyu Zhang
-210, Ke Zhou 0001
-211, Li Liu 0014
-212, Chunhua Li 0002
-213, Bin Cheng
-214, Jie Yang
-215, Jiashu Xing
-216, Felix S. Campbell
-217, Bahareh Sadat Arab
-218, Boris Glavic
-219, Jiashen Cao
-220, Karan Sarkar
-221, Ramyad Hadidi
-222, Joy Arulraj
-223, Hyesoon Kim
-224, Tsz Nam Chan
-225, Leong Hou U
-226, Jianliang Xu
-227, Zhao Chang
-228, Dong Xie 0001
-229, Sheng Wang 0011
-230, Feifei Li 0001
-231, Yiru Chen
-232, Eugene Wu 0002
-233, Zihao Chen
-234, Baokun Han
-235, Chen Xu 0001
-236, Weining Qian
-237, Aoying Zhou
-238, Peng Chen
-239, Hui Li 0005
-240, Shafiq R. Joty
-241, Weiguo Wang
-242, Youmin Chen
-243, Paraschos Koutris
-244, Andrea C. Arpaci-Dusseau
-245, Remzi H. Arpaci-Dusseau
-246, Jiwu Shu
-247, Supawit Chockchowwat
-248, Pramod Chunduri
-249, Jaeho Bang
-250, Yao Lu
-251, Martino Ciaperoni
-252, Aristides Gionis
-253, Athanasios Katsamanis
-254, Panagiotis Karras
-255, Qiangqiang Dai
-256, Rong-Hua Li
-257, Meihao Liao
-258, Hongzhi Chen
-259, Guoren Wang
-260, Yizhou Dai
-261, Susan B. Davidson
-262, Daniel Deutch
-263, Nave Frost
-264, Benny Kimelfeld
-265, Omer Koren
-266, Mikaël Monet
-267, Behrouz Derakhshan
-268, Alireza Rezaei Mahdiraji
-269, Zoi Kaoudi
-270, Tilmann Rabl
-271, Volker Markl
-272, Tanu Malik
-273, Adriane Chapman
-274, Alin Deutsch
-275, Nadime Francis
-276, Alastair Green
-277, Keith W. Hare
-278, Bei Li
-279, Leonid Libkin
-280, Tobias Lindaaker
-281, Victor Marsault
-282, Wim Martens
-283, Jan Michels
-284, Filip Murlak
-285, Stefan Plantikow
-286, Petra Selmer
-287, Oskar van Rest
-288, Hannes Voigt
-289, Domagoj Vrgoc
-290, Mingxi Wu
-291, Fred Zemke
-292, Wei Dong 0007
-293, Juanru Fang
-294, Yuchao Tao
-295, Ashwin Machanavajjhala
-296, Wenfei Fan
-297, Ziyan Han
-298, Yaoshu Wang
-299, Min Xie
-300, Yuanhao Li 0003
-301, Muyang Liu
-302, Can Lu
-303, Muhammad Farhan
-304, Qing Wang 0002
-305, Henning Koehler
-306, Raul Castro Fernandez
-307, Tim Fischer 0003
-308, Denis Hirn
-309, Torsten Grust
-310, Lampros Flokas
-311, Weiyuan Wu
-312, Yejia Liu
-313, Jiannan Wang 0001
-314, Nakul Verma
-315, Michael Fruth
-316, Fangcheng Fu
-317, Huanran Xue
-318, Yong Cheng
-319, Yangyu Tao
-320, Bin Cui 0001
-321, Sainyam Galhotra
-322, Anna Fariha
-323, Raoni Lourenço
-324, Juliana Freire
-325, Alexandra Meliou
-326, Barna Saha
-327, Amir Gilad
-328, Sudeepa Roy
-329, Babak Salimi
-330, Karthikeyan Shanmugam
-331, Prasanna Sattigeri
-332, Kush R. Varshney
-333, Kathy Razmadze
-334, Zhengjie Miao
-335, Jun Yang 0001
-336, Anna Gorb
-337, Sven Groppe
-338, Le Gruenwald
-339, Ching-Hsien Hsu
-340, Zihui Gu
-341, Ruixue Fan
-342, Xiaoman Zhao
-343, Ju Fan
-344, Naiqing Guan
-345, Nick Koudas
-346, Peizhen Guo
-347, Bo Hu
-348, Wenjun Hu
-349, Donghyoung Han
-350, Jongwuk Lee
-351, Min-Soo Kim 0002
-352, Benjamin Hättasch
-353, Jan-Micha Bodensohn
-354, Wenjia He 0001
-355, Brian Hentschel
-356, Utku Sirin
-357, Pei-Yu Hou
-358, Daniel Robert Korn
-359, Cleber C. Melo-Filho
-360, David R. Wright 0001
-361, Alexander Tropsha
-362, Rada Chirkova
-363, Daokun Hu
-364, Zhiwen Chen 0006
-365, Wenkui Che
-366, Jianhua Sun 0002
-367, Hao Chen 0002
-368, Yu-Ching Hu
-369, Yuliang Li 0001
-370, Hung-Wei Tseng 0001
-371, Xiao Hu 0005
-372, Yuxi Liu
-373, Haibo Xiu
-374, Pankaj K. Agarwal
-375, Debmalya Panigrahi
-376, Stavros Sintos
-377, Junyang Gao
-378, Zezhou Huang
-379, Thomas Hütter
-380, Nikolaus Augsten
-381, Christoph M. Kirsch
-382, Michael J. Carey 0001
-383, Chen Li 0001
-384, Ihab F. Ilyas
-385, Theodoros Rekatsinas
-386, Vishnu Konda
-387, Jeffrey Pound
-388, Xiaoguang Qi
-389, Mohamed A. Soliman
-390, Alexander Isenko
-391, Ruben Mayer
-392, Jeffrey Jedele
-393, Hans-Arno Jacobsen
-394, Maliha Tashfia Islam
-395, Matthias Jasny
-396, Lasse Thostrup
-397, David Justen
-398, Vasiliki Kalavri
-399, Semih Salihoglu
-400, Daniel Kang
-401, Nikos Aréchiga
-402, Sudeep Pillai
-403, Peter D. Bailis
-404, Junbin Kang
-405, Le Cai
-406, Xingxuan Zhou
-407, Wei Cao 0006
-408, Songlu Cai
-409, Daming Shao
-410, John Guibas
-411, Tatsunori Hashimoto
-412, Sughosh V. Kaushik
-413, Barrie Kersbergen
-414, Olivier Sprangers
-415, Sebastian Schelter
-416, Kyoungmin Kim 0002
-417, Jisung Jung
-418, In Seo
-419, Wook-Shin Han
-420, Kangwoo Choi
-421, Jaehyok Chong
-422, Bogyeong Kim
-423, Kyoseung Koo
-424, Undraa Enkhbat
-425, Bongki Moon
-426, Junghoon Kim 0007
-427, Siqiang Luo
-428, Wenyuan Yu
-429, Jong-Bin Kim
-430, Jaeseon Yu
-431, Jaechan Ahn
-432, Sooyong Kang
-433, Hyungsoo Jung 0001
-434, Eric R. Knorr
-435, Baptiste Lemaire
-436, Andrew Lim
-437, Michael Mitzenmacher
-438, Evgenios M. Kornaropoulos
-439, Silei Ren
-440, Roberto Tamassia
-441, Ziliang Lai
-442, Chris Liu
-443, Chenxia Han
-444, Pengfei Zhang
-445, Eric Lo 0001
-446, Ben Kao
-447, Laks V. S. Lakshmanan
-448, Sangjin Lee 0001
-449, Alberto Lerner
-450, André Ryser
-451, Kibin Park
-452, Chanyoung Jeon
-453, Jinsub Park
-454, Philippe Cudré-Mauroux
-455, Beibin Li
-456, Srikanth Kandula
-457, Yiming Li
-458, Yanyan Shen
-459, Lei Chen 0002
-460, Huan Li 0003
-461, Bo Tang 0016
-462, Hua Lu 0001
-463, Muhammad Aamir Cheema
-464, Christian S. Jensen
-465, Sainan Li
-466, Qilei Yin
-467, Qi Li 0002
-468, Zhuotao Liu
-469, Jinwei Zhu
-470, Xiaofan Li 0004
-471, Rui Zhou 0001
-472, Lu Chen 0008
-473, Chengfei Liu
-474, Qiang He 0001
-475, Yun Yang 0001
-476, Seng Pei Liew
-477, Tsubasa Takahashi 0001
-478, Shun Takagi
-479, Fumiyuki Kato
-480, Yang Cao 0011
-481, Masatoshi Yoshikawa
-482, Barbara Liskov
-483, Yijian Liu
-484, Li Su 0005
-485, Vivek Shah 0001
-486, Yongluan Zhou
-487, Marcos Antonio Vaz Salles
-488, Qiyu Liu
-489, Haotian Liu
-490, Jiashu Zhang
-491, Yangshen Deng
-492, Xinying Zheng
-493, Qiaomu Shen
-494, Xiao Yan 0002
-495, Dan Zeng 0002
-496, Zunyao Mao
-497, Chaozu Zhang
-498, Zhengxin You
-499, Zhihao Wang
-500, Runzhe Jiang
-501, Fang Wang
-502, Man Lung Yiu
-503, Mingji Han
-504, Qian Li
-505, Zhenghai Luo
-506, Clemens Lutz
-507, Sebastian Breß
-508, Steffen Zeuch
-509, Chenhao Ma 0001
-510, Yixiang Fang
-511, Reynold Cheng
-512, Xiaolin Han 0002
-513, Lei Ma
-514, Chuan Lei
-515, Olga Poppe
-516, Yunus Ma
-517, Siphrey Xie
-518, Henry Zhong
-519, Leon Lee 0001
-520, King Lv
-521, Tobias Maltenberger
-522, Ivan Ilic
-523, Ilin Tolovski
-524, Riccardo Mancini
-525, Srinivas Karthik
-526, Bikash Chandra
-527, Vasilis Mageirakos
-528, Idan Meyuhas
-529, Aviv Ben-Arie
-530, Yair Horesh
-531, Xupeng Miao
-532, Yining Shi 0001
-533, Hailin Zhang 0004
-534, Xin Zhang
-535, Xiaonan Nie
-536, Zhi Yang 0001
-537, Elena Milkai
-538, Yannis Chronis
-539, Kevin P. Gaffney
-540, Zhihan Guo
-541, Jignesh M. Patel
-542, Bonaventura Del Monte
-543, Supun Nakandala
-544, Arun Kumar 0001
-545, Fatemeh Nargesian
-546, Abolfazl Asudeh
-547, H. V. Jagadish
-548, Sepideh Nikookar
-549, Paras Sakharkar
-550, Sathyanarayanan Somasunder
-551, Adam Bienkowski
-552, Matthew Macesker
-553, Krishna R. Pattipati
-554, David Sidoti
-555, Dan Olteanu
-556, Nils Vortmeier
-557, Dorde Zivanovic
-558, Joshua Pan
-559, Kwanghyun Park 0001
-560, Karla Saur
-561, Dalitso Banda
-562, Rathijit Sen
-563, Matteo Interlandi
-564, Konstantinos Karanasos
-565, Sophie Pavia
-566, Rituparna Khan
-567, Anna Pyayt
-568, Michael N. Gubanov
-569, Jinglin Peng
-570, Bolin Ding
-571, Kai Zeng 0002
-572, Jingren Zhou 0001
-573, Vibhor Porwal
-574, Subrata Mitra
-575, Fan Du
-576, John Anderson
-577, Nikhil Sheoran
-578, Anup B. Rao
-579, Tung Mai
-580, Gautam Kowshik
-581, Sapthotharan Nair
-582, Sameeksha Arora
-583, Saurabh Mahapatra
-584, Romila Pradhan
-585, Aditya Lahiri
-586, Jiongli Zhu
-587, Adam Prout
-588, Szu-Po Wang
-589, Joseph Victor
-590, Zhou Sun
-591, Yongzhu Li
-592, Jack Chen
-593, Evan Bergeron
-594, Eric N. Hanson
-595, Robert Walzer
-596, Rodrigo Gomes
-597, Nikita Shamgunov
-598, Amit Somech
-599, Xuebin Ren
-600, Liang Shi
-601, Weiren Yu
-602, Shusen Yang
-603, Cong Zhao 0001
-604, Zongben Xu
-605, Alexander Renz-Wieland
-606, Rainer Gemulla
-607, Manuel Rigger
-608, Pinar Tözün
-609, Pingcheng Ruan
-610, Yaron Kanza
-611, Beng Chin Ooi
-612, Ibrahim Sabek
-613, Tenzin Samten Ukyab
-614, Tim Kraska
-615, Subhadeep Sarkar
-616, Manos Athanassoulis
-617, Kaijie Chen
-618, Zichen Zhu
-619, Manuel Schönberger
-620, Anil Shanbhag
-621, Bobbi W. Yogatama
-622, Saehan Jo
-623, Hadar Sivan
-624, Moshe Gabel
-625, Yuanfeng Song
-626, Raymond Chi-Wing Wong
-627, Xuefang Zhao
-628, Di Jiang
-629, Mihail Stoian
-630, Yoshihiko Suhara
-631, Jinfeng Li
-632, Dan Zhang
-633, Çagatay Demiralp
-634, Chen Chen 0111
-635, Wang-Chiew Tan
-636, Luming Sun
-637, Tao Ji
-638, Cuiping Li 0001
-639, Hong Chen 0001
-640, Yahui Sun 0001
-641, Shuai Ma 0001
-642, Yu Sun 0027
-643, Zheng Zheng 0005
-644, Shaoxu Song
-645, Fei Chiang
-646, Justin Talbot
-647, Daniel Ting
-648, Jiawei Tang
-649, Yuyu Luo
-650, Mourad Ouzzani
-651, Hongyang Chen
-652, Xiu Tang
-653, Sai Wu
-654, Mingli Song
-655, Shanshan Ying
-656, Gang Chen 0001
-657, Chuzhe Tang
-658, Zhaoguo Wang
-659, Xiaodong Zhang
-660, Qianmian Yu
-661, Binyu Zang
-662, Haibing Guan
-663, Haibo Chen 0001
-664, Jeffrey Tao
-665, Konstantin Taranov
-666, Steve Byan
-667, Virendra J. Marathe
-668, Torsten Hoefler
-669, David Tench
-670, Evan West
-671, Victor Zhang
-672, Michael A. Bender
-673, Abiyaz Chowdhury
-674, J. Ahmed Dellas
-675, Martin Farach-Colton
-676, Tyler Seip
-677, Kenny Zhang
-678, Immanuel Trummer
-679, Jianhong Tu
-680, Nan Tang 0001
-681, Peng Wang
-682, Chengliang Chai
-683, Harshavardhan Unnibhavi
-684, David Cerdeira
-685, Antonio Barbalace
-686, Nuno Santos 0001
-687, Pramod Bhatotia
-688, Nathan VanBenschoten
-689, Arul Ajmani
-690, Marcus Gartner
-691, Andrei Matei
-692, Aayush Shah
-693, Irfan Sharif
-694, Alexander Shraer
-695, Adam Storm
-696, Rebecca Taft
-697, Oliver Tan
-698, Andy Woods
-699, Peyton Walters
-700, Enzo Veltri
-701, Donatello Santoro
-702, Gilbert Badaro
-703, Mohammed Saeed 0002
-704, Paolo Papotti
-705, Gerardo Vitagliano
-706, Lucas Reisener
-707, Lan Jiang 0001
-708, Mazhar Hameed 0001
-709, Felix Naumann
-710, Adrian Vogelsgesang
-711, Chenghong Wang
-712, Johes Bater
-713, Kartik Nayak
-714, Hanchen Wang 0001
-715, Rong Hu
-716, Wei Wang 0011
-717, Wenjie Zhang 0001
-718, Yisu Remy Wang
-719, Mahmoud Abo Khamis
-720, Hung Q. Ngo 0001
-721, Reinhard Pichler
-722, Dan Suciu
-723, Qing Wang 0031
-724, Youyou Lu
-725, Zhiqi Wang
-726, Zili Shao
-727, Zhizhi Wang
-728, Chaoji Zuo
-729, Dong Deng 0001
-730, Qiange Wang
-731, Yanfeng Zhang
-732, Hao Wang 0002
-733, Chaoyi Chen
-734, Xiaodong Zhang 0001
-735, Ge Yu 0001
-736, Zhou Zhou
-737, Yicun Yang
-738, Haoran Ding
-739, Gansen Hu
-740, Ding Ding
-741, Jinyang Li 0001
-742, Ryan Wickman
-743, Yuncheng Wu
-744, Tien Tuan Anh Dinh
-745, Guoyu Hu
-746, Yeow Meng Chee
-747, Jiacheng Wu
-748, Jin Wang 0007
-749, Carlo Zaniolo
-750, Jiadong Xie 0002
-751, Jinhan Xin
-752, Kai Hwang 0001
-753, Zhibin Yu 0001
-754, Zhuangdi Xu
-755, Gaurav Tarlok Kakkar
-756, Umakishore Ramachandran
-757, Yunlong Xu
-758, Jinshu Liu
-759, Lijie Xu
-760, Shuang Qiu
-761, Binhang Yuan
-762, Jiawei Jiang 0001
-763, Cédric Renggli
-764, Shaoduo Gan
-765, Kaan Kara
-766, Ji Liu 0002
-767, Jieping Ye
-768, Zongheng Yang
-769, Wei-Lin Chiang
-770, Sifei Luan 0001
-771, Gautam Mittal
-772, Michael Luo
-773, Ion Stoica
-774, Junran Yang
-775, Hyekang Kevin Joo
-776, Sai S. Yerramreddy
-777, Siyao Li
-778, Renchi Yang
-779, Jieming Shi 0001
-780, Keke Huang
-781, Xiaokui Xiao
-782, Jingyi Yang
-783, Peizhi Wu
-784, Tieying Zhang
-785, Xiao He 0008
-786, Linguan Yang
-787, Xinan Yan
-788, Bernard Wong 0001
-789, Maor Yankovitch
-790, Alexander Yao
-791, Yaroslav Plaksin
-792, Kaiqiang Yu
-793, Cheng Long 0001
-794, Shengxin Liu
-795, Da Yan 0001
-796, Zifeng Yuan
-797, Huey-Eng Chua
-798, Zekun Ye
-799, Yuxiang Zeng
-800, Yongxin Tong
-801, Jiahao Zhang
-802, Keming Li
-803, Jiachi Zhang 0001
-804, Shi Cheng
-805, Zhihui Xue
-806, Jianjun Deng
-807, Cuiyun Fu
-808, Wenchao Zhou
-809, Changcheng Chen
-810, Lixi Zhang
-811, Xuanhe Zhou
-812, Zhuo Zhang
-813, Junhao Gan
-814, Zhifeng Bao
-815, Seyed Mohammad Hussein Kazemi
-816, Guangyong Chen
-817, Fengyuan Zhu
-818, Jianqiu Zhang
-819, Kaisong Huang
-820, Tianzheng Wang 0001
-821, Wangda Zhang
-822, Paul Mineiro
-823, Shi Qiao 0001
-824, Nasim Ghazanfari
-825, Karlen Lie
-826, Marc T. Friedman
-827, Rafah Hosn
-828, Hiren Patel
-829, Alekh Jindal
-830, Xinyi Zhang 0002
-831, Hong Wu
-832, Yang Li 0106
-833, Jian Tan
-834, Hao Zhang 0098
-835, Kangfei Zhao
-836, Yikai Zhao
-837, Yinda Zhang 0002
-838, Yuanpeng Li 0002
-839, Yi Zhou
-840, Chunhui Chen 0007
-841, Tong Yang 0003
-842, Zixuan Zhao
-843, Zongyan He
-844, Rui Li
-845, Sepehr Assadi
-846, Zachary G. Ives
-847, Angela Bonifati
-848, Amr El Abbadi
+0, Md. Saiful Islam 0003
+1, Chengfei Liu
+2, Razen Al-Harbi
+3, Ibrahim Abdelaziz
+4, Panos Kalnis
+5, Nikos Mamoulis
+6, Yasser Ebrahim
+7, Majed Sahli
+8, Stephan Baumann 0002
+9, Peter A. Boncz
+10, Kai-Uwe Sattler
+11, Kenneth S. Bøgh
+12, Sean Chester
+13, Ira Assent
+14, Wolfgang Lehner
+15, Thomas Neumann 0001
+16, Angela Bonifati
+17, Werner Nutt
+18, Riccardo Torlone
+19, Jan Van den Bussche
+20, Yang Chen 0003
+21, Daisy Zhe Wang
+22, Sean Goldberg
+23, Georgios John Fakas
+24, Zhi Cai
+25, Stefan Funke
+26, André Nusser
+27, Sabine Storandt
+28, Jun Gao 0003
+29, Chang Zhou
+30, Jeffrey Xu Yu
+31, Gheorghi Guzun
+32, Guadalupe Canahuate
+33, H. V. Jagadish
+34, Aoying Zhou
+35, Inah Jeon
+36, Evangelos E. Papalexakis
+37, Christos Faloutsos
+38, Lee Sael
+39, U Kang
+40, Dawei Jiang
+41, Sai Wu
+42, Gang Chen 0001
+43, Beng Chin Ooi
+44, Kian-Lee Tan
+45, Jun Xu 0027
+46, Peiquan Jin
+47, Chengcheng Yang
+48, Christian S. Jensen
+49, Puyuan Yang
+50, Lihua Yue
+51, Uwe Jugel
+52, Zbigniew Jerzak
+53, Gregor Hackenbroich
+54, Volker Markl
+55, Woon-Hak Kang
+56, Sang-Won Lee 0001
+57, Bongki Moon
+58, Yaron Kanza
+59, Hadas Yaari
+60, Henning Köhler
+61, Uwe Leck
+62, Sebastian Link
+63, Xiaofang Zhou 0001
+64, Philipp Langer
+65, Felix Naumann
+66, Yuhong Li
+67, Leong Hou U
+68, Man Lung Yiu
+69, Zhiguo Gong
+70, Feifei Li 0001
+71, Ke Yi 0001
+72, Yufei Tao 0001
+73, Bin Yao 0002
+74, Yang Li 0106
+75, Dong Xie 0001
+76, Min Wang 0001
+77, Qing Liu 0008
+78, Yunjun Gao
+79, Baihua Zheng
+80, Linlin Zhou
+81, Yue Lu
+82, Yuguan Li
+83, Mohamed Y. Eltabakh
+84, Ge Luo 0001
+85, Lu Wang 0002
+86, Graham Cormode
+87, Davide Mottin
+88, Matteo Lissandrini
+89, Yannis Velegrakis
+90, Themis Palpanas
+91, Alice Marascu
+92, Senjuti Basu Roy
+93, Gautam Das 0001
+94, Peng Peng 0001
+95, Lei Zou 0001
+96, M. Tamer Özsu
+97, Lei Chen 0002
+98, Dongyan Zhao 0001
+99, Thao N. Pham
+100, Panos K. Chrysanthis
+101, Alexandros Labrinidis
+102, Danica Porobic
+103, Ippokratis Pandis
+104, Miguel Branco
+105, Pinar Tözün
+106, Anastasia Ailamaki
+107, Abdul Quamar
+108, Amol Deshpande
+109, Jimmy Lin
+110, Mohammad Sadoghi
+111, Kenneth A. Ross
+112, Mustafa Canim
+113, Bishwaranjan Bhattacharjee
+114, Ahmet Erdem Sariyüce
+115, Bugra Gedik
+116, Gabriela Jacques-Silva
+117, Kun-Lung Wu
+118, Ümit V. Çatalyürek
+119, Felix Martin Schuhknecht
+120, Alekh Jindal
+121, Jens Dittrich
+122, Evangelia A. Sitaridi
+123, Robert Soulé
+124, Wei Wang 0059
+125, Xiaoyan Yang
+126, Dongxiang Zhang
+127, Yueting Zhuang
+128, Xike Xie
+129, Benjin Mei
+130, Jinchuan Chen
+131, Xiaoyong Du 0001
+132, Long Yuan 0001
+133, Lu Qin 0001
+134, Xuemin Lin 0001
+135, Lijun Chang
+136, Wenjie Zhang 0001
+137, Kostas Zoumpatianos
+138, Stratos Idreos

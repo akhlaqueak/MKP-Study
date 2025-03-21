@@ -52,11 +52,11 @@ public:
 	void search_dense();
 
 private:
-	void write_subgraph(ui n, const std::vector<std::pair<ui, ui>> &edge_list);
+	void write_subgraph(ui n, const std::vector<std::pair<ui, ui > > &edge_list);
 	void heuristic_kplex_max_degree(ui processed_threshold);
-	void extract_subgraph(ui u, ui *ids, ui &ids_n, ui *rid, std::vector<std::pair<ui, ui>> &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer);
-	void extract_graph(ui n, ui m, ui *deg, ui *ids, ui &ids_n, ui *rid, std::vector<std::pair<ui, ui>> &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer);
-	void extract_subgraph_and_prune(ui u, ui *ids, ui &ids_n, ui *rid, std::vector<std::pair<ui, ui>> &vp, ui *Q, ui *degree, char *exists, ept *pend, char *deleted, ui *edgelist_pointer);
+	void extract_subgraph(ui u, ui *ids, ui &ids_n, ui *rid, std::vector<std::pair<ui, ui > > &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer);
+	void extract_graph(ui n, ui m, ui *deg, ui *ids, ui &ids_n, ui *rid, std::vector<std::pair<ui, ui > > &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer);
+	void extract_subgraph_and_prune(ui u, ui *ids, ui &ids_n, ui *rid, std::vector<std::pair<ui, ui > > &vp, ui *Q, ui *degree, char *exists, ept *pend, char *deleted, ui *edgelist_pointer);
 
 	ui degen(ui n, ui *peel_sequence, ui *core, ept *pstart, ui *edges, ui *degree, char *vis, ListLinearHeap *heap, bool output);
 	void shrink_graph(ui &n, ept &m, ui *peel_sequence, ui *core, ui *out_mapping, ui *in_mapping, ui *rid, ept *pstart, ui *edges, bool output);
@@ -66,8 +66,8 @@ private:
 	char find(ui u, ui w, ept &b, ept e, char *deleted, ept &idx, ui *edgelist_pointer, ui *edges);
 
 	// functions for subgraph processing
-	void load_graph_from_edgelist(ui _n, const std::vector<std::pair<ui, ui>> &edge_list, ui &n, ept &m, ui *degree, ept *pstart, ui *edges);
-	void subgraph_prune(ui *ids, ui &_n, std::vector<std::pair<ui, ui>> &edge_list, ui *rid, ui *Qv, ui *Qe, char *exists);
+	void load_graph_from_edgelist(ui _n, const std::vector<std::pair<ui, ui > > &edge_list, ui &n, ept &m, ui *degree, ept *pstart, ui *edges);
+	void subgraph_prune(ui *ids, ui &_n, std::vector<std::pair<ui, ui > > &edge_list, ui *rid, ui *Qv, ui *Qe, char *exists);
 	void ego_degen(ui n, ui m, ui *peel_sequence, ept *pstart, ui *edges, ui *degree, ui *rid, char *vis, ListLinearHeap *heap, ui *edgelist_pointer, bool output);
 	void write(vector<ui> &kplex, ui *pstart, ui* pend, ui *edges, bool append = false)
 	{
