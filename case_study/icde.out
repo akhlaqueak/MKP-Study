@@ -1,52 +1,52 @@
 
 -----------------------------------------------------------------------------------------
 n=337, m=1114
-*** Heuristic kplex size: 13, time: 9 (microseconds)
-*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 7 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 13 t_Total: 0.000021 t_Bounding: 0.000000
+*** Heuristic kplex size: 13, time: 11 (microseconds)
+*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 8 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 13 t_Total: 0.000024 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=337, m=1114
-*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 3 (microseconds)
+*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 4 (microseconds)
 kples size: 12
 *** After core shrink: n = 13, m = 78 (undirected)
 *** After core-truss co-pruning: n = 13, m = 78, density = 1.0000
 prune_cnt: 13, max_n: 13, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 13, max_n: 13, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 13 t_Total: 0.000257 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 13 t_Total: 0.000296 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=420, m=1332
-*** Heuristic kplex size: 9, time: 15 (microseconds)
-*** Degeneracy k-plex size: 9, max_core: 8, UB: 10, Time: 7 (microseconds)
+*** Heuristic kplex size: 9, time: 9 (microseconds)
+*** Degeneracy k-plex size: 9, max_core: 8, UB: 10, Time: 8 (microseconds)
 *** After core shrink: n = 23, m = 78 (undirected)
-*** EGo-Degen kPlex size: 9, Time: 3 (microseconds)
+*** EGo-Degen kPlex size: 9, Time: 1 (microseconds)
 *** After core_truss_copruning: n = 23, m = 78 (undirected)
 prune_cnt: 5, max_n: 9, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000080 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000051 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=420, m=1332
-*** Degeneracy k-plex size: 9, max_core: 8, UB: 10, Time: 3 (microseconds)
+*** Degeneracy k-plex size: 9, max_core: 8, UB: 10, Time: 4 (microseconds)
 kples size: 8
 *** After core shrink: n = 23, m = 78 (undirected)
 *** After core-truss co-pruning: n = 23, m = 78, density = 0.3083
 prune_cnt: 23, max_n: 9, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000252 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 9, max_n: 9, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000245 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=491, m=1662
 *** Heuristic kplex size: 7, time: 9 (microseconds)
-*** Degeneracy k-plex size: 7, max_core: 6, UB: 10, Time: 9 (microseconds)
+*** Degeneracy k-plex size: 7, max_core: 6, UB: 10, Time: 11 (microseconds)
 *** After core shrink: n = 134, m = 308 (undirected)
-*** EGo-Degen kPlex size: 7, Time: 2 (microseconds)
+*** EGo-Degen kPlex size: 7, Time: 3 (microseconds)
 prune_cnt: 36, max_n: 7, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000058 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000063 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=491, m=1662
 *** Degeneracy k-plex size: 7, max_core: 6, UB: 10, Time: 6 (microseconds)
@@ -245,22 +245,51 @@ A denser kplex found with #edges: 24
 !!! BB_Search found a kplex of size: 7, n_edges: 24 
 !!! BB_Search found a kplex of size: 7, n_edges: 24 
 !!! BB_Search found a kplex of size: 7, n_edges: 24 
-prune_cnt: 134, max_n: 14, min_density: 0.3407, avg_density: 0.9248
-search_cnt: 19, max_n: 14, min_density: 0.3407, avg_density: 0.5396
->>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.117803 n_mkp: 192 initial_edges: 24 densest_kplex_edges: 24
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+prune_cnt: 134, max_n: 14, min_density: 0.3407, avg_density: 0.9241
+search_cnt: 33, max_n: 14, min_density: 0.3407, avg_density: 0.7241
+>>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.245831 n_mkp: 220 initial_edges: 24 densest_kplex_edges: 24
+!!! Warning: Trivial Case !!!
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=582, m=2158
-*** Heuristic kplex size: 10, time: 13 (microseconds)
-*** Degeneracy k-plex size: 10, max_core: 9, UB: 12, Time: 10 (microseconds)
+*** Heuristic kplex size: 10, time: 10 (microseconds)
+*** Degeneracy k-plex size: 10, max_core: 9, UB: 12, Time: 12 (microseconds)
 *** After core shrink: n = 27, m = 109 (undirected)
-*** EGo-Degen kPlex size: 10, Time: 2 (microseconds)
+*** EGo-Degen kPlex size: 10, Time: 3 (microseconds)
 *** After core_truss_copruning: n = 27, m = 109 (undirected)
 prune_cnt: 6, max_n: 10, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 10 t_Total: 0.000052 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 10 t_Total: 0.000055 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=582, m=2158
 *** Degeneracy k-plex size: 10, max_core: 9, UB: 12, Time: 5 (microseconds)
@@ -268,60 +297,63 @@ kples size: 9
 *** After core shrink: n = 27, m = 109 (undirected)
 *** After core-truss co-pruning: n = 27, m = 109, density = 0.3105
 prune_cnt: 27, max_n: 10, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 10 t_Total: 0.000330 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 10, max_n: 10, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 10 t_Total: 0.000354 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=685, m=2778
-*** Heuristic kplex size: 10, time: 10 (microseconds)
-*** Degeneracy k-plex size: 10, max_core: 9, UB: 12, Time: 11 (microseconds)
+*** Heuristic kplex size: 10, time: 11 (microseconds)
+*** Degeneracy k-plex size: 10, max_core: 9, UB: 12, Time: 14 (microseconds)
 *** After core shrink: n = 57, m = 226 (undirected)
 *** EGo-Degen kPlex size: 10, Time: 3 (microseconds)
 *** After core_truss_copruning: n = 57, m = 226 (undirected)
 prune_cnt: 11, max_n: 10, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 10 t_Total: 0.000063 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 10 t_Total: 0.000067 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=685, m=2778
 *** Degeneracy k-plex size: 10, max_core: 9, UB: 12, Time: 7 (microseconds)
 kples size: 9
 *** After core shrink: n = 57, m = 226 (undirected)
 *** After core-truss co-pruning: n = 57, m = 226, density = 0.1416
-prune_cnt: 57, max_n: 15, min_density: 0.6667, avg_density: 0.9825
-search_cnt: 3, max_n: 15, min_density: 0.6667, avg_density: 0.6667
->>edge_list.csv-dense 	MaxKPlex_Size: 10 t_Total: 0.000470 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+!!! BB_Search found a kplex of size: 10, n_edges: 90 
+!!! BB_Search found a kplex of size: 10, n_edges: 90 
+A denser kplex found with #edges: 90
+prune_cnt: 55, max_n: 15, min_density: 0.6667, avg_density: 0.9939
+search_cnt: 8, max_n: 15, min_density: 0.6667, avg_density: 0.9583
+>>edge_list.csv-dense 	MaxKPlex_Size: 10 t_Total: 0.002935 n_mkp: 2 initial_edges: 0 densest_kplex_edges: 90
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=665, m=2536
 *** Heuristic kplex size: 15, time: 10 (microseconds)
-*** Degeneracy k-plex size: 15, max_core: 14, UB: 15, Time: 10 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 15 t_Total: 0.000024 t_Bounding: 0.000000
+*** Degeneracy k-plex size: 15, max_core: 14, UB: 15, Time: 11 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 15 t_Total: 0.000026 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=665, m=2536
-*** Degeneracy k-plex size: 15, max_core: 14, UB: 15, Time: 5 (microseconds)
+*** Degeneracy k-plex size: 15, max_core: 14, UB: 15, Time: 6 (microseconds)
 kples size: 14
 *** After core shrink: n = 15, m = 105 (undirected)
 *** After core-truss co-pruning: n = 15, m = 105, density = 1.0000
 prune_cnt: 15, max_n: 15, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 15, max_n: 15, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 15 t_Total: 0.000373 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 15 t_Total: 0.000382 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=518, m=2198
 *** Heuristic kplex size: 14, time: 10 (microseconds)
-*** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 7 (microseconds)
+*** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 8 (microseconds)
 *** After core shrink: n = 26, m = 157 (undirected)
 *** EGo-Degen kPlex size: 14, Time: 2 (microseconds)
 *** After core_truss_copruning: n = 26, m = 157 (undirected)
 prune_cnt: 4, max_n: 14, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 14 t_Total: 0.000049 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 14 t_Total: 0.000058 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=518, m=2198
 *** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 4 (microseconds)
@@ -329,21 +361,21 @@ kples size: 13
 *** After core shrink: n = 26, m = 157 (undirected)
 *** After core-truss co-pruning: n = 26, m = 157, density = 0.4831
 prune_cnt: 26, max_n: 14, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 14 t_Total: 0.000354 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 14, max_n: 14, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 14 t_Total: 0.000356 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=453, m=1722
-*** Heuristic kplex size: 10, time: 11 (microseconds)
-*** Degeneracy k-plex size: 10, max_core: 9, UB: 12, Time: 8 (microseconds)
+*** Heuristic kplex size: 10, time: 10 (microseconds)
+*** Degeneracy k-plex size: 10, max_core: 9, UB: 12, Time: 9 (microseconds)
 *** After core shrink: n = 36, m = 145 (undirected)
 *** EGo-Degen kPlex size: 10, Time: 2 (microseconds)
 *** After core_truss_copruning: n = 36, m = 145 (undirected)
 prune_cnt: 8, max_n: 10, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 10 t_Total: 0.000055 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 10 t_Total: 0.000051 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=453, m=1722
 *** Degeneracy k-plex size: 10, max_core: 9, UB: 12, Time: 4 (microseconds)
@@ -351,16 +383,16 @@ kples size: 9
 *** After core shrink: n = 36, m = 145 (undirected)
 *** After core-truss co-pruning: n = 36, m = 145, density = 0.2302
 prune_cnt: 36, max_n: 10, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 10 t_Total: 0.000297 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 10, max_n: 10, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 10 t_Total: 0.000267 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=515, m=3136
-*** Heuristic kplex size: 36, time: 19 (microseconds)
+*** Heuristic kplex size: 36, time: 17 (microseconds)
 *** Degeneracy k-plex size: 36, max_core: 35, UB: 36, Time: 10 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 36 t_Total: 0.000033 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 36 t_Total: 0.000032 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=515, m=3136
 *** Degeneracy k-plex size: 36, max_core: 35, UB: 36, Time: 6 (microseconds)
@@ -369,20 +401,20 @@ kples size: 35
 *** After core-truss co-pruning: n = 36, m = 630, density = 1.0000
 prune_cnt: 36, max_n: 36, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 36, max_n: 36, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 36 t_Total: 0.000783 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 36 t_Total: 0.000692 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=473, m=1810
-*** Heuristic kplex size: 9, time: 9 (microseconds)
-*** Degeneracy k-plex size: 9, max_core: 8, UB: 12, Time: 9 (microseconds)
+*** Heuristic kplex size: 9, time: 10 (microseconds)
+*** Degeneracy k-plex size: 9, max_core: 8, UB: 12, Time: 10 (microseconds)
 *** After core shrink: n = 62, m = 212 (undirected)
-*** EGo-Degen kPlex size: 9, Time: 2 (microseconds)
+*** EGo-Degen kPlex size: 9, Time: 1 (microseconds)
 *** After core_truss_copruning: n = 62, m = 212 (undirected)
 prune_cnt: 14, max_n: 9, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000059 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000056 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=473, m=1810
 *** Degeneracy k-plex size: 9, max_core: 8, UB: 12, Time: 5 (microseconds)
@@ -390,38 +422,461 @@ kples size: 8
 *** After core shrink: n = 62, m = 212 (undirected)
 *** After core-truss co-pruning: n = 62, m = 212, density = 0.1121
 prune_cnt: 62, max_n: 9, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000294 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 18, max_n: 9, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000276 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=442, m=1720
-*** Heuristic kplex size: 8, time: 10 (microseconds)
-*** Degeneracy k-plex size: 8, max_core: 7, UB: 11, Time: 9 (microseconds)
+*** Heuristic kplex size: 8, time: 12 (microseconds)
+*** Degeneracy k-plex size: 8, max_core: 7, UB: 11, Time: 11 (microseconds)
 *** After core shrink: n = 88, m = 250 (undirected)
-*** EGo-Degen kPlex size: 8, Time: 2 (microseconds)
+*** EGo-Degen kPlex size: 8, Time: 3 (microseconds)
 *** After core_truss_copruning: n = 88, m = 250 (undirected)
 prune_cnt: 20, max_n: 8, min_density: 0.8571, avg_density: 0.9929
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000062 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000077 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=442, m=1720
 *** Degeneracy k-plex size: 8, max_core: 7, UB: 11, Time: 5 (microseconds)
 kples size: 7
 *** After core shrink: n = 88, m = 250 (undirected)
 *** After core-truss co-pruning: n = 88, m = 250, density = 0.0653
-prune_cnt: 88, max_n: 12, min_density: 0.5455, avg_density: 0.9695
-search_cnt: 4, max_n: 12, min_density: 0.5455, avg_density: 0.6136
->>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000297 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+A denser kplex found with #edges: 38
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 38 
+!!! BB_Search found a kplex of size: 8, n_edges: 59 
+A denser kplex found with #edges: 59
+prune_cnt: 76, max_n: 12, min_density: 0.6364, avg_density: 0.9686
+search_cnt: 17, max_n: 12, min_density: 0.6364, avg_density: 0.8594
+>>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.628370 n_mkp: 421 initial_edges: 38 densest_kplex_edges: 59
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=607, m=3254
-*** Heuristic kplex size: 20, time: 13 (microseconds)
+*** Heuristic kplex size: 20, time: 12 (microseconds)
 *** Degeneracy k-plex size: 20, max_core: 19, UB: 20, Time: 10 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 20 t_Total: 0.000027 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 20 t_Total: 0.000026 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=607, m=3254
 *** Degeneracy k-plex size: 20, max_core: 19, UB: 20, Time: 6 (microseconds)
@@ -430,55 +885,55 @@ kples size: 19
 *** After core-truss co-pruning: n = 20, m = 190, density = 1.0000
 prune_cnt: 20, max_n: 20, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 20, max_n: 20, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 20 t_Total: 0.000528 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 20 t_Total: 0.000533 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=718, m=3574
-*** Heuristic kplex size: 20, time: 13 (microseconds)
-*** Degeneracy k-plex size: 20, max_core: 19, UB: 20, Time: 12 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 20 t_Total: 0.000028 t_Bounding: 0.000000
+*** Heuristic kplex size: 20, time: 11 (microseconds)
+*** Degeneracy k-plex size: 20, max_core: 19, UB: 20, Time: 10 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 20 t_Total: 0.000025 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=718, m=3574
-*** Degeneracy k-plex size: 20, max_core: 19, UB: 20, Time: 7 (microseconds)
+*** Degeneracy k-plex size: 20, max_core: 19, UB: 20, Time: 6 (microseconds)
 kples size: 19
 *** After core shrink: n = 20, m = 190 (undirected)
 *** After core-truss co-pruning: n = 20, m = 190, density = 1.0000
 prune_cnt: 20, max_n: 20, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 20, max_n: 20, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 20 t_Total: 0.000608 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 20 t_Total: 0.000546 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=803, m=3736
-*** Heuristic kplex size: 13, time: 16 (microseconds)
-*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 14 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 13 t_Total: 0.000033 t_Bounding: 0.000000
+*** Heuristic kplex size: 13, time: 13 (microseconds)
+*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 16 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 13 t_Total: 0.000034 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=803, m=3736
-*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 7 (microseconds)
+*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 8 (microseconds)
 kples size: 12
 *** After core shrink: n = 13, m = 78 (undirected)
 *** After core-truss co-pruning: n = 13, m = 78, density = 1.0000
 prune_cnt: 13, max_n: 13, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 13, max_n: 13, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 13 t_Total: 0.000583 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 13 t_Total: 0.000573 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=856, m=4430
-*** Heuristic kplex size: 11, time: 18 (microseconds)
+*** Heuristic kplex size: 11, time: 16 (microseconds)
 *** Degeneracy k-plex size: 12, max_core: 11, UB: 14, Time: 16 (microseconds)
 Find a k-plex of size: 12
 *** After core shrink: n = 33, m = 166 (undirected)
-*** EGo-Degen kPlex size: 12, Time: 5 (microseconds)
+*** EGo-Degen kPlex size: 12, Time: 2 (microseconds)
 *** After core_truss_copruning: n = 33, m = 166 (undirected)
 prune_cnt: 6, max_n: 12, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 12 t_Total: 0.000071 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 12 t_Total: 0.000066 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=856, m=4430
 *** Degeneracy k-plex size: 12, max_core: 11, UB: 14, Time: 12 (microseconds)
@@ -486,72 +941,72 @@ kples size: 11
 *** After core shrink: n = 33, m = 166 (undirected)
 *** After core-truss co-pruning: n = 33, m = 166, density = 0.3144
 prune_cnt: 33, max_n: 12, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 12 t_Total: 0.000642 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 12, max_n: 12, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 12 t_Total: 0.000625 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=910, m=4844
-*** Heuristic kplex size: 12, time: 17 (microseconds)
-*** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 18 (microseconds)
+*** Heuristic kplex size: 12, time: 19 (microseconds)
+*** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 17 (microseconds)
 Find a k-plex of size: 14
 *** After core shrink: n = 26, m = 157 (undirected)
 *** EGo-Degen kPlex size: 14, Time: 1 (microseconds)
 *** After core_truss_copruning: n = 26, m = 157 (undirected)
 prune_cnt: 4, max_n: 14, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 14 t_Total: 0.000069 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 14 t_Total: 0.000070 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=910, m=4844
-*** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 14 (microseconds)
+*** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 13 (microseconds)
 kples size: 13
 *** After core shrink: n = 26, m = 157 (undirected)
 *** After core-truss co-pruning: n = 26, m = 157, density = 0.4831
 prune_cnt: 26, max_n: 14, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 14 t_Total: 0.000673 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 14, max_n: 14, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 14 t_Total: 0.000693 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=917, m=5072
-*** Heuristic kplex size: 11, time: 38 (microseconds)
-*** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 20 (microseconds)
+*** Heuristic kplex size: 11, time: 33 (microseconds)
+*** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 19 (microseconds)
 Find a k-plex of size: 14
 *** After core shrink: n = 26, m = 157 (undirected)
 *** EGo-Degen kPlex size: 14, Time: 1 (microseconds)
 *** After core_truss_copruning: n = 26, m = 157 (undirected)
 prune_cnt: 4, max_n: 14, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 14 t_Total: 0.000097 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 14 t_Total: 0.000092 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=917, m=5072
-*** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 15 (microseconds)
+*** Degeneracy k-plex size: 14, max_core: 13, UB: 15, Time: 13 (microseconds)
 kples size: 13
 *** After core shrink: n = 26, m = 157 (undirected)
 *** After core-truss co-pruning: n = 26, m = 157, density = 0.4831
 prune_cnt: 26, max_n: 14, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 14 t_Total: 0.000726 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 14, max_n: 14, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 14 t_Total: 0.000689 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=1214, m=6594
-*** Heuristic kplex size: 10, time: 16 (microseconds)
-*** Degeneracy k-plex size: 14, max_core: 13, UB: 14, Time: 22 (microseconds)
+*** Heuristic kplex size: 10, time: 18 (microseconds)
+*** Degeneracy k-plex size: 14, max_core: 13, UB: 14, Time: 25 (microseconds)
 Find a k-plex of size: 14
->>edge_list.csv 	MaxKPlex_Size: 14 t_Total: 0.000044 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 14 t_Total: 0.000047 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=1214, m=6594
-*** Degeneracy k-plex size: 14, max_core: 13, UB: 14, Time: 19 (microseconds)
+*** Degeneracy k-plex size: 14, max_core: 13, UB: 14, Time: 16 (microseconds)
 kples size: 13
 *** After core shrink: n = 14, m = 91 (undirected)
 *** After core-truss co-pruning: n = 14, m = 91, density = 1.0000
 prune_cnt: 14, max_n: 14, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 14, max_n: 14, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 14 t_Total: 0.000937 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 14 t_Total: 0.000961 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
@@ -559,49 +1014,49 @@ search_cnt: 14, max_n: 14, min_density: 1.0000, avg_density: 1.0000
 n=1351, m=9396
 *** Heuristic kplex size: 27, time: 28 (microseconds)
 *** Degeneracy k-plex size: 27, max_core: 26, UB: 27, Time: 25 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 27 t_Total: 0.000058 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 27 t_Total: 0.000056 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=1351, m=9396
-*** Degeneracy k-plex size: 27, max_core: 26, UB: 27, Time: 16 (microseconds)
+*** Degeneracy k-plex size: 27, max_core: 26, UB: 27, Time: 18 (microseconds)
 kples size: 26
 *** After core shrink: n = 27, m = 351 (undirected)
 *** After core-truss co-pruning: n = 27, m = 351, density = 1.0000
 prune_cnt: 27, max_n: 27, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 27, max_n: 27, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 27 t_Total: 0.001421 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 27 t_Total: 0.001414 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=1691, m=11310
 *** Heuristic kplex size: 17, time: 28 (microseconds)
-*** Degeneracy k-plex size: 17, max_core: 16, UB: 17, Time: 31 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 17 t_Total: 0.000063 t_Bounding: 0.000000
+*** Degeneracy k-plex size: 17, max_core: 16, UB: 17, Time: 35 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 17 t_Total: 0.000067 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=1691, m=11310
-*** Degeneracy k-plex size: 17, max_core: 16, UB: 17, Time: 21 (microseconds)
+*** Degeneracy k-plex size: 17, max_core: 16, UB: 17, Time: 24 (microseconds)
 kples size: 16
 *** After core shrink: n = 17, m = 136 (undirected)
 *** After core-truss co-pruning: n = 17, m = 136, density = 1.0000
 prune_cnt: 17, max_n: 17, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 17, max_n: 17, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 17 t_Total: 0.001682 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 17 t_Total: 0.001597 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=2025, m=14328
-*** Heuristic kplex size: 22, time: 36 (microseconds)
-*** Degeneracy k-plex size: 22, max_core: 21, UB: 22, Time: 40 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 22 t_Total: 0.000081 t_Bounding: 0.000000
+*** Heuristic kplex size: 22, time: 43 (microseconds)
+*** Degeneracy k-plex size: 22, max_core: 21, UB: 22, Time: 43 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 22 t_Total: 0.000091 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=2025, m=14328
-*** Degeneracy k-plex size: 22, max_core: 21, UB: 22, Time: 31 (microseconds)
+*** Degeneracy k-plex size: 22, max_core: 21, UB: 22, Time: 30 (microseconds)
 kples size: 21
 *** After core shrink: n = 22, m = 231 (undirected)
 *** After core-truss co-pruning: n = 22, m = 231, density = 1.0000
 prune_cnt: 22, max_n: 22, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 22, max_n: 22, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 22 t_Total: 0.002144 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 22 t_Total: 0.002180 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 

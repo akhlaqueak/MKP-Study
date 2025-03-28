@@ -722,6 +722,8 @@ void Graph::search_dense()
 				if (ids_n > max_n_search)
 					max_n_search = ids_n;
 				ui presize = kplex.size();
+				kplex.clear();
+				cout<<ids_n<<" ";
 				// cout<<"searching: "<<u<<" -> ids_n "<<ids_n<<" density: "<<density<<endl;
 				kplex_solver->load_graph(ids_n, vp);
 				kplex_solver->kPlex(K, UB, kplex, true);

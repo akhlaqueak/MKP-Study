@@ -1,0 +1,782 @@
+{
+"result":{
+"query":":facetid:toc:\"db/conf/sigmod/sigmod2009.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"73.61"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"125",
+"@dc":"125",
+"@oc":"125",
+"@id":"47694499",
+"text":":facetid:toc:db/conf/sigmod/sigmod2009.bht"
+}
+},
+"hits":{
+"@total":"125",
+"@computed":"125",
+"@sent":"125",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"5805734",
+"info":{"authors":{"author":[{"@pid":"87/4845","text":"Parag Agrawal"},{"@pid":"s/AdamSilberstein","text":"Adam Silberstein"},{"@pid":"12/875","text":"Brian F. Cooper"},{"@pid":"46/2539","text":"Utkarsh Srivastava"},{"@pid":"r/RaghuRamakrishnan","text":"Raghu Ramakrishnan 0001"}]},"title":"Asynchronous view maintenance for VLSD databases.","venue":"SIGMOD Conference","pages":"179-192","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AgrawalSCSR09","doi":"10.1145/1559845.1559866","ee":"https://doi.org/10.1145/1559845.1559866","url":"https://dblp.org/rec/conf/sigmod/AgrawalSCSR09"},
+"url":"URL#5805734"
+},
+{
+"@score":"1",
+"@id":"5805736",
+"info":{"authors":{"author":[{"@pid":"80/7115","text":"Mona Ahuja"},{"@pid":"95/1629","text":"Cheng Che Chen"},{"@pid":"38/7115","text":"Ravi Gottapu"},{"@pid":"54/7114","text":"Jörg Hallmann"},{"@pid":"30/1809","text":"Waqar Hasan"},{"@pid":"70/2004","text":"Richard Johnson"},{"@pid":"91/7114","text":"Maciek Kozyrczak"},{"@pid":"36/7117","text":"Ramesh Pabbati"},{"@pid":"29/7116","text":"Neeta Pandit"},{"@pid":"05/7115","text":"Sreenivasulu Pokuri"},{"@pid":"97/7116","text":"Krishna Uppala"}]},"title":"Peta-scale data warehousing at Yahoo!","venue":"SIGMOD Conference","pages":"855-862","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AhujaCGHHJKPPPU09","doi":"10.1145/1559845.1559935","ee":"https://doi.org/10.1145/1559845.1559935","url":"https://dblp.org/rec/conf/sigmod/AhujaCGHHJKPPPU09"},
+"url":"URL#5805736"
+},
+{
+"@score":"1",
+"@id":"5805737",
+"info":{"authors":{"author":[{"@pid":"a/SihemAmerYahia","text":"Sihem Amer-Yahia"},{"@pid":"51/494","text":"Jian Huang"},{"@pid":"58/3771","text":"Cong Yu 0001"}]},"title":"Building community-centric information exploration applications on social content sites.","venue":"SIGMOD Conference","pages":"947-952","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Amer-YahiaHY09","doi":"10.1145/1559845.1559953","ee":"https://doi.org/10.1145/1559845.1559953","url":"https://dblp.org/rec/conf/sigmod/Amer-YahiaHY09"},
+"url":"URL#5805737"
+},
+{
+"@score":"1",
+"@id":"5805738",
+"info":{"authors":{"author":[{"@pid":"53/6117","text":"Mihnea Andrei"},{"@pid":"51/4542","text":"Xun Cheng"},{"@pid":"90/7115","text":"Sudipto Chowdhuri"},{"@pid":"24/7117","text":"Curtis Johnson"},{"@pid":"12/7115","text":"Edwin Seputis"}]},"title":"Ordering, distinctness, aggregation, partitioning and DQP optimization in sybase ASE 15.","venue":"SIGMOD Conference","pages":"917-924","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AndreiCCJS09","doi":"10.1145/1559845.1559947","ee":"https://doi.org/10.1145/1559845.1559947","url":"https://dblp.org/rec/conf/sigmod/AndreiCCJS09"},
+"url":"URL#5805738"
+},
+{
+"@score":"1",
+"@id":"5805739",
+"info":{"authors":{"author":[{"@pid":"15/5991","text":"Albert Angel"},{"@pid":"k/NickKoudas","text":"Nick Koudas"},{"@pid":"80/2540","text":"Nikos Sarkas"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"What&apos;s on the grapevine?","venue":"SIGMOD Conference","pages":"1047-1050","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AngelKSS09","doi":"10.1145/1559845.1559977","ee":"https://doi.org/10.1145/1559845.1559977","url":"https://dblp.org/rec/conf/sigmod/AngelKSS09"},
+"url":"URL#5805739"
+},
+{
+"@score":"1",
+"@id":"5805740",
+"info":{"authors":{"author":[{"@pid":"a/ArvindArasu","text":"Arvind Arasu"},{"@pid":"09/2901","text":"Raghav Kaushik"}]},"title":"A grammar-based entity representation framework for data cleaning.","venue":"SIGMOD Conference","pages":"233-244","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ArasuK09","doi":"10.1145/1559845.1559871","ee":"https://doi.org/10.1145/1559845.1559871","url":"https://dblp.org/rec/conf/sigmod/ArasuK09"},
+"url":"URL#5805740"
+},
+{
+"@score":"1",
+"@id":"5805741",
+"info":{"authors":{"author":[{"@pid":"67/6041","text":"Stefan Aulbach"},{"@pid":"96/2901","text":"Dean Jacobs"},{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"},{"@pid":"60/7117","text":"Michael Seibold"}]},"title":"A comparison of flexible schemas for software as a service.","venue":"SIGMOD Conference","pages":"881-888","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AulbachJKS09","doi":"10.1145/1559845.1559941","ee":"https://doi.org/10.1145/1559845.1559941","url":"https://dblp.org/rec/conf/sigmod/AulbachJKS09"},
+"url":"URL#5805741"
+},
+{
+"@score":"1",
+"@id":"5805743",
+"info":{"authors":{"author":[{"@pid":"b/ShivnathBabu","text":"Shivnath Babu"},{"@pid":"g/SudiptoGuha","text":"Sudipto Guha"},{"@pid":"m/KameshMunagala","text":"Kamesh Munagala"}]},"title":"Large-scale uncertainty management systems: learning and exploiting your data.","venue":"SIGMOD Conference","pages":"995-998","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BabuGM09","doi":"10.1145/1559845.1559964","ee":"https://doi.org/10.1145/1559845.1559964","url":"https://dblp.org/rec/conf/sigmod/BabuGM09"},
+"url":"URL#5805743"
+},
+{
+"@score":"1",
+"@id":"5805744",
+"info":{"authors":{"author":[{"@pid":"98/162","text":"Norbert Beckmann"},{"@pid":"s/BernhardSeeger","text":"Bernhard Seeger"}]},"title":"A revised r*-tree in comparison with related index structures.","venue":"SIGMOD Conference","pages":"799-812","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BeckmannS09","doi":"10.1145/1559845.1559929","ee":"https://doi.org/10.1145/1559845.1559929","url":"https://dblp.org/rec/conf/sigmod/BeckmannS09"},
+"url":"URL#5805744"
+},
+{
+"@score":"1",
+"@id":"5805745",
+"info":{"authors":{"author":[{"@pid":"40/3715","text":"Benjamin Bercovitz"},{"@pid":"53/3432","text":"Filip Kaliszan"},{"@pid":"k/GeorgiaKoutrika","text":"Georgia Koutrika"},{"@pid":"20/3467","text":"Henry Liou"},{"@pid":"87/2409","text":"Zahra Mohammadi Zadeh"},{"@pid":"g/HGarciaMolina","text":"Hector Garcia-Molina"}]},"title":"CourseRank: a social system for course planning.","venue":"SIGMOD Conference","pages":"1107-1110","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BercovitzKKLZG09","doi":"10.1145/1559845.1559994","ee":"https://doi.org/10.1145/1559845.1559994","url":"https://dblp.org/rec/conf/sigmod/BercovitzKKLZG09"},
+"url":"URL#5805745"
+},
+{
+"@score":"1",
+"@id":"5805746",
+"info":{"authors":{"author":[{"@pid":"12/1974","text":"Geert Jan Bex"},{"@pid":"63/5842","text":"Wouter Gelade"},{"@pid":"95/3517","text":"Wim Martens"},{"@pid":"n/FrankNeven","text":"Frank Neven"}]},"title":"Simplifying XML schema: effortless handling of nondeterministic regular expressions.","venue":"SIGMOD Conference","pages":"731-744","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BexGMN09","doi":"10.1145/1559845.1559922","ee":"https://doi.org/10.1145/1559845.1559922","url":"https://dblp.org/rec/conf/sigmod/BexGMN09"},
+"url":"URL#5805746"
+},
+{
+"@score":"1",
+"@id":"5805747",
+"info":{"authors":{"author":[{"@pid":"45/1559","text":"Carsten Binnig"},{"@pid":"48/6743","text":"Stefan Hildenbrand"},{"@pid":"36/7116","text":"Franz Färber"}]},"title":"Dictionary-based order-preserving string compression for main memory column stores.","venue":"SIGMOD Conference","pages":"283-296","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BinnigHF09","doi":"10.1145/1559845.1559877","ee":"https://doi.org/10.1145/1559845.1559877","url":"https://dblp.org/rec/conf/sigmod/BinnigHF09"},
+"url":"URL#5805747"
+},
+{
+"@score":"1",
+"@id":"5805749",
+"info":{"authors":{"author":[{"@pid":"43/3643","text":"Vinayak R. Borkar"},{"@pid":"31/3455","text":"Michael J. Carey 0001"},{"@pid":"82/2052","text":"Daniel Engovatov"},{"@pid":"88/4390","text":"Dmitry Lychagin"},{"@pid":"09/5049","text":"Panagiotis Reveliotis"},{"@pid":"45/1145","text":"Joshua Spiegel"},{"@pid":"72/587","text":"Sachin Thatte"},{"@pid":"28/6679","text":"Till Westmann"}]},"title":"Access control in the aqualogic data services platform.","venue":"SIGMOD Conference","pages":"939-946","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BorkarCELRSTW09","doi":"10.1145/1559845.1559951","ee":"https://doi.org/10.1145/1559845.1559951","url":"https://dblp.org/rec/conf/sigmod/BorkarCELRSTW09"},
+"url":"URL#5805749"
+},
+{
+"@score":"1",
+"@id":"5805750",
+"info":{"authors":{"author":[{"@pid":"b/AlexanderBrodsky","text":"Alexander Brodsky 0001"},{"@pid":"83/7114","text":"Mayur M. Bhot"},{"@pid":"83/7116","text":"Manasa Chandrashekar"},{"@pid":"49/7117","text":"Nathan E. Egge"},{"@pid":"w/XiaoyangSeanWang","text":"Xiaoyang Sean Wang"}]},"title":"A decisions query language (DQL): high-level abstraction for mathematical programming over databases.","venue":"SIGMOD Conference","pages":"1059-1062","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BrodskyBCEW09","doi":"10.1145/1559845.1559981","ee":"https://doi.org/10.1145/1559845.1559981","url":"https://dblp.org/rec/conf/sigmod/BrodskyBCEW09"},
+"url":"URL#5805750"
+},
+{
+"@score":"1",
+"@id":"5805751",
+"info":{"authors":{"author":[{"@pid":"b/NicolasBruno","text":"Nicolas Bruno"},{"@pid":"c/SurajitChaudhuri","text":"Surajit Chaudhuri"},{"@pid":"02/4973","text":"Ravishankar Ramamurthy"}]},"title":"Interactive plan hints for query optimization.","venue":"SIGMOD Conference","pages":"1043-1046","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BrunoCR09","doi":"10.1145/1559845.1559976","ee":"https://doi.org/10.1145/1559845.1559976","url":"https://dblp.org/rec/conf/sigmod/BrunoCR09"},
+"url":"URL#5805751"
+},
+{
+"@score":"1",
+"@id":"5805753",
+"info":{"authors":{"author":[{"@pid":"83/1413","text":"Xiaoyong Chai"},{"@pid":"40/846","text":"Ba-Quy Vuong"},{"@pid":"d/AnHaiDoan","text":"AnHai Doan"},{"@pid":"n/JeffreyFNaughton","text":"Jeffrey F. Naughton"}]},"title":"Efficiently incorporating user feedback into information extraction and integration programs.","venue":"SIGMOD Conference","pages":"87-100","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChaiVDN09","doi":"10.1145/1559845.1559857","ee":"https://doi.org/10.1145/1559845.1559857","url":"https://dblp.org/rec/conf/sigmod/ChaiVDN09"},
+"url":"URL#5805753"
+},
+{
+"@score":"1",
+"@id":"5805754",
+"info":{"authors":{"author":[{"@pid":"45/2096-1","text":"Bryan Chan 0001"},{"@pid":"71/2250","text":"Justin Talbot"},{"@pid":"46/6221","text":"Leslie Wu"},{"@pid":"84/7116","text":"Nathan Sakunkoo"},{"@pid":"64/5637","text":"Mike Cammarano"},{"@pid":"h/PatHanrahan","text":"Pat Hanrahan"}]},"title":"Vispedia: on-demand data integration for interactive visualization and exploration.","venue":"SIGMOD Conference","pages":"1139-1142","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChanTWSCH09","doi":"10.1145/1559845.1560003","ee":"https://doi.org/10.1145/1559845.1560003","url":"https://dblp.org/rec/conf/sigmod/ChanTWSCH09"},
+"url":"URL#5805754"
+},
+{
+"@score":"1",
+"@id":"5805755",
+"info":{"authors":{"author":[{"@pid":"54/4551","text":"Adriane Chapman"},{"@pid":"j/HVJagadish","text":"H. V. Jagadish"}]},"title":"Why not?","venue":"SIGMOD Conference","pages":"523-534","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChapmanJ09","doi":"10.1145/1559845.1559901","ee":"https://doi.org/10.1145/1559845.1559901","url":"https://dblp.org/rec/conf/sigmod/ChapmanJ09"},
+"url":"URL#5805755"
+},
+{
+"@score":"1",
+"@id":"5805756",
+"info":{"authors":{"author":{"@pid":"c/SurajitChaudhuri","text":"Surajit Chaudhuri"}},"title":"Query optimizers: time to rethink the contract?","venue":"SIGMOD Conference","pages":"961-968","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Chaudhuri09","doi":"10.1145/1559845.1559955","ee":"https://doi.org/10.1145/1559845.1559955","url":"https://dblp.org/rec/conf/sigmod/Chaudhuri09"},
+"url":"URL#5805756"
+},
+{
+"@score":"1",
+"@id":"5805758",
+"info":{"authors":{"author":[{"@pid":"c/SurajitChaudhuri","text":"Surajit Chaudhuri"},{"@pid":"09/2901","text":"Raghav Kaushik"}]},"title":"Extending autocompletion to tolerate errors.","venue":"SIGMOD Conference","pages":"707-718","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChaudhuriK09","doi":"10.1145/1559845.1559919","ee":"https://doi.org/10.1145/1559845.1559919","url":"https://dblp.org/rec/conf/sigmod/ChaudhuriK09"},
+"url":"URL#5805758"
+},
+{
+"@score":"1",
+"@id":"5805759",
+"info":{"authors":{"author":[{"@pid":"c/SurajitChaudhuri","text":"Surajit Chaudhuri"},{"@pid":"n/VivekRNarasayya","text":"Vivek R. Narasayya"},{"@pid":"33/882","text":"Manoj Syamala"}]},"title":"Bridging the application and DBMS divide using static analysis and dynamic profiling.","venue":"SIGMOD Conference","pages":"1039-1042","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChaudhuriNS09","doi":"10.1145/1559845.1559975","ee":"https://doi.org/10.1145/1559845.1559975","url":"https://dblp.org/rec/conf/sigmod/ChaudhuriNS09"},
+"url":"URL#5805759"
+},
+{
+"@score":"1",
+"@id":"5805760",
+"info":{"authors":{"author":{"@pid":"c/ShiminChen","text":"Shimin Chen"}},"title":"FlashLogging: exploiting flash devices for synchronous logging performance.","venue":"SIGMOD Conference","pages":"73-86","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Chen09","doi":"10.1145/1559845.1559855","ee":"https://doi.org/10.1145/1559845.1559855","url":"https://dblp.org/rec/conf/sigmod/Chen09"},
+"url":"URL#5805760"
+},
+{
+"@score":"1",
+"@id":"5805761",
+"info":{"authors":{"author":[{"@pid":"42/7117","text":"Yijou Chen"},{"@pid":"44/1222","text":"Richard L. Cole"},{"@pid":"11/2209","text":"William J. McKenna"},{"@pid":"03/7116","text":"Sergei Perfilov"},{"@pid":"22/3606","text":"Aman Sinha"},{"@pid":"64/7118","text":"Eugene Szedenits Jr."}]},"title":"Partial join order optimization in the paraccel analytic database.","venue":"SIGMOD Conference","pages":"905-908","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenCMPSS09","doi":"10.1145/1559845.1559945","ee":"https://doi.org/10.1145/1559845.1559945","url":"https://dblp.org/rec/conf/sigmod/ChenCMPSS09"},
+"url":"URL#5805761"
+},
+{
+"@score":"1",
+"@id":"5805762",
+"info":{"authors":{"author":[{"@pid":"c/FeiChen2","text":"Fei Chen 0002"},{"@pid":"g/ByronJGao","text":"Byron J. Gao"},{"@pid":"d/AnHaiDoan","text":"AnHai Doan"},{"@pid":"y/JunYang1","text":"Jun Yang 0001"},{"@pid":"r/RaghuRamakrishnan","text":"Raghu Ramakrishnan 0001"}]},"title":"Optimizing complex extraction programs over evolving text data.","venue":"SIGMOD Conference","pages":"321-334","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenGDYR09","doi":"10.1145/1559845.1559881","ee":"https://doi.org/10.1145/1559845.1559881","url":"https://dblp.org/rec/conf/sigmod/ChenGDYR09"},
+"url":"URL#5805762"
+},
+{
+"@score":"1",
+"@id":"5805763",
+"info":{"authors":{"author":[{"@pid":"37/3573","text":"Jidong Chen"},{"@pid":"83/3734","text":"Hang Guo"},{"@pid":"29/85","text":"Wentao Wu 0001"},{"@pid":"46/7115","text":"Chunxin Xie"}]},"title":"Search your memory ! - an associative memory based desktop search system.","venue":"SIGMOD Conference","pages":"1099-1102","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenGWX09","doi":"10.1145/1559845.1559992","ee":"https://doi.org/10.1145/1559845.1559992","url":"https://dblp.org/rec/conf/sigmod/ChenGWX09"},
+"url":"URL#5805763"
+},
+{
+"@score":"1",
+"@id":"5805764",
+"info":{"authors":{"author":[{"@pid":"50/5433","text":"Zhaoqi Chen"},{"@pid":"k/DVKalashnikov","text":"Dmitri V. Kalashnikov"},{"@pid":"m/SharadMehrotra","text":"Sharad Mehrotra"}]},"title":"Exploiting context analysis for combining multiple entity resolution systems.","venue":"SIGMOD Conference","pages":"207-218","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenKM09","doi":"10.1145/1559845.1559869","ee":"https://doi.org/10.1145/1559845.1559869","url":"https://dblp.org/rec/conf/sigmod/ChenKM09"},
+"url":"URL#5805764"
+},
+{
+"@score":"1",
+"@id":"5805765",
+"info":{"authors":{"author":[{"@pid":"76/1121","text":"Kuang Chen"},{"@pid":"76/5642","text":"Jayant Madhavan"},{"@pid":"h/AlonYHalevy","text":"Alon Y. Halevy"}]},"title":"Exploring schema repositories with schemr.","venue":"SIGMOD Conference","pages":"1095-1098","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenMH09","doi":"10.1145/1559845.1559991","ee":"https://doi.org/10.1145/1559845.1559991","url":"https://dblp.org/rec/conf/sigmod/ChenMH09"},
+"url":"URL#5805765"
+},
+{
+"@score":"1",
+"@id":"5805766",
+"info":{"authors":{"author":[{"@pid":"54/6561-2","text":"Zhibo Chen 0002"},{"@pid":"o/CarlosOrdonez","text":"Carlos Ordonez 0001"},{"@pid":"60/1613","text":"Carlos Garcia-Alvarado"}]},"title":"Fast and dynamic OLAP exploration using UDFs.","venue":"SIGMOD Conference","pages":"1087-1090","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenOG09","doi":"10.1145/1559845.1559989","ee":"https://doi.org/10.1145/1559845.1559989","url":"https://dblp.org/rec/conf/sigmod/ChenOG09"},
+"url":"URL#5805766"
+},
+{
+"@score":"1",
+"@id":"5805767",
+"info":{"authors":{"author":[{"@pid":"38/1395","text":"Zaiben Chen"},{"@pid":"s/HTShen","text":"Heng Tao Shen"},{"@pid":"z/XiaofangZhou","text":"Xiaofang Zhou 0001"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"}]},"title":"Monitoring path nearest neighbor in road networks.","venue":"SIGMOD Conference","pages":"591-602","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenSZY09","doi":"10.1145/1559845.1559907","ee":"https://doi.org/10.1145/1559845.1559907","url":"https://dblp.org/rec/conf/sigmod/ChenSZY09"},
+"url":"URL#5805767"
+},
+{
+"@score":"1",
+"@id":"5805768",
+"info":{"authors":{"author":[{"@pid":"88/6466-1","text":"Yi Chen 0001"},{"@pid":"w/WeiWang11","text":"Wei Wang 0011"},{"@pid":"85/5485-1","text":"Ziyang Liu 0001"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"}]},"title":"Keyword search on structured and semi-structured data.","venue":"SIGMOD Conference","pages":"1005-1010","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenWLL09","doi":"10.1145/1559845.1559966","ee":"https://doi.org/10.1145/1559845.1559966","url":"https://dblp.org/rec/conf/sigmod/ChenWLL09"},
+"url":"URL#5805768"
+},
+{
+"@score":"1",
+"@id":"5805769",
+"info":{"authors":{"author":{"@pid":"13/310","text":"Ed H. Chi"}},"title":"Augmented social cognition: using social web technology to enhance the ability of groups to remember, think, and reason.","venue":"SIGMOD Conference","pages":"973-984","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Chi09","doi":"10.1145/1559845.1559959","ee":"https://doi.org/10.1145/1559845.1559959","url":"https://dblp.org/rec/conf/sigmod/Chi09"},
+"url":"URL#5805769"
+},
+{
+"@score":"1",
+"@id":"5805770",
+"info":{"authors":{"author":[{"@pid":"83/3305","text":"Eric Chu"},{"@pid":"43/5772","text":"Akanksha Baid"},{"@pid":"83/1413","text":"Xiaoyong Chai"},{"@pid":"d/AnHaiDoan","text":"AnHai Doan"},{"@pid":"n/JeffreyFNaughton","text":"Jeffrey F. Naughton"}]},"title":"Combining keyword search and forms for ad hoc querying of databases.","venue":"SIGMOD Conference","pages":"349-360","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChuBCDN09","doi":"10.1145/1559845.1559883","ee":"https://doi.org/10.1145/1559845.1559883","url":"https://dblp.org/rec/conf/sigmod/ChuBCDN09"},
+"url":"URL#5805770"
+},
+{
+"@score":"1",
+"@id":"5805771",
+"info":{"authors":{"author":[{"@pid":"31/2128","text":"Brian J. Corcoran"},{"@pid":"11/5568","text":"Nikhil Swamy"},{"@pid":"h/MichaelWHicks","text":"Michael W. Hicks"}]},"title":"Cross-tier, label-based security enforcement for web applications.","venue":"SIGMOD Conference","pages":"269-282","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/CorcoranSH09","doi":"10.1145/1559845.1559875","ee":"https://doi.org/10.1145/1559845.1559875","url":"https://dblp.org/rec/conf/sigmod/CorcoranSH09"},
+"url":"URL#5805771"
+},
+{
+"@score":"1",
+"@id":"5805772",
+"info":{"authors":{"author":[{"@pid":"c/GrahamCormode","text":"Graham Cormode"},{"@pid":"42/3296","text":"Lukasz Golab"},{"@pid":"k/FlipKorn","text":"Flip Korn"},{"@pid":"51/1169","text":"Andrew McGregor 0001"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"},{"@pid":"87/1222","text":"Xi Zhang"}]},"title":"Estimating the confidence of conditional functional dependencies.","venue":"SIGMOD Conference","pages":"469-482","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/CormodeGKMSZ09","doi":"10.1145/1559845.1559895","ee":"https://doi.org/10.1145/1559845.1559895","url":"https://dblp.org/rec/conf/sigmod/CormodeGKMSZ09"},
+"url":"URL#5805772"
+},
+{
+"@score":"1",
+"@id":"5805773",
+"info":{"authors":{"author":[{"@pid":"c/GrahamCormode","text":"Graham Cormode"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"Anonymized data: generation, models, usage.","venue":"SIGMOD Conference","pages":"1015-1018","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/CormodeS09","doi":"10.1145/1559845.1559968","ee":"https://doi.org/10.1145/1559845.1559968","url":"https://dblp.org/rec/conf/sigmod/CormodeS09"},
+"url":"URL#5805773"
+},
+{
+"@score":"1",
+"@id":"5805774",
+"info":{"authors":{"author":[{"@pid":"03/6610","text":"Nilesh N. Dalvi"},{"@pid":"b/PBohannon","text":"Philip Bohannon"},{"@pid":"13/3601","text":"Fei Sha"}]},"title":"Robust web extraction: an approach based on a probabilistic tree-edit model.","venue":"SIGMOD Conference","pages":"335-348","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DalviBS09","doi":"10.1145/1559845.1559882","ee":"https://doi.org/10.1145/1559845.1559882","url":"https://dblp.org/rec/conf/sigmod/DalviBS09"},
+"url":"URL#5805774"
+},
+{
+"@score":"1",
+"@id":"5805775",
+"info":{"authors":{"author":[{"@pid":"68/4911","text":"Arjun Dasgupta"},{"@pid":"z/NanZhang4","text":"Nan Zhang 0004"},{"@pid":"07/1181","text":"Gautam Das 0001"},{"@pid":"c/SurajitChaudhuri","text":"Surajit Chaudhuri"}]},"title":"Privacy preservation of aggregates in hidden databases: why and how?","venue":"SIGMOD Conference","pages":"153-164","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DasguptaZDC09","doi":"10.1145/1559845.1559863","ee":"https://doi.org/10.1145/1559845.1559863","url":"https://dblp.org/rec/conf/sigmod/DasguptaZDC09"},
+"url":"URL#5805775"
+},
+{
+"@score":"1",
+"@id":"5805776",
+"info":{"authors":{"author":[{"@pid":"03/5860","text":"Alan J. Demers"},{"@pid":"g/JohannesGehrke","text":"Johannes Gehrke"},{"@pid":"k/ChristophKoch","text":"Christoph Koch 0001"},{"@pid":"s/BenSowell","text":"Ben Sowell"},{"@pid":"w/WalkerMWhite","text":"Walker M. White"}]},"title":"Database research in computer games.","venue":"SIGMOD Conference","pages":"1011-1014","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DemersGKSW09","doi":"10.1145/1559845.1559967","ee":"https://doi.org/10.1145/1559845.1559967","url":"https://dblp.org/rec/conf/sigmod/DemersGKSW09"},
+"url":"URL#5805776"
+},
+{
+"@score":"1",
+"@id":"5805779",
+"info":{"authors":{"author":[{"@pid":"86/7118","text":"Nihal Dindar"},{"@pid":"54/1088","text":"Baris Güç"},{"@pid":"60/6187","text":"Patrick Lau"},{"@pid":"80/7117","text":"Asli Özal"},{"@pid":"93/7113","text":"Merve Soner"},{"@pid":"t/NesimeTatbul","text":"Nesime Tatbul"}]},"title":"DejaVu: declarative pattern matching over live and archived streams of events.","venue":"SIGMOD Conference","pages":"1023-1026","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DindarGLOST09","doi":"10.1145/1559845.1559971","ee":"https://doi.org/10.1145/1559845.1559971","url":"https://dblp.org/rec/conf/sigmod/DindarGLOST09"},
+"url":"URL#5805779"
+},
+{
+"@score":"1",
+"@id":"5805783",
+"info":{"authors":{"author":[{"@pid":"15/5649","text":"Hicham G. Elmongui"},{"@pid":"n/VivekRNarasayya","text":"Vivek R. Narasayya"},{"@pid":"02/4973","text":"Ravishankar Ramamurthy"}]},"title":"A framework for testing query transformation rules.","venue":"SIGMOD Conference","pages":"257-268","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ElmonguiNR09","doi":"10.1145/1559845.1559874","ee":"https://doi.org/10.1145/1559845.1559874","url":"https://dblp.org/rec/conf/sigmod/ElmonguiNR09"},
+"url":"URL#5805783"
+},
+{
+"@score":"1",
+"@id":"5805784",
+"info":{"authors":{"author":[{"@pid":"08/5762","text":"Jonathan Finger"},{"@pid":"p/NeoklisPolyzotis","text":"Neoklis Polyzotis"}]},"title":"Robust and efficient algorithms for rank join evaluation.","venue":"SIGMOD Conference","pages":"415-428","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/FingerP09","doi":"10.1145/1559845.1559890","ee":"https://doi.org/10.1145/1559845.1559890","url":"https://dblp.org/rec/conf/sigmod/FingerP09"},
+"url":"URL#5805784"
+},
+{
+"@score":"1",
+"@id":"5805785",
+"info":{"authors":{"author":[{"@pid":"81/8975","text":"Conny Franke"},{"@pid":"g/MichaelGertz","text":"Michael Gertz 0001"}]},"title":"ORDEN: outlier region detection and exploration in sensor networks.","venue":"SIGMOD Conference","pages":"1075-1078","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/FrankeG09","doi":"10.1145/1559845.1559985","ee":"https://doi.org/10.1145/1559845.1559985","url":"https://dblp.org/rec/conf/sigmod/FrankeG09"},
+"url":"URL#5805785"
+},
+{
+"@score":"1",
+"@id":"5805786",
+"info":{"authors":{"author":{"@pid":"83/6105","text":"Richard F. Freitas"}},"title":"Storage class memory: technology, systems and applications.","venue":"SIGMOD Conference","pages":"985-986","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Freitas09","doi":"10.1145/1559845.1559961","ee":"https://doi.org/10.1145/1559845.1559961","url":"https://dblp.org/rec/conf/sigmod/Freitas09"},
+"url":"URL#5805786"
+},
+{
+"@score":"1",
+"@id":"5805787",
+"info":{"authors":{"author":[{"@pid":"27/3760","text":"Sorabh Gandhi"},{"@pid":"85/6293","text":"Suman Nath"},{"@pid":"s/SubhashSuri","text":"Subhash Suri"},{"@pid":"03/2134-1","text":"Jie Liu 0001"}]},"title":"GAMPS: compressing multi sensor data by grouping and amplitude scaling.","venue":"SIGMOD Conference","pages":"771-784","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GandhiNSL09","doi":"10.1145/1559845.1559926","ee":"https://doi.org/10.1145/1559845.1559926","url":"https://dblp.org/rec/conf/sigmod/GandhiNSL09"},
+"url":"URL#5805787"
+},
+{
+"@score":"1",
+"@id":"5805788",
+"info":{"authors":{"author":[{"@pid":"80/2651","text":"Yunjun Gao"},{"@pid":"93/4303","text":"Baihua Zheng"}]},"title":"Continuous obstructed nearest neighbor queries in spatial databases.","venue":"SIGMOD Conference","pages":"577-590","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GaoZ09","doi":"10.1145/1559845.1559906","ee":"https://doi.org/10.1145/1559845.1559906","url":"https://dblp.org/rec/conf/sigmod/GaoZ09"},
+"url":"URL#5805788"
+},
+{
+"@score":"1",
+"@id":"5805791",
+"info":{"authors":{"author":[{"@pid":"25/2228","text":"Tingjian Ge"},{"@pid":"z/SBZdonik","text":"Stanley B. Zdonik"},{"@pid":"m/SamuelMadden","text":"Samuel Madden 0001"}]},"title":"Top-k queries on uncertain data: on score distribution and typical answers.","venue":"SIGMOD Conference","pages":"375-388","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GeZM09","doi":"10.1145/1559845.1559886","ee":"https://doi.org/10.1145/1559845.1559886","url":"https://dblp.org/rec/conf/sigmod/GeZM09"},
+"url":"URL#5805791"
+},
+{
+"@score":"1",
+"@id":"5805792",
+"info":{"authors":{"author":[{"@pid":"77/4166","text":"Haris Georgiadis"},{"@pid":"25/7118","text":"Minas Charalambides"},{"@pid":"v/VVassalos","text":"Vasilis Vassalos"}]},"title":"Cost based plan selection for xpath.","venue":"SIGMOD Conference","pages":"603-614","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GeorgiadisCV09","doi":"10.1145/1559845.1559909","ee":"https://doi.org/10.1145/1559845.1559909","url":"https://dblp.org/rec/conf/sigmod/GeorgiadisCV09"},
+"url":"URL#5805792"
+},
+{
+"@score":"1",
+"@id":"5805793",
+"info":{"authors":{"author":[{"@pid":"g/SGhandeharizadeh","text":"Shahram Ghandeharizadeh"},{"@pid":"02/7117","text":"Andrew Goodney"},{"@pid":"77/7118","text":"Chetan Sharma"},{"@pid":"16/7115","text":"Chris Bissell"},{"@pid":"70/7115","text":"Felipe Carino"},{"@pid":"02/7114","text":"Naveen Nannapaneni"},{"@pid":"15/7114","text":"Alex Wergeles"},{"@pid":"15/7115","text":"Aber Whitcomb"}]},"title":"Taming the storage dragon: the adventures of hoTMaN.","venue":"SIGMOD Conference","pages":"925-930","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GhandeharizadehGSBCNWW09","doi":"10.1145/1559845.1559949","ee":"https://doi.org/10.1145/1559845.1559949","url":"https://dblp.org/rec/conf/sigmod/GhandeharizadehGSBCNWW09"},
+"url":"URL#5805793"
+},
+{
+"@score":"1",
+"@id":"5805794",
+"info":{"authors":{"author":[{"@pid":"16/5409","text":"Ahmad Ghazal"},{"@pid":"68/2596","text":"Dawit Yimam Seid"},{"@pid":"06/3766","text":"Ramesh Bhashyam"},{"@pid":"54/6788","text":"Alain Crolotte"},{"@pid":"80/7114","text":"Manjula Koppuravuri"},{"@pid":"72/7114","text":"Vinod G"}]},"title":"Dynamic plan generation for parameterized queries.","venue":"SIGMOD Conference","pages":"909-916","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GhazalSBCKG09","doi":"10.1145/1559845.1559946","ee":"https://doi.org/10.1145/1559845.1559946","url":"https://dblp.org/rec/conf/sigmod/GhazalSBCKG09"},
+"url":"URL#5805794"
+},
+{
+"@score":"1",
+"@id":"5805795",
+"info":{"authors":{"author":[{"@pid":"g/AmolGhoting","text":"Amol Ghoting"},{"@pid":"37/1011","text":"Konstantin Makarychev"}]},"title":"Serial and parallel methods for i/o efficient suffix tree construction.","venue":"SIGMOD Conference","pages":"827-840","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GhotingM09","doi":"10.1145/1559845.1559931","ee":"https://doi.org/10.1145/1559845.1559931","url":"https://dblp.org/rec/conf/sigmod/GhotingM09"},
+"url":"URL#5805795"
+},
+{
+"@score":"1",
+"@id":"5805796",
+"info":{"authors":{"author":[{"@pid":"09/3012","text":"Boris Glavic"},{"@pid":"a/GustavoAlonso","text":"Gustavo Alonso"}]},"title":"The perm provenance management system in action.","venue":"SIGMOD Conference","pages":"1055-1058","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GlavicA09","doi":"10.1145/1559845.1559980","ee":"https://doi.org/10.1145/1559845.1559980","url":"https://dblp.org/rec/conf/sigmod/GlavicA09"},
+"url":"URL#5805796"
+},
+{
+"@score":"1",
+"@id":"5805797",
+"info":{"authors":{"author":[{"@pid":"42/3296","text":"Lukasz Golab"},{"@pid":"j/TheodoreJohnson","text":"Theodore Johnson"},{"@pid":"37/7115","text":"J. Spencer Seidel"},{"@pid":"10/6892","text":"Vladislav Shkapenyuk"}]},"title":"Stream warehousing with DataDepot.","venue":"SIGMOD Conference","pages":"847-854","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GolabJSS09","doi":"10.1145/1559845.1559934","ee":"https://doi.org/10.1145/1559845.1559934","url":"https://dblp.org/rec/conf/sigmod/GolabJSS09"},
+"url":"URL#5805797"
+},
+{
+"@score":"1",
+"@id":"5805799",
+"info":{"authors":{"author":[{"@pid":"g/TorstenGrust","text":"Torsten Grust"},{"@pid":"36/177","text":"Manuel Mayr"},{"@pid":"r/JanRittinger","text":"Jan Rittinger"},{"@pid":"93/7116","text":"Tom Schreiber"}]},"title":"FERRY: database-supported program execution.","venue":"SIGMOD Conference","pages":"1063-1066","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GrustMRS09","doi":"10.1145/1559845.1559982","ee":"https://doi.org/10.1145/1559845.1559982","url":"https://dblp.org/rec/conf/sigmod/GrustMRS09"},
+"url":"URL#5805799"
+},
+{
+"@score":"1",
+"@id":"5805800",
+"info":{"authors":{"author":[{"@pid":"g/AmarnathGupta","text":"Amarnath Gupta"},{"@pid":"99/7115","text":"Setareh Rafatirad"},{"@pid":"57/7116","text":"Mingyan Gao"},{"@pid":"j/RameshJain","text":"Ramesh C. Jain"}]},"title":"MEDIALIFE: from images to a life chronicle.","venue":"SIGMOD Conference","pages":"1119-1122","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GuptaRGJ09","doi":"10.1145/1559845.1559998","ee":"https://doi.org/10.1145/1559845.1559998","url":"https://dblp.org/rec/conf/sigmod/GuptaRGJ09"},
+"url":"URL#5805800"
+},
+{
+"@score":"1",
+"@id":"5805801",
+"info":{"authors":{"author":[{"@pid":"86/6294","text":"Marios Hadjieleftheriou"},{"@pid":"k/NickKoudas","text":"Nick Koudas"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"Incremental maintenance of length normalized indexes for approximate string matching.","venue":"SIGMOD Conference","pages":"429-440","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HadjieleftheriouKS09","doi":"10.1145/1559845.1559891","ee":"https://doi.org/10.1145/1559845.1559891","url":"https://dblp.org/rec/conf/sigmod/HadjieleftheriouKS09"},
+"url":"URL#5805801"
+},
+{
+"@score":"1",
+"@id":"5805803",
+"info":{"authors":{"author":[{"@pid":"62/2450","text":"Wook-Shin Han"},{"@pid":"55/1346","text":"Jinsoo Lee"}]},"title":"Dependency-aware reordering for parallelizing query optimization in multi-core CPUs.","venue":"SIGMOD Conference","pages":"45-58","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HanL09","doi":"10.1145/1559845.1559853","ee":"https://doi.org/10.1145/1559845.1559853","url":"https://dblp.org/rec/conf/sigmod/HanL09"},
+"url":"URL#5805803"
+},
+{
+"@score":"1",
+"@id":"5805804",
+"info":{"authors":{"author":{"@pid":"27/4508","text":"Jeffrey Heer"}},"title":"Voyagers and voyeurs: supporting social data analysis.","venue":"SIGMOD Conference","pages":"971-972","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Heer09","doi":"10.1145/1559845.1559958","ee":"https://doi.org/10.1145/1559845.1559958","url":"https://dblp.org/rec/conf/sigmod/Heer09"},
+"url":"URL#5805804"
+},
+{
+"@score":"1",
+"@id":"5805806",
+"info":{"authors":{"author":[{"@pid":"14/775","text":"Jiewen Huang"},{"@pid":"a/LyublenaAntova","text":"Lyublena Antova"},{"@pid":"k/ChristophKoch","text":"Christoph Koch 0001"},{"@pid":"o/DanOlteanu","text":"Dan Olteanu"}]},"title":"MayBMS: a probabilistic database management system.","venue":"SIGMOD Conference","pages":"1071-1074","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HuangAKO09","doi":"10.1145/1559845.1559984","ee":"https://doi.org/10.1145/1559845.1559984","url":"https://dblp.org/rec/conf/sigmod/HuangAKO09"},
+"url":"URL#5805806"
+},
+{
+"@score":"1",
+"@id":"5805807",
+"info":{"authors":{"author":[{"@pid":"i/StratosIdreos","text":"Stratos Idreos"},{"@pid":"k/MartinLKersten","text":"Martin L. Kersten"},{"@pid":"m/StefanManegold","text":"Stefan Manegold"}]},"title":"Self-organizing tuple reconstruction in column-stores.","venue":"SIGMOD Conference","pages":"297-308","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/IdreosKM09","doi":"10.1145/1559845.1559878","ee":"https://doi.org/10.1145/1559845.1559878","url":"https://dblp.org/rec/conf/sigmod/IdreosKM09"},
+"url":"URL#5805807"
+},
+{
+"@score":"1",
+"@id":"5805808",
+"info":{"authors":{"author":[{"@pid":"17/5751","text":"Michael Isard"},{"@pid":"98/809","text":"Yuan Yu"}]},"title":"Distributed data-parallel computing using a high-level programming language.","venue":"SIGMOD Conference","pages":"987-994","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/IsardY09","doi":"10.1145/1559845.1559962","ee":"https://doi.org/10.1145/1559845.1559962","url":"https://dblp.org/rec/conf/sigmod/IsardY09"},
+"url":"URL#5805808"
+},
+{
+"@score":"1",
+"@id":"5805809",
+"info":{"authors":{"author":[{"@pid":"i/MilenaIvanova","text":"Milena Ivanova"},{"@pid":"k/MartinLKersten","text":"Martin L. Kersten"},{"@pid":"82/1319","text":"Niels J. Nes"},{"@pid":"32/935","text":"Romulo Goncalves"}]},"title":"An architecture for recycling intermediates in a column-store.","venue":"SIGMOD Conference","pages":"309-320","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/IvanovaKNG09","doi":"10.1145/1559845.1559879","ee":"https://doi.org/10.1145/1559845.1559879","url":"https://dblp.org/rec/conf/sigmod/IvanovaKNG09"},
+"url":"URL#5805809"
+},
+{
+"@score":"1",
+"@id":"5805810",
+"info":{"authors":{"author":[{"@pid":"32/227","text":"Yunliang Jiang"},{"@pid":"31/7118","text":"Hui-Ting Yang"},{"@pid":"c/KCCChang","text":"Kevin Chen-Chuan Chang"},{"@pid":"27/3795","text":"Yi-Shin Chen"}]},"title":"AIDE: ad-hoc intents detection engine over query logs.","venue":"SIGMOD Conference","pages":"1091-1094","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/JiangYCC09","doi":"10.1145/1559845.1559990","ee":"https://doi.org/10.1145/1559845.1559990","url":"https://dblp.org/rec/conf/sigmod/JiangYCC09"},
+"url":"URL#5805810"
+},
+{
+"@score":"1",
+"@id":"5805811",
+"info":{"authors":{"author":[{"@pid":"72/4662","text":"Ruoming Jin"},{"@pid":"50/2192","text":"Yang Xiang"},{"@pid":"02/6343","text":"Ning Ruan"},{"@pid":"72/3722","text":"David Fuhry"}]},"title":"3-HOP: a high-compression indexing scheme for reachability query.","venue":"SIGMOD Conference","pages":"813-826","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/JinXRF09","doi":"10.1145/1559845.1559930","ee":"https://doi.org/10.1145/1559845.1559930","url":"https://dblp.org/rec/conf/sigmod/JinXRF09"},
+"url":"URL#5805811"
+},
+{
+"@score":"1",
+"@id":"5805812",
+"info":{"authors":{"author":[{"@pid":"85/7114","text":"Riham Abdel Kader"},{"@pid":"b/PeterABoncz","text":"Peter A. Boncz"},{"@pid":"m/StefanManegold","text":"Stefan Manegold"},{"@pid":"k/MauricevanKeulen","text":"Maurice van Keulen"}]},"title":"ROX: run-time optimization of XQueries.","venue":"SIGMOD Conference","pages":"615-626","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KaderBMK09","doi":"10.1145/1559845.1559910","ee":"https://doi.org/10.1145/1559845.1559910","url":"https://dblp.org/rec/conf/sigmod/KaderBMK09"},
+"url":"URL#5805812"
+},
+{
+"@score":"1",
+"@id":"5805813",
+"info":{"authors":{"author":[{"@pid":"80/1631","text":"Bhargav Kanagal"},{"@pid":"d/AmolDeshpande","text":"Amol Deshpande"}]},"title":"Indexing correlated probabilistic databases.","venue":"SIGMOD Conference","pages":"455-468","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KanagalD09","doi":"10.1145/1559845.1559894","ee":"https://doi.org/10.1145/1559845.1559894","url":"https://dblp.org/rec/conf/sigmod/KanagalD09"},
+"url":"URL#5805813"
+},
+{
+"@score":"1",
+"@id":"5805814",
+"info":{"authors":{"author":[{"@pid":"87/1560","text":"Abhijith Kashyap"},{"@pid":"42/5855","text":"Vagelis Hristidis"},{"@pid":"51/5154","text":"Michalis Petropoulos"},{"@pid":"39/5333","text":"Sotiria Tavoulari"}]},"title":"Exploring biomedical databases with BioNav.","venue":"SIGMOD Conference","pages":"1079-1082","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KashyapHPT09","doi":"10.1145/1559845.1559987","ee":"https://doi.org/10.1145/1559845.1559987","url":"https://dblp.org/rec/conf/sigmod/KashyapHPT09"},
+"url":"URL#5805814"
+},
+{
+"@score":"1",
+"@id":"5805815",
+"info":{"authors":{"author":{"@pid":"84/114","text":"Daniel Kifer"}},"title":"Attacks on privacy and deFinetti&apos;s theorem.","venue":"SIGMOD Conference","pages":"127-138","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Kifer09","doi":"10.1145/1559845.1559861","ee":"https://doi.org/10.1145/1559845.1559861","url":"https://dblp.org/rec/conf/sigmod/Kifer09"},
+"url":"URL#5805815"
+},
+{
+"@score":"1",
+"@id":"5805816",
+"info":{"authors":{"author":[{"@pid":"49/3726","text":"Jong Wook Kim"},{"@pid":"c/KSelcukCandan","text":"K. Selçuk Candan"}]},"title":"Skip-and-prune: cosine-based top-k query processing for efficient context-sensitive document retrieval.","venue":"SIGMOD Conference","pages":"115-126","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KimC09","doi":"10.1145/1559845.1559859","ee":"https://doi.org/10.1145/1559845.1559859","url":"https://dblp.org/rec/conf/sigmod/KimC09"},
+"url":"URL#5805816"
+},
+{
+"@score":"1",
+"@id":"5805817",
+"info":{"authors":{"author":[{"@pid":"74/3195","text":"Benny Kimelfeld"},{"@pid":"26/5086","text":"Yehoshua Sagiv"},{"@pid":"62/7114","text":"Gidi Weber"}]},"title":"ExQueX: exploring and querying XML documents.","venue":"SIGMOD Conference","pages":"1103-1106","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KimelfeldSW09","doi":"10.1145/1559845.1559993","ee":"https://doi.org/10.1145/1559845.1559993","url":"https://dblp.org/rec/conf/sigmod/KimelfeldSW09"},
+"url":"URL#5805817"
+},
+{
+"@score":"1",
+"@id":"5805818",
+"info":{"authors":{"author":[{"@pid":"k/GeorgiaKoutrika","text":"Georgia Koutrika"},{"@pid":"40/3715","text":"Benjamin Bercovitz"},{"@pid":"g/HGarciaMolina","text":"Hector Garcia-Molina"}]},"title":"FlexRecs: expressing and combining flexible recommendations.","venue":"SIGMOD Conference","pages":"745-758","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KoutrikaBG09","doi":"10.1145/1559845.1559923","ee":"https://doi.org/10.1145/1559845.1559923","url":"https://dblp.org/rec/conf/sigmod/KoutrikaBG09"},
+"url":"URL#5805818"
+},
+{
+"@score":"1",
+"@id":"5805819",
+"info":{"authors":{"author":{"@pid":"97/5651","text":"Ravi Krishnamurthy"}},"title":"A data warehouse appliance for the mass market.","venue":"SIGMOD Conference","pages":"879-880","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Krishnamurthy09","doi":"10.1145/1559845.1559939","ee":"https://doi.org/10.1145/1559845.1559939","url":"https://dblp.org/rec/conf/sigmod/Krishnamurthy09"},
+"url":"URL#5805819"
+},
+{
+"@score":"1",
+"@id":"5805820",
+"info":{"authors":{"author":[{"@pid":"86/660","text":"Arvind Kumar"},{"@pid":"39/7115","text":"Amey Purandare"},{"@pid":"48/4323","text":"Jay Chen"},{"@pid":"61/6957","text":"Arthur Meacham"},{"@pid":"85/5401","text":"Lakshminarayanan Subramanian"}]},"title":"ELMR: lightweight mobile health records.","venue":"SIGMOD Conference","pages":"1035-1038","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KumarPCMS09","doi":"10.1145/1559845.1559974","ee":"https://doi.org/10.1145/1559845.1559974","url":"https://dblp.org/rec/conf/sigmod/KumarPCMS09"},
+"url":"URL#5805820"
+},
+{
+"@score":"1",
+"@id":"5805821",
+"info":{"authors":{"author":[{"@pid":"l/SangWonLee","text":"Sang-Won Lee 0001"},{"@pid":"20/6358","text":"Bongki Moon"},{"@pid":"85/3158","text":"Chanik Park"}]},"title":"Advances in flash memory SSD technology for enterprise database applications.","venue":"SIGMOD Conference","pages":"863-870","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LeeMP09","doi":"10.1145/1559845.1559937","ee":"https://doi.org/10.1145/1559845.1559937","url":"https://dblp.org/rec/conf/sigmod/LeeMP09"},
+"url":"URL#5805821"
+},
+{
+"@score":"1",
+"@id":"5805823",
+"info":{"authors":{"author":[{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"20/556","text":"Shengyue Ji"},{"@pid":"l/ChenLi1","text":"Chen Li 0001"},{"@pid":"43/6576","text":"Jianhua Feng"}]},"title":"Efficient type-ahead search on relational data: a TASTIER approach.","venue":"SIGMOD Conference","pages":"695-706","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiJLF09","doi":"10.1145/1559845.1559918","ee":"https://doi.org/10.1145/1559845.1559918","url":"https://dblp.org/rec/conf/sigmod/LiJLF09"},
+"url":"URL#5805823"
+},
+{
+"@score":"1",
+"@id":"5805824",
+"info":{"authors":{"author":[{"@pid":"l/FeifeiLi","text":"Feifei Li 0001"},{"@pid":"43/1219-1","text":"Ke Yi 0001"},{"@pid":"24/7114","text":"Jeffrey Jestes"}]},"title":"Ranking distributed probabilistic data.","venue":"SIGMOD Conference","pages":"361-374","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiYJ09","doi":"10.1145/1559845.1559885","ee":"https://doi.org/10.1145/1559845.1559885","url":"https://dblp.org/rec/conf/sigmod/LiYJ09"},
+"url":"URL#5805824"
+},
+{
+"@score":"1",
+"@id":"5805825",
+"info":{"authors":{"author":[{"@pid":"35/837-2","text":"Bin Liu 0002"},{"@pid":"j/HVJagadish","text":"H. V. Jagadish"}]},"title":"DataLens: making a good first impression.","venue":"SIGMOD Conference","pages":"1115-1118","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiuJ09","doi":"10.1145/1559845.1559997","ee":"https://doi.org/10.1145/1559845.1559997","url":"https://dblp.org/rec/conf/sigmod/LiuJ09"},
+"url":"URL#5805825"
+},
+{
+"@score":"1",
+"@id":"5805826",
+"info":{"authors":{"author":[{"@pid":"89/1149","text":"Mengmeng Liu"},{"@pid":"63/4646","text":"Svilen R. Mihaylov"},{"@pid":"09/1115","text":"Zhuowei Bao"},{"@pid":"76/747","text":"Marie Jacob"},{"@pid":"i/ZacharyGIves","text":"Zachary G. Ives"},{"@pid":"75/3108","text":"Boon Thau Loo"},{"@pid":"g/SudiptoGuha","text":"Sudipto Guha"}]},"title":"SmartCIS: integrating digital and physical environments.","venue":"SIGMOD Conference","pages":"1111-1114","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiuMBJILG09","doi":"10.1145/1559845.1559996","ee":"https://doi.org/10.1145/1559845.1559996","url":"https://dblp.org/rec/conf/sigmod/LiuMBJILG09"},
+"url":"URL#5805826"
+},
+{
+"@score":"1",
+"@id":"5805828",
+"info":{"authors":{"author":[{"@pid":"53/7116","text":"Anirban Maiti"},{"@pid":"68/4911","text":"Arjun Dasgupta"},{"@pid":"z/NanZhang4","text":"Nan Zhang 0004"},{"@pid":"07/1181","text":"Gautam Das 0001"}]},"title":"HDSampler: revealing data behind web form interfaces.","venue":"SIGMOD Conference","pages":"1131-1134","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MaitiDZD09","doi":"10.1145/1559845.1560001","ee":"https://doi.org/10.1145/1559845.1560001","url":"https://dblp.org/rec/conf/sigmod/MaitiDZD09"},
+"url":"URL#5805828"
+},
+{
+"@score":"1",
+"@id":"5805829",
+"info":{"authors":{"author":{"@pid":"59/563","text":"Frank McSherry"}},"title":"Privacy integrated queries: an extensible platform for privacy-preserving data analysis.","venue":"SIGMOD Conference","pages":"19-30","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/McSherry09","doi":"10.1145/1559845.1559850","ee":"https://doi.org/10.1145/1559845.1559850","url":"https://dblp.org/rec/conf/sigmod/McSherry09"},
+"url":"URL#5805829"
+},
+{
+"@score":"1",
+"@id":"5805830",
+"info":{"authors":{"author":[{"@pid":"m/GMecca","text":"Giansalvatore Mecca"},{"@pid":"p/PaoloPapotti","text":"Paolo Papotti"},{"@pid":"69/6626","text":"Salvatore Raunich"}]},"title":"Core schema mappings.","venue":"SIGMOD Conference","pages":"655-668","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MeccaPR09","doi":"10.1145/1559845.1559914","ee":"https://doi.org/10.1145/1559845.1559914","url":"https://dblp.org/rec/conf/sigmod/MeccaPR09"},
+"url":"URL#5805830"
+},
+{
+"@score":"1",
+"@id":"5805831",
+"info":{"authors":{"author":[{"@pid":"67/797-6","text":"Yuan Mei 0006"},{"@pid":"m/SamuelMadden","text":"Samuel Madden 0001"}]},"title":"ZStream: a cost-based query processor for adaptively detecting composite events.","venue":"SIGMOD Conference","pages":"193-206","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MeiM09","doi":"10.1145/1559845.1559867","ee":"https://doi.org/10.1145/1559845.1559867","url":"https://dblp.org/rec/conf/sigmod/MeiM09"},
+"url":"URL#5805831"
+},
+{
+"@score":"1",
+"@id":"5805832",
+"info":{"authors":{"author":[{"@pid":"64/5404","text":"Eirinaios Michelakis"},{"@pid":"51/6067","text":"Rajasekar Krishnamurthy"},{"@pid":"h/PeterJHaas","text":"Peter J. Haas"},{"@pid":"81/6125","text":"Shivakumar Vaithyanathan"}]},"title":"Uncertainty management in rule-based information extraction systems.","venue":"SIGMOD Conference","pages":"101-114","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MichelakisKHV09","doi":"10.1145/1559845.1559858","ee":"https://doi.org/10.1145/1559845.1559858","url":"https://dblp.org/rec/conf/sigmod/MichelakisKHV09"},
+"url":"URL#5805832"
+},
+{
+"@score":"1",
+"@id":"5805834",
+"info":{"authors":{"author":[{"@pid":"92/5910","text":"Hyun Jin Moon"},{"@pid":"c/CarloCurino","text":"Carlo Curino"},{"@pid":"56/5022","text":"MyungWon Ham"},{"@pid":"z/CZaniolo","text":"Carlo Zaniolo"}]},"title":"PRIMA: archiving and querying historical data with evolving schemas.","venue":"SIGMOD Conference","pages":"1019-1022","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MoonCHZ09","doi":"10.1145/1559845.1559970","ee":"https://doi.org/10.1145/1559845.1559970","url":"https://dblp.org/rec/conf/sigmod/MoonCHZ09"},
+"url":"URL#5805834"
+},
+{
+"@score":"1",
+"@id":"5805835",
+"info":{"authors":{"author":[{"@pid":"m/ReneMuller","text":"René Müller 0001"},{"@pid":"t/JensTeubner","text":"Jens Teubner"}]},"title":"FPGA: what&apos;s in it for a database?","venue":"SIGMOD Conference","pages":"999-1004","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MuellerT09","doi":"10.1145/1559845.1559965","ee":"https://doi.org/10.1145/1559845.1559965","url":"https://dblp.org/rec/conf/sigmod/MuellerT09"},
+"url":"URL#5805835"
+},
+{
+"@score":"1",
+"@id":"5805836",
+"info":{"authors":{"author":[{"@pid":"85/6293","text":"Suman Nath"},{"@pid":"69/1249","text":"Haifeng Yu"},{"@pid":"97/4228","text":"Haowen Chan"}]},"title":"Secure outsourced aggregation via one-way chains.","venue":"SIGMOD Conference","pages":"31-44","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/NathYC09","doi":"10.1145/1559845.1559851","ee":"https://doi.org/10.1145/1559845.1559851","url":"https://dblp.org/rec/conf/sigmod/NathYC09"},
+"url":"URL#5805836"
+},
+{
+"@score":"1",
+"@id":"5805837",
+"info":{"authors":{"author":[{"@pid":"94/81","text":"Rimma V. Nehme"},{"@pid":"21/4024","text":"Hyo-Sang Lim"},{"@pid":"b/ElisaBertino","text":"Elisa Bertino"},{"@pid":"r/EARundensteiner","text":"Elke A. Rundensteiner"}]},"title":"StreamShield: a stream-centric approach towards security and privacy in data stream environments.","venue":"SIGMOD Conference","pages":"1027-1030","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/NehmeLBR09","doi":"10.1145/1559845.1559972","ee":"https://doi.org/10.1145/1559845.1559972","url":"https://dblp.org/rec/conf/sigmod/NehmeLBR09"},
+"url":"URL#5805837"
+},
+{
+"@score":"1",
+"@id":"5805838",
+"info":{"authors":{"author":{"@pid":"n/ThomasNeumann","text":"Thomas Neumann 0001"}},"title":"Query simplification: graceful degradation for join-order optimization.","venue":"SIGMOD Conference","pages":"403-414","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Neumann09","doi":"10.1145/1559845.1559889","ee":"https://doi.org/10.1145/1559845.1559889","url":"https://dblp.org/rec/conf/sigmod/Neumann09"},
+"url":"URL#5805838"
+},
+{
+"@score":"1",
+"@id":"5805839",
+"info":{"authors":{"author":[{"@pid":"n/ThomasNeumann","text":"Thomas Neumann 0001"},{"@pid":"w/GerhardWeikum","text":"Gerhard Weikum"}]},"title":"Scalable join processing on very large RDF graphs.","venue":"SIGMOD Conference","pages":"627-640","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/NeumannW09","doi":"10.1145/1559845.1559911","ee":"https://doi.org/10.1145/1559845.1559911","url":"https://dblp.org/rec/conf/sigmod/NeumannW09"},
+"url":"URL#5805839"
+},
+{
+"@score":"1",
+"@id":"5805840",
+"info":{"authors":{"author":[{"@pid":"76/4130","text":"Anisoara Nica"},{"@pid":"85/7113","text":"Daniel Scott Brotherston"},{"@pid":"52/7116","text":"David William Hillis"}]},"title":"Extreme visualisation of query optimizer search space.","venue":"SIGMOD Conference","pages":"1067-1070","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/NicaBH09","doi":"10.1145/1559845.1559983","ee":"https://doi.org/10.1145/1559845.1559983","url":"https://dblp.org/rec/conf/sigmod/NicaBH09"},
+"url":"URL#5805840"
+},
+{
+"@score":"1",
+"@id":"5805841",
+"info":{"authors":{"author":[{"@pid":"o/ChristopherOlston","text":"Christopher Olston"},{"@pid":"31/7114","text":"Shubham Chopra"},{"@pid":"46/2539","text":"Utkarsh Srivastava"}]},"title":"Generating example data for dataflow programs.","venue":"SIGMOD Conference","pages":"245-256","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/OlstonCS09","doi":"10.1145/1559845.1559873","ee":"https://doi.org/10.1145/1559845.1559873","url":"https://dblp.org/rec/conf/sigmod/OlstonCS09"},
+"url":"URL#5805841"
+},
+{
+"@score":"1",
+"@id":"5805842",
+"info":{"authors":{"author":[{"@pid":"o/DanOlteanu","text":"Dan Olteanu"},{"@pid":"14/775","text":"Jiewen Huang"}]},"title":"Secondary-storage confidence computation for conjunctive queries with inequalities.","venue":"SIGMOD Conference","pages":"389-402","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/OlteanuH09","doi":"10.1145/1559845.1559887","ee":"https://doi.org/10.1145/1559845.1559887","url":"https://dblp.org/rec/conf/sigmod/OlteanuH09"},
+"url":"URL#5805842"
+},
+{
+"@score":"1",
+"@id":"5805843",
+"info":{"authors":{"author":[{"@pid":"05/5881","text":"Stelios Paparizos"},{"@pid":"92/2820","text":"Alexandros Ntoulas"},{"@pid":"99/3392","text":"John C. Shafer"},{"@pid":"a/RAgrawal","text":"Rakesh Agrawal 0001"}]},"title":"Answering web queries using structured data sources.","venue":"SIGMOD Conference","pages":"1127-1130","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/PaparizosNSA09","doi":"10.1145/1559845.1560000","ee":"https://doi.org/10.1145/1559845.1560000","url":"https://dblp.org/rec/conf/sigmod/PaparizosNSA09"},
+"url":"URL#5805843"
+},
+{
+"@score":"1",
+"@id":"5805844",
+"info":{"authors":{"author":[{"@pid":"58/4127","text":"Andrew Pavlo"},{"@pid":"22/3083-1","text":"Erik Paulson 0001"},{"@pid":"39/998","text":"Alexander Rasin"},{"@pid":"a/DJAbadi","text":"Daniel J. Abadi"},{"@pid":"d/DJDeWitt","text":"David J. DeWitt"},{"@pid":"m/SamuelMadden","text":"Samuel Madden 0001"},{"@pid":"s/MichaelStonebraker","text":"Michael Stonebraker"}]},"title":"A comparison of approaches to large-scale data analysis.","venue":"SIGMOD Conference","pages":"165-178","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/PavloPRADMS09","doi":"10.1145/1559845.1559865","ee":"https://doi.org/10.1145/1559845.1559865","url":"https://dblp.org/rec/conf/sigmod/PavloPRADMS09"},
+"url":"URL#5805844"
+},
+{
+"@score":"1",
+"@id":"5805845",
+"info":{"authors":{"author":{"@pid":"58/3831","text":"Hasso Plattner"}},"title":"A common database approach for OLTP and OLAP using an in-memory column database.","venue":"SIGMOD Conference","pages":"1-2","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Plattner09","doi":"10.1145/1559845.1559846","ee":"https://doi.org/10.1145/1559845.1559846","url":"https://dblp.org/rec/conf/sigmod/Plattner09"},
+"url":"URL#5805845"
+},
+{
+"@score":"1",
+"@id":"5805847",
+"info":{"authors":{"author":[{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"},{"@pid":"47/179","text":"Lijun Chang"}]},"title":"Keyword search in databases: the power of RDBMS.","venue":"SIGMOD Conference","pages":"681-694","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/QinYC09","doi":"10.1145/1559845.1559917","ee":"https://doi.org/10.1145/1559845.1559917","url":"https://dblp.org/rec/conf/sigmod/QinYC09"},
+"url":"URL#5805847"
+},
+{
+"@score":"1",
+"@id":"5805848",
+"info":{"authors":{"author":[{"@pid":"05/5622","text":"Ahmed Radwan"},{"@pid":"p/LucianPopa","text":"Lucian Popa 0001"},{"@pid":"s/IoanaStanoi","text":"Ioana Roxana Stanoi"},{"@pid":"94/3210","text":"Akmal A. Younis"}]},"title":"Top-k generation of integrated schemas based on directed and weighted correspondences.","venue":"SIGMOD Conference","pages":"641-654","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/RadwanPSY09","doi":"10.1145/1559845.1559913","ee":"https://doi.org/10.1145/1559845.1559913","url":"https://dblp.org/rec/conf/sigmod/RadwanPSY09"},
+"url":"URL#5805848"
+},
+{
+"@score":"1",
+"@id":"5805849",
+"info":{"authors":{"author":[{"@pid":"s/MohamedASharaf","text":"Mohamed A. Sharaf"},{"@pid":"c/PKChrysanthis","text":"Panos K. Chrysanthis"},{"@pid":"l/ALabrinidis","text":"Alexandros Labrinidis"},{"@pid":"a/CristianaAmza","text":"Cristiana Amza"}]},"title":"Optimizing i/o-intensive transactions in highly interactive applications.","venue":"SIGMOD Conference","pages":"785-798","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SharafCLA09","doi":"10.1145/1559845.1559927","ee":"https://doi.org/10.1145/1559845.1559927","url":"https://dblp.org/rec/conf/sigmod/SharafCLA09"},
+"url":"URL#5805849"
+},
+{
+"@score":"1",
+"@id":"5805850",
+"info":{"authors":{"author":[{"@pid":"s/ASimitsis","text":"Alkis Simitsis"},{"@pid":"w/KevinWilkinson","text":"Kevin Wilkinson"},{"@pid":"04/4211","text":"Malú Castellanos"},{"@pid":"76/2198","text":"Umeshwar Dayal"}]},"title":"QoX-driven ETL design: reducing the cost of ETL consulting engagements.","venue":"SIGMOD Conference","pages":"953-960","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SimitsisWCD09","doi":"10.1145/1559845.1559954","ee":"https://doi.org/10.1145/1559845.1559954","url":"https://dblp.org/rec/conf/sigmod/SimitsisWCD09"},
+"url":"URL#5805850"
+},
+{
+"@score":"1",
+"@id":"5805851",
+"info":{"authors":{"author":[{"@pid":"64/3571","text":"David E. Simmen"},{"@pid":"95/459","text":"Frederick Reiss 0001"},{"@pid":"60/2319","text":"Yunyao Li 0001"},{"@pid":"20/7116","text":"Suresh Thalamati"}]},"title":"Enabling enterprise mashups over unstructured text feeds with InfoSphere MashupHub and SystemT.","venue":"SIGMOD Conference","pages":"1123-1126","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SimmenRLT09","doi":"10.1145/1559845.1559999","ee":"https://doi.org/10.1145/1559845.1559999","url":"https://dblp.org/rec/conf/sigmod/SimmenRLT09"},
+"url":"URL#5805851"
+},
+{
+"@score":"1",
+"@id":"5805852",
+"info":{"authors":{"author":[{"@pid":"53/3187","text":"Dominik Slezak"},{"@pid":"34/2160","text":"Victoria Eastwood"}]},"title":"Data warehouse technology by infobright.","venue":"SIGMOD Conference","pages":"841-846","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SlezakE09","doi":"10.1145/1559845.1559933","ee":"https://doi.org/10.1145/1559845.1559933","url":"https://dblp.org/rec/conf/sigmod/SlezakE09"},
+"url":"URL#5805852"
+},
+{
+"@score":"1",
+"@id":"5805853",
+"info":{"authors":{"author":[{"@pid":"88/619","text":"Peng Sun"},{"@pid":"85/5485-1","text":"Ziyang Liu 0001"},{"@pid":"d/SBDavidson","text":"Susan B. Davidson"},{"@pid":"88/6466-1","text":"Yi Chen 0001"}]},"title":"Detecting and resolving unsound workflow views for correct provenance analysis.","venue":"SIGMOD Conference","pages":"549-562","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SunLDC09","doi":"10.1145/1559845.1559903","ee":"https://doi.org/10.1145/1559845.1559903","url":"https://dblp.org/rec/conf/sigmod/SunLDC09"},
+"url":"URL#5805853"
+},
+{
+"@score":"1",
+"@id":"5805854",
+"info":{"authors":{"author":[{"@pid":"t/YufeiTao","text":"Yufei Tao 0001"},{"@pid":"43/1219-1","text":"Ke Yi 0001"},{"@pid":"57/7114","text":"Cheng Sheng 0001"},{"@pid":"97/3036","text":"Panos Kalnis"}]},"title":"Quality and efficiency in high dimensional nearest neighbor search.","venue":"SIGMOD Conference","pages":"563-576","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TaoYSK09","doi":"10.1145/1559845.1559905","ee":"https://doi.org/10.1145/1559845.1559905","url":"https://dblp.org/rec/conf/sigmod/TaoYSK09"},
+"url":"URL#5805854"
+},
+{
+"@score":"1",
+"@id":"5805855",
+"info":{"authors":{"author":[{"@pid":"62/3257","text":"Pawel Terlecki"},{"@pid":"66/366","text":"Hardik Bati"},{"@pid":"84/3247","text":"César A. Galindo-Legaria"},{"@pid":"30/6748","text":"Peter Zabback"}]},"title":"Filtered statistics.","venue":"SIGMOD Conference","pages":"897-904","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TerleckiBGZ09","doi":"10.1145/1559845.1559943","ee":"https://doi.org/10.1145/1559845.1559943","url":"https://dblp.org/rec/conf/sigmod/TerleckiBGZ09"},
+"url":"URL#5805855"
+},
+{
+"@score":"1",
+"@id":"5805857",
+"info":{"authors":{"author":[{"@pid":"99/7117","text":"Quoc Trung Tran"},{"@pid":"c/CheeYongChan","text":"Chee-Yong Chan"},{"@pid":"p/SParathasarathy","text":"Srinivasan Parthasarathy 0001"}]},"title":"Query by output.","venue":"SIGMOD Conference","pages":"535-548","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TranCP09","doi":"10.1145/1559845.1559902","ee":"https://doi.org/10.1145/1559845.1559902","url":"https://dblp.org/rec/conf/sigmod/TranCP09"},
+"url":"URL#5805857"
+},
+{
+"@score":"1",
+"@id":"5805858",
+"info":{"authors":{"author":[{"@pid":"77/228","text":"Dimitris Tsirogiannis"},{"@pid":"38/6308","text":"Stavros Harizopoulos"},{"@pid":"s/MehulAShah","text":"Mehul A. Shah"},{"@pid":"w/JanetLWiener","text":"Janet L. Wiener"},{"@pid":"g/GoetzGraefe","text":"Goetz Graefe"}]},"title":"Query processing techniques for solid state drives.","venue":"SIGMOD Conference","pages":"59-72","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TsirogiannisHSWG09","doi":"10.1145/1559845.1559854","ee":"https://doi.org/10.1145/1559845.1559854","url":"https://dblp.org/rec/conf/sigmod/TsirogiannisHSWG09"},
+"url":"URL#5805858"
+},
+{
+"@score":"1",
+"@id":"5805859",
+"info":{"authors":{"author":{"@pid":"53/5940","text":"Daniel Tunkelang"}},"title":"Design for interaction.","venue":"SIGMOD Conference","pages":"969-970","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Tunkelang09","doi":"10.1145/1559845.1559957","ee":"https://doi.org/10.1145/1559845.1559957","url":"https://dblp.org/rec/conf/sigmod/Tunkelang09"},
+"url":"URL#5805859"
+},
+{
+"@score":"1",
+"@id":"5805862",
+"info":{"authors":{"author":[{"@pid":"v/FernandaBViegas","text":"Fernanda B. Viégas"},{"@pid":"w/MartinWattenberg","text":"Martin Wattenberg"}]},"title":"Transforming data access through public visualization.","venue":"SIGMOD Conference","pages":"3-4","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ViegasW09","doi":"10.1145/1559845.1559847","ee":"https://doi.org/10.1145/1559845.1559847","url":"https://dblp.org/rec/conf/sigmod/ViegasW09"},
+"url":"URL#5805862"
+},
+{
+"@score":"1",
+"@id":"5805863",
+"info":{"authors":{"author":[{"@pid":"w/FlorianWaas","text":"Florian M. Waas"},{"@pid":"h/JosephMHellerstein","text":"Joseph M. Hellerstein"}]},"title":"Parallelizing extensible query optimizers.","venue":"SIGMOD Conference","pages":"871-878","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WaasH09","doi":"10.1145/1559845.1559938","ee":"https://doi.org/10.1145/1559845.1559938","url":"https://dblp.org/rec/conf/sigmod/WaasH09"},
+"url":"URL#5805863"
+},
+{
+"@score":"1",
+"@id":"5805865",
+"info":{"authors":{"author":[{"@pid":"63/4317","text":"Haofen Wang"},{"@pid":"16/2311","text":"Thomas Penin"},{"@pid":"92/1883","text":"Kaifeng Xu"},{"@pid":"93/163","text":"Junquan Chen"},{"@pid":"10/7114","text":"Xinruo Sun"},{"@pid":"63/1010","text":"Linyun Fu"},{"@pid":"96/4120","text":"Qiaoling Liu"},{"@pid":"43/5685-1","text":"Yong Yu 0001"},{"@pid":"t/DucThanhTran","text":"Thanh Tran 0001"},{"@pid":"h/PeterHaase1","text":"Peter Haase 0001"},{"@pid":"s/RudiStuder","text":"Rudi Studer"}]},"title":"Hermes: a travel through semantics on the data web.","venue":"SIGMOD Conference","pages":"1135-1138","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangPXCSFLYTHS09","doi":"10.1145/1559845.1560002","ee":"https://doi.org/10.1145/1559845.1560002","url":"https://dblp.org/rec/conf/sigmod/WangPXCSFLYTHS09"},
+"url":"URL#5805865"
+},
+{
+"@score":"1",
+"@id":"5805867",
+"info":{"authors":{"author":[{"@pid":"w/WeiWang11","text":"Wei Wang 0011"},{"@pid":"57/4384-1","text":"Chuan Xiao 0001"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"},{"@pid":"71/964","text":"Chengqi Zhang"}]},"title":"Efficient approximate entity extraction with edit distance constraints.","venue":"SIGMOD Conference","pages":"759-770","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangXLZ09","doi":"10.1145/1559845.1559925","ee":"https://doi.org/10.1145/1559845.1559925","url":"https://dblp.org/rec/conf/sigmod/WangXLZ09"},
+"url":"URL#5805867"
+},
+{
+"@score":"1",
+"@id":"5805868",
+"info":{"authors":{"author":[{"@pid":"39/1084-3","text":"Tengjiao Wang 0003"},{"@pid":"73/42","text":"Bishan Yang"},{"@pid":"82/4977-3","text":"Jun Gao 0003"},{"@pid":"65/661","text":"Dongqing Yang"},{"@pid":"t/ShiweiTang","text":"Shiwei Tang"},{"@pid":"60/7116","text":"Haoyu Wu"},{"@pid":"94/7115","text":"Kedong Liu"},{"@pid":"p/JianPei","text":"Jian Pei 0001"}]},"title":"MobileMiner: a real world case study of data mining in mobile communication.","venue":"SIGMOD Conference","pages":"1083-1086","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangYGYTWLP09","doi":"10.1145/1559845.1559988","ee":"https://doi.org/10.1145/1559845.1559988","url":"https://dblp.org/rec/conf/sigmod/WangYGYTWLP09"},
+"url":"URL#5805868"
+},
+{
+"@score":"1",
+"@id":"5805869",
+"info":{"authors":{"author":[{"@pid":"31/5099","text":"Mingzhu Wei"},{"@pid":"54/7001-1","text":"Mo Liu 0001"},{"@pid":"l/MingLi8","text":"Ming Li 0008"},{"@pid":"85/1923","text":"Denis Golovnya"},{"@pid":"r/EARundensteiner","text":"Elke A. Rundensteiner"},{"@pid":"32/2991","text":"Kajal T. Claypool"}]},"title":"Supporting a spectrum of out-of-order event processing technologies: from aggressive to conservative methodologies.","venue":"SIGMOD Conference","pages":"1031-1034","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WeiLLGRC09","doi":"10.1145/1559845.1559973","ee":"https://doi.org/10.1145/1559845.1559973","url":"https://dblp.org/rec/conf/sigmod/WeiLLGRC09"},
+"url":"URL#5805869"
+},
+{
+"@score":"1",
+"@id":"5805870",
+"info":{"authors":{"author":[{"@pid":"94/7116","text":"Craig D. Weissman"},{"@pid":"03/7119","text":"Steve Bobrowski"}]},"title":"The design of the force.com multitenant internet application development platform.","venue":"SIGMOD Conference","pages":"889-896","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WeissmanB09","doi":"10.1145/1559845.1559942","ee":"https://doi.org/10.1145/1559845.1559942","url":"https://dblp.org/rec/conf/sigmod/WeissmanB09"},
+"url":"URL#5805870"
+},
+{
+"@score":"1",
+"@id":"5805871",
+"info":{"authors":{"author":[{"@pid":"w/StevenEuijongWhang","text":"Steven Euijong Whang"},{"@pid":"13/6130","text":"David Menestrina"},{"@pid":"k/GeorgiaKoutrika","text":"Georgia Koutrika"},{"@pid":"t/MartinTheobald","text":"Martin Theobald"},{"@pid":"g/HGarciaMolina","text":"Hector Garcia-Molina"}]},"title":"Entity resolution with iterative blocking.","venue":"SIGMOD Conference","pages":"219-232","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WhangMKTG09","doi":"10.1145/1559845.1559870","ee":"https://doi.org/10.1145/1559845.1559870","url":"https://dblp.org/rec/conf/sigmod/WhangMKTG09"},
+"url":"URL#5805871"
+},
+{
+"@score":"1",
+"@id":"5805872",
+"info":{"authors":{"author":[{"@pid":"30/737","text":"Wai Kit Wong"},{"@pid":"c/DWLCheung","text":"David Wai-Lok Cheung"},{"@pid":"k/BenKao","text":"Ben Kao"},{"@pid":"34/6253","text":"Nikos Mamoulis"}]},"title":"Secure kNN computation on encrypted databases.","venue":"SIGMOD Conference","pages":"139-152","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WongCKM09","doi":"10.1145/1559845.1559862","ee":"https://doi.org/10.1145/1559845.1559862","url":"https://dblp.org/rec/conf/sigmod/WongCKM09"},
+"url":"URL#5805872"
+},
+{
+"@score":"1",
+"@id":"5805873",
+"info":{"authors":{"author":[{"@pid":"33/1903","text":"Xiaokui Xiao"},{"@pid":"40/3179","text":"Guozhang Wang"},{"@pid":"g/JohannesGehrke","text":"Johannes Gehrke"}]},"title":"Interactive anonymization of sensitive data.","venue":"SIGMOD Conference","pages":"1051-1054","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/XiaoWG09","doi":"10.1145/1559845.1559979","ee":"https://doi.org/10.1145/1559845.1559979","url":"https://dblp.org/rec/conf/sigmod/XiaoWG09"},
+"url":"URL#5805873"
+},
+{
+"@score":"1",
+"@id":"5805874",
+"info":{"authors":{"author":[{"@pid":"42/5065","text":"Fei Xu"},{"@pid":"b/KevinSBeyer","text":"Kevin S. Beyer"},{"@pid":"58/4208","text":"Vuk Ercegovac"},{"@pid":"h/PeterJHaas","text":"Peter J. Haas"},{"@pid":"03/6706","text":"Eugene J. Shekita"}]},"title":"E = MC3: managing uncertain enterprise data in a cluster-computing environment.","venue":"SIGMOD Conference","pages":"441-454","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/XuBEHS09","doi":"10.1145/1559845.1559893","ee":"https://doi.org/10.1145/1559845.1559893","url":"https://dblp.org/rec/conf/sigmod/XuBEHS09"},
+"url":"URL#5805874"
+},
+{
+"@score":"1",
+"@id":"5805875",
+"info":{"authors":{"author":[{"@pid":"54/3420","text":"Liang Xu"},{"@pid":"l/TokWangLing","text":"Tok Wang Ling"},{"@pid":"99/4453","text":"Huayu Wu 0001"},{"@pid":"20/3716","text":"Zhifeng Bao"}]},"title":"DDE: from dewey to a fully dynamic XML labeling scheme.","venue":"SIGMOD Conference","pages":"719-730","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/XuLWB09","doi":"10.1145/1559845.1559921","ee":"https://doi.org/10.1145/1559845.1559921","url":"https://dblp.org/rec/conf/sigmod/XuLWB09"},
+"url":"URL#5805875"
+},
+{
+"@score":"1",
+"@id":"5805876",
+"info":{"authors":{"author":[{"@pid":"28/3700","text":"Aravind Yalamanchi"},{"@pid":"03/2725","text":"Dieter Gawlick"}]},"title":"Compensation-aware data types in RDBMS.","venue":"SIGMOD Conference","pages":"931-938","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/YalamanchiG09","doi":"10.1145/1559845.1559950","ee":"https://doi.org/10.1145/1559845.1559950","url":"https://dblp.org/rec/conf/sigmod/YalamanchiG09"},
+"url":"URL#5805876"
+},
+{
+"@score":"1",
+"@id":"5805877",
+"info":{"authors":{"author":[{"@pid":"56/2998-1","text":"Yin Yang 0001"},{"@pid":"p/DimitrisPapadias","text":"Dimitris Papadias"},{"@pid":"82/75","text":"Stavros Papadopoulos 0001"},{"@pid":"97/3036","text":"Panos Kalnis"}]},"title":"Authenticated join processing in outsourced databases.","venue":"SIGMOD Conference","pages":"5-18","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/YangPPK09","doi":"10.1145/1559845.1559849","ee":"https://doi.org/10.1145/1559845.1559849","url":"https://dblp.org/rec/conf/sigmod/YangPPK09"},
+"url":"URL#5805877"
+},
+{
+"@score":"1",
+"@id":"5805880",
+"info":{"authors":{"author":[{"@pid":"93/4085","text":"Zhenjie Zhang"},{"@pid":"89/2619","text":"Reynold Cheng"},{"@pid":"p/DimitrisPapadias","text":"Dimitris Papadias"},{"@pid":"t/AnthonyKHTung","text":"Anthony K. H. Tung"}]},"title":"Minimizing the communication cost for continuous skyline maintenance.","venue":"SIGMOD Conference","pages":"495-508","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhangCPT09","doi":"10.1145/1559845.1559898","ee":"https://doi.org/10.1145/1559845.1559898","url":"https://dblp.org/rec/conf/sigmod/ZhangCPT09"},
+"url":"URL#5805880"
+},
+{
+"@score":"1",
+"@id":"5805881",
+"info":{"authors":{"author":[{"@pid":"35/7114","text":"Shiming Zhang"},{"@pid":"34/6253","text":"Nikos Mamoulis"},{"@pid":"c/DWLCheung","text":"David W. Cheung"}]},"title":"Scalable skyline computation using object-based space partitioning.","venue":"SIGMOD Conference","pages":"483-494","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhangMC09","doi":"10.1145/1559845.1559897","ee":"https://doi.org/10.1145/1559845.1559897","url":"https://dblp.org/rec/conf/sigmod/ZhangMC09"},
+"url":"URL#5805881"
+},
+{
+"@score":"1",
+"@id":"5805882",
+"info":{"authors":{"author":[{"@pid":"93/4085","text":"Zhenjie Zhang"},{"@pid":"56/2998-1","text":"Yin Yang 0001"},{"@pid":"09/6889","text":"Ruichu Cai"},{"@pid":"p/DimitrisPapadias","text":"Dimitris Papadias"},{"@pid":"t/AnthonyKHTung","text":"Anthony K. H. Tung"}]},"title":"Kernel-based skyline cardinality estimation.","venue":"SIGMOD Conference","pages":"509-522","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhangYCPT09","doi":"10.1145/1559845.1559899","ee":"https://doi.org/10.1145/1559845.1559899","url":"https://dblp.org/rec/conf/sigmod/ZhangYCPT09"},
+"url":"URL#5805882"
+},
+{
+"@score":"1",
+"@id":"5805883",
+"info":{"authors":{"author":[{"@pid":"70/5221","text":"Qian Zhong"},{"@pid":"11/6652","text":"Hanyu Li"},{"@pid":"l/JuanZiLi","text":"Juanzi Li"},{"@pid":"73/5346","text":"Guo Tong Xie"},{"@pid":"t/JieTang","text":"Jie Tang 0001"},{"@pid":"z/LizhuZhou","text":"Lizhu Zhou"},{"@pid":"91/3754","text":"Yue Pan"}]},"title":"A gauss function based approach for unbalanced ontology matching.","venue":"SIGMOD Conference","pages":"669-680","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhongLLXTZP09","doi":"10.1145/1559845.1559915","ee":"https://doi.org/10.1145/1559845.1559915","url":"https://dblp.org/rec/conf/sigmod/ZhongLLXTZP09"},
+"url":"URL#5805883"
+},
+{
+"@score":"1",
+"@id":"5823997",
+"info":{"authors":{"author":[{"@pid":"c/UgurCetintemel","text":"Ugur Çetintemel"},{"@pid":"z/SBZdonik","text":"Stanley B. Zdonik"},{"@pid":"k/DonaldKossmann","text":"Donald Kossmann"},{"@pid":"t/NesimeTatbul","text":"Nesime Tatbul"}]},"title":"Proceedings of the ACM SIGMOD International Conference on Management of Data, SIGMOD 2009, Providence, Rhode Island, USA, June 29 - July 2, 2009","venue":"SIGMOD Conference","publisher":"ACM","year":"2009","type":"Editorship","key":"conf/sigmod/2009","doi":"10.1145/1559845","ee":"https://doi.org/10.1145/1559845","url":"https://dblp.org/rec/conf/sigmod/2009"},
+"url":"URL#5823997"
+}
+]
+}
+}
+}

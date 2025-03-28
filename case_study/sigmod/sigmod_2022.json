@@ -1,0 +1,1370 @@
+{
+"result":{
+"query":":facetid:toc:\"db/conf/sigmod/sigmod2022.bht\"",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"77.04"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"223",
+"@dc":"223",
+"@oc":"223",
+"@id":"47694515",
+"text":":facetid:toc:db/conf/sigmod/sigmod2022.bht"
+}
+},
+"hits":{
+"@total":"223",
+"@computed":"223",
+"@sent":"223",
+"@first":"0",
+"hit":[{
+"@score":"1",
+"@id":"1515026",
+"info":{"authors":{"author":[{"@pid":"130/8513-1","text":"Qichen Wang 0001"},{"@pid":"43/1219-1","text":"Ke Yi 0001"}]},"title":"Conjunctive Queries with Comparisons.","venue":"SIGMOD Conference","pages":"108-121","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0001022","doi":"10.1145/3514221.3517830","ee":"https://doi.org/10.1145/3514221.3517830","url":"https://dblp.org/rec/conf/sigmod/0001022"},
+"url":"URL#1515026"
+},
+{
+"@score":"1",
+"@id":"1515027",
+"info":{"authors":{"author":[{"@pid":"29/85","text":"Wentao Wu 0001"},{"@pid":"09/404-1","text":"Chi Wang 0001"},{"@pid":"179/2728","text":"Tarique Siddiqui"},{"@pid":"154/6374","text":"Junxiong Wang"},{"@pid":"n/VivekRNarasayya","text":"Vivek R. Narasayya"},{"@pid":"c/SurajitChaudhuri","text":"Surajit Chaudhuri"},{"@pid":"b/PhilipABernstein","text":"Philip A. Bernstein"}]},"title":"Budget-aware Index Tuning with Reinforcement Learning.","venue":"SIGMOD Conference","pages":"1528-1541","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/00010SWNCB22","doi":"10.1145/3514221.3526128","ee":"https://doi.org/10.1145/3514221.3526128","url":"https://dblp.org/rec/conf/sigmod/00010SWNCB22"},
+"url":"URL#1515027"
+},
+{
+"@score":"1",
+"@id":"1515028",
+"info":{"authors":{"author":{"@pid":"44/3654","text":"Ahmed Metwally 0001"}},"title":"Scaling Equi-Joins.","venue":"SIGMOD Conference","pages":"2163-2176","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/000122","doi":"10.1145/3514221.3526042","ee":"https://doi.org/10.1145/3514221.3526042","url":"https://dblp.org/rec/conf/sigmod/000122"},
+"url":"URL#1515028"
+},
+{
+"@score":"1",
+"@id":"1515029",
+"info":{"authors":{"author":[{"@pid":"146/6632","text":"Tobias Ziegler 0001"},{"@pid":"45/1559","text":"Carsten Binnig"},{"@pid":"10/11150","text":"Viktor Leis"}]},"title":"ScaleStore: A Fast and Cost-Efficient Storage Engine using DRAM, NVMe, and RDMA.","venue":"SIGMOD Conference","pages":"685-699","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0001BL22","doi":"10.1145/3514221.3526187","ee":"https://doi.org/10.1145/3514221.3526187","url":"https://dblp.org/rec/conf/sigmod/0001BL22"},
+"url":"URL#1515029"
+},
+{
+"@score":"1",
+"@id":"1515030",
+"info":{"authors":{"author":[{"@pid":"118/5486-1","text":"Qizhen Zhang 0001"},{"@pid":"84/6214-4","text":"Xinyi Chen 0004"},{"@pid":"322/1389","text":"Sidharth Sankhe"},{"@pid":"237/8928","text":"Zhilei Zheng"},{"@pid":"40/4551","text":"Ke Zhong"},{"@pid":"132/8480","text":"Sebastian Angel"},{"@pid":"59/146-1","text":"Ang Chen 0001"},{"@pid":"22/9263-1","text":"Vincent Liu 0001"},{"@pid":"75/3108","text":"Boon Thau Loo"}]},"title":"Optimizing Data-intensive Systems in Disaggregated Data Centers with TELEPORT.","venue":"SIGMOD Conference","pages":"1345-1359","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0001CSZZACLL22","doi":"10.1145/3514221.3517856","ee":"https://doi.org/10.1145/3514221.3517856","url":"https://dblp.org/rec/conf/sigmod/0001CSZZACLL22"},
+"url":"URL#1515030"
+},
+{
+"@score":"1",
+"@id":"1515031",
+"info":{"authors":{"author":[{"@pid":"34/4292-1","text":"Dong Wei 0001"},{"@pid":"322/1573","text":"Md Mouinul Islam"},{"@pid":"s/BaruchSchieber","text":"Baruch Schieber"},{"@pid":"97/3301","text":"Senjuti Basu Roy"}]},"title":"Rank Aggregation with Proportionate Fairness.","venue":"SIGMOD Conference","pages":"262-275","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0001ISR22","doi":"10.1145/3514221.3517865","ee":"https://doi.org/10.1145/3514221.3517865","url":"https://dblp.org/rec/conf/sigmod/0001ISR22"},
+"url":"URL#1515031"
+},
+{
+"@score":"1",
+"@id":"1515032",
+"info":{"authors":{"author":[{"@pid":"216/4991-1","text":"Michael Abebe 0001"},{"@pid":"322/1419","text":"Horatiu Lazu"},{"@pid":"d/KhuzaimaDaudjee","text":"Khuzaima Daudjee"}]},"title":"Proteus: Autonomous Adaptive Storage for Mixed Workloads.","venue":"SIGMOD Conference","pages":"700-714","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0001LD22","doi":"10.1145/3514221.3517834","ee":"https://doi.org/10.1145/3514221.3517834","url":"https://dblp.org/rec/conf/sigmod/0001LD22"},
+"url":"URL#1515032"
+},
+{
+"@score":"1",
+"@id":"1515033",
+"info":{"authors":{"author":[{"@pid":"60/8180-1","text":"Wentao Li 0001"},{"@pid":"93/9883","text":"Miao Qiao"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"47/179","text":"Lijun Chang"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"l/LinXuemin","text":"Xuemin Lin 0001"}]},"title":"On Scalable Computation of Graph Eccentricities.","venue":"SIGMOD Conference","pages":"904-916","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0001Q0CZ022","doi":"10.1145/3514221.3517874","ee":"https://doi.org/10.1145/3514221.3517874","url":"https://dblp.org/rec/conf/sigmod/0001Q0CZ022"},
+"url":"URL#1515033"
+},
+{
+"@score":"1",
+"@id":"1515034",
+"info":{"authors":{"author":[{"@pid":"75/887","text":"Matthias Boehm 0001"},{"@pid":"188/6236","text":"Paroma Varma"},{"@pid":"135/0135","text":"Doris Xin"}]},"title":"DEEM&apos;22: Data Management for End-to-End Machine Learning.","venue":"SIGMOD Conference","pages":"2548-2549","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0001VX22","doi":"10.1145/3514221.3524075","ee":"https://doi.org/10.1145/3514221.3524075","url":"https://dblp.org/rec/conf/sigmod/0001VX22"},
+"url":"URL#1515034"
+},
+{
+"@score":"1",
+"@id":"1515035",
+"info":{"authors":{"author":[{"@pid":"171/4868","text":"Yikai Zhang 0001"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"}]},"title":"Relative Subboundedness of Contraction Hierarchy and Hierarchical 2-Hop Index in Dynamic Road Networks.","venue":"SIGMOD Conference","pages":"1992-2005","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0001Y22","doi":"10.1145/3514221.3517875","ee":"https://doi.org/10.1145/3514221.3517875","url":"https://dblp.org/rec/conf/sigmod/0001Y22"},
+"url":"URL#1515035"
+},
+{
+"@score":"1",
+"@id":"1515036",
+"info":{"authors":{"author":[{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"94/3019-34","text":"Chao Zhang 0034"}]},"title":"HTAP Databases: What is New and What is Next.","venue":"SIGMOD Conference","pages":"2483-2488","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0001Z22","doi":"10.1145/3514221.3522565","ee":"https://doi.org/10.1145/3514221.3522565","url":"https://dblp.org/rec/conf/sigmod/0001Z22"},
+"url":"URL#1515036"
+},
+{
+"@score":"1",
+"@id":"1515037",
+"info":{"authors":{"author":[{"@pid":"61/3498-2","text":"Andrea Rossi 0002"},{"@pid":"05/10127","text":"Donatella Firmani"},{"@pid":"m/PaoloMerialdo","text":"Paolo Merialdo"},{"@pid":"201/6374","text":"Tommaso Teofili"}]},"title":"Explaining Link Prediction Systems based on Knowledge Graph Embeddings.","venue":"SIGMOD Conference","pages":"2062-2075","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0002FMT22","doi":"10.1145/3514221.3517887","ee":"https://doi.org/10.1145/3514221.3517887","url":"https://dblp.org/rec/conf/sigmod/0002FMT22"},
+"url":"URL#1515037"
+},
+{
+"@score":"1",
+"@id":"1515038",
+"info":{"authors":{"author":[{"@pid":"93/5633-2","text":"Dezhong Yao 0002"},{"@pid":"65/6873","text":"Yuhong Gu"},{"@pid":"33/3180","text":"Gao Cong"},{"@pid":"98/4156","text":"Hai Jin 0001"},{"@pid":"162/0874","text":"Xinqiao Lv"}]},"title":"Entity Resolution with Hierarchical Graph Attention Networks.","venue":"SIGMOD Conference","pages":"429-442","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0002GC0L22","doi":"10.1145/3514221.3517872","ee":"https://doi.org/10.1145/3514221.3517872","url":"https://dblp.org/rec/conf/sigmod/0002GC0L22"},
+"url":"URL#1515038"
+},
+{
+"@score":"1",
+"@id":"1515039",
+"info":{"authors":{"author":[{"@pid":"14/1571-5","text":"George Christodoulou 0005"},{"@pid":"38/4801","text":"Panagiotis Bouros"},{"@pid":"34/6253","text":"Nikos Mamoulis"}]},"title":"HINT: A Hierarchical Index for Intervals in Main Memory.","venue":"SIGMOD Conference","pages":"1257-1270","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0005BM22","doi":"10.1145/3514221.3517873","ee":"https://doi.org/10.1145/3514221.3517873","url":"https://dblp.org/rec/conf/sigmod/0005BM22"},
+"url":"URL#1515039"
+},
+{
+"@score":"1",
+"@id":"1515040",
+"info":{"authors":{"author":[{"@pid":"28/4326-5","text":"Yu Xia 0005"},{"@pid":"126/6015","text":"Xiangyao Yu"},{"@pid":"254/6674","text":"Matthew Butrovich"},{"@pid":"58/4127","text":"Andrew Pavlo"},{"@pid":"14/3973","text":"Srinivas Devadas"}]},"title":"Litmus: Towards a Practical Database Management System with Verifiable ACID Properties and Transaction Correctness.","venue":"SIGMOD Conference","pages":"1478-1492","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0005YBPD22","doi":"10.1145/3514221.3517851","ee":"https://doi.org/10.1145/3514221.3517851","url":"https://dblp.org/rec/conf/sigmod/0005YBPD22"},
+"url":"URL#1515040"
+},
+{
+"@score":"1",
+"@id":"1515041",
+"info":{"authors":{"author":[{"@pid":"48/1294-7","text":"Feng Zhang 0007"},{"@pid":"211/5806","text":"Weitao Wan"},{"@pid":"06/8501-5","text":"Chenyang Zhang 0005"},{"@pid":"72/7413","text":"Jidong Zhai"},{"@pid":"42/3363","text":"Yunpeng Chai"},{"@pid":"48/7868","text":"Haixiang Li"},{"@pid":"47/3542-1","text":"Xiaoyong Du 0001"}]},"title":"CompressDB: Enabling Efficient Compressed Data Direct Processing for Various Databases.","venue":"SIGMOD Conference","pages":"1655-1669","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/0007WZZCL022","doi":"10.1145/3514221.3526130","ee":"https://doi.org/10.1145/3514221.3526130","url":"https://dblp.org/rec/conf/sigmod/0007WZZCL022"},
+"url":"URL#1515041"
+},
+{
+"@score":"1",
+"@id":"1515042",
+"info":{"authors":{"author":[{"@pid":"227/2847","text":"Supun Abeysinghe"},{"@pid":"305/0945","text":"Qiyang He"},{"@pid":"19/7373","text":"Tiark Rompf"}]},"title":"Efficient Incrementialization of Correlated Nested Aggregate Queries using Relative Partial Aggregate Indexes (RPAI).","venue":"SIGMOD Conference","pages":"136-149","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AbeysingheHR22","doi":"10.1145/3514221.3517889","ee":"https://doi.org/10.1145/3514221.3517889","url":"https://dblp.org/rec/conf/sigmod/AbeysingheHR22"},
+"url":"URL#1515042"
+},
+{
+"@score":"1",
+"@id":"1515043",
+"info":{"authors":{"author":[{"@pid":"57/7259","text":"Azza Abouzied"},{"@pid":"147/1186","text":"Dominik Moritz"},{"@pid":"82/231","text":"Michael J. Cafarella"}]},"title":"HILDA&apos;22: The SIGMOD 2022 Workshop on Human-in-the-Loop Data Analytics.","venue":"SIGMOD Conference","pages":"2552-2553","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AbouziedMC22","doi":"10.1145/3514221.3524077","ee":"https://doi.org/10.1145/3514221.3524077","url":"https://dblp.org/rec/conf/sigmod/AbouziedMC22"},
+"url":"URL#1515043"
+},
+{
+"@score":"1",
+"@id":"1515044",
+"info":{"authors":{"author":[{"@pid":"a/AnastassiaAilamaki","text":"Anastasia Ailamaki"},{"@pid":"91/7584","text":"Leilani Battle"},{"@pid":"g/JohannesGehrke","text":"Johannes Gehrke"},{"@pid":"k/MasaruKitsuregawa","text":"Masaru Kitsuregawa"},{"@pid":"m/DavidMaier","text":"David Maier 0001"},{"@pid":"r/ChristopherRe","text":"Christopher Ré"},{"@pid":"08/7259","text":"Meihui Zhang 0001"},{"@pid":"b/MagdalenaBalazinska","text":"Magdalena Balazinska"}]},"title":"The DB Community vis-à-vis Environmental, Health, and Societal Grand Challenges: Innovation Engine, Plumber, or Bystander?","venue":"SIGMOD Conference","pages":"2498-2500","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AilamakiBGK0R0B22","doi":"10.1145/3514221.3528414","ee":"https://doi.org/10.1145/3514221.3528414","url":"https://dblp.org/rec/conf/sigmod/AilamakiBGK0R0B22"},
+"url":"URL#1515044"
+},
+{
+"@score":"1",
+"@id":"1515045",
+"info":{"authors":{"author":[{"@pid":"69/2089","text":"Efthimia Aivaloglou"},{"@pid":"f/GeorgeHLFletcher","text":"George Fletcher 0001"},{"@pid":"299/8571","text":"Daphne Miedema"}]},"title":"DataEd&apos;22 - 1st International Workshop on Data Systems Education: Bridging Education Practice with Education Research.","venue":"SIGMOD Conference","pages":"2556-2557","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Aivaloglou0M22","doi":"10.1145/3514221.3524079","ee":"https://doi.org/10.1145/3514221.3524079","url":"https://dblp.org/rec/conf/sigmod/Aivaloglou0M22"},
+"url":"URL#1515045"
+},
+{
+"@score":"1",
+"@id":"1515046",
+"info":{"authors":{"author":[{"@pid":"222/6331","text":"Hani Al-Sayeh"},{"@pid":"02/1305","text":"Bunjamin Memishi"},{"@pid":"265/9628","text":"Muhammad Attahir Jibril"},{"@pid":"31/8766","text":"Marcus Paradies"},{"@pid":"s/KaiUweSattler","text":"Kai-Uwe Sattler"}]},"title":"Juggler: Autonomous Cost Optimization and Performance Prediction of Big Data Applications.","venue":"SIGMOD Conference","pages":"1840-1854","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Al-SayehMJPS22","doi":"10.1145/3514221.3517892","ee":"https://doi.org/10.1145/3514221.3517892","url":"https://dblp.org/rec/conf/sigmod/Al-SayehMJPS22"},
+"url":"URL#1515046"
+},
+{
+"@score":"1",
+"@id":"1515047",
+"info":{"authors":{"author":[{"@pid":"144/5620","text":"Amirhossein Aleyasen"},{"@pid":"266/6021","text":"Mark Morcos"},{"@pid":"a/LyublenaAntova","text":"Lyublena Antova"},{"@pid":"266/5744","text":"Marc Sugiyama"},{"@pid":"266/5842","text":"Dmitri Korablev"},{"@pid":"12/1693","text":"Jozsef Patvarczki"},{"@pid":"322/1441","text":"Rima Mutreja"},{"@pid":"45/1113","text":"Michael Duller"},{"@pid":"w/FlorianWaas","text":"Florian M. Waas"},{"@pid":"w/MarianneWinslett","text":"Marianne Winslett"}]},"title":"Intelligent Automated Workload Analysis for Database Replatforming.","venue":"SIGMOD Conference","pages":"2273-2285","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AleyasenMASKPMD22","doi":"10.1145/3514221.3526050","ee":"https://doi.org/10.1145/3514221.3526050","url":"https://dblp.org/rec/conf/sigmod/AleyasenMASKPMD22"},
+"url":"URL#1515047"
+},
+{
+"@score":"1",
+"@id":"1515048",
+"info":{"authors":{"author":[{"@pid":"242/5131","text":"Noura S. Alghamdi"},{"@pid":"50/6759","text":"Liang Zhang"},{"@pid":"r/EARundensteiner","text":"Elke A. Rundensteiner"},{"@pid":"49/6395","text":"Mohamed Y. Eltabakh"}]},"title":"Scalable Time Series Compound Infrastructure.","venue":"SIGMOD Conference","pages":"1685-1698","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AlghamdiZRE22","doi":"10.1145/3514221.3517888","ee":"https://doi.org/10.1145/3514221.3517888","url":"https://dblp.org/rec/conf/sigmod/AlghamdiZRE22"},
+"url":"URL#1515048"
+},
+{
+"@score":"1",
+"@id":"1515049",
+"info":{"authors":{"author":[{"@pid":"274/6988","text":"Sarah Alnegheimish"},{"@pid":"76/6661","text":"Dongyu Liu"},{"@pid":"241/7112","text":"Carles Sala"},{"@pid":"b/LaureBertiEquille","text":"Laure Berti-Équille"},{"@pid":"77/1107","text":"Kalyan Veeramachaneni"}]},"title":"Sintel: A Machine Learning Framework to Extract Insights from Signals.","venue":"SIGMOD Conference","pages":"1855-1865","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AlnegheimishLSB22","doi":"10.1145/3514221.3517910","ee":"https://doi.org/10.1145/3514221.3517910","url":"https://dblp.org/rec/conf/sigmod/AlnegheimishLSB22"},
+"url":"URL#1515049"
+},
+{
+"@score":"1",
+"@id":"1515050",
+"info":{"authors":{"author":[{"@pid":"a/SihemAmerYahia","text":"Sihem Amer-Yahia"},{"@pid":"b/SSBhowmick","text":"Sourav S. Bhowmick"},{"@pid":"d/XinLunaDong","text":"Xin Luna Dong"},{"@pid":"i/StratosIdreos","text":"Stratos Idreos"},{"@pid":"l/WLehner","text":"Wolfgang Lehner"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"Publication Culture and Review Processes in the Data Management Community: An Open Discussion.","venue":"SIGMOD Conference","pages":"2501-2502","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Amer-YahiaBDILS22","doi":"10.1145/3514221.3528413","ee":"https://doi.org/10.1145/3514221.3528413","url":"https://dblp.org/rec/conf/sigmod/Amer-YahiaBDILS22"},
+"url":"URL#1515050"
+},
+{
+"@score":"1",
+"@id":"1515051",
+"info":{"authors":{"author":[{"@pid":"322/1658","text":"Adar Amir"},{"@pid":"164/3423","text":"Ilya Kolchinsky"},{"@pid":"s/AssafSchuster","text":"Assaf Schuster"}]},"title":"DLACEP: A Deep-Learning Based Framework for Approximate Complex Event Processing.","venue":"SIGMOD Conference","pages":"340-354","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AmirKS22","doi":"10.1145/3514221.3526136","ee":"https://doi.org/10.1145/3514221.3526136","url":"https://dblp.org/rec/conf/sigmod/AmirKS22"},
+"url":"URL#1515051"
+},
+{
+"@score":"1",
+"@id":"1515052",
+"info":{"authors":{"author":[{"@pid":"243/2551","text":"Mijin An"},{"@pid":"322/1568","text":"In-Yeong Song"},{"@pid":"08/5771","text":"Yong Ho Song"},{"@pid":"l/SangWonLee","text":"Sang-Won Lee 0001"}]},"title":"Avoiding Read Stalls on Flash Storage.","venue":"SIGMOD Conference","pages":"1404-1417","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AnSS022","doi":"10.1145/3514221.3526126","ee":"https://doi.org/10.1145/3514221.3526126","url":"https://dblp.org/rec/conf/sigmod/AnSS022"},
+"url":"URL#1515052"
+},
+{
+"@score":"1",
+"@id":"1515054",
+"info":{"authors":{"author":[{"@pid":"231/3706","text":"Christoph Anneser"},{"@pid":"167/6469","text":"Andreas Kipf"},{"@pid":"13/8730","text":"Huanchen Zhang"},{"@pid":"n/ThomasNeumann","text":"Thomas Neumann 0001"},{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"}]},"title":"Adaptive Hybrid Indexes.","venue":"SIGMOD Conference","pages":"1626-1639","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AnneserKZ0K22","doi":"10.1145/3514221.3526121","ee":"https://doi.org/10.1145/3514221.3526121","url":"https://dblp.org/rec/conf/sigmod/AnneserKZ0K22"},
+"url":"URL#1515054"
+},
+{
+"@score":"1",
+"@id":"1515055",
+"info":{"authors":{"author":[{"@pid":"58/1327","text":"Nikos Armenatzoglou"},{"@pid":"322/1659","text":"Sanuj Basu"},{"@pid":"322/1671","text":"Naga Bhanoori"},{"@pid":"92/6334","text":"Mengchu Cai"},{"@pid":"135/4688","text":"Naresh Chainani"},{"@pid":"322/1398","text":"Kiran Chinta"},{"@pid":"25/1585","text":"Venkatraman Govindaraju"},{"@pid":"g/ToddJGreen","text":"Todd J. Green"},{"@pid":"80/3921","text":"Monish Gupta"},{"@pid":"67/9320","text":"Sebastian Hillig"},{"@pid":"322/1405","text":"Eric Hotinger"},{"@pid":"322/1488","text":"Yan Leshinksy"},{"@pid":"322/1478","text":"Jintian Liang"},{"@pid":"322/1672","text":"Michael McCreedy"},{"@pid":"131/4779","text":"Fabian Nagel"},{"@pid":"p/IppokratisPandis","text":"Ippokratis Pandis"},{"@pid":"147/1187","text":"Panos Parchas"},{"@pid":"15/5643","text":"Rahul Pathak"},{"@pid":"131/4377","text":"Orestis Polychroniou"},{"@pid":"44/8127","text":"Foyzur Rahman"},{"@pid":"28/5706","text":"Gaurav Saxena"},{"@pid":"55/500","text":"Gokul Soundararajan"},{"@pid":"s/SriramSubramanian","text":"Sriram Subramanian"},{"@pid":"06/965","text":"Doug Terry"}]},"title":"Amazon Redshift Re-invented.","venue":"SIGMOD Conference","pages":"2205-2217","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ArmenatzoglouBB22","doi":"10.1145/3514221.3526045","ee":"https://doi.org/10.1145/3514221.3526045","url":"https://dblp.org/rec/conf/sigmod/ArmenatzoglouBB22"},
+"url":"URL#1515055"
+},
+{
+"@score":"1",
+"@id":"1515056",
+"info":{"authors":{"author":[{"@pid":"295/6835","text":"Uri Avron"},{"@pid":"200/9037","text":"Shay Gershtein"},{"@pid":"46/650","text":"Ido Guy"},{"@pid":"m/TovaMilo","text":"Tova Milo"},{"@pid":"43/9582","text":"Slava Novgorodov"}]},"title":"Automated Category Tree Construction in E-Commerce.","venue":"SIGMOD Conference","pages":"1770-1783","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/AvronGGMN22","doi":"10.1145/3514221.3526124","ee":"https://doi.org/10.1145/3514221.3526124","url":"https://dblp.org/rec/conf/sigmod/AvronGGMN22"},
+"url":"URL#1515056"
+},
+{
+"@score":"1",
+"@id":"1515057",
+"info":{"authors":{"author":[{"@pid":"245/6058","text":"Dmitrii Babaev"},{"@pid":"259/1302","text":"Nikita Ovsov"},{"@pid":"259/0613","text":"Ivan Kireev"},{"@pid":"259/1158","text":"Mariya Ivanova"},{"@pid":"117/9143","text":"Gleb Gusev"},{"@pid":"186/7798","text":"Ivan Nazarov"},{"@pid":"t/AlexanderTuzhilin","text":"Alexander Tuzhilin"}]},"title":"CoLES: Contrastive Learning for Event Sequences with Self-Supervision.","venue":"SIGMOD Conference","pages":"1190-1199","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BabaevOKIGNT22","doi":"10.1145/3514221.3526129","ee":"https://doi.org/10.1145/3514221.3526129","url":"https://dblp.org/rec/conf/sigmod/BabaevOKIGNT22"},
+"url":"URL#1515057"
+},
+{
+"@score":"1",
+"@id":"1515058",
+"info":{"authors":{"author":[{"@pid":"43/9991","text":"Favyen Bastani"},{"@pid":"m/SamuelMadden","text":"Samuel Madden 0001"}]},"title":"OTIF: Efficient Tracker Pre-processing over Large Video Datasets.","venue":"SIGMOD Conference","pages":"2091-2104","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BastaniM22","doi":"10.1145/3514221.3517835","ee":"https://doi.org/10.1145/3514221.3517835","url":"https://dblp.org/rec/conf/sigmod/BastaniM22"},
+"url":"URL#1515058"
+},
+{
+"@score":"1",
+"@id":"1515059",
+"info":{"authors":{"author":[{"@pid":"216/5088","text":"Rachel Behar"},{"@pid":"c/SaraCohen","text":"Sara Cohen"}]},"title":"Representative Query Results by Voting.","venue":"SIGMOD Conference","pages":"1741-1754","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BeharC22","doi":"10.1145/3514221.3517858","ee":"https://doi.org/10.1145/3514221.3517858","url":"https://dblp.org/rec/conf/sigmod/BeharC22"},
+"url":"URL#1515059"
+},
+{
+"@score":"1",
+"@id":"1515060",
+"info":{"authors":{"author":[{"@pid":"88/573","text":"Alexander Behm"},{"@pid":"168/9023","text":"Shoumik Palkar"},{"@pid":"217/0988","text":"Utkarsh Agarwal"},{"@pid":"25/3861","text":"Timothy Armstrong"},{"@pid":"40/87","text":"David Cashman"},{"@pid":"74/10101","text":"Ankur Dave"},{"@pid":"322/1480","text":"Todd Greenstein"},{"@pid":"11/6201","text":"Shant Hovsepian"},{"@pid":"98/3414","text":"Ryan Johnson"},{"@pid":"322/1400","text":"Arvind Sai Krishnan"},{"@pid":"39/3656","text":"Paul Leventis"},{"@pid":"322/1583","text":"Ala Luszczak"},{"@pid":"145/6329","text":"Prashanth Menon"},{"@pid":"131/4245","text":"Mostafa Mokhtar"},{"@pid":"99/11140","text":"Gene Pang"},{"@pid":"197/7188","text":"Sameer Paranjpye"},{"@pid":"181/5686","text":"Greg Rahn"},{"@pid":"15/780","text":"Bart Samwel"},{"@pid":"227/2992","text":"Tom van Bussel"},{"@pid":"273/6960","text":"Herman Van Hovell"},{"@pid":"322/1470","text":"Maryann Xue"},{"@pid":"47/7258","text":"Reynold Xin"},{"@pid":"36/2133","text":"Matei Zaharia"}]},"title":"Photon: A Fast Query Engine for Lakehouse Systems.","venue":"SIGMOD Conference","pages":"2326-2339","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BehmPAACDGHJKLL22","doi":"10.1145/3514221.3526054","ee":"https://doi.org/10.1145/3514221.3526054","url":"https://dblp.org/rec/conf/sigmod/BehmPAACDGHJKLL22"},
+"url":"URL#1515060"
+},
+{
+"@score":"1",
+"@id":"1515061",
+"info":{"authors":{"author":[{"@pid":"145/7768","text":"Akash Bharadwaj"},{"@pid":"c/GrahamCormode","text":"Graham Cormode"}]},"title":"An Introduction to Federated Computation.","venue":"SIGMOD Conference","pages":"2448-2451","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BharadwajC22","doi":"10.1145/3514221.3522561","ee":"https://doi.org/10.1145/3514221.3522561","url":"https://dblp.org/rec/conf/sigmod/BharadwajC22"},
+"url":"URL#1515061"
+},
+{
+"@score":"1",
+"@id":"1515062",
+"info":{"authors":{"author":[{"@pid":"b/SSBhowmick","text":"Sourav S. Bhowmick"},{"@pid":"07/1560","text":"Byron Choi"}]},"title":"Data-driven Visual Query Interfaces for Graphs: Past, Present, and (Near) Future.","venue":"SIGMOD Conference","pages":"2441-2447","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BhowmickC22","doi":"10.1145/3514221.3522562","ee":"https://doi.org/10.1145/3514221.3522562","url":"https://dblp.org/rec/conf/sigmod/BhowmickC22"},
+"url":"URL#1515062"
+},
+{
+"@score":"1",
+"@id":"1515063",
+"info":{"authors":{"author":[{"@pid":"65/5338","text":"Spyros Blanas"},{"@pid":"89/6071","text":"Norman May"}]},"title":"International Workshop on Data Management on New Hardware (DaMoN).","venue":"SIGMOD Conference","pages":"2558-2559","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BlanasM22","doi":"10.1145/3514221.3524080","ee":"https://doi.org/10.1145/3514221.3524080","url":"https://dblp.org/rec/conf/sigmod/BlanasM22"},
+"url":"URL#1515063"
+},
+{
+"@score":"1",
+"@id":"1515064",
+"info":{"authors":{"author":[{"@pid":"295/5645","text":"Nils Boeschen"},{"@pid":"45/1559","text":"Carsten Binnig"}]},"title":"GaccO - A GPU-accelerated OLTP DBMS.","venue":"SIGMOD Conference","pages":"1003-1016","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BoeschenB22","doi":"10.1145/3514221.3517876","ee":"https://doi.org/10.1145/3514221.3517876","url":"https://dblp.org/rec/conf/sigmod/BoeschenB22"},
+"url":"URL#1515064"
+},
+{
+"@score":"1",
+"@id":"1515065",
+"info":{"authors":{"author":[{"@pid":"266/6112","text":"Paul Boniol"},{"@pid":"156/1729","text":"Mohammed Meftah"},{"@pid":"87/11204","text":"Emmanuel Remy"},{"@pid":"p/ThemisPalpanas","text":"Themis Palpanas"}]},"title":"dCAM: Dimension-wise Class Activation Map for Explaining Multivariate Data Series Classification.","venue":"SIGMOD Conference","pages":"1175-1189","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BoniolMRP22","doi":"10.1145/3514221.3526183","ee":"https://doi.org/10.1145/3514221.3526183","url":"https://dblp.org/rec/conf/sigmod/BoniolMRP22"},
+"url":"URL#1515065"
+},
+{
+"@score":"1",
+"@id":"1515066",
+"info":{"authors":{"author":[{"@pid":"28/6851","text":"Rajesh Bordawekar"},{"@pid":"88/9060","text":"Yael Amsterdamer"},{"@pid":"05/10127","text":"Donatella Firmani"},{"@pid":"175/1473","text":"Ryan Marcus"},{"@pid":"s/OShmueli","text":"Oded Shmueli"}]},"title":"aiDM&apos;22: Fifth International Workshop on Exploiting Artificial Intelligence Techniques for Data Management.","venue":"SIGMOD Conference","pages":"2550-2551","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/BordawekarAFMS22","doi":"10.1145/3514221.3524076","ee":"https://doi.org/10.1145/3514221.3524076","url":"https://dblp.org/rec/conf/sigmod/BordawekarAFMS22"},
+"url":"URL#1515066"
+},
+{
+"@score":"1",
+"@id":"1515067",
+"info":{"authors":{"author":[{"@pid":"254/6674","text":"Matthew Butrovich"},{"@pid":"251/5311","text":"Wan Shen Lim"},{"@pid":"74/3608-6","text":"Lin Ma 0006"},{"@pid":"287/8972","text":"John Rollinson"},{"@pid":"165/0511-1","text":"William Zhang 0001"},{"@pid":"28/4326-5","text":"Yu Xia 0005"},{"@pid":"58/4127","text":"Andrew Pavlo"}]},"title":"Tastes Great! Less Filling! High Performance and Accurate Training Data Collection for Self-Driving Database Management Systems.","venue":"SIGMOD Conference","pages":"617-630","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ButrovichL0RZ0P22","doi":"10.1145/3514221.3517845","ee":"https://doi.org/10.1145/3514221.3517845","url":"https://dblp.org/rec/conf/sigmod/ButrovichL0RZ0P22"},
+"url":"URL#1515067"
+},
+{
+"@score":"1",
+"@id":"1515068",
+"info":{"authors":{"author":[{"@pid":"322/1643","text":"Baoqing Cai"},{"@pid":"97/2274-40","text":"Yu Liu 0040"},{"@pid":"97/919-1","text":"Ce Zhang 0001"},{"@pid":"90/109","text":"Guangyu Zhang"},{"@pid":"78/2949-1","text":"Ke Zhou 0001"},{"@pid":"33/4528-14","text":"Li Liu 0014"},{"@pid":"97/550-2","text":"Chunhua Li 0002"},{"@pid":"48/6970","text":"Bin Cheng"},{"@pid":"12/1198","text":"Jie Yang"},{"@pid":"243/2462","text":"Jiashu Xing"}]},"title":"HUNTER: An Online Cloud Database Hybrid Tuning System for Personalized Requirements.","venue":"SIGMOD Conference","pages":"646-659","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/CaiLZZZLLCYX22","doi":"10.1145/3514221.3517882","ee":"https://doi.org/10.1145/3514221.3517882","url":"https://dblp.org/rec/conf/sigmod/CaiLZZZLLCYX22"},
+"url":"URL#1515068"
+},
+{
+"@score":"1",
+"@id":"1515069",
+"info":{"authors":{"author":[{"@pid":"317/0684","text":"Felix S. Campbell"},{"@pid":"151/6772","text":"Bahareh Sadat Arab"},{"@pid":"09/3012","text":"Boris Glavic"}]},"title":"Efficient Answering of Historical What-if Queries.","venue":"SIGMOD Conference","pages":"1556-1569","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/CampbellAG22","doi":"10.1145/3514221.3526138","ee":"https://doi.org/10.1145/3514221.3526138","url":"https://dblp.org/rec/conf/sigmod/CampbellAG22"},
+"url":"URL#1515069"
+},
+{
+"@score":"1",
+"@id":"1515070",
+"info":{"authors":{"author":[{"@pid":"215/3492","text":"Jiashen Cao"},{"@pid":"200/9418","text":"Karan Sarkar"},{"@pid":"199/7171","text":"Ramyad Hadidi"},{"@pid":"127/3025","text":"Joy Arulraj"},{"@pid":"87/5743","text":"Hyesoon Kim"}]},"title":"FiGO: Fine-Grained Query Optimization in Video Analytics.","venue":"SIGMOD Conference","pages":"559-572","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/CaoSHAK22","doi":"10.1145/3514221.3517857","ee":"https://doi.org/10.1145/3514221.3517857","url":"https://dblp.org/rec/conf/sigmod/CaoSHAK22"},
+"url":"URL#1515070"
+},
+{
+"@score":"1",
+"@id":"1515071",
+"info":{"authors":{"author":[{"@pid":"166/7652","text":"Tsz Nam Chan"},{"@pid":"38/4996","text":"Leong Hou U"},{"@pid":"07/1560","text":"Byron Choi"},{"@pid":"x/JianliangXu","text":"Jianliang Xu"}]},"title":"SLAM: Efficient Sweep Line Algorithms for Kernel Density Visualization.","venue":"SIGMOD Conference","pages":"2120-2134","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChanUCX22","doi":"10.1145/3514221.3517823","ee":"https://doi.org/10.1145/3514221.3517823","url":"https://dblp.org/rec/conf/sigmod/ChanUCX22"},
+"url":"URL#1515071"
+},
+{
+"@score":"1",
+"@id":"1515072",
+"info":{"authors":{"author":[{"@pid":"181/5678","text":"Zhao Chang"},{"@pid":"20/6977-1","text":"Dong Xie 0001"},{"@pid":"85/1868-11","text":"Sheng Wang 0011"},{"@pid":"l/FeifeiLi","text":"Feifei Li 0001"}]},"title":"Towards Practical Oblivious Join.","venue":"SIGMOD Conference","pages":"803-817","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Chang0W022","doi":"10.1145/3514221.3517868","ee":"https://doi.org/10.1145/3514221.3517868","url":"https://dblp.org/rec/conf/sigmod/Chang0W022"},
+"url":"URL#1515072"
+},
+{
+"@score":"1",
+"@id":"1515073",
+"info":{"authors":{"author":[{"@pid":"134/7203","text":"Yiru Chen"},{"@pid":"41/3679","text":"Eugene Wu 0002"}]},"title":"PI2: End-to-end Interactive Visualization Interface Generation from Queries.","venue":"SIGMOD Conference","pages":"1711-1725","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Chen022","doi":"10.1145/3514221.3526166","ee":"https://doi.org/10.1145/3514221.3526166","url":"https://dblp.org/rec/conf/sigmod/Chen022"},
+"url":"URL#1515073"
+},
+{
+"@score":"1",
+"@id":"1515074",
+"info":{"authors":{"author":[{"@pid":"130/7673","text":"Zihao Chen"},{"@pid":"247/8550","text":"Baokun Han"},{"@pid":"54/1474-1","text":"Chen Xu 0001"},{"@pid":"55/3364","text":"Weining Qian"},{"@pid":"z/AoyingZhou","text":"Aoying Zhou"}]},"title":"Redundancy Elimination in Distributed Matrix Computation.","venue":"SIGMOD Conference","pages":"573-586","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenH0QZ22","doi":"10.1145/3514221.3517877","ee":"https://doi.org/10.1145/3514221.3517877","url":"https://dblp.org/rec/conf/sigmod/ChenH0QZ22"},
+"url":"URL#1515074"
+},
+{
+"@score":"1",
+"@id":"1515075",
+"info":{"authors":{"author":[{"@pid":"27/7017","text":"Peng Chen"},{"@pid":"l/HuiLi5","text":"Hui Li 0005"},{"@pid":"b/SSBhowmick","text":"Sourav S. Bhowmick"},{"@pid":"62/2078","text":"Shafiq R. Joty"},{"@pid":"43/1941","text":"Weiguo Wang"}]},"title":"LANTERN: Boredom-conscious Natural Language Description Generation of Query Execution Plans for Database Education.","venue":"SIGMOD Conference","pages":"2413-2416","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenLBJW22","doi":"10.1145/3514221.3520165","ee":"https://doi.org/10.1145/3514221.3520165","url":"https://dblp.org/rec/conf/sigmod/ChenLBJW22"},
+"url":"URL#1515075"
+},
+{
+"@score":"1",
+"@id":"1515076",
+"info":{"authors":{"author":[{"@pid":"203/1564","text":"Youmin Chen"},{"@pid":"126/6015","text":"Xiangyao Yu"},{"@pid":"49/8316","text":"Paraschos Koutris"},{"@pid":"a/AndreaCArpaciDusseau","text":"Andrea C. Arpaci-Dusseau"},{"@pid":"a/RemziHArpaciDusseau","text":"Remzi H. Arpaci-Dusseau"},{"@pid":"60/3690","text":"Jiwu Shu"}]},"title":"Plor: General Transactions with Predictable, Low Tail Latency.","venue":"SIGMOD Conference","pages":"19-33","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChenYKAAS22","doi":"10.1145/3514221.3517879","ee":"https://doi.org/10.1145/3514221.3517879","url":"https://dblp.org/rec/conf/sigmod/ChenYKAAS22"},
+"url":"URL#1515076"
+},
+{
+"@score":"1",
+"@id":"1515077",
+"info":{"authors":{"author":{"@pid":"218/6145","text":"Supawit Chockchowwat"}},"title":"Tuning Hierarchical Learned Indexes on Disk and Beyond.","venue":"SIGMOD Conference","pages":"2515-2517","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Chockchowwat22","doi":"10.1145/3514221.3520255","ee":"https://doi.org/10.1145/3514221.3520255","url":"https://dblp.org/rec/conf/sigmod/Chockchowwat22"},
+"url":"URL#1515077"
+},
+{
+"@score":"1",
+"@id":"1515078",
+"info":{"authors":{"author":[{"@pid":"289/6031","text":"Pramod Chunduri"},{"@pid":"234/0748","text":"Jaeho Bang"},{"@pid":"26/5662","text":"Yao Lu"},{"@pid":"127/3025","text":"Joy Arulraj"}]},"title":"Zeus: Efficiently Localizing Actions in Videos using Reinforcement Learning.","venue":"SIGMOD Conference","pages":"545-558","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ChunduriBLA22","doi":"10.1145/3514221.3526181","ee":"https://doi.org/10.1145/3514221.3526181","url":"https://dblp.org/rec/conf/sigmod/ChunduriBLA22"},
+"url":"URL#1515078"
+},
+{
+"@score":"1",
+"@id":"1515079",
+"info":{"authors":{"author":[{"@pid":"250/9408","text":"Martino Ciaperoni"},{"@pid":"g/AristidesGionis","text":"Aristides Gionis"},{"@pid":"26/7051","text":"Athanasios Katsamanis"},{"@pid":"08/5342","text":"Panagiotis Karras"}]},"title":"SIEVE: A Space-Efficient Algorithm for Viterbi Decoding.","venue":"SIGMOD Conference","pages":"1136-1145","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/CiaperoniGKK22","doi":"10.1145/3514221.3526170","ee":"https://doi.org/10.1145/3514221.3526170","url":"https://dblp.org/rec/conf/sigmod/CiaperoniGKK22"},
+"url":"URL#1515079"
+},
+{
+"@score":"1",
+"@id":"1515080",
+"info":{"authors":{"author":[{"@pid":"206/6265","text":"Qiangqiang Dai"},{"@pid":"37/548","text":"Rong-Hua Li"},{"@pid":"317/0863","text":"Meihao Liao"},{"@pid":"42/7395","text":"Hongzhi Chen"},{"@pid":"64/146","text":"Guoren Wang"}]},"title":"Fast Maximal Clique Enumeration on Uncertain Graphs: A Pivot-based Approach.","venue":"SIGMOD Conference","pages":"2034-2047","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DaiLLCW22","doi":"10.1145/3514221.3526143","ee":"https://doi.org/10.1145/3514221.3526143","url":"https://dblp.org/rec/conf/sigmod/DaiLLCW22"},
+"url":"URL#1515080"
+},
+{
+"@score":"1",
+"@id":"1515081",
+"info":{"authors":{"author":[{"@pid":"322/1496","text":"Yizhou Dai"},{"@pid":"93/9883","text":"Miao Qiao"},{"@pid":"47/179","text":"Lijun Chang"}]},"title":"Anchored Densest Subgraph.","venue":"SIGMOD Conference","pages":"1200-1213","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DaiQC22","doi":"10.1145/3514221.3517890","ee":"https://doi.org/10.1145/3514221.3517890","url":"https://dblp.org/rec/conf/sigmod/DaiQC22"},
+"url":"URL#1515081"
+},
+{
+"@score":"1",
+"@id":"1515082",
+"info":{"authors":{"author":[{"@pid":"d/SBDavidson","text":"Susan B. Davidson"},{"@pid":"98/6876","text":"Daniel Deutch"},{"@pid":"185/4307","text":"Nave Frost"},{"@pid":"74/3195","text":"Benny Kimelfeld"},{"@pid":"293/8510","text":"Omer Koren"},{"@pid":"183/1682","text":"Mikaël Monet"}]},"title":"ShapGraph: An Holistic View of Explanations through Provenance Graphs and Shapley Values.","venue":"SIGMOD Conference","pages":"2373-2376","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DavidsonDFKKM22","doi":"10.1145/3514221.3520172","ee":"https://doi.org/10.1145/3514221.3520172","url":"https://dblp.org/rec/conf/sigmod/DavidsonDFKKM22"},
+"url":"URL#1515082"
+},
+{
+"@score":"1",
+"@id":"1515083",
+"info":{"authors":{"author":[{"@pid":"171/4681","text":"Behrouz Derakhshan"},{"@pid":"74/8086","text":"Alireza Rezaei Mahdiraji"},{"@pid":"65/1457","text":"Zoi Kaoudi"},{"@pid":"10/760","text":"Tilmann Rabl"},{"@pid":"m/VMarkl","text":"Volker Markl"}]},"title":"Materialization and Reuse Optimizations for Production Data Science Pipelines.","venue":"SIGMOD Conference","pages":"1962-1976","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DerakhshanMKRM22","doi":"10.1145/3514221.3526186","ee":"https://doi.org/10.1145/3514221.3526186","url":"https://dblp.org/rec/conf/sigmod/DerakhshanMKRM22"},
+"url":"URL#1515083"
+},
+{
+"@score":"1",
+"@id":"1515084",
+"info":{"authors":{"author":[{"@pid":"98/6876","text":"Daniel Deutch"},{"@pid":"185/4307","text":"Nave Frost"},{"@pid":"74/3195","text":"Benny Kimelfeld"},{"@pid":"183/1682","text":"Mikaël Monet"}]},"title":"Computing the Shapley Value of Facts in Query Answering.","venue":"SIGMOD Conference","pages":"1570-1583","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DeutchFKM22","doi":"10.1145/3514221.3517912","ee":"https://doi.org/10.1145/3514221.3517912","url":"https://dblp.org/rec/conf/sigmod/DeutchFKM22"},
+"url":"URL#1515084"
+},
+{
+"@score":"1",
+"@id":"1515085",
+"info":{"authors":{"author":[{"@pid":"98/6876","text":"Daniel Deutch"},{"@pid":"m/TanuMalik","text":"Tanu Malik"},{"@pid":"54/4551","text":"Adriane Chapman"}]},"title":"Theory and Practice of Provenance.","venue":"SIGMOD Conference","pages":"2544-2545","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DeutchMC22","doi":"10.1145/3514221.3524073","ee":"https://doi.org/10.1145/3514221.3524073","url":"https://dblp.org/rec/conf/sigmod/DeutchMC22"},
+"url":"URL#1515085"
+},
+{
+"@score":"1",
+"@id":"1515086",
+"info":{"authors":{"author":[{"@pid":"d/AlinDeutsch","text":"Alin Deutsch"},{"@pid":"78/9854","text":"Nadime Francis"},{"@pid":"65/2807","text":"Alastair Green"},{"@pid":"295/3446","text":"Keith W. Hare"},{"@pid":"11/4103","text":"Bei Li"},{"@pid":"l/LeonidLibkin","text":"Leonid Libkin"},{"@pid":"211/6985","text":"Tobias Lindaaker"},{"@pid":"117/9191","text":"Victor Marsault"},{"@pid":"95/3517","text":"Wim Martens"},{"@pid":"309/5819","text":"Jan Michels"},{"@pid":"14/4251","text":"Filip Murlak"},{"@pid":"93/3568","text":"Stefan Plantikow"},{"@pid":"50/7441","text":"Petra Selmer"},{"@pid":"130/9761","text":"Oskar van Rest"},{"@pid":"19/1082","text":"Hannes Voigt"},{"@pid":"31/8653","text":"Domagoj Vrgoc"},{"@pid":"w/MingxiWu","text":"Mingxi Wu"},{"@pid":"36/3923","text":"Fred Zemke"}]},"title":"Graph Pattern Matching in GQL and SQL/PGQ.","venue":"SIGMOD Conference","pages":"2246-2258","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DeutschFGHLLLMM22","doi":"10.1145/3514221.3526057","ee":"https://doi.org/10.1145/3514221.3526057","url":"https://dblp.org/rec/conf/sigmod/DeutschFGHLLLMM22"},
+"url":"URL#1515086"
+},
+{
+"@score":"1",
+"@id":"1515087",
+"info":{"authors":{"author":[{"@pid":"92/748-7","text":"Wei Dong 0007"},{"@pid":"322/1587","text":"Juanru Fang"},{"@pid":"43/1219-1","text":"Ke Yi 0001"},{"@pid":"233/6258","text":"Yuchao Tao"},{"@pid":"m/AMachanavajjhala","text":"Ashwin Machanavajjhala"}]},"title":"R2T: Instance-optimal Truncation for Differentially Private Query Evaluation with Foreign Keys.","venue":"SIGMOD Conference","pages":"759-772","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/DongF0TM22","doi":"10.1145/3514221.3517844","ee":"https://doi.org/10.1145/3514221.3517844","url":"https://dblp.org/rec/conf/sigmod/DongF0TM22"},
+"url":"URL#1515087"
+},
+{
+"@score":"1",
+"@id":"1515090",
+"info":{"authors":{"author":[{"@pid":"94/2372","text":"Wenfei Fan"},{"@pid":"266/6158","text":"Ziyan Han"},{"@pid":"131/4193","text":"Yaoshu Wang"},{"@pid":"36/844","text":"Min Xie"}]},"title":"Parallel Rule Discovery from Large Datasets by Sampling.","venue":"SIGMOD Conference","pages":"384-398","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/FanHWX22","doi":"10.1145/3514221.3526165","ee":"https://doi.org/10.1145/3514221.3526165","url":"https://dblp.org/rec/conf/sigmod/FanHWX22"},
+"url":"URL#1515090"
+},
+{
+"@score":"1",
+"@id":"1515091",
+"info":{"authors":{"author":[{"@pid":"94/2372","text":"Wenfei Fan"},{"@pid":"170/1753-3","text":"Yuanhao Li 0003"},{"@pid":"222/4916","text":"Muyang Liu"},{"@pid":"149/1789","text":"Can Lu"}]},"title":"A Hierarchical Contraction Scheme for Querying Big Graphs.","venue":"SIGMOD Conference","pages":"1726-1740","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/FanLLL22","doi":"10.1145/3514221.3517862","ee":"https://doi.org/10.1145/3514221.3517862","url":"https://dblp.org/rec/conf/sigmod/FanLLL22"},
+"url":"URL#1515091"
+},
+{
+"@score":"1",
+"@id":"1515092",
+"info":{"authors":{"author":[{"@pid":"62/10825","text":"Muhammad Farhan"},{"@pid":"97/6505-2","text":"Qing Wang 0002"},{"@pid":"13/2962","text":"Henning Koehler"}]},"title":"BatchHL: Answering Distance Queries on Batch-Dynamic Networks at Scale.","venue":"SIGMOD Conference","pages":"2020-2033","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/FarhanWK22","doi":"10.1145/3514221.3517883","ee":"https://doi.org/10.1145/3514221.3517883","url":"https://dblp.org/rec/conf/sigmod/FarhanWK22"},
+"url":"URL#1515092"
+},
+{
+"@score":"1",
+"@id":"1515093",
+"info":{"authors":{"author":{"@pid":"131/4202","text":"Raul Castro Fernandez"}},"title":"Protecting Data Markets from Strategic Buyers.","venue":"SIGMOD Conference","pages":"1755-1769","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Fernandez22","doi":"10.1145/3514221.3517855","ee":"https://doi.org/10.1145/3514221.3517855","url":"https://dblp.org/rec/conf/sigmod/Fernandez22"},
+"url":"URL#1515093"
+},
+{
+"@score":"1",
+"@id":"1515094",
+"info":{"authors":{"author":[{"@pid":"38/2368-3","text":"Tim Fischer 0003"},{"@pid":"238/4353","text":"Denis Hirn"},{"@pid":"g/TorstenGrust","text":"Torsten Grust"}]},"title":"Snakes on a Plan: Compiling Python Functions into Plain SQL Queries.","venue":"SIGMOD Conference","pages":"2389-2392","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/FischerHG22","doi":"10.1145/3514221.3520175","ee":"https://doi.org/10.1145/3514221.3520175","url":"https://dblp.org/rec/conf/sigmod/FischerHG22"},
+"url":"URL#1515094"
+},
+{
+"@score":"1",
+"@id":"1515095",
+"info":{"authors":{"author":[{"@pid":"185/0725","text":"Lampros Flokas"},{"@pid":"262/6157","text":"Weiyuan Wu"},{"@pid":"215/4938","text":"Yejia Liu"},{"@pid":"39/7183-1","text":"Jiannan Wang 0001"},{"@pid":"87/5620","text":"Nakul Verma"},{"@pid":"41/3679","text":"Eugene Wu 0002"}]},"title":"Complaint-Driven Training Data Debugging at Interactive Speeds.","venue":"SIGMOD Conference","pages":"369-383","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/FlokasWLWV022","doi":"10.1145/3514221.3517849","ee":"https://doi.org/10.1145/3514221.3517849","url":"https://dblp.org/rec/conf/sigmod/FlokasWLWV022"},
+"url":"URL#1515095"
+},
+{
+"@score":"1",
+"@id":"1515096",
+"info":{"authors":{"author":{"@pid":"282/0673","text":"Michael Fruth"}},"title":"Live Patching Database Management Systems.","venue":"SIGMOD Conference","pages":"2524-2526","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Fruth22","doi":"10.1145/3514221.3520253","ee":"https://doi.org/10.1145/3514221.3520253","url":"https://dblp.org/rec/conf/sigmod/Fruth22"},
+"url":"URL#1515096"
+},
+{
+"@score":"1",
+"@id":"1515097",
+"info":{"authors":{"author":[{"@pid":"219/9677","text":"Fangcheng Fu"},{"@pid":"245/4909","text":"Huanran Xue"},{"@pid":"34/6276","text":"Yong Cheng"},{"@pid":"47/208","text":"Yangyu Tao"},{"@pid":"55/5031","text":"Bin Cui 0001"}]},"title":"BlindFL: Vertical Federated Machine Learning without Peeking into Your Data.","venue":"SIGMOD Conference","pages":"1316-1330","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/FuXCT022","doi":"10.1145/3514221.3526127","ee":"https://doi.org/10.1145/3514221.3526127","url":"https://dblp.org/rec/conf/sigmod/FuXCT022"},
+"url":"URL#1515097"
+},
+{
+"@score":"1",
+"@id":"1515098",
+"info":{"authors":{"author":[{"@pid":"136/7969","text":"Sainyam Galhotra"},{"@pid":"29/11192","text":"Anna Fariha"},{"@pid":"241/7225","text":"Raoni Lourenço"},{"@pid":"f/JulianaFreire","text":"Juliana Freire"},{"@pid":"04/1835","text":"Alexandra Meliou"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"DataPrism: Exposing Disconnect between Data and Systems.","venue":"SIGMOD Conference","pages":"217-231","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GalhotraFLFMS22","doi":"10.1145/3514221.3517864","ee":"https://doi.org/10.1145/3514221.3517864","url":"https://dblp.org/rec/conf/sigmod/GalhotraFLFMS22"},
+"url":"URL#1515098"
+},
+{
+"@score":"1",
+"@id":"1515099",
+"info":{"authors":{"author":[{"@pid":"136/7969","text":"Sainyam Galhotra"},{"@pid":"05/10127","text":"Donatella Firmani"},{"@pid":"66/3027","text":"Barna Saha"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"Hierarchical Entity Resolution using an Oracle.","venue":"SIGMOD Conference","pages":"414-428","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GalhotraFSS22","doi":"10.1145/3514221.3526147","ee":"https://doi.org/10.1145/3514221.3526147","url":"https://dblp.org/rec/conf/sigmod/GalhotraFSS22"},
+"url":"URL#1515099"
+},
+{
+"@score":"1",
+"@id":"1515100",
+"info":{"authors":{"author":[{"@pid":"136/7969","text":"Sainyam Galhotra"},{"@pid":"163/3941","text":"Amir Gilad"},{"@pid":"77/4620","text":"Sudeepa Roy"},{"@pid":"11/6446","text":"Babak Salimi"}]},"title":"HypeR: Hypothetical Reasoning With What-If and How-To Queries Using a Probabilistic Causal Approach.","venue":"SIGMOD Conference","pages":"1598-1611","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GalhotraGRS22","doi":"10.1145/3514221.3526149","ee":"https://doi.org/10.1145/3514221.3526149","url":"https://dblp.org/rec/conf/sigmod/GalhotraGRS22"},
+"url":"URL#1515100"
+},
+{
+"@score":"1",
+"@id":"1515101",
+"info":{"authors":{"author":[{"@pid":"136/7969","text":"Sainyam Galhotra"},{"@pid":"65/6274","text":"Karthikeyan Shanmugam"},{"@pid":"00/7428","text":"Prasanna Sattigeri"},{"@pid":"02/3069","text":"Kush R. Varshney"}]},"title":"Causal Feature Selection for Algorithmic Fairness.","venue":"SIGMOD Conference","pages":"276-285","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GalhotraSSV22","doi":"10.1145/3514221.3517909","ee":"https://doi.org/10.1145/3514221.3517909","url":"https://dblp.org/rec/conf/sigmod/GalhotraSSV22"},
+"url":"URL#1515101"
+},
+{
+"@score":"1",
+"@id":"1515103",
+"info":{"authors":{"author":[{"@pid":"200/9037","text":"Shay Gershtein"},{"@pid":"m/TovaMilo","text":"Tova Milo"},{"@pid":"43/9582","text":"Slava Novgorodov"},{"@pid":"247/8081","text":"Kathy Razmadze"}]},"title":"Classifier Construction Under Budget Constraints.","venue":"SIGMOD Conference","pages":"1160-1174","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GershteinMNR22","doi":"10.1145/3514221.3517863","ee":"https://doi.org/10.1145/3514221.3517863","url":"https://dblp.org/rec/conf/sigmod/GershteinMNR22"},
+"url":"URL#1515103"
+},
+{
+"@score":"1",
+"@id":"1515104",
+"info":{"authors":{"author":[{"@pid":"163/3941","text":"Amir Gilad"},{"@pid":"159/1401","text":"Zhengjie Miao"},{"@pid":"77/4620","text":"Sudeepa Roy"},{"@pid":"y/JunYang1","text":"Jun Yang 0001"}]},"title":"Understanding Queries by Conditional Instances.","venue":"SIGMOD Conference","pages":"355-368","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GiladMRY22","doi":"10.1145/3514221.3517898","ee":"https://doi.org/10.1145/3514221.3517898","url":"https://dblp.org/rec/conf/sigmod/GiladMRY22"},
+"url":"URL#1515104"
+},
+{
+"@score":"1",
+"@id":"1515105",
+"info":{"authors":{"author":{"@pid":"315/8699","text":"Anna Gorb"}},"title":"A Recommender Algorithm to Automatically Generate Metrics for GQM Models in Software Development.","venue":"SIGMOD Conference","pages":"2539-2541","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Gorb22","doi":"10.1145/3514221.3520244","ee":"https://doi.org/10.1145/3514221.3520244","url":"https://dblp.org/rec/conf/sigmod/Gorb22"},
+"url":"URL#1515105"
+},
+{
+"@score":"1",
+"@id":"1515106",
+"info":{"authors":{"author":[{"@pid":"g/SvenGroppe","text":"Sven Groppe"},{"@pid":"g/LeGruenwald","text":"Le Gruenwald"},{"@pid":"35/3725","text":"Ching-Hsien Hsu"}]},"title":"BiDEDE&apos;22: Second International Workshop on Big Data in Emergent Distributed Environments.","venue":"SIGMOD Conference","pages":"2542-2543","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GroppeGH22","doi":"10.1145/3514221.3524072","ee":"https://doi.org/10.1145/3514221.3524072","url":"https://dblp.org/rec/conf/sigmod/GroppeGH22"},
+"url":"URL#1515106"
+},
+{
+"@score":"1",
+"@id":"1515107",
+"info":{"authors":{"author":[{"@pid":"314/9217","text":"Zihui Gu"},{"@pid":"48/1585","text":"Ruixue Fan"},{"@pid":"212/9124","text":"Xiaoman Zhao"},{"@pid":"08/7259","text":"Meihui Zhang 0001"},{"@pid":"78/4413","text":"Ju Fan"},{"@pid":"47/3542-1","text":"Xiaoyong Du 0001"}]},"title":"OpenTFV: An Open Domain Table-Based Fact Verification System.","venue":"SIGMOD Conference","pages":"2405-2408","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GuFZ0F022","doi":"10.1145/3514221.3520163","ee":"https://doi.org/10.1145/3514221.3520163","url":"https://dblp.org/rec/conf/sigmod/GuFZ0F022"},
+"url":"URL#1515107"
+},
+{
+"@score":"1",
+"@id":"1515108",
+"info":{"authors":{"author":[{"@pid":"244/1368","text":"Naiqing Guan"},{"@pid":"k/NickKoudas","text":"Nick Koudas"}]},"title":"FILA: Online Auditing of Machine Learning Model Accuracy under Finite Labelling Budget.","venue":"SIGMOD Conference","pages":"1784-1794","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GuanK22","doi":"10.1145/3514221.3517904","ee":"https://doi.org/10.1145/3514221.3517904","url":"https://dblp.org/rec/conf/sigmod/GuanK22"},
+"url":"URL#1515108"
+},
+{
+"@score":"1",
+"@id":"1515109",
+"info":{"authors":{"author":[{"@pid":"168/0992","text":"Peizhen Guo"},{"@pid":"04/2380","text":"Bo Hu"},{"@pid":"56/4439","text":"Wenjun Hu"}]},"title":"Sommelier: Curating DNN Models for the Masses.","venue":"SIGMOD Conference","pages":"1876-1890","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/GuoHH22","doi":"10.1145/3514221.3526173","ee":"https://doi.org/10.1145/3514221.3526173","url":"https://dblp.org/rec/conf/sigmod/GuoHH22"},
+"url":"URL#1515109"
+},
+{
+"@score":"1",
+"@id":"1515111",
+"info":{"authors":{"author":[{"@pid":"197/4309","text":"Donghyoung Han"},{"@pid":"04/3445","text":"Jongwuk Lee"},{"@pid":"k/MinSooKim2","text":"Min-Soo Kim 0002"}]},"title":"FuseME: Distributed Matrix Computation Engine based on Cuboid-based Fused Operator and Plan Generation.","venue":"SIGMOD Conference","pages":"1891-1904","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HanL022","doi":"10.1145/3514221.3517895","ee":"https://doi.org/10.1145/3514221.3517895","url":"https://dblp.org/rec/conf/sigmod/HanL022"},
+"url":"URL#1515111"
+},
+{
+"@score":"1",
+"@id":"1515112",
+"info":{"authors":{"author":[{"@pid":"218/5225","text":"Benjamin Hättasch"},{"@pid":"315/4523","text":"Jan-Micha Bodensohn"},{"@pid":"45/1559","text":"Carsten Binnig"}]},"title":"Demonstrating ASET: Ad-hoc Structured Exploration of Text Collections.","venue":"SIGMOD Conference","pages":"2393-2396","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HattaschBB22","doi":"10.1145/3514221.3520174","ee":"https://doi.org/10.1145/3514221.3520174","url":"https://dblp.org/rec/conf/sigmod/HattaschBB22"},
+"url":"URL#1515112"
+},
+{
+"@score":"1",
+"@id":"1515113",
+"info":{"authors":{"author":[{"@pid":"223/0816-1","text":"Wenjia He 0001"},{"@pid":"82/231","text":"Michael J. Cafarella"}]},"title":"Controlled Intentional Degradation in Analytical Video Systems.","venue":"SIGMOD Conference","pages":"2105-2119","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HeC22","doi":"10.1145/3514221.3517899","ee":"https://doi.org/10.1145/3514221.3517899","url":"https://dblp.org/rec/conf/sigmod/HeC22"},
+"url":"URL#1515113"
+},
+{
+"@score":"1",
+"@id":"1515114",
+"info":{"authors":{"author":[{"@pid":"213/7863","text":"Brian Hentschel"},{"@pid":"124/2281","text":"Utku Sirin"},{"@pid":"i/StratosIdreos","text":"Stratos Idreos"}]},"title":"Entropy-Learned Hashing: Constant Time Hashing with Controllable Uniformity.","venue":"SIGMOD Conference","pages":"1640-1654","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HentschelSI22","doi":"10.1145/3514221.3517894","ee":"https://doi.org/10.1145/3514221.3517894","url":"https://dblp.org/rec/conf/sigmod/HentschelSI22"},
+"url":"URL#1515114"
+},
+{
+"@score":"1",
+"@id":"1515115",
+"info":{"authors":{"author":[{"@pid":"259/6846","text":"Pei-Yu Hou"},{"@pid":"281/3900","text":"Daniel Robert Korn"},{"@pid":"183/5769","text":"Cleber C. Melo-Filho"},{"@pid":"70/1760","text":"David R. Wright 0001"},{"@pid":"61/2721","text":"Alexander Tropsha"},{"@pid":"01/3589","text":"Rada Chirkova"}]},"title":"Compact Walks: Taming Knowledge-Graph Embeddings with Domain- and Task-Specific Pathways.","venue":"SIGMOD Conference","pages":"458-469","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HouKMWTC22","doi":"10.1145/3514221.3517903","ee":"https://doi.org/10.1145/3514221.3517903","url":"https://dblp.org/rec/conf/sigmod/HouKMWTC22"},
+"url":"URL#1515115"
+},
+{
+"@score":"1",
+"@id":"1515116",
+"info":{"authors":{"author":[{"@pid":"250/0478","text":"Daokun Hu"},{"@pid":"133/3514-6","text":"Zhiwen Chen 0006"},{"@pid":"322/1597","text":"Wenkui Che"},{"@pid":"36/1447-2","text":"Jianhua Sun 0002"},{"@pid":"86/475-2","text":"Hao Chen 0002"}]},"title":"Halo: A Hybrid PMem-DRAM Persistent Hash Index with Fast Recovery.","venue":"SIGMOD Conference","pages":"1049-1063","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HuCC0022","doi":"10.1145/3514221.3517884","ee":"https://doi.org/10.1145/3514221.3517884","url":"https://dblp.org/rec/conf/sigmod/HuCC0022"},
+"url":"URL#1515116"
+},
+{
+"@score":"1",
+"@id":"1515117",
+"info":{"authors":{"author":[{"@pid":"04/2380","text":"Bo Hu"},{"@pid":"168/0992","text":"Peizhen Guo"},{"@pid":"56/4439","text":"Wenjun Hu"}]},"title":"Video-zilla: An Indexing Layer for Large-Scale Video Analytics.","venue":"SIGMOD Conference","pages":"1905-1919","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HuGH22","doi":"10.1145/3514221.3517840","ee":"https://doi.org/10.1145/3514221.3517840","url":"https://dblp.org/rec/conf/sigmod/HuGH22"},
+"url":"URL#1515117"
+},
+{
+"@score":"1",
+"@id":"1515118",
+"info":{"authors":{"author":[{"@pid":"234/1658","text":"Yu-Ching Hu"},{"@pid":"52/4954-1","text":"Yuliang Li 0001"},{"@pid":"76/1857-1","text":"Hung-Wei Tseng 0001"}]},"title":"TCUDB: Accelerating Database with Tensor Processors.","venue":"SIGMOD Conference","pages":"1360-1374","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HuL022","doi":"10.1145/3514221.3517869","ee":"https://doi.org/10.1145/3514221.3517869","url":"https://dblp.org/rec/conf/sigmod/HuL022"},
+"url":"URL#1515118"
+},
+{
+"@score":"1",
+"@id":"1515119",
+"info":{"authors":{"author":[{"@pid":"19/1374-5","text":"Xiao Hu 0005"},{"@pid":"30/8131","text":"Yuxi Liu"},{"@pid":"268/6838","text":"Haibo Xiu"},{"@pid":"a/PankajKAgarwal","text":"Pankaj K. Agarwal"},{"@pid":"81/6547","text":"Debmalya Panigrahi"},{"@pid":"77/4620","text":"Sudeepa Roy"},{"@pid":"y/JunYang1","text":"Jun Yang 0001"}]},"title":"Selectivity Functions of Range Queries are Learnable.","venue":"SIGMOD Conference","pages":"959-972","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HuLXAPRY22","doi":"10.1145/3514221.3517896","ee":"https://doi.org/10.1145/3514221.3517896","url":"https://dblp.org/rec/conf/sigmod/HuLXAPRY22"},
+"url":"URL#1515119"
+},
+{
+"@score":"1",
+"@id":"1515120",
+"info":{"authors":{"author":[{"@pid":"19/1374-5","text":"Xiao Hu 0005"},{"@pid":"151/3111","text":"Stavros Sintos"},{"@pid":"187/4052","text":"Junyang Gao"},{"@pid":"a/PankajKAgarwal","text":"Pankaj K. Agarwal"},{"@pid":"y/JunYang1","text":"Jun Yang 0001"}]},"title":"Computing Complex Temporal Join Queries Efficiently.","venue":"SIGMOD Conference","pages":"2076-2090","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HuSGAY22","doi":"10.1145/3514221.3517893","ee":"https://doi.org/10.1145/3514221.3517893","url":"https://dblp.org/rec/conf/sigmod/HuSGAY22"},
+"url":"URL#1515120"
+},
+{
+"@score":"1",
+"@id":"1515121",
+"info":{"authors":{"author":[{"@pid":"287/9765","text":"Zezhou Huang"},{"@pid":"41/3679","text":"Eugene Wu 0002"}]},"title":"Reptile: Aggregation-level Explanations for Hierarchical Data.","venue":"SIGMOD Conference","pages":"399-413","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Huang022","doi":"10.1145/3514221.3517854","ee":"https://doi.org/10.1145/3514221.3517854","url":"https://dblp.org/rec/conf/sigmod/Huang022"},
+"url":"URL#1515121"
+},
+{
+"@score":"1",
+"@id":"1515122",
+"info":{"authors":{"author":[{"@pid":"152/5500","text":"Thomas Hütter"},{"@pid":"76/3961","text":"Nikolaus Augsten"},{"@pid":"k/CMKirsch","text":"Christoph M. Kirsch"},{"@pid":"31/3455","text":"Michael J. Carey 0001"},{"@pid":"l/ChenLi1","text":"Chen Li 0001"}]},"title":"JEDI: These aren&apos;t the JSON documents you&apos;re looking for?","venue":"SIGMOD Conference","pages":"1584-1597","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/HutterAK0L22","doi":"10.1145/3514221.3517850","ee":"https://doi.org/10.1145/3514221.3517850","url":"https://dblp.org/rec/conf/sigmod/HutterAK0L22"},
+"url":"URL#1515122"
+},
+{
+"@score":"1",
+"@id":"1515123",
+"info":{"authors":{"author":[{"@pid":"i/IhabFIlyas","text":"Ihab F. Ilyas"},{"@pid":"51/11411","text":"Theodoros Rekatsinas"},{"@pid":"318/3181","text":"Vishnu Konda"},{"@pid":"p/JeffreyPound","text":"Jeffrey Pound"},{"@pid":"17/3643","text":"Xiaoguang Qi"},{"@pid":"07/1330","text":"Mohamed A. Soliman"}]},"title":"Saga: A Platform for Continuous Construction and Serving of Knowledge at Scale.","venue":"SIGMOD Conference","pages":"2259-2272","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/IlyasRKPQS22","doi":"10.1145/3514221.3526049","ee":"https://doi.org/10.1145/3514221.3526049","url":"https://dblp.org/rec/conf/sigmod/IlyasRKPQS22"},
+"url":"URL#1515123"
+},
+{
+"@score":"1",
+"@id":"1515124",
+"info":{"authors":{"author":[{"@pid":"314/5970","text":"Alexander Isenko"},{"@pid":"132/0330","text":"Ruben Mayer"},{"@pid":"314/5826","text":"Jeffrey Jedele"},{"@pid":"j/HansArnoJacobsen","text":"Hans-Arno Jacobsen"}]},"title":"Where Is My Training Bottleneck? Hidden Trade-Offs in Deep Learning Preprocessing Pipelines.","venue":"SIGMOD Conference","pages":"1825-1839","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/IsenkoMJJ22","doi":"10.1145/3514221.3517848","ee":"https://doi.org/10.1145/3514221.3517848","url":"https://dblp.org/rec/conf/sigmod/IsenkoMJJ22"},
+"url":"URL#1515124"
+},
+{
+"@score":"1",
+"@id":"1515125",
+"info":{"authors":{"author":[{"@pid":"222/4132","text":"Maliha Tashfia Islam"},{"@pid":"29/11192","text":"Anna Fariha"},{"@pid":"04/1835","text":"Alexandra Meliou"},{"@pid":"11/6446","text":"Babak Salimi"}]},"title":"Through the Data Management Lens: Experimental Analysis and Evaluation of Fair Classification.","venue":"SIGMOD Conference","pages":"232-246","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/IslamFMS22","doi":"10.1145/3514221.3517841","ee":"https://doi.org/10.1145/3514221.3517841","url":"https://dblp.org/rec/conf/sigmod/IslamFMS22"},
+"url":"URL#1515125"
+},
+{
+"@score":"1",
+"@id":"1515126",
+"info":{"authors":{"author":[{"@pid":"266/6082","text":"Matthias Jasny"},{"@pid":"233/6278","text":"Lasse Thostrup"},{"@pid":"146/6632","text":"Tobias Ziegler 0001"},{"@pid":"45/1559","text":"Carsten Binnig"}]},"title":"P4DB - The Case for In-Network OLTP.","venue":"SIGMOD Conference","pages":"1375-1389","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/JasnyT0B22","doi":"10.1145/3514221.3517825","ee":"https://doi.org/10.1145/3514221.3517825","url":"https://dblp.org/rec/conf/sigmod/JasnyT0B22"},
+"url":"URL#1515126"
+},
+{
+"@score":"1",
+"@id":"1515127",
+"info":{"authors":{"author":{"@pid":"322/1582","text":"David Justen"}},"title":"Cost-efficiency and Performance Robustness in Serverless Data Exchange.","venue":"SIGMOD Conference","pages":"2506-2508","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Justen22","doi":"10.1145/3514221.3520248","ee":"https://doi.org/10.1145/3514221.3520248","url":"https://dblp.org/rec/conf/sigmod/Justen22"},
+"url":"URL#1515127"
+},
+{
+"@score":"1",
+"@id":"1515128",
+"info":{"authors":{"author":[{"@pid":"132/6943","text":"Vasiliki Kalavri"},{"@pid":"55/6560","text":"Semih Salihoglu"}]},"title":"GRADES-NDA&apos;22: 5th International Workshop on Graph Data management Experiences and Systems (GRADES) and Network Data Analytics (NDA).","venue":"SIGMOD Conference","pages":"2546-2547","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KalavriS22","doi":"10.1145/3514221.3524074","ee":"https://doi.org/10.1145/3514221.3524074","url":"https://dblp.org/rec/conf/sigmod/KalavriS22"},
+"url":"URL#1515128"
+},
+{
+"@score":"1",
+"@id":"1515129",
+"info":{"authors":{"author":[{"@pid":"40/6300","text":"Daniel Kang"},{"@pid":"83/7744","text":"Nikos Aréchiga"},{"@pid":"135/1150","text":"Sudeep Pillai"},{"@pid":"47/8816","text":"Peter D. Bailis"},{"@pid":"36/2133","text":"Matei Zaharia"}]},"title":"Finding Label and Model Errors in Perception Data With Learned Observation Assertions.","venue":"SIGMOD Conference","pages":"496-505","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KangAPBZ22","doi":"10.1145/3514221.3517907","ee":"https://doi.org/10.1145/3514221.3517907","url":"https://dblp.org/rec/conf/sigmod/KangAPBZ22"},
+"url":"URL#1515129"
+},
+{
+"@score":"1",
+"@id":"1515130",
+"info":{"authors":{"author":[{"@pid":"96/9032","text":"Junbin Kang"},{"@pid":"74/1647","text":"Le Cai"},{"@pid":"l/FeifeiLi","text":"Feifei Li 0001"},{"@pid":"297/0286","text":"Xingxuan Zhou"},{"@pid":"54/6265-6","text":"Wei Cao 0006"},{"@pid":"295/3506","text":"Songlu Cai"},{"@pid":"322/1579","text":"Daming Shao"}]},"title":"Remus: Efficient Live Migration for Distributed Databases with Snapshot Isolation.","venue":"SIGMOD Conference","pages":"2232-2245","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KangC0Z0CS22","doi":"10.1145/3514221.3526047","ee":"https://doi.org/10.1145/3514221.3526047","url":"https://dblp.org/rec/conf/sigmod/KangC0Z0CS22"},
+"url":"URL#1515130"
+},
+{
+"@score":"1",
+"@id":"1515131",
+"info":{"authors":{"author":[{"@pid":"40/6300","text":"Daniel Kang"},{"@pid":"274/2040","text":"John Guibas"},{"@pid":"47/8816","text":"Peter D. Bailis"},{"@pid":"66/7232","text":"Tatsunori Hashimoto"},{"@pid":"36/2133","text":"Matei Zaharia"}]},"title":"TASTI: Semantic Indexes for Machine Learning-based Queries over Unstructured Data.","venue":"SIGMOD Conference","pages":"1934-1947","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KangGBHZ22","doi":"10.1145/3514221.3517897","ee":"https://doi.org/10.1145/3514221.3517897","url":"https://dblp.org/rec/conf/sigmod/KangGBHZ22"},
+"url":"URL#1515131"
+},
+{
+"@score":"1",
+"@id":"1515132",
+"info":{"authors":{"author":{"@pid":"322/1418","text":"Sughosh V. Kaushik"}},"title":"Lineage Resource Manager.","venue":"SIGMOD Conference","pages":"2530-2532","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Kaushik22","doi":"10.1145/3514221.3520252","ee":"https://doi.org/10.1145/3514221.3520252","url":"https://dblp.org/rec/conf/sigmod/Kaushik22"},
+"url":"URL#1515132"
+},
+{
+"@score":"1",
+"@id":"1515133",
+"info":{"authors":{"author":[{"@pid":"295/7060","text":"Barrie Kersbergen"},{"@pid":"123/4630","text":"Olivier Sprangers"},{"@pid":"118/7229","text":"Sebastian Schelter"}]},"title":"Serenade - Low-Latency Session-Based Recommendation in e-Commerce at Scale.","venue":"SIGMOD Conference","pages":"150-159","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KersbergenSS22","doi":"10.1145/3514221.3517901","ee":"https://doi.org/10.1145/3514221.3517901","url":"https://dblp.org/rec/conf/sigmod/KersbergenSS22"},
+"url":"URL#1515133"
+},
+{
+"@score":"1",
+"@id":"1515135",
+"info":{"authors":{"author":[{"@pid":"45/2879-2","text":"Kyoungmin Kim 0002"},{"@pid":"322/1644","text":"Jisung Jung"},{"@pid":"219/9709","text":"In Seo"},{"@pid":"62/2450","text":"Wook-Shin Han"},{"@pid":"322/1484","text":"Kangwoo Choi"},{"@pid":"322/1605","text":"Jaehyok Chong"}]},"title":"Learned Cardinality Estimation: An In-depth Study.","venue":"SIGMOD Conference","pages":"1214-1227","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KimJSHCC22","doi":"10.1145/3514221.3526154","ee":"https://doi.org/10.1145/3514221.3526154","url":"https://dblp.org/rec/conf/sigmod/KimJSHCC22"},
+"url":"URL#1515135"
+},
+{
+"@score":"1",
+"@id":"1515136",
+"info":{"authors":{"author":[{"@pid":"182/7164","text":"Bogyeong Kim"},{"@pid":"256/7778","text":"Kyoseung Koo"},{"@pid":"322/1580","text":"Undraa Enkhbat"},{"@pid":"20/6358","text":"Bongki Moon"}]},"title":"DenForest: Enabling Fast Deletion in Incremental Density-Based Clustering over Sliding Windows.","venue":"SIGMOD Conference","pages":"296-309","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KimKEM22","doi":"10.1145/3514221.3517833","ee":"https://doi.org/10.1145/3514221.3517833","url":"https://dblp.org/rec/conf/sigmod/KimKEM22"},
+"url":"URL#1515136"
+},
+{
+"@score":"1",
+"@id":"1515137",
+"info":{"authors":{"author":[{"@pid":"27/5423-7","text":"Junghoon Kim 0007"},{"@pid":"117/5965","text":"Siqiang Luo"},{"@pid":"33/3180","text":"Gao Cong"},{"@pid":"53/5676","text":"Wenyuan Yu"}]},"title":"DMCS : Density Modularity based Community Search.","venue":"SIGMOD Conference","pages":"889-903","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KimLCY22","doi":"10.1145/3514221.3526137","ee":"https://doi.org/10.1145/3514221.3526137","url":"https://dblp.org/rec/conf/sigmod/KimLCY22"},
+"url":"URL#1515137"
+},
+{
+"@score":"1",
+"@id":"1515138",
+"info":{"authors":{"author":[{"@pid":"01/3847","text":"Jong-Bin Kim"},{"@pid":"266/5863","text":"Jaeseon Yu"},{"@pid":"322/1596","text":"Jaechan Ahn"},{"@pid":"19/6501","text":"Sooyong Kang"},{"@pid":"45/1270","text":"Hyungsoo Jung 0001"}]},"title":"Diva: Making MVCC Systems HTAP-Friendly.","venue":"SIGMOD Conference","pages":"49-64","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KimYAKJ22","doi":"10.1145/3514221.3526135","ee":"https://doi.org/10.1145/3514221.3526135","url":"https://dblp.org/rec/conf/sigmod/KimYAKJ22"},
+"url":"URL#1515138"
+},
+{
+"@score":"1",
+"@id":"1515140",
+"info":{"authors":{"author":[{"@pid":"214/6009","text":"Eric R. Knorr"},{"@pid":"322/1443","text":"Baptiste Lemaire"},{"@pid":"267/6394","text":"Andrew Lim"},{"@pid":"117/5965","text":"Siqiang Luo"},{"@pid":"13/8730","text":"Huanchen Zhang"},{"@pid":"i/StratosIdreos","text":"Stratos Idreos"},{"@pid":"74/838","text":"Michael Mitzenmacher"}]},"title":"Proteus: A Self-Designing Range Filter.","venue":"SIGMOD Conference","pages":"1670-1684","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KnorrLLLZIM22","doi":"10.1145/3514221.3526167","ee":"https://doi.org/10.1145/3514221.3526167","url":"https://dblp.org/rec/conf/sigmod/KnorrLLLZIM22"},
+"url":"URL#1515140"
+},
+{
+"@score":"1",
+"@id":"1515141",
+"info":{"authors":{"author":[{"@pid":"89/10042","text":"Evgenios M. Kornaropoulos"},{"@pid":"271/8103","text":"Silei Ren"},{"@pid":"t/RobertoTamassia","text":"Roberto Tamassia"}]},"title":"The Price of Tailoring the Index to Your Data: Poisoning Attacks on Learned Index Structures.","venue":"SIGMOD Conference","pages":"1331-1344","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/KornaropoulosRT22","doi":"10.1145/3514221.3517867","ee":"https://doi.org/10.1145/3514221.3517867","url":"https://dblp.org/rec/conf/sigmod/KornaropoulosRT22"},
+"url":"URL#1515141"
+},
+{
+"@score":"1",
+"@id":"1515142",
+"info":{"authors":{"author":[{"@pid":"227/3113","text":"Ziliang Lai"},{"@pid":"15/2127","text":"Chris Liu"},{"@pid":"237/9954","text":"Chenxia Han"},{"@pid":"58/4525","text":"Pengfei Zhang"},{"@pid":"80/2320","text":"Eric Lo 0001"},{"@pid":"k/BenKao","text":"Ben Kao"}]},"title":"Everest: A Top-K Deep Video Analytics System.","venue":"SIGMOD Conference","pages":"2357-2360","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LaiLHZ0K22","doi":"10.1145/3514221.3520151","ee":"https://doi.org/10.1145/3514221.3520151","url":"https://dblp.org/rec/conf/sigmod/LaiLHZ0K22"},
+"url":"URL#1515142"
+},
+{
+"@score":"1",
+"@id":"1515143",
+"info":{"authors":{"author":{"@pid":"l/LVSLakshmanan","text":"Laks V. S. Lakshmanan"}},"title":"On a Quest for Combating Filter Bubbles and Misinformation.","venue":"SIGMOD Conference","pages":"2","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Lakshmanan22","doi":"10.1145/3514221.3523275","ee":"https://doi.org/10.1145/3514221.3523275","url":"https://dblp.org/rec/conf/sigmod/Lakshmanan22"},
+"url":"URL#1515143"
+},
+{
+"@score":"1",
+"@id":"1515144",
+"info":{"authors":{"author":[{"@pid":"98/4041-1","text":"Sangjin Lee 0001"},{"@pid":"l/AlbertoLerner","text":"Alberto Lerner"},{"@pid":"270/0976","text":"André Ryser"},{"@pid":"251/6594","text":"Kibin Park"},{"@pid":"193/4438","text":"Chanyoung Jeon"},{"@pid":"93/3207","text":"Jinsub Park"},{"@pid":"08/5771","text":"Yong Ho Song"},{"@pid":"71/5578","text":"Philippe Cudré-Mauroux"}]},"title":"X-SSD: A Storage System with Native Support for Database Logging and Replication.","venue":"SIGMOD Conference","pages":"988-1002","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LeeLRPJPSC22","doi":"10.1145/3514221.3526188","ee":"https://doi.org/10.1145/3514221.3526188","url":"https://dblp.org/rec/conf/sigmod/LeeLRPJPSC22"},
+"url":"URL#1515144"
+},
+{
+"@score":"1",
+"@id":"1515145",
+"info":{"authors":{"author":[{"@pid":"176/9123","text":"Beibin Li"},{"@pid":"26/5662","text":"Yao Lu"},{"@pid":"k/SrikanthKandula","text":"Srikanth Kandula"}]},"title":"Warper: Efficiently Adapting Learned Cardinality Estimators to Data and Workload Drifts.","venue":"SIGMOD Conference","pages":"1920-1933","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiLK22","doi":"10.1145/3514221.3526179","ee":"https://doi.org/10.1145/3514221.3526179","url":"https://dblp.org/rec/conf/sigmod/LiLK22"},
+"url":"URL#1515145"
+},
+{
+"@score":"1",
+"@id":"1515146",
+"info":{"authors":{"author":[{"@pid":"181/2877","text":"Yiming Li"},{"@pid":"74/2905","text":"Yanyan Shen"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"}]},"title":"Camel: Managing Data for Efficient Stream Learning.","venue":"SIGMOD Conference","pages":"1271-1285","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiSC22","doi":"10.1145/3514221.3517836","ee":"https://doi.org/10.1145/3514221.3517836","url":"https://dblp.org/rec/conf/sigmod/LiSC22"},
+"url":"URL#1515146"
+},
+{
+"@score":"1",
+"@id":"1515147",
+"info":{"authors":{"author":[{"@pid":"55/2893-3","text":"Huan Li 0003"},{"@pid":"43/2474-16","text":"Bo Tang 0016"},{"@pid":"l/HuaLu","text":"Hua Lu 0001"},{"@pid":"55/5690","text":"Muhammad Aamir Cheema"},{"@pid":"j/ChristianSJensen","text":"Christian S. Jensen"}]},"title":"Spatial Data Quality in the IoT Era: Management and Exploitation.","venue":"SIGMOD Conference","pages":"2474-2482","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiT0CJ22","doi":"10.1145/3514221.3522568","ee":"https://doi.org/10.1145/3514221.3522568","url":"https://dblp.org/rec/conf/sigmod/LiT0CJ22"},
+"url":"URL#1515147"
+},
+{
+"@score":"1",
+"@id":"1515148",
+"info":{"authors":{"author":[{"@pid":"40/11446","text":"Sainan Li"},{"@pid":"230/1810","text":"Qilei Yin"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"181/2688-2","text":"Qi Li 0002"},{"@pid":"69/11514","text":"Zhuotao Liu"},{"@pid":"147/7900","text":"Jinwei Zhu"}]},"title":"Unsupervised Contextual Anomaly Detection for Database Systems.","venue":"SIGMOD Conference","pages":"788-802","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiYLLLZ22","doi":"10.1145/3514221.3517861","ee":"https://doi.org/10.1145/3514221.3517861","url":"https://dblp.org/rec/conf/sigmod/LiYLLLZ22"},
+"url":"URL#1515148"
+},
+{
+"@score":"1",
+"@id":"1515149",
+"info":{"authors":{"author":[{"@pid":"50/3937-4","text":"Xiaofan Li 0004"},{"@pid":"97/4357","text":"Rui Zhou 0001"},{"@pid":"69/157-8","text":"Lu Chen 0008"},{"@pid":"l/ChengfeiLiu","text":"Chengfei Liu"},{"@pid":"97/6589-1","text":"Qiang He 0001"},{"@pid":"90/3406-1","text":"Yun Yang 0001"}]},"title":"One Set to Cover All Maximal Cliques Approximately.","venue":"SIGMOD Conference","pages":"2006-2019","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiZCLHY22","doi":"10.1145/3514221.3517881","ee":"https://doi.org/10.1145/3514221.3517881","url":"https://dblp.org/rec/conf/sigmod/LiZCLHY22"},
+"url":"URL#1515149"
+},
+{
+"@score":"1",
+"@id":"1515150",
+"info":{"authors":{"author":[{"@pid":"317/0863","text":"Meihao Liao"},{"@pid":"37/548","text":"Rong-Hua Li"},{"@pid":"206/6265","text":"Qiangqiang Dai"},{"@pid":"64/146","text":"Guoren Wang"}]},"title":"Efficient Personalized PageRank Computation: A Spanning Forests Sampling Based Approach.","venue":"SIGMOD Conference","pages":"2048-2061","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiaoLDW22","doi":"10.1145/3514221.3526140","ee":"https://doi.org/10.1145/3514221.3526140","url":"https://dblp.org/rec/conf/sigmod/LiaoLDW22"},
+"url":"URL#1515150"
+},
+{
+"@score":"1",
+"@id":"1515151",
+"info":{"authors":{"author":[{"@pid":"259/7221","text":"Seng Pei Liew"},{"@pid":"85/5862-1","text":"Tsubasa Takahashi 0001"},{"@pid":"244/0606","text":"Shun Takagi"},{"@pid":"277/5098","text":"Fumiyuki Kato"},{"@pid":"25/7045-11","text":"Yang Cao 0011"},{"@pid":"y/MasatoshiYoshikawa","text":"Masatoshi Yoshikawa"}]},"title":"Network Shuffling: Privacy Amplification via Random Walks.","venue":"SIGMOD Conference","pages":"773-787","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Liew0TK0Y22","doi":"10.1145/3514221.3526162","ee":"https://doi.org/10.1145/3514221.3526162","url":"https://dblp.org/rec/conf/sigmod/Liew0TK0Y22"},
+"url":"URL#1515151"
+},
+{
+"@score":"1",
+"@id":"1515152",
+"info":{"authors":{"author":{"@pid":"l/BarbaraLiskov","text":"Barbara Liskov"}},"title":"Reflections on a Career in Computer Science.","venue":"SIGMOD Conference","pages":"1","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Liskov22","doi":"10.1145/3514221.3523274","ee":"https://doi.org/10.1145/3514221.3523274","url":"https://dblp.org/rec/conf/sigmod/Liskov22"},
+"url":"URL#1515152"
+},
+{
+"@score":"1",
+"@id":"1515153",
+"info":{"authors":{"author":[{"@pid":"40/6142","text":"Yijian Liu"},{"@pid":"05/365-5","text":"Li Su 0005"},{"@pid":"93/932-1","text":"Vivek Shah 0001"},{"@pid":"z/YongluanZhou","text":"Yongluan Zhou"},{"@pid":"70/4277","text":"Marcos Antonio Vaz Salles"}]},"title":"Hybrid Deterministic and Nondeterministic Execution of Transactions in Actor Systems.","venue":"SIGMOD Conference","pages":"65-78","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Liu00ZS22","doi":"10.1145/3514221.3526172","ee":"https://doi.org/10.1145/3514221.3526172","url":"https://dblp.org/rec/conf/sigmod/Liu00ZS22"},
+"url":"URL#1515153"
+},
+{
+"@score":"1",
+"@id":"1515154",
+"info":{"authors":{"author":[{"@pid":"209/2298","text":"Qiyu Liu"},{"@pid":"74/2905","text":"Yanyan Shen"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"}]},"title":"HAP: An Efficient Hamming Space Index Based on Augmented Pigeonhole Principle.","venue":"SIGMOD Conference","pages":"917-930","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiuS022","doi":"10.1145/3514221.3517880","ee":"https://doi.org/10.1145/3514221.3517880","url":"https://dblp.org/rec/conf/sigmod/LiuS022"},
+"url":"URL#1515154"
+},
+{
+"@score":"1",
+"@id":"1515155",
+"info":{"authors":{"author":[{"@pid":"66/10511","text":"Haotian Liu"},{"@pid":"43/2474-16","text":"Bo Tang 0016"},{"@pid":"60/4400","text":"Jiashu Zhang"},{"@pid":"322/1472","text":"Yangshen Deng"},{"@pid":"60/9006","text":"Xinying Zheng"},{"@pid":"170/1662","text":"Qiaomu Shen"},{"@pid":"07/2626-2","text":"Xiao Yan 0002"},{"@pid":"06/6575-2","text":"Dan Zeng 0002"},{"@pid":"322/1503","text":"Zunyao Mao"},{"@pid":"273/7079","text":"Chaozu Zhang"},{"@pid":"304/2163","text":"Zhengxin You"},{"@pid":"52/253","text":"Zhihao Wang"},{"@pid":"322/1414","text":"Runzhe Jiang"},{"@pid":"35/5625","text":"Fang Wang"},{"@pid":"23/282","text":"Man Lung Yiu"},{"@pid":"55/2893-3","text":"Huan Li 0003"},{"@pid":"295/3192","text":"Mingji Han"},{"@pid":"69/5902","text":"Qian Li"},{"@pid":"322/1657","text":"Zhenghai Luo"}]},"title":"GHive: A Demonstration of GPU-Accelerated Query Processing in Apache Hive.","venue":"SIGMOD Conference","pages":"2417-2420","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LiuTZDZSYZMZYWJ22","doi":"10.1145/3514221.3520166","ee":"https://doi.org/10.1145/3514221.3520166","url":"https://dblp.org/rec/conf/sigmod/LiuTZDZSYZMZYWJ22"},
+"url":"URL#1515155"
+},
+{
+"@score":"1",
+"@id":"1515157",
+"info":{"authors":{"author":[{"@pid":"165/8314","text":"Clemens Lutz"},{"@pid":"25/11440","text":"Sebastian Breß"},{"@pid":"142/9136","text":"Steffen Zeuch"},{"@pid":"10/760","text":"Tilmann Rabl"},{"@pid":"m/VMarkl","text":"Volker Markl"}]},"title":"Triton Join: Efficiently Scaling to a Large Join State on GPUs with Fast Interconnects.","venue":"SIGMOD Conference","pages":"1017-1032","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/LutzBZRM22","doi":"10.1145/3514221.3517911","ee":"https://doi.org/10.1145/3514221.3517911","url":"https://dblp.org/rec/conf/sigmod/LutzBZRM22"},
+"url":"URL#1515157"
+},
+{
+"@score":"1",
+"@id":"1515158",
+"info":{"authors":{"author":[{"@pid":"251/5251","text":"Chenhao Ma 0001"},{"@pid":"76/1735","text":"Yixiang Fang"},{"@pid":"89/2619","text":"Reynold Cheng"},{"@pid":"l/LVSLakshmanan","text":"Laks V. S. Lakshmanan"},{"@pid":"57/10423-2","text":"Xiaolin Han 0002"}]},"title":"A Convex-Programming Approach for Efficient Directed Densest Subgraph Discovery.","venue":"SIGMOD Conference","pages":"845-859","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MaFCLH22","doi":"10.1145/3514221.3517837","ee":"https://doi.org/10.1145/3514221.3517837","url":"https://dblp.org/rec/conf/sigmod/MaFCLH22"},
+"url":"URL#1515158"
+},
+{
+"@score":"1",
+"@id":"1515159",
+"info":{"authors":{"author":[{"@pid":"20/6534","text":"Lei Ma"},{"@pid":"87/10957","text":"Chuan Lei"},{"@pid":"71/7422","text":"Olga Poppe"},{"@pid":"r/EARundensteiner","text":"Elke A. Rundensteiner"}]},"title":"Gloria: Graph-based Sharing Optimizer for Event Trend Aggregation.","venue":"SIGMOD Conference","pages":"1122-1135","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MaLPR22","doi":"10.1145/3514221.3526145","ee":"https://doi.org/10.1145/3514221.3526145","url":"https://dblp.org/rec/conf/sigmod/MaLPR22"},
+"url":"URL#1515159"
+},
+{
+"@score":"1",
+"@id":"1515160",
+"info":{"authors":{"author":[{"@pid":"322/1501","text":"Yunus Ma"},{"@pid":"322/1423","text":"Siphrey Xie"},{"@pid":"178/9773","text":"Henry Zhong"},{"@pid":"14/1395-16","text":"Leon Lee 0001"},{"@pid":"298/7678","text":"King Lv"}]},"title":"HiEngine: How to Architect a Cloud-Native Memory-Optimized Database Engine.","venue":"SIGMOD Conference","pages":"2177-2190","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MaXZLL22","doi":"10.1145/3514221.3526043","ee":"https://doi.org/10.1145/3514221.3526043","url":"https://dblp.org/rec/conf/sigmod/MaXZLL22"},
+"url":"URL#1515160"
+},
+{
+"@score":"1",
+"@id":"1515161",
+"info":{"authors":{"author":[{"@pid":"286/6543","text":"Tobias Maltenberger"},{"@pid":"251/0103","text":"Ivan Ilic"},{"@pid":"246/2021","text":"Ilin Tolovski"},{"@pid":"10/760","text":"Tilmann Rabl"}]},"title":"Evaluating Multi-GPU Sorting with Modern Interconnects.","venue":"SIGMOD Conference","pages":"1795-1809","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MaltenbergerITR22","doi":"10.1145/3514221.3517842","ee":"https://doi.org/10.1145/3514221.3517842","url":"https://dblp.org/rec/conf/sigmod/MaltenbergerITR22"},
+"url":"URL#1515161"
+},
+{
+"@score":"1",
+"@id":"1515162",
+"info":{"authors":{"author":[{"@pid":"127/6228","text":"Riccardo Mancini"},{"@pid":"123/5326","text":"Srinivas Karthik"},{"@pid":"131/6284","text":"Bikash Chandra"},{"@pid":"313/5108","text":"Vasilis Mageirakos"},{"@pid":"a/AnastassiaAilamaki","text":"Anastasia Ailamaki"}]},"title":"Efficient Massively Parallel Join Optimization for Large Queries.","venue":"SIGMOD Conference","pages":"122-135","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ManciniKCMA22","doi":"10.1145/3514221.3517871","ee":"https://doi.org/10.1145/3514221.3517871","url":"https://dblp.org/rec/conf/sigmod/ManciniKCMA22"},
+"url":"URL#1515162"
+},
+{
+"@score":"1",
+"@id":"1515163",
+"info":{"authors":{"author":[{"@pid":"322/1490","text":"Idan Meyuhas"},{"@pid":"290/1413","text":"Aviv Ben-Arie"},{"@pid":"49/3540","text":"Yair Horesh"},{"@pid":"98/6876","text":"Daniel Deutch"}]},"title":"CFDB: Machine Learning Model Analysis via Databases of CounterFactuals.","venue":"SIGMOD Conference","pages":"2401-2404","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MeyuhasBHD22","doi":"10.1145/3514221.3520162","ee":"https://doi.org/10.1145/3514221.3520162","url":"https://dblp.org/rec/conf/sigmod/MeyuhasBHD22"},
+"url":"URL#1515163"
+},
+{
+"@score":"1",
+"@id":"1515164",
+"info":{"authors":{"author":[{"@pid":"243/2364","text":"Xupeng Miao"},{"@pid":"161/3927-1","text":"Yining Shi 0001"},{"@pid":"04/1131-4","text":"Hailin Zhang 0004"},{"@pid":"76/1584","text":"Xin Zhang"},{"@pid":"295/3397","text":"Xiaonan Nie"},{"@pid":"90/5587-1","text":"Zhi Yang 0001"},{"@pid":"55/5031","text":"Bin Cui 0001"}]},"title":"HET-GMP: A Graph-based System Approach to Scaling Large Embedding Model Training.","venue":"SIGMOD Conference","pages":"470-480","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MiaoSZZNY022","doi":"10.1145/3514221.3517902","ee":"https://doi.org/10.1145/3514221.3517902","url":"https://dblp.org/rec/conf/sigmod/MiaoSZZNY022"},
+"url":"URL#1515164"
+},
+{
+"@score":"1",
+"@id":"1515165",
+"info":{"authors":{"author":[{"@pid":"322/1627","text":"Elena Milkai"},{"@pid":"176/4991","text":"Yannis Chronis"},{"@pid":"212/9589","text":"Kevin P. Gaffney"},{"@pid":"241/5293","text":"Zhihan Guo"},{"@pid":"p/JMPatel","text":"Jignesh M. Patel"},{"@pid":"126/6015","text":"Xiangyao Yu"}]},"title":"How Good is My HTAP System?","venue":"SIGMOD Conference","pages":"1810-1824","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MilkaiCGGPY22","doi":"10.1145/3514221.3526148","ee":"https://doi.org/10.1145/3514221.3526148","url":"https://dblp.org/rec/conf/sigmod/MilkaiCGGPY22"},
+"url":"URL#1515165"
+},
+{
+"@score":"1",
+"@id":"1515166",
+"info":{"authors":{"author":[{"@pid":"188/1128","text":"Bonaventura Del Monte"},{"@pid":"142/9136","text":"Steffen Zeuch"},{"@pid":"10/760","text":"Tilmann Rabl"},{"@pid":"m/VMarkl","text":"Volker Markl"}]},"title":"Rethinking Stateful Stream Processing with RDMA.","venue":"SIGMOD Conference","pages":"1078-1092","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/MonteZRM22","doi":"10.1145/3514221.3517826","ee":"https://doi.org/10.1145/3514221.3517826","url":"https://dblp.org/rec/conf/sigmod/MonteZRM22"},
+"url":"URL#1515166"
+},
+{
+"@score":"1",
+"@id":"1515167",
+"info":{"authors":{"author":[{"@pid":"182/0250","text":"Supun Nakandala"},{"@pid":"30/4308-1","text":"Arun Kumar 0001"}]},"title":"Nautilus: An Optimized System for Deep Transfer Learning over Evolving Training Datasets.","venue":"SIGMOD Conference","pages":"506-520","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Nakandala022","doi":"10.1145/3514221.3517846","ee":"https://doi.org/10.1145/3514221.3517846","url":"https://dblp.org/rec/conf/sigmod/Nakandala022"},
+"url":"URL#1515167"
+},
+{
+"@score":"1",
+"@id":"1515168",
+"info":{"authors":{"author":[{"@pid":"n/VivekRNarasayya","text":"Vivek R. Narasayya"},{"@pid":"c/SurajitChaudhuri","text":"Surajit Chaudhuri"}]},"title":"Multi-Tenant Cloud Data Services: State-of-the-Art, Challenges and Opportunities.","venue":"SIGMOD Conference","pages":"2465-2473","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/NarasayyaC22","doi":"10.1145/3514221.3522566","ee":"https://doi.org/10.1145/3514221.3522566","url":"https://dblp.org/rec/conf/sigmod/NarasayyaC22"},
+"url":"URL#1515168"
+},
+{
+"@score":"1",
+"@id":"1515169",
+"info":{"authors":{"author":[{"@pid":"23/7274","text":"Fatemeh Nargesian"},{"@pid":"04/7892","text":"Abolfazl Asudeh"},{"@pid":"j/HVJagadish","text":"H. V. Jagadish"}]},"title":"Responsible Data Integration: Next-generation Challenges.","venue":"SIGMOD Conference","pages":"2458-2464","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/NargesianAJ22","doi":"10.1145/3514221.3522567","ee":"https://doi.org/10.1145/3514221.3522567","url":"https://dblp.org/rec/conf/sigmod/NargesianAJ22"},
+"url":"URL#1515169"
+},
+{
+"@score":"1",
+"@id":"1515170",
+"info":{"authors":{"author":[{"@pid":"294/1144","text":"Sepideh Nikookar"},{"@pid":"294/1525","text":"Paras Sakharkar"},{"@pid":"319/7790","text":"Sathyanarayanan Somasunder"},{"@pid":"97/3301","text":"Senjuti Basu Roy"},{"@pid":"153/7368","text":"Adam Bienkowski"},{"@pid":"322/1543","text":"Matthew Macesker"},{"@pid":"37/3815","text":"Krishna R. Pattipati"},{"@pid":"132/4857","text":"David Sidoti"}]},"title":"Cooperative Route Planning Framework for Multiple Distributed Assets in Maritime Applications.","venue":"SIGMOD Conference","pages":"1518-1527","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/NikookarSSRBMPS22","doi":"10.1145/3514221.3526131","ee":"https://doi.org/10.1145/3514221.3526131","url":"https://dblp.org/rec/conf/sigmod/NikookarSSRBMPS22"},
+"url":"URL#1515170"
+},
+{
+"@score":"1",
+"@id":"1515171",
+"info":{"authors":{"author":[{"@pid":"o/DanOlteanu","text":"Dan Olteanu"},{"@pid":"122/8055","text":"Nils Vortmeier"},{"@pid":"317/7033","text":"Dorde Zivanovic"}]},"title":"Givens QR Decomposition over Relational Databases.","venue":"SIGMOD Conference","pages":"1948-1961","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/OlteanuVZ22","doi":"10.1145/3514221.3526144","ee":"https://doi.org/10.1145/3514221.3526144","url":"https://dblp.org/rec/conf/sigmod/OlteanuVZ22"},
+"url":"URL#1515171"
+},
+{
+"@score":"1",
+"@id":"1515172",
+"info":{"authors":{"author":{"@pid":"322/1539","text":"Joshua Pan"}},"title":"Workload-Adaptive Filtering in Storage Engines.","venue":"SIGMOD Conference","pages":"2533-2535","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Pan22","doi":"10.1145/3514221.3520256","ee":"https://doi.org/10.1145/3514221.3520256","url":"https://dblp.org/rec/conf/sigmod/Pan22"},
+"url":"URL#1515172"
+},
+{
+"@score":"1",
+"@id":"1515173",
+"info":{"authors":{"author":[{"@pid":"131/4168-1","text":"Kwanghyun Park 0001"},{"@pid":"55/8723","text":"Karla Saur"},{"@pid":"274/6051","text":"Dalitso Banda"},{"@pid":"08/2832","text":"Rathijit Sen"},{"@pid":"49/10034","text":"Matteo Interlandi"},{"@pid":"59/7992","text":"Konstantinos Karanasos"}]},"title":"End-to-end Optimization of Machine Learning Prediction Queries.","venue":"SIGMOD Conference","pages":"587-601","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ParkSBSIK22","doi":"10.1145/3514221.3526141","ee":"https://doi.org/10.1145/3514221.3526141","url":"https://dblp.org/rec/conf/sigmod/ParkSBSIK22"},
+"url":"URL#1515173"
+},
+{
+"@score":"1",
+"@id":"1515175",
+"info":{"authors":{"author":[{"@pid":"311/0532","text":"Sophie Pavia"},{"@pid":"234/3089","text":"Rituparna Khan"},{"@pid":"07/10088","text":"Anna Pyayt"},{"@pid":"10/5842","text":"Michael N. Gubanov"}]},"title":"Simplifying Access to Large-scale Structured Datasets by Meta-Profiling with Scalable Training Set Enrichment.","venue":"SIGMOD Conference","pages":"2377-2380","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/PaviaKPG22","doi":"10.1145/3514221.3520156","ee":"https://doi.org/10.1145/3514221.3520156","url":"https://dblp.org/rec/conf/sigmod/PaviaKPG22"},
+"url":"URL#1515175"
+},
+{
+"@score":"1",
+"@id":"1515176",
+"info":{"authors":{"author":[{"@pid":"96/3089","text":"Jinglin Peng"},{"@pid":"46/3522","text":"Bolin Ding"},{"@pid":"39/7183-1","text":"Jiannan Wang 0001"},{"@pid":"80/1651-2","text":"Kai Zeng 0002"},{"@pid":"84/2644-1","text":"Jingren Zhou 0001"}]},"title":"One Size Does Not Fit All: A Bandit-Based Sampler Combination Framework with Theoretical Guarantees.","venue":"SIGMOD Conference","pages":"531-544","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/PengDW0Z22","doi":"10.1145/3514221.3517900","ee":"https://doi.org/10.1145/3514221.3517900","url":"https://dblp.org/rec/conf/sigmod/PengDW0Z22"},
+"url":"URL#1515176"
+},
+{
+"@score":"1",
+"@id":"1515177",
+"info":{"authors":{"author":[{"@pid":"264/1862","text":"Vibhor Porwal"},{"@pid":"64/3670","text":"Subrata Mitra"},{"@pid":"38/4998","text":"Fan Du"},{"@pid":"37/2666","text":"John Anderson"},{"@pid":"221/3418","text":"Nikhil Sheoran"},{"@pid":"179/2509","text":"Anup B. Rao"},{"@pid":"177/8902","text":"Tung Mai"},{"@pid":"322/1624","text":"Gautam Kowshik"},{"@pid":"322/1499","text":"Sapthotharan Nair"},{"@pid":"322/1465","text":"Sameeksha Arora"},{"@pid":"70/3053","text":"Saurabh Mahapatra"}]},"title":"Efficient Insights Discovery through Conditional Generative Model based Query Approximation.","venue":"SIGMOD Conference","pages":"2397-2400","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/PorwalMDASRMKNA22","doi":"10.1145/3514221.3520161","ee":"https://doi.org/10.1145/3514221.3520161","url":"https://dblp.org/rec/conf/sigmod/PorwalMDASRMKNA22"},
+"url":"URL#1515177"
+},
+{
+"@score":"1",
+"@id":"1515178",
+"info":{"authors":{"author":[{"@pid":"199/6324","text":"Romila Pradhan"},{"@pid":"225/3583","text":"Aditya Lahiri"},{"@pid":"136/7969","text":"Sainyam Galhotra"},{"@pid":"11/6446","text":"Babak Salimi"}]},"title":"Explainable AI: Foundations, Applications, Opportunities for Data Management Research.","venue":"SIGMOD Conference","pages":"2452-2457","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/PradhanLGS22","doi":"10.1145/3514221.3522564","ee":"https://doi.org/10.1145/3514221.3522564","url":"https://dblp.org/rec/conf/sigmod/PradhanLGS22"},
+"url":"URL#1515178"
+},
+{
+"@score":"1",
+"@id":"1515179",
+"info":{"authors":{"author":[{"@pid":"199/6324","text":"Romila Pradhan"},{"@pid":"295/3522","text":"Jiongli Zhu"},{"@pid":"09/3012","text":"Boris Glavic"},{"@pid":"11/6446","text":"Babak Salimi"}]},"title":"Interpretable Data-Based Explanations for Fairness Debugging.","venue":"SIGMOD Conference","pages":"247-261","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/PradhanZGS22","doi":"10.1145/3514221.3517886","ee":"https://doi.org/10.1145/3514221.3517886","url":"https://dblp.org/rec/conf/sigmod/PradhanZGS22"},
+"url":"URL#1515179"
+},
+{
+"@score":"1",
+"@id":"1515180",
+"info":{"authors":{"author":[{"@pid":"50/4","text":"Adam Prout"},{"@pid":"132/4018","text":"Szu-Po Wang"},{"@pid":"322/1408","text":"Joseph Victor"},{"@pid":"120/3775","text":"Zhou Sun"},{"@pid":"322/1626","text":"Yongzhu Li"},{"@pid":"82/1780","text":"Jack Chen"},{"@pid":"322/1663","text":"Evan Bergeron"},{"@pid":"69/6449","text":"Eric N. Hanson"},{"@pid":"185/4277","text":"Robert Walzer"},{"@pid":"125/1172","text":"Rodrigo Gomes"},{"@pid":"116/5167","text":"Nikita Shamgunov"}]},"title":"Cloud-Native Transactions and Analytics in SingleStore.","venue":"SIGMOD Conference","pages":"2340-2352","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ProutWVSLCBHWGS22","doi":"10.1145/3514221.3526055","ee":"https://doi.org/10.1145/3514221.3526055","url":"https://dblp.org/rec/conf/sigmod/ProutWVSLCBHWGS22"},
+"url":"URL#1515180"
+},
+{
+"@score":"1",
+"@id":"1515181",
+"info":{"authors":{"author":[{"@pid":"247/8081","text":"Kathy Razmadze"},{"@pid":"88/9060","text":"Yael Amsterdamer"},{"@pid":"147/1212","text":"Amit Somech"},{"@pid":"d/SBDavidson","text":"Susan B. Davidson"},{"@pid":"m/TovaMilo","text":"Tova Milo"}]},"title":"SubTab: Data Exploration with Informative Sub-Tables.","venue":"SIGMOD Conference","pages":"2369-2372","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/RazmadzeASDM22","doi":"10.1145/3514221.3520154","ee":"https://doi.org/10.1145/3514221.3520154","url":"https://dblp.org/rec/conf/sigmod/RazmadzeASDM22"},
+"url":"URL#1515181"
+},
+{
+"@score":"1",
+"@id":"1515182",
+"info":{"authors":{"author":{"@pid":"r/ChristopherRe","text":"Christopher Ré"}},"title":"Is Data Management the Beating Heart of AI Systems?","venue":"SIGMOD Conference","pages":"3","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Re22","doi":"10.1145/3514221.3523276","ee":"https://doi.org/10.1145/3514221.3523276","url":"https://dblp.org/rec/conf/sigmod/Re22"},
+"url":"URL#1515182"
+},
+{
+"@score":"1",
+"@id":"1515183",
+"info":{"authors":{"author":[{"@pid":"136/3467","text":"Xuebin Ren"},{"@pid":"09/6041","text":"Liang Shi"},{"@pid":"45/8097","text":"Weiren Yu"},{"@pid":"61/3032","text":"Shusen Yang"},{"@pid":"25/5509-1","text":"Cong Zhao 0001"},{"@pid":"25/3264","text":"Zongben Xu"}]},"title":"LDP-IDS: Local Differential Privacy for Infinite Data Streams.","venue":"SIGMOD Conference","pages":"1064-1077","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/RenSYYZX22","doi":"10.1145/3514221.3526190","ee":"https://doi.org/10.1145/3514221.3526190","url":"https://dblp.org/rec/conf/sigmod/RenSYYZX22"},
+"url":"URL#1515183"
+},
+{
+"@score":"1",
+"@id":"1515184",
+"info":{"authors":{"author":[{"@pid":"242/5179","text":"Alexander Renz-Wieland"},{"@pid":"32/5357","text":"Rainer Gemulla"},{"@pid":"65/1457","text":"Zoi Kaoudi"},{"@pid":"m/VMarkl","text":"Volker Markl"}]},"title":"NuPS: A Parameter Server for Machine Learning with Non-Uniform Parameter Access.","venue":"SIGMOD Conference","pages":"481-495","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Renz-WielandGKM22","doi":"10.1145/3514221.3517860","ee":"https://doi.org/10.1145/3514221.3517860","url":"https://dblp.org/rec/conf/sigmod/Renz-WielandGKM22"},
+"url":"URL#1515184"
+},
+{
+"@score":"1",
+"@id":"1515185",
+"info":{"authors":{"author":[{"@pid":"133/8711","text":"Manuel Rigger"},{"@pid":"86/9726","text":"Pinar Tözün"}]},"title":"DBTest &apos;22: 9th International Workshop on Testing Database Systems.","venue":"SIGMOD Conference","pages":"2554-2555","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/RiggerT22","doi":"10.1145/3514221.3524078","ee":"https://doi.org/10.1145/3514221.3524078","url":"https://dblp.org/rec/conf/sigmod/RiggerT22"},
+"url":"URL#1515185"
+},
+{
+"@score":"1",
+"@id":"1515187",
+"info":{"authors":{"author":[{"@pid":"194/4648","text":"Pingcheng Ruan"},{"@pid":"k/YaronKanza","text":"Yaron Kanza"},{"@pid":"o/BengChinOoi","text":"Beng Chin Ooi"},{"@pid":"s/DiveshSrivastava","text":"Divesh Srivastava"}]},"title":"LedgerView: Access-Control Views on Hyperledger Fabric.","venue":"SIGMOD Conference","pages":"2218-2231","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/RuanKOS22","doi":"10.1145/3514221.3526046","ee":"https://doi.org/10.1145/3514221.3526046","url":"https://dblp.org/rec/conf/sigmod/RuanKOS22"},
+"url":"URL#1515187"
+},
+{
+"@score":"1",
+"@id":"1515188",
+"info":{"authors":{"author":[{"@pid":"16/8981","text":"Ibrahim Sabek"},{"@pid":"322/1566","text":"Tenzin Samten Ukyab"},{"@pid":"26/6037","text":"Tim Kraska"}]},"title":"LSched: A Workload-Aware Learned Query Scheduler for Analytical Database Systems.","venue":"SIGMOD Conference","pages":"1228-1242","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SabekUK22","doi":"10.1145/3514221.3526158","ee":"https://doi.org/10.1145/3514221.3526158","url":"https://dblp.org/rec/conf/sigmod/SabekUK22"},
+"url":"URL#1515188"
+},
+{
+"@score":"1",
+"@id":"1515189",
+"info":{"authors":{"author":[{"@pid":"158/4862","text":"Subhadeep Sarkar"},{"@pid":"82/7402","text":"Manos Athanassoulis"}]},"title":"Dissecting, Designing, and Optimizing LSM-based Data Stores.","venue":"SIGMOD Conference","pages":"2489-2497","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SarkarA22","doi":"10.1145/3514221.3522563","ee":"https://doi.org/10.1145/3514221.3522563","url":"https://dblp.org/rec/conf/sigmod/SarkarA22"},
+"url":"URL#1515189"
+},
+{
+"@score":"1",
+"@id":"1515190",
+"info":{"authors":{"author":[{"@pid":"158/4862","text":"Subhadeep Sarkar"},{"@pid":"14/7729","text":"Kaijie Chen"},{"@pid":"149/1342","text":"Zichen Zhu"},{"@pid":"82/7402","text":"Manos Athanassoulis"}]},"title":"Compactionary: A Dictionary for LSM Compactions.","venue":"SIGMOD Conference","pages":"2429-2432","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SarkarCZA22","doi":"10.1145/3514221.3520169","ee":"https://doi.org/10.1145/3514221.3520169","url":"https://dblp.org/rec/conf/sigmod/SarkarCZA22"},
+"url":"URL#1515190"
+},
+{
+"@score":"1",
+"@id":"1515191",
+"info":{"authors":{"author":{"@pid":"315/9085","text":"Manuel Schönberger"}},"title":"Applicability of Quantum Computing on Database Query Optimization.","venue":"SIGMOD Conference","pages":"2512-2514","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Schonberger22","doi":"10.1145/3514221.3520257","ee":"https://doi.org/10.1145/3514221.3520257","url":"https://dblp.org/rec/conf/sigmod/Schonberger22"},
+"url":"URL#1515191"
+},
+{
+"@score":"1",
+"@id":"1515192",
+"info":{"authors":{"author":[{"@pid":"149/5876","text":"Anil Shanbhag"},{"@pid":"236/7075","text":"Bobbi W. Yogatama"},{"@pid":"126/6015","text":"Xiangyao Yu"},{"@pid":"m/SamuelMadden","text":"Samuel Madden 0001"}]},"title":"Tile-based Lightweight Integer Compression in GPU.","venue":"SIGMOD Conference","pages":"1390-1403","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ShanbhagYYM22","doi":"10.1145/3514221.3526132","ee":"https://doi.org/10.1145/3514221.3526132","url":"https://dblp.org/rec/conf/sigmod/ShanbhagYYM22"},
+"url":"URL#1515192"
+},
+{
+"@score":"1",
+"@id":"1515194",
+"info":{"authors":{"author":{"@pid":"221/3418","text":"Nikhil Sheoran"}},"title":"DeepOLA: Online Aggregation for Deeply Nested Queries.","venue":"SIGMOD Conference","pages":"2527-2529","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Sheoran22","doi":"10.1145/3514221.3520249","ee":"https://doi.org/10.1145/3514221.3520249","url":"https://dblp.org/rec/conf/sigmod/Sheoran22"},
+"url":"URL#1515194"
+},
+{
+"@score":"1",
+"@id":"1515196",
+"info":{"authors":{"author":[{"@pid":"179/2728","text":"Tarique Siddiqui"},{"@pid":"211/2846","text":"Saehan Jo"},{"@pid":"29/85","text":"Wentao Wu 0001"},{"@pid":"09/404-1","text":"Chi Wang 0001"},{"@pid":"n/VivekRNarasayya","text":"Vivek R. Narasayya"},{"@pid":"c/SurajitChaudhuri","text":"Surajit Chaudhuri"}]},"title":"ISUM: Efficiently Compressing Large and Complex Workloads for Scalable Index Tuning.","venue":"SIGMOD Conference","pages":"660-673","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SiddiquiJ00NC22","doi":"10.1145/3514221.3526152","ee":"https://doi.org/10.1145/3514221.3526152","url":"https://dblp.org/rec/conf/sigmod/SiddiquiJ00NC22"},
+"url":"URL#1515196"
+},
+{
+"@score":"1",
+"@id":"1515197",
+"info":{"authors":{"author":[{"@pid":"264/0336","text":"Hadar Sivan"},{"@pid":"117/8009","text":"Moshe Gabel"},{"@pid":"s/AssafSchuster","text":"Assaf Schuster"}]},"title":"AutoMon: Automatic Distributed Monitoring for Arbitrary Multivariate Functions.","venue":"SIGMOD Conference","pages":"310-324","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SivanGS22","doi":"10.1145/3514221.3517866","ee":"https://doi.org/10.1145/3514221.3517866","url":"https://dblp.org/rec/conf/sigmod/SivanGS22"},
+"url":"URL#1515197"
+},
+{
+"@score":"1",
+"@id":"1515198",
+"info":{"authors":{"author":[{"@pid":"129/4071","text":"Yuanfeng Song"},{"@pid":"w/RaymondChiWingWong","text":"Raymond Chi-Wing Wong"},{"@pid":"251/8414","text":"Xuefang Zhao"},{"@pid":"50/6288","text":"Di Jiang"}]},"title":"VoiceQuerySystem: A Voice-driven Database Querying System Using Natural Language Questions.","venue":"SIGMOD Conference","pages":"2385-2388","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SongWZJ22","doi":"10.1145/3514221.3520158","ee":"https://doi.org/10.1145/3514221.3520158","url":"https://dblp.org/rec/conf/sigmod/SongWZJ22"},
+"url":"URL#1515198"
+},
+{
+"@score":"1",
+"@id":"1515199",
+"info":{"authors":{"author":{"@pid":"255/9132","text":"Mihail Stoian"}},"title":"Concurrent Link-Cut Trees.","venue":"SIGMOD Conference","pages":"2503-2505","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Stoian22","doi":"10.1145/3514221.3520247","ee":"https://doi.org/10.1145/3514221.3520247","url":"https://dblp.org/rec/conf/sigmod/Stoian22"},
+"url":"URL#1515199"
+},
+{
+"@score":"1",
+"@id":"1515200",
+"info":{"authors":{"author":[{"@pid":"44/2973","text":"Yoshihiko Suhara"},{"@pid":"76/7842","text":"Jinfeng Li"},{"@pid":"52/4954-1","text":"Yuliang Li 0001"},{"@pid":"21/802","text":"Dan Zhang"},{"@pid":"74/20","text":"Çagatay Demiralp"},{"@pid":"65/4423-111","text":"Chen Chen 0111"},{"@pid":"t/WangChiewTan","text":"Wang-Chiew Tan"}]},"title":"Annotating Columns with Pre-trained Language Models.","venue":"SIGMOD Conference","pages":"1493-1503","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SuharaL0ZDCT22","doi":"10.1145/3514221.3517906","ee":"https://doi.org/10.1145/3514221.3517906","url":"https://dblp.org/rec/conf/sigmod/SuharaL0ZDCT22"},
+"url":"URL#1515200"
+},
+{
+"@score":"1",
+"@id":"1515201",
+"info":{"authors":{"author":[{"@pid":"153/2461","text":"Luming Sun"},{"@pid":"76/1774","text":"Tao Ji"},{"@pid":"03/6827-1","text":"Cuiping Li 0001"},{"@pid":"52/4150-1","text":"Hong Chen 0001"}]},"title":"DeepO: A Learned Query Optimizer.","venue":"SIGMOD Conference","pages":"2421-2424","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SunJ0C22","doi":"10.1145/3514221.3520167","ee":"https://doi.org/10.1145/3514221.3520167","url":"https://dblp.org/rec/conf/sigmod/SunJ0C22"},
+"url":"URL#1515201"
+},
+{
+"@score":"1",
+"@id":"1515202",
+"info":{"authors":{"author":[{"@pid":"55/8637-1","text":"Yahui Sun 0001"},{"@pid":"35/6569","text":"Shuai Ma 0001"},{"@pid":"55/5031","text":"Bin Cui 0001"}]},"title":"Hunting Temporal Bumps in Graphs with Dynamic Vertex Properties.","venue":"SIGMOD Conference","pages":"874-888","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SunM022","doi":"10.1145/3514221.3517859","ee":"https://doi.org/10.1145/3514221.3517859","url":"https://dblp.org/rec/conf/sigmod/SunM022"},
+"url":"URL#1515202"
+},
+{
+"@score":"1",
+"@id":"1515203",
+"info":{"authors":{"author":[{"@pid":"62/3689-27","text":"Yu Sun 0027"},{"@pid":"35/2837-5","text":"Zheng Zheng 0005"},{"@pid":"20/3883","text":"Shaoxu Song"},{"@pid":"66/2556","text":"Fei Chiang"}]},"title":"Confidence Bounded Replica Currency Estimation.","venue":"SIGMOD Conference","pages":"730-743","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/SunZSC22","doi":"10.1145/3514221.3517852","ee":"https://doi.org/10.1145/3514221.3517852","url":"https://dblp.org/rec/conf/sigmod/SunZSC22"},
+"url":"URL#1515203"
+},
+{
+"@score":"1",
+"@id":"1515204",
+"info":{"authors":{"author":[{"@pid":"71/2250","text":"Justin Talbot"},{"@pid":"08/8412","text":"Daniel Ting"}]},"title":"Statistical Schema Learning with Occam&apos;s Razor.","venue":"SIGMOD Conference","pages":"176-189","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TalbotT22","doi":"10.1145/3514221.3526174","ee":"https://doi.org/10.1145/3514221.3526174","url":"https://dblp.org/rec/conf/sigmod/TalbotT22"},
+"url":"URL#1515204"
+},
+{
+"@score":"1",
+"@id":"1515205",
+"info":{"authors":{"author":[{"@pid":"213/9869","text":"Jiawei Tang"},{"@pid":"185/9921","text":"Yuyu Luo"},{"@pid":"o/MouradOuzzani","text":"Mourad Ouzzani"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"13/3715","text":"Hongyang Chen"}]},"title":"Sevi: Speech-to-Visualization through Neural Machine Translation.","venue":"SIGMOD Conference","pages":"2353-2356","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TangLOLC22","doi":"10.1145/3514221.3520150","ee":"https://doi.org/10.1145/3514221.3520150","url":"https://dblp.org/rec/conf/sigmod/TangLOLC22"},
+"url":"URL#1515205"
+},
+{
+"@score":"1",
+"@id":"1515206",
+"info":{"authors":{"author":[{"@pid":"286/8472","text":"Xiu Tang"},{"@pid":"30/1186","text":"Sai Wu"},{"@pid":"71/5333","text":"Mingli Song"},{"@pid":"80/9726","text":"Shanshan Ying"},{"@pid":"l/FeifeiLi","text":"Feifei Li 0001"},{"@pid":"67/6383-1","text":"Gang Chen 0001"}]},"title":"PreQR: Pre-training Representation for SQL Understanding.","venue":"SIGMOD Conference","pages":"204-216","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TangWSY0022","doi":"10.1145/3514221.3517878","ee":"https://doi.org/10.1145/3514221.3517878","url":"https://dblp.org/rec/conf/sigmod/TangWSY0022"},
+"url":"URL#1515206"
+},
+{
+"@score":"1",
+"@id":"1515207",
+"info":{"authors":{"author":[{"@pid":"236/4348","text":"Chuzhe Tang"},{"@pid":"50/9117","text":"Zhaoguo Wang"},{"@pid":"37/4356","text":"Xiaodong Zhang"},{"@pid":"322/1562","text":"Qianmian Yu"},{"@pid":"86/680","text":"Binyu Zang"},{"@pid":"96/5680","text":"Haibing Guan"},{"@pid":"31/6601-1","text":"Haibo Chen 0001"}]},"title":"Ad Hoc Transactions in Web Applications: The Good, the Bad, and the Ugly.","venue":"SIGMOD Conference","pages":"4-18","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TangWZYZG022","doi":"10.1145/3514221.3526120","ee":"https://doi.org/10.1145/3514221.3526120","url":"https://dblp.org/rec/conf/sigmod/TangWZYZG022"},
+"url":"URL#1515207"
+},
+{
+"@score":"1",
+"@id":"1515208",
+"info":{"authors":{"author":[{"@pid":"311/3969","text":"Jeffrey Tao"},{"@pid":"134/7203","text":"Yiru Chen"},{"@pid":"41/3679","text":"Eugene Wu 0002"}]},"title":"Demonstration of PI2: Interactive Visualization Interface Generation for SQL Analysis in Notebook.","venue":"SIGMOD Conference","pages":"2365-2368","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TaoC022","doi":"10.1145/3514221.3520153","ee":"https://doi.org/10.1145/3514221.3520153","url":"https://dblp.org/rec/conf/sigmod/TaoC022"},
+"url":"URL#1515208"
+},
+{
+"@score":"1",
+"@id":"1515209",
+"info":{"authors":{"author":[{"@pid":"206/7118","text":"Konstantin Taranov"},{"@pid":"116/9618","text":"Steve Byan"},{"@pid":"36/5512","text":"Virendra J. Marathe"},{"@pid":"16/3869","text":"Torsten Hoefler"}]},"title":"KafkaDirect: Zero-copy Data Access for Apache Kafka over RDMA Networks.","venue":"SIGMOD Conference","pages":"2191-2204","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TaranovBMH22","doi":"10.1145/3514221.3526056","ee":"https://doi.org/10.1145/3514221.3526056","url":"https://dblp.org/rec/conf/sigmod/TaranovBMH22"},
+"url":"URL#1515209"
+},
+{
+"@score":"1",
+"@id":"1515210",
+"info":{"authors":{"author":[{"@pid":"162/8839","text":"David Tench"},{"@pid":"296/1784","text":"Evan West"},{"@pid":"35/9166","text":"Victor Zhang"},{"@pid":"b/MichaelABender","text":"Michael A. Bender"},{"@pid":"317/5107","text":"Abiyaz Chowdhury"},{"@pid":"317/5485","text":"J. Ahmed Dellas"},{"@pid":"f/MartinFarachColton","text":"Martin Farach-Colton"},{"@pid":"317/5487","text":"Tyler Seip"},{"@pid":"248/9290","text":"Kenny Zhang"}]},"title":"GraphZeppelin: Storage-Friendly Sketching for Connected Components on Dynamic Graph Streams.","venue":"SIGMOD Conference","pages":"325-339","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TenchWZBCDFSZ22","doi":"10.1145/3514221.3526146","ee":"https://doi.org/10.1145/3514221.3526146","url":"https://dblp.org/rec/conf/sigmod/TenchWZBCDFSZ22"},
+"url":"URL#1515210"
+},
+{
+"@score":"1",
+"@id":"1515211",
+"info":{"authors":{"author":{"@pid":"08/8412","text":"Daniel Ting"}},"title":"Adaptive Threshold Sampling.","venue":"SIGMOD Conference","pages":"1612-1625","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Ting22","doi":"10.1145/3514221.3526122","ee":"https://doi.org/10.1145/3514221.3526122","url":"https://dblp.org/rec/conf/sigmod/Ting22"},
+"url":"URL#1515211"
+},
+{
+"@score":"1",
+"@id":"1515212",
+"info":{"authors":{"author":{"@pid":"85/9079","text":"Immanuel Trummer"}},"title":"DB-BERT: A Database Tuning Tool that &quot;Reads the Manual&quot;.","venue":"SIGMOD Conference","pages":"190-203","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Trummer22","doi":"10.1145/3514221.3517843","ee":"https://doi.org/10.1145/3514221.3517843","url":"https://dblp.org/rec/conf/sigmod/Trummer22"},
+"url":"URL#1515212"
+},
+{
+"@score":"1",
+"@id":"1515213",
+"info":{"authors":{"author":{"@pid":"85/9079","text":"Immanuel Trummer"}},"title":"Demonstrating DB-BERT: A Database Tuning Tool that &quot;Reads&quot; the Manual.","venue":"SIGMOD Conference","pages":"2437-2440","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Trummer22a","doi":"10.1145/3514221.3520171","ee":"https://doi.org/10.1145/3514221.3520171","url":"https://dblp.org/rec/conf/sigmod/Trummer22a"},
+"url":"URL#1515213"
+},
+{
+"@score":"1",
+"@id":"1515214",
+"info":{"authors":{"author":[{"@pid":"227/8305","text":"Jianhong Tu"},{"@pid":"78/4413","text":"Ju Fan"},{"@pid":"27/104-1","text":"Nan Tang 0001"},{"@pid":"95/4442","text":"Peng Wang"},{"@pid":"181/5689","text":"Chengliang Chai"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"48/1585","text":"Ruixue Fan"},{"@pid":"47/3542-1","text":"Xiaoyong Du 0001"}]},"title":"Domain Adaptation for Deep Entity Resolution.","venue":"SIGMOD Conference","pages":"443-457","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/TuF0WC0F022","doi":"10.1145/3514221.3517870","ee":"https://doi.org/10.1145/3514221.3517870","url":"https://dblp.org/rec/conf/sigmod/TuF0WC0F022"},
+"url":"URL#1515214"
+},
+{
+"@score":"1",
+"@id":"1515215",
+"info":{"authors":{"author":[{"@pid":"290/8217","text":"Harshavardhan Unnibhavi"},{"@pid":"255/2388","text":"David Cerdeira"},{"@pid":"132/0327","text":"Antonio Barbalace"},{"@pid":"07/967-1","text":"Nuno Santos 0001"},{"@pid":"35/8319","text":"Pramod Bhatotia"}]},"title":"Secure and Policy-Compliant Query Processing on Heterogeneous Computational Storage Architectures.","venue":"SIGMOD Conference","pages":"1462-1477","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/UnnibhaviCB0B22","doi":"10.1145/3514221.3517913","ee":"https://doi.org/10.1145/3514221.3517913","url":"https://dblp.org/rec/conf/sigmod/UnnibhaviCB0B22"},
+"url":"URL#1515215"
+},
+{
+"@score":"1",
+"@id":"1515216",
+"info":{"authors":{"author":[{"@pid":"266/5858","text":"Nathan VanBenschoten"},{"@pid":"322/1413","text":"Arul Ajmani"},{"@pid":"322/1640","text":"Marcus Gartner"},{"@pid":"266/5861","text":"Andrei Matei"},{"@pid":"280/0890","text":"Aayush Shah"},{"@pid":"266/5756","text":"Irfan Sharif"},{"@pid":"s/AlexanderShraer","text":"Alexander Shraer"},{"@pid":"322/1505","text":"Adam Storm"},{"@pid":"147/1198","text":"Rebecca Taft"},{"@pid":"46/7898","text":"Oliver Tan"},{"@pid":"31/7965","text":"Andy Woods"},{"@pid":"322/1567","text":"Peyton Walters"}]},"title":"Enabling the Next Generation of Multi-Region Applications with CockroachDB.","venue":"SIGMOD Conference","pages":"2312-2325","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/VanBenschotenAG22","doi":"10.1145/3514221.3526053","ee":"https://doi.org/10.1145/3514221.3526053","url":"https://dblp.org/rec/conf/sigmod/VanBenschotenAG22"},
+"url":"URL#1515216"
+},
+{
+"@score":"1",
+"@id":"1515217",
+"info":{"authors":{"author":[{"@pid":"157/0004","text":"Enzo Veltri"},{"@pid":"32/5873","text":"Donatello Santoro"},{"@pid":"133/4901","text":"Gilbert Badaro"},{"@pid":"09/5035-2","text":"Mohammed Saeed 0002"},{"@pid":"p/PaoloPapotti","text":"Paolo Papotti"}]},"title":"Pythia: Unsupervised Generation of Ambiguous Textual Claims from Relational Data.","venue":"SIGMOD Conference","pages":"2409-2412","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/VeltriSB0P22","doi":"10.1145/3514221.3520164","ee":"https://doi.org/10.1145/3514221.3520164","url":"https://dblp.org/rec/conf/sigmod/VeltriSB0P22"},
+"url":"URL#1515217"
+},
+{
+"@score":"1",
+"@id":"1515218",
+"info":{"authors":{"author":[{"@pid":"249/4023","text":"Gerardo Vitagliano"},{"@pid":"322/1411","text":"Lucas Reisener"},{"@pid":"18/2122-1","text":"Lan Jiang 0001"},{"@pid":"238/7611","text":"Mazhar Hameed 0001"},{"@pid":"n/FelixNaumann","text":"Felix Naumann"}]},"title":"Mondrian: Spreadsheet Layout Detection.","venue":"SIGMOD Conference","pages":"2361-2364","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/VitaglianoR00N22","doi":"10.1145/3514221.3520152","ee":"https://doi.org/10.1145/3514221.3520152","url":"https://dblp.org/rec/conf/sigmod/VitaglianoR00N22"},
+"url":"URL#1515218"
+},
+{
+"@score":"1",
+"@id":"1515219",
+"info":{"authors":{"author":[{"@pid":"220/6872","text":"Adrian Vogelsgesang"},{"@pid":"n/ThomasNeumann","text":"Thomas Neumann 0001"},{"@pid":"10/11150","text":"Viktor Leis"},{"@pid":"k/AlfonsKemper","text":"Alfons Kemper"}]},"title":"Efficient Evaluation of Arbitrarily-Framed Holistic SQL Aggregates and Window Functions.","venue":"SIGMOD Conference","pages":"1243-1256","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Vogelsgesang0LK22","doi":"10.1145/3514221.3526184","ee":"https://doi.org/10.1145/3514221.3526184","url":"https://dblp.org/rec/conf/sigmod/Vogelsgesang0LK22"},
+"url":"URL#1515219"
+},
+{
+"@score":"1",
+"@id":"1515221",
+"info":{"authors":{"author":[{"@pid":"76/2435","text":"Chenghong Wang"},{"@pid":"182/2406","text":"Johes Bater"},{"@pid":"143/4459","text":"Kartik Nayak"},{"@pid":"m/AMachanavajjhala","text":"Ashwin Machanavajjhala"}]},"title":"IncShrink: Architecting Efficient Outsourced Databases using Incremental MPC and Differential Privacy.","venue":"SIGMOD Conference","pages":"818-832","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangBNM22","doi":"10.1145/3514221.3526151","ee":"https://doi.org/10.1145/3514221.3526151","url":"https://dblp.org/rec/conf/sigmod/WangBNM22"},
+"url":"URL#1515221"
+},
+{
+"@score":"1",
+"@id":"1515222",
+"info":{"authors":{"author":[{"@pid":"242/5152","text":"Hanchen Wang 0001"},{"@pid":"44/594","text":"Rong Hu"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"51/5585","text":"Lu Qin 0001"},{"@pid":"w/WeiWang11","text":"Wei Wang 0011"},{"@pid":"98/5684-1","text":"Wenjie Zhang 0001"}]},"title":"Neural Subgraph Counting with Wasserstein Estimator.","venue":"SIGMOD Conference","pages":"160-175","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangH000022","doi":"10.1145/3514221.3526163","ee":"https://doi.org/10.1145/3514221.3526163","url":"https://dblp.org/rec/conf/sigmod/WangH000022"},
+"url":"URL#1515222"
+},
+{
+"@score":"1",
+"@id":"1515223",
+"info":{"authors":{"author":[{"@pid":"185/9964","text":"Yisu Remy Wang"},{"@pid":"144/7839","text":"Mahmoud Abo Khamis"},{"@pid":"n/HungQNgo","text":"Hung Q. Ngo 0001"},{"@pid":"26/5252","text":"Reinhard Pichler"},{"@pid":"s/DanSuciu","text":"Dan Suciu"}]},"title":"Optimizing Recursive Queries with Progam Synthesis.","venue":"SIGMOD Conference","pages":"79-93","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangK0PS22","doi":"10.1145/3514221.3517827","ee":"https://doi.org/10.1145/3514221.3517827","url":"https://dblp.org/rec/conf/sigmod/WangK0PS22"},
+"url":"URL#1515223"
+},
+{
+"@score":"1",
+"@id":"1515224",
+"info":{"authors":{"author":[{"@pid":"97/6505-31","text":"Qing Wang 0031"},{"@pid":"96/8005","text":"Youyou Lu"},{"@pid":"60/3690","text":"Jiwu Shu"}]},"title":"Sherman: A Write-Optimized Distributed B+Tree Index on Disaggregated Memory.","venue":"SIGMOD Conference","pages":"1033-1048","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangLS22","doi":"10.1145/3514221.3517824","ee":"https://doi.org/10.1145/3514221.3517824","url":"https://dblp.org/rec/conf/sigmod/WangLS22"},
+"url":"URL#1515224"
+},
+{
+"@score":"1",
+"@id":"1515225",
+"info":{"authors":{"author":[{"@pid":"19/4423","text":"Zhiqi Wang"},{"@pid":"08/6845","text":"Zili Shao"}]},"title":"TimeUnion: An Efficient Architecture with Unified Data Model for Timeseries Management Systems on Hybrid Cloud Storage.","venue":"SIGMOD Conference","pages":"1418-1432","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangS22","doi":"10.1145/3514221.3526175","ee":"https://doi.org/10.1145/3514221.3526175","url":"https://dblp.org/rec/conf/sigmod/WangS22"},
+"url":"URL#1515225"
+},
+{
+"@score":"1",
+"@id":"1515226",
+"info":{"authors":{"author":[{"@pid":"313/4643","text":"Zhizhi Wang"},{"@pid":"264/2659","text":"Chaoji Zuo"},{"@pid":"71/8700-1","text":"Dong Deng 0001"}]},"title":"TxtAlign: Efficient Near-Duplicate Text Alignment Search via Bottom-k Sketches for Plagiarism Detection.","venue":"SIGMOD Conference","pages":"1146-1159","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangZD22","doi":"10.1145/3514221.3526178","ee":"https://doi.org/10.1145/3514221.3526178","url":"https://dblp.org/rec/conf/sigmod/WangZD22"},
+"url":"URL#1515226"
+},
+{
+"@score":"1",
+"@id":"1515227",
+"info":{"authors":{"author":[{"@pid":"260/4305","text":"Qiange Wang"},{"@pid":"66/2444","text":"Yanfeng Zhang"},{"@pid":"w/HaoWang-2","text":"Hao Wang 0002"},{"@pid":"198/9084","text":"Chaoyi Chen"},{"@pid":"37/4356-1","text":"Xiaodong Zhang 0001"},{"@pid":"49/6363","text":"Ge Yu 0001"}]},"title":"NeutronStar: Distributed GNN Training with Hybrid Dependency Management.","venue":"SIGMOD Conference","pages":"1301-1315","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangZWCZY22","doi":"10.1145/3514221.3526134","ee":"https://doi.org/10.1145/3514221.3526134","url":"https://dblp.org/rec/conf/sigmod/WangZWCZY22"},
+"url":"URL#1515227"
+},
+{
+"@score":"1",
+"@id":"1515228",
+"info":{"authors":{"author":[{"@pid":"50/9117","text":"Zhaoguo Wang"},{"@pid":"67/2535","text":"Zhou Zhou"},{"@pid":"322/1431","text":"Yicun Yang"},{"@pid":"251/1861","text":"Haoran Ding"},{"@pid":"259/0380","text":"Gansen Hu"},{"@pid":"99/1757","text":"Ding Ding"},{"@pid":"236/4348","text":"Chuzhe Tang"},{"@pid":"31/6601-1","text":"Haibo Chen 0001"},{"@pid":"79/572-1","text":"Jinyang Li 0001"}]},"title":"WeTune: Automatic Discovery and Verification of Query Rewrite Rules.","venue":"SIGMOD Conference","pages":"94-107","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WangZYDHDT0022","doi":"10.1145/3514221.3526125","ee":"https://doi.org/10.1145/3514221.3526125","url":"https://dblp.org/rec/conf/sigmod/WangZYDHDT0022"},
+"url":"URL#1515228"
+},
+{
+"@score":"1",
+"@id":"1515229",
+"info":{"authors":{"author":{"@pid":"308/1438","text":"Ryan Wickman"}},"title":"SparRL: Graph Sparsification via Deep Reinforcement Learning.","venue":"SIGMOD Conference","pages":"2521-2523","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Wickman22","doi":"10.1145/3514221.3520254","ee":"https://doi.org/10.1145/3514221.3520254","url":"https://dblp.org/rec/conf/sigmod/Wickman22"},
+"url":"URL#1515229"
+},
+{
+"@score":"1",
+"@id":"1515230",
+"info":{"authors":{"author":[{"@pid":"172/5536","text":"Yuncheng Wu"},{"@pid":"24/1541","text":"Tien Tuan Anh Dinh"},{"@pid":"195/2960","text":"Guoyu Hu"},{"@pid":"08/7259","text":"Meihui Zhang 0001"},{"@pid":"c/YeowMengChee","text":"Yeow Meng Chee"},{"@pid":"o/BengChinOoi","text":"Beng Chin Ooi"}]},"title":"Serverless Data Science - Are We There Yet? A Case Study of Model Serving.","venue":"SIGMOD Conference","pages":"1866-1875","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WuDH0CO22","doi":"10.1145/3514221.3517905","ee":"https://doi.org/10.1145/3514221.3517905","url":"https://dblp.org/rec/conf/sigmod/WuDH0CO22"},
+"url":"URL#1515230"
+},
+{
+"@score":"1",
+"@id":"1515231",
+"info":{"authors":{"author":[{"@pid":"141/3659","text":"Jiacheng Wu"},{"@pid":"92/1375-7","text":"Jin Wang 0007"},{"@pid":"z/CZaniolo","text":"Carlo Zaniolo"}]},"title":"Optimizing Parallel Recursive Datalog Evaluation on Multicore Machines.","venue":"SIGMOD Conference","pages":"1433-1446","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/WuWZ22","doi":"10.1145/3514221.3517853","ee":"https://doi.org/10.1145/3514221.3517853","url":"https://dblp.org/rec/conf/sigmod/WuWZ22"},
+"url":"URL#1515231"
+},
+{
+"@score":"1",
+"@id":"1515232",
+"info":{"authors":{"author":{"@pid":"155/8276-2","text":"Jiadong Xie 0002"}},"title":"Hindering Influence Diffusion of Community.","venue":"SIGMOD Conference","pages":"2518-2520","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Xie22","doi":"10.1145/3514221.3520250","ee":"https://doi.org/10.1145/3514221.3520250","url":"https://dblp.org/rec/conf/sigmod/Xie22"},
+"url":"URL#1515232"
+},
+{
+"@score":"1",
+"@id":"1515233",
+"info":{"authors":{"author":[{"@pid":"305/8889","text":"Jinhan Xin"},{"@pid":"85/276-1","text":"Kai Hwang 0001"},{"@pid":"70/8170-1","text":"Zhibin Yu 0001"}]},"title":"LOCAT: Low-Overhead Online Configuration Auto-Tuning of Spark SQL Applications.","venue":"SIGMOD Conference","pages":"674-684","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Xin0022","doi":"10.1145/3514221.3526157","ee":"https://doi.org/10.1145/3514221.3526157","url":"https://dblp.org/rec/conf/sigmod/Xin0022"},
+"url":"URL#1515233"
+},
+{
+"@score":"1",
+"@id":"1515234",
+"info":{"authors":{"author":[{"@pid":"176/7391","text":"Zhuangdi Xu"},{"@pid":"322/1494","text":"Gaurav Tarlok Kakkar"},{"@pid":"127/3025","text":"Joy Arulraj"},{"@pid":"r/URamachandran","text":"Umakishore Ramachandran"}]},"title":"EVA: A Symbolic Approach to Accelerating Exploratory Video Analytics with Materialized Views.","venue":"SIGMOD Conference","pages":"602-616","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/XuKAR22","doi":"10.1145/3514221.3526142","ee":"https://doi.org/10.1145/3514221.3526142","url":"https://dblp.org/rec/conf/sigmod/XuKAR22"},
+"url":"URL#1515234"
+},
+{
+"@score":"1",
+"@id":"1515235",
+"info":{"authors":{"author":[{"@pid":"11/2505","text":"Yunlong Xu"},{"@pid":"322/1606","text":"Jinshu Liu"},{"@pid":"23/7274","text":"Fatemeh Nargesian"}]},"title":"TSUBASA: Climate Network Construction on Historical and Real-Time Data.","venue":"SIGMOD Conference","pages":"286-295","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/XuLN22","doi":"10.1145/3514221.3526177","ee":"https://doi.org/10.1145/3514221.3526177","url":"https://dblp.org/rec/conf/sigmod/XuLN22"},
+"url":"URL#1515235"
+},
+{
+"@score":"1",
+"@id":"1515236",
+"info":{"authors":{"author":[{"@pid":"65/5553","text":"Lijie Xu"},{"@pid":"37/9792","text":"Shuang Qiu"},{"@pid":"141/0690","text":"Binhang Yuan"},{"@pid":"185/1521-1","text":"Jiawei Jiang 0001"},{"@pid":"215/5117","text":"Cédric Renggli"},{"@pid":"180/6128","text":"Shaoduo Gan"},{"@pid":"186/8781","text":"Kaan Kara"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"},{"@pid":"51/4433-2","text":"Ji Liu 0002"},{"@pid":"29/85","text":"Wentao Wu 0001"},{"@pid":"03/5454","text":"Jieping Ye"},{"@pid":"97/919-1","text":"Ce Zhang 0001"}]},"title":"In-Database Machine Learning with CorgiPile: Stochastic Gradient Descent without Full Data Shuffle.","venue":"SIGMOD Conference","pages":"1286-1300","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/XuQYJRGKLL0Y022","doi":"10.1145/3514221.3526150","ee":"https://doi.org/10.1145/3514221.3526150","url":"https://dblp.org/rec/conf/sigmod/XuQYJRGKLL0Y022"},
+"url":"URL#1515236"
+},
+{
+"@score":"1",
+"@id":"1515237",
+"info":{"authors":{"author":[{"@pid":"181/5822","text":"Zongheng Yang"},{"@pid":"174/2148","text":"Wei-Lin Chiang"},{"@pid":"220/7441","text":"Sifei Luan 0001"},{"@pid":"289/1689","text":"Gautam Mittal"},{"@pid":"152/0092","text":"Michael Luo"},{"@pid":"s/IonStoica","text":"Ion Stoica"}]},"title":"Balsa: Learning a Query Optimizer Without Expert Demonstrations.","venue":"SIGMOD Conference","pages":"931-944","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/YangC0MLS22","doi":"10.1145/3514221.3517885","ee":"https://doi.org/10.1145/3514221.3517885","url":"https://dblp.org/rec/conf/sigmod/YangC0MLS22"},
+"url":"URL#1515237"
+},
+{
+"@score":"1",
+"@id":"1515238",
+"info":{"authors":{"author":[{"@pid":"311/5539","text":"Junran Yang"},{"@pid":"293/8350","text":"Hyekang Kevin Joo"},{"@pid":"311/4530","text":"Sai S. Yerramreddy"},{"@pid":"163/8053","text":"Siyao Li"},{"@pid":"147/1186","text":"Dominik Moritz"},{"@pid":"91/7584","text":"Leilani Battle"}]},"title":"Demonstration of VegaPlus: Optimizing Declarative Visualization Languages.","venue":"SIGMOD Conference","pages":"2425-2428","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/YangJYLMB22","doi":"10.1145/3514221.3520168","ee":"https://doi.org/10.1145/3514221.3520168","url":"https://dblp.org/rec/conf/sigmod/YangJYLMB22"},
+"url":"URL#1515238"
+},
+{
+"@score":"1",
+"@id":"1515239",
+"info":{"authors":{"author":[{"@pid":"204/3387","text":"Renchi Yang"},{"@pid":"147/1237-1","text":"Jieming Shi 0001"},{"@pid":"168/9593","text":"Keke Huang"},{"@pid":"33/1903","text":"Xiaokui Xiao"}]},"title":"Scalable and Effective Bipartite Network Embedding.","venue":"SIGMOD Conference","pages":"1977-1991","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/YangSHX22","doi":"10.1145/3514221.3517838","ee":"https://doi.org/10.1145/3514221.3517838","url":"https://dblp.org/rec/conf/sigmod/YangSHX22"},
+"url":"URL#1515239"
+},
+{
+"@score":"1",
+"@id":"1515240",
+"info":{"authors":{"author":[{"@pid":"90/5230","text":"Jingyi Yang"},{"@pid":"168/4496","text":"Peizhi Wu"},{"@pid":"33/3180","text":"Gao Cong"},{"@pid":"88/2750","text":"Tieying Zhang"},{"@pid":"02/2315-8","text":"Xiao He 0008"}]},"title":"SAM: Database Generation from Query Workloads with Supervised Autoregressive Models.","venue":"SIGMOD Conference","pages":"1542-1555","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/YangWCZH22","doi":"10.1145/3514221.3526168","ee":"https://doi.org/10.1145/3514221.3526168","url":"https://dblp.org/rec/conf/sigmod/YangWCZH22"},
+"url":"URL#1515240"
+},
+{
+"@score":"1",
+"@id":"1515241",
+"info":{"authors":{"author":[{"@pid":"219/9704","text":"Linguan Yang"},{"@pid":"91/7634","text":"Xinan Yan"},{"@pid":"34/2603-1","text":"Bernard Wong 0001"}]},"title":"Natto: Providing Distributed Transaction Prioritization for High-Contention Workloads.","venue":"SIGMOD Conference","pages":"715-729","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/YangY022","doi":"10.1145/3514221.3526161","ee":"https://doi.org/10.1145/3514221.3526161","url":"https://dblp.org/rec/conf/sigmod/YangY022"},
+"url":"URL#1515241"
+},
+{
+"@score":"1",
+"@id":"1515242",
+"info":{"authors":{"author":[{"@pid":"322/1482","text":"Maor Yankovitch"},{"@pid":"164/3423","text":"Ilya Kolchinsky"},{"@pid":"s/AssafSchuster","text":"Assaf Schuster"}]},"title":"HYPERSONIC: A Hybrid Parallelization Approach for Scalable Complex Event Processing.","venue":"SIGMOD Conference","pages":"1093-1107","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/YankovitchKS22","doi":"10.1145/3514221.3517829","ee":"https://doi.org/10.1145/3514221.3517829","url":"https://dblp.org/rec/conf/sigmod/YankovitchKS22"},
+"url":"URL#1515242"
+},
+{
+"@score":"1",
+"@id":"1515243",
+"info":{"authors":{"author":{"@pid":"301/4363","text":"Alexander Yao"}},"title":"Interactive Query Explanations Using Fine Grained Provenance.","venue":"SIGMOD Conference","pages":"2536-2538","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Yao22","doi":"10.1145/3514221.3520251","ee":"https://doi.org/10.1145/3514221.3520251","url":"https://dblp.org/rec/conf/sigmod/Yao22"},
+"url":"URL#1515243"
+},
+{
+"@score":"1",
+"@id":"1515244",
+"info":{"authors":{"author":{"@pid":"322/8376","text":"Yaroslav Plaksin"}},"title":"An Approach for Unlabeled Tasks Prioritization.","venue":"SIGMOD Conference","pages":"2509-2511","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Yaroslav22","doi":"10.1145/3514221.3520245","ee":"https://doi.org/10.1145/3514221.3520245","url":"https://dblp.org/rec/conf/sigmod/Yaroslav22"},
+"url":"URL#1515244"
+},
+{
+"@score":"1",
+"@id":"1515245",
+"info":{"authors":{"author":[{"@pid":"242/8477","text":"Kaiqiang Yu"},{"@pid":"58/10813-1","text":"Cheng Long 0001"},{"@pid":"144/3323","text":"Shengxin Liu"},{"@pid":"81/9436-1","text":"Da Yan 0001"}]},"title":"Efficient Algorithms for Maximal k-Biplex Enumeration.","venue":"SIGMOD Conference","pages":"860-873","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/YuLL022","doi":"10.1145/3514221.3517847","ee":"https://doi.org/10.1145/3514221.3517847","url":"https://dblp.org/rec/conf/sigmod/YuLL022"},
+"url":"URL#1515245"
+},
+{
+"@score":"1",
+"@id":"1515247",
+"info":{"authors":{"author":[{"@pid":"266/6093","text":"Zifeng Yuan"},{"@pid":"94/11104","text":"Huey-Eng Chua"},{"@pid":"b/SSBhowmick","text":"Sourav S. Bhowmick"},{"@pid":"220/7336","text":"Zekun Ye"},{"@pid":"07/1560","text":"Byron Choi"},{"@pid":"62/2450","text":"Wook-Shin Han"}]},"title":"PLAYPEN: Plug-and-Play Visual Graph Query Interfaces for Top-down and Bottom-Up Search on Large Networks.","venue":"SIGMOD Conference","pages":"2381-2384","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/YuanCBYCH22","doi":"10.1145/3514221.3520157","ee":"https://doi.org/10.1145/3514221.3520157","url":"https://dblp.org/rec/conf/sigmod/YuanCBYCH22"},
+"url":"URL#1515247"
+},
+{
+"@score":"1",
+"@id":"1515248",
+"info":{"authors":{"author":[{"@pid":"219/2224","text":"Yuxiang Zeng"},{"@pid":"83/2548","text":"Yongxin Tong"},{"@pid":"c/LeiChen0002","text":"Lei Chen 0002"}]},"title":"Faster and Better Solution to Embed Lp Metrics by Tree Metrics.","venue":"SIGMOD Conference","pages":"2135-2148","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZengT022","doi":"10.1145/3514221.3517831","ee":"https://doi.org/10.1145/3514221.3517831","url":"https://dblp.org/rec/conf/sigmod/ZengT022"},
+"url":"URL#1515248"
+},
+{
+"@score":"1",
+"@id":"1515249",
+"info":{"authors":{"author":[{"@pid":"123/4950","text":"Jiahao Zhang"},{"@pid":"43/2474-16","text":"Bo Tang 0016"},{"@pid":"23/282","text":"Man Lung Yiu"},{"@pid":"07/2626-2","text":"Xiao Yan 0002"},{"@pid":"295/3318","text":"Keming Li"}]},"title":"T-LevelIndex: Towards Efficient Query Processing in Continuous Preference Space.","venue":"SIGMOD Conference","pages":"2149-2162","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Zhang0YYL22","doi":"10.1145/3514221.3526182","ee":"https://doi.org/10.1145/3514221.3526182","url":"https://dblp.org/rec/conf/sigmod/Zhang0YYL22"},
+"url":"URL#1515249"
+},
+{
+"@score":"1",
+"@id":"1515250",
+"info":{"authors":{"author":[{"@pid":"182/7320-1","text":"Jiachi Zhang 0001"},{"@pid":"50/810","text":"Shi Cheng"},{"@pid":"30/4565","text":"Zhihui Xue"},{"@pid":"322/1602","text":"Jianjun Deng"},{"@pid":"32/8452","text":"Cuiyun Fu"},{"@pid":"72/1077","text":"Wenchao Zhou"},{"@pid":"85/1868-11","text":"Sheng Wang 0011"},{"@pid":"264/9000","text":"Changcheng Chen"},{"@pid":"l/FeifeiLi","text":"Feifei Li 0001"}]},"title":"ESDB: Processing Extremely Skewed Workloads in Real-time.","venue":"SIGMOD Conference","pages":"2286-2298","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhangCXDFZWC022","doi":"10.1145/3514221.3526051","ee":"https://doi.org/10.1145/3514221.3526051","url":"https://dblp.org/rec/conf/sigmod/ZhangCXDFZWC022"},
+"url":"URL#1515250"
+},
+{
+"@score":"1",
+"@id":"1515251",
+"info":{"authors":{"author":[{"@pid":"92/930","text":"Lixi Zhang"},{"@pid":"181/5689","text":"Chengliang Chai"},{"@pid":"247/8418","text":"Xuanhe Zhou"},{"@pid":"l/GuoliangLi","text":"Guoliang Li 0001"}]},"title":"LearnedSQLGen: Constraint-aware SQL Generation using Reinforcement Learning.","venue":"SIGMOD Conference","pages":"945-958","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhangCZ022","doi":"10.1145/3514221.3526155","ee":"https://doi.org/10.1145/3514221.3526155","url":"https://dblp.org/rec/conf/sigmod/ZhangCZ022"},
+"url":"URL#1515251"
+},
+{
+"@score":"1",
+"@id":"1515252",
+"info":{"authors":{"author":[{"@pid":"16/1234","text":"Zhuo Zhang"},{"@pid":"06/11411","text":"Junhao Gan"},{"@pid":"20/3716","text":"Zhifeng Bao"},{"@pid":"238/9704","text":"Seyed Mohammad Hussein Kazemi"},{"@pid":"175/1354","text":"Guangyong Chen"},{"@pid":"160/3973","text":"Fengyuan Zhu"}]},"title":"Approximate Range Thresholding.","venue":"SIGMOD Conference","pages":"1108-1121","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhangGBKCZ22","doi":"10.1145/3514221.3526123","ee":"https://doi.org/10.1145/3514221.3526123","url":"https://dblp.org/rec/conf/sigmod/ZhangGBKCZ22"},
+"url":"URL#1515252"
+},
+{
+"@score":"1",
+"@id":"1515253",
+"info":{"authors":{"author":[{"@pid":"272/5995","text":"Jianqiu Zhang"},{"@pid":"298/7528","text":"Kaisong Huang"},{"@pid":"57/10948-1","text":"Tianzheng Wang 0001"},{"@pid":"298/7678","text":"King Lv"}]},"title":"Skeena: Efficient and Consistent Cross-Engine Transactions.","venue":"SIGMOD Conference","pages":"34-48","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhangH0L22","doi":"10.1145/3514221.3526171","ee":"https://doi.org/10.1145/3514221.3526171","url":"https://dblp.org/rec/conf/sigmod/ZhangH0L22"},
+"url":"URL#1515253"
+},
+{
+"@score":"1",
+"@id":"1515254",
+"info":{"authors":{"author":[{"@pid":"124/6700","text":"Wangda Zhang"},{"@pid":"49/10034","text":"Matteo Interlandi"},{"@pid":"35/5613","text":"Paul Mineiro"},{"@pid":"157/8412-1","text":"Shi Qiao 0001"},{"@pid":"183/8535","text":"Nasim Ghazanfari"},{"@pid":"322/1455","text":"Karlen Lie"},{"@pid":"305/2786","text":"Marc T. Friedman"},{"@pid":"72/2879","text":"Rafah Hosn"},{"@pid":"23/5134","text":"Hiren Patel"},{"@pid":"24/8510","text":"Alekh Jindal"}]},"title":"Deploying a Steered Query Optimizer in Production at Microsoft.","venue":"SIGMOD Conference","pages":"2299-2311","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhangIM0GLFHPJ22","doi":"10.1145/3514221.3526052","ee":"https://doi.org/10.1145/3514221.3526052","url":"https://dblp.org/rec/conf/sigmod/ZhangIM0GLFHPJ22"},
+"url":"URL#1515254"
+},
+{
+"@score":"1",
+"@id":"1515255",
+"info":{"authors":{"author":[{"@pid":"04/4189-2","text":"Xinyi Zhang 0002"},{"@pid":"45/5963","text":"Hong Wu"},{"@pid":"37/4190-106","text":"Yang Li 0106"},{"@pid":"51/2627-1","text":"Jian Tan 0001"},{"@pid":"l/FeifeiLi","text":"Feifei Li 0001"},{"@pid":"55/5031","text":"Bin Cui 0001"}]},"title":"Towards Dynamic and Safe Configuration Tuning for Cloud Databases.","venue":"SIGMOD Conference","pages":"631-645","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhangW0T0022","doi":"10.1145/3514221.3526176","ee":"https://doi.org/10.1145/3514221.3526176","url":"https://dblp.org/rec/conf/sigmod/ZhangW0T0022"},
+"url":"URL#1515255"
+},
+{
+"@score":"1",
+"@id":"1515256",
+"info":{"authors":{"author":[{"@pid":"55/2270-98","text":"Hao Zhang 0098"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"},{"@pid":"171/4868","text":"Yikai Zhang 0001"},{"@pid":"169/1501","text":"Kangfei Zhao"}]},"title":"Parallel Query Processing: To Separate Communication from Computation.","venue":"SIGMOD Conference","pages":"1447-1461","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhangY0Z22","doi":"10.1145/3514221.3526164","ee":"https://doi.org/10.1145/3514221.3526164","url":"https://dblp.org/rec/conf/sigmod/ZhangY0Z22"},
+"url":"URL#1515256"
+},
+{
+"@score":"1",
+"@id":"1515257",
+"info":{"authors":{"author":[{"@pid":"191/2499","text":"Yikai Zhao"},{"@pid":"135/4896-2","text":"Yinda Zhang 0002"},{"@pid":"08/8174-2","text":"Yuanpeng Li 0002"},{"@pid":"01/1901","text":"Yi Zhou"},{"@pid":"73/5645-7","text":"Chunhui Chen 0007"},{"@pid":"44/7710-3","text":"Tong Yang 0003"},{"@pid":"55/5031","text":"Bin Cui 0001"}]},"title":"MinMax Sampling: A Near-optimal Global Summary for Aggregation in the Wide Area.","venue":"SIGMOD Conference","pages":"744-758","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/Zhao0LZ00C22","doi":"10.1145/3514221.3526160","ee":"https://doi.org/10.1145/3514221.3526160","url":"https://dblp.org/rec/conf/sigmod/Zhao0LZ00C22"},
+"url":"URL#1515257"
+},
+{
+"@score":"1",
+"@id":"1515258",
+"info":{"authors":{"author":[{"@pid":"125/0591","text":"Zixuan Zhao"},{"@pid":"131/4202","text":"Raul Castro Fernandez"}]},"title":"Leva: Boosting Machine Learning Performance with Relational Embedding Data Augmentation.","venue":"SIGMOD Conference","pages":"1504-1517","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhaoF22","doi":"10.1145/3514221.3517891","ee":"https://doi.org/10.1145/3514221.3517891","url":"https://dblp.org/rec/conf/sigmod/ZhaoF22"},
+"url":"URL#1515258"
+},
+{
+"@score":"1",
+"@id":"1515259",
+"info":{"authors":{"author":[{"@pid":"169/1501","text":"Kangfei Zhao"},{"@pid":"y/JXuYu","text":"Jeffrey Xu Yu"},{"@pid":"297/5482","text":"Zongyan He"},{"@pid":"96/4282","text":"Rui Li"},{"@pid":"55/2270-98","text":"Hao Zhang 0098"}]},"title":"Lightweight and Accurate Cardinality Estimation by Neural Network Gaussian Process.","venue":"SIGMOD Conference","pages":"973-987","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhaoYHLZ22","doi":"10.1145/3514221.3526156","ee":"https://doi.org/10.1145/3514221.3526156","url":"https://dblp.org/rec/conf/sigmod/ZhaoYHLZ22"},
+"url":"URL#1515259"
+},
+{
+"@score":"1",
+"@id":"1515260",
+"info":{"authors":{"author":[{"@pid":"295/3522","text":"Jiongli Zhu"},{"@pid":"199/6324","text":"Romila Pradhan"},{"@pid":"09/3012","text":"Boris Glavic"},{"@pid":"11/6446","text":"Babak Salimi"}]},"title":"Generating Interpretable Data-Based Explanations for Fairness Debugging using Gopher.","venue":"SIGMOD Conference","pages":"2433-2436","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZhuPGS22","doi":"10.1145/3514221.3520170","ee":"https://doi.org/10.1145/3514221.3520170","url":"https://dblp.org/rec/conf/sigmod/ZhuPGS22"},
+"url":"URL#1515260"
+},
+{
+"@score":"1",
+"@id":"1515261",
+"info":{"authors":{"author":[{"@pid":"264/2659","text":"Chaoji Zuo"},{"@pid":"125/2903","text":"Sepehr Assadi"},{"@pid":"71/8700-1","text":"Dong Deng 0001"}]},"title":"Spine: Scaling up Programming-by-Negative-Example for String Filtering and Transformation.","venue":"SIGMOD Conference","pages":"521-530","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sigmod/ZuoAD22","doi":"10.1145/3514221.3517908","ee":"https://doi.org/10.1145/3514221.3517908","url":"https://dblp.org/rec/conf/sigmod/ZuoAD22"},
+"url":"URL#1515261"
+},
+{
+"@score":"1",
+"@id":"1536970",
+"info":{"authors":{"author":[{"@pid":"i/ZacharyGIves","text":"Zachary G. Ives"},{"@pid":"b/ABonifati","text":"Angela Bonifati"},{"@pid":"a/AmrElAbbadi","text":"Amr El Abbadi"}]},"title":"SIGMOD &apos;22: International Conference on Management of Data, Philadelphia, PA, USA, June 12 - 17, 2022","venue":"SIGMOD Conference","publisher":"ACM","year":"2022","type":"Editorship","key":"conf/sigmod/2022","doi":"10.1145/3514221","ee":"https://doi.org/10.1145/3514221","url":"https://dblp.org/rec/conf/sigmod/2022"},
+"url":"URL#1536970"
+}
+]
+}
+}
+}

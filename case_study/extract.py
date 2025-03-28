@@ -17,6 +17,9 @@ json_dir = path  # Change this to your directory containing the JSON files
 
 json_files = glob(os.path.join(json_dir, "*.json"))
 json_files = [file]
+# json_files = [f"vldb/vldb_{file}.json" for file in range(25, 35)]
+# json_files = ["icde/icde_2004.json", "vldb/vldb_32.json"]
+
 print(json_files)
 # Initialize mappings and lists
 author_id_map = {}  # Maps original author IDs to integer numbers

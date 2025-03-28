@@ -1,10 +1,10 @@
 
 -----------------------------------------------------------------------------------------
 n=13, m=26
-*** Heuristic kplex size: 3, time: 2 (microseconds)
+*** Heuristic kplex size: 3, time: 3 (microseconds)
 *** Degeneracy k-plex size: 4, max_core: 2, UB: 6, Time: 1 (microseconds)
 Find a k-plex of size: 4
->>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000049 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000009 t_Bounding: 0.000000
 !!! Warning: Trivial Case !!!
 Now searching for dense kplex, current no. of edges: 0
 n=13, m=26
@@ -12,26 +12,26 @@ kples size: 5
 
 -----------------------------------------------------------------------------------------
 n=69, m=272
-*** Heuristic kplex size: 10, time: 5 (microseconds)
-*** Degeneracy k-plex size: 10, max_core: 9, UB: 10, Time: 1 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 10 t_Total: 0.000010 t_Bounding: 0.000000
+*** Heuristic kplex size: 10, time: 8 (microseconds)
+*** Degeneracy k-plex size: 10, max_core: 9, UB: 10, Time: 3 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 10 t_Total: 0.000016 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=69, m=272
-*** Degeneracy k-plex size: 10, max_core: 9, UB: 10, Time: 0 (microseconds)
+*** Degeneracy k-plex size: 10, max_core: 9, UB: 10, Time: 1 (microseconds)
 kples size: 9
 *** After core shrink: n = 10, m = 45 (undirected)
 *** After core-truss co-pruning: n = 10, m = 45, density = 1.0000
 prune_cnt: 10, max_n: 10, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 10, max_n: 10, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 10 t_Total: 0.000232 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 10 t_Total: 0.000083 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=79, m=322
 *** Heuristic kplex size: 11, time: 6 (microseconds)
-*** Degeneracy k-plex size: 11, max_core: 10, UB: 11, Time: 2 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 11 t_Total: 0.000016 t_Bounding: 0.000000
+*** Degeneracy k-plex size: 11, max_core: 10, UB: 11, Time: 3 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 11 t_Total: 0.000012 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=79, m=322
 *** Degeneracy k-plex size: 11, max_core: 10, UB: 11, Time: 1 (microseconds)
@@ -40,14 +40,14 @@ kples size: 10
 *** After core-truss co-pruning: n = 11, m = 55, density = 1.0000
 prune_cnt: 11, max_n: 11, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 11, max_n: 11, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 11 t_Total: 0.000101 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 11 t_Total: 0.000097 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=70, m=224
 *** Heuristic kplex size: 9, time: 4 (microseconds)
-*** Degeneracy k-plex size: 9, max_core: 8, UB: 9, Time: 1 (microseconds)
+*** Degeneracy k-plex size: 9, max_core: 8, UB: 9, Time: 2 (microseconds)
 >>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000009 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=70, m=224
@@ -57,15 +57,15 @@ kples size: 8
 *** After core-truss co-pruning: n = 9, m = 36, density = 1.0000
 prune_cnt: 9, max_n: 9, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 9, max_n: 9, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000069 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000062 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=80, m=326
-*** Heuristic kplex size: 12, time: 6 (microseconds)
+*** Heuristic kplex size: 12, time: 7 (microseconds)
 *** Degeneracy k-plex size: 12, max_core: 11, UB: 12, Time: 2 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 12 t_Total: 0.000011 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 12 t_Total: 0.000018 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=80, m=326
 *** Degeneracy k-plex size: 12, max_core: 11, UB: 12, Time: 1 (microseconds)
@@ -74,7 +74,7 @@ kples size: 11
 *** After core-truss co-pruning: n = 12, m = 66, density = 1.0000
 prune_cnt: 12, max_n: 12, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 12, max_n: 12, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 12 t_Total: 0.000095 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 12 t_Total: 0.000096 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
@@ -86,7 +86,7 @@ n=81, m=212
 *** EGo-Degen kPlex size: 6, Time: 2 (microseconds)
 prune_cnt: 12, max_n: 5, min_density: 0.9000, avg_density: 0.9917
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000026 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000023 t_Bounding: 0.000000
 !!! Warning: Trivial Case !!!
 Now searching for dense kplex, current no. of edges: 0
 n=81, m=212
@@ -95,19 +95,19 @@ kples size: 5
 *** After core shrink: n = 39, m = 65 (undirected)
 prune_cnt: 39, max_n: 5, min_density: 0.9000, avg_density: 0.9872
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000065 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000051 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=60, m=134
-*** Heuristic kplex size: 4, time: 11 (microseconds)
+*** Heuristic kplex size: 4, time: 5 (microseconds)
 *** Degeneracy k-plex size: 4, max_core: 3, UB: 7, Time: 2 (microseconds)
 *** After core shrink: n = 22, m = 35 (undirected)
-*** EGo-Degen kPlex size: 6, Time: 1 (microseconds)
+*** EGo-Degen kPlex size: 6, Time: 0 (microseconds)
 prune_cnt: 6, max_n: 6, min_density: 0.7333, avg_density: 0.9556
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000032 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000022 t_Bounding: 0.000000
 !!! Warning: Trivial Case !!!
 Now searching for dense kplex, current no. of edges: 0
 n=60, m=134
@@ -115,29 +115,29 @@ n=60, m=134
 kples size: 5
 *** After core shrink: n = 22, m = 35 (undirected)
 prune_cnt: 22, max_n: 6, min_density: 0.7333, avg_density: 0.9273
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000052 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
-!!! Warning: Trivial Case !!!
+search_cnt: 6, max_n: 6, min_density: 0.7333, avg_density: 0.7333
+>>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000049 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=83, m=226
-*** Heuristic kplex size: 7, time: 5 (microseconds)
+*** Heuristic kplex size: 7, time: 6 (microseconds)
 *** Degeneracy k-plex size: 7, max_core: 6, UB: 9, Time: 2 (microseconds)
 *** After core shrink: n = 23, m = 56 (undirected)
 *** EGo-Degen kPlex size: 7, Time: 0 (microseconds)
 prune_cnt: 7, max_n: 7, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000027 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000024 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=83, m=226
 *** Degeneracy k-plex size: 7, max_core: 6, UB: 9, Time: 1 (microseconds)
 kples size: 6
 *** After core shrink: n = 23, m = 56 (undirected)
 prune_cnt: 23, max_n: 7, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.000067 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 7, max_n: 7, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.000058 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+!!! Warning: Trivial Case !!!
 -----------------------------------------------------------------------------------------
 
 
@@ -146,14 +146,14 @@ n=192, m=520
 *** Heuristic kplex size: 6, time: 7 (microseconds)
 *** Degeneracy k-plex size: 6, max_core: 5, UB: 8, Time: 5 (microseconds)
 *** After core shrink: n = 86, m = 157 (undirected)
-*** EGo-Degen kPlex size: 6, Time: 2 (microseconds)
+*** EGo-Degen kPlex size: 6, Time: 1 (microseconds)
 !!! BB_Search found a kplex of size: 7, n_edges: 24 
 prune_cnt: 11, max_n: 8, min_density: 0.5714, avg_density: 0.9610
 search_cnt: 1, max_n: 8, min_density: 0.5714, avg_density: 0.5714
->>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000052 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000048 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 24
 n=192, m=520
-*** Degeneracy k-plex size: 6, max_core: 5, UB: 8, Time: 5 (microseconds)
+*** Degeneracy k-plex size: 6, max_core: 5, UB: 8, Time: 2 (microseconds)
 kples size: 6
 *** After core shrink: n = 39, m = 85 (undirected)
 !!! BB_Search found a kplex of size: 7, n_edges: 24 
@@ -335,30 +335,30 @@ A denser kplex found with #edges: 29
 !!! BB_Search found a kplex of size: 7, n_edges: 24 
 prune_cnt: 39, max_n: 13, min_density: 0.3846, avg_density: 0.8299
 search_cnt: 13, max_n: 13, min_density: 0.3846, avg_density: 0.4898
->>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.224446 n_mkp: 176 initial_edges: 24 densest_kplex_edges: 29
+>>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.135986 n_mkp: 176 initial_edges: 24 densest_kplex_edges: 29
 !!! Warning: Trivial Case !!!
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=189, m=650
-*** Heuristic kplex size: 8, time: 8 (microseconds)
-*** Degeneracy k-plex size: 8, max_core: 7, UB: 11, Time: 4 (microseconds)
+*** Heuristic kplex size: 8, time: 7 (microseconds)
+*** Degeneracy k-plex size: 8, max_core: 7, UB: 11, Time: 5 (microseconds)
 *** After core shrink: n = 35, m = 107 (undirected)
-*** EGo-Degen kPlex size: 8, Time: 3 (microseconds)
+*** EGo-Degen kPlex size: 8, Time: 2 (microseconds)
 *** After core_truss_copruning: n = 35, m = 107 (undirected)
 prune_cnt: 10, max_n: 8, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000048 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000042 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=189, m=650
-*** Degeneracy k-plex size: 8, max_core: 7, UB: 11, Time: 3 (microseconds)
+*** Degeneracy k-plex size: 8, max_core: 7, UB: 11, Time: 2 (microseconds)
 kples size: 7
 *** After core shrink: n = 35, m = 107 (undirected)
 *** After core-truss co-pruning: n = 35, m = 107, density = 0.1798
 prune_cnt: 35, max_n: 8, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000141 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 16, max_n: 8, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000130 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
@@ -473,22 +473,39 @@ A denser kplex found with #edges: 24
 !!! BB_Search found a kplex of size: 7, n_edges: 24 
 !!! BB_Search found a kplex of size: 7, n_edges: 24 
 !!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
+!!! BB_Search found a kplex of size: 7, n_edges: 24 
 prune_cnt: 57, max_n: 9, min_density: 0.5556, avg_density: 0.9298
-search_cnt: 9, max_n: 9, min_density: 0.5556, avg_density: 0.5556
->>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.100445 n_mkp: 96 initial_edges: 24 densest_kplex_edges: 24
+search_cnt: 16, max_n: 9, min_density: 0.5556, avg_density: 0.7500
+>>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.072498 n_mkp: 112 initial_edges: 24 densest_kplex_edges: 24
+!!! Warning: Trivial Case !!!
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=36, m=78
 *** Heuristic kplex size: 4, time: 4 (microseconds)
-*** Degeneracy k-plex size: 6, max_core: 3, UB: 7, Time: 1 (microseconds)
+*** Degeneracy k-plex size: 6, max_core: 3, UB: 7, Time: 2 (microseconds)
 Find a k-plex of size: 6
 *** After core shrink: n = 10, m = 17 (undirected)
 *** EGo-Degen kPlex size: 6, Time: 0 (microseconds)
 prune_cnt: 3, max_n: 6, min_density: 0.7333, avg_density: 0.9111
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000019 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000026 t_Bounding: 0.000000
 !!! Warning: Trivial Case !!!
 Now searching for dense kplex, current no. of edges: 0
 n=36, m=78
@@ -496,29 +513,29 @@ n=36, m=78
 kples size: 5
 *** After core shrink: n = 10, m = 17 (undirected)
 prune_cnt: 10, max_n: 6, min_density: 0.7333, avg_density: 0.8400
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000041 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
-!!! Warning: Trivial Case !!!
+search_cnt: 6, max_n: 6, min_density: 0.7333, avg_density: 0.7333
+>>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000052 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=140, m=464
-*** Heuristic kplex size: 7, time: 16 (microseconds)
-*** Degeneracy k-plex size: 7, max_core: 6, UB: 9, Time: 3 (microseconds)
+*** Heuristic kplex size: 7, time: 7 (microseconds)
+*** Degeneracy k-plex size: 7, max_core: 6, UB: 9, Time: 4 (microseconds)
 *** After core shrink: n = 49, m = 111 (undirected)
-*** EGo-Degen kPlex size: 7, Time: 2 (microseconds)
+*** EGo-Degen kPlex size: 7, Time: 1 (microseconds)
 prune_cnt: 13, max_n: 7, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000049 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000033 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=140, m=464
 *** Degeneracy k-plex size: 7, max_core: 6, UB: 9, Time: 2 (microseconds)
 kples size: 6
 *** After core shrink: n = 49, m = 111 (undirected)
 prune_cnt: 49, max_n: 7, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.000113 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 7, max_n: 7, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.000108 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+!!! Warning: Trivial Case !!!
 -----------------------------------------------------------------------------------------
 
 
@@ -531,7 +548,7 @@ n=140, m=486
 *** After core_truss_copruning: n = 14, m = 43 (undirected)
 prune_cnt: 4, max_n: 8, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000031 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000030 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=140, m=486
 *** Degeneracy k-plex size: 8, max_core: 7, UB: 9, Time: 1 (microseconds)
@@ -539,21 +556,21 @@ kples size: 7
 *** After core shrink: n = 14, m = 43 (undirected)
 *** After core-truss co-pruning: n = 14, m = 43, density = 0.4725
 prune_cnt: 14, max_n: 8, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000100 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 8, max_n: 8, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000096 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=132, m=504
 *** Heuristic kplex size: 7, time: 8 (microseconds)
-*** Degeneracy k-plex size: 7, max_core: 6, UB: 9, Time: 4 (microseconds)
+*** Degeneracy k-plex size: 7, max_core: 6, UB: 9, Time: 8 (microseconds)
 *** After core shrink: n = 65, m = 164 (undirected)
 *** EGo-Degen kPlex size: 7, Time: 2 (microseconds)
 !!! BB_Search found a kplex of size: 8, n_edges: 38 
 prune_cnt: 14, max_n: 9, min_density: 0.6667, avg_density: 0.9694
 search_cnt: 1, max_n: 9, min_density: 0.6667, avg_density: 0.6667
->>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000057 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000063 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 38
 n=132, m=504
 *** Degeneracy k-plex size: 7, max_core: 6, UB: 9, Time: 3 (microseconds)
@@ -562,15 +579,15 @@ kples size: 7
 *** After core-truss co-pruning: n = 42, m = 111, density = 0.1289
 prune_cnt: 42, max_n: 11, min_density: 0.5455, avg_density: 0.9892
 search_cnt: 1, max_n: 11, min_density: 0.5455, avg_density: 0.5455
->>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000136 n_mkp: 0 initial_edges: 38 densest_kplex_edges: 38
+>>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000118 n_mkp: 0 initial_edges: 38 densest_kplex_edges: 38
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=175, m=872
 *** Heuristic kplex size: 18, time: 8 (microseconds)
-*** Degeneracy k-plex size: 18, max_core: 17, UB: 18, Time: 3 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 18 t_Total: 0.000018 t_Bounding: 0.000000
+*** Degeneracy k-plex size: 18, max_core: 17, UB: 18, Time: 4 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 18 t_Total: 0.000017 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=175, m=872
 *** Degeneracy k-plex size: 18, max_core: 17, UB: 18, Time: 2 (microseconds)
@@ -579,19 +596,19 @@ kples size: 17
 *** After core-truss co-pruning: n = 18, m = 153, density = 1.0000
 prune_cnt: 18, max_n: 18, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 18, max_n: 18, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 18 t_Total: 0.000183 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 18 t_Total: 0.000190 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=136, m=484
-*** Heuristic kplex size: 6, time: 7 (microseconds)
-*** Degeneracy k-plex size: 6, max_core: 5, UB: 9, Time: 4 (microseconds)
+*** Heuristic kplex size: 6, time: 9 (microseconds)
+*** Degeneracy k-plex size: 6, max_core: 5, UB: 9, Time: 5 (microseconds)
 *** After core shrink: n = 101, m = 205 (undirected)
 *** EGo-Degen kPlex size: 6, Time: 2 (microseconds)
 prune_cnt: 11, max_n: 11, min_density: 0.4545, avg_density: 0.9413
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000049 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000050 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=136, m=484
 *** Degeneracy k-plex size: 6, max_core: 5, UB: 9, Time: 2 (microseconds)
@@ -600,7 +617,7 @@ kples size: 7
 *** After core-truss co-pruning: n = 18, m = 45, density = 0.2941
 prune_cnt: 18, max_n: 6, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000104 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000101 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
@@ -612,7 +629,7 @@ n=139, m=488
 *** EGo-Degen kPlex size: 7, Time: 1 (microseconds)
 prune_cnt: 18, max_n: 7, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000043 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000046 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=139, m=488
 *** Degeneracy k-plex size: 7, max_core: 6, UB: 9, Time: 2 (microseconds)
@@ -1050,14 +1067,14 @@ A denser kplex found with #edges: 24
 !!! BB_Search found a 
 -----------------------------------------------------------------------------------------
 n=154, m=796
-*** Heuristic kplex size: 9, time: 11 (microseconds)
-*** Degeneracy k-plex size: 9, max_core: 8, UB: 11, Time: 4 (microseconds)
+*** Heuristic kplex size: 9, time: 9 (microseconds)
+*** Degeneracy k-plex size: 9, max_core: 8, UB: 11, Time: 5 (microseconds)
 *** After core shrink: n = 38, m = 127 (undirected)
 *** EGo-Degen kPlex size: 9, Time: 1 (microseconds)
 *** After core_truss_copruning: n = 38, m = 127 (undirected)
 prune_cnt: 8, max_n: 9, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000046 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000042 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=154, m=796
 *** Degeneracy k-plex size: 9, max_core: 8, UB: 11, Time: 2 (microseconds)
@@ -1065,21 +1082,21 @@ kples size: 8
 *** After core shrink: n = 38, m = 127 (undirected)
 *** After core-truss co-pruning: n = 38, m = 127, density = 0.1807
 prune_cnt: 38, max_n: 9, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000155 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 9, max_n: 9, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000165 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=162, m=746
-*** Heuristic kplex size: 9, time: 11 (microseconds)
-*** Degeneracy k-plex size: 9, max_core: 8, UB: 11, Time: 4 (microseconds)
+*** Heuristic kplex size: 9, time: 9 (microseconds)
+*** Degeneracy k-plex size: 9, max_core: 8, UB: 11, Time: 5 (microseconds)
 *** After core shrink: n = 31, m = 106 (undirected)
 *** EGo-Degen kPlex size: 9, Time: 1 (microseconds)
 *** After core_truss_copruning: n = 31, m = 106 (undirected)
 prune_cnt: 7, max_n: 9, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000052 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000043 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=162, m=746
 *** Degeneracy k-plex size: 9, max_core: 8, UB: 11, Time: 2 (microseconds)
@@ -1087,21 +1104,21 @@ kples size: 8
 *** After core shrink: n = 31, m = 106 (undirected)
 *** After core-truss co-pruning: n = 31, m = 106, density = 0.2280
 prune_cnt: 31, max_n: 9, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000143 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 9, max_n: 9, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000141 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=148, m=598
-*** Heuristic kplex size: 8, time: 10 (microseconds)
+*** Heuristic kplex size: 8, time: 9 (microseconds)
 *** Degeneracy k-plex size: 8, max_core: 7, UB: 10, Time: 4 (microseconds)
 *** After core shrink: n = 34, m = 100 (undirected)
 *** EGo-Degen kPlex size: 8, Time: 2 (microseconds)
 *** After core_truss_copruning: n = 34, m = 100 (undirected)
 prune_cnt: 9, max_n: 8, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000047 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000041 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=148, m=598
 *** Degeneracy k-plex size: 8, max_core: 7, UB: 10, Time: 2 (microseconds)
@@ -1109,22 +1126,22 @@ kples size: 7
 *** After core shrink: n = 34, m = 100 (undirected)
 *** After core-truss co-pruning: n = 34, m = 100, density = 0.1783
 prune_cnt: 34, max_n: 8, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000130 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 8, max_n: 8, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000128 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=252, m=1182
-*** Heuristic kplex size: 8, time: 11 (microseconds)
-*** Degeneracy k-plex size: 8, max_core: 7, UB: 11, Time: 7 (microseconds)
+*** Heuristic kplex size: 8, time: 10 (microseconds)
+*** Degeneracy k-plex size: 8, max_core: 7, UB: 11, Time: 8 (microseconds)
 *** After core shrink: n = 106, m = 315 (undirected)
-*** EGo-Degen kPlex size: 8, Time: 3 (microseconds)
+*** EGo-Degen kPlex size: 8, Time: 2 (microseconds)
 *** After core_truss_copruning: n = 106, m = 315 (undirected)
 !!! BB_Search found a kplex of size: 9, n_edges: 54 
 prune_cnt: 14, max_n: 10, min_density: 0.7333, avg_density: 0.9810
 search_cnt: 1, max_n: 10, min_density: 0.7333, avg_density: 0.7333
->>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000090 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 9 t_Total: 0.000083 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 54
 n=252, m=1182
 *** Degeneracy k-plex size: 8, max_core: 7, UB: 11, Time: 5 (microseconds)
@@ -1133,15 +1150,15 @@ kples size: 8
 *** After core-truss co-pruning: n = 50, m = 168, density = 0.1371
 prune_cnt: 50, max_n: 15, min_density: 0.5333, avg_density: 0.9814
 search_cnt: 2, max_n: 15, min_density: 0.5333, avg_density: 0.5359
->>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000248 n_mkp: 0 initial_edges: 54 densest_kplex_edges: 54
+>>edge_list.csv-dense 	MaxKPlex_Size: 9 t_Total: 0.000261 n_mkp: 0 initial_edges: 54 densest_kplex_edges: 54
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=42, m=110
-*** Heuristic kplex size: 7, time: 3 (microseconds)
+*** Heuristic kplex size: 7, time: 4 (microseconds)
 *** Degeneracy k-plex size: 7, max_core: 6, UB: 7, Time: 1 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000008 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000009 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=42, m=110
 *** Degeneracy k-plex size: 7, max_core: 6, UB: 7, Time: 0 (microseconds)
@@ -1149,7 +1166,7 @@ kples size: 6
 *** After core shrink: n = 7, m = 21 (undirected)
 prune_cnt: 7, max_n: 7, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 7, max_n: 7, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.000054 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.000049 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 !!! Warning: Trivial Case !!!
 -----------------------------------------------------------------------------------------
 
@@ -1157,8 +1174,8 @@ search_cnt: 7, max_n: 7, min_density: 1.0000, avg_density: 1.0000
 -----------------------------------------------------------------------------------------
 n=203, m=1054
 *** Heuristic kplex size: 13, time: 9 (microseconds)
-*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 4 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 13 t_Total: 0.000020 t_Bounding: 0.000000
+*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 5 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 13 t_Total: 0.000017 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=203, m=1054
 *** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 2 (microseconds)
@@ -1167,7 +1184,7 @@ kples size: 12
 *** After core-truss co-pruning: n = 13, m = 78, density = 1.0000
 prune_cnt: 13, max_n: 13, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 13, max_n: 13, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 13 t_Total: 0.000203 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 13 t_Total: 0.000185 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
@@ -1180,7 +1197,7 @@ n=240, m=1362
 *** After core_truss_copruning: n = 24, m = 133 (undirected)
 prune_cnt: 4, max_n: 13, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 13 t_Total: 0.000054 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 13 t_Total: 0.000052 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=240, m=1362
 *** Degeneracy k-plex size: 13, max_core: 12, UB: 14, Time: 3 (microseconds)
@@ -1188,55 +1205,55 @@ kples size: 12
 *** After core shrink: n = 24, m = 133 (undirected)
 *** After core-truss co-pruning: n = 24, m = 133, density = 0.4819
 prune_cnt: 24, max_n: 13, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 13 t_Total: 0.000236 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 13, max_n: 13, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 13 t_Total: 0.000218 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=263, m=1398
-*** Heuristic kplex size: 13, time: 13 (microseconds)
-*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 6 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 13 t_Total: 0.000025 t_Bounding: 0.000000
+*** Heuristic kplex size: 13, time: 10 (microseconds)
+*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 7 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 13 t_Total: 0.000020 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=263, m=1398
-*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 2 (microseconds)
+*** Degeneracy k-plex size: 13, max_core: 12, UB: 13, Time: 3 (microseconds)
 kples size: 12
 *** After core shrink: n = 13, m = 78 (undirected)
 *** After core-truss co-pruning: n = 13, m = 78, density = 1.0000
 prune_cnt: 13, max_n: 13, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 13, max_n: 13, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 13 t_Total: 0.000267 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 13 t_Total: 0.000225 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=358, m=2042
-*** Heuristic kplex size: 12, time: 17 (microseconds)
-*** Degeneracy k-plex size: 12, max_core: 11, UB: 14, Time: 8 (microseconds)
+*** Heuristic kplex size: 12, time: 15 (microseconds)
+*** Degeneracy k-plex size: 12, max_core: 11, UB: 14, Time: 9 (microseconds)
 *** After core shrink: n = 53, m = 267 (undirected)
 *** EGo-Degen kPlex size: 12, Time: 3 (microseconds)
 *** After core_truss_copruning: n = 53, m = 266 (undirected)
 prune_cnt: 9, max_n: 12, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 12 t_Total: 0.000072 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 12 t_Total: 0.000071 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=358, m=2042
-*** Degeneracy k-plex size: 12, max_core: 11, UB: 14, Time: 5 (microseconds)
+*** Degeneracy k-plex size: 12, max_core: 11, UB: 14, Time: 4 (microseconds)
 kples size: 11
 *** After core shrink: n = 53, m = 267 (undirected)
 *** After core-truss co-pruning: n = 53, m = 266, density = 0.1930
 prune_cnt: 53, max_n: 19, min_density: 0.5263, avg_density: 0.9911
-search_cnt: 1, max_n: 19, min_density: 0.5263, avg_density: 0.5263
->>edge_list.csv-dense 	MaxKPlex_Size: 12 t_Total: 0.000370 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 13, max_n: 19, min_density: 0.5263, avg_density: 0.9636
+>>edge_list.csv-dense 	MaxKPlex_Size: 12 t_Total: 0.000338 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=116, m=576
-*** Heuristic kplex size: 12, time: 9 (microseconds)
-*** Degeneracy k-plex size: 12, max_core: 11, UB: 12, Time: 2 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 12 t_Total: 0.000016 t_Bounding: 0.000000
+*** Heuristic kplex size: 12, time: 6 (microseconds)
+*** Degeneracy k-plex size: 12, max_core: 11, UB: 12, Time: 3 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 12 t_Total: 0.000012 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=116, m=576
 *** Degeneracy k-plex size: 12, max_core: 11, UB: 12, Time: 1 (microseconds)
@@ -1245,19 +1262,19 @@ kples size: 11
 *** After core-truss co-pruning: n = 12, m = 66, density = 1.0000
 prune_cnt: 12, max_n: 12, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 12, max_n: 12, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 12 t_Total: 0.000136 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 12 t_Total: 0.000115 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=56, m=134
 *** Heuristic kplex size: 6, time: 5 (microseconds)
-*** Degeneracy k-plex size: 6, max_core: 5, UB: 8, Time: 1 (microseconds)
+*** Degeneracy k-plex size: 6, max_core: 5, UB: 8, Time: 2 (microseconds)
 *** After core shrink: n = 23, m = 43 (undirected)
 *** EGo-Degen kPlex size: 6, Time: 0 (microseconds)
 prune_cnt: 8, max_n: 6, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000027 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000026 t_Bounding: 0.000000
 !!! Warning: Trivial Case !!!
 Now searching for dense kplex, current no. of edges: 0
 n=56, m=134
@@ -1265,33 +1282,32 @@ n=56, m=134
 kples size: 5
 *** After core shrink: n = 23, m = 43 (undirected)
 prune_cnt: 23, max_n: 6, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000049 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
-!!! Warning: Trivial Case !!!
+search_cnt: 6, max_n: 6, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000051 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=60, m=192
 *** Heuristic kplex size: 8, time: 5 (microseconds)
-*** Degeneracy k-plex size: 8, max_core: 7, UB: 8, Time: 1 (microseconds)
->>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000014 t_Bounding: 0.000000
+*** Degeneracy k-plex size: 8, max_core: 7, UB: 8, Time: 2 (microseconds)
+>>edge_list.csv 	MaxKPlex_Size: 8 t_Total: 0.000011 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=60, m=192
-*** Degeneracy k-plex size: 8, max_core: 7, UB: 8, Time: 0 (microseconds)
+*** Degeneracy k-plex size: 8, max_core: 7, UB: 8, Time: 1 (microseconds)
 kples size: 7
 *** After core shrink: n = 8, m = 28 (undirected)
 *** After core-truss co-pruning: n = 8, m = 28, density = 1.0000
 prune_cnt: 8, max_n: 8, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 8, max_n: 8, min_density: 1.0000, avg_density: 1.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000067 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 8 t_Total: 0.000063 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=46, m=90
 *** Heuristic kplex size: 4, time: 2 (microseconds)
-*** Degeneracy k-plex size: 4, max_core: 3, UB: 7, Time: 1 (microseconds)
+*** Degeneracy k-plex size: 4, max_core: 3, UB: 7, Time: 2 (microseconds)
 *** After core shrink: n = 12, m = 18 (undirected)
 *** EGo-Degen kPlex size: 6, Time: 0 (microseconds)
 prune_cnt: 3, max_n: 4, min_density: 1.0000, avg_density: 1.0000
@@ -1305,60 +1321,61 @@ kples size: 5
 *** After core shrink: n = 12, m = 18 (undirected)
 prune_cnt: 12, max_n: 4, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000043 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000036 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=58, m=164
-*** Heuristic kplex size: 7, time: 5 (microseconds)
+*** Heuristic kplex size: 7, time: 4 (microseconds)
 *** Degeneracy k-plex size: 7, max_core: 6, UB: 8, Time: 2 (microseconds)
 *** After core shrink: n = 17, m = 41 (undirected)
-*** EGo-Degen kPlex size: 7, Time: 0 (microseconds)
+*** EGo-Degen kPlex size: 7, Time: 1 (microseconds)
 prune_cnt: 5, max_n: 7, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000024 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 7 t_Total: 0.000027 t_Bounding: 0.000000
 Now searching for dense kplex, current no. of edges: 0
 n=58, m=164
 *** Degeneracy k-plex size: 7, max_core: 6, UB: 8, Time: 0 (microseconds)
 kples size: 6
 *** After core shrink: n = 17, m = 41 (undirected)
 prune_cnt: 17, max_n: 7, min_density: 1.0000, avg_density: 1.0000
-search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.000095 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+search_cnt: 7, max_n: 7, min_density: 1.0000, avg_density: 1.0000
+>>edge_list.csv-dense 	MaxKPlex_Size: 7 t_Total: 0.000066 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+!!! Warning: Trivial Case !!!
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=52, m=104
 *** Heuristic kplex size: 4, time: 3 (microseconds)
-*** Degeneracy k-plex size: 4, max_core: 3, UB: 7, Time: 1 (microseconds)
+*** Degeneracy k-plex size: 4, max_core: 3, UB: 7, Time: 2 (microseconds)
 *** After core shrink: n = 12, m = 18 (undirected)
 *** EGo-Degen kPlex size: 6, Time: 0 (microseconds)
 prune_cnt: 3, max_n: 4, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000018 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000017 t_Bounding: 0.000000
 !!! Warning: Trivial Case !!!
 Now searching for dense kplex, current no. of edges: 0
 n=52, m=104
-*** Degeneracy k-plex size: 4, max_core: 3, UB: 7, Time: 1 (microseconds)
+*** Degeneracy k-plex size: 4, max_core: 3, UB: 7, Time: 0 (microseconds)
 kples size: 5
 *** After core shrink: n = 12, m = 18 (undirected)
 prune_cnt: 12, max_n: 4, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000068 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000039 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------------------
 n=62, m=156
 *** Heuristic kplex size: 5, time: 4 (microseconds)
-*** Degeneracy k-plex size: 5, max_core: 4, UB: 7, Time: 2 (microseconds)
+*** Degeneracy k-plex size: 5, max_core: 4, UB: 7, Time: 3 (microseconds)
 *** After core shrink: n = 33, m = 52 (undirected)
-*** EGo-Degen kPlex size: 6, Time: 2 (microseconds)
+*** EGo-Degen kPlex size: 6, Time: 8 (microseconds)
 prune_cnt: 9, max_n: 5, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000024 t_Bounding: 0.000000
+>>edge_list.csv 	MaxKPlex_Size: 6 t_Total: 0.000030 t_Bounding: 0.000000
 !!! Warning: Trivial Case !!!
 Now searching for dense kplex, current no. of edges: 0
 n=62, m=156
@@ -1367,6 +1384,6 @@ kples size: 5
 *** After core shrink: n = 33, m = 52 (undirected)
 prune_cnt: 33, max_n: 5, min_density: 1.0000, avg_density: 1.0000
 search_cnt: 1, max_n: 0, min_density: 1.0000, avg_density: 0.0000
->>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000054 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
+>>edge_list.csv-dense 	MaxKPlex_Size: 6 t_Total: 0.000052 n_mkp: 0 initial_edges: 0 densest_kplex_edges: 0
 -----------------------------------------------------------------------------------------
 

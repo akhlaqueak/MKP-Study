@@ -29,3 +29,10 @@ Go to datasets folder and convert network-repository or SNAP graphs to binary fo
 ```
 ./toBin graph.txt
 ```
+
+## Create all versions
+Go to datasets folder and convert network-repository or SNAP graphs to binary format
+
+```
+make versions
+```
