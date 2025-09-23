@@ -3,7 +3,10 @@
 
 #include "Utility.h"
 #include "Timer.h"
-#include "switches.h"
+
+#define SR_BRANCHING S_branching
+#define PART_BRANCH (K <= 5)
+
 // #define _SECOND_ORDER_PRUNING_
 #define CSIZE (R_end - S_end)
 class KPLEX_BB_MATRIX
@@ -16,8 +19,8 @@ private:
 
 #ifdef _SECOND_ORDER_PRUNING_
 	ui *cn;
-	std::queue<std::pair<ui, ui > > Qe;
-	std::vector<std::pair<ui, ui > > removed_edges;
+	std::queue<std::pair<ui, ui>> Qe;
+	std::vector<std::pair<ui, ui>> removed_edges;
 	long long removed_edges_n;
 #endif
 
@@ -39,7 +42,7 @@ private:
 	ui *level_id;
 	ui max_level;
 
-	std::vector<std::pair<ui, ui > > vp;
+	std::vector<std::pair<ui, ui>> vp;
 	std::vector<ui> non_adj;
 
 	// std::vector<std::pair<ui,ui> > vp2;
@@ -51,10 +54,10 @@ private:
 	ui sz1h;
 	bool found_larger = false;
 	bool ctcp_enabled = false;
-	bool dense_search=false, forward_sol=false;
+	bool dense_search = false, forward_sol = false;
 
 public:
-	vector<vector<ui > > dense_kplexes;
+	vector<vector<ui>> dense_kplexes;
 	ui best_n_edges = 0;
 	ui nmkp = 0;
 	KPLEX_BB_MATRIX(bool _ds = false)
@@ -173,7 +176,7 @@ public:
 		bmp.init(n);
 	}
 
-	void load_graph(ui _n, const std::vector<std::pair<ui, ui > > &vp)
+	void load_graph(ui _n, const std::vector<std::pair<ui, ui>> &vp)
 	{
 		dense_kplexes.clear();
 		n = _n;
@@ -468,7 +471,8 @@ private:
 		if (dense_search)
 		{
 			vector<ui> kp;
-			for (ui i = 0; i < size; i++){
+			for (ui i = 0; i < size; i++)
+			{
 				kp.push_back(SR[i]);
 			}
 
