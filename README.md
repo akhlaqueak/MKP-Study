@@ -8,7 +8,12 @@ make
 
 for example: 
 ```
-./UMKP ../datasets/socfb-Duke14.bin
+./UMKP ../datasets/socfb-Duke14.bin 2
+```
+
+To run MkP Variants:
+```
+./UMKP ../datasets/socfb-Duke14.bin 2 variants
 ```
 
 ## Parallel Execution
@@ -24,14 +29,13 @@ for example:
 ./UMKP ../datasets/socfb-Duke14.bin 5
 ```
 ## Dataset Preparation
-Go to datasets folder and convert network-repository or SNAP graphs to binary format
+Go to datasets folder and convert network-repository or SNAP graphs to binary format. 
 
 ```
 ./toBin graph.txt
 ```
 
 ## Create all versions
-Go to datasets folder and convert network-repository or SNAP graphs to binary format
 
 ```
 make versions

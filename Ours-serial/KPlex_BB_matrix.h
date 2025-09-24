@@ -4,8 +4,7 @@
 #include "Utility.h"
 #include "Timer.h"
 
-#define SR_BRANCHING S_branching
-#define PART_BRANCH (K <= 5)
+#include "switches.h"
 
 // #define _SECOND_ORDER_PRUNING_
 #define CSIZE (R_end - S_end)
