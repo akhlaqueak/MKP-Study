@@ -40,3 +40,4 @@ Go to datasets folder and convert network-repository or SNAP graphs to binary fo
 ```
 make versions
 ```
+This creates several binary files e.g. UMKP-Default, UMKP-ctcp, UMKP-R_Br, etc.
