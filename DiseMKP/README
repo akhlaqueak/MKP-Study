@@ -1,0 +1,38 @@
+compile:
+
+g++ -O3 DiseMKP.cpp -o disemkp -std=c++11 -DGOP
+
+usage:
+
+./disemkp instance -x k
+
+
+The instance is a file in DIMACS graph format. 
+
+for example:
+
+./disemkp bio-yeast -x 4
+
+
+output:
+
+# Solving 4-plex in ~/bio-yeast
+
+# reading instance ...
+R reading file <e n1 n2> ...
+R the graph size is 1458
+R Instance Information: #node=1458 #edge=1948 density=0.00183401
+R the reading time is 0.04 
+I computing an initial k-plex...
+I the upper bound of k-plex 60 ...
+I the initial 4-plex  7...
+I the L1-Reduced graph #node 12 #edge 29 #density 0.43939397
+computing the numbers of common neighbors....
+  1 |after reducing #node=12 #edges=29 #density=0.43939397
+I the initial time is 0.00 
+C  -------------------------------------------------------------------------------
+C  Size|   Index|   NB_Branches|   Time(s)| R-dep|   Nodes|    Edges|    Density|
+C --------------------------------------------------------------------------------
+C    7 |      0 |             4|     0.04
+Solution: 757 959 439 380 674 32 539 
+>>/home/benchmarks/massive/bio/bio-yeast @ bio-yeast |V| 1458 |E| 1948 K 4 MaxKPX 7 InitKPX 7 Tree 4 Read_Time 0.04 Init_Time 0.00 Search_Time 0.00 Total 0.04 \\

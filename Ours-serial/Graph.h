@@ -19,7 +19,6 @@ private:
 	ui *edges; // adjacent ids of edges
 
 	std::vector<ui> kplex;
-
 	ui *s_degree;
 	ept *s_pstart;
 	ept *s_pend;
@@ -38,6 +37,8 @@ private:
 
 public:
 	ui best_n_edges=0;
+	bool topCTCP, twoHopG; 
+
 	Graph(const char *_dir, const int _K);
 	~Graph();
 

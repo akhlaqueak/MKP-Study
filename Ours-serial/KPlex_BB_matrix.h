@@ -4,8 +4,6 @@
 #include "Utility.h"
 #include "Timer.h"
 
-#include "switches.h"
-
 // #define _SECOND_ORDER_PRUNING_
 #define CSIZE (R_end - S_end)
 class KPLEX_BB_MATRIX
@@ -55,6 +53,11 @@ private:
 	bool ctcp_enabled = false;
 	bool dense_search = false, forward_sol = false;
 
+	// Switch parameters
+	string branching, bounding;
+	bool UBR2;
+	bool BR1, BR2, RR1, RR2, RR3;
+
 public:
 	vector<vector<ui>> dense_kplexes;
 	ui best_n_edges = 0;
@@ -84,6 +87,14 @@ public:
 		best_n_edges = 0;
 		nmkp = 0;
 		dense_search = _ds;
+		branching = cmd.GetOptionValue("-branching", "Default-Br");
+		bounding = cmd.GetOptionValue("-bounding", "None");
+		UBR2 = cmd.GetOptionValue("-UBR2", "true") == "true";
+		BR1 = cmd.GetOptionValue("-BR1", "true") == "true";
+		BR2 = cmd.GetOptionValue("-BR2", "true") == "true";
+		RR1 = cmd.GetOptionValue("-RR1", "true") == "true";
+		RR2 = cmd.GetOptionValue("-RR2", "true") == "true";
+		RR3 = cmd.GetOptionValue("-RR3", "true") == "true";
 	}
 
 	~KPLEX_BB_MATRIX()
@@ -483,6 +494,7 @@ private:
 				for (ui i = 0; i < size; i++)
 					best_solution[i] = SR[i];
 			}
+			cout<<"stored, "<<best_solution_size<<endl;
 		}
 		else
 		{
@@ -568,22 +580,23 @@ private:
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 			return;
 		}
-#ifndef DIS_UBR2
-		ui S2_n = 0;
-		for (ui i = 0; i < S_end; i++)
-			if (R_end - degree[SR[i]] > K)
-				S2[S2_n++] = SR[i];
-
-		if (S2_n >= 2)
+		if (UBR2)
 		{
-			collect_removable_vertices_based_on_total_edges(S2_n, S_end, R_end, level);
-			if (!remove_vertices_and_edges_with_prune(S_end, R_end, level))
+			ui S2_n = 0;
+			for (ui i = 0; i < S_end; i++)
+				if (R_end - degree[SR[i]] > K)
+					S2[S2_n++] = SR[i];
+
+			if (S2_n >= 2)
 			{
-				restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
-				return;
+				collect_removable_vertices_based_on_total_edges(S2_n, S_end, R_end, level);
+				if (!remove_vertices_and_edges_with_prune(S_end, R_end, level))
+				{
+					restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
+					return;
+				}
 			}
 		}
-#endif
 
 #ifndef NDEBUG
 		for (ui i = 0; i < R_end; i++)
@@ -661,34 +674,31 @@ private:
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 			return;
 		}
-		bounding.tick();
+
 		ui beta = best_solution_size - S_end;
-#ifdef S_BOUND
-		if (bound(S_end, R_end) >= R_end)
+		if (bounding != "None")
 		{
-			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
-			return;
-		}
-#endif
 
-#ifdef SR_BOUND
-		if (CSIZE > 3 * beta && seesawUB(S_end, R_end) <= best_solution_size)
-		{
-			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
-			return;
+			if (bounding == "S-Bound" and bound(S_end, R_end) >= R_end)
+			{
+				restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
+				return;
+			}
+
+			if (bounding == "SR-Bound" and CSIZE > 3 * beta && seesawUB(S_end, R_end) <= best_solution_size)
+			{
+				restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
+				return;
+			}
+
+			// if (CSIZE>3*beta && seesawUB(S_end, R_end)<=best_solution_size) {
+			if (bounding == "R-Bound" and colorUB(S_end, R_end) <= best_solution_size)
+			{
+				restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
+				return;
+			}
 		}
 
-#endif
-
-#ifdef R_BOUND
-		// if (CSIZE>3*beta && seesawUB(S_end, R_end)<=best_solution_size) {
-		if (colorUB(S_end, R_end) <= best_solution_size)
-		{
-			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
-			return;
-		}
-#endif
-		bounding.tock();
 #ifndef NDEBUG
 		for (ui i = 0; i < R_end; i++)
 		{
@@ -718,7 +728,7 @@ private:
 			assert(level_id[SR[i]] > level);
 #endif
 
-#ifdef BINARY_BRANCHING
+		if (branching == "Binary-Br")
 		{
 
 			// First branch moves u to S
@@ -748,14 +758,19 @@ private:
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 			return;
 		}
-#endif
-		if (PART_BRANCH && sparse)
+
+		else if (branching == "S-Br" or branching == "R-Br" or branching == "SR-Br" or (K <= 5 && sparse && branching == "Default-Br"))
 		{
 
 			// ******************* Adding our branching stuff here...
 			ui t_R_end = R_end;
 
-			R_end = SR_BRANCHING(S_end, R_end, level);
+			if (branching == "R-Br")
+				R_end = R_branching(S_end, R_end, level);
+			else if (branching == "SR-Br")
+				R_end = SR_branching(S_end, R_end, level);
+			else // default S-Branching
+				R_end = S_branching(S_end, R_end, level);
 			while (R_end < t_R_end)
 			{
 				// branching vertices are now in R_end to t_R_end, and they are already sorted in peelOrder
@@ -797,6 +812,7 @@ private:
 		}
 		else
 		{ // pivot based branching
+
 			if (B.empty() || SR_rid[B.back()] >= R_end || SR_rid[B.back()] < S_end)
 				branch(S_end, R_end);
 			if (B.empty())
@@ -952,23 +968,24 @@ private:
 
 				if (degree[u] >= R_end - skip)
 				{
-#ifndef DIS_BR1
-					candidates[candidates_n++] = u;
-#endif
+					if (BR1)
+						candidates[candidates_n++] = u;
 					continue;
 				}
-#ifndef DIS_BR2
-				char *t_matrix = matrix + u * n;
-				bool OK = true;
-				for (ui j = 0; j < R_end; j++)
-					if (j != i && !t_matrix[SR[j]] && R_end - degree[SR[j]] > K)
-					{
-						OK = false;
-						break;
-					}
-				if (OK)
-					candidates[candidates_n++] = u;
-#endif
+
+				if (BR2)
+				{
+					char *t_matrix = matrix + u * n;
+					bool OK = true;
+					for (ui j = 0; j < R_end; j++)
+						if (j != i && !t_matrix[SR[j]] && R_end - degree[SR[j]] > K)
+						{
+							OK = false;
+							break;
+						}
+					if (OK)
+						candidates[candidates_n++] = u;
+				}
 			}
 
 			if (!candidates_n)
@@ -1069,24 +1086,23 @@ private:
 			{
 				if (level_id[v] == level)
 					continue;
-#ifndef DIS_RR1
-				if (S_end - degree_in_S[v] >= K)
+
+				if (RR1 and S_end - degree_in_S[v] >= K)
 				{
 					level_id[v] = level;
 					Qv.push(v);
 				}
-#endif
-#ifndef DIS_RR2
-				if (S_end - degree_in_S[u] == K)
+
+				if (RR2 and S_end - degree_in_S[u] == K)
 				{
 					level_id[v] = level;
 					Qv.push(v);
 				}
-#endif
+
 			}
-#ifndef DIS_RR2
+
 			// non-neghbor in S
-			else if (S_end - degree_in_S[v] == K)
+			else if (RR2 and S_end - degree_in_S[v] == K)
 			{
 				char *tt_matrix = matrix + v * n;
 				for (ui j = S_end; j < R_end; j++)
@@ -1096,7 +1112,7 @@ private:
 						Qv.push(SR[j]);
 					}
 			}
-#endif
+
 		}
 
 #ifndef NDEBUG
@@ -1197,15 +1213,15 @@ private:
 						--degree[w];
 						if (degree[w] + K <= best_solution_size)
 						{
-#ifndef DIS_RR3
+
 							if (i < S_end)
 								terminate = true; // UB1
-							else if (level_id[w] > level)
+							else if (RR3 and level_id[w] > level)
 							{ // RR3
 								level_id[w] = level;
 								Qv.push(w);
 							}
-#endif
+
 						}
 					}
 

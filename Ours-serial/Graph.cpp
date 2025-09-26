@@ -1,13 +1,42 @@
 #include "Graph.h"
 double threshold = 1e9;
-Timer thresh, branchings, bounding;
-// #include "MSearcher.h"
+Timer thresh, branchings;
+
+#include "Command.h"
+CommandLine cmd;
 #include "KPlex_BB_matrix.h"
 #include "CTPrune.h"
 #define K_THRESH 10
 using namespace std;
-#include<numeric>
-#include<fstream>
+#include <numeric>
+#include <fstream>
+#include "Utility.h"
+#include "Timer.h"
+
+#define LEN_LIMIT (1 << 10)
+char filename[LEN_LIMIT];
+
+int main(int argc, char *argv[])
+{
+	cmd = CommandLine(argc, argv);
+
+	bool dense_search = cmd.GetOptionValue("-dense", "false") == "true";
+
+	printf("\n-----------------------------------------------------------------------------------------\n");
+	strncpy(filename, argv[1], LEN_LIMIT);
+	int k = atoi(argv[2]);
+	Graph *graph = new Graph(filename, k);
+	graph->twoHopG = cmd.GetOptionValue("-twoHopG", "true") == "true";
+	graph->topCTCP = cmd.GetOptionValue("-topCTCP", "true") == "true";
+	graph->read();
+	graph->search();
+	if (dense_search)
+		graph->search_dense();
+	graph->write();
+	// delete graph; // there are some bugs in releasing memory
+	printf("-----------------------------------------------------------------------------------------\n\n");
+}
+
 Graph::Graph(const char *_dir, const int _K)
 {
 	dir = string(_dir);
@@ -111,65 +140,75 @@ Graph::~Graph()
 		s_deleted = NULL;
 	}
 }
-void Graph::read_csv(){
+void Graph::read_csv()
+{
 
-	vector<pair<ui, ui> > edge_pair;
+	vector<pair<ui, ui>> edge_pair;
 	ui maxv = 0;
 
-	std::ifstream file(dir);  // Open the CSV file
-    std::string line;
+	std::ifstream file(dir); // Open the CSV file
+	std::string line;
 
-    // Check if file is open
-    if (!file.is_open()) {
-        std::cerr << "Error opening file!" << std::endl;
-        return;
-    }
+	// Check if file is open
+	if (!file.is_open())
+	{
+		std::cerr << "Error opening file!" << std::endl;
+		return;
+	}
 
-    ui u, v;
+	ui u, v;
 
-    // Loop through each line in the file
-    while (std::getline(file, line)) {
-        std::stringstream ss(line);
+	// Loop through each line in the file
+	while (std::getline(file, line))
+	{
+		std::stringstream ss(line);
 
-        // Read two integer values from each row
-        if (ss >> u >> v) {
-            // Process the values
+		// Read two integer values from each row
+		if (ss >> u >> v)
+		{
+			// Process the values
 			edge_pair.push_back({u, v});
 			maxv = max(maxv, max(u, v));
-        } else {
-            std::cerr << "Error reading values from line: " << line << std::endl;
-        }
-    }
-    file.close();  // Close the file
+		}
+		else
+		{
+			std::cerr << "Error reading values from line: " << line << std::endl;
+		}
+	}
+	file.close(); // Close the file
 
-	n = maxv+1;
-	m = 2*edge_pair.size();
+	n = maxv + 1;
+	m = 2 * edge_pair.size();
 
 	if (pstart == nullptr)
 		pstart = new ept[n + 1];
 	if (edges == nullptr)
 		edges = new ui[m];
 
-	vector<set<ui> > degree(n);
+	vector<set<ui>> degree(n);
 
-	for(auto e: edge_pair){
-		ui u=e.first, v=e.second;
+	for (auto e : edge_pair)
+	{
+		ui u = e.first, v = e.second;
 		degree[u].insert(v);
 		degree[v].insert(u);
 	}
 	pstart[0] = 0;
-	for(ui i=0;i<n;i++){
-		pstart[i+1] = pstart[i];
-		auto& adj = degree[i];
-		for(auto u: adj)
-			edges[pstart[i+1]++]=u;
+	for (ui i = 0; i < n; i++)
+	{
+		pstart[i + 1] = pstart[i];
+		auto &adj = degree[i];
+		for (auto u : adj)
+			edges[pstart[i + 1]++] = u;
 	}
 	printf("n=%llu, m=%llu\n", n, m);
 }
 void Graph::read()
 {
-    if(dir.find(".csv")!=std::string::npos) return read_csv();
-    if(dir.find(".txt")!=std::string::npos) return read_csv();
+	if (dir.find(".csv") != std::string::npos)
+		return read_csv();
+	if (dir.find(".txt") != std::string::npos)
+		return read_csv();
 
 	FILE *f = Utility::open_file(dir.c_str(), "rb");
 
@@ -332,10 +371,9 @@ void Graph::search()
 				kplex[i] = out_mapping[kplex[i]];
 			}
 		}
-#ifndef DIS_CTCP
-		if (kplex.size() + 1 > 2 * K)
+
+		if (topCTCP and kplex.size() + 1 > 2 * K)
 			CTPrune::core_truss_copruning(n, m, kplex.size() + 1 - K, kplex.size() + 1 - 2 * K, peel_sequence, out_mapping, rid, pstart, edges, degree, true);
-#endif
 		delete[] core;
 		core = NULL;
 
@@ -405,7 +443,7 @@ void Graph::search()
 		s_active_edgelist = new ui[m / 2];
 		s_deleted = new char[m / 2];
 
-		vector<pair<ui, ui> > vp;
+		vector<pair<ui, ui>> vp;
 		vp.reserve(m / 2);
 		ui *t_degree = new ui[n];
 
@@ -439,12 +477,8 @@ void Graph::search()
 
 			ui *ids = Qv;
 			ui ids_n = 0;
-			bool mflag = false;
-			// cout<<u<<endl;
 
-			bool check = false;
-			// if(last_m<0.8*m) {
-			if (true)
+			if (twoHopG)
 			{
 				ui pre_size;
 				do
@@ -479,7 +513,6 @@ void Graph::search()
 					min_density_prune = density;
 				if (ids_n > max_n_prune)
 					max_n_prune = ids_n;
-				mflag = true;
 			}
 			last_m = vp.size() * 2;
 			ui pre_size = kplex.size();
@@ -547,7 +580,7 @@ void Graph::search()
 	delete[] core;
 	delete[] peel_sequence;
 
-	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_Bounding: %f\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1e6, bounding.ticktock());
+	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f \n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1e6);
 
 	// printf("\tMaxKPlex_Size: %lu t_Total: %f t_Seesaw: %f\n", kplex.size(), t.elapsed()/1000000.0, 0);
 	// printf("\tMaximum kPlex Size: %lu, Total Time: %s (microseconds)\n", kplex.size(), Utility::integer_to_string(t.elapsed()).c_str());
@@ -566,7 +599,7 @@ void Graph::search_dense()
 	Timer t;
 	dense_search = true;
 	ui init_edges = 0;
-	vector<pair<ui, ui> > kp;
+	vector<pair<ui, ui>> kp;
 
 	read(); // read the graph again...
 	ui *peel_sequence = new ui[n];
@@ -591,7 +624,7 @@ void Graph::search_dense()
 		ui *rid = new ui[n];
 		ui *edgelist_pointer = new ui[m];
 
-	cout<<"kples size: "<<kplex.size()<<endl;
+
 		shrink_graph(n, m, peel_sequence, core, out_mapping, nullptr, rid, pstart, edges, true);
 
 		delete[] core;
@@ -659,7 +692,7 @@ void Graph::search_dense()
 		s_active_edgelist = new ui[m / 2];
 		s_deleted = new char[m / 2];
 
-		vector<pair<ui, ui> > vp;
+		vector<pair<ui, ui>> vp;
 		vp.reserve(m / 2);
 		ui *t_degree = new ui[n];
 
@@ -678,24 +711,18 @@ void Graph::search_dense()
 				{ // degree[u] == 0 means u is deleted. it could be the case that degree[u] == 0, but key[u] > 0, as key[u] is not fully updated in linear_heap
 					Qv[0] = u;
 					Qv_n = 1;
-					// if (kplex.size() + 1 > 2 * K)
-					// 	m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
-					// else
-					// 	m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, 0, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
+					if (kplex.size() + 1 > 2 * K)
+						m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
+					else
+						m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, 0, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
 				}
 				continue;
 			}
-			if (m == 0)
-				break;
+
 			assert(degree[u] == key);
-			if (thresh.elapsed() / 1e6 >= threshold)
-				break;
 
 			ui *ids = Qv;
 			ui ids_n = 0;
-			bool mflag = false;
-
-			bool check = false;
 
 			extract_subgraph_and_prune(u, ids, ids_n, rid, vp, Qe, t_degree, exists, pend, deleted, edgelist_pointer);
 			if (ids_n)
@@ -722,22 +749,23 @@ void Graph::search_dense()
 				if (ids_n > max_n_search)
 					max_n_search = ids_n;
 				ui presize = kplex.size();
-				kplex.clear();
-				cout<<ids_n<<" ";
+				// kplex.clear();
+				// cout << ids_n << " ";
 				// cout<<"searching: "<<u<<" -> ids_n "<<ids_n<<" density: "<<density<<endl;
 				kplex_solver->load_graph(ids_n, vp);
 				kplex_solver->kPlex(K, UB, kplex, true);
 				if (init_edges == 0 && best_n_edges > 0)
 					init_edges = best_n_edges;
-				for(ui i=0;i<kplex_solver->dense_kplexes.size();i++){
-					auto& kp = kplex_solver->dense_kplexes[i];
-					for(ui i=0;i<kp.size();i++)
-					kp[i]=out_mapping[ids[kp[i]]];
+				for (ui i = 0; i < kplex_solver->dense_kplexes.size(); i++)
+				{
+					auto &kp = kplex_solver->dense_kplexes[i];
+					for (ui i = 0; i < kp.size(); i++)
+						kp[i] = out_mapping[ids[kp[i]]];
 					// for (ui j = 0; j < kp.size(); j++){
 					// 	kp[j].first = out_mapping[ids[kp[j].first]];
 					// 	kp[j].second = out_mapping[ids[kp[j].second]];
 					// }
-					write(kp, pstart, pstart+1, edges, i);
+					write(kp, pstart, pstart + 1, edges, i);
 				}
 				if (kplex.size() > presize)
 				{
@@ -750,9 +778,9 @@ void Graph::search_dense()
 					kplex.pop_back();
 				}
 			}
-			// Qv[0] = u;
-			// Qv_n = 1;
-			// m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
+			Qv[0] = u;
+			Qv_n = 1;
+			m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, false, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
 		}
 
 		if (prune_cnt == 0)
@@ -796,7 +824,7 @@ void Graph::search_dense()
 		printf("!!! Warning: Trivial Case !!!\n");
 }
 
-void Graph::write_subgraph(ui n, const vector<pair<ui, ui> > &edge_list)
+void Graph::write_subgraph(ui n, const vector<pair<ui, ui>> &edge_list)
 {
 	FILE *fout = Utility::open_file("edges.txt", "w");
 
@@ -807,7 +835,7 @@ void Graph::write_subgraph(ui n, const vector<pair<ui, ui> > &edge_list)
 	fclose(fout);
 }
 
-void Graph::subgraph_prune(ui *ids, ui &_n, vector<pair<ui, ui> > &edge_list, ui *rid, ui *Qv, ui *Qe, char *exists)
+void Graph::subgraph_prune(ui *ids, ui &_n, vector<pair<ui, ui>> &edge_list, ui *rid, ui *Qv, ui *Qe, char *exists)
 {
 	ui s_n;
 	ept s_m;
@@ -862,7 +890,7 @@ void Graph::subgraph_prune(ui *ids, ui &_n, vector<pair<ui, ui> > &edge_list, ui
 	}
 }
 
-void Graph::load_graph_from_edgelist(ui _n, const vector<pair<ui, ui> > &edge_list, ui &n, ept &m, ui *degree, ept *pstart, ui *edges)
+void Graph::load_graph_from_edgelist(ui _n, const vector<pair<ui, ui>> &edge_list, ui &n, ept &m, ui *degree, ept *pstart, ui *edges)
 {
 	n = _n;
 	m = (ui)edge_list.size() * 2;
@@ -888,7 +916,7 @@ void Graph::load_graph_from_edgelist(ui _n, const vector<pair<ui, ui> > &edge_li
 		pstart[i] -= degree[i];
 }
 
-void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui> > &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer)
+void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui>> &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer)
 {
 	ids_n = 0;
 	vp.clear();
@@ -911,7 +939,7 @@ void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, v
 	}
 }
 
-void Graph::extract_subgraph(ui u, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui> > &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer)
+void Graph::extract_subgraph(ui u, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui>> &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer)
 {
 	ids_n = 0;
 	vp.clear();
@@ -976,7 +1004,7 @@ void Graph::extract_subgraph(ui u, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, 
 		exists[ids[i]] = 0;
 }
 
-void Graph::extract_subgraph_and_prune(ui u, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui> > &vp, ui *Q, ui *degree, char *exists, ept *pend, char *deleted, ui *edgelist_pointer)
+void Graph::extract_subgraph_and_prune(ui u, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui>> &vp, ui *Q, ui *degree, char *exists, ept *pend, char *deleted, ui *edgelist_pointer)
 {
 	vp.clear();
 	ids_n = 0;
@@ -1581,9 +1609,9 @@ char Graph::find(ui u, ui w, ept &b, ept e, char *deleted, ept &idx, ui *edgelis
 // return the number of peeled edges
 ept Graph::peeling(ui critical_vertex, ListLinearHeap *linear_heap, ui *Qv, ui &Qv_n, ui d_threshold, ui *Qe, bool initialize_Qe, ui t_threshold, ui *tri_cnt, ui *active_edgelist, ui &active_edgelist_n, ui *edge_list, ui *edgelist_pointer, char *deleted, ui *degree, ept *pstart, ept *pend, ui *edges, char *exists)
 {
-#ifdef DIS_CTCP
-	return 0;
-#endif
+	if (!topCTCP)
+		return 0;
+
 	ept Qe_n = 0;
 #ifndef NO_TRUSS_PRUNE
 	if (initialize_Qe)

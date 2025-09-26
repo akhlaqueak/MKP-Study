@@ -2,7 +2,7 @@ all :
 	printf "\n\
 	#define SR_BRANCHING S_branching\n\
 	#define PART_BRANCH (K <= 5)\n" > switches.h
-	g++ -flto -Ofast -std=c++17 -DNDEBUG -march=native -o UMKP main.cpp Graph.cpp -w
+	g++ -flto -Ofast -std=c++17 -DNDEBUG -march=native -o UMKP Graph.cpp -w
 
 clean:
 	rm -rf UMKP
