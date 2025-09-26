@@ -1,4 +1,4 @@
-# MKP-Study
+# How to Run UMKP
 ## Serial Execution
 Go to Ours-serial folder and run: 
 ```
@@ -24,14 +24,7 @@ for example:
 ```
 ./UMKP ../datasets/socfb-Duke14.bin 5
 ```
-## Dataset Preparation
-Go to datasets folder and convert network-repository or SNAP graphs to binary format. 
 
-```
-cd datasets
-g++ toBin.cpp -o toBin
-./toBin graph.txt
-```
 
 ## Configuration of Parameters
 
@@ -55,6 +48,8 @@ the switch is enabled in following make target
 make CTCP
 ```
 While enabling CTCP all other parameters above can be configured. 
+
+# How to Run Baselines
 
 ## Running *kPlexT*
 
@@ -80,3 +75,11 @@ make
 ./DiseMKP <dataset> <k> 
 ```
 
+# Dataset Preparation
+Go to datasets folder and convert network-repository or SNAP graphs to binary format. 
+
+```
+cd datasets
+g++ toBin.cpp -o toBin
+./toBin graph.txt
+```
