@@ -608,6 +608,7 @@ void Graph::search_dense()
 	char *vis = new char[n];
 	vector<ui> dense_kplex = kplex;
 
+	kplex.pop_back(); // removing one item from kplex, so that degen can get |P|-k core
 	ui max_n_edges = dense_kplex.size() * (dense_kplex.size() - 1);
 
 	ListLinearHeap *heap = new ListLinearHeap(n, n - 1);
@@ -616,7 +617,6 @@ void Graph::search_dense()
 	// delete heap;
 	// delete[] vis;
 	// delete[] degree;
-	kplex.pop_back(); // removing one item from kplex, so that degen can get |P|-k core
 	if (n > dense_kplex.size() && best_n_edges < max_n_edges)
 	{
 
