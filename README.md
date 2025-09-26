@@ -83,3 +83,18 @@ cd datasets
 g++ toBin.cpp -o toBin
 ./toBin graph.txt
 ```
+
+The DIMACS formatted graph should be provided with a `.dim` file, e.g. 
+```
+p edge 4 3
+e 1 2
+e 2 3
+e 4 1
+```
+
+The SNAP formatted graph should be provided with a `.txt` file, e.g. 
+```
+1 2
+2 3
+3 1
+```
