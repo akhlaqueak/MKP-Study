@@ -3,17 +3,13 @@
 Go to Ours-serial folder and run: 
 ```
 make
-./UMKP <dataset> <k>
+./UMKP <dataset> <k> [parameters]
 ```
+The kplex is written in kplexes.txt file. 
 
 for example: 
 ```
 ./UMKP ../datasets/socfb-Duke14.bin 2
-```
-
-To run MkP Variants:
-```
-./UMKP ../datasets/socfb-Duke14.bin 2 variants
 ```
 
 ## Parallel Execution
@@ -32,12 +28,53 @@ for example:
 Go to datasets folder and convert network-repository or SNAP graphs to binary format. 
 
 ```
+cd datasets
+g++ toBin.cpp -o toBin
 ./toBin graph.txt
 ```
 
-## Create all versions
+## Configuration of Parameters
+
+Several switches can be configured by providing optional parameters to the program. The following table summarizes usage of parameters.
+
+
+| Parameter | Values |
+|----------|--------------------|
+| -branching | **Default (uses S-Br for K<=5, Pivot-Br otherwise)**, S-Br, R-Br, SR-Br, Pivot-Br, Binary-Br  |
+| -bounding  | **None**, S-Bound, R-Bound, SR-Bound |
+| -UBR2 | **true**, false|
+| -topCTCP  | **true**, false|
+| -twoHopG  | **true**, false|
+
+# Enable CTCP in the Recursion
+
+To enable CTCP in the recursion, compile the program with -D_SECOND_ORDER_PRUNING_, the switch is enabled in following make target
 
 ```
-make versions
+make CTCP
 ```
-This creates several binary files e.g. UMKP-Default, UMKP-ctcp, UMKP-R_Br, etc.
+
+## Running *kPlexT*
+
+```
+cd kPlexT
+make
+./kPlexT -g <dataset> -k <k> -b
+```
+
+## Running *Maple*
+
+```
+cd Maple
+make
+./Maple <dataset> <k> 
+```
+
+## Running *DiseMKP*
+
+```
+cd DiseMKP
+make
+./DiseMKP <dataset> <k> 
+```
+
