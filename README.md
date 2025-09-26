@@ -28,7 +28,7 @@ for example:
 
 ## Configuration of Parameters
 
-Several switches can be configured by providing optional parameters to the program. The following table summarizes usage of parameters.
+Several switches can be configured by providing optional parameters to the program. The following table summarizes usage of parameters. Values in bold are the default values. 
 
 
 | Parameter | Values |
