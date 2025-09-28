@@ -31,13 +31,14 @@ for example:
 Several switches can be configured by providing optional parameters to the program. The following table summarizes usage of parameters. Values in bold are the default values. 
 
 
-| Parameter | Values |
-|----------|--------------------|
-| -branching | **Default (uses S-Br for K<=5, Pivot-Br otherwise)**, S-Br, R-Br, SR-Br, Pivot-Br, Binary-Br  |
-| -bounding  | **None**, S-Bound, R-Bound, SR-Bound |
-| -UBR2 | **true**, false|
-| -topCTCP  | **true**, false|
-| -twoHopG  | **true**, false|
+| Parameter |Explaination | Values |
+|----------|-------|--------------------|
+| -branching | Branching method selection | **Default (uses S-Br for K<=5, Pivot-Br otherwise)**, S-Br, R-Br, SR-Br, Pivot-Br, Binary-Br  |
+| -bounding  | Upper bounding method to terminate a branch | **None**, S-Bound, R-Bound, SR-Bound |
+| -UBR2 | Select whether to apply pruning of vertices based on upper bounding of current branch | **true**, false|
+| -topCTCP | Select whether to apply CTCP at top level | **true**, false|
+| -twoHopG | Select whether to form two hop graph at second top level | **true**, false|
+| -dense | Select whether to find densest k-plex, also computes all k-plexes |true, **false** |
 
 ### Enable CTCP in the Recursion
 

@@ -37,7 +37,8 @@ private:
 
 public:
 	ui best_n_edges=0;
-	bool topCTCP, twoHopG; 
+	bool first_kplex=true;
+	bool topCTCP, twoHopG;
 
 	Graph(const char *_dir, const int _K);
 	~Graph();
@@ -70,32 +71,16 @@ private:
 	void load_graph_from_edgelist(ui _n, const std::vector<std::pair<ui, ui > > &edge_list, ui &n, ept &m, ui *degree, ept *pstart, ui *edges);
 	void subgraph_prune(ui *ids, ui &_n, std::vector<std::pair<ui, ui > > &edge_list, ui *rid, ui *Qv, ui *Qe, char *exists);
 	void ego_degen(ui n, ui m, ui *peel_sequence, ept *pstart, ui *edges, ui *degree, ui *rid, char *vis, ListLinearHeap *heap, ui *edgelist_pointer, bool output);
-	void write(vector<ui> &kplex, ui *pstart, ui* pend, ui *edges, bool append = false)
+	void write(vector<ui> &kplex, ui *pstart, ui* pend, ui *edges)
 	{
 
-		FILE *fout = append ? Utility::open_file("dense_kplexes.txt", "a") : Utility::open_file("dense_kplexes.txt", "w");
+		FILE *fout = first_kplex ? Utility::open_file("dense_kplexes.txt", "w") : Utility::open_file("dense_kplexes.txt", "a");
+		if(first_kplex) first_kplex = false;
 		ui ne = 0;
 		for (ui u : kplex)
 			fprintf(fout, "%u ", u);
 		fprintf(fout, "\n");
 
-		for (ui u : kplex)
-		{
-			fprintf(fout, "%u ", u);
-			ui *st = edges + pstart[u];
-			ui *en = edges + pend[u];
-			for (ui v : kplex)
-			{
-				if (binary_search(st, en, v))
-				{
-					fprintf(fout, "%u ", v);
-					ne++;
-				}
-			}
-			fprintf(fout, "\n");
-		}
-		fprintf(fout, "total no. of edges: %u\n", ne);
-		fprintf(fout, "\n");
 		fclose(fout);
 	}
 };

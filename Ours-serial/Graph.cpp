@@ -612,7 +612,7 @@ void Graph::search_dense()
 	ui max_n_edges = dense_kplex.size() * (dense_kplex.size() - 1);
 
 	ListLinearHeap *heap = new ListLinearHeap(n, n - 1);
-	ui UB = degen(n, peel_sequence, core, pstart, edges, degree, vis, heap, true);
+	ui UB = degen(n, peel_sequence, core, pstart, edges, degree, vis, heap, false);
 
 	// delete heap;
 	// delete[] vis;
@@ -623,7 +623,6 @@ void Graph::search_dense()
 		ui *out_mapping = new ui[n];
 		ui *rid = new ui[n];
 		ui *edgelist_pointer = new ui[m];
-
 
 		shrink_graph(n, m, peel_sequence, core, out_mapping, nullptr, rid, pstart, edges, true);
 
@@ -699,6 +698,7 @@ void Graph::search_dense()
 		ui max_n_prune = 0, max_n_search = 0, prune_cnt = 0, search_cnt = 0;
 		double min_density_prune = 1, min_density_search = 1, total_density_prune = 0, total_density_search = 0;
 		ui last_m = 0;
+		ui *ids = new ui[n];
 
 		for (ui i = 0; i < n && m && best_n_edges < max_n_edges; i++)
 		{
@@ -721,7 +721,6 @@ void Graph::search_dense()
 
 			assert(degree[u] == key);
 
-			ui *ids = Qv;
 			ui ids_n = 0;
 
 			extract_subgraph_and_prune(u, ids, ids_n, rid, vp, Qe, t_degree, exists, pend, deleted, edgelist_pointer);
@@ -758,15 +757,13 @@ void Graph::search_dense()
 					init_edges = best_n_edges;
 				for (ui i = 0; i < kplex_solver->dense_kplexes.size(); i++)
 				{
-					auto &kp = kplex_solver->dense_kplexes[i];
-					for (ui i = 0; i < kp.size(); i++)
-						kp[i] = out_mapping[ids[kp[i]]];
-					// for (ui j = 0; j < kp.size(); j++){
-					// 	kp[j].first = out_mapping[ids[kp[j].first]];
-					// 	kp[j].second = out_mapping[ids[kp[j].second]];
-					// }
-					write(kp, pstart, pstart + 1, edges, i);
+					auto kp = kplex_solver->dense_kplexes[i];
+					for (ui & v: kp)
+						v = out_mapping[ids[v]];
+
+					write(kp, pstart, pstart + 1, edges);
 				}
+				kplex_solver->dense_kplexes.clear();
 				if (kplex.size() > presize)
 				{
 					if (kplex_solver->best_n_edges > best_n_edges)
