@@ -806,12 +806,12 @@ private:
 					continue;
 
 				ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-				// #ifdef _SECOND_ORDER_PRUNING_
-				// 			if(ctcp_enabled) {
-				// 				while(!Qe.empty())Qe.pop();
-				// 				t_old_removed_edges_n=removed_edges_n;
-				// 			}
-				// #endif
+				#ifdef _SECOND_ORDER_PRUNING_
+							if(ctcp_enabled) {
+								while(!Qe.empty())Qe.pop();
+								t_old_removed_edges_n=removed_edges_n;
+							}
+				#endif
 				if (move_u_to_S_with_prune(u, S_end, R_end, level))
 					BB_search(S_end, R_end, level + 1, false, false);
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
@@ -833,36 +833,14 @@ private:
 
 			// First branch moves u to S
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-			// #ifdef _SECOND_ORDER_PRUNING_
-			// 			if(ctcp_enabled) {
-			// 				while(!Qe.empty())Qe.pop();
-			// 				t_old_removed_edges_n=removed_edges_n;
-			// 			}
-			// #endif
+			#ifdef _SECOND_ORDER_PRUNING_
+						if(ctcp_enabled) {
+							while(!Qe.empty())Qe.pop();
+							t_old_removed_edges_n=removed_edges_n;
+						}
+			#endif
 			if (move_u_to_S_with_prune(u, S_end, R_end, level))
 				BB_search(S_end, R_end, level + 1, false);
-
-			// the second branch exclude u from G
-			// This version of 2nd branch restores u through restore_SR function
-			// 		{
-			// restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-			// 			B.clear();
-			// 			while(!Qv.empty()){
-			// 			ui v=Qv.front(); Qv.pop();
-			// 			level_id[v]=n;
-			// 			}
-			// 			Qv.push(u);
-			// 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-			// // #ifdef _SECOND_ORDER_PRUNING_
-			// // 			if(ctcp_enabled) {
-			// // 				while(!Qe.empty())Qe.pop();
-			// // 				t_old_removed_edges_n=removed_edges_n;
-			// // 			}
-			// // #endif
-			// 			// if(remove_vertices_and_edges_with_prune(S_end, R_end, level)) BB_search(S_end, R_end, level+1, false, false, endIdx, endIdx);
-			// 			if(remove_vertices_and_edges_with_prune(S_end, R_end, level)) BB_search(S_end, R_end, level+1, false);
-			// 			restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-			// 		}
 
 			// the second branch exclude u from G
 			// This version of 2nd branch restores u through remove_u function
