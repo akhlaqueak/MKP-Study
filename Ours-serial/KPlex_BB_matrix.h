@@ -74,7 +74,7 @@ private:
 
 public:
 	ui best_n_edges;
-	vector<vector<ui>> dense_kplexes;
+	vector<vector<ui>> all_kplexes;
 	ui nmkp = 0;
 	KPLEX_BB_MATRIX(bool _ds = false)
 	{
@@ -201,7 +201,6 @@ public:
 
 	void load_graph(ui _n, const std::vector<std::pair<ui, ui>> &vp)
 	{
-		dense_kplexes.clear();
 		n = _n;
 		if (((long long)n) * n > matrix_size)
 		{
@@ -491,7 +490,7 @@ private:
 			{
 				kp.push_back(SR[i]);
 			}
-			dense_kplexes.push_back(kp);
+			all_kplexes.push_back(kp);
 			if (n_edges > best_n_edges)
 			{
 				best_n_edges = n_edges;

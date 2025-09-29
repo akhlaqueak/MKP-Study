@@ -5,7 +5,7 @@ Go to Ours-serial folder and run:
 make
 ./UMKP <dataset> <k> [parameters]
 ```
-The kplex is written in kplexes.txt file. 
+The kplex is written in kplex.txt file. 
 
 for example: 
 ```
