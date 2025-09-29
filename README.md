@@ -42,7 +42,8 @@ Several switches can be configured by providing optional parameters to the progr
 
 ### Enable CTCP in the Recursion
 
-To enable CTCP in the recursion, compile the program with -D_SECOND_ORDER_PRUNING_ 
+To enable CTCP in the recursion, compile the program with `-D_SECOND_ORDER_PRUNING_`
+ 
 the switch is enabled in following make target
 
 ```
