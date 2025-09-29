@@ -220,7 +220,7 @@ void Graph::verify_kplex()
 	char *vis = new char[n];
 	memset(vis, 0, sizeof(char) * n);
 
-	FILE *fin = Utility::open_file("kplexes.txt", "r");
+	FILE *fin = Utility::open_file("kplex.txt", "r");
 
 	ui kplex_size = n, kplex_n, idx = 0;
 	char ok = 1;
