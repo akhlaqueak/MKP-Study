@@ -195,13 +195,24 @@ void Graph::read_graph()
 
 void Graph::output_one_kplex()
 {
-	FILE *fout = Utility::open_file("kplexes.txt", "w");
+	FILE *fout = Utility::open_file("kplex.txt", "w");
 	fprintf(fout, "%lu\n", kplex.size());
 	sort(kplex.begin(), kplex.end());
 	for (ui i = 0; i < kplex.size(); i++)
 		fprintf(fout, " %u", kplex[i]);
 	fprintf(fout, "\n");
 	fclose(fout);
+
+	read();
+	ui ne = 0;
+	for (ui u : kplex)
+	{
+		for (ui v : kplex)
+			if (binary_search(edges + pstart[u], edges + pstart[u + 1], v))
+				ne++;
+
+	}
+	cout << "No. of edges: " << ne << endl;
 }
 
 void Graph::verify_kplex()
@@ -415,6 +426,7 @@ void Graph::kPlex_exact(int mode)
 #pragma omp taskgroup
 				{
 					kplex_solver_m->kPlex(K, UB, kplex_local, true);
+					for(ui& u: kplex_solver_m->kplex) u=ids[u];
 				}
 			}
 

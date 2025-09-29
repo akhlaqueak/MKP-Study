@@ -85,6 +85,7 @@ public:
 			degree_in_S[i] = src.degree_in_S[SR[i]];
 			level_id[i] = src.level_id[SR[i]];
 		}
+		ids = src.ids;
 	}
 
 	void loadContext(KPLEX_BB_MATRIX *dst, KPLEX_BB_MATRIX *ctx, ui S_end, ui R_end)
@@ -110,7 +111,7 @@ public:
 			degree_in_S[u] = ctx->degree_in_S[i];
 			degree[u] = ctx->degree[i];
 		}
-		
+		ids = ctx->ids;
 		delete[] ctx->SR;
 		delete[] ctx->degree_in_S;
 		delete[] ctx->degree;
