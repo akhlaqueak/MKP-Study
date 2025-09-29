@@ -93,17 +93,17 @@ void readDIMACS2Text(const char* filepath) {
 	sort(epairs.begin(), epairs.end());
 	epairs.erase(unique(epairs.begin(), epairs.end()), epairs.end());
 
-	ui contn = 1;
-	std::map<ui, ui> idmp;
-	for (ui i = 0; i < nodes.size(); i++) {
-		idmp[nodes[i]] = i;
-		if (nodes[i] != i) {
-			contn = 0;
-		}
-	}
-	if (contn == 0) printf("Node ids are not preserved! \n");
-
-	n = nodes.size();
+	// ui contn = 1;
+	// std::map<ui, ui> idmp;
+	// for (ui i = 0; i < nodes.size(); i++) {
+	// 	idmp[nodes[i]] = i;
+	// 	if (nodes[i] != i) {
+	// 		contn = 0;
+	// 	}
+	// }
+	// if (contn == 0) printf("Node ids are not preserved! \n");
+	printf("front: %d, back: %d", nodes.front(), nodes.back());
+	n = nodes.back()+1;
 	m = epairs.size();
 	printf("n = %s, (undirected) m = %s\n",
 		integer_to_string(n).c_str(),
@@ -115,14 +115,15 @@ void readDIMACS2Text(const char* filepath) {
 	ui j = 0;
 	for (ui i = 0; i < n; i++) {
 		pstart[i] = j;
-		while (j < m && epairs[j].first == nodes[i]) {
-			edges[j] = idmp[epairs[j].second];
-			reverse[j] = i;
+		while (j < m && epairs[j].first == i) {
+			edges[j] = epairs[j].second;
+			// edges[j] = idmp[epairs[j].second];
 			++j;
 		}
 		std::sort(edges + pstart[i], edges + j);
 	}
 	pstart[n] = j;
+	
 }
 
 void readRawSNAPText(const char* filepath) {
@@ -159,17 +160,17 @@ void readRawSNAPText(const char* filepath) {
 	sort(epairs.begin(), epairs.end());
 	epairs.erase(unique(epairs.begin(), epairs.end()), epairs.end());
 
-	ui contn = 1;
-	std::map<ui, ui> idmp;
-	for (ui i = 0; i < nodes.size(); i++) {
-		idmp[nodes[i]] = i;
-		if (nodes[i] != i) {
-			contn = 0;
-		}
-	}
-	if (contn == 0) printf("Node ids are not preserved! \n");
+	// ui contn = 1;
+	// std::map<ui, ui> idmp;
+	// for (ui i = 0; i < nodes.size(); i++) {
+	// 	idmp[nodes[i]] = i;
+	// 	if (nodes[i] != i) {
+	// 		contn = 0;
+	// 	}
+	// }
+	// if (contn == 0) printf("Node ids are not preserved! \n");
 
-	n = nodes.size();
+	n = nodes.back()+1;
 	m = epairs.size();
 	printf("n = %s, (undirected) m = %s\n",
 		integer_to_string(n).c_str(),
@@ -181,8 +182,9 @@ void readRawSNAPText(const char* filepath) {
 	ui j = 0;
 	for (ui i = 0; i < n; i++) {
 		pstart[i] = j;
-		while (j < m && epairs[j].first == nodes[i]) {
-			edges[j] = idmp[epairs[j].second];
+		while (j < m && epairs[j].first == i) {
+			edges[j] = epairs[j].second;
+			// edges[j] = idmp[epairs[j].second];
 			reverse[j] = i;
 			++j;
 		}
@@ -191,57 +193,6 @@ void readRawSNAPText(const char* filepath) {
 }
 
 
-int readRawDIM10Text(const char* filepath) {
-	std::ifstream infile;
-	const int SZBUF = 99999999;
-	char *buf = new char[SZBUF];
-	std::vector<std::pair<ui, ui> > epairs;
-	std::vector<ui> nodes;
-	//FILE *f = Utility::open_file(filepath, "r");
-	infile.open(filepath, std::ios::in);
-	if (!infile.is_open()) {
-		fprintf(stderr, "can not find file %s\n", filepath);
-		exit(1);
-	}
-
-	infile.getline(buf, SZBUF);
-	while (buf[0] == '%') infile.getline(buf, SZBUF);
-
-	std::stringstream ss(buf);
-	int fmt = 0;
-	ss >> n >> m >> fmt;
-	if (fmt != 0){
-		printf("Format of %s is not supported yet\n", filepath);
-		exit(0);
-	}
-	m *= 2;
-	pstart = new ui[n + 1];
-	edges = new ui[m];
-	reverse = new ui[m];
-	ui j = 0;
-	for (ui u = 0; u < n; u++) {
-		pstart[u] = j;
-		infile.getline(buf, SZBUF);
-		std::stringstream ss(buf);
-		int nei;
-		while (ss >> nei) {
-			//printf("%d ", nei);
-			if ((nei - 1) != u) {
-				edges[j] = nei - 1;
-				reverse[j] = u;
-				j++;
-				//if (j==745)
-				//	printf("pause\n");
-			}
-		}
-		//printf("\n");
-		std::sort(edges + pstart[u], edges + j);
-	}
-	pstart[n] = j;	
-	assert(j == m);
-	printf("n:%d m:%d\n",n,m/2);
-	return 0;
-}
 
 int writeBinaryGraph(const char* filepath) {
 	FILE *f = open_file(filepath, "wb");
