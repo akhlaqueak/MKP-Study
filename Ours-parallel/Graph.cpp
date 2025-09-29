@@ -203,7 +203,7 @@ void Graph::output_one_kplex()
 	fprintf(fout, "\n");
 	fclose(fout);
 
-	read();
+	read_graph_binary();
 	ui ne = 0;
 	for (ui u : kplex)
 	{
