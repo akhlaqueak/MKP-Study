@@ -38,7 +38,7 @@ Several switches can be configured by providing optional parameters to the progr
 | -UBR2 | Select whether to apply pruning of vertices based on upper bounding of current branch | **true**, false|
 | -topCTCP | Select whether to apply CTCP at top level | **true**, false|
 | -twoHopG | Select whether to form two hop graph at second top level | **true**, false|
-| -dense | Select whether to find densest k-plex, also computes all k-plexes |true, **false** |
+| -dense | Select whether to find densest k-plex, also computes all k-plexes (output in `all_kplexes.txt` file) |true, **false** |
 
 ### Enable CTCP in the Recursion
 
