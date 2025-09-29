@@ -528,7 +528,6 @@ private:
 			if (size <= best_solution_size.load())
 			{
 				printf("!!! the solution to store is no larger than the current best solution!");
-				return;
 			}
 			else
 			{
