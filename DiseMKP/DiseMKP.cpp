@@ -1487,6 +1487,15 @@ static void bnb_search(int cutoff, int silent) {
 	      printf("%d ", MaxCLQ_Stack[i]);
 	    }
 	    printf("\n");
+
+		// writing to file
+
+		FILE *fout = fopen("kplex.txt", "w");
+		for(int i=0;i<MAX_KPX_SIZE;i++)
+			printf("%d ", MaxCLQ_Stack[i]);
+
+		fprintf(fout, "\n");
+		fclose(fout);
 	  }
 	  printf("I the initial time is %4.2lf \n", INIT_TIME);
 	  return r;
