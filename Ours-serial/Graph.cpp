@@ -344,7 +344,7 @@ void Graph::search()
 		delete[] core;
 		core = NULL;
 
-		if (n)
+		if (n <= kplex.size())
 		{
 			write_one_kplex(kplex);
 			printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f \n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1000000.0);
@@ -502,6 +502,7 @@ void Graph::search()
 			Qv_n = 1;
 			if (kplex.size() > pre_size)
 			{
+				cout<<"true;;;;";
 				for (ui & v: kplex)
 					v = out_mapping[ids[v]];
 				m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, true, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
