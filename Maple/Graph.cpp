@@ -246,6 +246,8 @@ void Graph::search() {
 		memset(exists, 0, sizeof(char)*n);
 
 		ui *Qv = new ui[n];
+		ui *ids = new ui[n];
+
 		ui Qv_n = 0;
 		MSearcher *kplex_solver = new MSearcher();
 		
@@ -293,7 +295,6 @@ void Graph::search() {
 			if(m == 0) break;
 			assert(degree[u] == key);
 
-			ui *ids = Qv;
 			ui ids_n = 0;
 			bool mflag=false;
 			
