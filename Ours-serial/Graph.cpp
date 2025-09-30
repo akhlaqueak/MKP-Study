@@ -466,9 +466,7 @@ void Graph::search()
 					}
 					if (K < K_THRESH && ids_n > kplex.size() && vp.size() * 2 < m)
 						subgraph_prune(ids, ids_n, vp, rid, Qv, Qe, exists);	
-					if(kplex.size() != pre_size){
-						for(ui &u:kplex) u=ids[u];
-					}
+					
 
 				} while (kplex.size() != pre_size);
 			}
@@ -800,8 +798,11 @@ void Graph::subgraph_prune(ui *ids, ui &_n, vector<pair<ui, ui>> &edge_list, ui 
 {
 	ui s_n;
 	ept s_m;
+	ui pre_size=kplex.size();
 	load_graph_from_edgelist(_n, edge_list, s_n, s_m, s_degree, s_pstart, s_edges);
 	degen(s_n, s_peel_sequence, s_core, s_pstart, s_edges, s_degree, s_vis, s_heap, false);
+	if(kplex.size()>pre_size) 
+		for(ui& u: kplex) u = ids[u];
 	shrink_graph(s_n, s_m, s_peel_sequence, s_core, ids, ids, rid, s_pstart, s_edges, false);
 
 	if (s_n > 0 && kplex.size() + 1 > 2 * K)
