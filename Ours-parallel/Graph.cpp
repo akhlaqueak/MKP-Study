@@ -196,7 +196,7 @@ void Graph::read_graph()
 void Graph::output_one_kplex()
 {
 	FILE *fout = Utility::open_file("kplex.txt", "w");
-	fprintf(fout, "%lu\n", kplex.size());
+
 	sort(kplex.begin(), kplex.end());
 	for (ui i = 0; i < kplex.size(); i++)
 		fprintf(fout, " %u", kplex[i]);
