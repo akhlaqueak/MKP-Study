@@ -464,8 +464,8 @@ void Graph::search()
 							max_n_prune = ids_n;
 						// cout<<"Density"<<density<<" ";
 					}
-					if (K < K_THRESH && ids_n > kplex.size() && vp.size() * 2 < m)
-						subgraph_prune(ids, ids_n, vp, rid, Qv, Qe, exists);	
+					// if (K < K_THRESH && ids_n > kplex.size() && vp.size() * 2 < m)
+					// 	subgraph_prune(ids, ids_n, vp, rid, Qv, Qe, exists);	
 
 				} while (kplex.size() != pre_size);
 			}
