@@ -36,7 +36,7 @@ private:
 	long long removed_edges_n;
 #endif
 public:
-	vector<ui> kplex;
+	// vector<ui> kplex;
 	ui *degree;
 	ui *degree_in_S;
 
