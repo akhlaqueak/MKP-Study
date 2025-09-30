@@ -1492,7 +1492,7 @@ static void bnb_search(int cutoff, int silent) {
 
 		FILE *fout = fopen("kplex.txt", "w");
 		for(int i=0;i<MAX_KPX_SIZE;i++)
-			printf("%d ", MaxCLQ_Stack[i]);
+			fprintf(fout, "%d ", MaxCLQ_Stack[i]);
 
 		fprintf(fout, "\n");
 		fclose(fout);
@@ -1574,24 +1574,21 @@ void print_compile_options(){
 	}
 	
 	static void print_solution(){
+		FILE *fout = fopen("kplex.txt", "w");
 		printf("Solution: ");
 		for(int i=0;i<MAX_KPX_SIZE;i++){
 			if(MAX_KPX_SIZE>INIT_KPX_SIZE){
 				printf("%d ",Old_Name[MaxCLQ_Stack[i]]);
+				fprintf(fout, "%d ", Old_Name[MaxCLQ_Stack[i]]);
 			}else{
 				printf("%d ",MaxCLQ_Stack[i]);
+				fprintf(fout, "%d ", MaxCLQ_Stack[i]);
 			}
 		}
 		printf("\n");
-
-				// writing to file
-
-				FILE *fout = fopen("kplex.txt", "w");
-				for(int i=0;i<MAX_KPX_SIZE;i++)
-					printf("%d ", MaxCLQ_Stack[i]);
 		
-				fprintf(fout, "\n");
-				fclose(fout);
+		fprintf(fout, "\n");
+		fclose(fout);
 	}
 
 	int main(int argc, char *argv[]) {
