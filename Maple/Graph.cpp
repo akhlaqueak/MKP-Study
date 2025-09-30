@@ -131,7 +131,7 @@ void Graph::read() {
 
 void Graph::write() {
 	FILE *fout = Utility::open_file("kplexes.txt", "w");
-	fprintf(fout, "%lu\n", kplex.size());
+	// fprintf(fout, "%lu\n", kplex.size());
 	sort(kplex.begin(), kplex.end());
 	for(ui i = 0;i < kplex.size();i ++) fprintf(fout, " %u", kplex[i]);
 	fprintf(fout, "\n");
