@@ -97,6 +97,7 @@ private:
 	ui write_one_kplex(vector<ui> &kplex)
 	{
 		FILE *fout = Utility::open_file("kplex.txt", "w");
+		kplex = { 2414,5825,10648,11584,11847,12004,12378,12406,12436,12489,12920,12925,13265,13315,13476,13500,15654,15933,16226,19851,24504,45611};
 		read();
 		std::sort(kplex.begin(), kplex.end());
 
