@@ -420,7 +420,7 @@ void Graph::search()
 		double min_density_prune = 1, min_density_search = 1, total_density_prune = 0, total_density_search = 0;
 		ui last_m = 0;
 
-		for (ui i = 0; i < n && m && kplex.size() < UB; i++)
+		for (ui i = 0; 0&i < n && m && kplex.size() < UB; i++)
 		{
 			ui u, key;
 			linear_heap->pop_min(u, key);
@@ -502,7 +502,6 @@ void Graph::search()
 			Qv_n = 1;
 			if (kplex.size() > pre_size)
 			{
-				cout<<"true;;;;";
 				for (ui & v: kplex)
 					v = out_mapping[ids[v]];
 				m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, true, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
