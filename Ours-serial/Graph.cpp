@@ -466,7 +466,9 @@ void Graph::search()
 					}
 					if (K < K_THRESH && ids_n > kplex.size() && vp.size() * 2 < m)
 						subgraph_prune(ids, ids_n, vp, rid, Qv, Qe, exists);	
-					
+					if(kplex.size() != pre_size){
+						for(ui &u:kplex) u=out_mapping[u];
+					}
 
 				} while (kplex.size() != pre_size);
 			}
