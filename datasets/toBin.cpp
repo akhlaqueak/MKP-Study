@@ -93,16 +93,6 @@ void readDIMACS2Text(const char* filepath) {
 	sort(epairs.begin(), epairs.end());
 	epairs.erase(unique(epairs.begin(), epairs.end()), epairs.end());
 
-	// ui contn = 1;
-	// std::map<ui, ui> idmp;
-	// for (ui i = 0; i < nodes.size(); i++) {
-	// 	idmp[nodes[i]] = i;
-	// 	if (nodes[i] != i) {
-	// 		contn = 0;
-	// 	}
-	// }
-	// if (contn == 0) printf("Node ids are not preserved! \n");
-	printf("front: %d, back: %d", nodes.front(), nodes.back());
 	n = nodes.back()+1;
 	m = epairs.size();
 	printf("n = %s, (undirected) m = %s\n",
