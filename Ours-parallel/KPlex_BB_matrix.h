@@ -525,11 +525,8 @@ private:
 
 #pragma omp critical(A)
 		{
-			if (size <= best_solution_size.load())
-			{
-				printf("!!! the solution to store is no larger than the current best solution!");
-			}
-			else
+			if (size > best_solution_size.load())
+			
 			{
 
 				ui n_edges = 0;
