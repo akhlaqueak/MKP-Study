@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
 	else if(strcmp(alg.c_str(), "verify") == 0) graph->verify_kplex();
 	else print_usage();
 
-	if(output) graph->output_one_kplex();
+	graph->output_one_kplex();
 
 	delete graph;
 
