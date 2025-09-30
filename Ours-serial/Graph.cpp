@@ -344,7 +344,7 @@ void Graph::search()
 		delete[] core;
 		core = NULL;
 
-		if (n <= kplex.size())
+		if (n)
 		{
 			write_one_kplex(kplex);
 			printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f \n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1000000.0);
