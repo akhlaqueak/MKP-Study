@@ -559,7 +559,6 @@ private:
 					kplex.clear();
 					for (ui i = 0; i < size; i++){
 						kplex.push_back(ids.at(SR[i]));
-						cout<<kplex[i]<<" ";
 					}
 					best_n_edges = n_edges;
 				}
