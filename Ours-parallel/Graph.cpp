@@ -445,10 +445,10 @@ void Graph::kPlex_exact(int mode)
 // 		}
 		search_time = parallel_timer.elapsed();
 		for(ui i=0;i<omp_get_max_threads(); i++){
-			if(solvers[i]->kplex.size()>kplex.size()){
-				kplex = solvers[i]->kplex;
-				mkpsize = kplex.size();
-			}
+			// if(solvers[i]->kplex.size()>kplex.size()){
+			// 	kplex = solvers[i]->kplex;
+			// 	mkpsize = kplex.size();
+			// }
 
 			delete solvers[i];
 		}
