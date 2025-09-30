@@ -1583,6 +1583,15 @@ void print_compile_options(){
 			}
 		}
 		printf("\n");
+
+				// writing to file
+
+				FILE *fout = fopen("kplex.txt", "w");
+				for(int i=0;i<MAX_KPX_SIZE;i++)
+					printf("%d ", MaxCLQ_Stack[i]);
+		
+				fprintf(fout, "\n");
+				fclose(fout);
 	}
 
 	int main(int argc, char *argv[]) {
