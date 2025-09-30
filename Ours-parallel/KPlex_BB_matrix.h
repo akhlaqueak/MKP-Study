@@ -449,7 +449,7 @@ private:
 				solution_size = n - idx;
 				kplex.clear();
 				for (ui i = idx; i < n; i++)
-					kplex.push_back(peel_sequence[i]);
+					kplex.push_back(ids[peel_sequence[i]]);
 				printf("Degen find a solution of size %u\n", solution_size);
 			}
 		}
