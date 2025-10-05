@@ -249,8 +249,12 @@ void Graph::verify_kplex()
 	char ok = 1;
 	while (fscanf(fin, "%u", &idx) == 1)
 		kplex.push_back(idx);
+	std::sort(kplex.begin(), kplex.end());
 	ui kplex_size = kplex.size();
-
+	cout<<"kplex size: "<<kplex_size<<endl;
+	for(ui u: kplex)
+		cout<<u<<" ";
+	cout<<endl;
 	ui ne = 0;
 	for (ui u : kplex)
 	{
@@ -258,10 +262,15 @@ void Graph::verify_kplex()
 		for (ui v : kplex)
 			if (binary_search(edges + pstart[u], edges + pstart[u + 1], v))
 				node_ne++;
-		if(node_ne+K<kplex_size) cout<<"Error! Not a valid kplex!"<<endl;
+		if(node_ne+K<kplex_size) 
+		{
+			cout<<"Error! Not a valid kplex!"<<endl;
+			return;
+		}
+		
 		ne+=node_ne;
 	}
-
+	cout<<"kplex valid!!"<<endl;
 	cout<<"Total No. of edges: "<<ne<<endl;
 	fclose(fin);
 }

@@ -50,7 +50,7 @@ MAX_KPX_SIZE, MAX_ISET_SIZE, INIT_KPX_SIZE, HEUR_KPX_SIZE,
 NB_BACK_CLIQUE, MATRIX_ROW_WIDTH, MAX_VERTEX_NO, K_CORE_G = 0, Reasoning_Point=0,MAX_MATRIX_SIZE=2000;
 
 
-static int Max_Degree = 0, UPPER_BOUND=0;
+static int Max_Degree = 0, UPPER_BOUND=0, bin_Adjust=0;
 static int Node_Degree[MAX_NODE];
 static int *CNN,*Node_Count;
 
@@ -174,14 +174,14 @@ static void allcoate_memory_for_adjacency_list(int nb_node, int nb_edge,int offs
 using ui = unsigned int; // vertex type
 
 static void read_graph_binary(char* input_file) {
+	bin_Adjust = 1;
   FILE *fp_in = fopen(input_file, "r");
   using ui = unsigned int;
   int m, n;
   ui t;
   fread(&t, sizeof(ui), 1, fp_in);
   fread(&n, sizeof(ui), 1, fp_in); // the number of vertices
-  fread(&m, sizeof(ui), 1,
-        fp_in); // the number of edges (twice the acutal number).
+  fread(&m, sizeof(ui), 1, fp_in); // the number of edges (twice the acutal number).
   fread(&Node_Degree[1], sizeof(ui), n, fp_in);
   NB_NODE = n;
   NB_EDGE = m;
@@ -194,7 +194,7 @@ static void read_graph_binary(char* input_file) {
   for (int i = 1; i <= NB_NODE; ++i) {
     fread(Node_Neibors[i], sizeof(ui), Node_Degree[i], fp_in);
     for (int j = 0; j < Node_Degree[i]; ++j)
-      Node_Neibors[i][j]++;
+      Node_Neibors[i][j]+=bin_Adjust;
     Node_Neibors[i][Node_Degree[i]] = NONE;
     if (Node_Degree[i] > Max_Degree)
       Max_Degree = Node_Degree[i];
@@ -1492,7 +1492,7 @@ static void bnb_search(int cutoff, int silent) {
 
 		FILE *fout = fopen("kplex.txt", "w");
 		for(int i=0;i<MAX_KPX_SIZE;i++)
-			fprintf(fout, "%d ", MaxCLQ_Stack[i]);
+			fprintf(fout, "%d ", MaxCLQ_Stack[i]-bin_Adjust);
 
 		fprintf(fout, "\n");
 		fclose(fout);
@@ -1577,13 +1577,11 @@ void print_compile_options(){
 		FILE *fout = fopen("kplex.txt", "w");
 		printf("Solution: ");
 		for(int i=0;i<MAX_KPX_SIZE;i++){
-			if(MAX_KPX_SIZE>INIT_KPX_SIZE){
-				printf("%d ",Old_Name[MaxCLQ_Stack[i]]);
-				fprintf(fout, "%d ", Old_Name[MaxCLQ_Stack[i]]);
-			}else{
-				printf("%d ",MaxCLQ_Stack[i]);
-				fprintf(fout, "%d ", MaxCLQ_Stack[i]);
-			}
+			ui v = MAX_KPX_SIZE>INIT_KPX_SIZE? Old_Name[MaxCLQ_Stack[i]]: MaxCLQ_Stack[i];
+			v-=bin_Adjust;
+			
+			printf("%d ", v);
+			fprintf(fout, "%d ", v);
 		}
 		printf("\n");
 		
