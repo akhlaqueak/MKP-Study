@@ -21,6 +21,8 @@ int main(int argc, char *argv[])
 	cmd = CommandLine(argc, argv);
 
 	bool dense_search = cmd.GetOptionValue("-dense", "false") == "true";
+	bool verify = cmd.GetOptionValue("-verify", "false") == "true";
+
 
 	printf("\n-----------------------------------------------------------------------------------------\n");
 	strncpy(filename, argv[1], LEN_LIMIT);
@@ -29,6 +31,11 @@ int main(int argc, char *argv[])
 	graph->twoHopG = cmd.GetOptionValue("-twoHopG", "true") == "true";
 	graph->topCTCP = cmd.GetOptionValue("-topCTCP", "true") == "true";
 	graph->read();
+
+	if(verify){
+		graph->verify_kplex();
+		return 0;
+	}
 	graph->search();
 	if (dense_search)
 		graph->search_dense();
@@ -235,61 +242,28 @@ void Graph::read()
 
 void Graph::verify_kplex()
 {
-	char *vis = new char[n];
-	memset(vis, 0, sizeof(char) * n);
+	FILE *fin = Utility::open_file("kplex.txt", "r");
 
-	FILE *fin = Utility::open_file("kplexes.txt", "r");
-
-	ui kplex_size = n, kplex_n, idx = 0;
+	ui idx = 0;
+	vector<ui> kplex;
 	char ok = 1;
-	while (fscanf(fin, "%u", &kplex_n) == 1)
+	while (fscanf(fin, "%u", &idx) == 1)
+		kplex.push_back(idx);
+	ui kplex_size = kplex.size();
+
+	ui ne = 0;
+	for (ui u : kplex)
 	{
-		++idx;
-		if (kplex_size == n)
-		{
-			kplex_size = kplex_n;
-			printf("k-plex sizes: %u\n", kplex_size);
-		}
-		if (kplex_n != kplex_size)
-			printf("!!! WA k-plex size: %u!\n", kplex_n);
-		vector<ui> kplex;
-		for (ui i = 0; i < kplex_n; i++)
-		{
-			ui tmp;
-			fscanf(fin, "%u", &tmp);
-			kplex.pb(tmp);
-		}
-
-		for (ui i = 0; i < kplex.size(); i++)
-		{
-			if (vis[kplex[i]])
-			{
-				printf("WA k-plex! Duplicate vertex: %u\n", idx);
-				ok = 0;
-				break;
-			}
-			vis[kplex[i]] = 1;
-		}
-		for (ui i = 0; i < kplex.size(); i++)
-		{
-			ui d = 0;
-			for (ui j = pstart[kplex[i]]; j < pstart[kplex[i] + 1]; j++)
-				if (vis[edges[j]])
-					++d;
-			if (d + K < kplex.size())
-			{
-				ok = 0;
-				printf("WA k-plex! Not enough neighbors!\n");
-			}
-		}
-		for (ui i = 0; i < kplex.size(); i++)
-			vis[kplex[i]] = 0;
+		ui node_ne=0;
+		for (ui v : kplex)
+			if (binary_search(edges + pstart[u], edges + pstart[u + 1], v))
+				node_ne++;
+		if(node_ne+K<kplex_size) cout<<"Error! Not a valid kplex!"<<endl;
+		ne+=node_ne;
 	}
-	if (ok)
-		printf("Correct k-plexes!\n");
-	fclose(fin);
 
-	delete[] vis;
+	cout<<"Total No. of edges: "<<ne<<endl;
+	fclose(fin);
 }
 
 void Graph::search()
