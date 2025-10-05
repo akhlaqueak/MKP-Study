@@ -1484,7 +1484,7 @@ static void bnb_search(int cutoff, int silent) {
 	    SEARCH_TIME=READ_TIME+INIT_TIME;
 	    printf("Solution: ");
 	    for(int i=0;i<MAX_KPX_SIZE;i++){
-	      printf("%d ", MaxCLQ_Stack[i]);
+	      printf("%d ", MaxCLQ_Stack[i]-bin_Adjust);
 	    }
 	    printf("\n");
 
