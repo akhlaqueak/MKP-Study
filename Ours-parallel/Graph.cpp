@@ -311,7 +311,7 @@ void Graph::extract_entire_graph(ui u, std::vector<ui> &ids, ui *rid, std::vecto
 	rid[u]=0;
 	for (ui v = 0; v < n; ++v)
 	{
-		if ((pend[v] - pstart[v])&& v!=u)
+		if (v!=u)
 		{
 			rid[v] = ids.size();
 			ids.push_back(v);
