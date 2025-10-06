@@ -17,9 +17,9 @@ private:
 	ept *pend_buf;
 	ui *edges; //adjacent ids of edges
 	ui *edgelist_pointer;
-
-
-public:
+	
+	public:
+	bool twoHopG;
 	Graph(const char *_dir, const int _K) ;
 	~Graph() ;
 

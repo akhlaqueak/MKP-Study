@@ -1709,13 +1709,13 @@ int main(int argc, char *argv[])
 	cmd = CommandLine(argc, argv);
 
 	bool dense_search = cmd.GetOptionValue("-dense", "false") == "true";
-
 	printf("\n-----------------------------------------------------------------------------------------\n");
+	char filename[LEN_LIMIT];
 	strncpy(filename, argv[1], LEN_LIMIT);
 	int k = atoi(argv[2]);
 
-	graph->twoHopG = cmd.GetOptionValue("-twoHopG", "true") == "true";
 	Graph *graph = new Graph(filename, k);
+	graph->twoHopG = cmd.GetOptionValue("-twoHopG", "true") == "true";
 	graph->read_graph_binary();
 	graph->kPlex_exact(false);
 	graph->output_one_kplex();

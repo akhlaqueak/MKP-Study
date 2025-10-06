@@ -806,7 +806,8 @@ private:
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 			ui u = SR[S_end];
 			if (move_u_to_S_with_prune(u, S_end, R_end, level))
-				BB_search(S_end, R_end, level + 1, false);
+						BB_search(S_end, R_end, level + 1, false, false, st);
+
 
 			// the second branch exclude u from G
 			// This version of 2nd branch restores u through remove_u function
@@ -824,7 +825,8 @@ private:
 				if (succeed && best_solution_size > pre_best_solution_size)
 					succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
 				if (remove_vertices_and_edges_with_prune(S_end, R_end, level))
-					BB_search(S_end, R_end, level + 1, false);
+						BB_search(S_end, R_end, level + 1, false, false, st);
+
 			}
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 			return;
