@@ -320,13 +320,15 @@ void Graph::extract_entire_graph(ui u, std::vector<ui> &ids, ui *rid, std::vecto
 	for (ui i = 0; i < ids.size(); i++)
 	{
 		ui u = ids[i];
-		for (ept j = pstart[u]; j < pend[u]; j++)
+		for (ept j = pstart[u]; j < pend[u]; j++){
+
 			ui v=edges[j];
 			if ((pend[v] - pstart[v]) && u < v)
 			{
-				if(rid[u]>= ids.size() or rid[edges[j]]>=ids.size()) cout<<ids.size()<<" " <<rid[u]<< " "<<u<<" "<<rid[edges[j]]<<endl;
+				if(rid[u]>= ids.size() or rid[v]>=ids.size()) cout<<ids.size()<<" " <<rid[u]<< " "<<u<<" "<<rid[edges[j]]<<endl;
 				vp.push_back(make_pair(rid[u], rid[v]));
 			}
+		}
 	}
 }
 void Graph::kPlex_exact(int mode)
