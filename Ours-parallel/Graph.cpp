@@ -303,7 +303,29 @@ void Graph::kPlex_degen()
 	else
 		printf("\tMaximum k-plex Size: %lu, Total Time: %s (microseconds)\n", kplex.size(), Utility::integer_to_string(t.elapsed()).c_str());
 }
-
+void Graph::extract_entire_graph(ui u, std::vector<ui> &ids, ui *rid, std::vector<std::pair<ui,ui> > &vp, ept *pstart, ept *pend, ui *edges) 
+{
+	ids.clear();
+	vp.clear();
+	ids.push_back(u);
+	for (ui i = 0; i < n; ++i)
+	{
+		if (degree[i]&& i!=u)
+		{
+			rid[i] = ids.size();
+			ids.push_back(i);
+		}
+	}
+	for (ui i = 0; i < ids.size(); i++)
+	{
+		ui u = ids[i];
+		for (ept j = pstart[u]; j < pend[u]; j++)
+			if (u < edges[j])
+			{
+				vp.push_back(make_pair(rid[u], rid[edges[j]]));
+			}
+	}
+}
 void Graph::kPlex_exact(int mode)
 {
 	Timer t;
@@ -408,8 +430,9 @@ void Graph::kPlex_exact(int mode)
 					continue;
 
 				fflush(stdout);
-
-				if (best_sz >= 2 * K - 1)
+				if(!twoHopG)
+					extract_entire_graph(u, ids, rid, vp, pstart, pend, edges);
+				else if (best_sz >= 2 * K - 1)
 					extract_subgraph_with_prune(u, best_sz + 1 - K, best_sz + 1 - 2 * K, best_sz + 3 - 2 * K, peel_sequence_rid, degree, ids, rid, vp, exists, pstart, pend, edges);
 				else
 					extract_subgraph_wo_prune(u, peel_sequence_rid, ids, rid, vp, exists, pstart, pend, edges);

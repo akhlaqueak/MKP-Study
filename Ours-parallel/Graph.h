@@ -36,7 +36,7 @@ private:
 	void reorganize_adjacency_lists(ui n, ui *peel_sequence, ui *rid, ui *pstart, ui *pend, ui *edges) ;
 	ui extract_subgraph_with_prune(ui u, ui degree_threshold, ui triangle_threshold, ui cn_threshold, const ui *p_rid, ui *degree, std::vector<ui> &ids, ui *rid, std::vector<std::pair<ui,ui> > &vp, char *exists, ept *pstart, ept *pend, ui *edges) ;
 	ui extract_subgraph_wo_prune(ui u, const ui *p_rid, std::vector<ui> &ids, ui *rid, std::vector<std::pair<ui,ui> > &vp, char *exists, ept *pstart, ept *pend, ui *edges) ;
-
+	void extract_entire_graph(ui u, std::vector<ui> &ids, ui *rid, std::vector<std::pair<ui,ui> > &vp, ept *pstart, ept *pend, ui *edges) ;
 	void write_subgraph(ui n, const std::vector<std::pair<int,int> > &edge_list) ;
 	void heuristic_kplex_max_degree(ui processed_threshold) ;
 	void extract_subgraph(ui u, ui *ids, ui &ids_n, ui *rid, std::vector<std::pair<ui,ui> > &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer) ;
