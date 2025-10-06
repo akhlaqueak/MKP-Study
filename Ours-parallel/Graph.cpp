@@ -317,9 +317,8 @@ void Graph::extract_entire_graph(ui u, std::vector<ui> &ids, ui *rid, std::vecto
 			ids.push_back(v);
 		}
 	}
-	for (ui i = 0; i < ids.size(); i++)
+	for (ui u:ids)
 	{
-		ui u = ids[i];
 		for (ept j = pstart[u]; j < pend[u]; j++){
 
 			ui v=edges[j];
