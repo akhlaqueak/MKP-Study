@@ -1108,15 +1108,15 @@ private:
 			double ubc = tryColor(S_end, cend);
 
 			if (ubp == 0 or
-				(ISc.size() / ubc > PIMax.size() / ubp) or
-				((ISc.size() / ubc == PIMax.size() / ubp) and (ISc.size() > PIMax.size())))
+				(ISc->size() / ubc > PIMax->size() / ubp) or
+				((ISc->size() / ubc == PIMax->size() / ubp) and (ISc->size() > PIMax->size())))
 
 			{
 				if (ubc <= beta)
 					beta -= ubc;
 				else
 					break;
-				for (ui v : ISc)
+				for (ui v : *ISc)
 					swap_pos(v, --cend);
 			}
 			else
@@ -1125,7 +1125,7 @@ private:
 					beta -= ubp;
 				else
 					break;
-				for (ui v : PIMax)
+				for (ui v : *PIMax)
 					swap_pos(v, --cend);
 			}
 		} while (beta > 0 && cend > S_end);
@@ -1143,7 +1143,7 @@ private:
 			ui ub = tryColor(S_end, cend);
 			if (ub <= beta)
 			{
-				for (ui i : ISc)
+				for (ui i : *ISc)
 				{
 					swap_pos(i, --cend);
 				}
@@ -1226,6 +1226,35 @@ private:
 		if (beta > 0)
 			cend -= min(beta, cend - S_end);
 		return move_candidates_to_end(S_end, cend, R_end, level);
+	}
+	ui move_candidates_to_end(ui S_end, ui cend, ui R_end, ui level)
+	{
+		for (ui i = S_end; i < cend; i++)
+		{
+			// get a vertex with lowest peelOrder at location i
+			ui u = SR[i], ind = i;
+			for (ui j = i + 1; j < cend; j++)
+			{
+				ui v = SR[j];
+				if (peelOrder[v] < peelOrder[u])
+					ind = j, u = v;
+			}
+
+			swap_pos(i, ind);
+			swap_pos(i, --R_end);
+
+			level_id[u] = level;
+			char *t_matrix = matrix + u * n;
+			degree[u] = degree_in_S[u] = 0;
+			for (ui i = 0; i < R_end; i++)
+			{
+				ui w = SR[i];
+				// if(level_id[w]==level) continue;
+				if (t_matrix[w])
+					--degree[w];
+			}
+		}
+		return R_end;
 	}
 	bool greedily_add_vertices_to_S(ui &S_end, ui &R_end, ui level)
 	{
