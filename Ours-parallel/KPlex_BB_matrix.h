@@ -1089,34 +1089,144 @@ private:
 	{
 		return K - (S_end - degree_in_S[u]);
 	}
-	// ui bound(ui S_end, ui R_end, ui u, std::vector<ui>& R) {
-	// 	char *t_matrix=matrix+u*n;
-	// 	vp2.clear();
-	// 	vp2.reserve(S_end);
-	// 	for(ui i = 0;i < S_end;i ++) vp2.push_back(std::make_pair(support(S_end, SR[i]), SR[i]));
-	// 	for(ui i=0;i<S_end;i++)if(!t_matrix[SR[i]])vp2[i].first--;
-	// 	// for(ui i = 0;i < S_end;i ++) vp.push_back(std::make_pair(-(degree_in_S[SR[i]]-neiInP[SR[i]]), SR[i]));
-	// 	sort(vp2.begin(), vp2.end());
-	// 	ui UB = S_end+1, cursor = 0;
-	// 	for(ui i = 0;i < (ui)vp2.size(); i++) {
-	// 		ui u = vp2[i].second;
-	// 		if(vp2[i].first == 0) continue;// boundary vertex
-	// 		ui count = 0;
-	// 		char *t_matrix = matrix + u*n;
-	// 		for(ui j = cursor;j < R.size();j ++) if(!t_matrix[R[j]]) {
-	// 			if(j != cursor + count) std::swap(R[j], R[cursor+count]);
-	// 			++ count;
-	// 		}
-	// 		UB += std::min(count, vp2[i].first);
 
-	// 		if(UB <= best_solution_size)
-	// 			cursor += count;
-	// 		else
-	// 			return UB;
-	// 	}
-	// 	UB+=(R.size()-cursor);
-	// 	return UB;
-	// }
+	ui SR_branching(ui S_end, ui R_end, ui level)
+	{
+		ui cend = R_end;
+		ui beta = best_solution_size - S_end;
+		ui ub = 0;
+		bool flag = true;
+		do
+		{
+			double ubp = 0;
+			if (flag)
+			{
+				ubp = tryPartition(S_end, cend);
+				if (ubp == 0)
+					flag = false;
+			}
+			double ubc = tryColor(S_end, cend);
+
+			if (ubp == 0 or
+				(ISc.size() / ubc > PIMax.size() / ubp) or
+				((ISc.size() / ubc == PIMax.size() / ubp) and (ISc.size() > PIMax.size())))
+
+			{
+				if (ubc <= beta)
+					beta -= ubc;
+				else
+					break;
+				for (ui v : ISc)
+					swap_pos(v, --cend);
+			}
+			else
+			{
+				if (ubp <= beta)
+					beta -= ubp;
+				else
+					break;
+				for (ui v : PIMax)
+					swap_pos(v, --cend);
+			}
+		} while (beta > 0 && cend > S_end);
+		if (beta > 0)
+			cend -= min(beta, cend - S_end);
+		return move_candidates_to_end(S_end, cend, R_end, level);
+	}
+	ui R_branching(ui S_end, ui R_end, ui level)
+	{
+
+		ui cend = R_end;
+		ui beta = best_solution_size - S_end;
+		while (beta > 0 && cend > S_end)
+		{
+			ui ub = tryColor(S_end, cend);
+			if (ub <= beta)
+			{
+				for (ui i : ISc)
+				{
+					swap_pos(i, --cend);
+				}
+				beta -= ub;
+			}
+			else
+				break;
+		}
+		if (beta > 0)
+			cend -= min(beta, cend - S_end);
+
+		return move_candidates_to_end(S_end, cend, R_end, level);
+	}
+
+	ui S_branching(ui S_end, ui R_end, ui level)
+	{
+		for (ui i = 0; i < S_end; i++)
+		{
+			ui u = SR[i];
+			psz[i] = 0;
+			if (support(S_end, u) == 0)
+				continue;
+			// skipping it, because this is a boundary vertex, and it can't have any non-neighbor candidate
+			ui *t_LPI = LPI + i * n;
+			for (ui j = S_end; j < R_end; j++)
+			{
+				ui v = SR[j];
+				if (!matrix[u * n + v])
+					// PI[u].push_back(v);
+					t_LPI[psz[i]++] = v;
+			}
+		}
+		ui beta = best_solution_size - S_end;
+		ui cend = R_end;
+
+		while (S_end < cend)
+		{
+			ui maxpi = -1;
+			double maxdise = 0;
+			for (ui i = 0; i < S_end; i++)
+			{
+				ui u = SR[i];
+				if (psz[i] == 0)
+					continue;
+				double cost = min(support(S_end, u), psz[i]);
+				double dise = psz[i] / cost;
+				if (cost <= beta and dise > maxdise)
+					maxpi = i, maxdise = dise;
+			}
+			if (maxpi == -1)
+				break;
+			else
+			{
+				// remove pi* from C
+				ui *t_LPI = LPI + maxpi * n;
+				for (ui i = 0; i < psz[maxpi]; i++)
+				{
+					// removing from C
+					ui v = t_LPI[i];
+					swap_pos(SR_rid[v], --cend);
+				}
+				// beta-=cost(pi*)
+				beta -= min(support(S_end, SR[maxpi]), psz[maxpi]);
+
+				// remove maxpi from every pi
+				psz[maxpi] = 0;
+				for (ui i = 0; i < S_end; i++)
+				{
+					ui j = 0;
+					ui *t_LPI = LPI + i * n;
+					for (ui k = 0; k < psz[i]; k++)
+						if (SR_rid[t_LPI[k]] < cend)
+							t_LPI[j++] = t_LPI[k];
+					psz[i] = j;
+				}
+			}
+			if (beta == 0)
+				break;
+		}
+		if (beta > 0)
+			cend -= min(beta, cend - S_end);
+		return move_candidates_to_end(S_end, cend, R_end, level);
+	}
 	bool greedily_add_vertices_to_S(ui &S_end, ui &R_end, ui level)
 	{
 		while (true)
