@@ -329,7 +329,7 @@ public:
 			degree[i] = 0;
 		for (ui i = 0; i < vp.size(); i++)
 		{
-			// assert(vp[i].first >= 0 && vp[i].first < n && vp[i].second >= 0 && vp[i].second < n);
+			assert(vp[i].first >= 0 && vp[i].first < n && vp[i].second >= 0 && vp[i].second < n);
 			ui a = vp[i].first, b = vp[i].second;
 			degree[a]++;
 			degree[b]++;
