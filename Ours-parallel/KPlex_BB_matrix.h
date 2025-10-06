@@ -898,6 +898,7 @@ private:
 		else
 		// pivot based branching
 		{
+			cout<<"pivot"<<endl
 			if (B.empty() || SR_rid[B.back()] >= R_end || SR_rid[B.back()] < S_end)
 				branch(S_end, R_end);
 
