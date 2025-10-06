@@ -801,7 +801,7 @@ private:
 
 		if (branching == "Binary-Br")
 		{
-
+			cout<<"binary"
 			// First branch moves u to S
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 			ui u = SR[S_end];
