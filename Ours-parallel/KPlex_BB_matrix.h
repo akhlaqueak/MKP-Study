@@ -90,14 +90,6 @@ public:
 			level_id[i] = src.level_id[SR[i]];
 		}
 		ids = src.ids;
-		branching = cmd.GetOptionValue("-branching", "Default-Br");
-		bounding = cmd.GetOptionValue("-bounding", "None");
-		UBR2 = cmd.GetOptionValue("-UBR2", "true") == "true";
-		BR1 = cmd.GetOptionValue("-BR1", "true") == "true";
-		BR2 = cmd.GetOptionValue("-BR2", "true") == "true";
-		RR1 = cmd.GetOptionValue("-RR1", "true") == "true";
-		RR2 = cmd.GetOptionValue("-RR2", "true") == "true";
-		RR3 = cmd.GetOptionValue("-RR3", "true") == "true";
 	}
 
 	void loadContext(KPLEX_BB_MATRIX *dst, KPLEX_BB_MATRIX *ctx, ui S_end, ui R_end)
@@ -163,6 +155,15 @@ public:
 		level_id = nullptr;
 		best_n_edges = 0;
 		dense_search = _ds;
+
+		branching = cmd.GetOptionValue("-branching", "Default-Br");
+		bounding = cmd.GetOptionValue("-bounding", "None");
+		UBR2 = cmd.GetOptionValue("-UBR2", "true") == "true";
+		BR1 = cmd.GetOptionValue("-BR1", "true") == "true";
+		BR2 = cmd.GetOptionValue("-BR2", "true") == "true";
+		RR1 = cmd.GetOptionValue("-RR1", "true") == "true";
+		RR2 = cmd.GetOptionValue("-RR2", "true") == "true";
+		RR3 = cmd.GetOptionValue("-RR3", "true") == "true";
 	}
 
 	~KPLEX_BB_MATRIX()
@@ -898,8 +899,7 @@ private:
 		else
 		// pivot based branching
 		{
-			cout<<"pivot"<<endl;
-			
+
 			if (B.empty() || SR_rid[B.back()] >= R_end || SR_rid[B.back()] < S_end)
 				branch(S_end, R_end);
 
