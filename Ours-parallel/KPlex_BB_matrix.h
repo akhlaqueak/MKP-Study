@@ -839,12 +839,12 @@ private:
 			// ******************* Adding our branching stuff here...
 			ui t_R_end = R_end;
 
-			// if (branching == "R-Br")
-			// 	R_end = R_branching(S_end, R_end, level);
-			// else if (branching == "SR-Br")
-			// 	R_end = SR_branching(S_end, R_end, level);
-			// else // default S-Branching
-			// 	R_end = S_branching(S_end, R_end, level);
+			if (branching == "R-Br")
+				R_end = R_branching(S_end, R_end, level);
+			else if (branching == "SR-Br")
+				R_end = SR_branching(S_end, R_end, level);
+			else // default S-Branching
+				R_end = S_branching(S_end, R_end, level);
 			while (R_end < t_R_end)
 			{
 				// branching vertices are now in R_end to t_R_end, and they are already sorted in peelOrder
