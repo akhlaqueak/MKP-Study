@@ -800,36 +800,6 @@ private:
 			assert(level_id[SR[i]] > level);
 #endif
 
-		// if (branching == "Binary-Br")
-		// {
-		// 	// First branch moves u to S
-		// 	ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-		// 	ui u = SR[S_end];
-		// 	if (move_u_to_S_with_prune(u, S_end, R_end, level))
-		// 		BB_search(S_end, R_end, level + 1, false, false, st);
-
-		// 	// the second branch exclude u from G
-		// 	// This version of 2nd branch restores u through remove_u function
-		// 	{
-		// 		restore_SR_and_edges(S_end, R_end, S_end, t_old_R_end, level, t_old_removed_edges_n);
-		// 		while (!Qv.empty())
-		// 		{
-		// 			ui v = Qv.front();
-		// 			Qv.pop();
-		// 			level_id[v] = n;
-		// 		}
-		// 		B.clear();
-
-		// 		bool succeed = remove_u_from_S_with_prune(S_end, R_end, level);
-		// 		if (succeed && best_solution_size > pre_best_solution_size)
-		// 			succeed = collect_removable_vertices_and_edges(S_end, R_end, level);
-		// 		if (remove_vertices_and_edges_with_prune(S_end, R_end, level))
-		// 			BB_search(S_end, R_end, level + 1, false, false, st);
-		// 	}
-		// 	restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
-		// 	return;
-		// }
-		// else 
 
 		if (branching == "S-Br" or branching == "R-Br" or branching == "SR-Br" or (K <= 5 && sparse && branching == "Default-Br"))
 
@@ -900,6 +870,7 @@ private:
 		{
 			if(branching=="Binary-Br")
 				B.push_back(SR[S_end]);
+			// otherwise it's Pivot branching
 			else if (B.empty() || SR_rid[B.back()] >= R_end || SR_rid[B.back()] < S_end)
 				branch(S_end, R_end);
 

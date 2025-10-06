@@ -40,7 +40,7 @@ Several switches can be configured by providing optional parameters to the progr
 | -twoHopG | Select whether to form two hop graph at second top level | **true**, false|
 | -dense | Select whether to find densest k-plex, also computes all k-plexes (output in `all_kplexes.txt` file) |true, **false** |
 
-### Enable CTCP in the Recursion
+### Enable Recursion-CTCP
 
 To enable CTCP in the recursion, compile the program with `-D_SECOND_ORDER_PRUNING_` 
 the switch is enabled in following make target

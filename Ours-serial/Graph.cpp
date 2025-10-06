@@ -458,6 +458,9 @@ void Graph::search()
 			}
 			else
 			{
+				ids[0] = u;
+				rid[u] = 0;
+
 				extract_graph(n, m, degree, ids, ids_n, rid, vp, exists, pstart, pend, edges, deleted, edgelist_pointer);
 				double density = (double(vp.size() * 2)) / ids_n / (ids_n - 1);
 				total_density_prune += density;
@@ -898,11 +901,11 @@ void Graph::load_graph_from_edgelist(ui _n, const vector<pair<ui, ui>> &edge_lis
 
 void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui>> &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer)
 {
-	ids_n = 0;
+	ids_n = 1;
 	vp.clear();
 	for (ui i = 0; i < n; ++i)
 	{
-		if (degree[i])
+		if (degree[i]&&i!=ids[0])
 		{
 			ids[ids_n] = i;
 			rid[i] = ids_n++;
