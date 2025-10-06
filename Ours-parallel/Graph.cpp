@@ -1,6 +1,8 @@
 #include "Graph.h"
 #include <atomic>
 #include <omp.h>
+#include "Command.h"
+CommandLine cmd;
 std::vector<ui> kplex;
 double threshold = 1e9;
 Timer thresh, branchings, bounding;
@@ -210,7 +212,6 @@ void Graph::output_one_kplex()
 		for (ui v : kplex)
 			if (binary_search(edges + pstart[u], edges + pstart[u + 1], v))
 				ne++;
-
 	}
 	cout << "No. of edges: " << ne << endl;
 }
@@ -439,12 +440,13 @@ void Graph::kPlex_exact(int mode)
 
 		} // parallel region ends
 
-// #pragma omp parallel reduction(max : search_time)
-// 		{
-// 			search_time = ts_time;
-// 		}
+		// #pragma omp parallel reduction(max : search_time)
+		// 		{
+		// 			search_time = ts_time;
+		// 		}
 		search_time = parallel_timer.elapsed();
-		for(ui i=0;i<omp_get_max_threads(); i++){
+		for (ui i = 0; i < omp_get_max_threads(); i++)
+		{
 			// if(solvers[i]->kplex.size()>kplex.size()){
 			// 	kplex = solvers[i]->kplex;
 			// 	mkpsize = kplex.size();
@@ -1693,46 +1695,30 @@ ept Graph::peeling(ListLinearHeap *linear_heap, ui *Qv, ui &Qv_n, ui d_threshold
 using namespace std;
 using namespace popl;
 
-void print_usage()
-{
-	printf("Example usage: ./kPlexT -g path_to_graph -k 3 -o -b\n");
-}
+
 
 int main(int argc, char *argv[])
 {
 #ifndef NDEBUG
-	printf("**** kPlexT (Debug) build at %s %s ***\n", __TIME__, __DATE__);
+	printf("**** UMKP (Debug) build at %s %s ***\n", __TIME__, __DATE__);
 	printf("!!! You may want to define NDEBUG in Utility.h to get better performance!\n");
 #else
-	printf("**** kPlexT (Release) build at %s %s ***\n", __TIME__, __DATE__);
+	printf("**** UMKP (Release) build at %s %s ***\n", __TIME__, __DATE__);
 #endif
 #define LEN_LIMIT (1 << 10)
-	char filename[LEN_LIMIT];
+	cmd = CommandLine(argc, argv);
+
+	bool dense_search = cmd.GetOptionValue("-dense", "false") == "true";
+
 	printf("\n-----------------------------------------------------------------------------------------\n");
-	if (argc == 3)
-	{
-		strncpy(filename, argv[1], LEN_LIMIT);
-		int k = atoi(argv[2]);
-		Graph *graph = new Graph(filename, k);
-		graph->read_graph_binary();
-		graph->kPlex_exact(false);
-		graph->output_one_kplex();
-		// delete graph;
-		// delete graph; // there are some bugs in releasing memory
-	}
-	else if (argc == 4)
-	{
-		strncpy(filename, argv[1], LEN_LIMIT);
-		int k = atoi(argv[2]);
-		Graph *graph = new Graph(filename, k);
-		graph->read_graph_binary();
-		graph->kPlex_exact(false);
-		// graph->kPlex_dense();
-		graph->output_one_kplex();
-		// delete graph;
-	}
-	else
-		printf("[usage]: exe file k [dense]\n");
+	strncpy(filename, argv[1], LEN_LIMIT);
+	int k = atoi(argv[2]);
+
+	graph->twoHopG = cmd.GetOptionValue("-twoHopG", "true") == "true";
+	Graph *graph = new Graph(filename, k);
+	graph->read_graph_binary();
+	graph->kPlex_exact(false);
+	graph->output_one_kplex();
 	printf("-----------------------------------------------------------------------------------------\n\n");
 	return 0;
 }

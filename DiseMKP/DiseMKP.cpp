@@ -201,7 +201,7 @@
  
  static void read_graph_binary(char* input_file) {
 	 bin_Adjust = 1;
-   FILE *fp_in = fopen(input_file, "r");
+   FILE *fp_in = fopen(input_file, "rb");
    using ui = unsigned int;
    int m, n;
    ui t;
