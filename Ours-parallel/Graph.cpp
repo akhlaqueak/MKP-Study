@@ -308,12 +308,12 @@ void Graph::extract_entire_graph(ui u, std::vector<ui> &ids, ui *rid, std::vecto
 	ids.clear();
 	vp.clear();
 	ids.push_back(u);
-	for (ui i = 0; i < n; ++i)
+	for (ui v = 0; v < n; ++v)
 	{
-		if (degree[i]&& i!=u)
+		if ((pend[v] - pstart[v])&& v!=u)
 		{
-			rid[i] = ids.size();
-			ids.push_back(i);
+			rid[v] = ids.size();
+			ids.push_back(v);
 		}
 	}
 	for (ui i = 0; i < ids.size(); i++)
