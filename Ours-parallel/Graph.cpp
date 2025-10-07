@@ -436,7 +436,7 @@ void Graph::kPlex_exact(int mode)
 				if(!twoHopG)
 					extract_entire_graph(u, ids, rid, vp, pstart, pend, edges);
 				else 
-				if (twoHopG and best_sz >= 2 * K - 1)
+				if (best_sz >= 2 * K - 1)
 					extract_subgraph_with_prune(u, best_sz + 1 - K, best_sz + 1 - 2 * K, best_sz + 3 - 2 * K, peel_sequence_rid, degree, ids, rid, vp, exists, pstart, pend, edges);
 				else
 					extract_subgraph_wo_prune(u, peel_sequence_rid, ids, rid, vp, exists, pstart, pend, edges);
