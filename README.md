@@ -7,7 +7,7 @@ make
 ```
 The kplex is written in `kplex.txt` file. 
 
-for example: 
+For example: 
 ```
 ./UMKP ../datasets/socfb-Duke14.bin 2
 ```
@@ -16,12 +16,15 @@ for example:
 Go to Ours-parallel folder and run:
 ```
 make
-export OMP_NUM_THREADS=N
+export OMP_NUM_THREADS=`N`
 ./UMKP <dataset> <k>
 ```
+Where `N` is the number of threads for parallel execution.
 
-for example: 
+For example to run the program using 16 threads: 
 ```
+make
+export OMP_NUM_THREADS=16
 ./UMKP ../datasets/socfb-Duke14.bin 5
 ```
 
@@ -39,6 +42,8 @@ Several switches can be configured by providing optional parameters to the progr
 | -topCTCP | Select whether to apply CTCP at top level | **true**, false|
 | -twoHopG | Select whether to form two hop graph at second top level | **true**, false|
 | -dense | Select whether to find densest k-plex, also computes all k-plexes (output in `all_kplexes.txt` file) |true, **false** |
+
+**Note:** `topCTCP` is not enabled in Parallel Execution
 
 ### Enable Recursion-CTCP
 
