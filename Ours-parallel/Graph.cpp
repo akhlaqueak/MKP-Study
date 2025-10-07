@@ -320,9 +320,8 @@ void Graph::extract_entire_graph(ui u, std::vector<ui> &ids, ui *rid, std::vecto
 	for (ui u:ids)
 	{
 		for (ept j = pstart[u]; j < pend[u]; j++){
-
 			ui v=edges[j];
-			if ((pend[v] - pstart[v]) && u < v)
+			if ((pend[v] - pstart[v]) && rid[u] < rid[v])
 			{
 				if(rid[u]>= ids.size() or rid[v]>=ids.size()) cout<<ids.size()<<" " <<rid[u]<< " "<<u<<" "<<rid[edges[j]]<<endl;
 				vp.push_back(make_pair(rid[u], rid[v]));
