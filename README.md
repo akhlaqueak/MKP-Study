@@ -43,7 +43,7 @@ Several switches can be configured by providing optional parameters to the progr
 | -twoHopG | Select whether to form two hop graph at second top level | **true**, false|
 | -dense | Select whether to find densest k-plex, also computes all k-plexes (output in `all_kplexes.txt` file) |true, **false** |
 
-**Note:** `-topCTCP`, `-dense` can not enabled in Parallel Execution.
+**Note:** `-topCTCP`, `-dense` can not be enabled in Parallel Execution.
 
 ### Enable Recursion-CTCP
 
