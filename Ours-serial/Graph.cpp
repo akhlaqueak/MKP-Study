@@ -705,7 +705,6 @@ void Graph::search_dense()
 					best_n_edges = kplex_solver->best_n_edges;
 					cout << "A denser kplex found with #edges: " << best_n_edges << endl;
 				}
-				
 			}
 			Qv[0] = u;
 			Qv_n = 1;
@@ -721,7 +720,7 @@ void Graph::search_dense()
 		// printf("*** Search time: %s \n", Utility::integer_to_string(tt.elapsed()).c_str());
 		// printf(">>%s t_Search: %f", dir.substr(dir.find_last_of("/")).c_str(), tt.elapsed()/1000000.0);
 
-		printf(">>%s-dense \tMaxKPlex_Size: %lu t_Total: %f n_mkp: %d initial_edges: %d densest_kplex_edges: %d\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1e6, kplex_solver->all_kplexes.size(), init_edges, best_n_edges);
+		printf(">>%s-dense \tMaxKPlex_Size: %lu t_Total: %f n_mkp: %d initial_edges: %d densest_kplex_edges: %d\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size()+1, t.elapsed() / 1e6, kplex_solver->all_kplexes.size(), init_edges, best_n_edges);
 
 		for (auto &kp : kplex_solver->all_kplexes)
 			for (auto &v : kp)
