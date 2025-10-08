@@ -576,24 +576,24 @@ void Graph::all_kPlex_search()
 #pragma omp for schedule(dynamic)
 			for (ui i = 0; i < n; i++)
 			{
-				ui best_sz = best_solution_size.load();
-				if (best_sz >= UB)
+				ui kpsize = kplex.size();
+				if (kpsize >= UB)
 					continue;
 				ui u = peel_sequence[i];
 
-				if (pend[u] - pstart[u] + K <= best_sz || n - i < best_sz)
+				if (pend[u] - pstart[u] + K <= kpsize || n - i < kpsize)
 					continue;
 
 				fflush(stdout);
 				if(!twoHopG)
 					extract_entire_graph(u, ids, rid, vp, pstart, pend, edges);
 				else 
-				if (best_sz >= 2 * K - 1)
-					extract_subgraph_with_prune(u, best_sz + 1 - K, best_sz + 1 - 2 * K, best_sz + 3 - 2 * K, peel_sequence_rid, degree, ids, rid, vp, exists, pstart, pend, edges);
+				if (kpsize >= 2 * K - 1)
+					extract_subgraph_with_prune(u, kpsize + 1 - K, kpsize + 1 - 2 * K, kpsize + 3 - 2 * K, peel_sequence_rid, degree, ids, rid, vp, exists, pstart, pend, edges);
 				else
 					extract_subgraph_wo_prune(u, peel_sequence_rid, ids, rid, vp, exists, pstart, pend, edges);
 
-				if (ids.empty() || ids.size() <= best_sz)
+				if (ids.empty() || ids.size() <= kpsize)
 					continue;
 
 				double density = vp.size() * 2 / (double)ids.size() / (ids.size() - 1);
@@ -601,7 +601,6 @@ void Graph::all_kPlex_search()
 				total_density += density;
 				if (density < min_density)
 					min_density = density;
-				ui t_old_size = kplex_local.size();
 				kplex_solver_m->load_graph(ids, vp);
 #pragma omp taskgroup
 				{
