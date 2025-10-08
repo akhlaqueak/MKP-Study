@@ -206,14 +206,14 @@ void Graph::output_one_kplex()
 	fclose(fout);
 
 	read_graph_binary();
-	ui ne = 0;
+	init_edges = 0;
 	for (ui u : kplex)
 	{
 		for (ui v : kplex)
 			if (binary_search(edges + pstart[u], edges + pstart[u + 1], v))
-				ne++;
+				init_edges++;
 	}
-	cout << "No. of edges: " << ne << endl;
+	cout << "No. of edges: " << init_edges << endl;
 }
 
 void Graph::verify_kplex()
@@ -494,7 +494,6 @@ void Graph::kPlex_exact()
 	delete[] degree;
 
 	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1e6, search_time / 1e6);
-
 	// printf("\tMaximum kPlex Size: %lu, Total Time: %s (microseconds)\n", kplex.size(), Utility::integer_to_string(t.elapsed()).c_str());
 }
 
@@ -520,6 +519,7 @@ void Graph::all_kPlex_search()
 	}
 	cout<<"current kplex size: "<<kplex.size()<<endl;
 	kplex.pop_back();
+	best_solution_size.store(kplex.size());
 
 	ui *peel_sequence = new ui[n];
 	ui *core = new ui[n];
@@ -528,7 +528,7 @@ void Graph::all_kPlex_search()
 	ListLinearHeap *heap = new ListLinearHeap(n, n - 1);
 
 	ui UB = degen(n, peel_sequence, core, pstart, edges, degree, vis, heap, false);
-	kplex.reserve(UB);
+
 	assert(kplex.size() >= K);
 	ui search_time = 0, mkpsize = 0;
 	if (kplex.size() < UB)
@@ -549,7 +549,6 @@ void Graph::all_kPlex_search()
 		if (pend == nullptr)
 			pend = new ept[n + 1];
 		reorganize_adjacency_lists(n, peel_sequence, rid, pstart, pend, edges);
-		best_solution_size.store(kplex.size());
 
 		Timer parallel_timer;
 #pragma omp parallel
@@ -626,15 +625,14 @@ void Graph::all_kPlex_search()
 		delete[] out_mapping;
 		delete[] rid;
 	}
-	write_all_kplexes();
 	delete heap;
 	delete[] core;
 	delete[] peel_sequence;
 	delete[] vis;
 	delete[] degree;
 
-	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size()+1, t.elapsed() / 1e6, search_time / 1e6);
-
+	// printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size()+1, t.elapsed() / 1e6, search_time / 1e6);
+	printf(">>%s-dense \tMaxKPlex_Size: %lu t_Total: %f n_mkp: %d initial_edges: %d densest_kplex_edges: %d\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size()+1, t.elapsed() / 1e6, all_kplexes.size(), init_edges, dense_edges);
 	// printf("\tMaximum kPlex Size: %lu, Total Time: %s (microseconds)\n", kplex.size(), Utility::integer_to_string(t.elapsed()).c_str());
 }
 
@@ -672,7 +670,7 @@ void Graph::reorganize_adjacency_lists(ui n, ui *peel_sequence, ui *rid, ui *pst
 }
 void Graph::write_all_kplexes()
 {
-	cout<<"Found "<<all_kplexes.size()<<" kplexes."<<endl;
+	if(all_kplexes.empty()) return;
 	FILE *fout = Utility::open_file("all_kplexes.txt", "w");
 	read_graph_binary();
 	std::vector<std::pair<ui, vector<ui> *>> edges_kplex_pairs;
@@ -701,6 +699,7 @@ void Graph::write_all_kplexes()
 			fprintf(fout, "%d ", u);
 		fprintf(fout, "\n\n");
 	}
+	dense_edges = edges_kplex_pairs[0].first;
 	fclose(fout);
 }
 // each of u's neighbors must have at least triangle_threshold common neighbors with u
@@ -1923,6 +1922,7 @@ int main(int argc, char *argv[])
 	{
 		graph->read_graph_binary();
 		graph->all_kPlex_search();
+		graph->write_all_kplexes();
 	}	
 	printf("-----------------------------------------------------------------------------------------\n\n");
 	return 0;

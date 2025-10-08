@@ -11,6 +11,7 @@ private:
 	ui n; //number of nodes of the graph
 	ept m; //number of edges of the graph
 	ui K; //the value of k in k-plex
+	ui init_edges, dense_edges;
 
 	ept *pstart; //offset of neighbors of nodes
 	ept *pend; //used in search
