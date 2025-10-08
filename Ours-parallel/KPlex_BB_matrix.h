@@ -551,18 +551,18 @@ private:
 						n_edges += degree_in_S[SR[i]];
 				}
 				forward_sol = false;
-				printf("!!! BB_Search found a kplex of size: %u, n_edges: %u \n", size, n_edges);
 				if (all_kplex_search)
 				{
 					if (n_edges > best_n_edges)
-						best_n_edges = n_edges;
+					best_n_edges = n_edges;
 					vector<ui> kp;
 					for (ui i = 0; i < size; i++)
-						kp.push_back(ids.at(SR[i]));
+					kp.push_back(ids.at(SR[i]));
 					all_kplexes.push_back(kp);				
 				}
 				else
 				{
+					printf("!!! BB_Search found a kplex of size: %u, n_edges: %u \n", size, n_edges);
 					best_solution_size.store(size);
 					solution_size = size;
 					found_larger = true;
