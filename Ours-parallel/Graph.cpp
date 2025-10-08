@@ -630,7 +630,7 @@ void Graph::all_kPlex_search()
 	delete[] peel_sequence;
 	delete[] vis;
 	delete[] degree;
-
+	write_all_kplexes();
 	// printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size()+1, t.elapsed() / 1e6, search_time / 1e6);
 	printf(">>%s-dense \tMaxKPlex_Size: %lu t_Total: %f n_mkp: %d initial_edges: %d densest_kplex_edges: %d\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size()+1, t.elapsed() / 1e6, all_kplexes.size(), init_edges, dense_edges);
 	// printf("\tMaximum kPlex Size: %lu, Total Time: %s (microseconds)\n", kplex.size(), Utility::integer_to_string(t.elapsed()).c_str());
@@ -1922,7 +1922,7 @@ int main(int argc, char *argv[])
 	{
 		graph->read_graph_binary();
 		graph->all_kPlex_search();
-		graph->write_all_kplexes();
+		// graph->write_all_kplexes();
 	}	
 	printf("-----------------------------------------------------------------------------------------\n\n");
 	return 0;
