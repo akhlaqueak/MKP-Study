@@ -685,7 +685,7 @@ void Graph::reorganize_adjacency_lists(ui n, ui *peel_sequence, ui *rid, ui *pst
 }
 void Graph::write_all_kplexes()
 {
-	// cout<<"Found "<<all_kplexes.size()<<" kplexes."<<endl;
+	cout<<"Found "<<all_kplexes.size()<<" kplexes."<<endl;
 	FILE *fout = Utility::open_file("all_kplexes.txt", "w");
 	read_graph_binary();
 	std::vector<std::pair<ui, vector<ui> *>> edges_kplex_pairs;
@@ -701,7 +701,7 @@ void Graph::write_all_kplexes()
 					ne++;
 		}
 		edges_kplex_pairs.push_back({ne, &kplex});
-		// cout<<"No. of edges: "<<ne<<endl;
+		cout<<"No. of edges: "<<ne<<endl;
 	}
 	std::sort(edges_kplex_pairs.begin(), edges_kplex_pairs.end(), [](auto &a, auto &b) {
         return a.first > b.first; // descending by first
