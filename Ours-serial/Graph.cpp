@@ -649,7 +649,7 @@ void Graph::search_dense()
 		double min_density_prune = 1, min_density_search = 1, total_density_prune = 0, total_density_search = 0;
 		ui last_m = 0;
 
-		for (ui i = 0; i < n && m && best_n_edges < max_n_edges; i++)
+		for (ui i = 0; i <= n && m && best_n_edges < max_n_edges; i++)
 		{
 			ui u, key;
 			linear_heap->pop_min(u, key);
