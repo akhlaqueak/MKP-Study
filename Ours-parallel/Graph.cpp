@@ -519,7 +519,7 @@ void Graph::all_kPlex_search()
 		return;
 	}
 	cout<<"current kplex size: "<<kplex.size()<<endl;
-	kples.pop_back();
+	kplex.pop_back();
 
 	ui *peel_sequence = new ui[n];
 	ui *core = new ui[n];
