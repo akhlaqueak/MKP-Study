@@ -619,23 +619,12 @@ void Graph::all_kPlex_search()
 
 		} // parallel region ends
 
-		// #pragma omp parallel reduction(max : search_time)
-		// 		{
-		// 			search_time = ts_time;
-		// 		}
 		search_time = parallel_timer.elapsed();
 		for (ui i = 0; i < omp_get_max_threads(); i++)
-		{
-			// if(solvers[i]->kplex.size()>kplex.size()){
-			// 	kplex = solvers[i]->kplex;
-			// 	mkpsize = kplex.size();
-			// }
-
 			delete solvers[i];
-		}
-		for(auto& kplex: all_kplexes)
-			for (ui i = 0; i < kplex.size(); i++)
-				kplex[i] = out_mapping[kplex[i]];
+		for(auto& kp: all_kplexes)
+			for (ui i = 0; i < kp.size(); i++)
+				kp[i] = out_mapping[kp[i]];
 		delete[] out_mapping;
 		delete[] rid;
 	}
@@ -692,7 +681,7 @@ void Graph::write_all_kplexes()
 
 	for (auto &kplex : all_kplexes)
 	{
-		std::sort(kplex.begin(), kplex.end());
+		// std::sort(kplex.begin(), kplex.end());
 		ui ne = 0;
 		for (ui u : kplex)
 		{

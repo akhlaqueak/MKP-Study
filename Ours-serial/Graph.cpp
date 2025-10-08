@@ -1379,7 +1379,7 @@ ui Graph::degen(ui n, ui *peel_sequence, ui *core, ept *pstart, ui *edges, ui *d
 		if (output)
 			printf("*** Degeneracy k-plex size: %u, max_core: %u, UB: %u, Time: %s (microseconds)\n", new_size - idx, max_core, UB, Utility::integer_to_string(t.elapsed()).c_str());
 
-		if (new_size - idx > kplex.size())
+		if (output && new_size - idx > kplex.size())
 		{
 			kplex.clear();
 			for (ui i = idx; i < new_size; i++)
