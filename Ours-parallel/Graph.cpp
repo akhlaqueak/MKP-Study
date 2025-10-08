@@ -9,7 +9,7 @@ Timer thresh, branchings, bounding;
 std::atomic<ui> best_solution_size(0);
 class KPLEX_BB_MATRIX;
 KPLEX_BB_MATRIX **solvers;
-
+vector<vector<ui>> all_kplexes;
 #include "KPlex_BB_matrix.h"
 #include "KPlex_BB.h"
 #include "CTPrune.h"
@@ -498,6 +498,159 @@ void Graph::kPlex_exact(int mode)
 	// printf("\tMaximum kPlex Size: %lu, Total Time: %s (microseconds)\n", kplex.size(), Utility::integer_to_string(t.elapsed()).c_str());
 }
 
+void Graph::all_kPlex_search()
+{
+	Timer t;
+	cout << "No. of threads: " << omp_get_max_threads() << endl;
+	solvers = new KPLEX_BB_MATRIX *[omp_get_max_threads()];
+
+	auto nn = n;
+	auto mm = m;
+
+	assert(K > 0);
+	if (K <= 1)
+	{
+		printf("\tFor k <= 1, please invoke clique computation algorithms\n");
+		return;
+	}
+	if (K >= n)
+	{
+		printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_Bounding: %f\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1e6, bounding.ticktock());
+		return;
+	}
+	cout<<"current kplex size: "<<kplex.size()<<endl;
+	kples.pop_back();
+
+	ui *peel_sequence = new ui[n];
+	ui *core = new ui[n];
+	ui *degree = new ui[n];
+	char *vis = new char[n];
+	ListLinearHeap *heap = new ListLinearHeap(n, n - 1);
+
+	ui UB = degen(n, peel_sequence, core, pstart, edges, degree, vis, heap, false);
+	kplex.reserve(UB);
+	assert(kplex.size() >= K);
+	ui search_time = 0, mkpsize = 0;
+	if (kplex.size() < UB)
+	{
+		ui old_size = kplex.size();
+		ui *out_mapping = new ui[n];
+		ui *rid = new ui[n];
+
+		core_shrink_graph(n, m, peel_sequence, core, out_mapping, nullptr, rid, pstart, edges, true);
+
+
+		ui *peel_sequence_rid = core;
+		for (ui i = 0; i < n; i++)
+			peel_sequence_rid[peel_sequence[i]] = i;
+
+		memset(vis, 0, sizeof(char) * n);
+
+		if (pend == nullptr)
+			pend = new ept[n + 1];
+		reorganize_adjacency_lists(n, peel_sequence, rid, pstart, pend, edges);
+		best_solution_size.store(kplex.size());
+
+		Timer parallel_timer;
+#pragma omp parallel
+		{
+
+			thread_local Timer tt;
+			vector<ui> ids, kplex_local = kplex;
+			vector<pair<ui, ui>> vp;
+
+			char *exists = new char[n];
+			ui *degree = new ui[n];
+			ui *rid = new ui[n];
+
+			std::fill(exists, exists + n, 0);
+			// std::fill(degree, degree+n, 0);
+			// std::fill(rid, rid+n, 0);
+
+			KPLEX_BB_MATRIX *kplex_solver_m = new KPLEX_BB_MATRIX(true);
+			solvers[omp_get_thread_num()] = kplex_solver_m;
+			kplex_solver_m->allocateMemory(n);
+
+			ui search_cnt = 0;
+			double min_density = 1, total_density = 0;
+#pragma omp for schedule(dynamic)
+			for (ui i = 0; i < n; i++)
+			{
+				ui best_sz = best_solution_size.load();
+				if (best_sz >= UB)
+					continue;
+				ui u = peel_sequence[i];
+
+				if (pend[u] - pstart[u] + K <= best_sz || n - i < best_sz)
+					continue;
+
+				fflush(stdout);
+				if(!twoHopG)
+					extract_entire_graph(u, ids, rid, vp, pstart, pend, edges);
+				else 
+				if (best_sz >= 2 * K - 1)
+					extract_subgraph_with_prune(u, best_sz + 1 - K, best_sz + 1 - 2 * K, best_sz + 3 - 2 * K, peel_sequence_rid, degree, ids, rid, vp, exists, pstart, pend, edges);
+				else
+					extract_subgraph_wo_prune(u, peel_sequence_rid, ids, rid, vp, exists, pstart, pend, edges);
+
+				if (ids.empty() || ids.size() <= best_sz)
+					continue;
+
+				double density = vp.size() * 2 / (double)ids.size() / (ids.size() - 1);
+				++search_cnt;
+				total_density += density;
+				if (density < min_density)
+					min_density = density;
+				ui t_old_size = kplex_local.size();
+				kplex_solver_m->load_graph(ids, vp);
+#pragma omp taskgroup
+				{
+					kplex_solver_m->kPlex(K, UB, kplex_local, true);
+				}
+			}
+
+			// if (search_cnt == 0)
+			// 	printf("search_cnt: 0, ave_density: 1, min_density: 1\n");
+			// else printf("search_cnt: %u, ave_density: %.5lf, min_density: %.5lf\n", search_cnt, total_density/search_cnt, min_density);
+			// printf("*** Search time: %s\n", Utility::integer_to_string(tt.elapsed()).c_str());
+			delete[] degree;
+			delete[] rid;
+			delete[] exists;
+
+		} // parallel region ends
+
+		// #pragma omp parallel reduction(max : search_time)
+		// 		{
+		// 			search_time = ts_time;
+		// 		}
+		search_time = parallel_timer.elapsed();
+		for (ui i = 0; i < omp_get_max_threads(); i++)
+		{
+			// if(solvers[i]->kplex.size()>kplex.size()){
+			// 	kplex = solvers[i]->kplex;
+			// 	mkpsize = kplex.size();
+			// }
+
+			delete solvers[i];
+		}
+		if (kplex.size() > presize)
+			for (ui i = 0; i < kplex.size(); i++)
+				kplex[i] = out_mapping[kplex[i]];
+		delete[] out_mapping;
+		delete[] rid;
+	}
+	write_all_kplexes();
+	delete heap;
+	delete[] core;
+	delete[] peel_sequence;
+	delete[] vis;
+	delete[] degree;
+
+	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1e6, search_time / 1e6);
+
+	// printf("\tMaximum kPlex Size: %lu, Total Time: %s (microseconds)\n", kplex.size(), Utility::integer_to_string(t.elapsed()).c_str());
+}
+
 void Graph::reorganize_adjacency_lists(ui n, ui *peel_sequence, ui *rid, ui *pstart, ui *pend, ui *edges)
 {
 	for (ui i = 0; i < n; i++)
@@ -530,7 +683,39 @@ void Graph::reorganize_adjacency_lists(ui n, ui *peel_sequence, ui *rid, ui *pst
 			++end;
 	}
 }
+void Graph::write_all_kplexes()
+{
 
+	FILE *fout = Utility::open_file("all_kplexes.txt", "w");
+	read_graph_binary();
+	std::vector<std::pair<ui, vector<ui> *>> edges_kplex_pairs;
+
+	for (auto &kplex : all_kplexes)
+	{
+		std::sort(kplex.begin(), kplex.end());
+		ui ne = 0;
+		for (ui u : kplex)
+		{
+			for (ui v : kplex)
+				if (binary_search(edges + pstart[u], edges + pstart[u + 1], v))
+					ne++;
+		}
+		edges_kplex_pairs.push_back({ne, &kplex});
+		cout<<"No. of edges: "<<ne<<endl;
+	}
+	std::sort(edges_kplex_pairs.begin(), edges_kplex_pairs.end(), [](auto &a, auto &b) {
+        return a.first > b.first; // descending by first
+    });
+
+
+	for (auto &p : edges_kplex_pairs)
+	{
+		for (auto u : *p.second)
+			fprintf(fout, "%d ", u);
+		fprintf(fout, "\n\n");
+	}
+	fclose(fout);
+}
 // each of u's neighbors must have at least triangle_threshold common neighbors with u
 // each of u's non-neighbor must have at least cn_threshold common neighbors with u
 // after pruning, u must have at least degree_threshold neighbors
@@ -1169,12 +1354,12 @@ ui Graph::degen(ui n, ui *peel_sequence, ui *core, ept *pstart, ui *edges, ui *d
 			printf("*** Degeneracy k-plex size: %u, max_core: %u, UB: %u, Time: %s (microseconds)\n", new_size - idx, max_core, UB, Utility::integer_to_string(t.elapsed()).c_str());
 #pragma omp critical
 		{
-			if (new_size - idx > kplex.size())
+			if (output and new_size - idx > kplex.size())
 			{
 				kplex.clear();
 				for (ui i = idx; i < new_size; i++)
 					kplex.pb(peel_sequence[queue_n + i]);
-				if (!output)
+
 					printf("Find a k-plex of size: %u\n", new_size - idx);
 			}
 		}
@@ -1744,8 +1929,14 @@ int main(int argc, char *argv[])
 	Graph *graph = new Graph(filename, k);
 	graph->twoHopG = cmd.GetOptionValue("-twoHopG", "true") == "true";
 	graph->read_graph_binary();
-	graph->kPlex_exact(false);
+	graph->kPlex_exact();
 	graph->output_one_kplex();
+
+	if(dense_search)
+	{
+		graph->read_graph_binary();
+		graph->all_kplex_search();
+	}	
 	printf("-----------------------------------------------------------------------------------------\n\n");
 	return 0;
 }

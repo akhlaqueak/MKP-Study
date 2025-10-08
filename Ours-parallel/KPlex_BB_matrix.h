@@ -62,7 +62,7 @@ public:
 	bool sparse = true;
 	bool found_larger = false;
 	bool ctcp_enabled = false;
-	bool dense_search, forward_sol = false;
+	bool all_kplex_search, forward_sol = false;
 
 	MBitSet *bmp;
 	std::queue<ui> Qv;
@@ -154,7 +154,7 @@ public:
 		SR = SR_rid = nullptr;
 		level_id = nullptr;
 		best_n_edges = 0;
-		dense_search = _ds;
+		all_kplex_search = _ds;
 
 		branching = cmd.GetOptionValue("-branching", "Default-Br");
 		bounding = cmd.GetOptionValue("-bounding", "None");
@@ -456,7 +456,7 @@ private:
 		}
 #pragma omp critical(A)
 		{
-			if (!dense_search && (n - idx > best_solution_size.load()))
+			if (!all_kplex_search && (n - idx > best_solution_size.load()))
 			{
 				best_solution_size.store(n - idx);
 				solution_size = n - idx;
@@ -552,14 +552,14 @@ private:
 				}
 				forward_sol = false;
 				printf("!!! BB_Search found a kplex of size: %u, n_edges: %u \n", size, n_edges);
-				if (dense_search)
+				if (all_kplex_search)
 				{
 					if (n_edges > best_n_edges)
-					{
 						best_n_edges = n_edges;
-						for (ui i = 0; i < size; i++)
-							kplex.push_back(ids.at(SR[i]));
-					}
+					vector<ui> kp;
+					for (ui i = 0; i < size; i++)
+						kp.push_back(ids.at(SR[i]));
+					all_kplexes.push_back(kp);				
 				}
 				else
 				{
@@ -1235,7 +1235,7 @@ private:
 			ui *candidates = S2;
 			ui candidates_n = 0;
 			ui skip;
-			if (dense_search)
+			if (all_kplex_search)
 				skip = 1;
 			else
 				skip = 2;
