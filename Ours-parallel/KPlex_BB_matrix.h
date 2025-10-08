@@ -554,11 +554,20 @@ private:
 				if (all_kplex_search)
 				{
 					if (n_edges > best_n_edges)
-					best_n_edges = n_edges;
+						best_n_edges = n_edges;
 					vector<ui> kp;
 					for (ui i = 0; i < size; i++)
-					kp.push_back(ids.at(SR[i]));
-					all_kplexes.push_back(kp);				
+						kp.push_back(ids.at(SR[i]));
+					std::sort(kp.begin(), kp.end());
+					bool duplicate = false;
+					for (auto &kp1 : all_kplexes)
+						if (kp1 == kp)
+						{
+							duplicate = true;
+							break;
+						}
+					if (!duplicate)
+						all_kplexes.push_back(kp);
 				}
 				else
 				{
@@ -800,7 +809,6 @@ private:
 			assert(level_id[SR[i]] > level);
 #endif
 
-
 		if (branching == "S-Br" or branching == "R-Br" or branching == "SR-Br" or (K <= 5 && sparse && branching == "Default-Br"))
 
 		{
@@ -868,7 +876,7 @@ private:
 		else
 		// pivot based branching
 		{
-			if(branching=="Binary-Br")
+			if (branching == "Binary-Br")
 				B.push_back(SR[S_end]);
 			// otherwise it's Pivot branching
 			else if (B.empty() || SR_rid[B.back()] >= R_end || SR_rid[B.back()] < S_end)

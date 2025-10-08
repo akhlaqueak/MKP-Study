@@ -701,7 +701,7 @@ void Graph::write_all_kplexes()
 					ne++;
 		}
 		edges_kplex_pairs.push_back({ne, &kplex});
-		cout<<"No. of edges: "<<ne<<endl;
+		// cout<<"No. of edges: "<<ne<<endl;
 	}
 	std::sort(edges_kplex_pairs.begin(), edges_kplex_pairs.end(), [](auto &a, auto &b) {
         return a.first > b.first; // descending by first
