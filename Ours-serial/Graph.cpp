@@ -483,7 +483,7 @@ void Graph::search()
 				if (ids_n > max_n_search)
 					max_n_search = ids_n;
 				// cout<<"searching: "<<u<<" -> ids_n "<<ids_n<<" density: "<<density<<endl;
-				kplex_solver->load_graph(ids_n, vp);
+				kplex_solver->load_graph(ids, ids_n, vp);
 				kplex_solver->kPlex(K, UB, kplex, true);
 				// if(pre_size<kplex.size())cout<<"A larger kplex found at: "<<u<<endl;
 			}
@@ -492,7 +492,7 @@ void Graph::search()
 			if (kplex.size() > pre_size)
 			{
 				for (ui &v : kplex)
-					v = out_mapping[ids[v]];
+					v = out_mapping[v];
 				m -= 2 * peeling(n, linear_heap, Qv, Qv_n, kplex.size() + 1 - K, Qe, true, kplex.size() + 1 - 2 * K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
 				continue;
 			}
@@ -671,7 +671,7 @@ void Graph::search_dense()
 			assert(degree[u] == key);
 
 			ui ids_n = 0;
-			
+
 			extract_subgraph_and_prune(u, ids, ids_n, rid, vp, Qe, t_degree, exists, pend, deleted, edgelist_pointer);
 			if (ids_n)
 			{
@@ -696,31 +696,33 @@ void Graph::search_dense()
 					min_density_search = density;
 				if (ids_n > max_n_search)
 					max_n_search = ids_n;
-				ui presize = kplex.size();
-				ui presize_all_kplexes = kplex_solver->all_kplexes.size();
 
-				kplex_solver->load_graph(ids_n, vp);
+				kplex_solver->load_graph(ids, ids_n, vp);
 				kplex_solver->kPlex(K, UB, kplex, true);
 				if (init_edges == 0 && best_n_edges > 0)
 					init_edges = best_n_edges;
-
-				for (ui i = presize_all_kplexes; i < kplex_solver->all_kplexes.size(); i++)
+				if (kplex_solver->best_n_edges > best_n_edges)
 				{
-					auto &kp = kplex_solver->all_kplexes[i];
-					for (ui &v : kp)
-						v = out_mapping[ids[v]];
+					best_n_edges = kplex_solver->best_n_edges;
+					cout << "A denser kplex found with #edges: " << best_n_edges << endl;
 				}
+				// for (ui i = presize_all_kplexes; i < kplex_solver->all_kplexes.size(); i++)
+				// {
+				// 	auto &kp = kplex_solver->all_kplexes[i];
+				// 	for (ui &v : kp)
+				// 		v = out_mapping[ids[v]];
+				// }
 
-				if (kplex.size() > presize)
-				{
-					if (kplex_solver->best_n_edges > best_n_edges)
-					{
-						kplex = kplex;
-						best_n_edges = kplex_solver->best_n_edges;
-						cout << "A denser kplex found with #edges: " << best_n_edges << endl;
-					}
-					kplex.pop_back();
-				}
+				// if (kplex.size() > presize)
+				// {
+				// 	if (kplex_solver->best_n_edges > best_n_edges)
+				// 	{
+				// 		kplex = kplex;
+				// 		best_n_edges = kplex_solver->best_n_edges;
+				// 		cout << "A denser kplex found with #edges: " << best_n_edges << endl;
+				// 	}
+				// 	kplex.pop_back();
+				// }
 			}
 			Qv[0] = u;
 			Qv_n = 1;
@@ -736,8 +738,11 @@ void Graph::search_dense()
 		// printf("*** Search time: %s \n", Utility::integer_to_string(tt.elapsed()).c_str());
 		// printf(">>%s t_Search: %f", dir.substr(dir.find_last_of("/")).c_str(), tt.elapsed()/1000000.0);
 
-		printf(">>%s-dense \tMaxKPlex_Size: %lu t_Total: %f n_mkp: %d initial_edges: %d densest_kplex_edges: %d\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1e6, kplex_solver->nmkp, init_edges, best_n_edges);
+		printf(">>%s-dense \tMaxKPlex_Size: %lu t_Total: %f n_mkp: %d initial_edges: %d densest_kplex_edges: %d\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1e6, kplex_solver->all_kplexes.size(), init_edges, best_n_edges);
 
+		for (auto &kp : kplex_solver->all_kplexes)
+			for (auto &v : kp)
+				v = out_mapping[v];
 		write_all_kplexes(kplex_solver->all_kplexes);
 
 		delete kplex_solver;
@@ -800,10 +805,10 @@ void Graph::write_all_kplexes(vector<vector<ui>> &all_kplexes)
 		edges_kplex_pairs.push_back({ne, &kplex});
 		// cout<<"No. of edges: "<<ne<<endl;
 	}
-	std::sort(edges_kplex_pairs.begin(), edges_kplex_pairs.end(), [](auto &a, auto &b) {
-        return a.first > b.first; // descending by first
-    });
-
+	std::sort(edges_kplex_pairs.begin(), edges_kplex_pairs.end(), [](auto &a, auto &b)
+			  {
+				  return a.first > b.first; // descending by first
+			  });
 
 	for (auto &p : edges_kplex_pairs)
 	{
@@ -905,7 +910,7 @@ void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, v
 	vp.clear();
 	for (ui i = 0; i < n; ++i)
 	{
-		if (degree[i]&&i!=ids[0])
+		if (degree[i] && i != ids[0])
 		{
 			ids[ids_n] = i;
 			rid[i] = ids_n++;

@@ -10,7 +10,7 @@ class KPLEX_BB_MATRIX
 {
 private:
 	ui n;
-
+	ui *ids;
 	char *matrix;
 	long long matrix_size;
 
@@ -51,7 +51,7 @@ private:
 	ui sz1h;
 	bool found_larger = false;
 	bool ctcp_enabled = false;
-	bool dense_search, forward_sol;
+	bool all_kplex_search, forward_sol;
 
 	// Switch parameters
 	string branching, bounding;
@@ -85,7 +85,7 @@ public:
 		level_id = nullptr;
 		max_level = 0;
 		best_n_edges = 0;
-		dense_search = _ds;
+		all_kplex_search = _ds;
 		branching = cmd.GetOptionValue("-branching", "Default-Br");
 		bounding = cmd.GetOptionValue("-bounding", "None");
 		UBR2 = cmd.GetOptionValue("-UBR2", "true") == "true";
@@ -185,9 +185,10 @@ public:
 		bmp.init(n);
 	}
 
-	void load_graph(ui _n, const std::vector<std::pair<ui, ui>> &vp)
+	void load_graph(ui *ids, ui nn, const std::vector<std::pair<ui, ui>> &vp)
 	{
-		n = _n;
+		this->ids = ids;
+		n = nn;
 		if (((long long)n) * n > matrix_size)
 		{
 			do
@@ -243,12 +244,7 @@ public:
 		initialization(R_end, must_include_0);
 		if (R_end && best_solution_size < _UB_)
 			BB_search(0, R_end, 1, must_include_0);
-		if (dense_search && best_n_edges > n_edges)
-		{
-			kplex.clear();
-			for (int i = 0; i < best_solution_size + 1; i++)
-				kplex.push_back(best_solution[i]);
-		}
+
 		if (best_solution_size > kplex.size())
 		{
 			kplex.clear();
@@ -375,11 +371,11 @@ private:
 				if (!vis[j] && matrix[u * n + j])
 					--degree[j];
 		}
-		if (!dense_search && (n - idx > best_solution_size))
+		if (!all_kplex_search && (n - idx > best_solution_size))
 		{
 			best_solution_size = n - idx;
 			for (ui i = idx; i < n; i++)
-				best_solution[i - idx] = peel_sequence[i];
+				best_solution[i - idx] = ids[peel_sequence[i]];
 			printf("Degen find a solution of size %u\n", best_solution_size);
 		}
 
@@ -465,36 +461,42 @@ private:
 				n_edges += degree_in_S[SR[i]];
 		}
 		forward_sol = false;
-		printf("!!! BB_Search found a kplex of size: %u, n_edges: %u \n", size, n_edges);
 
 		nmkp++;
 
-		if (dense_search)
+		if (all_kplex_search)
 		{
 			vector<ui> kp;
 			for (ui i = 0; i < size; i++)
 			{
-				kp.push_back(SR[i]);
+				kp.push_back(ids[SR[i]]);
 			}
-			all_kplexes.push_back(kp);
+			sort(kp.begin(), kp.end());
+			bool duplicate = false;
+			for (auto &kp1 : all_kplexes)
+				if (kp1 == kp)
+				{
+					duplicate = true;
+					break;
+				}
+			if (!duplicate)
+				all_kplexes.push_back(kp);
 			if (n_edges > best_n_edges)
 			{
 				best_n_edges = n_edges;
 				for (ui i = 0; i < size; i++)
-					best_solution[i] = SR[i];
+					best_solution[i] = ids[SR[i]];
 			}
 		}
 		else
 		{
+			printf("!!! BB_Search found a kplex of size: %u, n_edges: %u \n", size, n_edges);
 			best_solution_size = size;
 			found_larger = true;
 			for (ui i = 0; i < best_solution_size; i++)
-				best_solution[i] = SR[i];
+				best_solution[i] = ids[SR[i]];
 			best_n_edges = n_edges;
 		}
-		// for(ui i = 0;i < best_solution_size;i ++) {
-		// 	if(degree_in_S[SR[i]]+K<best_solution_size) std::cout<<degree_in_S[SR[i]]+K<<" ";
-		// }
 	}
 
 	bool is_kplex(ui R_end)
@@ -791,12 +793,14 @@ private:
 					continue;
 
 				ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-				#ifdef _SECOND_ORDER_PRUNING_
-							if(ctcp_enabled) {
-								while(!Qe.empty())Qe.pop();
-								t_old_removed_edges_n=removed_edges_n;
-							}
-				#endif
+#ifdef _SECOND_ORDER_PRUNING_
+				if (ctcp_enabled)
+				{
+					while (!Qe.empty())
+						Qe.pop();
+					t_old_removed_edges_n = removed_edges_n;
+				}
+#endif
 				if (move_u_to_S_with_prune(u, S_end, R_end, level))
 					BB_search(S_end, R_end, level + 1, false, false);
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
@@ -818,12 +822,14 @@ private:
 
 			// First branch moves u to S
 			ui pre_best_solution_size = best_solution_size, t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-			#ifdef _SECOND_ORDER_PRUNING_
-						if(ctcp_enabled) {
-							while(!Qe.empty())Qe.pop();
-							t_old_removed_edges_n=removed_edges_n;
-						}
-			#endif
+#ifdef _SECOND_ORDER_PRUNING_
+			if (ctcp_enabled)
+			{
+				while (!Qe.empty())
+					Qe.pop();
+				t_old_removed_edges_n = removed_edges_n;
+			}
+#endif
 			if (move_u_to_S_with_prune(u, S_end, R_end, level))
 				BB_search(S_end, R_end, level + 1, false);
 
@@ -839,7 +845,8 @@ private:
 				}
 				B.clear();
 #ifdef _SECOND_ORDER_PRUNING_
-				while(!Qe.empty())Qe.pop();
+				while (!Qe.empty())
+					Qe.pop();
 				t_old_removed_edges_n = removed_edges_n;
 #endif
 				bool succeed = remove_u_from_S_with_prune(S_end, R_end, level);
@@ -976,7 +983,7 @@ private:
 			ui *candidates = S2;
 			ui candidates_n = 0;
 			ui skip;
-			if (dense_search)
+			if (all_kplex_search)
 				skip = 1;
 			else
 				skip = 2;
@@ -1101,7 +1108,7 @@ private:
 			{
 				if (level_id[v] == level)
 					continue;
-				if ((RR1 and S_end - degree_in_S[v] >= K )|| (RR2 and S_end - degree_in_S[u] == K))
+				if ((RR1 and S_end - degree_in_S[v] >= K) || (RR2 and S_end - degree_in_S[u] == K))
 				{
 					level_id[v] = level;
 					Qv.push(v);
