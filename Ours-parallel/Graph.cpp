@@ -577,8 +577,7 @@ void Graph::all_kPlex_search()
 			for (ui i = 0; i < n; i++)
 			{
 				ui kpsize = kplex.size();
-				if (kpsize >= UB)
-					continue;
+
 				ui u = peel_sequence[i];
 
 				if (pend[u] - pstart[u] + K <= kpsize || n - i < kpsize)
@@ -622,8 +621,8 @@ void Graph::all_kPlex_search()
 		for (ui i = 0; i < omp_get_max_threads(); i++)
 			delete solvers[i];
 		for(auto& kp: all_kplexes)
-			for (ui i = 0; i < kp.size(); i++)
-				kp[i] = out_mapping[kp[i]];
+			for (ui& v: kp)
+				v = out_mapping[v];
 		delete[] out_mapping;
 		delete[] rid;
 	}
@@ -634,7 +633,7 @@ void Graph::all_kPlex_search()
 	delete[] vis;
 	delete[] degree;
 
-	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size(), t.elapsed() / 1e6, search_time / 1e6);
+	printf(">>%s \tMaxKPlex_Size: %lu t_Total: %f t_search: %f\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size()+1, t.elapsed() / 1e6, search_time / 1e6);
 
 	// printf("\tMaximum kPlex Size: %lu, Total Time: %s (microseconds)\n", kplex.size(), Utility::integer_to_string(t.elapsed()).c_str());
 }

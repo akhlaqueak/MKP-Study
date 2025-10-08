@@ -705,23 +705,7 @@ void Graph::search_dense()
 					best_n_edges = kplex_solver->best_n_edges;
 					cout << "A denser kplex found with #edges: " << best_n_edges << endl;
 				}
-				// for (ui i = presize_all_kplexes; i < kplex_solver->all_kplexes.size(); i++)
-				// {
-				// 	auto &kp = kplex_solver->all_kplexes[i];
-				// 	for (ui &v : kp)
-				// 		v = out_mapping[ids[v]];
-				// }
-
-				// if (kplex.size() > presize)
-				// {
-				// 	if (kplex_solver->best_n_edges > best_n_edges)
-				// 	{
-				// 		kplex = kplex;
-				// 		best_n_edges = kplex_solver->best_n_edges;
-				// 		cout << "A denser kplex found with #edges: " << best_n_edges << endl;
-				// 	}
-				// 	kplex.pop_back();
-				// }
+				
 			}
 			Qv[0] = u;
 			Qv_n = 1;

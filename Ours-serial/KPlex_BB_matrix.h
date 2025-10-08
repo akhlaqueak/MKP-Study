@@ -245,7 +245,7 @@ public:
 		if (R_end && best_solution_size < _UB_)
 			BB_search(0, R_end, 1, must_include_0);
 
-		if (best_solution_size > kplex.size())
+		if (!all_kplex_search and best_solution_size > kplex.size())
 		{
 			kplex.clear();
 			for (int i = 0; i < best_solution_size; i++)
