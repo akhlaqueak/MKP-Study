@@ -32,7 +32,7 @@ private:
 	void kPlex_degen() ;
 	void kPlex_exact() ;
 	void all_kPlex_search() ;
-	void write_all_kplexes()
+	void write_all_kplexes();
 
 private:
 	void reorganize_adjacency_lists(ui n, ui *peel_sequence, ui *rid, ui *pstart, ui *pend, ui *edges) ;

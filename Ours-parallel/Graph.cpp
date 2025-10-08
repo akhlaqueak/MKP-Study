@@ -329,7 +329,7 @@ void Graph::extract_entire_graph(ui u, std::vector<ui> &ids, ui *rid, std::vecto
 		}
 	}
 }
-void Graph::kPlex_exact(int mode)
+void Graph::kPlex_exact()
 {
 	Timer t;
 	cout << "No. of threads: " << omp_get_max_threads() << endl;
@@ -633,7 +633,7 @@ void Graph::all_kPlex_search()
 
 			delete solvers[i];
 		}
-		if (kplex.size() > presize)
+		for(auto& kplex: all_kplexes)
 			for (ui i = 0; i < kplex.size(); i++)
 				kplex[i] = out_mapping[kplex[i]];
 		delete[] out_mapping;
@@ -1935,7 +1935,7 @@ int main(int argc, char *argv[])
 	if(dense_search)
 	{
 		graph->read_graph_binary();
-		graph->all_kplex_search();
+		graph->all_kPlex_search();
 	}	
 	printf("-----------------------------------------------------------------------------------------\n\n");
 	return 0;
