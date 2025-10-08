@@ -649,7 +649,7 @@ void Graph::search_dense()
 		double min_density_prune = 1, min_density_search = 1, total_density_prune = 0, total_density_search = 0;
 		ui last_m = 0;
 
-		for (ui i = 0; i <= n && m && best_n_edges < max_n_edges; i++)
+		for (ui i = 0; i < n && m && best_n_edges < max_n_edges; i++)
 		{
 			ui u, key;
 			linear_heap->pop_min(u, key);
@@ -657,7 +657,8 @@ void Graph::search_dense()
 			if (key < kplex.size() + 1 - K)
 			{
 				if (degree[u] != 0)
-				{ // degree[u] == 0 means u is deleted. it could be the case that degree[u] == 0, but key[u] > 0, as key[u] is not fully updated in linear_heap
+				{ 
+					// degree[u] == 0 means u is deleted. it could be the case that degree[u] == 0, but key[u] > 0, as key[u] is not fully updated in linear_heap
 					Qv[0] = u;
 					Qv_n = 1;
 					if (kplex.size() + 1 > 2 * K)
@@ -684,8 +685,6 @@ void Graph::search_dense()
 					max_n_prune = ids_n;
 				// cout<<"Density"<<density<<" ";
 			}
-			// if (K < K_THRESH && ids_n > kplex.size() && vp.size() * 2 < m)
-			// 	subgraph_prune(ids, ids_n, vp, rid, Qv, Qe, exists);
 
 			if (ids_n > kplex.size())
 			{
