@@ -133,10 +133,14 @@ void readRawSNAPText(const char* filepath) {
 		char *p = buf;
 		while (*p == ' ' && *p != '\0') p++;
 		if (*p == '#' || *p == '\0') continue;
+	
+		// Convert commas to spaces
 		for (char *q = buf; *q != '\0'; ++q)
-        if (*q == ',') *q = ' ';
+			if (*q == ',') *q = ' ';
+	
 		std::stringstream ss(buf);
 		ss >> from >> to;
+	
 		if (from != to) {
 			epairs.push_back(std::make_pair(from, to));
 			epairs.push_back(std::make_pair(to, from));
