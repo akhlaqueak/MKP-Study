@@ -691,7 +691,10 @@ void Graph::write_all_kplexes()
 	std::sort(edges_kplex_pairs.begin(), edges_kplex_pairs.end(), [](auto &a, auto &b) {
         return a.first > b.first; // descending by first
     });
-
+	if(edges_kplex_pairs.size()){
+		kplex=*edges_kplex_pairs[0].second;
+		output_one_kplex();
+	} 
 
 	for (auto &p : edges_kplex_pairs)
 	{

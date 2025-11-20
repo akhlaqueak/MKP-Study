@@ -791,7 +791,7 @@ void Graph::write_all_kplexes(vector<vector<ui>> &all_kplexes)
 			  {
 				  return a.first > b.first; // descending by first
 			  });
-
+	if(edges_kplex_pairs.size()) write_one_kplex(*(edges_kplex_pairs[0].second));
 	for (auto &p : edges_kplex_pairs)
 	{
 		for (auto u : *p.second)
