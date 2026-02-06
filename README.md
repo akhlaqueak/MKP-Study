@@ -39,7 +39,7 @@ Several switches can be configured by providing optional parameters to the progr
 | -branching | Branching method selection | **Default (uses S-Br for K<=5, Pivot-Br otherwise)**, S-Br, R-Br, SR-Br, Pivot-Br, Binary-Br  |
 | -bounding  | Upper bounding method to terminate a branch | **None**, S-Bound, R-Bound, SR-Bound |
 | -UBR2 | Select whether to apply pruning of vertices based on upper bounding of current branch | **true**, false|
-| -topCTCP | Select whether to apply CTCP at top level | **true**, false|
+| -topCTCP | Select whether to apply CTCP at top level. Cannot be enabled in parallel execution | **true**, false|
 | -twoHopG | Select whether to form two hop graph at second top level | **true**, false|
 | -dense | Select whether to find densest k-plex, also computes all k-plexes (output in `all_kplexes.txt` file) |true, **false** |
 
