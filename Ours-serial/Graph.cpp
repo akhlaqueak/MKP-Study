@@ -264,7 +264,7 @@ void Graph::verify_kplex()
 		if (node_ne + K < kplex_size)
 		{
 			cout << "Error! Not a valid kplex!" << endl;
-			return;
+			// return;
 		}
 
 		ne += node_ne;

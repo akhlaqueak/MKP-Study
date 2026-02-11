@@ -314,6 +314,7 @@ void Graph::search() {
 						if(ids_n > max_n_prune) max_n_prune = ids_n;
 					}
 					if(ids_n > kplex.size()&&vp.size()*2 < m) subgraph_prune(ids, ids_n, vp, rid, Qv, Qe, exists);
+					if (kplex.size() > pre_size) for(ui& u:kplex) u = ids[u];
 					// Qv_n=0;
 					// if(kplex.size() != pre_size && kplex.size()> 2*K-2) m -= 2*peeling(n, linear_heap, Qv, Qv_n, kplex.size()+1-K, Qe, true, kplex.size()+1-2*K, tri_cnt, active_edgelist, active_edgelist_n, edge_list, edgelist_pointer, deleted, degree, pstart, pend, edges, exists);
 				}
@@ -360,7 +361,9 @@ void Graph::search() {
 
 		if(kplex.size() > old_size) {
 			for(ui i = 0;i < kplex.size();i ++) {
+				// std::cout<<kplex[i]<<" -> ";
 				kplex[i] = out_mapping[kplex[i]];
+				// std::cout<<kplex[i]<<std::endl;
 			}
 		}
 
@@ -746,7 +749,7 @@ void Graph::heuristic_kplex_max_degree(ui processed_threshold) {
 
 // degeneracy-based k-plex
 // return an upper bound of the maximum k-plex size
-ui Graph::degen(ui n, ui *peel_sequence, ui *core, ept *pstart, ui *edges, ui *degree, char *vis, ListLinearHeap *heap, bool output) {
+ui Graph::degen(ui n, ui *peel_sequence, ui *core, ept *pstart, ui *edges, ui *degree, char *vis, ListLinearHeap *heap, bool 	) {
 	Timer t;
 
 	ui threshold = (kplex.size()+1 > K? kplex.size()+1-K: 0);
