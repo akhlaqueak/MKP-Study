@@ -749,7 +749,7 @@ void Graph::heuristic_kplex_max_degree(ui processed_threshold) {
 
 // degeneracy-based k-plex
 // return an upper bound of the maximum k-plex size
-ui Graph::degen(ui n, ui *peel_sequence, ui *core, ept *pstart, ui *edges, ui *degree, char *vis, ListLinearHeap *heap, bool 	) {
+ui Graph::degen(ui n, ui *peel_sequence, ui *core, ept *pstart, ui *edges, ui *degree, char *vis, ListLinearHeap *heap, bool output) {
 	Timer t;
 
 	ui threshold = (kplex.size()+1 > K? kplex.size()+1-K: 0);
