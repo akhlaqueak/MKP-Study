@@ -27,8 +27,8 @@ int main(int argc, char *argv[])
 	strncpy(filename, argv[1], LEN_LIMIT);
 	int k = atoi(argv[2]);
 	Graph *graph = new Graph(filename, k);
-	graph->twoHopG = cmd.GetOptionValue("-topCTCP", "true") == "true";
-	graph->topCTCP = cmd.GetOptionValue("-twoHopG", "true") == "true";
+	graph->topCTCP = cmd.GetOptionValue("-topCTCP", "true") == "true";
+	graph->twoHopG = cmd.GetOptionValue("-twoHopG", "true") == "true";
 	graph->read();
 
 	if (verify)
@@ -487,7 +487,7 @@ void Graph::search()
 				// if(pre_size<kplex.size())cout<<"A larger kplex found at: "<<u<<endl;
 			}
 			Qv[0] = u;
-			Qv_n = topCTCP? 1:0;
+			Qv_n = 1;
 			if (kplex.size() > pre_size)
 			{
 				for (ui &v : kplex)
@@ -902,7 +902,7 @@ void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, v
 	{
 		ui u = ids[i];
 		for (ept j = pstart[u]; j < pend[u]; j++)
-			if (!deleted[edgelist_pointer[j]] && u < edges[j])
+			if (!deleted[edgelist_pointer[j]] && u < edges[j] )
 			// if (!deleted[edgelist_pointer[j]] && u < edges[j])
 			{
 				vp.push_back(make_pair(rid[u], rid[edges[j]]));
