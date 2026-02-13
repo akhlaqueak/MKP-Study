@@ -27,8 +27,8 @@ int main(int argc, char *argv[])
 	strncpy(filename, argv[1], LEN_LIMIT);
 	int k = atoi(argv[2]);
 	Graph *graph = new Graph(filename, k);
-	graph->twoHopG = cmd.GetOptionValue("-twoHopG", "true") == "true";
-	graph->topCTCP = cmd.GetOptionValue("-topCTCP", "true") == "true";
+	graph->twoHopG = cmd.GetOptionValue("-topCTCP", "true") == "true";
+	graph->topCTCP = cmd.GetOptionValue("-twoHopG", "true") == "true";
 	graph->read();
 
 	if (verify)
@@ -460,7 +460,6 @@ void Graph::search()
 			{
 				ids[0] = u;
 				rid[u] = 0;
-				// cout<<".."<<endl;
 				extract_graph(n, m, degree, ids, ids_n, rid, vp, exists, pstart, pend, edges, deleted, edgelist_pointer);
 				double density = (double(vp.size() * 2)) / ids_n / (ids_n - 1);
 				total_density_prune += density;
@@ -488,7 +487,7 @@ void Graph::search()
 				// if(pre_size<kplex.size())cout<<"A larger kplex found at: "<<u<<endl;
 			}
 			Qv[0] = u;
-			Qv_n = 1;
+			Qv_n = topCTCP? 1:0;
 			if (kplex.size() > pre_size)
 			{
 				for (ui &v : kplex)
@@ -657,7 +656,7 @@ void Graph::search_dense()
 			if (key < kplex.size() + 1 - K)
 			{
 				if (degree[u] != 0)
-				{ 
+				{
 					// degree[u] == 0 means u is deleted. it could be the case that degree[u] == 0, but key[u] > 0, as key[u] is not fully updated in linear_heap
 					Qv[0] = u;
 					Qv_n = 1;
@@ -720,7 +719,7 @@ void Graph::search_dense()
 		// printf("*** Search time: %s \n", Utility::integer_to_string(tt.elapsed()).c_str());
 		// printf(">>%s t_Search: %f", dir.substr(dir.find_last_of("/")).c_str(), tt.elapsed()/1000000.0);
 
-		printf(">>%s-dense \tMaxKPlex_Size: %lu t_Total: %f n_mkp: %d initial_edges: %d densest_kplex_edges: %d\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size()+1, t.elapsed() / 1e6, kplex_solver->all_kplexes.size(), init_edges, best_n_edges);
+		printf(">>%s-dense \tMaxKPlex_Size: %lu t_Total: %f n_mkp: %d initial_edges: %d densest_kplex_edges: %d\n", dir.substr(dir.find_last_of("/") + 1).c_str(), kplex.size() + 1, t.elapsed() / 1e6, kplex_solver->all_kplexes.size(), init_edges, best_n_edges);
 
 		for (auto &kp : kplex_solver->all_kplexes)
 			for (auto &v : kp)
@@ -791,7 +790,8 @@ void Graph::write_all_kplexes(vector<vector<ui>> &all_kplexes)
 			  {
 				  return a.first > b.first; // descending by first
 			  });
-	if(edges_kplex_pairs.size()) write_one_kplex(*(edges_kplex_pairs[0].second));
+	if (edges_kplex_pairs.size())
+		write_one_kplex(*(edges_kplex_pairs[0].second));
 	for (auto &p : edges_kplex_pairs)
 	{
 		for (auto u : *p.second)
@@ -1581,9 +1581,6 @@ char Graph::find(ui u, ui w, ept &b, ept e, char *deleted, ept &idx, ui *edgelis
 // return the number of peeled edges
 ept Graph::peeling(ui critical_vertex, ListLinearHeap *linear_heap, ui *Qv, ui &Qv_n, ui d_threshold, ui *Qe, bool initialize_Qe, ui t_threshold, ui *tri_cnt, ui *active_edgelist, ui &active_edgelist_n, ui *edge_list, ui *edgelist_pointer, char *deleted, ui *degree, ept *pstart, ept *pend, ui *edges, char *exists)
 {
-	if (!(topCTCP))
-		return 0;
-
 	ept Qe_n = 0;
 #ifndef NO_TRUSS_PRUNE
 	if (initialize_Qe)
