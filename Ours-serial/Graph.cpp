@@ -460,7 +460,7 @@ void Graph::search()
 			{
 				ids[0] = u;
 				rid[u] = 0;
-
+				// cout<<".."<<endl;
 				extract_graph(n, m, degree, ids, ids_n, rid, vp, exists, pstart, pend, edges, deleted, edgelist_pointer);
 				double density = (double(vp.size() * 2)) / ids_n / (ids_n - 1);
 				total_density_prune += density;
@@ -903,6 +903,7 @@ void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, v
 		ui u = ids[i];
 		for (ept j = pstart[u]; j < pend[u]; j++)
 			if (!deleted[edgelist_pointer[j]] && u < edges[j])
+			// if (!deleted[edgelist_pointer[j]] && u < edges[j])
 			{
 				vp.push_back(make_pair(rid[u], rid[edges[j]]));
 			}
@@ -1580,7 +1581,7 @@ char Graph::find(ui u, ui w, ept &b, ept e, char *deleted, ept &idx, ui *edgelis
 // return the number of peeled edges
 ept Graph::peeling(ui critical_vertex, ListLinearHeap *linear_heap, ui *Qv, ui &Qv_n, ui d_threshold, ui *Qe, bool initialize_Qe, ui t_threshold, ui *tri_cnt, ui *active_edgelist, ui &active_edgelist_n, ui *edge_list, ui *edgelist_pointer, char *deleted, ui *degree, ept *pstart, ept *pend, ui *edges, char *exists)
 {
-	if (!topCTCP)
+	if (!(topCTCP))
 		return 0;
 
 	ept Qe_n = 0;
