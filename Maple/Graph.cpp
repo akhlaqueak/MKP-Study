@@ -301,8 +301,8 @@ void Graph::search() {
 			if( K<3 || max_n==oldn ) kplex_solver->enableInput=false;
 			if( K>=10 ) kplex_solver->enableInput=true;
 
-			// if(last_m<0.8*m) {
-			if(true){
+			if(last_m<0.8*m) {
+			// if(true){
 				ui pre_size;
 				do{
 					pre_size=kplex.size();

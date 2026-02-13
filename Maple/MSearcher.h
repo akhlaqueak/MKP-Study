@@ -300,7 +300,7 @@ private:
 			}
 			else addList[endIdx++] = PC[i];
 		}
-		std::sort(addList.data()+begIdx,addList.data()+endIdx,[&](int a,int b){return neiInG[a]<neiInG[b];});
+		std::sort(addList.data()+begIdx,addList.data()+endIdx,[&](int a,int b){return neiInG[a]>neiInG[b];});
 	}
 
     void reduce(ui begIdx, ui endIdx) {
