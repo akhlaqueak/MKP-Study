@@ -36,7 +36,7 @@ Several switches can be configured by providing optional parameters to the progr
 
 | Parameter |Explaination | Values |
 |----------|-------|--------------------|
-| -branching | Branching method selection | **Default (uses S-Br for K<=5, Pivot-Br otherwise)**, S-Br, R-Br, SR-Br, Pivot-Br, Binary-Br  |
+| -branching | Branching method selection | **Default-Br (uses S-Br for K<=5, Pivot-Br otherwise)**, S-Br, R-Br, SR-Br, Pivot-Br, Binary-Br  |
 | -bounding  | Upper bounding method to terminate a branch | **None**, S-Bound, R-Bound, SR-Bound |
 | -UBR2 | Select whether to apply pruning of vertices based on upper bounding of current branch | **true**, false|
 | -topCTCP | Select whether to apply CTCP at top level. Cannot be enabled in parallel execution | **true**, false|
