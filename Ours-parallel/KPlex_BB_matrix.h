@@ -170,6 +170,23 @@ public:
 		RR1 = cmd.GetOptionValue("-RR1", "true") == "true";
 		RR2 = cmd.GetOptionValue("-RR2", "true") == "true";
 		RR3 = cmd.GetOptionValue("-RR3", "true") == "true";
+
+		matrix = nullptr;
+		degree = nullptr;
+		S2 = nullptr;
+		degree_in_S = nullptr;
+		SR = nullptr;
+		SR_rid = nullptr;
+		neighbors = nullptr;
+		nonneighbors = nullptr;
+		level_id = nullptr;
+		LPI = nullptr;
+		psz = nullptr;
+		peelOrder = nullptr;
+		bmp = nullptr;
+		ISc = nullptr;
+		PI = nullptr;
+		PIMax = nullptr;
 	}
 
 	~KPLEX_BB_MATRIX()
