@@ -401,7 +401,7 @@ void Graph::kPlex_exact()
 #pragma omp parallel
 		{
 			thread_local Timer tt;
-			vector<ui> ids, kplex_local = kplex;
+			vector<ui> ids;
 			vector<pair<ui, ui>> vp;
 
 			char *exists = new char[n];
@@ -421,7 +421,8 @@ void Graph::kPlex_exact()
 #pragma omp for schedule(dynamic)
 			for (ui i = 0; i < n; i++)
 			{
-				ui best_sz = best_solution_size.load();
+			vector<ui> kplex_local = kplex;
+			ui best_sz = best_solution_size.load();
 				if (best_sz >= UB)
 					continue;
 				ui u = peel_sequence[i];
