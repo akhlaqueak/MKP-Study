@@ -480,7 +480,7 @@ void Graph::kPlex_exact()
 			// 	mkpsize = kplex.size();
 			// }
 
-			delete solvers[i];
+			// delete solvers[i];
 		}
 		cout << "...." << endl;
 		if (kplex.size() > presize)
