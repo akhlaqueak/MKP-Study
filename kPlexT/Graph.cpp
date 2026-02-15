@@ -349,7 +349,7 @@ void Graph::kPlex_exact(int mode) {
 			if(n > kplex.size()&&UB > kplex.size()&&kplex.size() < 2*K-2) 
 			{
 				kplex_solver->load_graph(n, pstart, pstart+1, edges);
-				// if(2*K-2 < UB) UB = 2*K-2;
+				if(2*K-2 < UB) UB = 2*K-2;
 				kplex_solver->kPlex(K, UB, kplex, false);
 				if(kplex.size() > 2*K-2) printf("!!! WA in kPlex_exact!\n");
 			}
