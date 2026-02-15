@@ -471,6 +471,7 @@ void Graph::kPlex_exact()
 		// 		{
 		// 			search_time = ts_time;
 		// 		}
+		cout<<"...."<<endl;
 		search_time = parallel_timer.elapsed();
 		for (ui i = 0; i < omp_get_max_threads(); i++)
 		{
@@ -481,7 +482,6 @@ void Graph::kPlex_exact()
 
 			delete solvers[i];
 		}
-		cout<<"passed"<<endl;
 		if (kplex.size() > presize)
 			for (ui i = 0; i < kplex.size(); i++)
 				kplex[i] = out_mapping[kplex[i]];
