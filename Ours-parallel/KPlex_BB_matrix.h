@@ -905,9 +905,9 @@ private:
 					if (td->move_u_to_S_with_prune(u, S_end, R_end, level))
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-					td->nullify();
-					delete td;
-					td = nullptr;
+					// td->nullify();
+					// delete td;
+					// td = nullptr;
 				}
 				B.clear();
 				KPLEX_BB_MATRIX *ctx1 = new KPLEX_BB_MATRIX(*this, R_end);
@@ -932,9 +932,9 @@ private:
 						td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
 					}
 					td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-					td->nullify();
-					delete td;
-					td = nullptr;
+					// td->nullify();
+					// delete td;
+					// td = nullptr;
 				}
 				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 			}
