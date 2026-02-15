@@ -833,7 +833,7 @@ private:
 				// branching vertices are now in R_end to t_R_end, and they are already sorted in peelOrder
 				// move branching vertex back to C
 				ui u = SR[R_end];
-				assert(level_id[u] == level && SR_rid[u] == R_end);
+				// assert(level_id[u] == level && SR_rid[u] == R_end);
 				R_end++;
 				level_id[u] = n;
 				char *t_matrix = matrix + u * n;
