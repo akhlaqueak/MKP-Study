@@ -404,7 +404,6 @@ void Graph::kPlex_exact()
 		Timer parallel_timer;
 #pragma omp parallel
 		{
-
 			thread_local Timer tt;
 			vector<ui> ids, kplex_local = kplex;
 			vector<pair<ui, ui>> vp;
@@ -475,12 +474,7 @@ void Graph::kPlex_exact()
 		search_time = parallel_timer.elapsed();
 		for (ui i = 0; i < omp_get_max_threads(); i++)
 		{
-			// if(solvers[i]->kplex.size()>kplex.size()){
-			// 	kplex = solvers[i]->kplex;
-			// 	mkpsize = kplex.size();
-			// }
-
-			// delete solvers[i];
+			delete solvers[i];
 		}
 		cout << "...." << endl;
 		if (kplex.size() > presize)

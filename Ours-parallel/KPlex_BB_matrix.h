@@ -155,7 +155,13 @@ public:
 		level_id = nullptr;
 		best_n_edges = 0;
 		all_kplex_search = _ds;
-
+		LPI = nullptr;
+		psz = nullptr;
+		peelOrder = nullptr;
+		bmp = nullptr;
+		ISc = nullptr;
+		PI = nullptr;
+		PIMax = nullptr;
 		branching = cmd.GetOptionValue("-branching", "Default-Br");
 		bounding = cmd.GetOptionValue("-bounding", "None");
 		UBR2 = cmd.GetOptionValue("-UBR2", "true") == "true";
