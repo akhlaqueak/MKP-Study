@@ -127,50 +127,14 @@ public:
 
 	void nullify()
 	{
-		matrix = nullptr;
-		degree = degree_in_S = neighbors = nonneighbors = SR_rid = SR = S2 = nullptr;
-		peelOrder = level_id = LPI = psz = nullptr;
-		PI = PIMax = ISc = nullptr;
-		bmp = nullptr;
-	}
-	KPLEX_BB_MATRIX(bool _ds = false)
-	{
 		n = 0;
-		matrix = nullptr;
 		matrix_size = 0;
 
 #ifdef _SECOND_ORDER_PRUNING_
 		cn = nullptr;
 		removed_edges_n = 0;
 #endif
-
-		degree = degree_in_S = nullptr;
-
 		K = _UB_ = 0;
-
-		neighbors = nonneighbors = nullptr;
-		S2 = nullptr;
-
-		SR = SR_rid = nullptr;
-		level_id = nullptr;
-		best_n_edges = 0;
-		all_kplex_search = _ds;
-		LPI = nullptr;
-		psz = nullptr;
-		peelOrder = nullptr;
-		bmp = nullptr;
-		ISc = nullptr;
-		PI = nullptr;
-		PIMax = nullptr;
-		branching = cmd.GetOptionValue("-branching", "Default-Br");
-		bounding = cmd.GetOptionValue("-bounding", "None");
-		UBR2 = cmd.GetOptionValue("-UBR2", "true") == "true";
-		BR1 = cmd.GetOptionValue("-BR1", "true") == "true";
-		BR2 = cmd.GetOptionValue("-BR2", "true") == "true";
-		RR1 = cmd.GetOptionValue("-RR1", "true") == "true";
-		RR2 = cmd.GetOptionValue("-RR2", "true") == "true";
-		RR3 = cmd.GetOptionValue("-RR3", "true") == "true";
-
 		matrix = nullptr;
 		degree = nullptr;
 		S2 = nullptr;
@@ -187,6 +151,18 @@ public:
 		ISc = nullptr;
 		PI = nullptr;
 		PIMax = nullptr;
+	}
+	KPLEX_BB_MATRIX(bool _ds = false)
+	{
+		nullify();
+		branching = cmd.GetOptionValue("-branching", "Default-Br");
+		bounding = cmd.GetOptionValue("-bounding", "None");
+		UBR2 = cmd.GetOptionValue("-UBR2", "true") == "true";
+		BR1 = cmd.GetOptionValue("-BR1", "true") == "true";
+		BR2 = cmd.GetOptionValue("-BR2", "true") == "true";
+		RR1 = cmd.GetOptionValue("-RR1", "true") == "true";
+		RR2 = cmd.GetOptionValue("-RR2", "true") == "true";
+		RR3 = cmd.GetOptionValue("-RR3", "true") == "true";
 	}
 
 	~KPLEX_BB_MATRIX()
