@@ -402,7 +402,27 @@ void Graph::search()
 		double min_density_prune = 1, min_density_search = 1, total_density_prune = 0, total_density_search = 0;
 		ui last_m = 0;
 
-		for (ui i = 0; i < n && m && kplex.size() < UB; i++)
+		if(!twoHopG){
+			ui ids_n=0;
+			extract_graph(n, m, degree, ids, ids_n, rid, vp, exists, pstart, pend, edges, deleted, edgelist_pointer);
+			double density = (double(vp.size() * 2)) / ids_n / (ids_n - 1);
+			total_density_prune += density;
+			++prune_cnt;
+			if (density < min_density_prune)
+			min_density_prune = density;
+			if (ids_n > max_n_prune)
+			max_n_prune = ids_n;
+			ui pre_size=kplex.size();
+			kplex_solver->load_graph(ids, ids_n, vp);
+			kplex_solver->kPlex(K, UB, kplex, false);
+			if (kplex.size() > pre_size)
+			{
+				for (ui &v : kplex)
+				v = out_mapping[v];
+			}
+		}
+
+		for (ui i = 0; i < n && twoHopG && m && kplex.size() < UB; i++)
 		{
 			ui u, key;
 			linear_heap->pop_min(u, key);
@@ -428,7 +448,7 @@ void Graph::search()
 
 			ui ids_n = 0;
 
-			if (twoHopG)
+			if (true)
 			{
 				ui pre_size;
 				do
@@ -458,8 +478,6 @@ void Graph::search()
 			}
 			else
 			{
-				ids[0] = u;
-				rid[u] = 0;
 				extract_graph(n, m, degree, ids, ids_n, rid, vp, exists, pstart, pend, edges, deleted, edgelist_pointer);
 				double density = (double(vp.size() * 2)) / ids_n / (ids_n - 1);
 				total_density_prune += density;
@@ -888,11 +906,10 @@ void Graph::load_graph_from_edgelist(ui _n, const vector<pair<ui, ui>> &edge_lis
 
 void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, vector<pair<ui, ui>> &vp, char *exists, ept *pstart, ept *pend, ui *edges, char *deleted, ui *edgelist_pointer)
 {
-	ids_n = 1;
 	vp.clear();
 	for (ui i = 0; i < n; ++i)
 	{
-		if (degree[i] && i != ids[0])
+		if (degree[i])
 		{
 			ids[ids_n] = i;
 			rid[i] = ids_n++;
@@ -902,7 +919,7 @@ void Graph::extract_graph(ui n, ui m, ui *degree, ui *ids, ui &ids_n, ui *rid, v
 	{
 		ui u = ids[i];
 		for (ept j = pstart[u]; j < pend[u]; j++)
-			if (!deleted[edgelist_pointer[j]] && u < edges[j] )
+			if (!deleted[edgelist_pointer[j]] && u < edges[j])
 			// if (!deleted[edgelist_pointer[j]] && u < edges[j])
 			{
 				vp.push_back(make_pair(rid[u], rid[edges[j]]));

@@ -307,11 +307,9 @@ void Graph::extract_entire_graph(ui u, std::vector<ui> &ids, ui *rid, std::vecto
 {
 	ids.clear();
 	vp.clear();
-	ids.push_back(u);
-	rid[u] = 0;
 	for (ui v = 0; v < n; ++v)
 	{
-		if ((pstart[v + 1] - pstart[v]) && v != u)
+		if ((pstart[v + 1] - pstart[v]))
 		{
 			rid[v] = ids.size();
 			ids.push_back(v);
@@ -324,8 +322,6 @@ void Graph::extract_entire_graph(ui u, std::vector<ui> &ids, ui *rid, std::vecto
 			ui v = edges[j];
 			if ((pstart[v + 1] - pstart[v]) && u < v)
 			{
-				if (rid[u] >= ids.size() or rid[v] >= ids.size())
-					cout << ids.size() << " " << rid[u] << " " << u << " " << rid[edges[j]] << endl;
 				vp.push_back(make_pair(rid[u], rid[v]));
 			}
 		}
@@ -453,7 +449,7 @@ void Graph::kPlex_exact()
 				kplex_solver_m->load_graph(ids, vp);
 #pragma omp taskgroup
 				{
-					kplex_solver_m->kPlex(K, UB, kplex_local, true);
+					kplex_solver_m->kPlex(K, UB, kplex_local, twoHopG);
 				}
 			}
 
