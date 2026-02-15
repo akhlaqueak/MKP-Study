@@ -476,7 +476,6 @@ void Graph::kPlex_exact()
 		{
 			delete solvers[i];
 		}
-		cout << "...." << endl;
 		if (kplex.size() > presize)
 			for (ui i = 0; i < kplex.size(); i++)
 				kplex[i] = out_mapping[kplex[i]];

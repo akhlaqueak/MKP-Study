@@ -299,54 +299,54 @@ void Graph::kPlex_exact(int mode) {
 
 			KPLEX_BB *kplex_solver = new KPLEX_BB();
 			kplex_solver->allocateMemory(n);
-			// {
-			// 	vector<ui> ids;
-			// 	vector<pair<ui,ui> > vp;
+			{
+				vector<ui> ids;
+				vector<pair<ui,ui> > vp;
 
-			// 	ui *peel_sequence_rid = core;
-			// 	for(ui i= 0;i < n;i ++) peel_sequence_rid[peel_sequence[i]] = i;
+				ui *peel_sequence_rid = core;
+				for(ui i= 0;i < n;i ++) peel_sequence_rid[peel_sequence[i]] = i;
 
-			// 	memset(vis, 0, sizeof(char)*n);
+				memset(vis, 0, sizeof(char)*n);
 
-			// 	KPLEX_BB_MATRIX *kplex_solver_m = new KPLEX_BB_MATRIX();
-			// 	kplex_solver_m->allocateMemory(n);
+				KPLEX_BB_MATRIX *kplex_solver_m = new KPLEX_BB_MATRIX();
+				kplex_solver_m->allocateMemory(n);
 
-			// 	ui search_cnt = 0;
-			// 	double min_density = 1, total_density = 0;
+				ui search_cnt = 0;
+				double min_density = 1, total_density = 0;
 
-			// 	if(pend == nullptr) pend = new ept[n+1];
-			// 	reorganize_adjacency_lists(n, peel_sequence, rid, pstart, pend, edges);
+				if(pend == nullptr) pend = new ept[n+1];
+				reorganize_adjacency_lists(n, peel_sequence, rid, pstart, pend, edges);
 
-			// 	for(ui i = n;i > 0&&kplex.size() < UB;i --) {
-			// 		ui u = peel_sequence[i-1];
-			// 		if(pend[u]-pstart[u]+K <= kplex.size()||n-i < kplex.size()) continue;
+				for(ui i = n;i > 0&&kplex.size() < UB;i --) {
+					ui u = peel_sequence[i-1];
+					if(pend[u]-pstart[u]+K <= kplex.size()||n-i < kplex.size()) continue;
 
-			// 		fflush(stdout);
+					fflush(stdout);
 
-			// 		if(kplex.size() >= 2*K-1) extract_subgraph_with_prune(u, kplex.size()+1-K, kplex.size()+1-2*K, kplex.size()+3-2*K, peel_sequence_rid, degree, ids, rid, vp, vis, pstart, pend, edges);
-			// 		else extract_subgraph_wo_prune(u, peel_sequence_rid, ids, rid, vp, vis, pstart, pend, edges);
+					if(kplex.size() >= 2*K-1) extract_subgraph_with_prune(u, kplex.size()+1-K, kplex.size()+1-2*K, kplex.size()+3-2*K, peel_sequence_rid, degree, ids, rid, vp, vis, pstart, pend, edges);
+					else extract_subgraph_wo_prune(u, peel_sequence_rid, ids, rid, vp, vis, pstart, pend, edges);
 
-			// 		if(ids.empty()||ids.size() <= kplex.size()) continue;
+					if(ids.empty()||ids.size() <= kplex.size()) continue;
 
-			// 		double density = vp.size()*2/(double)ids.size()/(ids.size()-1);
-			// 		++ search_cnt;
-			// 		total_density += density;
-			// 		if(density < min_density) min_density = density;
+					double density = vp.size()*2/(double)ids.size()/(ids.size()-1);
+					++ search_cnt;
+					total_density += density;
+					if(density < min_density) min_density = density;
 
-			// 		ui t_old_size = kplex.size();
-			// 			kplex_solver_m->load_graph(ids.size(), vp);
-			// 			kplex_solver_m->kPlex(K, kplex.size()+1, kplex, true);
-			// 		if(kplex.size() > t_old_size) {
-			// 			for(ui j = 0;j < kplex.size();j ++) kplex[j] = ids[kplex[j]];
-			// 		}
-			// 	}
-			// 	delete kplex_solver_m;
+					ui t_old_size = kplex.size();
+						kplex_solver_m->load_graph(ids.size(), vp);
+						kplex_solver_m->kPlex(K, kplex.size()+1, kplex, true);
+					if(kplex.size() > t_old_size) {
+						for(ui j = 0;j < kplex.size();j ++) kplex[j] = ids[kplex[j]];
+					}
+				}
+				delete kplex_solver_m;
 
-			// 	if(search_cnt == 0) printf("search_cnt: 0, ave_density: 1, min_density: 1\n");
-			// 	else printf("search_cnt: %u, ave_density: %.5lf, min_density: %.5lf\n", search_cnt, total_density/search_cnt, min_density);
-			// }
+				if(search_cnt == 0) printf("search_cnt: 0, ave_density: 1, min_density: 1\n");
+				else printf("search_cnt: %u, ave_density: %.5lf, min_density: %.5lf\n", search_cnt, total_density/search_cnt, min_density);
+			}
 
-			// if(n > kplex.size()&&UB > kplex.size()&&kplex.size() < 2*K-2) 
+			if(n > kplex.size()&&UB > kplex.size()&&kplex.size() < 2*K-2) 
 			{
 				kplex_solver->load_graph(n, pstart, pstart+1, edges);
 				// if(2*K-2 < UB) UB = 2*K-2;
