@@ -398,7 +398,7 @@ void Graph::kPlex_exact()
 			pend = new ept[n + 1];
 		reorganize_adjacency_lists(n, peel_sequence, rid, pstart, pend, edges);
 		best_solution_size.store(kplex.size());
-		cout<<"passed"<<endl;
+
 		Timer parallel_timer;
 #pragma omp parallel
 		{
@@ -481,6 +481,7 @@ void Graph::kPlex_exact()
 
 			delete solvers[i];
 		}
+		cout<<"passed"<<endl
 		if (kplex.size() > presize)
 			for (ui i = 0; i < kplex.size(); i++)
 				kplex[i] = out_mapping[kplex[i]];
