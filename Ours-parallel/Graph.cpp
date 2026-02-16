@@ -561,6 +561,7 @@ void Graph::all_kPlex_search()
 			KPLEX_BB_MATRIX *kplex_solver_m = new KPLEX_BB_MATRIX(true);
 			solvers[omp_get_thread_num()] = kplex_solver_m;
 			kplex_solver_m->allocateMemory(n);
+			kplex_solver_m->all_kplex_search=true;
 
 			ui search_cnt = 0;
 			double min_density = 1, total_density = 0;
