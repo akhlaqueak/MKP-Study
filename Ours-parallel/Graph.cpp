@@ -1917,7 +1917,7 @@ int main(int argc, char *argv[])
 	{
 		graph->read_graph_binary();
 		graph->all_kPlex_search();
-		// graph->write_all_kplexes();
+		graph->write_all_kplexes();
 	}
 	printf("-----------------------------------------------------------------------------------------\n\n");
 	return 0;
