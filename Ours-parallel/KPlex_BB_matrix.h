@@ -587,7 +587,7 @@ private:
 
 	bool is_kplex(ui R_end)
 	{
-		// return false;
+		return false;
 		for (ui i = 0; i < R_end; i++)
 			if (degree[SR[i]] + K < R_end)
 				return false;
@@ -1205,7 +1205,7 @@ private:
 		}
 		if (beta > 0)
 			cend -= min(beta, cend - S_end);
-		if(S_end > cend)cout<<S_end<<cend<<endl;
+
 		return move_candidates_to_end(S_end, cend, R_end, level);
 	}
 	ui move_candidates_to_end(ui S_end, ui cend, ui R_end, ui level)
