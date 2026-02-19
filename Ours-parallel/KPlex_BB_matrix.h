@@ -598,8 +598,8 @@ private:
 		ui best_sz = best_solution_size.load();
 		if (S_end > best_sz)
 			store_solution(S_end);
-		if (R_end > best_sz && is_kplex(R_end))
-			store_solution(R_end);
+		// if (R_end > best_sz && is_kplex(R_end))
+		// 	store_solution(R_end);
 		if (R_end <= best_sz + 1 || best_sz >= _UB_)
 			return;
 
