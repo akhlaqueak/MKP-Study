@@ -587,7 +587,7 @@ private:
 
 	bool is_kplex(ui R_end)
 	{
-		return false;
+		// return false;
 		for (ui i = 0; i < R_end; i++)
 			if (degree[SR[i]] + K < R_end)
 				return false;
