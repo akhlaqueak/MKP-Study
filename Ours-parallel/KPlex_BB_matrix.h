@@ -590,7 +590,7 @@ private:
 			if (degree[SR[i]] + K < R_end)
 				return false;
 		forward_sol = true;
-		return false;
+		return true;
 	}
 
 	void BB_search(ui S_end, ui R_end, ui level, bool choose_zero, bool root_level = true, auto st = TIME_NOW)
