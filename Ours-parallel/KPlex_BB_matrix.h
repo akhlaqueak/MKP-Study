@@ -1178,15 +1178,6 @@ private:
 			else
 			{
 				// remove pi* from C
-				ui b = min(support(S_end, SR[maxpi]), psz[maxpi]);
-				if(b<=beta){
-					beta -= b;
-				}
-				else{
-					psz[maxpi] = 0;
-					continue;
-				}
-				
 				ui *t_LPI = LPI + maxpi * n;
 				for (ui i = 0; i < psz[maxpi]; i++)
 				{
@@ -1195,6 +1186,7 @@ private:
 					swap_pos(SR_rid[v], --cend);
 				}
 				// beta-=cost(pi*)
+				beta -= min(support(S_end, SR[maxpi]), psz[maxpi]);
 
 				// remove maxpi from every pi
 				psz[maxpi] = 0;
@@ -1213,7 +1205,7 @@ private:
 		}
 		if (beta > 0)
 			cend -= min(beta, cend - S_end);
-
+		if(S_end > cend)cout<<S_end<<cend<<endl;
 		return move_candidates_to_end(S_end, cend, R_end, level);
 	}
 	ui move_candidates_to_end(ui S_end, ui cend, ui R_end, ui level)
