@@ -543,6 +543,7 @@ private:
 				ui n_edges = 0;
 				for (ui i = 0; i < size; i++)
 				{
+					cout<<degree[SR[i]]<<" ";
 					if (forward_sol)
 						n_edges += degree[SR[i]];
 					else
