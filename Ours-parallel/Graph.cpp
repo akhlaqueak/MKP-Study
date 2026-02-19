@@ -2,14 +2,6 @@
 #include <atomic>
 #include <omp.h>
 #include "Command.h"
-CommandLine cmd;
-std::vector<ui> kplex;
-double threshold = 1e9;
-Timer thresh, branchings, bounding;
-std::atomic<ui> best_solution_size(0);
-class KPLEX_BB_MATRIX;
-KPLEX_BB_MATRIX **solvers;
-vector<vector<ui>> all_kplexes;
 #include "KPlex_BB_matrix.h"
 #include "KPlex_BB.h"
 #include "CTPrune.h"

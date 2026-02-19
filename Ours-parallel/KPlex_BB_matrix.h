@@ -1,6 +1,5 @@
 #ifndef _KPLEX_BB_MATRIX_
 #define _KPLEX_BB_MATRIX_
-
 #include "Utility.h"
 #include "Timer.h"
 #include <chrono>
@@ -9,18 +8,17 @@ using namespace std::chrono;
 #define THRESH 100
 #define TIME_NOW chrono::steady_clock::now()
 #define TIME_OVER(ST) ((chrono::duration_cast<chrono::microseconds>(TIME_NOW - ST)).count() > THRESH)
-
-// pruning switches
-
-// if PART_BRANCH is false, then pivot branch gets executed...
-#define PART_BRANCH (K <= 5 && sparse)
-
-// Upper bounding switches...
-// #define SEESAW
-// #define COLORBOUND
-// #define PART_BOUND
-
 #define CSIZE (R_end - S_end)
+CommandLine cmd;
+std::vector<ui> kplex;
+double threshold = 1e9;
+Timer thresh, branchings, bounding;
+std::atomic<ui> best_solution_size(0);
+std::mutex global_mtx;
+class KPLEX_BB_MATRIX;
+KPLEX_BB_MATRIX **solvers;
+vector<vector<ui>> all_kplexes;
+
 
 class KPLEX_BB_MATRIX
 {
@@ -453,8 +451,9 @@ private:
 				if (!vis[j] && matrix[u * n + j])
 					--degree[j];
 		}
-#pragma omp critical(A)
+// #pragma omp critical(A)
 		{
+			std::lock_guard<std::mutex> g(global_mtx);
 			if (!all_kplex_search && (n - idx > best_solution_size.load()))
 			{
 				best_solution_size.store(n - idx);
@@ -470,14 +469,14 @@ private:
 		for (ui i = 0; i < n; i++)
 			SR_rid[i] = n;
 		for (ui i = 0; i < n; i++)
-			if (core[i] + K > best_solution_size)
+			if (core[i] + K > best_solution_size.load())
 			{
 				SR[R_end] = i;
 				SR_rid[i] = R_end;
 				++R_end;
 			}
 
-		if ((must_include_0 && SR_rid[0] == n) || best_solution_size >= _UB_)
+		if ((must_include_0 && SR_rid[0] == n) || best_solution_size.load() >= _UB_)
 		{
 			R_end = 0;
 			return;
@@ -535,8 +534,9 @@ private:
 	void store_solution(ui size)
 	{
 
-#pragma omp critical(A)
+// #pragma omp critical(A)
 		{
+			std::lock_guard<std::mutex> g(global_mtx);
 			if (size > best_solution_size.load())
 
 			{
@@ -755,7 +755,7 @@ private:
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 			return;
 		}
-		ui beta = best_solution_size - S_end;
+		ui beta = best_solution_size.load() - S_end;
 		if (bounding != "None")
 		{
 
@@ -765,14 +765,14 @@ private:
 				return;
 			}
 
-			if (bounding == "SR-Bound" and CSIZE > 3 * beta && seesawUB(S_end, R_end) <= best_solution_size)
+			if (bounding == "SR-Bound" and CSIZE > 3 * beta && seesawUB(S_end, R_end) <= best_solution_size.load())
 			{
 				restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 				return;
 			}
 
 			// if (CSIZE>3*beta && seesawUB(S_end, R_end)<=best_solution_size) {
-			if (bounding == "R-Bound" and colorUB(S_end, R_end) <= best_solution_size)
+			if (bounding == "R-Bound" and colorUB(S_end, R_end) <= best_solution_size.load())
 			{
 				restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 				return;
@@ -1072,7 +1072,7 @@ private:
 	ui SR_branching(ui S_end, ui R_end, ui level)
 	{
 		ui cend = R_end;
-		ui beta = best_solution_size - S_end;
+		ui beta = best_solution_size.load() - S_end;
 		ui ub = 0;
 		bool flag = true;
 		do
@@ -1116,7 +1116,7 @@ private:
 	{
 
 		ui cend = R_end;
-		ui beta = best_solution_size - S_end;
+		ui beta = best_solution_size.load() - S_end;
 		while (beta > 0 && cend > S_end)
 		{
 			ui ub = tryColor(S_end, cend);
@@ -1155,7 +1155,7 @@ private:
 					t_LPI[psz[i]++] = v;
 			}
 		}
-		ui beta = best_solution_size - S_end;
+		ui beta = best_solution_size.load() - S_end;
 		ui cend = R_end;
 
 		while (S_end < cend)
@@ -1562,12 +1562,12 @@ private:
 				continue;
 			assert(SR_rid[v] >= S_end && SR_rid[v] < R_end && SR_rid[w] >= S_end && SR_rid[w] < R_end);
 
-			if (degree[v] + K <= best_solution_size + 1)
+			if (degree[v] + K <= best_solution_size.load() + 1)
 			{
 				level_id[v] = level;
 				Qv.push(v);
 			}
-			if (degree[w] + K <= best_solution_size + 1)
+			if (degree[w] + K <= best_solution_size.load() + 1)
 			{
 				level_id[w] = level;
 				Qv.push(w);
