@@ -1203,8 +1203,8 @@ private:
 			if (beta == 0)
 				break;
 		}
-		// if (beta > 0)
-		// 	cend -= min(beta, cend - S_end);
+		if (beta > 0)
+			cend -= min(beta, cend - S_end);
 		return move_candidates_to_end(S_end, cend, R_end, level);
 	}
 	ui move_candidates_to_end(ui S_end, ui cend, ui R_end, ui level)
