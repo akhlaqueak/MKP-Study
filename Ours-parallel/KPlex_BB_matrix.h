@@ -6,7 +6,7 @@
 #include<mutex>
 using namespace std::chrono;
 // #define _SECOND_ORDER_PRUNING_
-#define THRESH 100000
+#define THRESH 100
 #define TIME_NOW chrono::steady_clock::now()
 #define TIME_OVER(ST) ((chrono::duration_cast<chrono::microseconds>(TIME_NOW - ST)).count() > THRESH)
 #define CSIZE (R_end - S_end)
@@ -598,8 +598,8 @@ private:
 		ui best_sz = best_solution_size.load();
 		if (S_end > best_sz)
 			store_solution(S_end);
-		if (R_end > best_sz && is_kplex(R_end))
-			store_solution(R_end);
+		// if (R_end > best_sz && is_kplex(R_end))
+		// 	store_solution(R_end);
 		if (R_end <= best_sz + 1 || best_sz >= _UB_)
 			return;
 
