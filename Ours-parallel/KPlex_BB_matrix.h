@@ -590,7 +590,7 @@ private:
 			if (degree[SR[i]] + K < R_end)
 				return false;
 		forward_sol = true;
-		return true;
+		return false;
 	}
 
 	void BB_search(ui S_end, ui R_end, ui level, bool choose_zero, bool root_level = true, auto st = TIME_NOW)
@@ -598,8 +598,8 @@ private:
 		ui best_sz = best_solution_size.load();
 		if (S_end > best_sz)
 			store_solution(S_end);
-		// if (R_end > best_sz && is_kplex(R_end))
-		// 	store_solution(R_end);
+		if (R_end > best_sz && is_kplex(R_end))
+			store_solution(R_end);
 		if (R_end <= best_sz + 1 || best_sz >= _UB_)
 			return;
 
