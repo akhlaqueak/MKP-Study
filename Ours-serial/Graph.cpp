@@ -544,6 +544,10 @@ void Graph::search()
 		delete[] Qv;
 		delete[] deleted;
 	}
+
+	else{
+		write_one_kplex(kplex);
+	}
 	delete[] core;
 	delete[] peel_sequence;
 
