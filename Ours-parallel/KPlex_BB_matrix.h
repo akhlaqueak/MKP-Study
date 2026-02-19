@@ -1157,6 +1157,7 @@ private:
 			}
 		}
 		ui beta = best_solution_size.load() - S_end;
+		if(beta>15) cout<<beta<<endl;
 		ui cend = R_end;
 
 		while (S_end < cend)
