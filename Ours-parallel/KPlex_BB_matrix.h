@@ -586,7 +586,7 @@ private:
 
 	bool is_kplex(ui R_end)
 	{
-		return false;
+		// return false;
 		for (ui i = 0; i < R_end; i++)
 			if (degree[SR[i]] + K < R_end)
 				return false;
@@ -747,8 +747,8 @@ private:
 		best_sz = best_solution_size.load();
 		if (S_end > best_sz)
 			store_solution(S_end);
-		if (R_end > best_sz && is_kplex(R_end))
-			store_solution(R_end);
+		// if (R_end > best_sz && is_kplex(R_end))
+		// 	store_solution(R_end);
 		if (R_end <= best_sz + 1 || best_sz >= _UB_)
 		{
 			// printf("here3\n");
