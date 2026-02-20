@@ -837,10 +837,9 @@ private:
 					if (t_matrix[SR[i]])
 					{
 						ui w = SR[i];
+						if(degree[w]>=R_end) cout<<"w";
 						++degree[w];
 						++degree[u];
-						if(degree[u]>=R_end) cout<<"u";
-						if(degree[w]>=R_end) cout<<"w";
 						if (i < S_end)
 							++degree_in_S[u];
 					}
