@@ -816,8 +816,8 @@ private:
 			// ******************* Adding our branching stuff here...
 			ui t_R_end = R_end;
 
-			for(ui i=0;i<R_end;i++) cout<<degree[SR[i]]<<" "; cout<<endl;
-			
+			for(ui i=0;i<R_end;i++) if(degree[SR[i]]>=R_end) cout<<"."; cout<<endl;
+
 			if (branching == "R-Br")
 				R_end = R_branching(S_end, R_end, level);
 			else if (branching == "SR-Br")
