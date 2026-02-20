@@ -1140,7 +1140,6 @@ private:
 
 	ui S_branching(ui S_end, ui R_end, ui level)
 	{
-		return S_end;
 		for (ui i = 0; i < S_end; i++)
 		{
 			ui u = SR[i];
@@ -1207,7 +1206,8 @@ private:
 		if (beta > 0)
 			cend -= min(beta, cend - S_end);
 
-		return move_candidates_to_end(S_end, cend, R_end, level);
+		// return move_candidates_to_end(S_end, cend, R_end, level);
+		return move_candidates_to_end(S_end, R_end, R_end, level);
 	}
 	ui move_candidates_to_end(ui S_end, ui cend, ui R_end, ui level)
 	{
