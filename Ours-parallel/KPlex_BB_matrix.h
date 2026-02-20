@@ -6,7 +6,7 @@
 #include<mutex>
 using namespace std::chrono;
 // #define _SECOND_ORDER_PRUNING_
-#define THRESH 10000000
+#define THRESH 100
 #define TIME_NOW chrono::steady_clock::now()
 #define TIME_OVER(ST) ((chrono::duration_cast<chrono::microseconds>(TIME_NOW - ST)).count() > THRESH)
 #define CSIZE (R_end - S_end)
@@ -872,6 +872,7 @@ private:
 					restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 				}
 			}
+			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 		}
 
 		else
@@ -1207,35 +1208,35 @@ private:
 
 		return move_candidates_to_end(S_end, cend, R_end, level);
 	}
-	ui move_candidates_to_end(ui S_end, ui cend, ui R_end, ui level)
-	{
-		for (ui i = S_end; i < cend; i++)
+		ui move_candidates_to_end(ui S_end, ui cend, ui R_end, ui level)
 		{
-			// get a vertex with lowest peelOrder at location i
-			ui u = SR[i], ind = i;
-			for (ui j = i + 1; j < cend; j++)
+			for (ui i = S_end; i < cend; i++)
 			{
-				ui v = SR[j];
-				if (peelOrder[v] < peelOrder[u])
-					ind = j, u = v;
-			}
+				// get a vertex with lowest peelOrder at location i
+				ui u = SR[i], ind = i;
+				for (ui j = i + 1; j < cend; j++)
+				{
+					ui v = SR[j];
+					if (peelOrder[v] < peelOrder[u])
+						ind = j, u = v;
+				}
 
-			swap_pos(i, ind);
-			swap_pos(i, --R_end);
+				swap_pos(i, ind);
+				swap_pos(i, --R_end);
 
-			level_id[u] = level;
-			char *t_matrix = matrix + u * n;
-			degree[u] = degree_in_S[u] = 0;
-			for (ui i = 0; i < R_end; i++)
-			{
-				ui w = SR[i];
-				// if(level_id[w]==level) continue;
-				if (t_matrix[w])
-					--degree[w];
+				level_id[u] = level;
+				char *t_matrix = matrix + u * n;
+				degree[u] = degree_in_S[u] = 0;
+				for (ui i = 0; i < R_end; i++)
+				{
+					ui w = SR[i];
+					// if(level_id[w]==level) continue;
+					if (t_matrix[w])
+						--degree[w];
+				}
 			}
+			return R_end;
 		}
-		return R_end;
-	}
 	bool greedily_add_vertices_to_S(ui &S_end, ui &R_end, ui level)
 	{
 		while (true)
