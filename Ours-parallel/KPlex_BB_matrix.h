@@ -815,6 +815,7 @@ private:
 
 			// ******************* Adding our branching stuff here...
 			ui t_R_end = R_end;
+			
 
 			if (branching == "R-Br")
 				R_end = R_branching(S_end, R_end, level);
@@ -1232,7 +1233,6 @@ private:
 				// if(level_id[w]==level) continue;
 				if (t_matrix[w])
 					--degree[w];
-				if(degree[w] >= R_end) cout<<"w";
 			}
 		}
 		return R_end;
