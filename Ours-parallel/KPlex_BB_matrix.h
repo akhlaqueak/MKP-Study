@@ -995,8 +995,6 @@ private:
 			}
 			else
 				nn = S_end - degree_in_S[SR[i]];
-			if (degree_in_S[SR[i]] > S_end)
-				cout << S_end << " " << degree_in_S[SR[i]] << endl;
 			if (nn > max_nn)
 				max_nn = nn;
 			vp[i - S_end].first = SR[i];
@@ -1159,7 +1157,6 @@ private:
 			}
 		}
 		ui beta = best_solution_size.load() - S_end;
-		if(beta>15) cout<<beta<<endl;
 		ui cend = R_end;
 
 		while (S_end < cend)
