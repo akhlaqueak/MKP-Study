@@ -1140,7 +1140,7 @@ private:
 
 	ui S_branching(ui S_end, ui R_end, ui level)
 	{
-		return move_candidates_to_end(S_end, R_end, R_end, level);
+		// return move_candidates_to_end(S_end, R_end, R_end, level);
 		for (ui i = 0; i < S_end; i++)
 		{
 			ui u = SR[i];
