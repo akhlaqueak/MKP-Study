@@ -590,7 +590,6 @@ private:
 		for (ui i = 0; i < R_end; i++){
 			if (degree[SR[i]] + K < R_end)
 				return false;
-			if(degree[SR[i]]>=R_end) cout<<".";
 		}
 		forward_sol = true;
 		return true;
@@ -1233,6 +1232,7 @@ private:
 				// if(level_id[w]==level) continue;
 				if (t_matrix[w])
 					--degree[w];
+				if(degree[w] >= R_end) cout<<"w";
 			}
 		}
 		return R_end;
