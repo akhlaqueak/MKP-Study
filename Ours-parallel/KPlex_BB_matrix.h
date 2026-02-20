@@ -746,7 +746,7 @@ private:
 		for (ui i = 0; i < R_end; i++)
 			assert(level_id[SR[i]] > level);
 #endif
-		best_sz = best_solution_size.load();
+
 		if (S_end > best_sz)
 			store_solution(S_end);
 		if (R_end > best_sz && is_kplex(R_end))
@@ -757,7 +757,7 @@ private:
 			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 			return;
 		}
-		ui beta = best_solution_size.load() - S_end;
+		ui beta = best_sz - S_end;
 		if (bounding != "None")
 		{
 
@@ -767,14 +767,14 @@ private:
 				return;
 			}
 
-			if (bounding == "SR-Bound" and CSIZE > 3 * beta && seesawUB(S_end, R_end) <= best_solution_size.load())
+			if (bounding == "SR-Bound" and CSIZE > 3 * beta && seesawUB(S_end, R_end) <= best_sz)
 			{
 				restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 				return;
 			}
 
-			// if (CSIZE>3*beta && seesawUB(S_end, R_end)<=best_solution_size) {
-			if (bounding == "R-Bound" and colorUB(S_end, R_end) <= best_solution_size.load())
+			// if (CSIZE>3*beta && seesawUB(S_end, R_end)<=best_sz) {
+			if (bounding == "R-Bound" and colorUB(S_end, R_end) <= best_sz)
 			{
 				restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 				return;
@@ -839,6 +839,8 @@ private:
 						ui w = SR[i];
 						++degree[w];
 						++degree[u];
+						if(degree[u]>=R_end) cout<<"u";
+						if(degree[w]>=R_end) cout<<"w";
 						if (i < S_end)
 							++degree_in_S[u];
 					}
