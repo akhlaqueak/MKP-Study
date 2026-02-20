@@ -598,11 +598,15 @@ private:
 
 	void BB_search(ui S_end, ui R_end, ui level, bool choose_zero, bool root_level = true, auto st = TIME_NOW)
 	{
+		ui old_removed_edges_n = 0, old_S_end = S_end, old_R_end = R_end;
 		ui best_sz = best_solution_size.load();
 		if (S_end > best_sz)
 			store_solution(S_end);
-		if (R_end > best_sz && is_kplex(R_end))
+		if (R_end > best_sz && is_kplex(R_end)){
 			store_solution(R_end);
+			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
+			return;
+		}
 		if (R_end <= best_sz + 1 || best_sz >= _UB_)
 			return;
 
@@ -648,7 +652,6 @@ private:
 #endif
 #endif
 
-		ui old_removed_edges_n = 0, old_S_end = S_end, old_R_end = R_end;
 		assert(Qv.empty());
 #ifdef _SECOND_ORDER_PRUNING_
 		while (!Qe.empty())
@@ -746,11 +749,14 @@ private:
 		for (ui i = 0; i < R_end; i++)
 			assert(level_id[SR[i]] > level);
 #endif
-
+		best_sz = best_solution_size.load();
 		if (S_end > best_sz)
 			store_solution(S_end);
-		if (R_end > best_sz && is_kplex(R_end))
+		if (R_end > best_sz && is_kplex(R_end)){
 			store_solution(R_end);
+			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
+			return;
+		}
 		if (R_end <= best_sz + 1 || best_sz >= _UB_)
 		{
 			// printf("here3\n");
@@ -1140,7 +1146,6 @@ private:
 
 	ui S_branching(ui S_end, ui R_end, ui level)
 	{
-		// return move_candidates_to_end(S_end, R_end, R_end, level);
 		for (ui i = 0; i < S_end; i++)
 		{
 			ui u = SR[i];
