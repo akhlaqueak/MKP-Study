@@ -849,8 +849,10 @@ private:
 							++degree_in_S[u];
 					}
 
-				if (best_solution_size.load() >= _UB_)
+				if (best_solution_size.load() >= _UB_){
+					restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 					return;
+				}
 				if (root_level)
 					found_larger = false;
 				if (found_larger)
