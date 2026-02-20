@@ -504,7 +504,7 @@ private:
 		for (ui i = 0; i < R_end; i++){
 			if (degree[SR[i]] + K < R_end)
 				return false;
-			if(degree[SR[i]]>=R_end) cout<<".";
+			// if(degree[SR[i]]>=R_end) cout<<".";
 		}
 		forward_sol = true;
 		return true;
