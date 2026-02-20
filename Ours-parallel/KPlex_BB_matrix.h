@@ -586,7 +586,7 @@ private:
 
 	bool is_kplex(ui R_end)
 	{
-		// return false;
+		return false;
 		for (ui i = 0; i < R_end; i++){
 			if (degree[SR[i]] + K < R_end)
 				return false;
@@ -815,8 +815,6 @@ private:
 
 			// ******************* Adding our branching stuff here...
 			ui t_R_end = R_end;
-
-			for(ui i=0;i<R_end;i++) if(degree[SR[i]]>=R_end) cout<<"."; 
 
 			if (branching == "R-Br")
 				R_end = R_branching(S_end, R_end, level);
