@@ -837,7 +837,6 @@ private:
 					if (t_matrix[SR[i]])
 					{
 						ui w = SR[i];
-						if(degree[w]>=R_end) cout<<"w";
 						++degree[w];
 						++degree[u];
 						if (i < S_end)
@@ -851,20 +850,20 @@ private:
 				if (found_larger)
 					continue;
 
-				if (TIME_OVER(st))
-				{
-					KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
-#pragma omp task firstprivate(ctx, u, S_end, R_end, level)
-					{
-						KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
-						td->loadContext(solvers[omp_get_thread_num()], ctx, S_end, R_end);
-						ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
-						if (td->move_u_to_S_with_prune(u, S_end, R_end, level))
-							td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
-						td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
-					}
-				}
-				else
+// 				if (TIME_OVER(st))
+// 				{
+// 					KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
+// #pragma omp task firstprivate(ctx, u, S_end, R_end, level)
+// 					{
+// 						KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
+// 						td->loadContext(solvers[omp_get_thread_num()], ctx, S_end, R_end);
+// 						ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+// 						if (td->move_u_to_S_with_prune(u, S_end, R_end, level))
+// 							td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
+// 						td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+// 					}
+// 				}
+// 				else
 				{
 					ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 					empty_Qv();
@@ -1209,35 +1208,35 @@ private:
 
 		return move_candidates_to_end(S_end, cend, R_end, level);
 	}
-		ui move_candidates_to_end(ui S_end, ui cend, ui R_end, ui level)
+	ui move_candidates_to_end(ui S_end, ui cend, ui R_end, ui level)
+	{
+		for (ui i = S_end; i < cend; i++)
 		{
-			for (ui i = S_end; i < cend; i++)
+			// get a vertex with lowest peelOrder at location i
+			ui u = SR[i], ind = i;
+			for (ui j = i + 1; j < cend; j++)
 			{
-				// get a vertex with lowest peelOrder at location i
-				ui u = SR[i], ind = i;
-				for (ui j = i + 1; j < cend; j++)
-				{
-					ui v = SR[j];
-					if (peelOrder[v] < peelOrder[u])
-						ind = j, u = v;
-				}
-
-				swap_pos(i, ind);
-				swap_pos(i, --R_end);
-
-				level_id[u] = level;
-				char *t_matrix = matrix + u * n;
-				degree[u] = degree_in_S[u] = 0;
-				for (ui i = 0; i < R_end; i++)
-				{
-					ui w = SR[i];
-					// if(level_id[w]==level) continue;
-					if (t_matrix[w])
-						--degree[w];
-				}
+				ui v = SR[j];
+				if (peelOrder[v] < peelOrder[u])
+					ind = j, u = v;
 			}
-			return R_end;
+
+			swap_pos(i, ind);
+			swap_pos(i, --R_end);
+
+			level_id[u] = level;
+			char *t_matrix = matrix + u * n;
+			degree[u] = degree_in_S[u] = 0;
+			for (ui i = 0; i < R_end; i++)
+			{
+				ui w = SR[i];
+				// if(level_id[w]==level) continue;
+				if (t_matrix[w])
+					--degree[w];
+			}
 		}
+		return R_end;
+	}
 	bool greedily_add_vertices_to_S(ui &S_end, ui &R_end, ui level)
 	{
 		while (true)
