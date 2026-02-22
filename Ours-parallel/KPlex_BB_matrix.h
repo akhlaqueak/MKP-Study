@@ -114,10 +114,10 @@ public:
 			degree[u] = ctx->degree[i];
 		}
 		ids = ctx->ids;
-		// delete[] ctx->SR;
-		// delete[] ctx->degree_in_S;
-		// delete[] ctx->degree;
-		// delete[] ctx->level_id;
+		delete[] ctx->SR;
+		delete[] ctx->degree_in_S;
+		delete[] ctx->degree;
+		delete[] ctx->level_id;
 
 		ctx->nullify();
 		delete ctx;
@@ -864,6 +864,7 @@ private:
 				if (found_larger)
 					continue;
 
+				ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 				if (TIME_OVER(st))
 				{
 					KPLEX_BB_MATRIX *ctx = new KPLEX_BB_MATRIX(*this, R_end);
@@ -885,6 +886,7 @@ private:
 						BB_search(S_end, R_end, level + 1, false, false, st);
 					restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 				}
+				restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 			}
 		}
 
