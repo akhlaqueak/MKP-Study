@@ -3,7 +3,7 @@
 #include "Utility.h"
 #include "Timer.h"
 #include <chrono>
-#include<mutex>
+#include <mutex>
 using namespace std::chrono;
 // #define _SECOND_ORDER_PRUNING_
 #define THRESH 100
@@ -19,7 +19,6 @@ std::mutex global_mtx;
 class KPLEX_BB_MATRIX;
 KPLEX_BB_MATRIX **solvers;
 vector<vector<ui>> all_kplexes;
-
 
 class KPLEX_BB_MATRIX
 {
@@ -452,7 +451,7 @@ private:
 				if (!vis[j] && matrix[u * n + j])
 					--degree[j];
 		}
-// #pragma omp critical(A)
+		// #pragma omp critical(A)
 		{
 			std::lock_guard<std::mutex> g(global_mtx);
 			if (!all_kplex_search && (n - idx > best_solution_size.load()))
@@ -535,7 +534,7 @@ private:
 	void store_solution(ui size)
 	{
 
-// #pragma omp critical(A)
+		// #pragma omp critical(A)
 		{
 			std::lock_guard<std::mutex> g(global_mtx);
 			if (size > best_solution_size.load())
@@ -587,8 +586,15 @@ private:
 	bool is_kplex(ui R_end)
 	{
 		// return false;
-		for (ui i = 0; i < R_end; i++){
-			if(degree[SR[i]]>=R_end)cout<<".";
+		for (ui i = 0; i < R_end; i++)
+		{
+			if (degree[SR[i]] >= R_end)
+			{
+				// cout<<".";
+				for (ui j = 0; j < R_end; j++)
+					cout << SR[j] << " ";
+				return;
+			}
 			if (degree[SR[i]] + K < R_end)
 				return false;
 		}
@@ -602,9 +608,9 @@ private:
 		ui best_sz = best_solution_size.load();
 		if (S_end > best_sz)
 			store_solution(S_end);
-		if (R_end > best_sz && is_kplex(R_end)){
+		if (R_end > best_sz && is_kplex(R_end))
+		{
 			store_solution(R_end);
-			return;
 		}
 		if (R_end <= best_sz + 1 || best_sz >= _UB_)
 			return;
@@ -751,9 +757,9 @@ private:
 		best_sz = best_solution_size.load();
 		if (S_end > best_sz)
 			store_solution(S_end);
-		if (R_end > best_sz && is_kplex(R_end)){
+		if (R_end > best_sz && is_kplex(R_end))
+		{
 			store_solution(R_end);
-			restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 			return;
 		}
 		if (R_end <= best_sz + 1 || best_sz >= _UB_)
@@ -848,7 +854,8 @@ private:
 							++degree_in_S[u];
 					}
 
-				if (best_solution_size.load() >= _UB_){
+				if (best_solution_size.load() >= _UB_)
+				{
 					restore_SR_and_edges(S_end, R_end, old_S_end, old_R_end, level, old_removed_edges_n);
 					return;
 				}
