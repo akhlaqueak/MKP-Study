@@ -590,10 +590,10 @@ private:
 		{
 			if (degree[SR[i]] >= R_end)
 			{
-				// cout<<".";
-				for (ui j = 0; j < R_end; j++)
-					cout << SR[j] << " ";
-				return false;
+				cout<<".";
+				// for (ui j = 0; j < R_end; j++)
+				// 	cout << SR[j] << " ";
+				// return false;
 			}
 			if (degree[SR[i]] + K < R_end)
 				return false;
@@ -1689,6 +1689,7 @@ private:
 		for (; R_end < old_R_end; R_end++)
 		{ // insert u back into R
 			ui u = SR[R_end];
+			assert(level_id[u] == level);
 			assert(level_id[u] == level && SR_rid[u] == R_end);
 			level_id[u] = n;
 
