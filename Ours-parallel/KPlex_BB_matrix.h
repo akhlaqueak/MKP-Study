@@ -593,7 +593,7 @@ private:
 				// cout<<".";
 				for (ui j = 0; j < R_end; j++)
 					cout << SR[j] << " ";
-				return;
+				return false;
 			}
 			if (degree[SR[i]] + K < R_end)
 				return false;
