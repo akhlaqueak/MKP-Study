@@ -114,10 +114,10 @@ public:
 			degree[u] = ctx->degree[i];
 		}
 		ids = ctx->ids;
-		delete[] ctx->SR;
-		delete[] ctx->degree_in_S;
-		delete[] ctx->degree;
-		delete[] ctx->level_id;
+		// delete[] ctx->SR;
+		// delete[] ctx->degree_in_S;
+		// delete[] ctx->degree;
+		// delete[] ctx->level_id;
 
 		ctx->nullify();
 		delete ctx;
