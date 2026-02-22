@@ -872,10 +872,10 @@ private:
 					{
 						KPLEX_BB_MATRIX *td = new KPLEX_BB_MATRIX();
 						td->loadContext(solvers[omp_get_thread_num()], ctx, S_end, R_end);
-						// ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
+						ui t_old_S_end = S_end, t_old_R_end = R_end, t_old_removed_edges_n = 0;
 						if (td->move_u_to_S_with_prune(u, S_end, R_end, level))
 							td->BB_search(S_end, R_end, level + 1, false, false, TIME_NOW);
-						// td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
+						td->restore_SR_and_edges(S_end, R_end, t_old_S_end, t_old_R_end, level, t_old_removed_edges_n);
 					}
 				}
 				else
