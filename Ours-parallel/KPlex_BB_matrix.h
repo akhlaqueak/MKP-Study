@@ -1689,8 +1689,8 @@ private:
 		for (; R_end < old_R_end; R_end++)
 		{ // insert u back into R
 			ui u = SR[R_end];
-			if(SR_rid[u] != R_end or level_id[u] != level)for(ui i=R_end;i<old_R_end; i++) cout<<SR[i]<<"->"<<SR_rid[SR[i]]<<" ";
-			cout<<endl;
+			// if(SR_rid[u] != R_end or level_id[u] != level)for(ui i=R_end;i<old_R_end; i++) cout<<SR[i]<<"->"<<SR_rid[SR[i]]<<" ";
+			// cout<<endl;
 			assert(level_id[u] == level && SR_rid[u] == R_end);
 			level_id[u] = n;
 
