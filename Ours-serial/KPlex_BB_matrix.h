@@ -9,7 +9,7 @@
 class KPLEX_BB_MATRIX
 {
 private:
-	ui n;
+	long long n;
 	ui *ids;
 	char *matrix;
 	long long matrix_size;
@@ -1910,31 +1910,43 @@ private:
 		} while (beta > 0 && cend > S_end);
 		if (beta > 0)
 			cend -= min(beta, cend - S_end);
-		return move_candidates_to_end(S_end, cend, R_end, level);
+		vector<ui> B;
+		B.reserve(cend-S_end);
+		for(ui i=S_end;i<cend;i++)B.push_back(SR[i]);
+		return move_candidates_to_end(S_end, R_end, B, level);
+		// return move_candidates_to_end(S_end, cend, R_end, level);
 	}
 	ui R_branching(ui S_end, ui R_end, ui level)
 	{
 
 		ui cend = R_end;
 		ui beta = best_solution_size - S_end;
-		while (beta > 0 && cend > S_end)
+		vector<ui> B, nextB;
+		B.reserve(R_end-S_end);
+		nextB.reserve(R_end-S_end);
+		for(ui i=S_end; i<R_end;i++)B.push_back(SR[i]);
+		while (beta > 0 && !B.empty())
 		{
-			ui ub = tryColor(S_end, cend);
+			ui ub = tryColor(S_end, B);
 			if (ub <= beta)
 			{
-				for (ui i : ISc)
-				{
-					swap_pos(i, --cend);
-				}
-				beta -= ub;
+				bmp.setup(ISc, n);
+				nextB.clear();
+				for(ui v: B)
+					if(!bmp.test(v)) nextB.push_back(v);
+				B=nextB;
+				beta-=ub;
 			}
 			else
 				break;
 		}
 		if (beta > 0)
-			cend -= min(beta, cend - S_end);
+		{
+			ui dec = std::min(beta, (ui)B.size());
+			B.resize(B.size() - dec);
+		}
 
-		return move_candidates_to_end(S_end, cend, R_end, level);
+		return move_candidates_to_end(S_end, R_end, B, level);
 	}
 
 	ui S_branching(ui S_end, ui R_end, ui level)
@@ -1947,10 +1959,11 @@ private:
 				continue;
 			// skipping it, because this is a boundary vertex, and it can't have any non-neighbor candidate
 			ui *t_LPI = LPI + i * n;
+			char* t_matrix = matrix+u*n;
 			for (ui j = S_end; j < R_end; j++)
 			{
 				ui v = SR[j];
-				if (!matrix[u * n + v])
+				if (!t_matrix[v])
 					// PI[u].push_back(v);
 					t_LPI[psz[i]++] = v;
 			}
@@ -2004,210 +2017,71 @@ private:
 		}
 		if (beta > 0)
 			cend -= min(beta, cend - S_end);
-		return move_candidates_to_end(S_end, cend, R_end, level);
+		vector<ui> B;
+		B.reserve(cend-S_end);
+		for(ui i=S_end;i<cend;i++)B.push_back(SR[i]);
+		return move_candidates_to_end(S_end, R_end, B, level);
+		// return move_candidates_to_end(S_end, cend, R_end, level);
 	}
-	ui S_branching_backup(ui S_end, ui R_end, ui level)
+
+	ui move_candidates_to_end(ui S_end, ui R_end, vector<ui>& B, ui level){
+		std::sort(B.begin(), B.end(), [&](ui u, ui v) {
+			return peelOrder[u] < peelOrder[v];
+		});
+
+		for(ui u: B){
+			swap_pos(SR_rid[u], --R_end);
+			level_id[u] = level;
+			char *t_matrix = matrix + u * n;
+			degree[u] = degree_in_S[u] = 0;
+			for (ui i = 0; i < R_end; i++)
+			{
+				ui w = SR[i];
+				// if(level_id[w]==level) continue;
+				if (t_matrix[w])
+					--degree[w];
+			}
+		}
+		return R_end;
+	}
+	ui TISUB(ui S_end)
 	{
-		ui cend = R_end;
-		ui beta = best_solution_size - S_end;
+		std::vector<ui> tmp = ISc;
+	
+		std::sort(tmp.begin(), tmp.end(), [&](ui a, ui b) {
+			return support(S_end, a) > support(S_end, b);
+		});
+	
 		ui ub = 0;
-		do
+	
+		for (ui i = 0; i < tmp.size(); i++)
 		{
-			ub = tryPartition(S_end, cend);
-			if (ub <= beta)
-			{
-				for (ui i : PIMax)
-					swap_pos(i, --cend);
-				beta -= ub;
-			}
+			if (support(S_end, tmp[i]) >= i + 1)
+				ub = i + 1;
 			else
 				break;
-		} while (beta > 0 && cend > S_end && ub != 0);
-
-		if (beta > 0)
-			cend -= min(beta, cend - S_end);
-
-		for (ui i = S_end; i < cend; i++)
-		{
-			// get a vertex with lowest peelOrder
-			ui u = SR[i], ind = i;
-			for (ui j = i + 1; j < cend; j++)
-			{
-				ui v = SR[j];
-				if (peelOrder[v] < peelOrder[u])
-					ind = j, u = v;
-			}
-			swap_pos(i, ind);
-			swap_pos(i, --R_end);
-			level_id[u] = level;
-			char *t_matrix = matrix + u * n;
-			degree[u] = degree_in_S[u] = 0;
-			for (ui i = 0; i < R_end; i++)
-			{
-				ui w = SR[i];
-				// if(level_id[w]==level) continue;
-				if (t_matrix[w])
-					--degree[w];
-			}
 		}
-		return R_end;
+	
+		return ub;
 	}
-	ui SR_branching_backup(ui S_end, ui R_end, ui level)
-	{
-		for (ui i = 0; i < S_end; i++)
+
+	ui tryColor(ui S_end, vector<ui>& B){
+		ISc.clear();
+		for (ui u: B)
 		{
-			ui u = SR[i];
-			psz[i] = 0;
-			if (support(S_end, u) == 0)
-				continue;
-			// skipping it, because this is a boundary vertex, and it can't have any non-neighbor candidate
-			ui *t_LPI = LPI + i * n;
-			for (ui j = S_end; j < R_end; j++)
-			{
-				ui v = SR[j];
-				if (!matrix[u * n + v])
-					// PI[u].push_back(v);
-					t_LPI[psz[i]++] = v;
-			}
-		}
-		ui beta = best_solution_size - S_end;
-		ui cend = R_end;
-
-		while (S_end < cend)
-		{
-
-			ui maxpi = -1;
-			double maxdise = 0;
-			for (ui i = 0; i < S_end; i++)
-			{
-				ui u = SR[i];
-				if (psz[i] == 0)
-					continue;
-				double cost = min(support(S_end, u), psz[i]);
-				double dise = psz[i] / cost;
-				if (cost <= beta and dise > maxdise)
-					maxpi = i, maxdise = dise;
-			}
-
-			double ubc = tryColor(S_end, cend);
-			double coldise = ISc.size() / ubc;
-			if (maxpi == -1 || coldise > maxdise || (coldise == maxdise && ISc.size() > psz[maxpi]))
-			{
-				if (ubc <= beta)
-					beta -= ubc;
-				for (ui i : ISc)
-					swap_pos(i, --cend);
-				for (ui i = 0; i < S_end; i++)
+			bool flag = true;
+			for (ui v : ISc)
+				if (matrix[u*n+v])
 				{
-					ui j = 0;
-					ui *t_LPI = LPI + i * n;
-					for (ui k = 0; k < psz[i]; k++)
-						if (SR_rid[t_LPI[k]] < cend)
-							t_LPI[j++] = t_LPI[k];
-					psz[i] = j;
+					flag = false;
+					break;
 				}
-			}
-
-			else
-			{
-				// remove pi* from C
-				ui *t_LPI = LPI + maxpi * n;
-				for (ui i = 0; i < psz[maxpi]; i++)
-				{
-					// removing from C
-					ui v = t_LPI[i];
-					swap_pos(SR_rid[v], --cend);
-				}
-				// beta-=cost(pi*)
-				beta -= min(support(S_end, SR[maxpi]), psz[maxpi]);
-
-				// remove maxpi from every pi
-				psz[maxpi] = 0;
-				for (ui i = 0; i < S_end; i++)
-				{
-					ui j = 0;
-					ui *t_LPI = LPI + i * n;
-					for (ui k = 0; k < psz[i]; k++)
-						if (SR_rid[t_LPI[k]] < cend)
-							t_LPI[j++] = t_LPI[k];
-					psz[i] = j;
-				}
-			}
-
-			if (beta == 0)
-				break;
-		}
-		if (beta > 0)
-			cend -= min(beta, cend - S_end);
-		return move_candidates_to_end(S_end, cend, R_end, level);
-	}
-
-	ui move_candidates_to_end(ui S_end, ui cend, ui R_end, ui level)
-	{
-		for (ui i = S_end; i < cend; i++)
-		{
-			// get a vertex with lowest peelOrder at location i
-			ui u = SR[i], ind = i;
-			for (ui j = i + 1; j < cend; j++)
-			{
-				ui v = SR[j];
-				if (peelOrder[v] < peelOrder[u])
-					ind = j, u = v;
-			}
-
-			swap_pos(i, ind);
-			swap_pos(i, --R_end);
-
-			level_id[u] = level;
-			char *t_matrix = matrix + u * n;
-			degree[u] = degree_in_S[u] = 0;
-			for (ui i = 0; i < R_end; i++)
-			{
-				ui w = SR[i];
-				// if(level_id[w]==level) continue;
-				if (t_matrix[w])
-					--degree[w];
-			}
-		}
-		return R_end;
-	}
-	ui getBranchings2(ui S_end, ui R_end, ui level)
-	{
-		ui cend = bound(S_end, R_end);
-		for (ui i = cend; i < R_end; i++)
-		{
-			// get a vertex with highest peelOrder at location i
-			ui u = SR[i], ind = i;
-			for (ui j = i + 1; j < R_end; j++)
-			{
-				ui v = SR[j];
-				if (peelOrder[v] > peelOrder[u])
-					ind = j, u = v;
-			}
-			if (i != ind)
-				swap_pos(i, ind);
-		}
-		// remove vertex at i location
-		// assert(level_id[u] == level&&SR_rid[u] == R_end);
-		while (R_end > cend)
-		{
-			ui u = SR[--R_end];
-			level_id[u] = level;
-			char *t_matrix = matrix + u * n;
-			degree[u] = degree_in_S[u] = 0;
-			for (ui i = 0; i < R_end; i++)
-			{
-				ui w = SR[i];
-				// if(level_id[w]==level) continue;
-				if (t_matrix[w])
-					--degree[w];
-			}
+			if (flag)
+				ISc.push_back(u);
 		}
 
-		return cend;
-	}
-
-	ui colorUB(ui S_end, ui R_end)
+		return TISUB(S_end);
+	}	ui colorUB(ui S_end, ui R_end)
 	{
 		ui UB = S_end;
 		while (R_end > S_end && UB <= best_solution_size)
@@ -2264,24 +2138,7 @@ private:
 		}
 	}
 
-	ui TISUB(ui S_end)
-	{
-		ui maxsup = 0;
-		for (ui i = 0; i < ISc.size(); i++)
-		{
-			for (ui j = i + 1; j < ISc.size(); j++)
-			{
-				if (support(S_end, SR[ISc[j]]) > support(S_end, SR[ISc[i]]))
-					std::swap(ISc[i], ISc[j]);
-			}
-			// not using <= condition because i is starting from 0...
-			if (support(S_end, SR[ISc[i]]) > i)
-				maxsup++;
-			else
-				break;
-		}
-		return maxsup;
-	}
+
 	ui tryColor(ui S_end, ui R_end)
 	{
 		createIS(S_end, R_end);

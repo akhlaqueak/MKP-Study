@@ -1,9 +1,28 @@
-all : 
-	g++ -flto -Ofast -DNDEBUG -march=native -o UMKP Graph.cpp -w -fopenmp
+UNAME_S := $(shell uname -s)
+
+# Default flags
+CXXFLAGS = -Ofast -DNDEBUG -march=native -w -std=c++17
+LDFLAGS =
+
+ifeq ($(UNAME_S),Darwin)
+    # macOS (Apple Clang)
+    CXX = clang++
+    CXXFLAGS += -Xpreprocessor -fopenmp
+    LDFLAGS += -lomp -I/opt/homebrew/opt/libomp/include -L/opt/homebrew/opt/libomp/lib
+else
+    # Linux (GCC)
+    CXX = g++
+    CXXFLAGS += -fopenmp -flto
+endif
+
+all:
+	$(CXX) $(CXXFLAGS) -o UMKP Graph.cpp $(LDFLAGS)
+
 clean:
-	rm -rf UMKP
+	rm -rf UMKP UMKP-pg
+
 debug:
-	# g++ -g -DNDEBUG -o UMKP Graph.cpp -fopenmp
-	g++ -g  -o UMKP Graph.cpp -fopenmp -gdwarf-4 
+	$(CXX) -g -o UMKP Graph.cpp $(CXXFLAGS) $(LDFLAGS) -gdwarf-4
+
 prof:
-	g++ -pg -DNDEBUG -march=native -o UMKP-pg Graph.cpp -w -fopenmp
+	$(CXX) -pg $(CXXFLAGS) -o UMKP-pg Graph.cpp $(LDFLAGS)
