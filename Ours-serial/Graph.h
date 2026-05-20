@@ -75,6 +75,7 @@ private:
 
 	ui write_one_kplex(vector<ui> &kplex)
 	{
+		return 0;
 		FILE *fout = Utility::open_file("kplex.txt", "w");
 		read();
 		std::sort(kplex.begin(), kplex.end());
