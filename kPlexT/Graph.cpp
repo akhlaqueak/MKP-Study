@@ -166,6 +166,7 @@ void Graph::read_graph() {
 }
 
 void Graph::output_one_kplex() {
+	return;
 	FILE *fout = Utility::open_file("kplex.txt", "w");
 
 	sort(kplex.begin(), kplex.end());
