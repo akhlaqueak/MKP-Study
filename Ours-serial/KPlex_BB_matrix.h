@@ -87,6 +87,7 @@ public:
 		best_n_edges = 0;
 		all_kplex_search = _ds;
 		branching = cmd.GetOptionValue("-branching", "Default-Br");
+
 		bounding = cmd.GetOptionValue("-bounding", "None");
 		UBR2 = cmd.GetOptionValue("-UBR2", "true") == "true";
 		BR1 = cmd.GetOptionValue("-BR1", "true") == "true";
@@ -237,6 +238,9 @@ public:
 		{
 			printf("For the special case of computing maximum clique, please invoke SOTA maximum clique solver!\n");
 			return;
+		}
+		if(branching=="Default-Br"){
+			branching = K<=5? "S-Br":"Pivot-Br";
 		}
 		best_solution_size = kplex.size();
 		ui n_edges = best_n_edges;
@@ -755,7 +759,7 @@ private:
 			return;
 		}
 
-		else if (branching == "S-Br" or branching == "R-Br" or branching == "SR-Br" or (K <= 5 && sparse && branching == "Default-Br"))
+		else if (branching == "S-Br" or branching == "R-Br" or branching == "SR-Br")
 		{
 
 			// ******************* Adding our branching stuff here...
