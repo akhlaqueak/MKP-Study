@@ -318,8 +318,10 @@ void Graph::kPlex_exact(int mode) {
 				if(pend == nullptr) pend = new ept[n+1];
 				reorganize_adjacency_lists(n, peel_sequence, rid, pstart, pend, edges);
 
-				for(ui i = n;i > 0&&kplex.size() < UB;i --) {
-					ui u = peel_sequence[i-1];
+				for(ui i = 0;i < n&&kplex.size() < UB;i ++) {
+					ui u = peel_sequence[i];
+				// for(ui i = n;i > 0&&kplex.size() < UB;i --) {
+				// 	ui u = peel_sequence[i-1];
 					if(pend[u]-pstart[u]+K <= kplex.size()||n-i < kplex.size()) continue;
 
 					fflush(stdout);
